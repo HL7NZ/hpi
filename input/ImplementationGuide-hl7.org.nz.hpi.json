@@ -1,0 +1,301 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.org.nz.hpi",
+  "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.org.nz.hpi",
+  "version": "0.1.0",
+  "name": "NewZealandHPIIG",
+  "title": "New Zealand HPI IG",
+  "status": "active",
+  "publisher": "David Hay",
+  "contact": [
+    {
+      "name": "David Hay",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "mailto:david.hay25@gmail.com"
+        }
+      ]
+    }
+  ],
+  "description": "The HPI facade",
+  "packageId": "hl7.org.nz.hpi",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.org.nz.base",
+      "packageId": "hl7.org.nz.base",
+      "version": "current"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiEndpoint"
+        },
+        "name": "HPI Endpoint",
+        "description": "Endpoints used by the HPI.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiLocation"
+        },
+        "name": "HPI Location",
+        "description": "Locations used by the HPI. These are also called Facilities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiOrganization"
+        },
+        "name": "HPI Organization",
+        "description": "Organizations used by the HPI. For example DHB's, PHO's and Primary care Practices",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitioner"
+        },
+        "name": "HPI Practitioner",
+        "description": "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitionerRole"
+        },
+        "name": "HPI Practitioner role",
+        "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multple organizations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/additional-authorization"
+        },
+        "name": "Additional_authorization",
+        "description": "Additional authorizations that a practitioner is authorized to perform",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/condition-on-practice"
+        },
+        "name": "Condition_on_practice",
+        "description": "A full description of the conditions the health practitioner is subject to in relation to their scope of practice.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/death-date"
+        },
+        "name": "Death_date",
+        "description": "The date the person died.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/location-alias-type"
+        },
+        "name": "Location_alias_type",
+        "description": "Indicates the type of alias name",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/location-established"
+        },
+        "name": "Location_established",
+        "description": "The period over which the location is open",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/organization-aliasType"
+        },
+        "name": "Organization_aliasType",
+        "description": "The type of alias. eg abbreviated, maori...",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/organization-period"
+        },
+        "name": "Organization_period",
+        "description": "The period over which the Organization is active",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitionerRole-creator"
+        },
+        "name": "PractitionerRole_creator",
+        "description": "The organisation and person that created this role",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/practitionerRole-status"
+        },
+        "name": "PractitionerRole_status",
+        "description": "The status of the role - active,ended",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/registration-initial-date"
+        },
+        "name": "Registration_initial_date",
+        "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/registration-status"
+        },
+        "name": "Registration_status",
+        "description": "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/scope-of-practice"
+        },
+        "name": "Scope_of_practice",
+        "description": "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/drmulti"
+        },
+        "name": "drmulti",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Organization/ghc"
+        },
+        "name": "ghc",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Location/location1"
+        },
+        "name": "location1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization1"
+        },
+        "name": "organization1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner3"
+        },
+        "name": "practitioner3",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitionerX"
+        },
+        "name": "practitionerX",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitionerY"
+        },
+        "name": "practitionerY",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/practitionerrole1"
+        },
+        "name": "practitionerrole1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "Organization/scen1-ghc"
+        },
+        "name": "scen1-ghc",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/scen1-pharm1"
+        },
+        "name": "scen1-pharm1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/scen1-pr1"
+        },
+        "name": "scen1-pr1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/scen1-pr2"
+        },
+        "name": "scen1-pr2",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/scen1-prac1"
+        },
+        "name": "scen1-prac1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "general.html",
+          "title": "General",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "identifiers.html",
+          "title": "Identifiers",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

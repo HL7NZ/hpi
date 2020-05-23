@@ -1,0 +1,43 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "practitionerrole1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+    ]
+  },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "person",
+          "valueReference": {
+            "reference": "Practitioner/drmulti"
+          }
+        },
+        {
+          "url": "organization",
+          "valueReference": {
+            "reference": "Organization/organization1"
+          }
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-creator"
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr multi as a psychiatrist for the Good Health Centre</div>",
+    "status": "additional"
+  },
+  "practitioner": {
+    "reference": "Practitioner/drmulti"
+  },
+  "organization": {
+    "reference": "Organization/organization1"
+  },
+  "location": [
+    {
+      "reference": "Location/location1"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "practitionerRole-status",
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-status",
+  "version": "0.1.0",
+  "name": "PractitionerRole_status",
+  "status": "active",
+  "description": "The status of the role - active,ended",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "PractitionerRole"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension:active",
+        "path": "Extension.extension",
+        "sliceName": "active",
+        "definition": "True if the role is active at the time it was returned",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:active.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:active.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "active"
+      },
+      {
+        "id": "Extension.extension:active.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reason",
+        "path": "Extension.extension",
+        "sliceName": "reason",
+        "definition": "The reason for the current status - endOfRotation, endOfContract, enteredInError",
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:reason.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:reason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "reason"
+      },
+      {
+        "id": "Extension.extension:reason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:reason.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org.nz/fhir/StructureDefinition/practitioner-role-status"
+        }
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

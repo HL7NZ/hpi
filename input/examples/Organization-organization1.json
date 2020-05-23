@@ -1,0 +1,51 @@
+{
+  "resourceType": "Organization",
+  "id": "organization1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Good Health Medical Centre</div>",
+    "status": "additional"
+  },
+  "name": "Good Health Medical Centre",
+  "alias": [
+    "Adequate Health Medical Centre"
+  ],
+  "active": true,
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/id/hpi-org",
+      "value": "ORG-1"
+    },
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/id/nzbn",
+      "value": "98ZZB"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://standards.digital.health.nz/codesystem/hpiOrganizationType",
+          "code": "gp",
+          "display": "General Practice clinic"
+        }
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "admin@ghmc"
+    },
+    {
+      "system": "phone",
+      "value": "+64 9 456 7765"
+    }
+  ]
+}

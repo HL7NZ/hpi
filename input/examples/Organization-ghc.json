@@ -1,0 +1,10 @@
+{
+  "resourceType": "Organization",
+  "id": "ghc",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+    ]
+  },
+  "name": "Good Health Clinic"
+}

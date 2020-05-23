@@ -1,0 +1,35 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "scen1-pr1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+    ]
+  },
+  "text": {
+    "div": "<div>Dr Kildaire as doctor</div>",
+    "status": "additional"
+  },
+  "identifier": [
+    {
+      "value": "sr",
+      "system": "http://clinfhir.com/example"
+    }
+  ],
+  "organization": {
+    "reference": "Organization/ghc"
+  },
+  "practitioner": {
+    "reference": "Practitioner/scen1-prac1"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/practitioner-role",
+          "code": "doctor"
+        }
+      ]
+    }
+  ]
+}

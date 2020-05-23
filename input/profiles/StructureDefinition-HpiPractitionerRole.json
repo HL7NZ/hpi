@@ -1,0 +1,129 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HpiPractitionerRole",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI PractitionerRole profile</div>",
+    "status": "additional"
+  },
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole",
+  "version": "0.1.0",
+  "name": "HpiPractitionerRole",
+  "title": "HPI Practitioner role",
+  "status": "active",
+  "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multple organizations.",
+  "purpose": "Describe the PractitionerRole that will be returned by the HPI",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.extension",
+        "path": "PractitionerRole.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.extension:practitionerRole-status",
+        "path": "PractitionerRole.extension",
+        "sliceName": "practitionerRole-status",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.extension:practitionerRole-creator",
+        "path": "PractitionerRole.extension",
+        "sliceName": "practitionerRole-creator",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-creator"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.active",
+        "path": "PractitionerRole.active",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.location",
+        "path": "PractitionerRole.location",
+        "max": "1"
+      },
+      {
+        "id": "PractitionerRole.healthcareService",
+        "path": "PractitionerRole.healthcareService",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availableTime",
+        "path": "PractitionerRole.availableTime",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.notAvailable",
+        "path": "PractitionerRole.notAvailable",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availabilityExceptions",
+        "path": "PractitionerRole.availabilityExceptions",
+        "max": "0"
+      }
+    ]
+  }
+}

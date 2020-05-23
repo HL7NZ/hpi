@@ -1,0 +1,80 @@
+{
+  "resourceType": "Location",
+  "id": "location1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation"
+    ]
+  },
+  "_alias": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://standards.digital.health.nz/fhir/ValueSet/aliasType",
+                "code": "ta",
+                "display": "Trading As"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://standards.digital.health.nz/fhir/ValueSet/aliasType",
+                "code": "local",
+                "display": "Locally known name"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">East End Surgery</div>",
+    "status": "additional"
+  },
+  "status": "active",
+  "name": "East End Surgery",
+  "description": "Fully equipped General Practice",
+  "identifier": [
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/id/hpi-fgacility",
+      "value": "FAC-OLD1"
+    }
+  ],
+  "alias": [
+    "East End Inc.",
+    "Dr Dobbs Surgery"
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "admin@drdobbs"
+    },
+    {
+      "system": "phone",
+      "value": "+64 9 456 7765"
+    }
+  ],
+  "address": {
+    "line": [
+      "23 Thule St"
+    ],
+    "city": "Waipu"
+  },
+  "managingOrganization": {
+    "reference": "Organization/organization1"
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HpiLocation",
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation",
+  "version": "0.1.0",
+  "name": "HpiLocation",
+  "title": "HPI Location",
+  "status": "active",
+  "description": "Locations used by the HPI. These are also called Facilities.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Location.extension:location-established",
+        "path": "Location.extension",
+        "sliceName": "location-established",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-established"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.extension:dhb",
+        "path": "Location.extension",
+        "sliceName": "dhb",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/dhb"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "openAtEnd"
+        }
+      },
+      {
+        "id": "Location.identifier:dormant",
+        "path": "Location.identifier",
+        "sliceName": "dormant",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:dormant.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "patternCode": "old"
+      },
+      {
+        "id": "Location.identifier:dormant.system",
+        "path": "Location.identifier.system",
+        "patternUri": "https://standards.digital.health.nz/id/hpi-person"
+      },
+      {
+        "id": "Location.operationalStatus",
+        "path": "Location.operationalStatus",
+        "max": "0"
+      },
+      {
+        "id": "Location.alias.extension",
+        "path": "Location.alias.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Location.alias.extension:location-alias-type",
+        "path": "Location.alias.extension",
+        "sliceName": "location-alias-type",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.mode",
+        "path": "Location.mode",
+        "max": "0"
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nzAddress"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.physicalType",
+        "path": "Location.physicalType",
+        "max": "0"
+      },
+      {
+        "id": "Location.hoursOfOperation",
+        "path": "Location.hoursOfOperation",
+        "max": "0"
+      },
+      {
+        "id": "Location.availabilityExceptions",
+        "path": "Location.availabilityExceptions",
+        "max": "0"
+      }
+    ]
+  }
+}

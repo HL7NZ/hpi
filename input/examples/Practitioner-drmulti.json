@@ -1,0 +1,121 @@
+{
+  "resourceType": "Practitioner",
+  "id": "drmulti",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+    ]
+  },
+  "qualification": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date",
+          "valueDate": "2018-11-26"
+        },
+        {
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "active",
+                "system": "https://standards.digital.health.nz/cs/practitioner-qualificationstatus"
+              }
+            ]
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "description",
+              "valueString": "Dr Example  is permitted to practise medicine in the position of House Officer in accredited clinical attachments at Southern District Health Board under the supervision of an approved prevocational educational supervisor between 01 March 2019 and 30 November 2019. The purpose of this registration is to require doctors to meet Council requirements for registration in the general scope of practice."
+            },
+            {
+              "url": "period",
+              "valuePeriod": {
+                "start": "2018-11-26",
+                "end": "2019-03-01"
+              }
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+        },
+        {
+          "extension": [
+            {
+              "url": "code",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "MCPG",
+                    "system": "https://standards.digital.health.nz/CodeSystem/practitioner-scopeofpractice"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "period",
+              "valuePeriod": {
+                "start": "2018-11-26"
+              }
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
+        }
+      ],
+      "identifier": [
+        {
+          "use": "official",
+          "system": "https://standards.digital.health.nz/CodeSystem/nzmc-registration-authid",
+          "value": "123456"
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://standards.digital.health.nz/CodeSystem/registration-types",
+            "code": "MD",
+            "display": "Medical doctor"
+          }
+        ]
+      },
+      "period": {
+        "start": "2019-03-01",
+        "end": "2019-11-30"
+      },
+      "issuer": {
+        "identifier": {
+          "system": "https://standards.digital.health.nz/id/hpi-organisation",
+          "value": "nzmc"
+        }
+      }
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr Multi</div>",
+    "status": "additional"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/id/cpn",
+      "value": "98ZZA"
+    },
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/id/cpn",
+      "value": "98ZZB"
+    }
+  ],
+  "name": [
+    {
+      "text": "Dr Multi RA Example",
+      "family": "Multi",
+      "given": [
+        "Frank"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1970-07-20"
+}

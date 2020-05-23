@@ -1,0 +1,16 @@
+{
+  "resourceType": "Practitioner",
+  "id": "scen1-prac1",
+  "meta": {
+    "profile": [
+      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+    ]
+  },
+  "name": [
+    {
+      "text": "Dr John Kildaire",
+      "family": "Kildaire"
+    }
+  ],
+  "gender": "male"
+}
