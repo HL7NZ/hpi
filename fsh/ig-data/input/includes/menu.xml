@@ -1,8 +1,10 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
+    <li><a href="toc.html">Table of Contents</a></li>
+
   <li><a href="general.html">General Notes</a></li>
 
-  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="capStmt.html">API</a></li>
 
   <li><a href="profiles.html">Profiles</a></li>
   <li><a href="identifiers.html">Identifiers</a></li>

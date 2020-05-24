@@ -1,0 +1,120 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "HpiCapabilityStatement",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI capabilities</div>"
+  },
+  "name": "HPI_CapabilityStatement",
+  "title": "Capability Statement describing HPI FHIR APIs",
+  "description": "This is the computable resource that describes the RESTful endpoint",
+  "date": "2020-04-01",
+  "status": "draft",
+  "kind": "instance",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "json"
+  ],
+  "implementation": {
+    "description": "The HIP endpoint",
+    "url": "http://moh.org.nz/hpi/fhir"
+  },
+  "rest": [
+    {
+      "mode": "server",
+      "resource": [
+        {
+          "type": "Practitioner",
+          "supportedProfile": [
+            "http://hl7.org.nz/healthalliance/HpiPractitioner"
+          ],
+          "documentation": "Practitioner query\n",
+          "interaction": [
+            {
+              "code": "search-type",
+              "documentation": "Gender and birthDate are required in all searches"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "name",
+              "type": "string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
+              "documentation": "Not case sensitive"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
+              "documentation": "Will only return active identifiers"
+            },
+            {
+              "name": "family",
+              "type": "string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-family"
+            },
+            {
+              "name": "given",
+              "type": "string",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-given"
+            },
+            {
+              "name": "gender",
+              "type": "token",
+              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
+            },
+            {
+              "name": "birthdate",
+              "type": "token",
+              "documentation": "This is a custom search"
+            },
+            {
+              "name": "ra-identifier",
+              "type": "token",
+              "documentation": "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "supportedProfile": [
+            "http://hl7.org.nz/healthalliance/HpiPractitionerRole"
+          ],
+          "documentation": "PractitionerRole query\n",
+          "searchParam": [
+            {
+              "name": "practitioner",
+              "type": "reference",
+              "documentation": "Given a Practitoner id, returns the PractitonerRoles associated with that id"
+            },
+            {
+              "name": "organization",
+              "type": "reference",
+              "documentation": "Given a Organization id, returns the PractitonerRoles associated with that id"
+            },
+            {
+              "name": "location",
+              "type": "token",
+              "documentation": "Given a Location id, returns the PractitonerRoles associated with that id"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Returns PractitionerRoles based on identifier"
+            },
+            {
+              "name": "role",
+              "type": "token",
+              "documentation": "Returns PractitionerRoles based on role"
+            }
+          ],
+          "searchInclude": [
+            "practitioner",
+            "organization",
+            "location"
+          ]
+        }
+      ]
+    }
+  ]
+}

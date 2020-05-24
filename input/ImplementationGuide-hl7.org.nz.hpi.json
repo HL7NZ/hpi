@@ -171,6 +171,14 @@
       },
       {
         "reference": {
+          "reference": "CapabilityStatement/HpiCapabilityStatement"
+        },
+        "name": "CapabilityStatement",
+        "description": "Represents API exposed by HPI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Practitioner/drmulti"
         },
         "name": "drmulti",
@@ -269,6 +277,16 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "api.html",
+          "title": "Api",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capStmt.html",
+          "title": "Cap Stmt",
           "generation": "markdown"
         },
         {

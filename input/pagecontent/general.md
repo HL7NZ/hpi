@@ -11,6 +11,7 @@
 
 
 The following notes apply to all resources in this implementation.
+
 <!--
 
 ### Key relationships between resources
@@ -25,7 +26,7 @@ resources (to ensure that they are updated by the organizations/people that crea
 the key 'structural' relationships with the PractitionerRole recording a Practitioner working for an Organization at
 a Location.
 
---->
+-->
 
 
 ### Resource representation: Json & XML
