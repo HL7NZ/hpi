@@ -19,5 +19,7 @@ In addition, there is support for registering where a Practitioner works, and in
 
 The HPI serves 2 primary purposes:
 
-A unique identifier for each individual or entity
-The source of truth for the key information about that entity. Note that the HPI is not necessarily the actual source of information (eg Practitioners are supplied by a registration authority, healthcare workers are supplied by their employing organisation) but it is the place to go to find the information.
+* A unique identifier for each individual or entity
+* The source of truth for the key information about that entity. 
+
+Note that the HPI is not necessarily the actual source of information (eg Practitioners are supplied by a registration authority, healthcare workers are supplied by their employing organisation) but it is the place to go to find the information.

@@ -272,6 +272,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "companion.html",
+          "title": "Companion",
+          "generation": "html"
+        },
+        {
           "nameUrl": "general.html",
           "title": "General",
           "generation": "markdown"
@@ -279,6 +284,11 @@
         {
           "nameUrl": "identifiers.html",
           "title": "Identifiers",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
           "generation": "markdown"
         }
       ]
