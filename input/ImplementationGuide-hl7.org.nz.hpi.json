@@ -28,6 +28,7 @@
     {
       "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.org.nz.base",
       "packageId": "hl7.org.nz.base",
+      "location": "http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/",
       "version": "current"
     }
   ],
