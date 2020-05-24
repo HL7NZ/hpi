@@ -38,24 +38,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Practitioner.extension",
-        "path": "Practitioner.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
       {
         "id": "Practitioner.extension:death-date",
         "path": "Practitioner.extension",
@@ -69,19 +55,6 @@
             ]
           }
         ]
-      },
-      {
-        "id": "Practitioner.identifier",
-        "path": "Practitioner.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "use"
-            }
-          ],
-          "rules": "openAtEnd"
-        }
       },
       {
         "id": "Practitioner.identifier:dormant",

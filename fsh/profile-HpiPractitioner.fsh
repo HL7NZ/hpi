@@ -8,7 +8,7 @@ Alias: $condition-on-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/c
 Alias: $registration-initial-date = http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date
 
 Profile:        HpiPractitioner
-Parent:         Practitioner
+Parent:         NzPractitioner
 Id:             HpiPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification."
