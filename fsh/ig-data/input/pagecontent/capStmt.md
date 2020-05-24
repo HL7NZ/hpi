@@ -2,6 +2,8 @@ This page is derived from the information recorded in the [CapabilityStatement](
 resource.
 It describes the details of the RESTful interface through which clients can access the HPI.
 
+There are examples of all these queries in the [IG Companion](companion.html)
+
 Capability Statement describing HPI FHIR APIs  
 Status: additional
 
