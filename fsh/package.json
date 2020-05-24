@@ -6,7 +6,8 @@
  "title" : "New Zealand HPI IG",
  "description": "The HPI facade",
  "dependencies": {
-    "hl7.fhir.r4.core": "4.0.1"
+    "hl7.fhir.r4.core": "4.0.1",
+    "hl7.org.nz.base": "current"
  },
 
  "language": "en",
