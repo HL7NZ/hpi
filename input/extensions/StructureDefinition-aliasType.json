@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "location-alias-type",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type",
+  "id": "aliasType",
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
   "version": "0.1.0",
-  "name": "Location_alias_type",
+  "name": "AliasType",
   "status": "active",
-  "description": "Indicates the type of alias name",
+  "description": "Indicates the type of alias name. VS Binding is done by the profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,34 +35,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type"
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
         ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/location-alias-type"
-        }
       }
     ]
   }

@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "OrganizationAlias",
+  "id": "organizationAlias",
+  "title": "Organization aliases",
+  "description": "The set of alias types that apply to Organizations",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/organization-aliasType",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
+        "concept": [
+          {
+            "code": "local",
+            "display": "Location Name"
+          }
+        ]
+      }
+    ]
+  }
+}

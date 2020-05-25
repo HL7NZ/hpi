@@ -23,7 +23,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Location",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzLocation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -70,36 +70,6 @@
         ]
       },
       {
-        "id": "Location.identifier",
-        "path": "Location.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "use"
-            }
-          ],
-          "rules": "openAtEnd"
-        }
-      },
-      {
-        "id": "Location.identifier:dormant",
-        "path": "Location.identifier",
-        "sliceName": "dormant",
-        "mustSupport": true
-      },
-      {
-        "id": "Location.identifier:dormant.use",
-        "path": "Location.identifier.use",
-        "min": 1,
-        "patternCode": "old"
-      },
-      {
-        "id": "Location.identifier:dormant.system",
-        "path": "Location.identifier.system",
-        "patternUri": "https://standards.digital.health.nz/id/hpi-person"
-      },
-      {
         "id": "Location.operationalStatus",
         "path": "Location.operationalStatus",
         "max": "0"
@@ -119,35 +89,31 @@
         }
       },
       {
-        "id": "Location.alias.extension:location-alias-type",
+        "id": "Location.alias.extension:aliasType",
         "path": "Location.alias.extension",
-        "sliceName": "location-alias-type",
+        "sliceName": "aliasType",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type"
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
             ]
           }
         ]
+      },
+      {
+        "id": "Location.alias.extension:aliasType.valueCodeableConcept",
+        "path": "Location.alias.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-aliasType"
+        }
       },
       {
         "id": "Location.mode",
         "path": "Location.mode",
         "max": "0"
-      },
-      {
-        "id": "Location.address",
-        "path": "Location.address",
-        "type": [
-          {
-            "code": "Address",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/nzAddress"
-            ]
-          }
-        ]
       },
       {
         "id": "Location.physicalType",

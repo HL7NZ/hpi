@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "organization-aliasType",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-aliasType",
+  "id": "alias-type",
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/alias-type",
   "version": "0.1.0",
-  "name": "Organization_aliasType",
+  "name": "Alias_type",
   "status": "active",
-  "description": "The type of alias. eg abbreviated, maori...",
+  "description": "Indicates the type of alias name. VS Binding is done by the profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Organization.alias"
+      "expression": "Location.alias"
     }
   ],
   "type": "Extension",
@@ -35,34 +35,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-aliasType"
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/alias-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "type": [
           {
             "code": "CodeableConcept"
           }
         ]
-      },
-      {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/organization-alias-type"
-        }
       }
     ]
   }

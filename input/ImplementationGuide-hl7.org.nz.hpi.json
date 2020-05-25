@@ -83,6 +83,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/aliasType"
+        },
+        "name": "AliasType",
+        "description": "Indicates the type of alias name. VS Binding is done by the profile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/condition-on-practice"
         },
         "name": "Condition_on_practice",
@@ -99,26 +107,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/location-alias-type"
-        },
-        "name": "Location_alias_type",
-        "description": "Indicates the type of alias name",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/location-established"
         },
         "name": "Location_established",
         "description": "The period over which the location is open",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/organization-aliasType"
-        },
-        "name": "Organization_aliasType",
-        "description": "The type of alias. eg abbreviated, maori...",
         "exampleBoolean": false
       },
       {
@@ -167,6 +159,30 @@
         },
         "name": "Scope_of_practice",
         "description": "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/locationAlias"
+        },
+        "name": "Location aliases",
+        "description": "The set of alias types that apply to Locations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/organizationAlias"
+        },
+        "name": "Organization aliases",
+        "description": "The set of alias types that apply to Organizations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/aliasType"
+        },
+        "name": "Type of Alias",
+        "description": "Used in Organization and Location to indicate what is the type of Alias",
         "exampleBoolean": false
       },
       {

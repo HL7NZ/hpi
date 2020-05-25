@@ -4,7 +4,12 @@ Differences to the profile include:
 * Additional elements in the model are represented as extensions in the pfoile.
 * There can be multiple elements in the model that are in the same element in the profile (Current and Dormant HPIs are an example of this).
 
-In the linked pages in the table below, the snapshot tab is  the best to view the model.
+Logical models use FHIR datatypes (in fact, they use the same [underlying infrastructure](http://hl7.org/fhir/structuredefinition.html) as profiles do). If the datatype is a [complex](http://hl7.org/fhir/datatypes.html#complex) one,  and the possible child elements are the same, then the element will simply have the required data type. However, there are a couple of edge cases:
+* If only some of the child elements are supported, then the supported ones will be listed as child elements.
+* If there are additional elements (such as the address suburb) but the others are supported, then the addiitonal child element is listed.
+* If there is a combination of the above - only some child datatypes are supported, and there are additional ones, then all subelements are present.
+
+In the linked pages in the table below, the differential or snapshot tab is the best view of the model.
 
 | Logical Model | Purpose | Profile |
 | --- | --- | --- |

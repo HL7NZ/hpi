@@ -1,0 +1,10 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LocationAlias",
+  "id": "loactionAlias",
+  "title": "Location aliases",
+  "description": "The set of alias types that apply to Locations",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/location-aliasType"
+}

@@ -10,11 +10,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type",
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://standards.digital.health.nz/fhir/ValueSet/aliasType",
+                "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
                 "code": "ta",
                 "display": "Trading As"
               }
@@ -26,11 +26,11 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-alias-type",
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "http://standards.digital.health.nz/fhir/ValueSet/aliasType",
+                "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
                 "code": "local",
                 "display": "Locally known name"
               }
@@ -49,8 +49,13 @@
   "description": "Fully equipped General Practice",
   "identifier": [
     {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/id/hpi-facility",
+      "value": "FAC-1"
+    },
+    {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/hpi-fgacility",
+      "system": "https://standards.digital.health.nz/id/hpi-facility",
       "value": "FAC-OLD1"
     }
   ],

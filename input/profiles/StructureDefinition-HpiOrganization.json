@@ -115,18 +115,26 @@
         }
       },
       {
-        "id": "Organization.alias.extension:organization-aliasType",
+        "id": "Organization.alias.extension:aliasType",
         "path": "Organization.alias.extension",
-        "sliceName": "organization-aliasType",
+        "sliceName": "aliasType",
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-aliasType"
+              "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
             ]
           }
         ]
+      },
+      {
+        "id": "Organization.alias.extension:aliasType.valueCodeableConcept",
+        "path": "Organization.alias.extension.valueCodeableConcept",
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type"
+        }
       },
       {
         "id": "Organization.address",
