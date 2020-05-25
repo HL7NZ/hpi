@@ -1,4 +1,4 @@
-FAQ stuff
+Commonly asked questions about the HPI
 
 ### thing 1
 

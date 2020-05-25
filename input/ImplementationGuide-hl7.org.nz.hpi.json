@@ -267,6 +267,46 @@
         },
         "name": "scen1-prac1",
         "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiEndpointLM"
+        },
+        "description": "The enpoint resource used by the HPI",
+        "exampleBoolean": false,
+        "name": "HpiEndpointLM"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiLocationLM"
+        },
+        "description": "The Location resource used by the HPI service",
+        "exampleBoolean": false,
+        "name": "HpiLocationLM"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiOrganizationLM"
+        },
+        "description": "The Organization resource used by the HPI application.",
+        "exampleBoolean": false,
+        "name": "HpiOrganizationLM"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitionerLM"
+        },
+        "description": "The Practitioner exposed by the HPI\n\nUse cases:\n\n* What is a person's CPN when I know the persons registration number i.e. Get using registration number\n* What is a person's CPN when the person doesn’t have a registration i.e. search by name, gender\n* What is a person's CPN when I don’t know the person’s registration number or CPN i.e. search by name, gender scope of practice\n* What are a practitioner’s details (eg practicing certificate dates) when I have a CPN. ie. Get using CPN",
+        "exampleBoolean": false,
+        "name": "HpiPractitionerLM"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiPractitionerRoleLM"
+        },
+        "description": "HpiPractitionerRole",
+        "exampleBoolean": false,
+        "name": "HpiPractitionerRoleLM"
       }
     ],
     "page": {
@@ -307,6 +347,11 @@
         {
           "nameUrl": "identifiers.html",
           "title": "Identifiers",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "models.html",
+          "title": "Models",
           "generation": "markdown"
         },
         {

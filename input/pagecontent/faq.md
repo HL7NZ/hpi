@@ -8,7 +8,7 @@
 * ig-data/input/pagecontent/faq.md                                                      *
 *****************************************************************************************
 {% endcomment %} -->
-FAQ stuff
+Commonly asked questions about the HPI
 
 ### thing 1
 
