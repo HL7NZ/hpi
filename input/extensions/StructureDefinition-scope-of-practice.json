@@ -72,32 +72,6 @@
         }
       },
       {
-        "id": "Extension.extension:description",
-        "path": "Extension.extension",
-        "sliceName": "description",
-        "definition": "A full description of the health services that a health practitioner with this scope is permitted to perform",
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:description.extension",
-        "path": "Extension.extension.extension",
-        "max": "0"
-      },
-      {
-        "id": "Extension.extension:description.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "description"
-      },
-      {
-        "id": "Extension.extension:description.value[x]",
-        "path": "Extension.extension.value[x]",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
         "id": "Extension.extension:period",
         "path": "Extension.extension",
         "sliceName": "period",

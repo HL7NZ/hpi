@@ -6,9 +6,11 @@
 
   <li><a href="capStmt.html">API</a></li>
 
+  <li><a href="faq.html">FAQ</a></li>
+
   <li><a href="profiles.html">Profiles</a></li>
   <li><a href="identifiers.html">Identifiers</a></li>
-    <li><a href="artifacts.html">Artifact Index</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
 
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">

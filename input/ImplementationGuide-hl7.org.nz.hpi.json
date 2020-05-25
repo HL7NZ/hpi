@@ -295,6 +295,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "faq.html",
+          "title": "Faq",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "general.html",
           "title": "General",
           "generation": "markdown"
