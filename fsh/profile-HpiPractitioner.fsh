@@ -20,9 +20,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * ^purpose = "Describe the Practitioner that will be returned by the HPI"
 
-
-
-
 //elements that have been removed
 * active 0..0
 * telecom 0..0
