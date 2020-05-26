@@ -61,7 +61,7 @@
         "path": "Extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/registration-status"
+          "valueSet": "https://standards.digital.health.nz/vs/hpi-registration-status"
         }
       }
     ]

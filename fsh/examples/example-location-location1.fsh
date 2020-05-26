@@ -21,17 +21,17 @@ InstanceOf: HpiLocation
 //trading as 'East End Inc'
 * alias = "East End Inc."
 
-//an extension on this alias that indicates that the alias type is 'trading as'
+//Short name
 * alias.extension[aliasType].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/fhir/CodeSystem/aliasType"
-* alias.extension[aliasType].valueCodeableConcept.coding.code = #ta
-* alias.extension[aliasType].valueCodeableConcept.coding.display = "Trading As"
+* alias.extension[aliasType].valueCodeableConcept.coding.code = #short
+* alias.extension[aliasType].valueCodeableConcept.coding.display = "Short"
 
 
 //otherwise known as 'dr dobbs surgery'
 * alias[1] = "Dr Dobbs Surgery"
 * alias[1].extension[aliasType].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/fhir/CodeSystem/aliasType"
-* alias[1].extension[aliasType].valueCodeableConcept.coding.code = #local
-* alias[1].extension[aliasType].valueCodeableConcept.coding.display = "Locally known name"
+* alias[1].extension[aliasType].valueCodeableConcept.coding.code = #aka
+* alias[1].extension[aliasType].valueCodeableConcept.coding.display = "Aka"
 
 //email address
 * telecom.system = #email

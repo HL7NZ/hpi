@@ -13,8 +13,16 @@
         "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
         "concept": [
           {
-            "code": "local",
-            "display": "Location Name"
+            "code": "aka",
+            "display": "Aka"
+          },
+          {
+            "code": "maori",
+            "display": "Maori"
+          },
+          {
+            "code": "short",
+            "display": "Short"
           }
         ]
       }

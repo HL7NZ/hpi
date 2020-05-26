@@ -7,4 +7,4 @@ Description: "An indicator of the practicing status of the practitioner as suppl
 
 * extension 0..0
 * value[x] only CodeableConcept
-* valueCodeableConcept from http://standards.digital.health.nz/fhir/ValueSet/registration-status (preferred)
+* valueCodeableConcept from https://standards.digital.health.nz/vs/hpi-registration-status (preferred)

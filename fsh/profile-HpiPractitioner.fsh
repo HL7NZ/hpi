@@ -3,9 +3,11 @@
 Alias: $death-date = http://hl7.org.nz/fhir/hpi/StructureDefinition/death-date
 Alias: $registration-status = http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status
 Alias: $additional-authorization = http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization
-Alias: $scope-of-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice
+
 Alias: $condition-on-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice
 Alias: $registration-initial-date = http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date
+
+Alias: $scope-of-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice
 
 Profile:        HpiPractitioner
 Parent:         NzPractitioner

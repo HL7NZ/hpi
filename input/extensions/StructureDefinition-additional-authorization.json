@@ -68,7 +68,7 @@
         "path": "Extension.extension.valueCodeableConcept",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://standards.digital.health.nz/fhir/ValueSet/additional-authorization"
+          "valueSet": "https://standards.digital.health.nz/vs/hpi-additional-authorisation"
         }
       },
       {

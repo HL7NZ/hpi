@@ -10,14 +10,24 @@
   "url": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
   "concept": [
     {
-      "code": "ta",
-      "display": "Trading As",
-      "definition": "When an organization is trading under a different name to the Organizations name"
+      "code": "aka",
+      "display": "Aka",
+      "definition": "The name by which the organisation or facility is also known as."
     },
     {
-      "code": "local",
-      "display": "Local name",
-      "definition": "When an orianization or location is known locally be a different name - like a nickname"
+      "code": "legal",
+      "display": "Legal name",
+      "definition": "The name as recorded in the official register eg Register of Companies."
+    },
+    {
+      "code": "maori",
+      "display": "Maori",
+      "definition": "The Mâori name of the organisation or facility."
+    },
+    {
+      "code": "short",
+      "display": "Short",
+      "definition": "An abbreviated name by which the organisation or facility is known."
     }
   ]
 }

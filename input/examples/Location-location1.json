@@ -15,8 +15,8 @@
             "coding": [
               {
                 "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
-                "code": "ta",
-                "display": "Trading As"
+                "code": "short",
+                "display": "Short"
               }
             ]
           }
@@ -31,8 +31,8 @@
             "coding": [
               {
                 "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
-                "code": "local",
-                "display": "Locally known name"
+                "code": "aka",
+                "display": "Aka"
               }
             ]
           }
