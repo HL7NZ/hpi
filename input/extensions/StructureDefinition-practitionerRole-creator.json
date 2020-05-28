@@ -28,6 +28,10 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension"
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "min": 1
@@ -67,6 +71,7 @@
         "path": "Extension.extension",
         "sliceName": "organization",
         "definition": "The organization where the person was working (acting on behalf of?)",
+        "min": 0,
         "max": "1"
       },
       {

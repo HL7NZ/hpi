@@ -43,6 +43,10 @@
   "differential": {
     "element": [
       {
+        "id": "PractitionerRole",
+        "path": "PractitionerRole"
+      },
+      {
         "id": "PractitionerRole.extension",
         "path": "PractitionerRole.extension",
         "slicing": {
@@ -60,6 +64,7 @@
         "id": "PractitionerRole.extension:practitionerRole-status",
         "path": "PractitionerRole.extension",
         "sliceName": "practitionerRole-status",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -74,6 +79,7 @@
         "id": "PractitionerRole.extension:practitionerRole-creator",
         "path": "PractitionerRole.extension",
         "sliceName": "practitionerRole-creator",
+        "min": 0,
         "max": "1",
         "type": [
           {

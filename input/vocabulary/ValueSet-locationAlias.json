@@ -6,11 +6,11 @@
   "title": "Location aliases",
   "description": "The set of alias types that apply to Locations",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/location-aliasType",
+  "url": "http://hl7.org.nz/fhir/ValueSet/Location-aliasType",
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
+        "system": "https://standards.digital.health.nz/cs/aliasType",
         "concept": [
           {
             "code": "aka",

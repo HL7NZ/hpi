@@ -43,9 +43,14 @@
   "differential": {
     "element": [
       {
+        "id": "Practitioner",
+        "path": "Practitioner"
+      },
+      {
         "id": "Practitioner.extension:death-date",
         "path": "Practitioner.extension",
         "sliceName": "death-date",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -61,6 +66,8 @@
         "path": "Practitioner.identifier",
         "sliceName": "dormant",
         "short": "CPN (Common Person Name) identifiers that have been deprecated for this Person",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -100,6 +107,10 @@
         "max": "0"
       },
       {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification"
+      },
+      {
         "id": "Practitioner.qualification.extension",
         "path": "Practitioner.qualification.extension",
         "slicing": {
@@ -117,6 +128,7 @@
         "id": "Practitioner.qualification.extension:registration-status",
         "path": "Practitioner.qualification.extension",
         "sliceName": "registration-status",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -131,6 +143,8 @@
         "id": "Practitioner.qualification.extension:additional-authorization",
         "path": "Practitioner.qualification.extension",
         "sliceName": "additional-authorization",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -144,6 +158,8 @@
         "id": "Practitioner.qualification.extension:scope-of-practice",
         "path": "Practitioner.qualification.extension",
         "sliceName": "scope-of-practice",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -157,6 +173,8 @@
         "id": "Practitioner.qualification.extension:condition-on-practice",
         "path": "Practitioner.qualification.extension",
         "sliceName": "condition-on-practice",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -170,6 +188,7 @@
         "id": "Practitioner.qualification.extension:registration-initial-date",
         "path": "Practitioner.qualification.extension",
         "sliceName": "registration-initial-date",
+        "min": 0,
         "max": "1",
         "type": [
           {

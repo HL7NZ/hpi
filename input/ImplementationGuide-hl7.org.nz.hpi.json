@@ -28,6 +28,7 @@
     {
       "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.org.nz.base",
       "packageId": "hl7.org.nz.base",
+      "id": "hl7_org_nz_base",
       "version": "current"
     }
   ],
@@ -187,6 +188,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/practitionerRole-statusReason"
+        },
+        "name": "PractitonerRole status reason",
+        "description": "The set of alias types that apply to Locations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/registrationStatus"
         },
         "name": "HPI Registration Status",
@@ -212,6 +221,14 @@
       {
         "reference": {
           "reference": "CodeSystem/aliasType"
+        },
+        "name": "Type of Alias",
+        "description": "Used in Organization and Location to indicate what is the type of Alias",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitionerRole-statusReason"
         },
         "name": "Type of Alias",
         "description": "Used in Organization and Location to indicate what is the type of Alias",
@@ -421,6 +438,11 @@
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

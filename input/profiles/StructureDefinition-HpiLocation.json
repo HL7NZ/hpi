@@ -28,6 +28,10 @@
   "differential": {
     "element": [
       {
+        "id": "Location",
+        "path": "Location"
+      },
+      {
         "id": "Location.extension",
         "path": "Location.extension",
         "slicing": {
@@ -45,6 +49,7 @@
         "id": "Location.extension:location-established",
         "path": "Location.extension",
         "sliceName": "location-established",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -59,6 +64,7 @@
         "id": "Location.extension:dhb",
         "path": "Location.extension",
         "sliceName": "dhb",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -75,6 +81,10 @@
         "max": "0"
       },
       {
+        "id": "Location.alias",
+        "path": "Location.alias"
+      },
+      {
         "id": "Location.alias.extension",
         "path": "Location.alias.extension",
         "slicing": {
@@ -86,12 +96,14 @@
           ],
           "ordered": false,
           "rules": "open"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Location.alias.extension:aliasType",
         "path": "Location.alias.extension",
         "sliceName": "aliasType",
+        "min": 1,
         "max": "1",
         "type": [
           {
@@ -105,9 +117,11 @@
       {
         "id": "Location.alias.extension:aliasType.valueCodeableConcept",
         "path": "Location.alias.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-aliasType"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/Location-aliasType"
         }
       },
       {

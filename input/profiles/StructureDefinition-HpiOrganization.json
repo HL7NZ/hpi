@@ -43,6 +43,10 @@
   "differential": {
     "element": [
       {
+        "id": "Organization",
+        "path": "Organization"
+      },
+      {
         "id": "Organization.extension",
         "path": "Organization.extension",
         "slicing": {
@@ -60,6 +64,7 @@
         "id": "Organization.extension:organization-period",
         "path": "Organization.extension",
         "sliceName": "organization-period",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -87,6 +92,8 @@
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -99,6 +106,10 @@
         "id": "Organization.identifier:dormant.system",
         "path": "Organization.identifier.system",
         "patternUri": "https://standards.digital.health.nz/id/hpi-org"
+      },
+      {
+        "id": "Organization.alias",
+        "path": "Organization.alias"
       },
       {
         "id": "Organization.alias.extension",
@@ -118,6 +129,7 @@
         "id": "Organization.alias.extension:aliasType",
         "path": "Organization.alias.extension",
         "sliceName": "aliasType",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -131,9 +143,11 @@
       {
         "id": "Organization.alias.extension:aliasType.valueCodeableConcept",
         "path": "Organization.alias.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type"
+          "valueSet": "http://hl7.org.nzfhir/hpi/ValueSet/Organization-aliasType"
         }
       },
       {

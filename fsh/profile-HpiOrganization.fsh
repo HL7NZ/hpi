@@ -40,4 +40,4 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
     aliasType named aliasType 0..1
 
 
-* alias.extension[aliasType].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type (preferred)
+* alias.extension[aliasType].valueCodeableConcept from http://hl7.org.nzfhir/hpi/ValueSet/Organization-aliasType (preferred)

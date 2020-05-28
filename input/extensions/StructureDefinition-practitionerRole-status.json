@@ -28,10 +28,15 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension"
+      },
+      {
         "id": "Extension.extension:active",
         "path": "Extension.extension",
         "sliceName": "active",
         "definition": "True if the role is active at the time it was returned",
+        "min": 0,
         "max": "1"
       },
       {
@@ -58,6 +63,7 @@
         "path": "Extension.extension",
         "sliceName": "reason",
         "definition": "The reason for the current status - endOfRotation, endOfContract, enteredInError",
+        "min": 0,
         "max": "1"
       },
       {
@@ -92,9 +98,11 @@
       {
         "id": "Extension.extension:reason.valueCodeableConcept",
         "path": "Extension.extension.valueCodeableConcept",
+        "min": 0,
+        "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/StructureDefinition/practitioner-role-status"
+          "valueSet": "http://hly.org.nz/fhir/PractitionerRole-statusReason"
         }
       },
       {

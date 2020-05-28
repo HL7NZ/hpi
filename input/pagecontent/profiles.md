@@ -14,9 +14,9 @@
 | --- | --- |
 | [Practitioner](StructureDefinition-HpiPractitioner.html) | The person who is delivering healthcare. Includes Doctors, Nurses, Allied Health professionals and others |
 | [Location](StructureDefinition-HpiLocation.html) | A place where healthcare is delivered. Also known as a facility.|
-| [Organization]() ||
-| [PractitionerRole]() ||
-| [Endpoint]() ||
+| [Organization](StructureDefinition-HpiOrganization.html) | A group involved in healthcare - like a PHO|
+| [PractitionerRole](StructureDefinition-HpiPractitionerRole.html) | A 'linking' resource that connects a Prractitioner to an Organization / Location in a role|
+| [Endpoint](StructureDefinition-HpiEndpoint.html) | How to contact an entity - eg email address|
 
 ### Key relationships between resources
 

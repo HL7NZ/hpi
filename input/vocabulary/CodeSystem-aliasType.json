@@ -7,7 +7,7 @@
   "title": "Type of Alias",
   "description": "Used in Organization and Location to indicate what is the type of Alias",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
+  "url": "https://standards.digital.health.nz/cs/aliasType",
   "concept": [
     {
       "code": "aka",
