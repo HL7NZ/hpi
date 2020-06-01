@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PractitionerRole_statusReason",
+  "id": "practitionerRole-statusReason",
+  "title": "PractitonerRole status reason",
+  "description": "The set of alias types that apply to Locations",
+  "version": "0.1.0",
+  "url": "http://hly.org.nz/fhir/PractitionerRole-statusReason",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/cs/PractitionerRole-statusReason"
+      }
+    ]
+  }
+}

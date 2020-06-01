@@ -1,4 +1,4 @@
-./makeTerminologySummary.js
+# ./makeTerminologySummary.js
 
 echo 
 
