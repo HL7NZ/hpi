@@ -4,9 +4,9 @@
   "name": "PractitionerRole_statusReason",
   "id": "practitionerRole-statusReason",
   "title": "PractitonerRole status reason",
-  "description": "The set of alias types that apply to Locations",
+  "description": "The reason for the current status of PractitionerRole",
   "version": "0.1.0",
-  "url": "http://hly.org.nz/fhir/PractitionerRole-statusReason",
+  "url": "http://hl7.org.nz/fhir/ValueSet/PractitionerRole-statusReason",
   "compose": {
     "include": [
       {

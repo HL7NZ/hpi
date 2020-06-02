@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "PractitionerRole_statusReason",
   "id": "practitionerRole-statusReason",
-  "title": "Type of Alias",
-  "description": "Used in Organization and Location to indicate what is the type of Alias",
+  "title": "PractitonerRole status reason",
+  "description": "The reason for the current status of PractitionerRole",
   "version": "0.1.0",
   "url": "https://standards.digital.health.nz/cs/PractitionerRole-statusReason",
   "concept": [

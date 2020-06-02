@@ -98,7 +98,11 @@
       {
         "id": "PractitionerRole.code",
         "path": "PractitionerRole.code",
-        "max": "1"
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitionerRoleCodes"
+        }
       },
       {
         "id": "PractitionerRole.specialty",

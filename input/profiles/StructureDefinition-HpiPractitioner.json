@@ -198,6 +198,14 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/registration-authority"
+        }
       }
     ]
   }

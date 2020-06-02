@@ -6,7 +6,7 @@
   "title": "Organization aliases",
   "description": "The set of alias types that apply to Organizations",
   "version": "0.1.0",
-  "url": "http://hl7.org.nzfhir/hpi/ValueSet/Organization-aliasType",
+  "url": "http://hl7.org.nz/fhir/ValueSet/Organization-aliasType",
   "compose": {
     "include": [
       {

@@ -4,7 +4,7 @@ Id: additionalAuthorization
 Title: "HPI Additional Authorisation"
 Description: "A coded type for additional authorisations"
 
-* ^url = "https://standards.digital.health.nz/vs/hpi-additional-authorisation"
+* ^url = "http://hl7.org.nz/fhir/ValueSet/hpi-additional-authorisation"
 * codes from system https://standards.digital.health.nz/cs/hpi-additional-authorisation
 
 CodeSystem: AdditionalAuthorization

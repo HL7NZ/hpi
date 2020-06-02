@@ -180,6 +180,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/LocationType"
+        },
+        "name": "Type of location",
+        "description": "Services delivered at the location",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/organizationAlias"
         },
         "name": "Organization aliases",
@@ -188,10 +196,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/practitionerRoleCodes"
+        },
+        "name": "PractitionerRoleCodes",
+        "description": "Coded roles that cam be in a PractitionerRole",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/practitionerRole-statusReason"
         },
         "name": "PractitonerRole status reason",
-        "description": "The set of alias types that apply to Locations",
+        "description": "The reason for the current status of PractitionerRole",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/RegistrationAuthority"
+        },
+        "name": "Registration Authority",
+        "description": "The coded form of the qualification - eg medical or Nursing council identifier",
         "exampleBoolean": false
       },
       {
@@ -228,10 +252,34 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/locationType"
+        },
+        "name": "Type of Location",
+        "description": "Services delivered at the location",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitionerRoleCodes"
+        },
+        "name": "PractitionerRoleCodes",
+        "description": "Coded roles that cam be in a PractitionerRole",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/practitionerRole-statusReason"
         },
-        "name": "Type of Alias",
-        "description": "Used in Organization and Location to indicate what is the type of Alias",
+        "name": "PractitonerRole status reason",
+        "description": "The reason for the current status of PractitionerRole",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/RegistrationAuthority"
+        },
+        "name": "Registration Authority",
+        "description": "The coded form of the qualification - eg medical or Nursing council identifier",
         "exampleBoolean": false
       },
       {

@@ -1,0 +1,23 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "QualificationCode",
+  "id": "qualificationCode",
+  "title": "Qualification code",
+  "description": "The coded form of the qualification - eg medical or Nursing council identifier",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/cs/qualificationCode",
+  "concept": [
+    {
+      "code": "MC",
+      "display": "MC",
+      "definition": "Medical Council Number"
+    },
+    {
+      "code": "NC",
+      "display": "NC",
+      "definition": "Nursing Council Number"
+    }
+  ]
+}

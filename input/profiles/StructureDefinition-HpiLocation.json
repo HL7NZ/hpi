@@ -130,6 +130,14 @@
         "max": "0"
       },
       {
+        "id": "Location.type",
+        "path": "Location.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/locationType"
+        }
+      },
+      {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
         "max": "0"

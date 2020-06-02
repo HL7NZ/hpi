@@ -102,7 +102,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hly.org.nz/fhir/PractitionerRole-statusReason"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/PractitionerRole-statusReason"
         }
       },
       {

@@ -27,7 +27,7 @@ Id: organizationAlias
 Title: "Organization aliases"
 Description: "The set of alias types that apply to Organizations"
 
-* ^url = "http://hl7.org.nzfhir/hpi/ValueSet/Organization-aliasType"
+* ^url = "http://hl7.org.nz/fhir/ValueSet/Organization-aliasType"
 
 * $at#aka "Aka"
 * $at#maori "Maori"

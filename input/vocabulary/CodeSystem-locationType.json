@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "LocationType",
+  "id": "locationType",
+  "title": "Type of Location",
+  "description": "Services delivered at the location",
+  "version": "0.1.0",
+  "url": "https://standards.digital.health.nz/cs/locationType",
+  "concept": [
+    {
+      "code": "gp",
+      "display": "GP",
+      "definition": "General Practice"
+    }
+  ]
+}

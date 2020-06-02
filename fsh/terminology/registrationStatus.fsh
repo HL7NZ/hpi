@@ -3,7 +3,7 @@ Id: registrationStatus
 Title: "HPI Registration Status"
 Description: "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source."
 
-* ^url = https://standards.digital.health.nz/vs/hpi-registration-status
+* ^url = http://hl7.org.nz/fhir/ValueSet/hpi-registration-status
 
 * codes from system https://standards.digital.health.nz/cs/hpi-registration-status
 

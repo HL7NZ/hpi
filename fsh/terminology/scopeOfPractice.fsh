@@ -3,7 +3,7 @@ Id: scopeOfPractice
 Title: "Scope of practice"
 Description: "A coded type for professional scope of practice."
 
-* ^url = "https://standards.digital.health.nz/vs/hpi-scope-of-practice"
+* ^url = "http://hl7.org.nz/fhir/ValueSet/hpi-scope-of-practice"
 * codes from system https://standards.digital.health.nz/cs/hpi-scope-of-practice
 
 CodeSystem: ScopeOfPractice

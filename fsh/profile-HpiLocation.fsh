@@ -24,8 +24,11 @@ Description:    "Locations used by the HPI. These are also called Facilities."
     $hpiLocation-established named location-established 0..1 and
     $dhb named dhb 0..1
 
+
 //todo - is this corrrect?
 * address only $nzAddress
+
+* type from http://hl7.org.nz/fhir/ValueSet/locationType
 
 
 * alias.extension contains 

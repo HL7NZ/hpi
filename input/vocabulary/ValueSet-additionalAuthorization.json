@@ -6,7 +6,7 @@
   "title": "HPI Additional Authorisation",
   "description": "A coded type for additional authorisations",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/vs/hpi-additional-authorisation",
+  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-additional-authorisation",
   "compose": {
     "include": [
       {
