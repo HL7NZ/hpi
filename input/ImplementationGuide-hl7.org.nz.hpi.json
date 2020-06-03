@@ -464,6 +464,11 @@
           "generation": "html"
         },
         {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "html"
+        },
+        {
           "nameUrl": "faq.html",
           "title": "Faq",
           "generation": "markdown"
@@ -486,6 +491,11 @@
         {
           "nameUrl": "profiles.html",
           "title": "Profiles",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "profilesDEP.html",
+          "title": "Profiles DEP",
           "generation": "markdown"
         },
         {

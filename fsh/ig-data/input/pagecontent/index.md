@@ -13,3 +13,28 @@ The HPI serves 2 primary purposes:
 * The source of truth for the key information about that entity. 
 
 Note that the HPI is not necessarily the actual source of information (eg Practitioners are supplied by a registration authority, healthcare workers are supplied by their employing organisation) but it is the place to go to find the information.
+
+### Description of tabs
+
+* **General notes:**  Common notes about how the API and contents are organized
+* **API:** The specific API features supported by the HPI.
+* **Profiles:** A list of the profiles that are defined by the guide. They are all descendants of NZ Base.
+* **Extensions:** A list of the extensions defined by the guide, and extensions that are defined elsewhere.
+* **Identifiers:** The Identifier systems (Register numbers) currently defined.
+* **Terminology:** The ValueSets and CodeSystems defined by the guide. 
+* **FAQ:** Frequently Asked Questions
+* **Artifact Index:** A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide. This page largely duplicates information in the Profiles and Extensions tab.
+* **Table of Contents** All pages in the guide
+* **Support** Links to the FHIR spec and downloads. Also has linke to the IG Companion (under review...)
+
+
+### Logical Models
+
+[Logical models](artifacts.html#structures-logical-models) are part of the design process, and represent the information in the profiles in an easy to understand format. For example extensions are displayed as simple elements, and there is less FHIR-specific detail such as slicing and fixed elements.
+
+It is intended as a way for people who are not familiar with FHIR to understand profile content, and does **not** represent the 'on-the-wire' format delivered through the API. They do, however, have links to terminology resources.
+
+### Security
+
+Not addressed by this guide
+

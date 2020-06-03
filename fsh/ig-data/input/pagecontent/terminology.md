@@ -22,7 +22,7 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <tr><td width='20%'>HPI Registration Status</td><td>The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.</td><td><a href='ValueSet-registrationStatus.html'>http://hl7.org.nz/fhir/ValueSet/hpi-registration-status</a></td><td><div><a href='CodeSystem-registrationStatus.html'>https://standards.digital.health.nz/cs/hpi-registration-status</a></div></td></tr>
 <tr><td width='20%'>Scope of practice</td><td>A coded type for professional scope of practice.</td><td><a href='ValueSet-scopeOfPractice.html'>http://hl7.org.nz/fhir/ValueSet/hpi-scope-of-practice</a></td><td><div><a href='CodeSystem-scopeOfPractice.html'>https://standards.digital.health.nz/cs/hpi-scope-of-practice</a></div></td></tr>
 </table>
-<br></br>
+<br/></br/>
 ### CodeSystems
 
 These are codesystems that have been defined by this guide. They define specific concepts that are included in ValueSets. It is preferabe to use an international code systm such as SNOMED, ICD or LOINC - but this is not always possible.

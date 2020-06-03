@@ -27,11 +27,13 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/api.md                                       | copied    | fsh/ig-data/input/pagecontent/api.md                                       |
 | input/pagecontent/capStmt.md                                   | copied    | fsh/ig-data/input/pagecontent/capStmt.md                                   |
 | input/pagecontent/companion.xml                                | copied    | fsh/ig-data/input/pagecontent/companion.xml                                |
+| input/pagecontent/extensions.xml                               | copied    | fsh/ig-data/input/pagecontent/extensions.xml                               |
 | input/pagecontent/faq.md                                       | copied    | fsh/ig-data/input/pagecontent/faq.md                                       |
 | input/pagecontent/general.md                                   | copied    | fsh/ig-data/input/pagecontent/general.md                                   |
 | input/pagecontent/identifiers.md                               | copied    | fsh/ig-data/input/pagecontent/identifiers.md                               |
 | input/pagecontent/index.md                                     | copied    | fsh/ig-data/input/pagecontent/index.md                                     |
 | input/pagecontent/models.md                                    | copied    | fsh/ig-data/input/pagecontent/models.md                                    |
-| input/pagecontent/profiles.md                                  | copied    | fsh/ig-data/input/pagecontent/profiles.md                                  |
+| input/pagecontent/profiles.xml                                 | copied    | fsh/ig-data/input/pagecontent/profiles.xml                                 |
+| input/pagecontent/profilesDEP.md                               | copied    | fsh/ig-data/input/pagecontent/profilesDEP.md                               |
 | input/pagecontent/terminology.md                               | copied    | fsh/ig-data/input/pagecontent/terminology.md                               |
 | package.json                                                   | copied    | fsh/package.json                                                           |
