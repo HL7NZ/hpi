@@ -43,29 +43,24 @@
             {
               "name": "name",
               "type": "string",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-name",
               "documentation": "Not case sensitive"
             },
             {
               "name": "identifier",
               "type": "token",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-identifier",
               "documentation": "Will only return active identifiers"
             },
             {
               "name": "family",
-              "type": "string",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-family"
+              "type": "string"
             },
             {
               "name": "given",
-              "type": "string",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-given"
+              "type": "string"
             },
             {
               "name": "gender",
-              "type": "token",
-              "definition": "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
+              "type": "token"
             },
             {
               "name": "birthdate",
@@ -76,6 +71,7 @@
             {
               "name": "ra-identifier",
               "type": "token",
+              "definition": "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier",
               "documentation": "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
             }
           ]

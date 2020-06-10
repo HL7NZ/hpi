@@ -48,31 +48,26 @@ Practitioner query
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam.name = "name"
 * rest.resource.searchParam.type = #string
-* rest.resource.searchParam.definition = "http://hl7.org/fhir/SearchParameter/Practitioner-name"
 * rest.resource.searchParam.documentation = "Not case sensitive"
 
 //identifier 
 * rest.resource.searchParam[1].name = "identifier"
 * rest.resource.searchParam[1].type = #token
-* rest.resource.searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-identifier"
 * rest.resource.searchParam[1].documentation = "Will only return active identifiers"
 
 //family 
 * rest.resource.searchParam[2].name = "family"
 * rest.resource.searchParam[2].type = #string
-* rest.resource.searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-family"
 //* rest.resource.searchParam[2].documentation = ""
 
 //given
 * rest.resource.searchParam[3].name = "given"
 * rest.resource.searchParam[3].type = #string
-* rest.resource.searchParam[3].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-given"
 //* rest.resource.searchParam[3].documentation = ""
 
 //gender 
 * rest.resource.searchParam[4].name = "gender"
 * rest.resource.searchParam[4].type = #token
-* rest.resource.searchParam[4].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
 //* rest.resource.searchParam[4].documentation = ""
 
 //birthdate 
@@ -84,7 +79,7 @@ Practitioner query
 //ra-identifier 
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
-//* rest.resource.searchParam[6].definition = ""
+* rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
 
 /* #endregion */

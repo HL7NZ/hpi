@@ -20,31 +20,31 @@
 <tr>
 <td>name</td>
 <td>string</td>
-<td>http://hl7.org/fhir/SearchParameter/Practitioner-name</td>
+<td></td>
 <td>Not case sensitive</td>
 </tr>
 <tr>
 <td>identifier</td>
 <td>token</td>
-<td>http://hl7.org/fhir/SearchParameter/Practitioner-identifier</td>
+<td></td>
 <td>Will only return active identifiers</td>
 </tr>
 <tr>
 <td>family</td>
 <td>string</td>
-<td>http://hl7.org/fhir/SearchParameter/Practitioner-family</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td>given</td>
 <td>string</td>
-<td>http://hl7.org/fhir/SearchParameter/Practitioner-given</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td>gender</td>
 <td>token</td>
-<td>http://hl7.org/fhir/SearchParameter/Practitioner-gender</td>
+<td></td>
 <td></td>
 </tr>
 <tr>
@@ -56,7 +56,7 @@
 <tr>
 <td>ra-identifier</td>
 <td>token</td>
-<td></td>
+<td>http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier</td>
 <td>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</td>
 </tr>
 </table>

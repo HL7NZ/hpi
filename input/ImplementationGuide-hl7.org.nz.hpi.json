@@ -316,6 +316,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/HpiPractitionerRaIdentifier"
+        },
+        "name": "Search on Registration Authority identifier",
+        "description": "Search the Registration Authority identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Practitioner/drmulti"
         },
         "name": "drmulti",
