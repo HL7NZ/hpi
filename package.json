@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "canonical": "http://hl7.org.nz/fhir/hpi",
   "url": "http://hl7.org.nz/fhir/hpi",
-  "title": "New Zealand HPI IG",
+  "title": "New Zealand HPI Implementation Guide",
   "description": "The HPI facade",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",

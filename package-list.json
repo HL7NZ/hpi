@@ -13,7 +13,7 @@
     "********************************************************************************************"
   ],
   "package-id": "hl7.org.nz.hpi",
-  "title": "New Zealand HPI IG",
+  "title": "New Zealand HPI Implementation Guide",
   "canonical": "http://hl7.org.nz/fhir/hpi",
   "introduction": "The HPI facade",
   "list": [

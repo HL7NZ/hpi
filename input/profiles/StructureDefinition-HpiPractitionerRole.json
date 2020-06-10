@@ -133,6 +133,11 @@
         "id": "PractitionerRole.availabilityExceptions",
         "path": "PractitionerRole.availabilityExceptions",
         "max": "0"
+      },
+      {
+        "id": "PractitionerRole.endpoint",
+        "path": "PractitionerRole.endpoint",
+        "max": "1"
       }
     ]
   }

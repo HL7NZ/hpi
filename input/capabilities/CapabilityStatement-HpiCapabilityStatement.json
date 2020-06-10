@@ -31,8 +31,12 @@
           "documentation": "Practitioner query\n",
           "interaction": [
             {
+              "code": "read",
+              "documentation": "Used to retrieve a Practitioner resource by Id."
+            },
+            {
               "code": "search-type",
-              "documentation": "Gender and birthDate are required in all searches"
+              "documentation": ""
             }
           ],
           "searchParam": [
@@ -66,6 +70,7 @@
             {
               "name": "birthdate",
               "type": "token",
+              "definition": "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate",
               "documentation": "This is a custom search"
             },
             {
@@ -81,6 +86,20 @@
             "http://hl7.org.nz/healthalliance/HpiPractitionerRole"
           ],
           "documentation": "PractitionerRole query\n",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Used to retrieve a PractitionerRole resource by Id."
+            },
+            {
+              "code": "update",
+              "documentation": ""
+            },
+            {
+              "code": "search-type",
+              "documentation": ""
+            }
+          ],
           "searchParam": [
             {
               "name": "practitioner",
@@ -112,6 +131,86 @@
             "practitioner",
             "organization",
             "location"
+          ]
+        },
+        {
+          "type": "Organization",
+          "supportedProfile": [
+            "http://hl7.org.nz/healthalliance/HpiOrganization"
+          ],
+          "documentation": "Organization query\n",
+          "interaction": [
+            {
+              "code": "read",
+              "documentation": "Used to retrieve an Organization resource by Id."
+            },
+            {
+              "code": "search-type",
+              "documentation": ""
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "Will only return active organizations"
+            },
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "The HPI Organization id."
+            },
+            {
+              "name": "partOf",
+              "type": "reference",
+              "documentation": "Locates Organizations that are 'part of' another. For example, [host]/Organization?partOf=cmdhb would return all Organizations\nlike hospitals that are part of the Organization with the id 'cmdhd'"
+            }
+          ]
+        },
+        {
+          "type": "Location",
+          "supportedProfile": [
+            "http://hl7.org.nz/healthalliance/HpiLocation"
+          ],
+          "documentation": "Location query\n",
+          "interaction": [
+            {
+              "code": "search-type",
+              "documentation": ""
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "Retrieve the Location with the identifier"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "Retrieve the Locations with the matching name"
+            },
+            {
+              "name": "type",
+              "type": "token",
+              "documentation": "Retrieve Locations of the given type"
+            },
+            {
+              "name": "address",
+              "type": "string",
+              "documentation": "Retrieve the Locations by address"
+            },
+            {
+              "name": "organization",
+              "type": "reference",
+              "documentation": "Locations with the given ManagingOrganization"
+            },
+            {
+              "name": "dhb",
+              "type": "token",
+              "definition": "http://hl7.fhir.org/fhir/SearchParameter/dhb",
+              "documentation": "Locations that are in a DHBs catchment area. This is a custom search"
+            }
           ]
         }
       ]

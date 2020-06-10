@@ -58,7 +58,8 @@
 <td>The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.</td>
 </tr>
 </table>
-<br/><strong>Extensions used but defined elsewhere</strong><br/><br/>
+<a name="externalExtensions"> </a>
+<h3>Extensions used but defined elsewhere</h3>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Url</th><th>Description</th><th>IG</th></tr>
 <tr>

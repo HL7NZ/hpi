@@ -26,6 +26,10 @@ This is the computable resource that describes the RESTful endpoint
 * rest.mode = #server
 
 // ============== The Practitioner endpoint
+
+/* #region Practitioner */
+
+
 * rest.resource.type = #Practitioner
 * rest.resource.supportedProfile = "http://hl7.org.nz/healthalliance/HpiPractitioner"
 * rest.resource.documentation = """
@@ -35,11 +39,11 @@ Practitioner query
 
 //read by id
 * rest.resource.interaction.code = #read
-* rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id. Note that this is ***not*** the same as the NHI identifier"
+* rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id."
 
 //search by various parameters
-* rest.resource.interaction[0].code = #search-type
-* rest.resource.interaction[0].documentation = "Gender and birthDate are required in all searches"
+* rest.resource.interaction[1].code = #search-type
+* rest.resource.interaction[1].documentation = ""
 
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam.name = "name"
@@ -74,7 +78,7 @@ Practitioner query
 //birthdate 
 * rest.resource.searchParam[5].name = "birthdate"
 * rest.resource.searchParam[5].type = #token
-//* rest.resource.searchParam[5].definition = ""
+* rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
 * rest.resource.searchParam[5].documentation = "This is a custom search"
 
 //ra-identifier 
@@ -83,15 +87,29 @@ Practitioner query
 //* rest.resource.searchParam[6].definition = ""
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
 
+/* #endregion */
 
-
-// ============== The PractitionerRole endpoint
+// ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
 * rest.resource[1].supportedProfile = "http://hl7.org.nz/healthalliance/HpiPractitionerRole"
 * rest.resource[1].documentation = """
 PractitionerRole query
 
 """
+
+//read by id
+* rest.resource[1].interaction.code = #read
+* rest.resource[1].interaction.documentation = "Used to retrieve a PractitionerRole resource by Id."
+
+* rest.resource[1].interaction[1].code = #update
+* rest.resource[1].interaction[1].documentation = ""
+
+//search by various parameters
+* rest.resource[1].interaction[2].code = #search-type
+* rest.resource[1].interaction[2].documentation = ""
+
+
+
 
 * rest.resource[1].searchParam[0].name = "practitioner"
 * rest.resource[1].searchParam[0].type = #reference
@@ -122,3 +140,79 @@ PractitionerRole query
 * rest.resource[1].searchInclude[1] = "organization"
 * rest.resource[1].searchInclude[2] = "location"
 
+
+// ============== The Organization endpoint
+* rest.resource[2].type = #Organization
+* rest.resource[2].supportedProfile = "http://hl7.org.nz/healthalliance/HpiOrganization"
+* rest.resource[2].documentation = """
+Organization query
+
+"""
+
+//read by id
+* rest.resource[2].interaction[0].code = #read
+* rest.resource[2].interaction[0].documentation = "Used to retrieve an Organization resource by Id."
+
+//search by various parameters
+* rest.resource[2].interaction[1].code = #search-type
+* rest.resource[2].interaction[1].documentation = ""
+
+* rest.resource[2].searchParam[0].name = "name"
+* rest.resource[2].searchParam[0].type = #string
+* rest.resource[2].searchParam[0].documentation = "Will only return active organizations"
+
+* rest.resource[2].searchParam[1].name = "identifier"
+* rest.resource[2].searchParam[1].type = #token
+* rest.resource[2].searchParam[1].documentation = "The HPI Organization id."
+
+* rest.resource[2].searchParam[2].name = "partOf"
+* rest.resource[2].searchParam[2].type = #reference
+* rest.resource[2].searchParam[2].documentation = """
+Locates Organizations that are 'part of' another. For example, [host]/Organization?partOf=cmdhb would return all Organizations
+like hospitals that are part of the Organization with the id 'cmdhd'
+"""
+
+
+
+//================== Location =================
+
+* rest.resource[3].type = #Location
+* rest.resource[3].supportedProfile = "http://hl7.org.nz/healthalliance/HpiLocation"
+* rest.resource[3].documentation = """
+Location query
+
+"""
+
+//read by id
+* rest.resource[3].interaction.code = #read
+* rest.resource[3].interaction.documentation = "Used to retrieve an Location resource by Id."
+
+//search by various parameters
+* rest.resource[3].interaction[0].code = #search-type
+* rest.resource[3].interaction[0].documentation = ""
+
+
+* rest.resource[3].searchParam[0].name = "identifier"
+* rest.resource[3].searchParam[0].type = #token
+* rest.resource[3].searchParam[0].documentation = "Retrieve the Location with the identifier"
+
+* rest.resource[3].searchParam[1].name = "name"
+* rest.resource[3].searchParam[1].type = #string
+* rest.resource[3].searchParam[1].documentation = "Retrieve the Locations with the matching name"
+
+* rest.resource[3].searchParam[2].name = "type"
+* rest.resource[3].searchParam[2].type = #token
+* rest.resource[3].searchParam[2].documentation = "Retrieve Locations of the given type"
+
+* rest.resource[3].searchParam[3].name = "address"
+* rest.resource[3].searchParam[3].type = #string
+* rest.resource[3].searchParam[3].documentation = "Retrieve the Locations by address"
+
+* rest.resource[3].searchParam[4].name = "organization"
+* rest.resource[3].searchParam[4].type = #reference
+* rest.resource[3].searchParam[4].documentation = "Locations with the given ManagingOrganization"
+
+* rest.resource[3].searchParam[5].name = "dhb"
+* rest.resource[3].searchParam[5].type = #token
+* rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
+* rest.resource[3].searchParam[5].documentation = "Locations that are in a DHBs catchment area. This is a custom search"

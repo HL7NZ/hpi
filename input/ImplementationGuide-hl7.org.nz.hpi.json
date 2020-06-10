@@ -3,8 +3,8 @@
   "id": "hl7.org.nz.hpi",
   "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.org.nz.hpi",
   "version": "0.1.0",
-  "name": "NewZealandHPIIG",
-  "title": "New Zealand HPI IG",
+  "name": "NewZealandHPIImplementationGuide",
+  "title": "New Zealand HPI Implementation Guide",
   "status": "active",
   "publisher": "David Hay",
   "contact": [
@@ -308,6 +308,14 @@
       },
       {
         "reference": {
+          "reference": "SearchParameter/HpiPractitionerBirthdate"
+        },
+        "name": "Search on birthdate",
+        "description": "Search the Practitioner by birthdate",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Practitioner/drmulti"
         },
         "name": "drmulti",
@@ -454,8 +462,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "capStmt.html",
-          "title": "Cap Stmt",
+          "nameUrl": "capstmt.html",
+          "title": "Capstmt",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "capStmtDEP.html",
+          "title": "Cap Stmt DEP",
           "generation": "markdown"
         },
         {
