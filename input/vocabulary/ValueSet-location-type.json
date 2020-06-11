@@ -1,0 +1,17 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LocationType",
+  "id": "location-type",
+  "title": "Type of location",
+  "description": "Type of Location",
+  "version": "0.1.0",
+  "url": "http://hl7.org.nz/fhir/ValueSet/location-type",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/cs/location-type"
+      }
+    ]
+  }
+}

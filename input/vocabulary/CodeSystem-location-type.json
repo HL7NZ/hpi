@@ -3,11 +3,11 @@
   "status": "active",
   "content": "complete",
   "name": "LocationType",
-  "id": "locationType",
+  "id": "location-type",
   "title": "Type of Location",
-  "description": "Services delivered at the location",
+  "description": "Type of Location",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/cs/locationType",
+  "url": "https://standards.digital.health.nz/cs/location-type",
   "concept": [
     {
       "code": "gp",

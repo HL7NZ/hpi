@@ -31,4 +31,4 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * code 0..1
 * endpoint 0..1
 
-* code from http://hl7.org.nz/fhir/ValueSet/practitionerRoleCodes
+* code from http://hl7.org.nz/fhir/ValueSet/practitionerrole-codes

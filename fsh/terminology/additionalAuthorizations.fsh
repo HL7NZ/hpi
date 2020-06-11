@@ -1,18 +1,18 @@
 
-ValueSet: AdditionalAuthorization
-Id: additionalAuthorization
-Title: "HPI Additional Authorisation"
+ValueSet: PractitionerAdditionalAuthorization
+Id: practitioner-additional-authorization
+Title: "Additional Authorisation for functions that a Practitioner can perform"
 Description: "A coded type for additional authorisations"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/hpi-additional-authorisation"
-* codes from system https://standards.digital.health.nz/cs/hpi-additional-authorisation
+* ^url = "http://hl7.org.nz/fhir/ValueSet/practitioner-additional-authorisation"
+* codes from system https://standards.digital.health.nz/cs/practitioner-additional-authorization
 
 CodeSystem: AdditionalAuthorization
-Id: additionalAuthorization
-Title: "HPI Additional Authorisation"
+Id: practitioner-additional-authorization
+Title: "Additional Authorisation"
 Description: "Additional authorisations that a practitioner is authorised to practice or prescribe."
 
-* ^url = "https://standards.digital.health.nz/cs/hpi-additional-authorisation" 
+* ^url = "https://standards.digital.health.nz/cs/practitioner-additional-authorization" 
 
 * #CA01 "Cardiothoracic Surgery: Cardiothoracic Surgeon"
 * #CA02 "Cardiothoracic Surgery: Transplant Surgeon"

@@ -3,11 +3,11 @@
   "status": "active",
   "content": "complete",
   "name": "AdditionalAuthorization",
-  "id": "additionalAuthorization",
-  "title": "HPI Additional Authorisation",
+  "id": "practitioner-additional-authorization",
+  "title": "Additional Authorisation",
   "description": "Additional authorisations that a practitioner is authorised to practice or prescribe.",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/cs/hpi-additional-authorisation",
+  "url": "https://standards.digital.health.nz/cs/practitioner-additional-authorization",
   "concept": [
     {
       "code": "CA01",

@@ -75,7 +75,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-scope-of-practice"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-scope-of-practice"
         }
       },
       {

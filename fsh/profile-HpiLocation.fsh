@@ -28,11 +28,11 @@ Description:    "Locations used by the HPI. These are also called Facilities."
 //todo - is this corrrect?
 * address only $nzAddress
 
-* type from http://hl7.org.nz/fhir/ValueSet/locationType
+* type from http://hl7.org.nz/fhir/ValueSet/location-type
 
 
 * alias.extension contains 
     $aliasType named aliasType 1..1
 
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
-* alias.extension[aliasType].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/Location-aliasType (preferred)
+* alias.extension[aliasType].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/location-alias-type (preferred)

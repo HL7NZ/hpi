@@ -204,7 +204,7 @@
         "path": "Practitioner.qualification.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/registration-authority"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority"
         }
       }
     ]

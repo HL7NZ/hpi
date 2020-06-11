@@ -1,17 +1,17 @@
-ValueSet: ScopeOfPractice
-Id: scopeOfPractice
+ValueSet: PrctitionerScopeOfPractice
+Id: practitioner-scope-of-practice
 Title: "Scope of practice"
 Description: "A coded type for professional scope of practice."
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/hpi-scope-of-practice"
-* codes from system https://standards.digital.health.nz/cs/hpi-scope-of-practice
+* ^url = "http://hl7.org.nz/fhir/ValueSet/practitioner-scope-of-practice"
+* codes from system https://standards.digital.health.nz/cs/practitioner-scope-of-practice
 
 CodeSystem: ScopeOfPractice
 Id: scopeOfPractice
 Title: "Scope of practice"
 Description: "A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority."
 
-* ^url = "https://standards.digital.health.nz/cs/hpi-scope-of-practice"
+* ^url = "https://standards.digital.health.nz/cs/practitioner-scope-of-practice"
 
 * #CHIR "Chiropractor"
 * #DEAA "Administering Local Anaesthetic in Dental Hygiene Practice"

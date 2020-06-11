@@ -121,7 +121,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/Location-aliasType"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-alias-type"
         }
       },
       {
@@ -134,7 +134,7 @@
         "path": "Location.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/locationType"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-type"
         }
       },
       {

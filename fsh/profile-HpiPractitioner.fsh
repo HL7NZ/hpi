@@ -53,4 +53,4 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $condition-on-practice named condition-on-practice 0..* and
     $registration-initial-date named registration-initial-date 0..1
 
-* qualification.code from http://hl7.org.nz/fhir/ValueSet/registration-authority
+* qualification.code from http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority

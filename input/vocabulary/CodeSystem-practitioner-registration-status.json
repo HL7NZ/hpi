@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "RegistrationStatus",
-  "id": "registrationStatus",
-  "title": "HPI Registration Status",
+  "name": "PractitionerRegistrationStatus",
+  "id": "practitioner-registration-status",
+  "title": "Registration Status of Practitioners",
   "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/cs/hpi-registration-status",
+  "url": "https://standards.digital.health.nz/cs/practitioner-registration-status",
   "concept": [
     {
       "code": "C",

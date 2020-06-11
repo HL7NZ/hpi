@@ -18,4 +18,4 @@ Description: "The status of the role - active,ended"
 * extension[reason].url = "reason" (exactly)
 * extension[reason] ^definition = "The reason for the current status - endOfRotation, endOfContract, enteredInError"
 * extension[reason].value[x] only CodeableConcept
-* extension[reason].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/PractitionerRole-statusReason (preferred)
+* extension[reason].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/practitionerrole-status-reason (preferred)

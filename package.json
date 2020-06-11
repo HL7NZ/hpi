@@ -7,7 +7,7 @@
   "description": "The HPI facade",
   "dependencies": {
     "hl7.fhir.r4.core": "4.0.1",
-    "hl7.org.nz.base": "current"
+    "hl7.fhir.nz.base": "current"
   },
   "language": "en",
   "author": "David Hay",

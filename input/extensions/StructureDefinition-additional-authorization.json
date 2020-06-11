@@ -75,7 +75,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-additional-authorisation"
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-additional-authorisation"
         }
       },
       {

@@ -2,12 +2,12 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "PractitionerRole_statusReason",
-  "id": "practitionerRole-statusReason",
+  "name": "PractitionerRoleStatusReason",
+  "id": "practitionerRole-status-reason",
   "title": "PractitonerRole status reason",
   "description": "The reason for the current status of PractitionerRole",
   "version": "0.1.0",
-  "url": "https://standards.digital.health.nz/cs/PractitionerRole-statusReason",
+  "url": "https://standards.digital.health.nz/cs/practitionerrole-status-reason",
   "concept": [
     {
       "code": "resigned",

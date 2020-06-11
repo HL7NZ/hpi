@@ -1,19 +1,19 @@
 
 CodeSystem:  LocationType
-Id: locationType
+Id: location-type
 Title: "Type of Location"
-Description:  "Services delivered at the location"
+Description:  "Type of Location"
 
-* ^url = "https://standards.digital.health.nz/cs/locationType"
+* ^url = "https://standards.digital.health.nz/cs/location-type"
 * #gp "GP" "General Practice"
 
 
 ValueSet : LocationType
-Id: LocationType
+Id: location-type
 Title: "Type of location"
-Description: "Services delivered at the location"
+Description: "Type of Location"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/locationType"
+* ^url = "http://hl7.org.nz/fhir/ValueSet/location-type"
 
-* codes from system https://standards.digital.health.nz/cs/locationType
+* codes from system https://standards.digital.health.nz/cs/location-type
 
