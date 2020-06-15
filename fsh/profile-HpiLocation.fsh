@@ -24,9 +24,13 @@ Description:    "Locations used by the HPI. These are also called Facilities."
     $hpiLocation-established named location-established 0..1 and
     $dhb named dhb 0..1
 
+* status from http://hl7.org.nz/fhir/ValueSet/hpi-location-status
+* identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
+* telecom.use from http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use
 
-//todo - is this corrrect?
+
 * address only $nzAddress
+* address.use from http://hl7.org.nz/fhir/ValueSet/hpi-location-address-use
 
 * type from http://hl7.org.nz/fhir/ValueSet/location-type
 

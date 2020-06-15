@@ -30,6 +30,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * extension contains 
     $death-date named death-date 0..1 
 
+* identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
+* name.use from http://hl7.org.nz/fhir/ValueSet/hpi-humanname-use
+
 //slice identifier to add none or more dormant HPI as Must Support.
 //The nzBase profile is sliced to define the current HPI, but only the PI system itself records others...
 * identifier ^slicing.discriminator.type = #value
@@ -52,5 +55,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $scope-of-practice named scope-of-practice 0..* and
     $condition-on-practice named condition-on-practice 0..* and
     $registration-initial-date named registration-initial-date 0..1
+
+* qualification.identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
 
 * qualification.code from http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority

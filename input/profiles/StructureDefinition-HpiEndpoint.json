@@ -28,10 +28,6 @@
   "differential": {
     "element": [
       {
-        "id": "Endpoint",
-        "path": "Endpoint"
-      },
-      {
         "id": "Endpoint.name",
         "path": "Endpoint.name",
         "min": 1

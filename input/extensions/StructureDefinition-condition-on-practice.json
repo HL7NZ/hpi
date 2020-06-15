@@ -28,10 +28,6 @@
   "differential": {
     "element": [
       {
-        "id": "Extension",
-        "path": "Extension"
-      },
-      {
         "id": "Extension.extension:description",
         "path": "Extension.extension",
         "sliceName": "description",

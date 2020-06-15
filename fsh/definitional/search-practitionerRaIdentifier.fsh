@@ -12,7 +12,7 @@ Usage: #definition
 * name = "HpiPractitionerBirthdate"
 
 * status = #draft
-* description = "Allows a practitioner to be searched by birth date"
+* description = "Allows a practitioner to be searched by the identifier supplied by the RA (Registration Authority)"
 * code = #birthdate
 * base = #Practitioner
-* type = #date
+* type = #token

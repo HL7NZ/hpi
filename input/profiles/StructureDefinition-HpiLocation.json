@@ -28,10 +28,6 @@
   "differential": {
     "element": [
       {
-        "id": "Location",
-        "path": "Location"
-      },
-      {
         "id": "Location.extension",
         "path": "Location.extension",
         "slicing": {
@@ -76,13 +72,29 @@
         ]
       },
       {
+        "id": "Location.identifier",
+        "path": "Location.identifier"
+      },
+      {
+        "id": "Location.identifier.system",
+        "path": "Location.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+        }
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-location-status"
+        }
+      },
+      {
         "id": "Location.operationalStatus",
         "path": "Location.operationalStatus",
         "max": "0"
-      },
-      {
-        "id": "Location.alias",
-        "path": "Location.alias"
       },
       {
         "id": "Location.alias.extension",
@@ -135,6 +147,22 @@
         "binding": {
           "strength": "required",
           "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-type"
+        }
+      },
+      {
+        "id": "Location.telecom.use",
+        "path": "Location.telecom.use",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use"
+        }
+      },
+      {
+        "id": "Location.address.use",
+        "path": "Location.address.use",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-location-address-use"
         }
       },
       {

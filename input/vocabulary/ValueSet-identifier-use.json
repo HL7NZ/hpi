@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IdentifierUse",
+  "id": "identifier-use",
+  "title": "Usage of identifier",
+  "description": "Usage of identifier",
+  "version": "0.1.0",
+  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/identifier-use",
+        "concept": [
+          {
+            "code": "official",
+            "display": "A 'live' identifier that is currently in use"
+          },
+          {
+            "code": "old",
+            "display": "An identifier that has been linked to another and considered dormant"
+          }
+        ]
+      }
+    ]
+  }
+}

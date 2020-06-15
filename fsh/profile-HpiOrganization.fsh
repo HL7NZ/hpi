@@ -19,10 +19,13 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 * address 0..0
 * contact 0..0
 
+* telecom.use from http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use
+
 //top level  extensions
 * extension contains 
     $organization-period named organization-period 0..1  
     
+* identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
 
 //slice the identifier
 * identifier ^slicing.discriminator.type = #value

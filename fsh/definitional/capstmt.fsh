@@ -72,7 +72,7 @@ Practitioner query
 
 //birthdate 
 * rest.resource.searchParam[5].name = "birthdate"
-* rest.resource.searchParam[5].type = #token
+* rest.resource.searchParam[5].type = #date
 * rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
 * rest.resource.searchParam[5].documentation = "This is a custom search"
 

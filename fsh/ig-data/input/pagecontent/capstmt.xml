@@ -49,7 +49,7 @@
 </tr>
 <tr>
 <td>birthdate</td>
-<td>token</td>
+<td>date</td>
 <td>http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate</td>
 <td>This is a custom search</td>
 </tr>

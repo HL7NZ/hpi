@@ -10,20 +10,21 @@
   "url": "https://standards.digital.health.nz/cs/practitioner-registration-status",
   "concept": [
     {
-      "code": "C",
+      "code": "current",
       "display": "Current"
     },
     {
-      "code": "I",
+      "code": "inactive",
       "display": "Inactive"
     },
     {
-      "code": "R",
+      "code": "removed",
       "display": "Removed"
     },
     {
-      "code": "S",
+      "code": "suspended",
       "display": "Suspended"
     }
-  ]
+  ],
+  "count": 4
 }

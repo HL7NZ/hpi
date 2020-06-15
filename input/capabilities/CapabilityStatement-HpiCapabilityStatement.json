@@ -64,7 +64,7 @@
             },
             {
               "name": "birthdate",
-              "type": "token",
+              "type": "date",
               "definition": "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate",
               "documentation": "This is a custom search"
             },

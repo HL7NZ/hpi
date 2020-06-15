@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "LocationStatus",
+  "id": "location-status",
+  "title": "Status of Loaction - is it still in use",
+  "description": "Status of Loaction - is it still in use",
+  "version": "0.1.0",
+  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-location-status",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/location-status",
+        "concept": [
+          {
+            "code": "active",
+            "display": "The location is operational."
+          },
+          {
+            "code": "inactive",
+            "display": "The location is no longer used."
+          }
+        ]
+      }
+    ]
+  }
+}

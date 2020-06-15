@@ -3,8 +3,8 @@
   "id": "hl7.org.nz.hpi",
   "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.org.nz.hpi",
   "version": "0.1.0",
-  "name": "NewZealandHPIImplementationGuide",
-  "title": "New Zealand HPI Implementation Guide",
+  "name": "NewZealandHPIIG",
+  "title": "New Zealand HPI IG",
   "status": "active",
   "publisher": "David Hay",
   "contact": [
@@ -164,10 +164,50 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/hpi-address-use"
+        },
+        "name": "Usage of Address",
+        "description": "Usage of Address",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hpi-contactpoint-use"
+        },
+        "name": "Usage of identifier",
+        "description": "Usage of identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hpi-humanname-use"
+        },
+        "name": "Use value for HumanName by HPI",
+        "description": "Usage of identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hpi-identifier-use"
+        },
+        "name": "Usage of identifier",
+        "description": "Usage of identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/location-alias-type"
         },
         "name": "Location alias types",
         "description": "The set of alias types that apply to Locations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/location-status"
+        },
+        "name": "Status of Loaction - is it still in use",
+        "description": "Status of Loaction - is it still in use",
         "exampleBoolean": false
       },
       {
@@ -212,7 +252,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/practitionerRole-status-reason"
+          "reference": "ValueSet/hpi-practitionerRole-status-reason"
         },
         "name": "PractitonerRole status reason",
         "description": "The reason for the current status of PractitionerRole",
@@ -284,7 +324,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/practitionerRole-status-reason"
+          "reference": "CodeSystem/hpi-practitionerRole-status-reason"
         },
         "name": "PractitonerRole status reason",
         "description": "The reason for the current status of PractitionerRole",
@@ -412,46 +452,6 @@
         },
         "name": "scen1-prac1",
         "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiEndpointLM"
-        },
-        "name": "HpiEndpointLM",
-        "description": "The enpoint resource used by the HPI",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiLocationLM"
-        },
-        "name": "HpiLocationLM",
-        "description": "The Location resource used by the HPI service",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiOrganizationLM"
-        },
-        "name": "HpiOrganizationLM",
-        "description": "The Organization resource used by the HPI application.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiPractitionerLM"
-        },
-        "name": "HpiPractitionerLM",
-        "description": "The Practitioner exposed by the HPI\n\nUse cases:\n\n* What is a person's CPN when I know the persons registration number i.e. Get using registration number\n* What is a person's CPN when the person doesn’t have a registration i.e. search by name, gender\n* What is a person's CPN when I don’t know the person’s registration number or CPN i.e. search by name, gender scope of practice\n* What are a practitioner’s details (eg practicing certificate dates) when I have a CPN. ie. Get using CPN",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiPractitionerRoleLM"
-        },
-        "name": "HpiPractitionerRoleLM",
-        "description": "HpiPractitionerRole",
-        "exampleBoolean": false
       }
     ],
     "page": {

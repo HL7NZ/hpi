@@ -43,10 +43,6 @@
   "differential": {
     "element": [
       {
-        "id": "Practitioner",
-        "path": "Practitioner"
-      },
-      {
         "id": "Practitioner.extension:death-date",
         "path": "Practitioner.extension",
         "sliceName": "death-date",
@@ -60,6 +56,18 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+        }
       },
       {
         "id": "Practitioner.identifier:dormant",
@@ -87,6 +95,14 @@
         "max": "0"
       },
       {
+        "id": "Practitioner.name.use",
+        "path": "Practitioner.name.use",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-humanname-use"
+        }
+      },
+      {
         "id": "Practitioner.telecom",
         "path": "Practitioner.telecom",
         "max": "0"
@@ -105,10 +121,6 @@
         "id": "Practitioner.photo",
         "path": "Practitioner.photo",
         "max": "0"
-      },
-      {
-        "id": "Practitioner.qualification",
-        "path": "Practitioner.qualification"
       },
       {
         "id": "Practitioner.qualification.extension",
@@ -198,6 +210,14 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Practitioner.qualification.identifier.system",
+        "path": "Practitioner.qualification.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+        }
       },
       {
         "id": "Practitioner.qualification.code",

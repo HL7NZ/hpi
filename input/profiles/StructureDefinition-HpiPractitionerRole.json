@@ -43,10 +43,6 @@
   "differential": {
     "element": [
       {
-        "id": "PractitionerRole",
-        "path": "PractitionerRole"
-      },
-      {
         "id": "PractitionerRole.extension",
         "path": "PractitionerRole.extension",
         "slicing": {
@@ -91,6 +87,14 @@
         ]
       },
       {
+        "id": "PractitionerRole.identifier.system",
+        "path": "PractitionerRole.identifier.system",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+        }
+      },
+      {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "max": "0"
@@ -118,6 +122,14 @@
         "id": "PractitionerRole.healthcareService",
         "path": "PractitionerRole.healthcareService",
         "max": "0"
+      },
+      {
+        "id": "PractitionerRole.telecom.use",
+        "path": "PractitionerRole.telecom.use",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use"
+        }
       },
       {
         "id": "PractitionerRole.availableTime",

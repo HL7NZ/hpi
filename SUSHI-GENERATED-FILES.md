@@ -11,17 +11,12 @@ lists those files generated from project configs or the contents in the ig-data 
 
 | SUSHI-GENERATED FILE                                           | ACTION    | INPUT FILE(S)                                                              |
 | -------------------------------------------------------------- | --------- | -------------------------------------------------------------------------- |
-| ig.ini                                                         | generated | fsh/ig-data/ig.ini, fsh/package.json                                       |
-| input/ImplementationGuide-hl7.org.nz.hpi.json                  | generated | fsh/ig-data/ig.ini, fsh/package.json, {all input resources and pages}      |
+| ig.ini                                                         | generated | fsh/config.yaml                                                            |
+| input/ImplementationGuide-hl7.org.nz.hpi.json                  | generated | fsh/config.yaml, {all input resources and pages}                           |
 | input/ignoreWarnings.txt                                       | generated |                                                                            |
-| package-list.json                                              | generated | fsh/package.json                                                           |
+| package-list.json                                              | generated | fsh/config.yaml                                                            |
 | input/images/resources.png                                     | copied    | fsh/ig-data/input/images/resources.png                                     |
 | input/includes/menu.xml                                        | copied    | fsh/ig-data/input/includes/menu.xml                                        |
-| input/models/StructureDefinition-HpiEndpointLM.json            | copied    | fsh/ig-data/input/models/StructureDefinition-HpiEndpointLM.json            |
-| input/models/StructureDefinition-HpiLocationLM.json            | copied    | fsh/ig-data/input/models/StructureDefinition-HpiLocationLM.json            |
-| input/models/StructureDefinition-HpiOrganizationLM.json        | copied    | fsh/ig-data/input/models/StructureDefinition-HpiOrganizationLM.json        |
-| input/models/StructureDefinition-HpiPractitionerLM.json        | copied    | fsh/ig-data/input/models/StructureDefinition-HpiPractitionerLM.json        |
-| input/models/StructureDefinition-HpiPractitionerRoleLM.json    | copied    | fsh/ig-data/input/models/StructureDefinition-HpiPractitionerRoleLM.json    |
 | input/pagecontent/StructureDefinition-HpiPractitioner-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-intro.md |
 | input/pagecontent/StructureDefinition-HpiPractitioner-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-notes.md |
 | input/pagecontent/api.md                                       | copied    | fsh/ig-data/input/pagecontent/api.md                                       |
@@ -37,4 +32,3 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/profiles.xml                                 | copied    | fsh/ig-data/input/pagecontent/profiles.xml                                 |
 | input/pagecontent/profilesDEP.md                               | copied    | fsh/ig-data/input/pagecontent/profilesDEP.md                               |
 | input/pagecontent/terminology.md                               | copied    | fsh/ig-data/input/pagecontent/terminology.md                               |
-| package.json                                                   | copied    | fsh/package.json                                                           |
