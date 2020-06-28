@@ -50,8 +50,10 @@ InstanceOf: HpiPractitioner
 
 
 //This is an active qualification
-* qualification.extension[registration-status].valueCodeableConcept.coding.code = #active
-* qualification.extension[registration-status].valueCodeableConcept.coding.system = $qualificationStatus //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationstatus"
+* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.code = #active
+* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.system = $qualificationStatus //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationstatus"
+* qualification.extension[registration-status].extension[period].valuePeriod.start = "2020-02-02"
+
 
 //there is a condition on practice
 * qualification.extension[condition-on-practice].extension[description].valueString = "Dr Example  is permitted to practise medicine in the position of House Officer in accredited clinical attachments at Southern District Health Board under the supervision of an approved prevocational educational supervisor between 01 March 2019 and 30 November 2019. The purpose of this registration is to require doctors to meet Council requirements for registration in the general scope of practice."

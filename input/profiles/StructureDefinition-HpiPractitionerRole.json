@@ -6,7 +6,7 @@
     "status": "additional"
   },
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HpiPractitionerRole",
   "title": "HPI Practitioner role",
   "status": "active",
@@ -60,6 +60,7 @@
         "id": "PractitionerRole.extension:practitionerRole-status",
         "path": "PractitionerRole.extension",
         "sliceName": "practitionerRole-status",
+        "short": "The status of this PR - eg is it still active",
         "min": 0,
         "max": "1",
         "type": [
@@ -75,6 +76,7 @@
         "id": "PractitionerRole.extension:practitionerRole-creator",
         "path": "PractitionerRole.extension",
         "sliceName": "practitionerRole-creator",
+        "short": "The person and/or organization that created the PR",
         "min": 0,
         "max": "1",
         "type": [

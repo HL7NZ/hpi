@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "HpiEndpoint",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiEndpoint",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HpiEndpoint",
   "title": "HPI Endpoint",
   "status": "active",

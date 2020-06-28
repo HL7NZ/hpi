@@ -30,6 +30,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * extension contains 
     $death-date named death-date 0..1 
 
+* extension[death-date] ^short = "The date this person died"
+
+
+
 * identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
 * name.use from http://hl7.org.nz/fhir/ValueSet/hpi-humanname-use
 
@@ -40,10 +44,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains 
     dormant 0..* MS
+    
 * identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-person"
 * identifier[dormant].use = #old
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
-
 
 //the gender is required by the HPI
 * gender 1..1
@@ -51,10 +55,16 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //many extensions on qualification
 * qualification.extension contains
     $registration-status named registration-status 0..1 and
-    $additional-authorization named additional-authorization 0..* and
+    $additional-authorization named additional-authorization 0..*   and
     $scope-of-practice named scope-of-practice 0..* and
     $condition-on-practice named condition-on-practice 0..* and
     $registration-initial-date named registration-initial-date 0..1
+
+* qualification.extension[registration-status] ^short = "Status of the registration, and the date it was set"
+* qualification.extension[additional-authorization] ^short = "Additional things the perrson is authorized to do"
+* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
+* qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
+* qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 
 * qualification.identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
 

@@ -5,7 +5,7 @@
   "id": "hpi-address-use",
   "title": "Usage of Address",
   "description": "Usage of Address",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://hl7.org.nz/fhir/ValueSet/hpi-location-address-use",
   "compose": {
     "include": [

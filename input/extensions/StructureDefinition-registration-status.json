@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "registration-status",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Registration_status",
   "status": "active",
   "description": "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.",
@@ -28,18 +28,26 @@
   "differential": {
     "element": [
       {
-        "id": "Extension.extension",
+        "id": "Extension.extension:status",
         "path": "Extension.extension",
+        "sliceName": "status",
+        "definition": "The status of this registration",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:status.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.url",
-        "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "status"
       },
       {
-        "id": "Extension.value[x]",
-        "path": "Extension.value[x]",
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
         "slicing": {
           "discriminator": [
             {
@@ -57,14 +65,51 @@
         ]
       },
       {
-        "id": "Extension.valueCodeableConcept",
-        "path": "Extension.valueCodeableConcept",
+        "id": "Extension.extension:status.valueCodeableConcept",
+        "path": "Extension.extension.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "binding": {
           "strength": "preferred",
           "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-status"
         }
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "definition": "The period over which this status is valid",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:period.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
       }
     ]
   }

@@ -5,7 +5,7 @@
   "id": "hpi-practitionerRole-status-reason",
   "title": "PractitonerRole status reason",
   "description": "The reason for the current status of PractitionerRole",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://hl7.org.nz/fhir/ValueSet/hpi-practitionerrole-status-reason",
   "compose": {
     "include": [

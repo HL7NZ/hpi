@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "HpiLocation",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HpiLocation",
   "title": "HPI Location",
   "status": "active",
@@ -28,23 +28,10 @@
   "differential": {
     "element": [
       {
-        "id": "Location.extension",
-        "path": "Location.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Location.extension:location-established",
         "path": "Location.extension",
         "sliceName": "location-established",
+        "short": "The date when this location first became available for use",
         "min": 0,
         "max": "1",
         "type": [
@@ -60,6 +47,7 @@
         "id": "Location.extension:dhb",
         "path": "Location.extension",
         "sliceName": "dhb",
+        "short": "The identifier for the DHB that is associated with this location",
         "min": 0,
         "max": "1",
         "type": [
@@ -115,6 +103,7 @@
         "id": "Location.alias.extension:aliasType",
         "path": "Location.alias.extension",
         "sliceName": "aliasType",
+        "short": "The type of alias this is - eg its Maori name",
         "min": 1,
         "max": "1",
         "type": [

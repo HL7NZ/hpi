@@ -17,6 +17,9 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * extension contains 
     $practitionerRole-status named practitionerRole-status 0..1 and 
     $practitionerRole-creator named practitionerRole-creator 0..1
+
+* extension[practitionerRole-status] ^short = "The status of this PR - eg is it still active"
+* extension[practitionerRole-creator] ^short = "The person and/or organization that created the PR"
     
 //elements that have been removed
 * active 0..0

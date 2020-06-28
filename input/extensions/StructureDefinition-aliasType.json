@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "aliasType",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "AliasType",
   "status": "active",
   "description": "Indicates the type of alias name. VS Binding is done by the profile.",

@@ -14,15 +14,26 @@
           "valueDate": "2018-11-26"
         },
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "active",
-                "system": "https://standards.digital.health.nz/cs/practitioner-qualificationstatus"
+          "extension": [
+            {
+              "url": "status",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "active",
+                    "system": "https://standards.digital.health.nz/cs/practitioner-qualificationstatus"
+                  }
+                ]
               }
-            ]
-          }
+            },
+            {
+              "url": "period",
+              "valuePeriod": {
+                "start": "2020-02-02"
+              }
+            }
+          ],
+          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
         },
         {
           "extension": [

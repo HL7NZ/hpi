@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "organization-period",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-period",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Organization_period",
   "status": "active",
   "description": "The period over which the Organization is active",

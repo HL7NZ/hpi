@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "location-established",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-established",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Location_established",
   "status": "active",
   "description": "The period over which the location is open",

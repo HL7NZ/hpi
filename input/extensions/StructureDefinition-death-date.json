@@ -2,10 +2,11 @@
   "resourceType": "StructureDefinition",
   "id": "death-date",
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/death-date",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Death_date",
   "status": "active",
   "description": "The date the person died.",
+  "purpose": "The date the person died. (def) ",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -6,7 +6,7 @@
     "status": "additional"
   },
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",
@@ -60,6 +60,7 @@
         "id": "Organization.extension:organization-period",
         "path": "Organization.extension",
         "sliceName": "organization-period",
+        "short": "The period over which this Organization has been formed",
         "min": 0,
         "max": "1",
         "type": [
@@ -129,6 +130,7 @@
         "id": "Organization.alias.extension:aliasType",
         "path": "Organization.alias.extension",
         "sliceName": "aliasType",
+        "short": "The type of alias for this Organization - eg its Maori name",
         "min": 0,
         "max": "1",
         "type": [

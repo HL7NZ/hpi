@@ -5,7 +5,7 @@
   "id": "practitioner-additional-authorization",
   "title": "Additional Authorisation for functions that a Practitioner can perform",
   "description": "A coded type for additional authorisations",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://hl7.org.nz/fhir/ValueSet/practitioner-additional-authorisation",
   "compose": {
     "include": [

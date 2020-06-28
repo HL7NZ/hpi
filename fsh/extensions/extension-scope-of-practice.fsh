@@ -7,7 +7,6 @@ Description: "The type or range of health services a practitioner is authorized 
 
 * extension contains
     code 0..1 and
-   // description 0..1 and
     period 0..1
 
 // definitions of sub-extensions

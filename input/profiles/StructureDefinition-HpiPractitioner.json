@@ -6,7 +6,7 @@
     "status": "additional"
   },
   "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "HpiPractitioner",
   "title": "HPI Practitioner",
   "status": "active",
@@ -46,6 +46,7 @@
         "id": "Practitioner.extension:death-date",
         "path": "Practitioner.extension",
         "sliceName": "death-date",
+        "short": "The date this person died",
         "min": 0,
         "max": "1",
         "type": [
@@ -140,6 +141,7 @@
         "id": "Practitioner.qualification.extension:registration-status",
         "path": "Practitioner.qualification.extension",
         "sliceName": "registration-status",
+        "short": "Status of the registration, and the date it was set",
         "min": 0,
         "max": "1",
         "type": [
@@ -155,6 +157,7 @@
         "id": "Practitioner.qualification.extension:additional-authorization",
         "path": "Practitioner.qualification.extension",
         "sliceName": "additional-authorization",
+        "short": "Additional things the perrson is authorized to do",
         "min": 0,
         "max": "*",
         "type": [
@@ -170,6 +173,7 @@
         "id": "Practitioner.qualification.extension:scope-of-practice",
         "path": "Practitioner.qualification.extension",
         "sliceName": "scope-of-practice",
+        "short": "The overall practice scope - eg Nurse Prescriber",
         "min": 0,
         "max": "*",
         "type": [
@@ -185,6 +189,7 @@
         "id": "Practitioner.qualification.extension:condition-on-practice",
         "path": "Practitioner.qualification.extension",
         "sliceName": "condition-on-practice",
+        "short": "Conditions that have been applied to the ability of the person to practice",
         "min": 0,
         "max": "*",
         "type": [
@@ -200,6 +205,7 @@
         "id": "Practitioner.qualification.extension:registration-initial-date",
         "path": "Practitioner.qualification.extension",
         "sliceName": "registration-initial-date",
+        "short": "The date that the person was originally registered",
         "min": 0,
         "max": "1",
         "type": [

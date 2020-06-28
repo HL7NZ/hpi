@@ -5,7 +5,7 @@
   "id": "location-alias-type",
   "title": "Location alias types",
   "description": "The set of alias types that apply to Locations",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "http://hl7.org.nz/fhir/ValueSet/location-alias-type",
   "compose": {
     "include": [

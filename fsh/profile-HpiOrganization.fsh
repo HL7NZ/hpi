@@ -24,6 +24,8 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 //top level  extensions
 * extension contains 
     $organization-period named organization-period 0..1  
+
+* extension[organization-period] ^short = "The period over which this Organization has been formed"
     
 * identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
 
@@ -44,3 +46,4 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 
 
 * alias.extension[aliasType].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/organization-alias-type (preferred)
+* alias.extension[aliasType] ^short = "The type of alias for this Organization - eg its Maori name"

@@ -6,7 +6,7 @@
   "id": "practitionerrole-codes",
   "title": "PractitionerRoleCodes",
   "description": "Coded roles that can be in a PractitionerRole",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "url": "https://standards.digital.health.nz/cs/practitionerrole-codes",
   "concept": [
     {
