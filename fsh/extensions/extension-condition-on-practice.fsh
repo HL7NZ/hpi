@@ -2,6 +2,7 @@ Extension: Condition_on_practice
 Id: condition-on-practice
 Description: "A full description of the conditions the health practitioner is subject to in relation to their scope of practice."
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"
 

@@ -10,7 +10,7 @@ Alias: $registration-initial-date = http://hl7.org.nz/fhir/hpi/StructureDefiniti
 Alias: $scope-of-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice
 
 Profile:        HpiPractitioner
-Parent:         NzPractitioner
+Parent:         CommonPractitioner
 Id:             HpiPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification."

@@ -2,6 +2,7 @@ Extension: PractitionerRole_status
 Id: practitionerRole-status
 Description: "The status of the role - active,ended"
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 

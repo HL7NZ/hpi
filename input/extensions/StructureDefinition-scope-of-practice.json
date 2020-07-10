@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "scope-of-practice",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice",
   "version": "0.2.0",
   "name": "Scope_of_practice",
   "status": "active",

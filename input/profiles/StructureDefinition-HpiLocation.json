@@ -23,25 +23,36 @@
   "kind": "resource",
   "abstract": false,
   "type": "Location",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzLocation",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonLocation",
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
       {
         "id": "Location.extension:location-established",
         "path": "Location.extension",
         "sliceName": "location-established",
         "short": "The date when this location first became available for use",
         "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-established"
-            ]
-          }
-        ]
+        "max": "1"
+      },
+      {
+        "id": "Location.extension:location-established.url",
+        "path": "Location.extension.url",
+        "fixedUri": "location-established"
       },
       {
         "id": "Location.extension:dhb",
@@ -49,15 +60,12 @@
         "sliceName": "dhb",
         "short": "The identifier for the DHB that is associated with this location",
         "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/dhb"
-            ]
-          }
-        ]
+        "max": "1"
+      },
+      {
+        "id": "Location.extension:dhb.url",
+        "path": "Location.extension.url",
+        "fixedUri": "dhb"
       },
       {
         "id": "Location.identifier",
@@ -100,26 +108,33 @@
         "min": 1
       },
       {
-        "id": "Location.alias.extension:aliasType",
+        "id": "Location.alias.extension:alias-type",
         "path": "Location.alias.extension",
-        "sliceName": "aliasType",
+        "sliceName": "alias-type",
         "short": "The type of alias this is - eg its Maori name",
         "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
-            ]
-          }
-        ]
+        "max": "1"
       },
       {
-        "id": "Location.alias.extension:aliasType.valueCodeableConcept",
+        "id": "Location.alias.extension:alias-type.extension",
+        "path": "Location.alias.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Location.alias.extension:alias-type.url",
+        "path": "Location.alias.extension.url",
+        "fixedUri": "alias-type"
+      },
+      {
+        "id": "Location.alias.extension:alias-type.valueCodeableConcept",
         "path": "Location.alias.extension.valueCodeableConcept",
         "min": 0,
         "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "preferred",
           "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-alias-type"
@@ -157,6 +172,11 @@
       {
         "id": "Location.physicalType",
         "path": "Location.physicalType",
+        "max": "0"
+      },
+      {
+        "id": "Location.position",
+        "path": "Location.position",
         "max": "0"
       },
       {

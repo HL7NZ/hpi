@@ -38,24 +38,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Organization",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonOrganization",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Organization.extension",
-        "path": "Organization.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
       {
         "id": "Organization.extension:organization-period",
         "path": "Organization.extension",
@@ -67,23 +53,14 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-period"
+              "http://hl7.org.nz/fhir/StructureDefinition/organization-period"
             ]
           }
         ]
       },
       {
         "id": "Organization.identifier",
-        "path": "Organization.identifier",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "use"
-            }
-          ],
-          "rules": "openAtEnd"
-        }
+        "path": "Organization.identifier"
       },
       {
         "id": "Organization.identifier.system",
@@ -127,26 +104,33 @@
         }
       },
       {
-        "id": "Organization.alias.extension:aliasType",
+        "id": "Organization.alias.extension:alias-type",
         "path": "Organization.alias.extension",
-        "sliceName": "aliasType",
+        "sliceName": "alias-type",
         "short": "The type of alias for this Organization - eg its Maori name",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Organization.alias.extension:alias-type.extension",
+        "path": "Organization.alias.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Organization.alias.extension:alias-type.url",
+        "path": "Organization.alias.extension.url",
+        "fixedUri": "alias-type"
+      },
+      {
+        "id": "Organization.alias.extension:alias-type.valueCodeableConcept",
+        "path": "Organization.alias.extension.valueCodeableConcept",
         "min": 0,
         "max": "1",
         "type": [
           {
-            "code": "Extension",
-            "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
-            ]
+            "code": "CodeableConcept"
           }
-        ]
-      },
-      {
-        "id": "Organization.alias.extension:aliasType.valueCodeableConcept",
-        "path": "Organization.alias.extension.valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        ],
         "binding": {
           "strength": "preferred",
           "valueSet": "http://hl7.org.nz/fhir/ValueSet/organization-alias-type"

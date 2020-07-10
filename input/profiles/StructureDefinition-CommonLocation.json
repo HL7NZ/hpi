@@ -1,0 +1,121 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CommonLocation",
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Location profile</div>",
+    "status": "additional"
+  },
+  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonLocation",
+  "version": "0.2.0",
+  "name": "CommonLocation",
+  "title": "NZ Location",
+  "status": "active",
+  "description": "NZ common Location profile. Adds slicing for HPI Facility code and uses nzAddress",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Location",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Location",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Location.identifier",
+        "path": "Location.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "use"
+            }
+          ],
+          "rules": "openAtEnd"
+        }
+      },
+      {
+        "id": "Location.identifier:HpifacId",
+        "path": "Location.identifier",
+        "sliceName": "HpifacId",
+        "short": "The current Facility id for this location",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:HpifacId.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "patternCode": "official"
+      },
+      {
+        "id": "Location.identifier:HpifacId.system",
+        "path": "Location.identifier.system",
+        "patternUri": "https://standards.digital.health.nz/id/hpi-facility"
+      },
+      {
+        "id": "Location.identifier:dormantHpiFacId",
+        "path": "Location.identifier",
+        "sliceName": "dormantHpiFacId",
+        "short": "Old facility id's that have been deprecated",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:dormantHpiFacId.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "patternCode": "old"
+      },
+      {
+        "id": "Location.identifier:dormantHpiFacId.system",
+        "path": "Location.identifier.system",
+        "patternUri": "https://standards.digital.health.nz/id/hpi-facility"
+      },
+      {
+        "id": "Location.identifier:MOHFacId",
+        "path": "Location.identifier",
+        "sliceName": "MOHFacId",
+        "short": "The MOH (NZHIS) Legacy facility code)",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Location.identifier:MOHFacId.use",
+        "path": "Location.identifier.use",
+        "min": 1,
+        "patternCode": "official"
+      },
+      {
+        "id": "Location.identifier:MOHFacId.system",
+        "path": "Location.identifier.system",
+        "patternUri": "https://standards.digital.health.nz/ns/moh-facility-id"
+      },
+      {
+        "id": "Location.address",
+        "path": "Location.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/CommonAddress"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

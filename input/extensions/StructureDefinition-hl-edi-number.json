@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "aliasType",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
+  "id": "hl-edi-number",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number",
   "version": "0.2.0",
-  "name": "AliasType",
+  "name": "HlEDINumber",
   "status": "active",
-  "description": "Indicates the type of alias name. VS Binding is done by the profile.",
+  "description": "Represents the HealthLink EDI number. ",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,15 @@
   "context": [
     {
       "type": "element",
-      "expression": "Location.alias"
+      "expression": "Location"
+    },
+    {
+      "type": "element",
+      "expression": "Organization"
+    },
+    {
+      "type": "element",
+      "expression": "HealthcareService"
     }
   ],
   "type": "Extension",
@@ -35,14 +43,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType"
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/hl-edi-number"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "string"
           }
         ]
       }

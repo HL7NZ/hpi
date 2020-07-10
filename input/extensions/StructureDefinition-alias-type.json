@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "registration-initial-date",
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date",
+  "id": "alias-type",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/alias-type",
   "version": "0.2.0",
-  "name": "Registration_initial_date",
+  "name": "AliasType",
   "status": "active",
-  "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
+  "description": "Indicates the type of alias name. VS Binding is done by the profile.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -19,7 +19,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "Practitioner.qualification"
+      "expression": "Location.alias"
     }
   ],
   "type": "Extension",
@@ -35,14 +35,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date"
+        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/alias-type"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "date"
+            "code": "CodeableConcept"
           }
         ]
       }

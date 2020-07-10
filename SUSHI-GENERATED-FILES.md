@@ -12,11 +12,12 @@ lists those files generated from project configs or the contents in the ig-data 
 | SUSHI-GENERATED FILE                                           | ACTION    | INPUT FILE(S)                                                              |
 | -------------------------------------------------------------- | --------- | -------------------------------------------------------------------------- |
 | ig.ini                                                         | generated | fsh/config.yaml                                                            |
-| input/ImplementationGuide-hl7.org.nz.hpi.json                  | generated | fsh/config.yaml, {all input resources and pages}                           |
+| input/ImplementationGuide-hl7.fhir.nz.hpi.json                 | generated | fsh/config.yaml, {all input resources and pages}                           |
 | input/ignoreWarnings.txt                                       | generated |                                                                            |
 | package-list.json                                              | generated | fsh/config.yaml                                                            |
 | input/images/resources.png                                     | copied    | fsh/ig-data/input/images/resources.png                                     |
 | input/includes/menu.xml                                        | copied    | fsh/ig-data/input/includes/menu.xml                                        |
+| input/pagecontent/CapabilityStatement.xml                      | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                      |
 | input/pagecontent/StructureDefinition-HpiPractitioner-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-intro.md |
 | input/pagecontent/StructureDefinition-HpiPractitioner-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-notes.md |
 | input/pagecontent/api.md                                       | copied    | fsh/ig-data/input/pagecontent/api.md                                       |

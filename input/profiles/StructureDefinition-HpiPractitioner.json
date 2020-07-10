@@ -38,7 +38,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/NzPractitioner",
+  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonPractitioner",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -53,7 +53,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/death-date"
+              "http://hl7.org.nz/fhir/StructureDefinition/death-date"
             ]
           }
         ]
@@ -148,7 +148,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
+              "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
             ]
           }
         ]
@@ -164,7 +164,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization"
+              "http://hl7.org.nz/fhir/StructureDefinition/additional-authorization"
             ]
           }
         ]
@@ -180,7 +180,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
+              "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
             ]
           }
         ]
@@ -196,7 +196,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+              "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
             ]
           }
         ]
@@ -212,7 +212,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date"
+              "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
             ]
           }
         ]

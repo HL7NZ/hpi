@@ -1,8 +1,8 @@
 Extension: AliasType
-Id: aliasType
+Id: alias-type
 Description: "Indicates the type of alias name. VS Binding is done by the profile."
 
-
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/alias-type"
 * ^context.type = #element
 * ^context.expression = "Location.alias"
 

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "practitionerRole-creator",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-creator",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator",
   "version": "0.2.0",
   "name": "PractitionerRole_creator",
   "status": "active",

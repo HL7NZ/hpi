@@ -10,7 +10,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
+          "url": "alias-type",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -26,7 +26,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType",
+          "url": "alias-type",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -51,12 +51,17 @@
     {
       "use": "official",
       "system": "https://standards.digital.health.nz/id/hpi-facility",
-      "value": "FAC-1"
+      "value": "F123456-5-1"
     },
     {
       "use": "old",
       "system": "https://standards.digital.health.nz/id/hpi-facility",
-      "value": "FAC-OLD1"
+      "value": "F123456-5-0"
+    },
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/moh-facility-id",
+      "value": "FAC-code"
     }
   ],
   "alias": [

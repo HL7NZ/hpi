@@ -1,10 +1,10 @@
 
 //Aliases for extensions
 Alias: $organization-period = http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-period
-Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
+//Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
 
 Profile:        HpiOrganization
-Parent:         Organization
+Parent:         CommonOrganization
 Id:             HpiOrganization
 Title:          "HPI Organization"
 Description:    "Organizations used by the HPI. For example DHB's, PHO's and Primary care Practices"
@@ -42,8 +42,8 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 
 //add an extension to alias
 * alias.extension contains
-    aliasType named aliasType 0..1
+    alias-type 0..1
 
 
-* alias.extension[aliasType].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/organization-alias-type (preferred)
-* alias.extension[aliasType] ^short = "The type of alias for this Organization - eg its Maori name"
+* alias.extension[alias-type].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/organization-alias-type (preferred)
+* alias.extension[alias-type] ^short = "The type of alias for this Organization - eg its Maori name"

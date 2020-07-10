@@ -2,6 +2,8 @@ Extension: Death_date
 Id: death-date
 Description: "The date the person died."
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
+
 * ^context.type = #element
 * ^context.expression = "Practitioner"
 

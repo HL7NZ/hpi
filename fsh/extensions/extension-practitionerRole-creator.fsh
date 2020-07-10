@@ -2,6 +2,7 @@ Extension: PractitionerRole_creator
 Id: practitionerRole-creator
 Description: "The organisation and person that created this role"
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 

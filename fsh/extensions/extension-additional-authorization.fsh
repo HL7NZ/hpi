@@ -2,6 +2,8 @@ Extension: Additional_authorization
 Id: additional-authorization
 Description: "Additional authorizations that a practitioner is authorized to perform"
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/additional-authorization"
+
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"
 

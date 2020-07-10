@@ -2,6 +2,8 @@ Extension: Scope_of_practice
 Id: scope-of-practice
 Description: "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body."
 
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
+
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"
 

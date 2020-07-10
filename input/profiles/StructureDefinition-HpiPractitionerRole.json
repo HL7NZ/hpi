@@ -67,7 +67,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-status"
+              "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
             ]
           }
         ]
@@ -83,7 +83,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-creator"
+              "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
             ]
           }
         ]

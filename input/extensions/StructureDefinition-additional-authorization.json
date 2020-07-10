@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "additional-authorization",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/additional-authorization",
   "version": "0.2.0",
   "name": "Additional_authorization",
   "status": "active",

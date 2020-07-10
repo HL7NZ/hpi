@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.org.nz.hpi",
-  "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.org.nz.hpi",
+  "id": "hl7.fhir.nz.hpi",
+  "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
   "version": "0.2.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI IG",
@@ -19,7 +19,7 @@
     }
   ],
   "description": "The HPI facade",
-  "packageId": "hl7.org.nz.hpi",
+  "packageId": "hl7.fhir.nz.hpi",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
