@@ -56,9 +56,9 @@
         }
       },
       {
-        "id": "Location.extension:edi-address",
+        "id": "Location.extension:hl-edi-number",
         "path": "Location.extension",
-        "sliceName": "edi-address",
+        "sliceName": "hl-edi-number",
         "short": "The healthLink EDI address associated with this Location",
         "min": 0,
         "max": "1",

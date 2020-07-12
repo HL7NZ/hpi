@@ -1,5 +1,5 @@
 
-//Alias: $ediAddress = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+Alias: $ediAddress = http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number
 
 Profile:        CommonOrganization
 Parent:         Organization
@@ -12,7 +12,7 @@ Description:    "base NZ Organization profile. Slices on identifier for HPI and 
 * ^text.status = #additional
 //root level extensions
 * extension contains
-     hl-edi-number 0..1
+    $ediAddress named hl-edi-number 0..1
 
 * extension[hl-edi-number] ^short = "The healthLink EDI address associated with this Organization"
 

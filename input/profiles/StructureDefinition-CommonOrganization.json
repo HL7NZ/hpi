@@ -71,12 +71,15 @@
         "sliceName": "hl-edi-number",
         "short": "The healthLink EDI address associated with this Organization",
         "min": 0,
-        "max": "1"
-      },
-      {
-        "id": "Organization.extension:hl-edi-number.url",
-        "path": "Organization.extension.url",
-        "fixedUri": "hl-edi-number"
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.identifier",
