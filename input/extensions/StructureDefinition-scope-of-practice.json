@@ -6,6 +6,16 @@
   "name": "Scope_of_practice",
   "status": "active",
   "description": "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -71,7 +81,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-scope-of-practice"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice"
         }
       },
       {
@@ -104,7 +114,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
       },
       {
         "id": "Extension.value[x]",

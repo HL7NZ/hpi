@@ -3,7 +3,7 @@
   "id": "scen1-pr1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
     ]
   },
   "text": {

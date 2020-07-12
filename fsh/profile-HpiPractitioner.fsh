@@ -1,19 +1,21 @@
 
 //Aliases for extensions
-Alias: $death-date = http://hl7.org.nz/fhir/hpi/StructureDefinition/death-date
-Alias: $registration-status = http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status
-Alias: $additional-authorization = http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization
+Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
+Alias: $registration-status = http://hl7.org.nz/fhir/StructureDefinition/registration-status
+Alias: $additional-authorization = http://hl7.org.nz/fhir/StructureDefinition/additional-authorization
 
-Alias: $condition-on-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice
-Alias: $registration-initial-date = http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date
+Alias: $condition-on-practice = http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice
+Alias: $registration-initial-date = http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date
 
-Alias: $scope-of-practice = http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice
+Alias: $scope-of-practice = http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice
 
 Profile:        HpiPractitioner
 Parent:         CommonPractitioner
 Id:             HpiPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification."
+
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Practitioner profile</div>"
 * ^text.status = #additional
@@ -34,8 +36,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 
 
-* identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
-* name.use from http://hl7.org.nz/fhir/ValueSet/hpi-humanname-use
+* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-humanname-use
 
 //slice identifier to add none or more dormant HPI as Must Support.
 //The nzBase profile is sliced to define the current HPI, but only the PI system itself records others...
@@ -45,8 +47,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier contains 
     dormant 0..* MS
     
-* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-person"
-* identifier[dormant].use = #old
+* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
+* identifier[dormant].use = #old (exactly)
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 
 //the gender is required by the HPI
@@ -66,6 +68,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 
-* qualification.identifier.system from http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use
+* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
 
-* qualification.code from http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority
+* qualification.code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority

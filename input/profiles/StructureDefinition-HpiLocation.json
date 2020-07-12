@@ -1,12 +1,22 @@
 {
   "resourceType": "StructureDefinition",
   "id": "HpiLocation",
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation",
   "version": "0.2.0",
   "name": "HpiLocation",
   "title": "HPI Location",
   "status": "active",
   "description": "Locations used by the HPI. These are also called Facilities.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -23,24 +33,10 @@
   "kind": "resource",
   "abstract": false,
   "type": "Location",
-  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonLocation",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonLocation",
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Location.extension",
-        "path": "Location.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
       {
         "id": "Location.extension:location-established",
         "path": "Location.extension",
@@ -68,6 +64,19 @@
         "fixedUri": "dhb"
       },
       {
+        "id": "Location.extension:hl-edi-number",
+        "path": "Location.extension",
+        "sliceName": "hl-edi-number",
+        "short": "The healthLink EDI address associated with this Organization",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Location.extension:hl-edi-number.url",
+        "path": "Location.extension.url",
+        "fixedUri": "hl-edi-number"
+      },
+      {
         "id": "Location.identifier",
         "path": "Location.identifier"
       },
@@ -76,7 +85,7 @@
         "path": "Location.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
         }
       },
       {
@@ -84,7 +93,7 @@
         "path": "Location.status",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-location-status"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status"
         }
       },
       {
@@ -137,7 +146,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-alias-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-alias-type"
         }
       },
       {
@@ -150,7 +159,7 @@
         "path": "Location.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/location-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-type"
         }
       },
       {
@@ -158,7 +167,7 @@
         "path": "Location.telecom.use",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use"
         }
       },
       {
@@ -166,7 +175,7 @@
         "path": "Location.address.use",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-location-address-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use"
         }
       },
       {

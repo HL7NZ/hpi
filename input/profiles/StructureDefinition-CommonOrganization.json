@@ -5,12 +5,22 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ base Organization profile.</div>",
     "status": "additional"
   },
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonOrganization",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/CommonOrganization",
   "version": "0.2.0",
   "name": "CommonOrganization",
   "title": "NZ Organization",
   "status": "active",
   "description": "base NZ Organization profile. Slices on identifier for HPI and uses nzAddress",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -94,12 +104,12 @@
         "id": "Organization.identifier:orgId.use",
         "path": "Organization.identifier.use",
         "min": 1,
-        "patternCode": "official"
+        "fixedCode": "official"
       },
       {
         "id": "Organization.identifier:orgId.system",
         "path": "Organization.identifier.system",
-        "patternUri": "https://standards.digital.health.nz/id/hpi-org"
+        "patternUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
       },
       {
         "id": "Organization.address",

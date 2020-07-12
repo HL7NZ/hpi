@@ -3,14 +3,14 @@
   "id": "practitionerX",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
   "qualification": [
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date",
           "valueDate": "2003-01-01"
         },
         {
@@ -20,7 +20,7 @@
               "valueString": "complete 120 hours supervised work"
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
         },
         {
           "extension": [
@@ -29,7 +29,7 @@
               "valueString": "legal and ethics interview"
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
         }
       ],
       "code": {

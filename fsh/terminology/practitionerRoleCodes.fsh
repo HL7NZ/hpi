@@ -4,7 +4,9 @@ Id: practitionerrole-codes
 Title: "PractitionerRoleCodes"
 Description:  "Coded roles that can be in a PractitionerRole"
 
-* ^url = "https://standards.digital.health.nz/cs/practitionerrole-codes"
+* ^url = "https://standards.digital.health.nz/ns/practitionerrole-codes"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * #MC "MC" "Medical Council Number"
 * #NC "NC" "Nursing Council Number"
 
@@ -13,7 +15,8 @@ Id: practitionerrole-codes
 Title: "PractitionerRoleCodes"
 Description: "Coded roles that can be in a PractitionerRole"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/practitionerrole-codes"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/practitionerrole-codes"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/cs/practitionerrole-codes
+* codes from system https://standards.digital.health.nz/ns/practitionerrole-codes
 

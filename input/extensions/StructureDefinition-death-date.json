@@ -6,6 +6,16 @@
   "name": "Death_date",
   "status": "active",
   "description": "The date the person died.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "purpose": "The date the person died. (def) ",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -36,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/death-date"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/death-date"
       },
       {
         "id": "Extension.value[x]",

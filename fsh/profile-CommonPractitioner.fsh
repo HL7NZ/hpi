@@ -7,6 +7,8 @@ Id:             CommonPractitioner
 Title:          "NZ Practitioner"
 Description:    "The New Zealand base practitioner. Slices on identifier for CPN, makes name mandatory and uses NZ address."
 
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>NZ Base Practitioner profile</div>"
 * ^text.status = #additional
 
@@ -29,6 +31,6 @@ Description:    "The New Zealand base practitioner. Slices on identifier for CPN
 * identifier contains 
     HPI 0..1 MS 
 
-* identifier[HPI].system = "http://standards.digital.health.nz/id/hpi-person"
-* identifier[HPI].use = #official
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
+* identifier[HPI].use = #official (exactly)
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"

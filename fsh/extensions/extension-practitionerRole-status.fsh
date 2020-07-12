@@ -3,6 +3,8 @@ Id: practitionerRole-status
 Description: "The status of the role - active,ended"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 
@@ -19,4 +21,4 @@ Description: "The status of the role - active,ended"
 * extension[reason].url = "reason" (exactly)
 * extension[reason] ^definition = "The reason for the current status if it is not active"
 * extension[reason].value[x] only CodeableConcept
-* extension[reason].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/hpi-practitionerrole-status-reason (preferred)
+* extension[reason].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/hpi-practitionerrole-status-reason (preferred)

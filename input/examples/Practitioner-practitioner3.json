@@ -3,7 +3,7 @@
   "id": "practitioner3",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
   "qualification": [
@@ -17,7 +17,7 @@
                 "coding": [
                   {
                     "code": "active",
-                    "system": "https://standards.digital.health.nz/cs/practitioner-qualificationstatus"
+                    "system": "https://standards.digital.health.nz/ns/practitioner-qualificationstatus"
                   }
                 ]
               }
@@ -29,26 +29,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
-        },
-        {
-          "extension": [
-            {
-              "url": "code"
-            },
-            {
-              "url": "period"
-            }
-          ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
-        },
-        {
-          "extension": [
-            {
-              "url": "code"
-            }
-          ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
         }
       ],
       "code": {
@@ -90,7 +71,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
         },
         {
           "extension": [
@@ -106,7 +87,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/additional-authorization"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/additional-authorization"
         }
       ],
       "period": {

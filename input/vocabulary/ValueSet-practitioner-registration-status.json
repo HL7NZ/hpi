@@ -6,11 +6,21 @@
   "title": "Registration Status of Practitioners",
   "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-status",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/cs/practitioner-registration-status",
+        "system": "https://standards.digital.health.nz/ns/practitioner-registration-status",
         "concept": [
           {
             "code": "current",
@@ -31,7 +41,7 @@
         ]
       },
       {
-        "system": "https://standards.digital.health.nz/cs/practitioner-registration-status"
+        "system": "https://standards.digital.health.nz/ns/practitioner-registration-status"
       }
     ]
   }

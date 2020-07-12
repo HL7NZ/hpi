@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.nz.hpi",
-  "url": "http://hl7.org.nz/fhir/hpi/ImplementationGuide/hl7.fhir.nz.hpi",
+  "url": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.hpi",
   "version": "0.2.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI IG",
@@ -26,10 +26,10 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org.nz/fhir/nhi/ImplementationGuide/hl7.fhir.nz.nhi",
       "packageId": "hl7.fhir.nz.nhi",
-      "id": "hl7_fhir_nz_nhi",
-      "version": "dev"
+      "version": "dev",
+      "uri": "http://hl7.org.nz/fhir/ImplementationGuide/hl7.fhir.nz.nhi",
+      "id": "hl7_fhir_nz_nhi"
     }
   ],
   "definition": {
@@ -56,14 +56,6 @@
         },
         "name": "NZ Practitioner",
         "description": "The New Zealand base practitioner. Slices on identifier for CPN, makes name mandatory and uses NZ address.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiEndpoint"
-        },
-        "name": "HPI Endpoint",
-        "description": "Endpoints used by the HPI.",
         "exampleBoolean": false
       },
       {
@@ -220,6 +212,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/dhb"
+        },
+        "name": "dhb",
+        "description": "dhb",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/hpi-humanname-use"
         },
         "name": "Use value for HumanName by HPI",
@@ -292,7 +292,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/hpi-practitionerRole-status-reason"
+          "reference": "ValueSet/hpi-practitionerrole-status-reason"
         },
         "name": "PractitonerRole status reason",
         "description": "The reason for the current status of PractitionerRole",
@@ -328,6 +328,14 @@
         },
         "name": "Type of Alias",
         "description": "Used in Organization and Location to indicate what is the type of Alias",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/dhb"
+        },
+        "name": "District Health Board Code",
+        "description": "District Health Board Code",
         "exampleBoolean": false
       },
       {
@@ -407,91 +415,91 @@
           "reference": "Practitioner/drmulti"
         },
         "name": "drmulti",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       },
       {
         "reference": {
           "reference": "Organization/ghc"
         },
         "name": "ghc",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {
           "reference": "Location/location1"
         },
         "name": "location1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation"
       },
       {
         "reference": {
           "reference": "Organization/organization1"
         },
         "name": "organization1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {
           "reference": "Practitioner/practitioner3"
         },
         "name": "practitioner3",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       },
       {
         "reference": {
           "reference": "Practitioner/practitionerX"
         },
         "name": "practitionerX",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       },
       {
         "reference": {
           "reference": "Practitioner/practitionerY"
         },
         "name": "practitionerY",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       },
       {
         "reference": {
           "reference": "PractitionerRole/practitionerrole1"
         },
         "name": "practitionerrole1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
       },
       {
         "reference": {
           "reference": "Organization/scen1-ghc"
         },
         "name": "scen1-ghc",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {
           "reference": "Organization/scen1-pharm1"
         },
         "name": "scen1-pharm1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {
           "reference": "PractitionerRole/scen1-pr1"
         },
         "name": "scen1-pr1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
       },
       {
         "reference": {
           "reference": "PractitionerRole/scen1-pr2"
         },
         "name": "scen1-pr2",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
       },
       {
         "reference": {
           "reference": "Practitioner/scen1-prac1"
         },
         "name": "scen1-prac1",
-        "exampleCanonical": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       }
     ],
     "page": {

@@ -6,6 +6,16 @@
   "name": "Condition_on_practice",
   "status": "active",
   "description": "A full description of the conditions the health practitioner is subject to in relation to their scope of practice.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -84,7 +94,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
       },
       {
         "id": "Extension.value[x]",

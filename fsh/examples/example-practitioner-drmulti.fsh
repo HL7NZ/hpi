@@ -1,4 +1,4 @@
-Alias: $qualificationStatus = https://standards.digital.health.nz/cs/practitioner-qualificationstatus
+Alias: $qualificationStatus = https://standards.digital.health.nz/ns/practitioner-qualificationstatus
 
 Instance:   drmulti
 InstanceOf: HpiPractitioner
@@ -9,12 +9,12 @@ InstanceOf: HpiPractitioner
 
 //the current HPI
 * identifier[0].use = #official
-* identifier[0].system = "https://standards.digital.health.nz/id/cpn"
+* identifier[0].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier[0].value = "98ZZA"
 
 //a dormant HPI
 * identifier[1].use = #old
-* identifier[1].system = "https://standards.digital.health.nz/id/cpn"
+* identifier[1].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier[1].value = "98ZZB"
 
 //the persons name
@@ -29,11 +29,11 @@ InstanceOf: HpiPractitioner
 //There's a single qualification, so no indexer ([]) is needed...
 //NZMC number
 * qualification.identifier.use = #official
-* qualification.identifier.system = "https://standards.digital.health.nz/CodeSystem/nzmc-registration-authid"
+* qualification.identifier.system = "https://standards.digital.health.nz/ns/nzmc-registration-authid"
 * qualification.identifier.value = "123456"
 
 //Is a qualified doctor
-* qualification.code.coding.system = "http://standards.digital.health.nz/CodeSystem/registration-types"
+* qualification.code.coding.system = "http://standards.digital.health.nz/ns/registration-types"
 * qualification.code.coding.code = #MD
 * qualification.code.coding.display = "Medical doctor"
 
@@ -42,7 +42,7 @@ InstanceOf: HpiPractitioner
 * qualification.period.end = "2019-11-30"
 
 //issuer. This uses the HPI identifier for the NZMC as the reference type rather than a 'real' FHIR reference
-* qualification.issuer.identifier.system = "https://standards.digital.health.nz/id/hpi-organisation"
+* qualification.issuer.identifier.system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
 * qualification.issuer.identifier.value = "nzmc"
 
 //The initial date for this registration
@@ -51,7 +51,7 @@ InstanceOf: HpiPractitioner
 
 //This is an active qualification
 * qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.code = #active
-* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.system = $qualificationStatus //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationstatus"
+* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.system = $qualificationStatus 
 * qualification.extension[registration-status].extension[period].valuePeriod.start = "2020-02-02"
 
 
@@ -62,7 +62,7 @@ InstanceOf: HpiPractitioner
 
 //Scope of practice is MCPG
 * qualification.extension[scope-of-practice].extension[code].valueCodeableConcept.coding[0].code = #MCPG
-* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept.coding[0].system = "https://standards.digital.health.nz/CodeSystem/practitioner-scopeofpractice"
+* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept.coding[0].system = "https://standards.digital.health.nz/ns/practitioner-scope-of-practice"
 * qualification.extension[scope-of-practice].extension[period].valuePeriod.start = "2018-11-26"
 
 

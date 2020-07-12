@@ -5,12 +5,22 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI PractitionerRole profile</div>",
     "status": "additional"
   },
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole",
   "version": "0.2.0",
   "name": "HpiPractitionerRole",
   "title": "HPI Practitioner role",
   "status": "active",
   "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multple organizations.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "purpose": "Describe the PractitionerRole that will be returned by the HPI",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -93,7 +103,7 @@
         "path": "PractitionerRole.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
         }
       },
       {
@@ -107,7 +117,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitionerrole-codes"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitionerrole-codes"
         }
       },
       {
@@ -130,7 +140,7 @@
         "path": "PractitionerRole.telecom.use",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use"
         }
       },
       {

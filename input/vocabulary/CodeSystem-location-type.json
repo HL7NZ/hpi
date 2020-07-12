@@ -7,7 +7,17 @@
   "title": "Type of Location",
   "description": "Type of Location",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/cs/location-type",
+  "url": "https://standards.digital.health.nz/ns/location-type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "concept": [
     {
       "code": "gp",

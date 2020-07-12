@@ -3,6 +3,8 @@ Id: practitionerRole-creator
 Description: "The organisation and person that created this role"
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 

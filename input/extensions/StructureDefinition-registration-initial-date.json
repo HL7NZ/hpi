@@ -6,6 +6,16 @@
   "name": "Registration_initial_date",
   "status": "active",
   "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
       },
       {
         "id": "Extension.value[x]",

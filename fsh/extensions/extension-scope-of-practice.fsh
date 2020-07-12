@@ -3,6 +3,7 @@ Id: scope-of-practice
 Description: "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body."
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"

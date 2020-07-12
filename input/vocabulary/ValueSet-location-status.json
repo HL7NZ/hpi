@@ -6,7 +6,17 @@
   "title": "Status of Loaction - is it still in use",
   "description": "Status of Loaction - is it still in use",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-location-status",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

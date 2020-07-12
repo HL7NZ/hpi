@@ -4,7 +4,9 @@ Id: practitioner-registration-authority
 Title: "Registration Authority"
 Description:  "The coded form of the qualification - eg medical or Nursing council identifier"
 
-* ^url = "https://standards.digital.health.nz/cs/practitioner-registration-authority"
+* ^url = "https://standards.digital.health.nz/ns/practitioner-registration-authority"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * #MC "MC" "Medical Council Number"
 * #NC "NC" "Nursing Council Number"
 
@@ -13,7 +15,8 @@ Id: practitioner-registration-authority
 Title: "Registration Authority"
 Description: "The coded form of the qualification - eg medical or Nursing council identifier"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/cs/practitioner-registration-authority
+* codes from system https://standards.digital.health.nz/ns/practitioner-registration-authority
 

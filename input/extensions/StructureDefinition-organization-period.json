@@ -6,6 +6,16 @@
   "name": "Organization_period",
   "status": "active",
   "description": "The period over which the Organization is active",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/organization-period"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/organization-period"
       },
       {
         "id": "Extension.value[x]",

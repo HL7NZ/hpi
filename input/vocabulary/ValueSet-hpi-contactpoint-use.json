@@ -6,7 +6,7 @@
   "title": "Usage of identifier",
   "description": "Usage of identifier",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-contactpoint-use",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use",
   "compose": {
     "include": [
       {

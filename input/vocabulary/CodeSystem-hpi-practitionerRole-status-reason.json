@@ -7,7 +7,17 @@
   "title": "PractitonerRole status reason",
   "description": "The reason for the current status of PractitionerRole",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/cs/hpi-practitionerrole-status-reason",
+  "url": "https://standards.digital.health.nz/ns/hpi-practitionerrole-status-reason",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "concept": [
     {
       "code": "enteredInError",

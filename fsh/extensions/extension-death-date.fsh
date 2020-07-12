@@ -3,6 +3,7 @@ Id: death-date
 Description: "The date the person died."
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
 * ^context.expression = "Practitioner"

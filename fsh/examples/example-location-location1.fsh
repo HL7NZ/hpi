@@ -8,34 +8,35 @@ InstanceOf: HpiLocation
 * name = "East End Surgery"
 * description = "Fully equipped General Practice"
 
-//the current Organization Fac id
+//the current Organization Facility id
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/id/hpi-facility"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-facility-id"
 * identifier.value = "F123456-5-1"
 
 //a dormant Fac id
 * identifier[1].use = #old
-* identifier[1].system = "https://standards.digital.health.nz/id/hpi-facility"
+* identifier[1].system = "https://standards.digital.health.nz/ns/hpi-facility-id"
 * identifier[1].value = "F123456-5-0"
 
+/* temp - only one use value of #official is being allowed
 //MOH facility code
 * identifier[2].use = #official
-* identifier[2].system = "https://standards.digital.health.nz/ns/moh-facility-id"
+* identifier[2].system = "https://standards.digital.health.nz/ns/legacy-tbd-id"
 * identifier[2].value = "FAC-code"
-
+*/
 
 //trading as 'East End Inc'
 * alias = "East End Inc."
 
 //Short name
-* alias.extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/fhir/CodeSystem/aliasType"
+* alias.extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type"
 * alias.extension[alias-type].valueCodeableConcept.coding.code = #short
 * alias.extension[alias-type].valueCodeableConcept.coding.display = "Short"
 
 
 //otherwise known as 'dr dobbs surgery'
 * alias[1] = "Dr Dobbs Surgery"
-* alias[1].extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/fhir/CodeSystem/aliasType"
+* alias[1].extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type"
 * alias[1].extension[alias-type].valueCodeableConcept.coding.code = #aka
 * alias[1].extension[alias-type].valueCodeableConcept.coding.display = "Aka"
 

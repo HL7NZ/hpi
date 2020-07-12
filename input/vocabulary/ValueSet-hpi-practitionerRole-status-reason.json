@@ -2,15 +2,25 @@
   "resourceType": "ValueSet",
   "status": "active",
   "name": "PractitionerRoleStatusReason",
-  "id": "hpi-practitionerRole-status-reason",
+  "id": "hpi-practitionerrole-status-reason",
   "title": "PractitonerRole status reason",
   "description": "The reason for the current status of PractitionerRole",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-practitionerrole-status-reason",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-practitionerrole-status-reason",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/cs/hpi-practitionerrole-status-reason"
+        "system": "https://standards.digital.health.nz/ns/hpi-practitionerrole-status-reason"
       }
     ]
   }

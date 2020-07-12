@@ -6,6 +6,16 @@
   "name": "PractitionerRole_status",
   "status": "active",
   "description": "The status of the role - active,ended",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -98,13 +108,13 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-practitionerrole-status-reason"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-practitionerrole-status-reason"
         }
       },
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-status"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
       },
       {
         "id": "Extension.value[x]",

@@ -3,21 +3,11 @@
   "id": "practitionerY",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
   "qualification": [
     {
-      "extension": [
-        {
-          "extension": [
-            {
-              "url": "description"
-            }
-          ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
-        }
-      ],
       "code": {
         "coding": [
           {
@@ -68,7 +58,7 @@
               "valueString": "registration is only under supervised training"
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
         }
       ],
       "code": {

@@ -3,6 +3,7 @@ Id: registration-status
 Description: "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body."
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"

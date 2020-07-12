@@ -11,7 +11,7 @@
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.nz.hpi
-canonical: http://hl7.org.nz/fhir/hpi
+canonical: http://hl7.org.nz/fhir
 version: 0.2.0
 name: NewZealandHPIIG
 title: New Zealand HPI IG

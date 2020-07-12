@@ -6,6 +6,16 @@
   "name": "HlEDINumber",
   "status": "active",
   "description": "Represents the HealthLink EDI number. ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -27,7 +37,7 @@
     },
     {
       "type": "element",
-      "expression": "HealthcareService"
+      "expression": "ContactPoint"
     }
   ],
   "type": "Extension",
@@ -43,7 +53,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/hl-edi-number"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number"
       },
       {
         "id": "Extension.value[x]",

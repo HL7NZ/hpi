@@ -3,14 +3,14 @@
   "id": "drmulti",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
   "qualification": [
     {
       "extension": [
         {
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-initial-date",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date",
           "valueDate": "2018-11-26"
         },
         {
@@ -21,7 +21,7 @@
                 "coding": [
                   {
                     "code": "active",
-                    "system": "https://standards.digital.health.nz/cs/practitioner-qualificationstatus"
+                    "system": "https://standards.digital.health.nz/ns/practitioner-qualificationstatus"
                   }
                 ]
               }
@@ -33,7 +33,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/registration-status"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
         },
         {
           "extension": [
@@ -49,7 +49,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/condition-on-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
         },
         {
           "extension": [
@@ -59,7 +59,7 @@
                 "coding": [
                   {
                     "code": "MCPG",
-                    "system": "https://standards.digital.health.nz/CodeSystem/practitioner-scopeofpractice"
+                    "system": "https://standards.digital.health.nz/ns/practitioner-scope-of-practice"
                   }
                 ]
               }
@@ -71,20 +71,20 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/scope-of-practice"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
         }
       ],
       "identifier": [
         {
           "use": "official",
-          "system": "https://standards.digital.health.nz/CodeSystem/nzmc-registration-authid",
+          "system": "https://standards.digital.health.nz/ns/nzmc-registration-authid",
           "value": "123456"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://standards.digital.health.nz/CodeSystem/registration-types",
+            "system": "http://standards.digital.health.nz/ns/registration-types",
             "code": "MD",
             "display": "Medical doctor"
           }
@@ -96,7 +96,7 @@
       },
       "issuer": {
         "identifier": {
-          "system": "https://standards.digital.health.nz/id/hpi-organisation",
+          "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
           "value": "nzmc"
         }
       }
@@ -109,12 +109,12 @@
   "identifier": [
     {
       "use": "official",
-      "system": "https://standards.digital.health.nz/id/cpn",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
       "value": "98ZZA"
     },
     {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/cpn",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
       "value": "98ZZB"
     }
   ],

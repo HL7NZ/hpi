@@ -5,12 +5,22 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI Practitioner profile</div>",
     "status": "additional"
   },
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitioner",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner",
   "version": "0.2.0",
   "name": "HpiPractitioner",
   "title": "HPI Practitioner",
   "status": "active",
   "description": "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "purpose": "Describe the Practitioner that will be returned by the HPI",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -38,7 +48,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonPractitioner",
+  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonPractitioner",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -67,7 +77,7 @@
         "path": "Practitioner.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
         }
       },
       {
@@ -83,12 +93,12 @@
         "id": "Practitioner.identifier:dormant.use",
         "path": "Practitioner.identifier.use",
         "min": 1,
-        "patternCode": "old"
+        "fixedCode": "old"
       },
       {
         "id": "Practitioner.identifier:dormant.system",
         "path": "Practitioner.identifier.system",
-        "patternUri": "https://standards.digital.health.nz/id/hpi-person"
+        "patternUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
       },
       {
         "id": "Practitioner.active",
@@ -100,7 +110,7 @@
         "path": "Practitioner.name.use",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-humanname-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-humanname-use"
         }
       },
       {
@@ -222,7 +232,7 @@
         "path": "Practitioner.qualification.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
         }
       },
       {
@@ -230,7 +240,7 @@
         "path": "Practitioner.qualification.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority"
         }
       }
     ]

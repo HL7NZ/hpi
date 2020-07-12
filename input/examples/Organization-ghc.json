@@ -3,7 +3,7 @@
   "id": "ghc",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiOrganization"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
     ]
   },
   "name": "Good Health Clinic"

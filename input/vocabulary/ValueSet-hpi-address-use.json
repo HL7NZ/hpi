@@ -6,7 +6,17 @@
   "title": "Usage of Address",
   "description": "Usage of Address",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/hpi-location-address-use",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

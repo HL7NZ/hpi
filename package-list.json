@@ -1,6 +1,6 @@
 {
   "package-id": "hl7.fhir.nz.hpi",
-  "canonical": "http://hl7.org.nz/fhir/hpi",
+  "canonical": "http://hl7.org.nz/fhir",
   "title": "New Zealand HPI IG",
   "introduction": "The HPI facade",
   "list": [

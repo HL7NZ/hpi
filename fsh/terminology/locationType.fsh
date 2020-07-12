@@ -4,7 +4,9 @@ Id: location-type
 Title: "Type of Location"
 Description:  "Type of Location"
 
-* ^url = "https://standards.digital.health.nz/cs/location-type"
+* ^url = "https://standards.digital.health.nz/ns/location-type"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
 * #gp "GP" "General Practice"
 
 
@@ -13,7 +15,8 @@ Id: location-type
 Title: "Type of location"
 Description: "Type of Location"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/location-type"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/location-type"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/cs/location-type
+* codes from system https://standards.digital.health.nz/ns/location-type
 

@@ -7,7 +7,7 @@ Id:             CommonOrganization
 Title:          "NZ Organization"
 Description:    "base NZ Organization profile. Slices on identifier for HPI and uses nzAddress"
 
-
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>NZ base Organization  profile. </div>"
 * ^text.status = #additional
 //root level extensions
@@ -25,8 +25,8 @@ Description:    "base NZ Organization profile. Slices on identifier for HPI and 
 * identifier contains 
     orgId 0..* MS
 
-* identifier[orgId].system = "https://standards.digital.health.nz/id/hpi-org"
-* identifier[orgId].use = #official
+* identifier[orgId].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[orgId].use = #official (exactly)
 * identifier[orgId] ^short = "The current HPI organization Id for this Organization"
 
 

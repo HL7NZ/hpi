@@ -4,15 +4,18 @@ Id: practitioner-additional-authorization
 Title: "Additional Authorisation for functions that a Practitioner can perform"
 Description: "A coded type for additional authorisations"
 
-* ^url = "http://hl7.org.nz/fhir/ValueSet/practitioner-additional-authorisation"
-* codes from system https://standards.digital.health.nz/cs/practitioner-additional-authorization
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation"
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+
+* codes from system https://standards.digital.health.nz/ns/practitioner-additional-authorization
 
 CodeSystem: AdditionalAuthorization
 Id: practitioner-additional-authorization
 Title: "Additional Authorisation"
 Description: "Additional authorisations that a practitioner is authorised to practice or prescribe."
 
-* ^url = "https://standards.digital.health.nz/cs/practitioner-additional-authorization" 
+* ^url = "https://standards.digital.health.nz/ns/practitioner-additional-authorization" 
+* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * #CA01 "Cardiothoracic Surgery: Cardiothoracic Surgeon"
 * #CA02 "Cardiothoracic Surgery: Transplant Surgeon"
@@ -41,9 +44,9 @@ Description: "Additional authorisations that a practitioner is authorised to pra
 * #ON01 "Radiation Oncology: Oncologist"
 * #ON02 "Radiation Oncology: Radiation Oncologist"
 * #PA01 "Paediatrics: Cardiologist"
-* #PA02 "Paediatrics: Endocrinologist "
+* #PA02 "Paediatrics: Endocrinologist"
 * #PA03 "Paediatrics: Gastroenterologist"
-* #PA04 "Paediatrics: Geriatrician "
+* #PA04 "Paediatrics: Geriatrician"
 * #PA05 "Paediatrics: Infectious Disease Specialist"
 * #PA06 "Paediatrics: Nephrologist"
 * #PA07 "Paediatrics: Neurologist"
@@ -51,7 +54,7 @@ Description: "Additional authorisations that a practitioner is authorised to pra
 * #PA09 "Paediatrics: Physician for the Elderly (FRACP)"
 * #PA10 "Paediatrics: Renal Physician"
 * #PA11 "Paediatrics: Respiratory Specialist"
-* #PA12 "Paediatrics: Rheumatologist "
+* #PA12 "Paediatrics: Rheumatologist"
 * #PS01 "Psychiatry: Psychiatrist"
 * #PS02 "Psychiatry: Psychological Medicine Specialist"
 * #SMEA "Smear Taker"

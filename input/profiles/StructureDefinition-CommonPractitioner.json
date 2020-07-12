@@ -5,12 +5,22 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">NZ Base Practitioner profile</div>",
     "status": "additional"
   },
-  "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/CommonPractitioner",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/CommonPractitioner",
   "version": "0.2.0",
   "name": "CommonPractitioner",
   "title": "NZ Practitioner",
   "status": "active",
   "description": "The New Zealand base practitioner. Slices on identifier for CPN, makes name mandatory and uses NZ address.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -97,12 +107,12 @@
         "id": "Practitioner.identifier:HPI.use",
         "path": "Practitioner.identifier.use",
         "min": 1,
-        "patternCode": "official"
+        "fixedCode": "official"
       },
       {
         "id": "Practitioner.identifier:HPI.system",
         "path": "Practitioner.identifier.system",
-        "patternUri": "http://standards.digital.health.nz/id/hpi-person"
+        "patternUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
       },
       {
         "id": "Practitioner.name",

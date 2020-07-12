@@ -7,7 +7,17 @@
   "title": "Additional Authorisation",
   "description": "Additional authorisations that a practitioner is authorised to practice or prescribe.",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/cs/practitioner-additional-authorization",
+  "url": "https://standards.digital.health.nz/ns/practitioner-additional-authorization",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "concept": [
     {
       "code": "CA01",
@@ -119,7 +129,7 @@
     },
     {
       "code": "PA02",
-      "display": "Paediatrics: Endocrinologist "
+      "display": "Paediatrics: Endocrinologist"
     },
     {
       "code": "PA03",
@@ -127,7 +137,7 @@
     },
     {
       "code": "PA04",
-      "display": "Paediatrics: Geriatrician "
+      "display": "Paediatrics: Geriatrician"
     },
     {
       "code": "PA05",
@@ -159,7 +169,7 @@
     },
     {
       "code": "PA12",
-      "display": "Paediatrics: Rheumatologist "
+      "display": "Paediatrics: Rheumatologist"
     },
     {
       "code": "PS01",

@@ -3,7 +3,7 @@
   "id": "practitionerrole1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiPractitionerRole"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole"
     ]
   },
   "extension": [
@@ -22,7 +22,7 @@
           }
         }
       ],
-      "url": "http://hl7.org.nz/fhir/hpi/StructureDefinition/practitionerRole-creator"
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
     }
   ],
   "text": {

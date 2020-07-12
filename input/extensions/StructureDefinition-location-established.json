@@ -6,6 +6,16 @@
   "name": "Location_established",
   "status": "active",
   "description": "The period over which the location is open",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -35,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/hpi/StructureDefinition/location-established"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/location-established"
       },
       {
         "id": "Extension.value[x]",

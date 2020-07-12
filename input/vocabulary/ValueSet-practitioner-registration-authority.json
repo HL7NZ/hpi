@@ -6,11 +6,21 @@
   "title": "Registration Authority",
   "description": "The coded form of the qualification - eg medical or Nursing council identifier",
   "version": "0.2.0",
-  "url": "http://hl7.org.nz/fhir/ValueSet/practitioner-registration-authority",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/cs/practitioner-registration-authority"
+        "system": "https://standards.digital.health.nz/ns/practitioner-registration-authority"
       }
     ]
   }

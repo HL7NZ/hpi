@@ -3,7 +3,7 @@
   "id": "location1",
   "meta": {
     "profile": [
-      "http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiLocation"
+      "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation"
     ]
   },
   "_alias": [
@@ -14,7 +14,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
+                "system": "https://standards.digital.health.nz/ns/alias-type",
                 "code": "short",
                 "display": "Short"
               }
@@ -30,7 +30,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://standards.digital.health.nz/fhir/CodeSystem/aliasType",
+                "system": "https://standards.digital.health.nz/ns/alias-type",
                 "code": "aka",
                 "display": "Aka"
               }
@@ -50,18 +50,13 @@
   "identifier": [
     {
       "use": "official",
-      "system": "https://standards.digital.health.nz/id/hpi-facility",
+      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
       "value": "F123456-5-1"
     },
     {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/hpi-facility",
+      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
       "value": "F123456-5-0"
-    },
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/moh-facility-id",
-      "value": "FAC-code"
     }
   ],
   "alias": [
