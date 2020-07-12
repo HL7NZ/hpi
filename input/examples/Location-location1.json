@@ -6,6 +6,24 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation"
     ]
   },
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "organization",
+          "valueIdentifier": {
+            "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
+            "value": "healthlinkOrgId"
+          }
+        },
+        {
+          "url": "value",
+          "valueString": "myHLEDIumber"
+        }
+      ],
+      "url": "http://hl7.org.nz/fhir/StructureDefinition/edi-number"
+    }
+  ],
   "_alias": [
     {
       "extension": [

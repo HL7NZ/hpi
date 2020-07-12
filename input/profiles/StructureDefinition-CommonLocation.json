@@ -56,17 +56,17 @@
         }
       },
       {
-        "id": "Location.extension:hl-edi-number",
+        "id": "Location.extension:edi-number",
         "path": "Location.extension",
-        "sliceName": "hl-edi-number",
-        "short": "The healthLink EDI address associated with this Location",
+        "sliceName": "edi-number",
+        "short": "The EDI number associated with this Location",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number"
+              "http://hl7.org.nz/fhir/StructureDefinition/edi-number"
             ]
           }
         ]

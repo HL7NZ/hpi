@@ -4,6 +4,10 @@ InstanceOf: HpiLocation
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>East End Surgery</div>"
 * text.status = #additional
 
+* extension[edi-number].extension[organization].valueIdentifier.system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* extension[edi-number].extension[organization].valueIdentifier.value = "healthlinkOrgId"
+* extension[edi-number].extension[value].valueString = "myHLEDIumber"
+
 * status = #active
 * name = "East End Surgery"
 * description = "Fully equipped General Practice"

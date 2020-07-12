@@ -1,4 +1,4 @@
-Alias: $ediAddress = http://hl7.org.nz/fhir/StructureDefinition/hl-edi-number
+Alias: $ediAddress = http://hl7.org.nz/fhir/StructureDefinition/edi-number
 
 Profile:        CommonLocation
 Parent:         Location
@@ -14,8 +14,8 @@ Description:    "NZ common Location profile. Adds slicing for HPI Facility code 
 
 //root level extensions
 * extension contains
-    $ediAddress named hl-edi-number 0..1
-* extension[hl-edi-number] ^short = "The healthLink EDI address associated with this Location"
+    $ediAddress named edi-number 0..1
+* extension[edi-number] ^short = "The EDI number associated with this Location"
 
 //Needs to be a different geocode as uses a different datum
 * address only CommonAddress

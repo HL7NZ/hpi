@@ -132,10 +132,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/hl-edi-number"
+          "reference": "StructureDefinition/edi-number"
         },
-        "name": "HlEDINumber",
-        "description": "Represents the HealthLink EDI number. ",
+        "name": "EDINumber",
+        "description": "An identifier used with electronic communication systems - such as HealthLink. ",
         "exampleBoolean": false
       },
       {
