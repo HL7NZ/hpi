@@ -18,6 +18,7 @@ Description: "Other values for the ContactPoint system"
 * ^context[2].expression = "ContactPoint"
 
 * value[x] only CodeableConcept
+* valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/contactpoint-other
 
 
 ValueSet: ContactPointOther
