@@ -18,7 +18,7 @@
   "identifier": [
     {
       "use": "official",
-      "system": "https://standards.digital.health.nz/id/hpi-org",
+      "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
       "value": "ORG-1"
     },
     {
@@ -46,6 +46,24 @@
     {
       "system": "phone",
       "value": "+64 9 456 7765"
+    },
+    {
+      "system": "other",
+      "extension": [
+        {
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "HLB",
+                "system": "https://standards.digital.health.nz/ns/contactpoint-other",
+                "display": "Healthlink Mailbox"
+              }
+            ]
+          }
+        }
+      ],
+      "value": "hlEDINumber"
     }
   ]
 }

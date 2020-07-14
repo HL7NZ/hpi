@@ -70,14 +70,19 @@
       },
       {
         "id": "Organization.identifier",
-        "path": "Organization.identifier"
-      },
-      {
-        "id": "Organization.identifier.system",
-        "path": "Organization.identifier.system",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            },
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "openAtEnd"
         }
       },
       {
@@ -97,6 +102,7 @@
       {
         "id": "Organization.identifier:dormant.system",
         "path": "Organization.identifier.system",
+        "min": 1,
         "patternUri": "https://standards.digital.health.nz/id/hpi-org"
       },
       {

@@ -28,11 +28,6 @@
 <td>The New Zealand base practitioner. Slices on identifier for CPN, makes name mandatory and uses NZ address.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-HpiEndpoint.html'>HpiEndpoint</a></td>
-<td>http://hl7.org.nz/fhir/hpi/StructureDefinition/HpiEndpoint</td>
-<td>Endpoints used by the HPI.</td>
-</tr>
-<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-HpiLocation.html'>HpiLocation</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/HpiLocation</td>
 <td>Locations used by the HPI. These are also called Facilities.</td>

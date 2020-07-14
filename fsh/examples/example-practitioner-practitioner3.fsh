@@ -13,17 +13,17 @@ the second the registration where they are registered as a nurse, andcan prescri
 
 //the current HPI. There are no dormant identifiers
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/id/cpn"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier.value = "prac002"
 
 //first dormant HPI
 * identifier[1].use = #old
-* identifier[1].system = "https://standards.digital.health.nz/id/cpn"
+* identifier[1].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier[1].value = "prac003"
 
 //second dormant HPI
 * identifier[2].use = #old
-* identifier[2].system = "https://standards.digital.health.nz/id/cpn"
+* identifier[2].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier[2].value = "prac001"
 
 

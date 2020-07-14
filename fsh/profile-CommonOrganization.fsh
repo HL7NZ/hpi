@@ -21,7 +21,12 @@ Description:    "base NZ Organization profile. Slices on identifier for HPI and 
 //slice the identifier for HPI Organization identifierr
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
-* identifier ^slicing.rules = #openAtEnd
+
+
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+
+* identifier ^slicing.rules = #open
 * identifier contains 
     orgId 0..* MS
 

@@ -116,6 +116,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/contactpoint-other"
+        },
+        "name": "ContactPointOther",
+        "description": "Other values for the ContactPoint system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/death-date"
         },
         "name": "Death_date",
@@ -200,6 +208,14 @@
         },
         "name": "Usage of Address",
         "description": "Usage of Address",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/contactpoint-other"
+        },
+        "name": "Other values for the ContactPoint system",
+        "description": "Other values for the ContactPoint system",
         "exampleBoolean": false
       },
       {
@@ -332,6 +348,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/contactpoint-other"
+        },
+        "name": "Other values for the ContactPoint system",
+        "description": "Other values for the ContactPoint system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/dhb"
         },
         "name": "District Health Board Code",
@@ -416,13 +440,6 @@
         },
         "name": "drmulti",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "Organization/ghc"
-        },
-        "name": "ghc",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {

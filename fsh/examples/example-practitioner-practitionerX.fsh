@@ -11,7 +11,7 @@ That practicing registration has the requirement that they complete 120 hours su
 
 //the current HPI. There are no dormant identifiers
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/id/cpn"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier.value = "prac-X"
 
 //the persons name

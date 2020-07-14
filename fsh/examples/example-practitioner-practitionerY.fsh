@@ -12,7 +12,7 @@ A scope saying that registration is only under supervised training
 
 //the current HPI. There are no dormant identifiers
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/id/cpn"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * identifier.value = "prac-Y"
 
 //the persons name

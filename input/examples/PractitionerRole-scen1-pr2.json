@@ -7,11 +7,11 @@
     ]
   },
   "text": {
-    "div": "<div>Dr Kildaire as pharmacist</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr Kildaire as pharmacist</div>",
     "status": "additional"
   },
   "organization": {
-    "reference": "Organization/ghc"
+    "reference": "ghc"
   },
   "practitioner": {
     "reference": "Practitioner/scen1-prac1"

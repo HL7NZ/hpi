@@ -7,7 +7,7 @@
     ]
   },
   "text": {
-    "div": "<div>Dr Kildaire as doctor</div>",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr Kildaire as doctor</div>",
     "status": "additional"
   },
   "identifier": [
@@ -17,7 +17,7 @@
     }
   ],
   "organization": {
-    "reference": "Organization/ghc"
+    "reference": "ghc"
   },
   "practitioner": {
     "reference": "Practitioner/scen1-prac1"

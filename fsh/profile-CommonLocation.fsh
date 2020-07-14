@@ -21,14 +21,18 @@ Description:    "NZ common Location profile. Adds slicing for HPI Facility code 
 * address only CommonAddress
 
 //slice the identifier
-* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
-* identifier ^slicing.rules = #openAtEnd
+
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+
+* identifier ^slicing.rules = #open
 
 * identifier contains 
     HpifacId 0..1 MS and
-    dormantHpiFacId 0..* MS 
-    //MOHFacId 0..1 MS
+    dormantHpiFacId 0..* MS and
+    MOHFacId 0..1 MS
 
 * identifier[HpifacId].system = "https://standards.digital.health.nz/ns/hpi-facility-id"
 * identifier[HpifacId].use = #official (exactly)
@@ -38,12 +42,11 @@ Description:    "NZ common Location profile. Adds slicing for HPI Facility code 
 * identifier[dormantHpiFacId].use = #old (exactly)
 * identifier[dormantHpiFacId] ^short = "Old facility id's that have been deprecated"
 
-/*
-todo - can;'t just slice on use - needs to be system + use'
+
 * identifier[MOHFacId].system = "https://standards.digital.health.nz/ns/legacy-tbd-id"
 * identifier[MOHFacId].use = #official (exactly)
 * identifier[MOHFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
-*/
+
 
 
 /* todo 

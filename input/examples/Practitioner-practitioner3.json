@@ -111,17 +111,17 @@
   "identifier": [
     {
       "use": "official",
-      "system": "https://standards.digital.health.nz/id/cpn",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
       "value": "prac002"
     },
     {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/cpn",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
       "value": "prac003"
     },
     {
       "use": "old",
-      "system": "https://standards.digital.health.nz/id/cpn",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
       "value": "prac001"
     }
   ],

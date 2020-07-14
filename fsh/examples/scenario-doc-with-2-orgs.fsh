@@ -18,7 +18,7 @@ InstanceOf: HpiPractitioner
 
 Instance:   scen1-pr1
 InstanceOf: HpiPractitionerRole
-* text.div = "<div>Dr Kildaire as doctor</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr Kildaire as doctor</div>"
 * text.status = #additional
 
 * identifier[0].value = "sr"
@@ -32,10 +32,11 @@ InstanceOf: HpiPractitionerRole
 
 Instance:   scen1-pr2
 InstanceOf: HpiPractitionerRole
-* text.div = "<div>Dr Kildaire as pharmacist</div>"
+* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Dr Kildaire as pharmacist</div>"
 * text.status = #additional
 
 * organization = Reference(ghc)
 * practitioner = Reference(scen1-prac1)
+
 * code.coding.system = "http://hl7.org/fhir/practitioner-role"
 * code.coding.code = #pharmacist

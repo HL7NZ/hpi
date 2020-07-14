@@ -28,7 +28,7 @@
     {
       "extension": [
         {
-          "url": "alias-type",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/alias-type",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -44,7 +44,7 @@
     {
       "extension": [
         {
-          "url": "alias-type",
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/alias-type",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -75,6 +75,11 @@
       "use": "old",
       "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
       "value": "F123456-5-0"
+    },
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/legacy-tbd-id",
+      "value": "FAC-code"
     }
   ],
   "alias": [

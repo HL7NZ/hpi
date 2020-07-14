@@ -89,9 +89,13 @@
             {
               "type": "value",
               "path": "use"
+            },
+            {
+              "type": "value",
+              "path": "system"
             }
           ],
-          "rules": "openAtEnd"
+          "rules": "open"
         }
       },
       {
@@ -112,6 +116,7 @@
       {
         "id": "Organization.identifier:orgId.system",
         "path": "Organization.identifier.system",
+        "min": 1,
         "patternUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
       },
       {

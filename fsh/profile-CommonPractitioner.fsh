@@ -26,8 +26,12 @@ Description:    "The New Zealand base practitioner. Slices on identifier for CPN
 //slice identifier to add the HPI as Must Support
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
+
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+
 * identifier ^slicing.description = "The identifiers"
-* identifier ^slicing.rules = #openAtEnd
+* identifier ^slicing.rules = #open
 * identifier contains 
     HPI 0..1 MS 
 

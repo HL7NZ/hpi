@@ -27,7 +27,7 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 
 * extension[organization-period] ^short = "The period over which this Organization has been formed"
     
-* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+//* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
 
 //slice the identifier
 * identifier ^slicing.discriminator.type = #value
