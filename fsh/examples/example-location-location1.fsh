@@ -4,9 +4,7 @@ InstanceOf: HpiLocation
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>East End Surgery</div>"
 * text.status = #additional
 
-* extension[edi-number].extension[organization].valueIdentifier.system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
-* extension[edi-number].extension[organization].valueIdentifier.value = "healthlinkOrgId"
-* extension[edi-number].extension[value].valueString = "myHLEDIumber"
+
 
 * status = #active
 * name = "East End Surgery"
@@ -56,3 +54,38 @@ InstanceOf: HpiLocation
 
 //'responsible' organization
 * managingOrganization = Reference(organization1)
+* endpoint = Reference(ep1)
+
+
+Instance:   ep1
+InstanceOf: HpiEndpoint
+
+* status = #active
+* identifier.system = "https://standards.digital.health.nz/ns/endpoint-healthlink"
+* identifier.value = "MyMailBox"
+* connectionType.system = "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+* connectionType.code = #secure-email
+* payloadType = https://standards.digital.health.nz/ns/endpoint-payload-type#v2 "HL7 V2 message"
+* address = "healthlink.com"
+
+/*
+Instance:   bundle2
+InstanceOf: Bundle
+//BaseType: Bundle
+Description: "Sample query response"
+Usage: #example
+
+* type = #searchset        //will actuallyy 
+* entry[0].resource = patient2
+* entry[0].fullUrl = "http://clinfhir.com/Patient/patient2"
+
+* entry[1].resource = gp-pracrole1
+* entry[1].fullUrl = "http://clinfhir.com/PractitionerRole/gp-pracrole1"
+
+* entry[2].resource = ghc
+* entry[2].fullUrl = "http://clinfhir.com/Location/ghc"
+
+* entry[3].resource = drwelby
+* entry[3].fullUrl = "http://clinfhir.com/Practitioner/drwelby"
+
+*/

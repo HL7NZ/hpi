@@ -60,6 +60,13 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/HpiEndpoint"
+        },
+        "name": "Represents endpoints used for EDI exchanges",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/HpiLocation"
         },
         "name": "HPI Location",
@@ -116,14 +123,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/contactpoint-other"
-        },
-        "name": "ContactPointOther",
-        "description": "Other values for the ContactPoint system",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/death-date"
         },
         "name": "Death_date",
@@ -136,14 +135,6 @@
         },
         "name": "Dhb",
         "description": "The District Health Board the patient resides in. It is derived from the patient's primary residential address (not updated directly).",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/edi-number"
-        },
-        "name": "EDINumber",
-        "description": "An identifier used with electronic communication systems - such as HealthLink. ",
         "exampleBoolean": false
       },
       {
@@ -212,18 +203,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/contactpoint-other"
-        },
-        "name": "Other values for the ContactPoint system",
-        "description": "Other values for the ContactPoint system",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/hpi-contactpoint-use"
         },
-        "name": "Usage of identifier",
-        "description": "Usage of identifier",
+        "name": "Use values for ContactPoint",
+        "description": "Use values for ContactPoint",
         "exampleBoolean": false
       },
       {
@@ -236,10 +219,18 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/endpoint-payload-type"
+        },
+        "name": "Type of Payload in an Endpoint",
+        "description": "Type of Payload in an Endpoint",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/hpi-humanname-use"
         },
-        "name": "Use value for HumanName by HPI",
-        "description": "Usage of identifier",
+        "name": "Use value for HumanName",
+        "description": "Use value for HumanName",
         "exampleBoolean": false
       },
       {
@@ -348,18 +339,18 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/contactpoint-other"
-        },
-        "name": "Other values for the ContactPoint system",
-        "description": "Other values for the ContactPoint system",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/dhb"
         },
         "name": "District Health Board Code",
         "description": "District Health Board Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/endpoint-payload-type"
+        },
+        "name": "Type of Payload in an Endpoint",
+        "description": "Type of Payload in an Endpoint",
         "exampleBoolean": false
       },
       {
@@ -440,6 +431,20 @@
         },
         "name": "drmulti",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Endpoint/ep1"
+        },
+        "name": "ep1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiEndpoint"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/healthLink"
+        },
+        "name": "healthLink",
+        "exampleBoolean": false
       },
       {
         "reference": {

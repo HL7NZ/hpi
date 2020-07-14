@@ -38,6 +38,20 @@
   "differential": {
     "element": [
       {
+        "id": "Location.extension",
+        "path": "Location.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "Location.extension:location-established",
         "path": "Location.extension",
         "sliceName": "location-established",
@@ -165,6 +179,18 @@
         "id": "Location.availabilityExceptions",
         "path": "Location.availabilityExceptions",
         "max": "0"
+      },
+      {
+        "id": "Location.endpoint",
+        "path": "Location.endpoint",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiEndpoint"
+            ]
+          }
+        ]
       }
     ]
   }

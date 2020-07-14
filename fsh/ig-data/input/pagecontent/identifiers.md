@@ -9,7 +9,7 @@
 | Pharmacy Council of New Zealand Register Number  | https://standards.digital.health.nz/ns/pharmacy-council-id |
 | Midwifery Council Register Number | https://standards.digital.health.nz/ns/midwifery-council-id |
 | New Zealand Business Number | https://standards.digital.health.nz/ns/hpi-nzbn |
-| Chiropractic Board Register number. | https://standards.digital.health.nz/ns/Chiropractic-Board-id |
+| Chiropractic Board Register number. | https://standards.digital.health.nz/ns/chiropractic-board-id |
 | Dental Council Register Number . | https://standards.digital.health.nz/ns/dental-council-id |
 | Dietitians Board Register Number . | https://standards.digital.health.nz/ns/dietitians-board-id |
 | Medical Laboratory Science Board Register Number . | https://standards.digital.health.nz/ns/medical-laboratory-science-board-id |

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EndpointPayloadType",
+  "id": "endpoint-payload-type",
+  "title": "Type of Payload in an Endpoint",
+  "description": "Type of Payload in an Endpoint",
+  "version": "0.2.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "NZ",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/endpoint-payload-type"
+      }
+    ]
+  }
+}

@@ -11,12 +11,13 @@ Description:    "NZ common Location profile. Adds slicing for HPI Facility code 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>NZ Location profile</div>"
 * ^text.status = #additional
 
-
+/*
 //root level extensions
 * extension contains
     $ediAddress named edi-number 0..1
 * extension[edi-number] ^short = "The EDI number associated with this Location"
 
+*/
 //Needs to be a different geocode as uses a different datum
 * address only CommonAddress
 
