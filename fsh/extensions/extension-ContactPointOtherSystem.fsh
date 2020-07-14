@@ -39,8 +39,8 @@ Description: "Other values for the ContactPoint system"
 * ^url = https://standards.digital.health.nz/ns/contactpoint-other
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* #HLB "Healthlink Mailbox"
-* #HLX "Healthlink Sex"
+* #HLB "Healthlink Mailbox" "The standard healthpoint mailbox using file share"
+* #HLX "Healthlink Six" "Some other healthlink thing"
 
 
 

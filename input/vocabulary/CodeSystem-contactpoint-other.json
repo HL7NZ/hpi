@@ -21,11 +21,13 @@
   "concept": [
     {
       "code": "HLB",
-      "display": "Healthlink Mailbox"
+      "display": "Healthlink Mailbox",
+      "definition": "The standard healthpoint mailbox using file share"
     },
     {
       "code": "HLX",
-      "display": "Healthlink Sex"
+      "display": "Healthlink Six",
+      "definition": "Some other healthlink thing"
     }
   ],
   "count": 2
