@@ -103,7 +103,7 @@
         "path": "PractitionerRole.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
         }
       },
       {
@@ -117,7 +117,7 @@
         "max": "1",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitionerrole-codes"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code"
         }
       },
       {
@@ -140,7 +140,7 @@
         "path": "PractitionerRole.telecom.use",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code"
         }
       },
       {

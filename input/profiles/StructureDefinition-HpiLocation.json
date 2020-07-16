@@ -82,7 +82,7 @@
         "path": "Location.status",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code"
         }
       },
       {
@@ -128,7 +128,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-alias-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code"
         }
       },
       {
@@ -141,7 +141,7 @@
         "path": "Location.type",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/location-type-code"
         }
       },
       {
@@ -149,7 +149,7 @@
         "path": "Location.telecom.use",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code"
         }
       },
       {
@@ -157,7 +157,7 @@
         "path": "Location.address.use",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code"
         }
       },
       {

@@ -6,7 +6,7 @@
   "title": "Type of location",
   "description": "Type of Location",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/location-type",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/location-type-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/location-type"
+        "system": "https://standards.digital.health.nz/ns/location-type-code"
       }
     ]
   }

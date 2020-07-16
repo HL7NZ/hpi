@@ -87,7 +87,7 @@
         "id": "Organization.identifier:orgId.system",
         "path": "Organization.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
       },
       {
         "id": "Organization.address",

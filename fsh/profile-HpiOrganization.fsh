@@ -19,7 +19,7 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 * address 0..0
 * contact 0..0
 
-* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use
+* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 //top level  extensions
 * extension contains 
@@ -27,7 +27,7 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 
 * extension[organization-period] ^short = "The period over which this Organization has been formed"
     
-//* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+
 
 //slice the identifier
 * identifier ^slicing.discriminator.type = #value
@@ -37,7 +37,7 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
     dormant 0..* MS
 
 
-* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org"
+* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org" (exactly)
 * identifier[dormant].use = #old (exactly)
 
 //add an extension to alias
@@ -45,5 +45,5 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
     alias-type 0..1
 
 
-* alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type (preferred)
+* alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code (preferred)
 * alias.extension[alias-type] ^short = "The type of alias for this Organization - eg its Maori name"

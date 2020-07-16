@@ -19,7 +19,7 @@ Title:          "Represents endpoints used for EDI exchanges"
 * identifier 1..1
 
 //Create our own set of payload types
-* payloadType from https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type
+* payloadType from https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type-code
 
 
 CodeSystem:  EndpointPayloadType
@@ -27,7 +27,7 @@ Id: endpoint-payload-type
 Title: "Type of Payload in an Endpoint"
 Description:  "Type of Payload in an Endpoint"
 
-* ^url = "https://standards.digital.health.nz/ns/endpoint-payload-type"
+* ^url = "https://standards.digital.health.nz/ns/endpoint-payload-type-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * #v2 "HL7 V2 message" "General type for an HL7 V2 message"
@@ -38,10 +38,10 @@ Id: endpoint-payload-type
 Title: "Type of Payload in an Endpoint"
 Description:  "Type of Payload in an Endpoint"
 
-* ^url = "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/ns/endpoint-payload-type
+* codes from system https://standards.digital.health.nz/ns/endpoint-payload-type-code
 
 Instance: healthLink
 InstanceOf: NamingSystem

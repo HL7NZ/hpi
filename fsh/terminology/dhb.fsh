@@ -3,17 +3,17 @@ Id: dhb
 Title: "dhb"
 Description: "dhb"
 
-* ^url = https://standards.digital.health.nz/fhir/ValueSet/dhb
+* ^url = https://standards.digital.health.nz/fhir/ValueSet/dhb-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
-* codes from system https://standards.digital.health.nz/ns/dhb
+* codes from system https://standards.digital.health.nz/ns/dhb-code
 
 CodeSystem: Dhb
 Id: dhb
 Title: "District Health Board Code"
 Description: "District Health Board Code"
 
-* ^url = https://standards.digital.health.nz/ns/dhb
+* ^url = https://standards.digital.health.nz/ns/dhb-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * #G00026-A "Northland"

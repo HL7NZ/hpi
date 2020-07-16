@@ -44,16 +44,6 @@
 <td>The District Health Board the patient resides in. It is derived from the patient's primary residential address (not updated directly).</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-edi-number.html'>edi-number</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/edi-number</td>
-<td>
-<div>Location</div>
-<div>Organization</div>
-<div>ContactPoint</div>
-</td>
-<td>An identifier used with electronic communication systems - such as HealthLink. </td>
-</tr>
-<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-location-established.html'>location-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/location-established</td>
 <td>

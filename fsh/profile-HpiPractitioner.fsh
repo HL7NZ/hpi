@@ -36,8 +36,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 
 
-* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
-* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-humanname-use
+* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 
 //slice identifier to add none or more dormant HPI as Must Support.
 //The nzBase profile is sliced to define the current HPI, but only the PI system itself records others...
@@ -47,7 +47,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier contains 
     dormant 0..* MS
     
-* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
+* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 
@@ -68,6 +68,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 
-* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
-* qualification.code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority
+* qualification.code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code

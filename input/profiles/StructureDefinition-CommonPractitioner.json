@@ -117,7 +117,7 @@
         "id": "Practitioner.identifier:HPI.system",
         "path": "Practitioner.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
       },
       {
         "id": "Practitioner.name",

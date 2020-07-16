@@ -7,7 +7,7 @@
   "title": "Type of Location",
   "description": "Type of Location",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/ns/location-type",
+  "url": "https://standards.digital.health.nz/ns/location-type-code",
   "jurisdiction": [
     {
       "coding": [

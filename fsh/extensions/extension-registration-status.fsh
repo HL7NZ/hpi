@@ -15,7 +15,7 @@ Description: "An indicator of the practicing status of the practitioner as suppl
 * extension[status].url = "status" (exactly)
 * extension[status] ^definition = "The status of this registration"
 * extension[status].value[x] only CodeableConcept
-* extension[status].valueCodeableConcept from http://hl7.org.nz/fhir/ValueSet/practitioner-registration-status (preferred)
+* extension[status].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code (preferred)
 
 * extension[period].url = "period" (exactly)
 * extension[period] ^definition = "The period over which this status is valid"

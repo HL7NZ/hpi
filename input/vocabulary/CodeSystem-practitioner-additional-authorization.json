@@ -7,7 +7,7 @@
   "title": "Additional Authorisation",
   "description": "Additional authorisations that a practitioner is authorised to practice or prescribe.",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/ns/practitioner-additional-authorization",
+  "url": "https://standards.digital.health.nz/ns/practitioner-additional-authorization-code",
   "jurisdiction": [
     {
       "coding": [

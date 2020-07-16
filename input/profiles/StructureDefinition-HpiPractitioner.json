@@ -91,7 +91,7 @@
         "path": "Practitioner.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
         }
       },
       {
@@ -113,7 +113,7 @@
         "id": "Practitioner.identifier:dormant.system",
         "path": "Practitioner.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
       },
       {
         "id": "Practitioner.active",
@@ -125,7 +125,7 @@
         "path": "Practitioner.name.use",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-humanname-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code"
         }
       },
       {
@@ -247,7 +247,7 @@
         "path": "Practitioner.qualification.identifier.system",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
         }
       },
       {
@@ -255,7 +255,7 @@
         "path": "Practitioner.qualification.code",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code"
         }
       }
     ]

@@ -5,7 +5,7 @@ Id: hpi-humanname-use
 Title: "Use value for HumanName"
 Description: "Use value for HumanName"
 
-* ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-humanname-use"
+* ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
 * $hnu#usual "Known as/conventional/the one you normally use."

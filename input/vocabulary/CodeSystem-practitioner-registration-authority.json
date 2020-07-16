@@ -7,7 +7,7 @@
   "title": "Registration Authority",
   "description": "The coded form of the qualification - eg medical or Nursing council identifier",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/ns/practitioner-registration-authority",
+  "url": "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
   "jurisdiction": [
     {
       "coding": [

@@ -238,7 +238,7 @@
           "reference": "ValueSet/hpi-identifier-use"
         },
         "name": "Usage of identifier",
-        "description": "Usage of identifier",
+        "description": "Identifier USE values in HPI",
         "exampleBoolean": false
       },
       {

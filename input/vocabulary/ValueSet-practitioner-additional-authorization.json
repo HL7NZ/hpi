@@ -6,7 +6,7 @@
   "title": "Additional Authorisation for functions that a Practitioner can perform",
   "description": "A coded type for additional authorisations",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/practitioner-additional-authorization"
+        "system": "https://standards.digital.health.nz/ns/practitioner-additional-authorization-code"
       }
     ]
   }

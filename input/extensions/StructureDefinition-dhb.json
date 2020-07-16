@@ -77,7 +77,7 @@
         "max": "1",
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/dhb"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/dhb-code"
         }
       }
     ]

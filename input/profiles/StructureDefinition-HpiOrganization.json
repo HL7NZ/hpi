@@ -117,7 +117,7 @@
         "id": "Organization.identifier:dormant.system",
         "path": "Organization.identifier.system",
         "min": 1,
-        "patternUri": "https://standards.digital.health.nz/id/hpi-org"
+        "fixedUri": "https://standards.digital.health.nz/id/hpi-org"
       },
       {
         "id": "Organization.alias.extension",
@@ -163,7 +163,7 @@
         ],
         "binding": {
           "strength": "preferred",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code"
         }
       },
       {
@@ -171,7 +171,7 @@
         "path": "Organization.telecom.use",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code"
         }
       },
       {

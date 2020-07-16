@@ -32,7 +32,7 @@ Description:    "base NZ Organization profile. Slices on identifier for HPI and 
 * identifier contains 
     orgId 0..* MS
 
-* identifier[orgId].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[orgId].system = "https://standards.digital.health.nz/ns/hpi-organisation-id" (exactly)
 * identifier[orgId].use = #official (exactly)
 * identifier[orgId] ^short = "The current HPI organization Id for this Organization"
 

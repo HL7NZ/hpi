@@ -4,9 +4,9 @@
   "name": "IdentifierUse",
   "id": "hpi-identifier-use",
   "title": "Usage of identifier",
-  "description": "Usage of identifier",
+  "description": "Identifier USE values in HPI",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code",
   "jurisdiction": [
     {
       "coding": [

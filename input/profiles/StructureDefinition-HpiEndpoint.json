@@ -67,7 +67,7 @@
         "path": "Endpoint.payloadType",
         "binding": {
           "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type"
+          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type-code"
         }
       },
       {

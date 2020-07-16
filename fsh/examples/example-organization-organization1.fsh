@@ -21,7 +21,7 @@ InstanceOf: HpiOrganization
 
 
 //type of organization
-* type.coding.system = "https://standards.digital.health.nz/codesystem/hpiOrganizationType"
+* type.coding.system = "https://standards.digital.health.nz/codesystem/hpi-organization-type-code"
 * type.coding.code = #gp
 * type.coding.display = "General Practice clinic"
 
@@ -31,8 +31,5 @@ InstanceOf: HpiOrganization
 * telecom[1].system = #phone
 * telecom[1].value = "+64 9 456 7765"
 
-* telecom[2].system = #other
-* telecom[2].extension.url = "http://hl7.org.nz/fhir/StructureDefinition/contactpoint-other"
-* telecom[2].extension.valueCodeableConcept = https://standards.digital.health.nz/ns/contactpoint-other#HLB "Healthlink Mailbox"
-* telecom[2].value = "hlEDINumber"
+
 

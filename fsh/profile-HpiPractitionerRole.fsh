@@ -35,8 +35,8 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * location 0..1
 * code 0..1
 * endpoint 0..1
-* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contactpoint-use
+* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
-* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
-* code from https://standards.digital.health.nz/fhir/ValueSet/practitionerrole-codes
+* code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code

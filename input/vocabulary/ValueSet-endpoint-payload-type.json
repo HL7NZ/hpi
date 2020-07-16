@@ -6,7 +6,7 @@
   "title": "Type of Payload in an Endpoint",
   "description": "Type of Payload in an Endpoint",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/endpoint-payload-type-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/endpoint-payload-type"
+        "system": "https://standards.digital.health.nz/ns/endpoint-payload-type-code"
       }
     ]
   }

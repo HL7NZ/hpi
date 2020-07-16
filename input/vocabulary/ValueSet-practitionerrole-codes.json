@@ -6,7 +6,7 @@
   "title": "PractitionerRoleCodes",
   "description": "Coded roles that can be in a PractitionerRole",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitionerrole-codes",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/practitionerrole-codes"
+        "system": "https://standards.digital.health.nz/ns/practitioner-role-code"
       }
     ]
   }

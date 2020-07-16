@@ -6,7 +6,7 @@
   "title": "Status of Loaction - is it still in use",
   "description": "Status of Loaction - is it still in use",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code",
   "jurisdiction": [
     {
       "coding": [

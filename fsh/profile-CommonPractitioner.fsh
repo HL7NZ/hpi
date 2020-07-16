@@ -35,6 +35,6 @@ Description:    "The New Zealand base practitioner. Slices on identifier for CPN
 * identifier contains 
     HPI 0..1 MS 
 
-* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-provider-id"
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
 * identifier[HPI].use = #official (exactly)
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"

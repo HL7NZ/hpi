@@ -6,7 +6,7 @@
   "title": "dhb",
   "description": "dhb",
   "version": "0.2.0",
-  "url": "https://standards.digital.health.nz/fhir/ValueSet/dhb",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/dhb-code",
   "jurisdiction": [
     {
       "coding": [
@@ -20,7 +20,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://standards.digital.health.nz/ns/dhb"
+        "system": "https://standards.digital.health.nz/ns/dhb-code"
       }
     ]
   }
