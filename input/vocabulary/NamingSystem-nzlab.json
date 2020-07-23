@@ -1,0 +1,17 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "nzlab",
+  "name": "NZLab",
+  "description": "Medical Laboratory Science Board Register Number",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2020-07-14",
+  "responsible": "HISO",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/medical-laboratory-science-board-id",
+      "preferred": true
+    }
+  ]
+}

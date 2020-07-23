@@ -43,15 +43,5 @@ Description:  "Type of Payload in an Endpoint"
 
 * codes from system https://standards.digital.health.nz/ns/endpoint-payload-type-code
 
-Instance: healthLink
-InstanceOf: NamingSystem
-Usage: #definition
 
-* name = "HealthLink"
-* description = "HealthLink EDI messaging"
-* status = #active
-* kind = #identifier
-* date = "2020-07-14"
-* uniqueId.type = #uri
-* uniqueId.value = "https://standards.digital.health.nz/ns/endpoint-healthlink"
 

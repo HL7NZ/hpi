@@ -134,7 +134,7 @@
           "reference": "StructureDefinition/dhb"
         },
         "name": "Dhb",
-        "description": "The District Health Board the patient resides in. It is derived from the patient's primary residential address (not updated directly).",
+        "description": "The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly).",
         "exampleBoolean": false
       },
       {
@@ -441,9 +441,23 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/healthLink"
+          "reference": "NamingSystem/hpiFacility"
         },
-        "name": "healthLink",
+        "name": "hpiFacility",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpiOrganization"
+        },
+        "name": "hpiOrganization",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/hpiProvider"
+        },
+        "name": "hpiProvider",
         "exampleBoolean": false
       },
       {
@@ -452,6 +466,118 @@
         },
         "name": "location1",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzbn"
+        },
+        "name": "nzbn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzchrir"
+        },
+        "name": "nzchrir",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzdental"
+        },
+        "name": "nzdental",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzdiet"
+        },
+        "name": "nzdiet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzlab"
+        },
+        "name": "nzlab",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzlegacy"
+        },
+        "name": "nzlegacy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzmc"
+        },
+        "name": "nzmc",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzmwife"
+        },
+        "name": "nzmwife",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzocc"
+        },
+        "name": "nzocc",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzopt"
+        },
+        "name": "nzopt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzost"
+        },
+        "name": "nzost",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzpharm"
+        },
+        "name": "nzpharm",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzphysio"
+        },
+        "name": "nzphysio",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzpod"
+        },
+        "name": "nzpod",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzpsyhc"
+        },
+        "name": "nzpsyhc",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzrad"
+        },
+        "name": "nzrad",
+        "exampleBoolean": false
       },
       {
         "reference": {

@@ -1,0 +1,17 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "nzocc",
+  "name": "NZOCC",
+  "description": "Occupational Therapy Board Register Number",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2020-07-14",
+  "responsible": "HISO",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/occupational-therapy-board-id",
+      "preferred": true
+    }
+  ]
+}

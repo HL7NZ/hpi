@@ -1,0 +1,17 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "nzlegacy",
+  "name": "NZMC",
+  "description": "Legacy number for National Collections",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2020-07-14",
+  "responsible": "HISO",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/legacy-tbd-id",
+      "preferred": true
+    }
+  ]
+}

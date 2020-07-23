@@ -24,8 +24,8 @@ Description:    "Locations used by the HPI. These are also called Facilities."
 
 //top level  extensions
 * extension contains 
-    location-established 0..1 and
-    dhb 0..1 
+    $hpiLocation-established named location-established 0..1 and
+    $dhb named dhb 0..1 
    
  * extension[location-established] ^short = "The date when this location first became available for use"
  * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"

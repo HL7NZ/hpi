@@ -1,0 +1,22 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "hpiFacility",
+  "name": "HPIFacility",
+  "description": "HPI facilities",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2020-07-14",
+  "responsible": "HISO",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/hpi-facility-id",
+      "preferred": true
+    },
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/id/hpi-facility",
+      "comment": "Deprecated"
+    }
+  ]
+}

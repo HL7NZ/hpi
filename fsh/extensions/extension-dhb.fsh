@@ -1,6 +1,6 @@
 Extension: Dhb
 Id: dhb
-Description: "The District Health Board the patient resides in. It is derived from the patient's primary residential address (not updated directly)."
+Description: "The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly)."
 
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/dhb"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

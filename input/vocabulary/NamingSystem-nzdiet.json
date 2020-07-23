@@ -1,0 +1,17 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "nzdiet",
+  "name": "NZDiet",
+  "description": "Dietitians Board Register Number",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2020-07-14",
+  "responsible": "HISO",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/dietitians-board-id",
+      "preferred": true
+    }
+  ]
+}
