@@ -5,7 +5,7 @@ Create a logical model suitable for the IG builder
 
  */
 let fs = require('fs');
-let syncRequest = require('../../common/node_modules/sync-request');
+let syncRequest = require('../../scripts/node_modules/sync-request');
 
 let serverRoot = "http://home.clinfhir.com:8054/baseR4/";   //the server to upload FSH & SD
 

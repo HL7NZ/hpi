@@ -1,7 +1,7 @@
 Profile:        HpiEndpoint
 Parent:         Endpoint
 Id:             HpiEndpoint
-Title:          "Represents endpoints used for EDI exchanges"
+Title:          "HPI Endpoint"
 
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

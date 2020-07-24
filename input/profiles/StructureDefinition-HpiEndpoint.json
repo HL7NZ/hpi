@@ -4,7 +4,7 @@
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiEndpoint",
   "version": "0.2.0",
   "name": "HpiEndpoint",
-  "title": "Represents endpoints used for EDI exchanges",
+  "title": "HPI Endpoint",
   "status": "active",
   "jurisdiction": [
     {

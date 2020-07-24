@@ -17,6 +17,11 @@ lists those files generated from project configs or the contents in the ig-data 
 | package-list.json                                              | generated | fsh/config.yaml                                                            |
 | input/images/resources.png                                     | copied    | fsh/ig-data/input/images/resources.png                                     |
 | input/includes/menu.xml                                        | copied    | fsh/ig-data/input/includes/menu.xml                                        |
+| input/models/StructureDefinition-HpiEndpointLM.json            | copied    | fsh/ig-data/input/models/StructureDefinition-HpiEndpointLM.json            |
+| input/models/StructureDefinition-HpiLocationLM.json            | copied    | fsh/ig-data/input/models/StructureDefinition-HpiLocationLM.json            |
+| input/models/StructureDefinition-HpiOrganizationLM.json        | copied    | fsh/ig-data/input/models/StructureDefinition-HpiOrganizationLM.json        |
+| input/models/StructureDefinition-HpiPractitionerLM.json        | copied    | fsh/ig-data/input/models/StructureDefinition-HpiPractitionerLM.json        |
+| input/models/StructureDefinition-HpiPractitionerRoleLM.json    | copied    | fsh/ig-data/input/models/StructureDefinition-HpiPractitionerRoleLM.json    |
 | input/pagecontent/CapabilityStatement.xml                      | copied    | fsh/ig-data/input/pagecontent/CapabilityStatement.xml                      |
 | input/pagecontent/StructureDefinition-HpiPractitioner-intro.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-intro.md |
 | input/pagecontent/StructureDefinition-HpiPractitioner-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-notes.md |
