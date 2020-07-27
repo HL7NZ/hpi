@@ -2,8 +2,8 @@ Alias: $hnu = http://hl7.org/fhir/name-use
 
 ValueSet : HumanNameUse
 Id: hpi-humanname-use
-Title: "Use value for HumanName"
-Description: "Use value for HumanName"
+Title: "Use values for a HumanName"
+Description: "Use values for a HumanName"
 
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

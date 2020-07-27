@@ -2,8 +2,8 @@ Alias: $ie = http://hl7.org/fhir/identifier-use
 
 ValueSet : IdentifierUse
 Id: hpi-identifier-use
-Title: "Usage of identifier"
-Description: "Identifier USE values in HPI"
+Title: "Use values for an identifier"
+Description: "Use values for an identifier"
 
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

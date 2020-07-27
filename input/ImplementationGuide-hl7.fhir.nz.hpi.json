@@ -147,9 +147,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/organization-period"
+          "reference": "StructureDefinition/organization-established"
         },
-        "name": "Organization_period",
+        "name": "OrganizationEstablished",
         "description": "The period over which the Organization is active",
         "exampleBoolean": false
       },
@@ -171,18 +171,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/registration-initial-date"
+          "reference": "StructureDefinition/registration-status-code"
         },
-        "name": "Registration_initial_date",
-        "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
+        "name": "RegistrationStatusCode",
+        "description": "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/registration-status"
+          "reference": "StructureDefinition/registration-initial-date"
         },
-        "name": "Registration_status",
-        "description": "An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.",
+        "name": "Registration_initial_date",
+        "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
         "exampleBoolean": false
       },
       {
@@ -197,24 +197,24 @@
         "reference": {
           "reference": "ValueSet/hpi-address-use"
         },
-        "name": "Usage of Address",
-        "description": "Usage of Address",
+        "name": "Use values for an Address",
+        "description": "Use values for an Address",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/hpi-contactpoint-use"
         },
-        "name": "Use values for ContactPoint",
-        "description": "Use values for ContactPoint",
+        "name": "Use values for a ContactPoint",
+        "description": "Use values for a ContactPoint",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/dhb"
         },
-        "name": "dhb",
-        "description": "dhb",
+        "name": "District Health Board HPI Organisation Identifer",
+        "description": "District Health Board HPI Organisation Identifer",
         "exampleBoolean": false
       },
       {
@@ -229,16 +229,16 @@
         "reference": {
           "reference": "ValueSet/hpi-humanname-use"
         },
-        "name": "Use value for HumanName",
-        "description": "Use value for HumanName",
+        "name": "Use values for a HumanName",
+        "description": "Use values for a HumanName",
         "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/hpi-identifier-use"
         },
-        "name": "Usage of identifier",
-        "description": "Identifier USE values in HPI",
+        "name": "Use values for an identifier",
+        "description": "Use values for an identifier",
         "exampleBoolean": false
       },
       {
@@ -253,8 +253,8 @@
         "reference": {
           "reference": "ValueSet/location-status"
         },
-        "name": "Status of Loaction - is it still in use",
-        "description": "Status of Loaction - is it still in use",
+        "name": "Status of Location - is it still in use",
+        "description": "Status of Location - is it still in use",
         "exampleBoolean": false
       },
       {
@@ -283,10 +283,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/practitioner-registration-status"
+          "reference": "ValueSet/practitioner-registration-status-code"
         },
         "name": "Registration Status of Practitioners",
-        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA.",
         "exampleBoolean": false
       },
       {
@@ -317,8 +317,8 @@
         "reference": {
           "reference": "ValueSet/practitioner-registration-authority"
         },
-        "name": "Registration Authority",
-        "description": "The coded form of the qualification - eg medical or Nursing council identifier",
+        "name": "Professional registration the healthcare provider has",
+        "description": "Professional registration the healthcare provider has",
         "exampleBoolean": false
       },
       {
@@ -365,16 +365,16 @@
         "reference": {
           "reference": "CodeSystem/practitioner-registration-authority"
         },
-        "name": "Registration Authority",
-        "description": "The coded form of the qualification - eg medical or Nursing council identifier",
+        "name": "Professional registration the healthcare provider has",
+        "description": "Professional registration the healthcare provider has",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "CodeSystem/practitioner-registration-status"
+          "reference": "CodeSystem/practitioner-registration-status-code"
         },
         "name": "Registration Status of Practitioners",
-        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA.",
         "exampleBoolean": false
       },
       {
@@ -462,6 +462,13 @@
       },
       {
         "reference": {
+          "reference": "NamingSystem/hpipractitionerrole"
+        },
+        "name": "hpipractitionerrole",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Location/location1"
         },
         "name": "location1",
@@ -504,13 +511,6 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/nzlegacy"
-        },
-        "name": "nzlegacy",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "NamingSystem/nzmc"
         },
         "name": "nzmc",
@@ -521,6 +521,13 @@
           "reference": "NamingSystem/nzmwife"
         },
         "name": "nzmwife",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nznc"
+        },
+        "name": "nznc",
         "exampleBoolean": false
       },
       {
@@ -748,6 +755,11 @@
         {
           "nameUrl": "models.html",
           "title": "Models",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "NamingSystems.html",
+          "title": "Naming Systems",
           "generation": "markdown"
         },
         {

@@ -2,8 +2,8 @@ Alias: $au = http://hl7.org/fhir/address-use
 
 ValueSet : AddressUse
 Id: hpi-address-use
-Title: "Usage of Address"
-Description: "Usage of Address"
+Title: "Use values for an Address"
+Description: "Use values for an Address"
 
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

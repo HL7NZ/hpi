@@ -1,9 +1,9 @@
-Alias: $prs = https://standards.digital.health.nz/ns/practitioner-registration-status
+Alias: $prs = https://standards.digital.health.nz/ns/practitioner-registration-status-code
 
-ValueSet: PractitionerRegistrationStatus
-Id: practitioner-registration-status
+ValueSet: PractitionerRegistrationStatusCode
+Id: practitioner-registration-status-code
 Title: "Registration Status of Practitioners"
-Description: "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source."
+Description: "The code list represents the current practicing status of the Provider Person as per their registration with an RA."
 
 * ^url = https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -17,10 +17,10 @@ Description: "The code list represents the current practicing status of the Prov
 
 
 
-CodeSystem: PractitionerRegistrationStatus
-Id: practitioner-registration-status
+CodeSystem: PractitionerRegistrationStatusCode
+Id: practitioner-registration-status-code
 Title: "Registration Status of Practitioners"
-Description: "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source."
+Description: "The code list represents the current practicing status of the Provider Person as per their registration with an RA."
 
 * ^url = https://standards.digital.health.nz/ns/practitioner-registration-status-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

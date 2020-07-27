@@ -3,8 +3,8 @@
   "status": "active",
   "name": "ContactPointUse",
   "id": "hpi-contactpoint-use",
-  "title": "Use values for ContactPoint",
-  "description": "Use values for ContactPoint",
+  "title": "Use values for a ContactPoint",
+  "description": "Use values for a ContactPoint",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code",
   "compose": {

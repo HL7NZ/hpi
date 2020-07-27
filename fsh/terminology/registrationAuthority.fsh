@@ -1,8 +1,8 @@
 
 CodeSystem:  PractitionerRegistrationAuthority
 Id: practitioner-registration-authority
-Title: "Registration Authority"
-Description:  "The coded form of the qualification - eg medical or Nursing council identifier"
+Title: "Professional registration the healthcare provider has"
+Description:  "Professional registration the healthcare provider has"
 
 * ^url = "https://standards.digital.health.nz/ns/practitioner-registration-authority-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
@@ -12,8 +12,8 @@ Description:  "The coded form of the qualification - eg medical or Nursing counc
 
 ValueSet : RegistrationAuthority
 Id: practitioner-registration-authority
-Title: "Registration Authority"
-Description: "The coded form of the qualification - eg medical or Nursing council identifier"
+Title: "Professional registration the healthcare provider has"
+Description: "Professional registration the healthcare provider has"
 
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

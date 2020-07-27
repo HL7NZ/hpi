@@ -3,8 +3,8 @@
   "status": "active",
   "name": "DHB",
   "id": "dhb",
-  "title": "dhb",
-  "description": "dhb",
+  "title": "District Health Board HPI Organisation Identifer",
+  "description": "District Health Board HPI Organisation Identifer",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/dhb-code",
   "jurisdiction": [

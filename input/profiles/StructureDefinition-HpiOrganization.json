@@ -67,17 +67,17 @@
         }
       },
       {
-        "id": "Organization.extension:organization-period",
+        "id": "Organization.extension:organization-establishedestablished",
         "path": "Organization.extension",
-        "sliceName": "organization-period",
-        "short": "The period over which this Organization has been formed",
+        "sliceName": "organization-establishedestablished",
+        "short": "The period over which this Organization has been established",
         "min": 0,
         "max": "1",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/organization-period"
+              "http://hl7.org.nz/fhir/StructureDefinition/organization-established"
             ]
           }
         ]

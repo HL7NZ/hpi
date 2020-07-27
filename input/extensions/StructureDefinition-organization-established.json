@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "organization-period",
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/organization-period",
+  "id": "organization-established",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/organization-established",
   "version": "0.2.0",
-  "name": "Organization_period",
+  "name": "OrganizationEstablished",
   "status": "active",
   "description": "The period over which the Organization is active",
   "jurisdiction": [
@@ -45,7 +45,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/organization-period"
+        "fixedUri": "http://hl7.org.nz/fhir/StructureDefinition/organization-established"
       },
       {
         "id": "Extension.value[x]",

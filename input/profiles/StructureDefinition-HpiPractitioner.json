@@ -163,9 +163,9 @@
         }
       },
       {
-        "id": "Practitioner.qualification.extension:registration-status",
+        "id": "Practitioner.qualification.extension:registration-status-code",
         "path": "Practitioner.qualification.extension",
-        "sliceName": "registration-status",
+        "sliceName": "registration-status-code",
         "short": "Status of the registration, and the date it was set",
         "min": 0,
         "max": "1",
@@ -173,7 +173,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
+              "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"
             ]
           }
         ]

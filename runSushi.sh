@@ -23,6 +23,11 @@ echo "Making terminology summary"
 
 echo "Making API summary"
 ../scripts/makeCapabilityStatement.js hpi
+
+echo "Making NamingSystem summary"
+../scripts/makeNamingSystemSummary.js hpi
+
+
 else 
 echo
 echo

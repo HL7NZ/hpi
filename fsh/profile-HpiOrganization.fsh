@@ -1,6 +1,6 @@
 
 //Aliases for extensions
-Alias: $organization-period = http://hl7.org.nz/fhir/StructureDefinition/organization-period
+Alias: $organization-established = http://hl7.org.nz/fhir/StructureDefinition/organization-established
 //Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
 
 Profile:        HpiOrganization
@@ -23,9 +23,9 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 
 //top level  extensions
 * extension contains 
-    $organization-period named organization-period 0..1  
+    $organization-established named organization-establishedestablished 0..1  
 
-* extension[organization-period] ^short = "The period over which this Organization has been formed"
+* extension[organization-established] ^short = "The period over which this Organization has been established"
     
 
 

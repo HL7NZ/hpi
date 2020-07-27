@@ -33,7 +33,7 @@
               }
             }
           ],
-          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status"
+          "url": "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"
         },
         {
           "extension": [

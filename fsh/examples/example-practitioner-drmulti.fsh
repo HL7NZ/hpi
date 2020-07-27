@@ -50,9 +50,9 @@ InstanceOf: HpiPractitioner
 
 
 //This is an active qualification
-* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.code = #active
-* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.system = $qualificationStatus 
-* qualification.extension[registration-status].extension[period].valuePeriod.start = "2020-02-02"
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept.coding.code = #active
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept.coding.system = $qualificationStatus 
+* qualification.extension[registration-status-code].extension[period].valuePeriod.start = "2020-02-02"
 
 
 //there is a condition on practice

@@ -15,6 +15,11 @@
     },
     {
       "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/moh-agency-id",
+      "comment": "NZHIS Agency code. Deprecated"
+    },
+    {
+      "type": "uri",
       "value": "https://standards.digital.health.nz/id/hpi-organisation",
       "comment": "Deprecated"
     }

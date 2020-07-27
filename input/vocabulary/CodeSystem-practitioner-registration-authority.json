@@ -4,8 +4,8 @@
   "content": "complete",
   "name": "PractitionerRegistrationAuthority",
   "id": "practitioner-registration-authority",
-  "title": "Registration Authority",
-  "description": "The coded form of the qualification - eg medical or Nursing council identifier",
+  "title": "Professional registration the healthcare provider has",
+  "description": "Professional registration the healthcare provider has",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
   "jurisdiction": [

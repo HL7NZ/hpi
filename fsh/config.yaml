@@ -51,9 +51,14 @@ history:
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To control the menu.xml using this config, uncomment and set the "menu" property.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# menu:
-#   IG Home: index.html
-#   Table of Contents: toc.html
-#   Artifact Index: artifacts.html
-#   Support:
-#     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
+menu:
+  IG Home: index.html
+  General Notes: general.html
+  API: capstmt.html
+  Profiles: profiles.html
+  Extensions: extensions.html
+  Identifiers: NamingSystems.html
+  Terminology: terminology.html
+  Artifact Index: artifacts.html
+  Support:
+    "FHIR Spec ": "{{site.data.fhir.path}}index.html"

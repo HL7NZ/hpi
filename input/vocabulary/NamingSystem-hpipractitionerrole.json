@@ -1,8 +1,8 @@
 {
   "resourceType": "NamingSystem",
-  "id": "nzlegacy",
-  "name": "NZMC",
-  "description": "Legacy number for National Collections",
+  "id": "hpipractitionerrole",
+  "name": "HPIPractitionerRole",
+  "description": "HPI PractitionerRole id",
   "status": "active",
   "kind": "identifier",
   "date": "2020-07-14",
@@ -10,7 +10,7 @@
   "uniqueId": [
     {
       "type": "uri",
-      "value": "https://standards.digital.health.nz/ns/legacy-tbd-id",
+      "value": "https://standards.digital.health.nz/ns/hpi-practitionerrole-id",
       "preferred": true
     }
   ]

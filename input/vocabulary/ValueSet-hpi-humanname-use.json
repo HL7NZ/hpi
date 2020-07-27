@@ -3,8 +3,8 @@
   "status": "active",
   "name": "HumanNameUse",
   "id": "hpi-humanname-use",
-  "title": "Use value for HumanName",
-  "description": "Use value for HumanName",
+  "title": "Use values for a HumanName",
+  "description": "Use values for a HumanName",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code",
   "jurisdiction": [

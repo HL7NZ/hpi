@@ -3,8 +3,8 @@
   "status": "active",
   "name": "IdentifierUse",
   "id": "hpi-identifier-use",
-  "title": "Usage of identifier",
-  "description": "Identifier USE values in HPI",
+  "title": "Use values for an identifier",
+  "description": "Use values for an identifier",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code",
   "jurisdiction": [

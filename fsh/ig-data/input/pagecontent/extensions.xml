@@ -52,8 +52,8 @@
 <td>The period over which the location is open</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-organization-period.html'>organization-period</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/organization-period</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-organization-established.html'>organization-established</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/organization-established</td>
 <td>
 <div>Organization</div>
 </td>
@@ -84,8 +84,8 @@
 <td>The date the practitioner first became registered with the Responsible Authority or professional body</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-registration-status.html'>registration-status</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/registration-status</td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-registration-status-code.html'>registration-status-code</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/registration-status-code</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>

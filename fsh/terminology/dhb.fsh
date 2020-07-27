@@ -1,7 +1,7 @@
 ValueSet: DHB
 Id: dhb
-Title: "dhb"
-Description: "dhb"
+Title: "District Health Board HPI Organisation Identifer"
+Description: "District Health Board HPI Organisation Identifer"
 
 * ^url = https://standards.digital.health.nz/fhir/ValueSet/dhb-code
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ

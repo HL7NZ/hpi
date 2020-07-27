@@ -3,8 +3,8 @@
   "status": "active",
   "name": "AddressUse",
   "id": "hpi-address-use",
-  "title": "Usage of Address",
-  "description": "Usage of Address",
+  "title": "Use values for an Address",
+  "description": "Use values for an Address",
   "version": "0.2.0",
   "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code",
   "jurisdiction": [

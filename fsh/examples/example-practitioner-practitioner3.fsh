@@ -41,13 +41,13 @@ the second the registration where they are registered as a nurse, andcan prescri
 * qualification.code.coding.display = "Bachelor of Nursing"
 
 //This is an active qualification
-//* qualification.extension[registration-status].valueCodeableConcept.coding.code = #active
+//* qualification.extension[registration-status-code].valueCodeableConcept.coding.code = #active
 
-* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.code = #active
-* qualification.extension[registration-status].extension[status].valueCodeableConcept.coding.system = $qualificationStatus //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationstatus"
-* qualification.extension[registration-status].extension[period].valuePeriod.start = "2020-02-02"
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept.coding.code = #active
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept.coding.system = $qualificationStatus //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationstatus"
+* qualification.extension[registration-status-code].extension[period].valuePeriod.start = "2020-02-02"
 
-// * qualification.extension[registration-status].valueCodeableConcept.coding.system = 
+// * qualification.extension[registration-status-code].valueCodeableConcept.coding.system = 
   //"https://standards.digital.health.nz/CodeSystem/practitioner-qualificationststus"
 
 //issued by Unitec

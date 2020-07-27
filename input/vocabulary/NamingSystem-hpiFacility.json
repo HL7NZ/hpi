@@ -15,6 +15,10 @@
     },
     {
       "type": "uri",
+      "value": "https://standards.digital.health.nz/ns/moh-facility-id"
+    },
+    {
+      "type": "uri",
       "value": "https://standards.digital.health.nz/id/hpi-facility",
       "comment": "Deprecated"
     }

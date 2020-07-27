@@ -2,8 +2,8 @@ Alias: $cpu = http://hl7.org/fhir/contact-point-use
 
 ValueSet : ContactPointUse
 Id: hpi-contactpoint-use
-Title: "Use values for ContactPoint"
-Description: "Use values for ContactPoint"
+Title: "Use values for a ContactPoint"
+Description: "Use values for a ContactPoint"
 
 * ^url = "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code"
 

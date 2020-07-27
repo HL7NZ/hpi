@@ -30,9 +30,14 @@ Usage: #definition
 * uniqueId.type = #uri
 * uniqueId.value = "https://standards.digital.health.nz/ns/hpi-organisation-id"
 * uniqueId.preferred = true
+
 * uniqueId[1].type = #uri
-* uniqueId[1].value = "https://standards.digital.health.nz/id/hpi-organisation"
-* uniqueId[1].comment = "Deprecated"
+* uniqueId[1].value = "https://standards.digital.health.nz/ns/moh-agency-id"
+* uniqueId[1].comment = "NZHIS Agency code. Deprecated"
+
+* uniqueId[2].type = #uri
+* uniqueId[2].value = "https://standards.digital.health.nz/id/hpi-organisation"
+* uniqueId[2].comment = "Deprecated"
 
 
 Instance: hpiFacility
@@ -49,9 +54,30 @@ Usage: #definition
 * uniqueId.type = #uri
 * uniqueId.value = "https://standards.digital.health.nz/ns/hpi-facility-id"
 * uniqueId.preferred = true
+
 * uniqueId[1].type = #uri
-* uniqueId[1].value = "https://standards.digital.health.nz/id/hpi-facility"
-* uniqueId[1].comment = "Deprecated"
+* uniqueId[1].value = "https://standards.digital.health.nz/ns/moh-facility-id"
+
+
+* uniqueId[2].type = #uri
+* uniqueId[2].value = "https://standards.digital.health.nz/id/hpi-facility"
+* uniqueId[2].comment = "Deprecated"
+
+
+Instance: hpipractitionerrole
+InstanceOf: NamingSystem
+Usage: #definition
+
+* name = "HPIPractitionerRole"
+* description = "HPI PractitionerRole id"
+* status = #active
+* kind = #identifier
+* date = "2020-07-14"
+* responsible = "HISO"
+
+* uniqueId.type = #uri
+* uniqueId.value = "https://standards.digital.health.nz/ns/hpi-practitionerrole-id"
+* uniqueId.preferred = true
 
 
 //------------
@@ -69,6 +95,22 @@ Usage: #definition
 * uniqueId.type = #uri
 * uniqueId.value = "https://standards.digital.health.nz/ns/medical-council-id"
 * uniqueId.preferred = true
+
+Instance: nznc
+InstanceOf: NamingSystem
+Usage: #definition
+
+* name = "NZNC"
+* description = "Nursing Council of New Zealand Register Number"
+* status = #active
+* kind = #identifier
+* date = "2020-07-14"
+* responsible = "HISO"
+
+* uniqueId.type = #uri
+* uniqueId.value = "https://standards.digital.health.nz/ns/nursing-council-id"
+* uniqueId.preferred = true
+
 
 Instance: nzpharm
 InstanceOf: NamingSystem
@@ -282,6 +324,8 @@ Usage: #definition
 * uniqueId.value = "https://standards.digital.health.nz/ns/medical-radiation-technologists-board-id"
 * uniqueId.preferred = true
 
+
+/*
 Instance: nzlegacy
 InstanceOf: NamingSystem
 Usage: #definition
@@ -297,3 +341,4 @@ Usage: #definition
 * uniqueId.value = "https://standards.digital.health.nz/ns/legacy-tbd-id"
 * uniqueId.preferred = true
 
+*/
