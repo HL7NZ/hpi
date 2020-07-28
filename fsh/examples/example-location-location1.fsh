@@ -31,14 +31,14 @@ InstanceOf: HpiLocation
 * alias = "East End Inc."
 
 //Short name
-* alias.extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type"
+* alias.extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type-code"
 * alias.extension[alias-type].valueCodeableConcept.coding.code = #short
 * alias.extension[alias-type].valueCodeableConcept.coding.display = "Short"
 
 
 //otherwise known as 'dr dobbs surgery'
 * alias[1] = "Dr Dobbs Surgery"
-* alias[1].extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type"
+* alias[1].extension[alias-type].valueCodeableConcept.coding.system = "https://standards.digital.health.nz/ns/alias-type-code"
 * alias[1].extension[alias-type].valueCodeableConcept.coding.code = #aka
 * alias[1].extension[alias-type].valueCodeableConcept.coding.display = "Aka"
 
@@ -65,7 +65,7 @@ InstanceOf: HpiEndpoint
 * identifier.value = "MyMailBox"
 * connectionType.system = "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
 * connectionType.code = #secure-email
-* payloadType = https://standards.digital.health.nz/ns/endpoint-payload-type#v2 "HL7 V2 message"
+* payloadType = https://standards.digital.health.nz/ns/endpoint-payload-type-code#v2 "HL7 V2 message"
 * address = "healthlink.com"
 
 /*

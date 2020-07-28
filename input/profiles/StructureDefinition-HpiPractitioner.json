@@ -243,14 +243,6 @@
         ]
       },
       {
-        "id": "Practitioner.qualification.identifier.system",
-        "path": "Practitioner.qualification.identifier.system",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
-        }
-      },
-      {
         "id": "Practitioner.qualification.code",
         "path": "Practitioner.qualification.code",
         "binding": {

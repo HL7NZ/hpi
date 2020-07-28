@@ -77,15 +77,15 @@
       "identifier": [
         {
           "use": "official",
-          "system": "https://standards.digital.health.nz/ns/nzmc-registration-authid",
+          "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
           "value": "123456"
         }
       ],
       "code": {
         "coding": [
           {
-            "system": "http://standards.digital.health.nz/ns/registration-types",
-            "code": "MD",
+            "system": "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
+            "code": "MC",
             "display": "Medical doctor"
           }
         ]

@@ -427,9 +427,32 @@
       },
       {
         "reference": {
+          "reference": "Organization/cmdhb"
+        },
+        "name": "cmdhb",
+        "description": "Counties Manakau DHB",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/commonOrg1"
+        },
+        "name": "commonOrg1",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/CommonOrganization"
+      },
+      {
+        "reference": {
           "reference": "Practitioner/drmulti"
         },
         "name": "drmulti",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/drwelby"
+        },
+        "name": "drwelby",
+        "description": "An example of practitioner. Used as a target by some of the other examples",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
       },
       {

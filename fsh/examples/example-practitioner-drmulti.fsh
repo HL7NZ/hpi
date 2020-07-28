@@ -29,12 +29,12 @@ InstanceOf: HpiPractitioner
 //There's a single qualification, so no indexer ([]) is needed...
 //NZMC number
 * qualification.identifier.use = #official
-* qualification.identifier.system = "https://standards.digital.health.nz/ns/nzmc-registration-authid"
+* qualification.identifier.system = "https://standards.digital.health.nz/ns/hpi-provider-id"
 * qualification.identifier.value = "123456"
 
 //Is a qualified doctor
-* qualification.code.coding.system = "http://standards.digital.health.nz/ns/registration-types"
-* qualification.code.coding.code = #MD
+* qualification.code.coding.system = "https://standards.digital.health.nz/ns/practitioner-registration-authority-code"
+* qualification.code.coding.code = #MC
 * qualification.code.coding.display = "Medical doctor"
 
 //period of qualification

@@ -68,6 +68,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 
-* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+//* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code

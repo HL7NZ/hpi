@@ -14,7 +14,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://standards.digital.health.nz/ns/alias-type",
+                "system": "https://standards.digital.health.nz/ns/alias-type-code",
                 "code": "short",
                 "display": "Short"
               }
@@ -30,7 +30,7 @@
           "valueCodeableConcept": {
             "coding": [
               {
-                "system": "https://standards.digital.health.nz/ns/alias-type",
+                "system": "https://standards.digital.health.nz/ns/alias-type-code",
                 "code": "aka",
                 "display": "Aka"
               }

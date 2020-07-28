@@ -22,7 +22,7 @@
       "coding": [
         {
           "code": "v2",
-          "system": "https://standards.digital.health.nz/ns/endpoint-payload-type",
+          "system": "https://standards.digital.health.nz/ns/endpoint-payload-type-code",
           "display": "HL7 V2 message"
         }
       ]
