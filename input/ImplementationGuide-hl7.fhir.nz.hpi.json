@@ -117,7 +117,7 @@
         "reference": {
           "reference": "StructureDefinition/condition-on-practice"
         },
-        "name": "Condition_on_practice",
+        "name": "ConditionOnPractice",
         "description": "A full description of the conditions the health practitioner is subject to in relation to their scope of practice.",
         "exampleBoolean": false
       },
@@ -125,7 +125,7 @@
         "reference": {
           "reference": "StructureDefinition/death-date"
         },
-        "name": "Death_date",
+        "name": "DeathDate",
         "description": "The date the person died.",
         "exampleBoolean": false
       },
@@ -139,9 +139,17 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/educational-qualification"
+        },
+        "name": "EducationalQualification",
+        "description": "Educational qualifications.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/location-established"
         },
-        "name": "Location_established",
+        "name": "LocationEstablished",
         "description": "The period over which the location is open",
         "exampleBoolean": false
       },
@@ -157,7 +165,7 @@
         "reference": {
           "reference": "StructureDefinition/practitionerRole-creator"
         },
-        "name": "PractitionerRole_creator",
+        "name": "PractitionerRoleCreator",
         "description": "The organisation and person that created this role",
         "exampleBoolean": false
       },
@@ -165,8 +173,16 @@
         "reference": {
           "reference": "StructureDefinition/practitionerRole-status"
         },
-        "name": "PractitionerRole_status",
+        "name": "PractitionerRoleStatus",
         "description": "The status of the role - active,ended",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/registration-initial-date"
+        },
+        "name": "RegistrationInitialDate",
+        "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
         "exampleBoolean": false
       },
       {
@@ -179,17 +195,9 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/registration-initial-date"
-        },
-        "name": "Registration_initial_date",
-        "description": "The date the practitioner first became registered with the Responsible Authority or professional body",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/scope-of-practice"
         },
-        "name": "Scope_of_practice",
+        "name": "ScopeOfPractice",
         "description": "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.",
         "exampleBoolean": false
       },
@@ -593,6 +601,13 @@
           "reference": "NamingSystem/nzpod"
         },
         "name": "nzpod",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nzpsycho"
+        },
+        "name": "nzpsycho",
         "exampleBoolean": false
       },
       {

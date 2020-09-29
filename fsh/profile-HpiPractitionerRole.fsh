@@ -28,8 +28,11 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * specialty 0..0
 * healthcareService 0..0
 * availableTime 0..0
+* availableTime.daysOfWeek 0..0         //to remove the terminology binding
 * notAvailable 0..0
 * availabilityExceptions 0..0
+* identifier.type 0..0
+
 
 //location and rolecode (code) multiplicity reduced
 * location 0..1

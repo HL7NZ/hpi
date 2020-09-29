@@ -4,6 +4,9 @@ Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
 Alias: $additional-authorization = http://hl7.org.nz/fhir/StructureDefinition/additional-authorization
 
+
+Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
+
 Alias: $condition-on-practice = http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice
 Alias: $registration-initial-date = http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date
 
@@ -28,9 +31,11 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * address 0..0
 * photo 0..0
 
+
 //top level  extensions
 * extension contains 
-    $death-date named death-date 0..1 
+    $death-date named death-date 0..1 and
+    $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
 
@@ -46,10 +51,15 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.rules = #openAtEnd
 * identifier contains 
     dormant 0..* MS
+
+* identifier.type 0..0
+
     
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
+* identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
+* identifier[dormant].type 0..0
 
 //the gender is required by the HPI
 * gender 1..1

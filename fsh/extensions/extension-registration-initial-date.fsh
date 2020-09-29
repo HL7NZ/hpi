@@ -1,4 +1,4 @@
-Extension: Registration_initial_date
+Extension: RegistrationInitialDate
 Id: registration-initial-date
 Description: "The date the practitioner first became registered with the Responsible Authority or professional body"
 

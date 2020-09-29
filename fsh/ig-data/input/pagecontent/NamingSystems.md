@@ -19,11 +19,12 @@ These are identifiers defined in this IG. They are defined using <a href='http:/
 <tr><td>Midwifery Council Register Number</td><td><div>https://standards.digital.health.nz/ns/midwifery-council-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Nursing Council of New Zealand Register Number</td><td><div>https://standards.digital.health.nz/ns/nursing-council-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Occupational Therapy Board Register Number</td><td><div>https://standards.digital.health.nz/ns/occupational-therapy-board-id</div></td><td></td><td>HISO</td></tr>
-<tr><td>Medical Council of New Zealand Register Numbe</td><td><div>Optometrists & Dispensing Opticians Board Register Number</div></td><td></td><td>HISO</td></tr>
+<tr><td>Optometrists & Dispensing Opticians Board Register Number</td><td><div>https://standards.digital.health.nz/ns/optometrists-dispensing-opticians-board-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Osteopathic Council Register Number</td><td><div>https://standards.digital.health.nz/ns/osteopathic-council-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Pharmacy Council of New Zealand Register Number</td><td><div>https://standards.digital.health.nz/ns/pharmacy-council-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Physiotherapy Board Register Number</td><td><div>https://standards.digital.health.nz/ns/physiotherapy-board-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Podiatrists Board Register Number</td><td><div> https://standards.digital.health.nz/ns/podiatrists-board-id </div></td><td></td><td>HISO</td></tr>
+<tr><td>Psychotherapists Board register Number</td><td><div>https://standards.digital.health.nz/ns/psychotherapists-board-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Psychologists Board Register Number</td><td><div>https://standards.digital.health.nz/ns/psychologists-board-id</div></td><td></td><td>HISO</td></tr>
 <tr><td>Medical Radiation Technologists Board Register Number</td><td><div>https://standards.digital.health.nz/ns/medical-radiation-technologists-board-id</div></td><td></td><td>HISO</td></tr>
 </table>

@@ -3,7 +3,7 @@
   "id": "death-date",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/death-date",
   "version": "0.2.0",
-  "name": "Death_date",
+  "name": "DeathDate",
   "status": "active",
   "description": "The date the person died.",
   "jurisdiction": [

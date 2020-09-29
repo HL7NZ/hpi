@@ -112,6 +112,12 @@
 <td></td>
 <td>Returns PractitionerRoles based on role</td>
 </tr>
+<tr>
+<td>active</td>
+<td>token</td>
+<td></td>
+<td>To enable exclusion of inactive PractitionerRoles</td>
+</tr>
 </table>
 <strong>Search includes</strong>
 <table class='table table-bordered table-condensed'>

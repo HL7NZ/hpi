@@ -5,6 +5,16 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI PractitionerRole profile</div>",
     "status": "additional"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitionerRole",
   "version": "0.2.0",
   "name": "HpiPractitionerRole",
@@ -99,6 +109,11 @@
         ]
       },
       {
+        "id": "PractitionerRole.identifier.type",
+        "path": "PractitionerRole.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "PractitionerRole.identifier.system",
         "path": "PractitionerRole.identifier.system",
         "binding": {
@@ -146,6 +161,11 @@
       {
         "id": "PractitionerRole.availableTime",
         "path": "PractitionerRole.availableTime",
+        "max": "0"
+      },
+      {
+        "id": "PractitionerRole.availableTime.daysOfWeek",
+        "path": "PractitionerRole.availableTime.daysOfWeek",
         "max": "0"
       },
       {

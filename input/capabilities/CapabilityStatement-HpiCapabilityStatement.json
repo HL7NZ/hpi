@@ -26,7 +26,7 @@
     "json"
   ],
   "implementation": {
-    "description": "The HIP endpoint",
+    "description": "The HPI endpoint",
     "url": "http://moh.org.nz/hpi/fhir"
   },
   "rest": [
@@ -131,6 +131,11 @@
               "name": "role",
               "type": "token",
               "documentation": "Returns PractitionerRoles based on role"
+            },
+            {
+              "name": "active",
+              "type": "token",
+              "documentation": "To enable exclusion of inactive PractitionerRoles"
             }
           ],
           "searchInclude": [

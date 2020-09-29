@@ -1,6 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "HpiEndpoint",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Entities"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiEndpoint",
   "version": "0.2.0",
   "name": "HpiEndpoint",

@@ -5,6 +5,16 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI Practitioner profile</div>",
     "status": "additional"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "individual"
+    }
+  ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner",
   "version": "0.2.0",
   "name": "HpiPractitioner",
@@ -69,6 +79,21 @@
         ]
       },
       {
+        "id": "Practitioner.extension:educational-qualification",
+        "path": "Practitioner.extension",
+        "sliceName": "educational-qualification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Practitioner.identifier",
         "path": "Practitioner.identifier",
         "slicing": {
@@ -87,6 +112,11 @@
         }
       },
       {
+        "id": "Practitioner.identifier.type",
+        "path": "Practitioner.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Practitioner.identifier.system",
         "path": "Practitioner.identifier.system",
         "binding": {
@@ -99,6 +129,7 @@
         "path": "Practitioner.identifier",
         "sliceName": "dormant",
         "short": "CPN (Common Person Name) identifiers that have been deprecated for this Person",
+        "definition": "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’.",
         "min": 0,
         "max": "*",
         "mustSupport": true

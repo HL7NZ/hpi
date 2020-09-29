@@ -3,7 +3,7 @@
   "id": "practitionerRole-status",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status",
   "version": "0.2.0",
-  "name": "PractitionerRole_status",
+  "name": "PractitionerRoleStatus",
   "status": "active",
   "description": "The status of the role - active,ended",
   "jurisdiction": [

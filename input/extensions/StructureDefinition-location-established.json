@@ -3,7 +3,7 @@
   "id": "location-established",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/location-established",
   "version": "0.2.0",
-  "name": "Location_established",
+  "name": "LocationEstablished",
   "status": "active",
   "description": "The period over which the location is open",
   "jurisdiction": [

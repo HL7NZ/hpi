@@ -2,7 +2,7 @@
   "resourceType": "NamingSystem",
   "id": "nzopt",
   "name": "NZOpt",
-  "description": "Medical Council of New Zealand Register Numbe",
+  "description": "Optometrists & Dispensing Opticians Board Register Number",
   "status": "active",
   "kind": "identifier",
   "date": "2020-07-14",
@@ -10,7 +10,7 @@
   "uniqueId": [
     {
       "type": "uri",
-      "value": "Optometrists & Dispensing Opticians Board Register Number",
+      "value": "https://standards.digital.health.nz/ns/optometrists-dispensing-opticians-board-id",
       "preferred": true
     }
   ]

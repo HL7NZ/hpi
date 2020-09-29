@@ -1,4 +1,4 @@
-Extension: Scope_of_practice
+Extension: ScopeOfPractice
 Id: scope-of-practice
 Description: "The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body."
 

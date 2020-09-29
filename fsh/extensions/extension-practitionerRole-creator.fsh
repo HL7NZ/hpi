@@ -1,4 +1,4 @@
-Extension: PractitionerRole_creator
+Extension: PractitionerRoleCreator
 Id: practitionerRole-creator
 Description: "The organisation and person that created this role"
 

@@ -54,6 +54,14 @@
 <td>The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly).</td>
 </tr>
 <tr>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-educational-qualification.html'>educational-qualification</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/educational-qualification</td>
+<td>
+<div>Practitioner</div>
+</td>
+<td>Educational qualifications.</td>
+</tr>
+<tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-location-established.html'>location-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/location-established</td>
 <td>

@@ -1,4 +1,4 @@
-Extension: PractitionerRole_status
+Extension: PractitionerRoleStatus
 Id: practitionerRole-status
 Description: "The status of the role - active,ended"
 

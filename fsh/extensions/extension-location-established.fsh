@@ -1,4 +1,4 @@
-Extension: Location_established
+Extension: LocationEstablished
 Id: location-established
 Description: "The period over which the location is open"
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/location-established"

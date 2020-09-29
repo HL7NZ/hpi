@@ -1,4 +1,4 @@
-Extension: Death_date
+Extension: DeathDate
 Id: death-date
 Description: "The date the person died."
 

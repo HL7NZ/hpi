@@ -234,19 +234,37 @@ Usage: #definition
 * uniqueId.value = "https://standards.digital.health.nz/ns/occupational-therapy-board-id"
 * uniqueId.preferred = true
 
-Instance: nzopt
+
+Instance: nzpsycho
 InstanceOf: NamingSystem
 Usage: #definition
 
-* name = "NZOpt"
-* description = "Medical Council of New Zealand Register Numbe"
+* name = "NZPsycho"
+* description = "Psychotherapists Board register Number"
 * status = #active
 * kind = #identifier
 * date = "2020-07-14"
 * responsible = "HISO"
 
 * uniqueId.type = #uri
-* uniqueId.value = "Optometrists & Dispensing Opticians Board Register Number"
+* uniqueId.value = "https://standards.digital.health.nz/ns/psychotherapists-board-id"
+* uniqueId.preferred = true
+
+
+
+Instance: nzopt
+InstanceOf: NamingSystem
+Usage: #definition
+
+* name = "NZOpt"
+* description = "Optometrists & Dispensing Opticians Board Register Number"
+* status = #active
+* kind = #identifier
+* date = "2020-07-14"
+* responsible = "HISO"
+
+* uniqueId.type = #uri
+* uniqueId.value = "https://standards.digital.health.nz/ns/optometrists-dispensing-opticians-board-id"
 * uniqueId.preferred = true
 
 Instance: nzost

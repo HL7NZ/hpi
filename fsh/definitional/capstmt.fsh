@@ -22,7 +22,7 @@ This is the computable resource that describes the RESTful endpoint
 * fhirVersion = #4.0.1
 * format = #json
 
-* implementation.description = "The HIP endpoint"
+* implementation.description = "The HPI endpoint"
 * implementation.url = "http://moh.org.nz/hpi/fhir"
 
 * rest.mode = #server
@@ -130,8 +130,11 @@ PractitionerRole query
 
 * rest.resource[1].searchParam[4].name = "role"
 * rest.resource[1].searchParam[4].type = #token
-//* rest.resource[1].searchParam[4].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
 * rest.resource[1].searchParam[4].documentation = "Returns PractitionerRoles based on role"
+
+* rest.resource[1].searchParam[5].name = "active"
+* rest.resource[1].searchParam[5].type = #token
+* rest.resource[1].searchParam[5].documentation = "To enable exclusion of inactive PractitionerRoles"
 
 * rest.resource[1].searchInclude[0] = "practitioner"
 * rest.resource[1].searchInclude[1] = "organization"

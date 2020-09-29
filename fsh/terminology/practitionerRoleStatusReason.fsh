@@ -22,5 +22,5 @@ Description:  "The reason for the current status of PractitionerRole"
 * #enteredInError "enteredInError"
 * #duplicate "duplicate"
 * #died "died"
-* #other "ther"
+* #other "other"
 

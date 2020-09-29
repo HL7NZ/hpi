@@ -1,4 +1,4 @@
-Extension: Condition_on_practice
+Extension: ConditionOnPractice
 Id: condition-on-practice
 Description: "A full description of the conditions the health practitioner is subject to in relation to their scope of practice."
 

@@ -39,7 +39,8 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <tr><td width='20%'>PractitionerRoleCodes</td><td>Coded roles that can be in a PractitionerRole</td><td><a href='ValueSet-practitionerrole-codes.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td><td><div><a href='CodeSystem-practitionerrole-codes.html'>https://standards.digital.health.nz/ns/practitioner-role-code</a></div></td></tr>
 </table>
 <br/><br/>
-<h3>ValueSet by path</h3>
+### ValueSet by path
+<em>Coded bindings - even for terminology defined elsewhere</em>
 <table class='table table-bordered table-condensed'>
 <tr><th>Path</th><th>ValueSet</th><th>Notes</th></tr>
 <tr>
