@@ -105,9 +105,6 @@ PractitionerRole query
 * rest.resource[1].interaction[2].code = #search-type
 * rest.resource[1].interaction[2].documentation = ""
 
-
-
-
 * rest.resource[1].searchParam[0].name = "practitioner"
 * rest.resource[1].searchParam[0].type = #reference
 //* rest.resource[1].searchParam[0].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"

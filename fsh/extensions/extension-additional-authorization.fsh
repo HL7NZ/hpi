@@ -1,4 +1,4 @@
-Extension: Additional_authorization
+Extension: AdditionalAuthorization
 Id: additional-authorization
 Description: "Additional authorizations that a practitioner is authorized to perform"
 

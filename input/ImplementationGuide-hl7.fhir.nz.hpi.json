@@ -101,7 +101,7 @@
         "reference": {
           "reference": "StructureDefinition/additional-authorization"
         },
-        "name": "Additional_authorization",
+        "name": "AdditionalAuthorization",
         "description": "Additional authorizations that a practitioner is authorized to perform",
         "exampleBoolean": false
       },
