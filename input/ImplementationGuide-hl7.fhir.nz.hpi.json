@@ -756,11 +756,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "capstmt.html",
-          "title": "Capstmt",
-          "generation": "html"
-        },
-        {
           "nameUrl": "capStmtDEP.html",
           "title": "Cap Stmt DEP",
           "generation": "markdown"

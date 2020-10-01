@@ -28,7 +28,6 @@ lists those files generated from project configs or the contents in the ig-data 
 | input/pagecontent/StructureDefinition-HpiPractitioner-notes.md | copied    | fsh/ig-data/input/pagecontent/StructureDefinition-HpiPractitioner-notes.md |
 | input/pagecontent/api.md                                       | copied    | fsh/ig-data/input/pagecontent/api.md                                       |
 | input/pagecontent/capStmtDEP.md                                | copied    | fsh/ig-data/input/pagecontent/capStmtDEP.md                                |
-| input/pagecontent/capstmt.xml                                  | copied    | fsh/ig-data/input/pagecontent/capstmt.xml                                  |
 | input/pagecontent/companion.xml                                | copied    | fsh/ig-data/input/pagecontent/companion.xml                                |
 | input/pagecontent/extensions.xml                               | copied    | fsh/ig-data/input/pagecontent/extensions.xml                               |
 | input/pagecontent/faq.md                                       | copied    | fsh/ig-data/input/pagecontent/faq.md                                       |

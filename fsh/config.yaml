@@ -54,7 +54,7 @@ history:
 menu:
   IG Home: index.html
   General Notes: general.html
-  API: capstmt.html
+  API: CapabilityStatement.html
   Profiles: profiles.html
   Extensions: extensions.html
   Identifiers: NamingSystems.html
