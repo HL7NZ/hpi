@@ -132,7 +132,7 @@
 <td>location</td>
 </tr>
 </table>
-<em>These are the _include parameters that are supported on Patient searches</em>
+<em>These are the _include parameters that are supported on searches</em>
 <br/><br/>
 <a name="Organization"> </a>
 <h3>Organization</h3>
@@ -151,6 +151,12 @@
 <strong>Search Parameters</strong>
 <table class='table table-bordered table-condensed'>
 <tr><th width='15%'>Name</th><th>Type</th> <th>Definition</th><th width='40%'>Documentation</th></tr>
+<tr>
+<td>active</td>
+<td>token</td>
+<td></td>
+<td>Will only return active organizations</td>
+</tr>
 <tr>
 <td>name</td>
 <td>string</td>

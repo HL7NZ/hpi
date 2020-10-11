@@ -59,7 +59,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
-* identifier[dormant].type 0..0
+//* identifier[dormant].type 0..0
 
 //the gender is required by the HPI
 * gender 1..1

@@ -7,7 +7,7 @@ Profile:        HpiOrganization
 Parent:         CommonOrganization
 Id:             HpiOrganization
 Title:          "HPI Organization"
-Description:    "Organizations used by the HPI. For example DHB's, PHO's and Primary care Practices"
+Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
@@ -18,7 +18,7 @@ Description:    "Organizations used by the HPI. For example DHB's, PHO's and Pri
 //elements that have been removed
 * address 0..0
 * contact 0..0
-
+* type 0..0
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 //top level  extensions

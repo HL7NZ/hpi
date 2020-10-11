@@ -154,17 +154,21 @@ Organization query
 * rest.resource[2].interaction[1].code = #search-type
 * rest.resource[2].interaction[1].documentation = ""
 
-* rest.resource[2].searchParam[0].name = "name"
-* rest.resource[2].searchParam[0].type = #string
+* rest.resource[2].searchParam[0].name = "active"
+* rest.resource[2].searchParam[0].type = #token
 * rest.resource[2].searchParam[0].documentation = "Will only return active organizations"
 
-* rest.resource[2].searchParam[1].name = "identifier"
-* rest.resource[2].searchParam[1].type = #token
-* rest.resource[2].searchParam[1].documentation = "The HPI Organization id."
+* rest.resource[2].searchParam[1].name = "name"
+* rest.resource[2].searchParam[1].type = #string
+* rest.resource[2].searchParam[1].documentation = "Will only return active organizations"
 
-* rest.resource[2].searchParam[2].name = "partOf"
-* rest.resource[2].searchParam[2].type = #reference
-* rest.resource[2].searchParam[2].documentation = """
+* rest.resource[2].searchParam[2].name = "identifier"
+* rest.resource[2].searchParam[2].type = #token
+* rest.resource[2].searchParam[2].documentation = "The HPI Organization id."
+
+* rest.resource[2].searchParam[3].name = "partOf"
+* rest.resource[2].searchParam[3].type = #reference
+* rest.resource[2].searchParam[3].documentation = """
 Locates Organizations that are 'part of' another. For example, [host]/Organization?partOf=cmdhb would return all Organizations
 like hospitals that are part of the Organization with the id 'cmdhd'
 """

@@ -162,6 +162,11 @@
           ],
           "searchParam": [
             {
+              "name": "active",
+              "type": "token",
+              "documentation": "Will only return active organizations"
+            },
+            {
               "name": "name",
               "type": "string",
               "documentation": "Will only return active organizations"

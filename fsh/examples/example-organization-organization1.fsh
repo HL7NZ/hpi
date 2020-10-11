@@ -19,12 +19,12 @@ InstanceOf: HpiOrganization
 * identifier[1].system = "https://standards.digital.health.nz/id/nzbn"
 * identifier[1].value = "98ZZB"
 
-
+/*
 //type of organization
 * type.coding.system = "https://standards.digital.health.nz/codesystem/hpi-organization-type-code"
 * type.coding.code = #gp
 * type.coding.display = "General Practice clinic"
-
+*/
 //contact details
 * telecom.system = #email
 * telecom.value = "admin@ghmc"

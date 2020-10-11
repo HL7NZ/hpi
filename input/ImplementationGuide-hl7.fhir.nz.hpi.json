@@ -78,7 +78,7 @@
           "reference": "StructureDefinition/HpiOrganization"
         },
         "name": "HPI Organization",
-        "description": "Organizations used by the HPI. For example DHB's, PHO's and Primary care Practices",
+        "description": "An entity that provides services of interest to, or is involved in, the business of health care service provision.",
         "exampleBoolean": false
       },
       {

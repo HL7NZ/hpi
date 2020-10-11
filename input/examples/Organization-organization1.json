@@ -27,17 +27,6 @@
       "value": "98ZZB"
     }
   ],
-  "type": [
-    {
-      "coding": [
-        {
-          "system": "https://standards.digital.health.nz/codesystem/hpi-organization-type-code",
-          "code": "gp",
-          "display": "General Practice clinic"
-        }
-      ]
-    }
-  ],
   "telecom": [
     {
       "system": "email",
