@@ -31,21 +31,21 @@ Description:    "NZ common Location profile. Adds slicing for HPI Facility code 
 * identifier ^slicing.rules = #open
 
 * identifier contains 
-    HpifacId 0..1 MS and
-    dormantHpiFacId 0..* MS and
-    MOHFacId 0..1 MS
+    facId 0..1 MS and
+    dormant 0..* MS and
+    legacyFacId 0..1 MS
 
-* identifier[HpifacId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
-* identifier[HpifacId].use = #official (exactly)
-* identifier[HpifacId] ^short = "The current Facility id for this location"
+* identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
+* identifier[facId].use = #official (exactly)
+* identifier[facId] ^short = "The current Facility id for this location"
 
-* identifier[dormantHpiFacId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
-* identifier[dormantHpiFacId].use = #old (exactly)
-* identifier[dormantHpiFacId] ^short = "Old facility id's that have been deprecated"
+* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
+* identifier[dormant].use = #old (exactly)
+* identifier[dormant] ^short = "Old facility id's that have been deprecated"
 
 
-* identifier[MOHFacId].system = "https://standards.digital.health.nz/ns/legacy-tbd-id" (exactly)
-* identifier[MOHFacId].use = #official (exactly)
-* identifier[MOHFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
+* identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/legacy-tbd-id" (exactly)
+* identifier[legacyFacId].use = #official (exactly)
+* identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
 
 
