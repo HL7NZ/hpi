@@ -10,7 +10,7 @@ Profile:        HpiLocation
 Parent:         CommonLocation
 Id:             HpiLocation
 Title:          "HPI Location"
-Description:    "Locations used by the HPI. These are also called Facilities."
+Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 

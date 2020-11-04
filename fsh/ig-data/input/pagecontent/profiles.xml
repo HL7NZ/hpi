@@ -25,7 +25,7 @@
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-HpiLocation.html'>HpiLocation</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/HpiLocation</td>
-<td>Locations used by the HPI. These are also called Facilities.</td>
+<td>A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.</td>
 </tr>
 <tr>
 <td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-HpiOrganization.html'>HpiOrganization</a></td>

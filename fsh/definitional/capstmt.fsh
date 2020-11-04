@@ -217,3 +217,7 @@ Location query
 * rest.resource[3].searchParam[5].type = #token
 * rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
 * rest.resource[3].searchParam[5].documentation = "Locations that are in a DHBs catchment area. This is a custom search"
+
+* rest.resource[3].searchParam[6].name = "status"
+* rest.resource[3].searchParam[6].type = #token
+* rest.resource[3].searchParam[6].documentation = "The current status of the Location"

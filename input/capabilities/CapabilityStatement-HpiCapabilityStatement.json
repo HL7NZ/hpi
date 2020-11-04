@@ -226,6 +226,11 @@
               "type": "token",
               "definition": "http://hl7.fhir.org/fhir/SearchParameter/dhb",
               "documentation": "Locations that are in a DHBs catchment area. This is a custom search"
+            },
+            {
+              "name": "status",
+              "type": "token",
+              "documentation": "The current status of the Location"
             }
           ]
         }

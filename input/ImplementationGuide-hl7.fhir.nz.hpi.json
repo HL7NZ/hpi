@@ -70,7 +70,7 @@
           "reference": "StructureDefinition/HpiLocation"
         },
         "name": "HPI Location",
-        "description": "Locations used by the HPI. These are also called Facilities.",
+        "description": "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.",
         "exampleBoolean": false
       },
       {

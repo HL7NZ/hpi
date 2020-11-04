@@ -226,5 +226,11 @@ like hospitals that are part of the Organization with the id 'cmdhd'</td>
 <td>http://hl7.fhir.org/fhir/SearchParameter/dhb</td>
 <td>Locations that are in a DHBs catchment area. This is a custom search</td>
 </tr>
+<tr>
+<td>status</td>
+<td>token</td>
+<td></td>
+<td>The current status of the Location</td>
+</tr>
 </table>
 </div>
