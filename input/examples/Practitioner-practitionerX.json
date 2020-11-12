@@ -6,6 +6,13 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "prac-X"
+    }
+  ],
   "qualification": [
     {
       "extension": [
@@ -56,13 +63,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Supervised Pharmacist</div>",
     "status": "additional"
   },
-  "identifier": [
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "prac-X"
-    }
-  ],
   "name": [
     {
       "text": "Dr Multi RA Example",

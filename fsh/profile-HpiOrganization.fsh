@@ -4,7 +4,7 @@ Alias: $organization-established = http://hl7.org.nz/fhir/StructureDefinition/or
 //Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
 
 Profile:        HpiOrganization
-Parent:         CommonOrganization
+Parent:         Organization
 Id:             HpiOrganization
 Title:          "HPI Organization"
 Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
@@ -20,6 +20,32 @@ Description:    "An entity that provides services of interest to, or is involved
 * contact 0..0
 * type 0..0
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
+
+
+
+// -------- copied from common
+
+* address only CommonAddress
+
+//slice the identifier for HPI Organization identifierr
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "use"
+
+
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+
+* identifier ^slicing.rules = #open
+* identifier contains 
+    orgId 1..1 MS
+
+* identifier[orgId].system = "https://standards.digital.health.nz/ns/hpi-organisation-id" (exactly)
+* identifier[orgId].use = #official (exactly)
+* identifier[orgId] ^short = "The current HPI organization Id for this Organization"
+
+
+
+//------------
 
 //top level  extensions
 * extension contains 

@@ -89,11 +89,6 @@ A common pattern is to have a ValueSet that 'includes' all the codes from a code
 <td></td>
 </tr>
 <tr>
-<td>PractitionerRole.identifier.system</td>
-<td><a href='ValueSet-hpi-identifier-use.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code</a></td>
-<td></td>
-</tr>
-<tr>
 <td>PractitionerRole.code</td>
 <td><a href='ValueSet-practitionerrole-codes.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td>
 <td></td>

@@ -6,15 +6,6 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
     ]
   },
-  "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Good Health Medical Centre</div>",
-    "status": "additional"
-  },
-  "name": "Good Health Medical Centre",
-  "alias": [
-    "Adequate Health Medical Centre"
-  ],
-  "active": true,
   "identifier": [
     {
       "use": "official",
@@ -27,6 +18,15 @@
       "value": "98ZZB"
     }
   ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Good Health Medical Centre</div>",
+    "status": "additional"
+  },
+  "name": "Good Health Medical Centre",
+  "alias": [
+    "Adequate Health Medical Centre"
+  ],
+  "active": true,
   "telecom": [
     {
       "system": "email",

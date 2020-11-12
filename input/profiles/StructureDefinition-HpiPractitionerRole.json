@@ -114,14 +114,6 @@
         "max": "0"
       },
       {
-        "id": "PractitionerRole.identifier.system",
-        "path": "PractitionerRole.identifier.system",
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
-        }
-      },
-      {
         "id": "PractitionerRole.active",
         "path": "PractitionerRole.active",
         "max": "0"

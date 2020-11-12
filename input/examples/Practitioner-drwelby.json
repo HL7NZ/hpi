@@ -6,16 +6,16 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "cpn-1"
+    }
+  ],
   "name": [
     {
       "text": "Dr Marcus Welby"
-    }
-  ],
-  "identifier": [
-    {
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "cpn-1",
-      "use": "official"
     }
   ],
   "gender": "male"

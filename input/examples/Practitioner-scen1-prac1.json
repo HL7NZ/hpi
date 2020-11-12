@@ -6,6 +6,12 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id"
+    }
+  ],
   "name": [
     {
       "text": "Dr John Kildaire",

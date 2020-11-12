@@ -6,6 +6,18 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "98ZZA"
+    },
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "98ZZB"
+    }
+  ],
   "qualification": [
     {
       "extension": [
@@ -106,18 +118,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Dr Multi</div>",
     "status": "additional"
   },
-  "identifier": [
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "98ZZA"
-    },
-    {
-      "use": "old",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "98ZZB"
-    }
-  ],
   "name": [
     {
       "text": "Dr Multi RA Example",

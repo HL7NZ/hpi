@@ -6,18 +6,18 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
+      "value": "cmdhb-1"
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Counties Manakau DHB</div>",
     "status": "additional"
   },
   "name": "Counties Manakau DHB",
-  "identifier": [
-    {
-      "system": "https://standards.digital.health.nz/ns/hpi-organisation-id",
-      "value": "cmdhb-1",
-      "use": "official"
-    }
-  ],
   "telecom": [
     {
       "system": "other",

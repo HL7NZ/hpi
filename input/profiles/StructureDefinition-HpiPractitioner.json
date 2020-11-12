@@ -58,10 +58,39 @@
   "kind": "resource",
   "abstract": false,
   "type": "Practitioner",
-  "baseDefinition": "http://hl7.org.nz/fhir/StructureDefinition/CommonPractitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Practitioner.extension:nzEthnicity",
+        "path": "Practitioner.extension",
+        "sliceName": "nzEthnicity",
+        "min": 0,
+        "max": "6",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
+            ]
+          }
+        ]
+      },
       {
         "id": "Practitioner.extension:death-date",
         "path": "Practitioner.extension",
@@ -83,7 +112,7 @@
         "path": "Practitioner.extension",
         "sliceName": "educational-qualification",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -109,7 +138,8 @@
           ],
           "description": "The identifiers",
           "rules": "openAtEnd"
-        }
+        },
+        "min": 1
       },
       {
         "id": "Practitioner.identifier.type",
@@ -119,10 +149,43 @@
       {
         "id": "Practitioner.identifier.system",
         "path": "Practitioner.identifier.system",
+        "example": [
+          {
+            "label": "HPI",
+            "valueUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
+          }
+        ],
         "binding": {
           "strength": "required",
           "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"
         }
+      },
+      {
+        "id": "Practitioner.identifier:HPI",
+        "path": "Practitioner.identifier",
+        "sliceName": "HPI",
+        "short": "The currently active CPN (Common Person Name)",
+        "definition": "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier:HPI.use",
+        "path": "Practitioner.identifier.use",
+        "min": 1,
+        "fixedCode": "official"
+      },
+      {
+        "id": "Practitioner.identifier:HPI.type",
+        "path": "Practitioner.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Practitioner.identifier:HPI.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "fixedUri": "https://standards.digital.health.nz/ns/hpi-provider-id"
       },
       {
         "id": "Practitioner.identifier:dormant",
@@ -152,6 +215,12 @@
         "max": "0"
       },
       {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Practitioner.name.use",
         "path": "Practitioner.name.use",
         "binding": {
@@ -167,7 +236,15 @@
       {
         "id": "Practitioner.address",
         "path": "Practitioner.address",
-        "max": "0"
+        "max": "0",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/CommonAddress"
+            ]
+          }
+        ]
       },
       {
         "id": "Practitioner.gender",
@@ -213,7 +290,7 @@
         "id": "Practitioner.qualification.extension:additional-authorization",
         "path": "Practitioner.qualification.extension",
         "sliceName": "additional-authorization",
-        "short": "Additional things the perrson is authorized to do",
+        "short": "Additional things the person is authorized to do",
         "min": 0,
         "max": "*",
         "type": [

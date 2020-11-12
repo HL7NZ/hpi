@@ -6,5 +6,11 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-organisation-id"
+    }
+  ],
   "name": "Very Good Health Clinic"
 }

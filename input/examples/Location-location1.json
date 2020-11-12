@@ -6,6 +6,23 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiLocation"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
+      "value": "F123456-5-1"
+    },
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
+      "value": "F123456-5-0"
+    },
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/legacy-tbd-id",
+      "value": "FAC-code"
+    }
+  ],
   "_alias": [
     {
       "extension": [
@@ -47,23 +64,6 @@
   "status": "active",
   "name": "East End Surgery",
   "description": "Fully equipped General Practice",
-  "identifier": [
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
-      "value": "F123456-5-1"
-    },
-    {
-      "use": "old",
-      "system": "https://standards.digital.health.nz/ns/hpi-facility-id",
-      "value": "F123456-5-0"
-    },
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/legacy-tbd-id",
-      "value": "FAC-code"
-    }
-  ],
   "alias": [
     "East End Inc.",
     "Dr Dobbs Surgery"

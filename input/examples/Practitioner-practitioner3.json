@@ -6,6 +6,23 @@
       "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
     ]
   },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "prac002"
+    },
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "prac003"
+    },
+    {
+      "use": "old",
+      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
+      "value": "prac001"
+    }
+  ],
   "qualification": [
     {
       "extension": [
@@ -108,23 +125,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Nurse Practitioner</div>",
     "status": "additional"
   },
-  "identifier": [
-    {
-      "use": "official",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "prac002"
-    },
-    {
-      "use": "old",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "prac003"
-    },
-    {
-      "use": "old",
-      "system": "https://standards.digital.health.nz/ns/hpi-provider-id",
-      "value": "prac001"
-    }
-  ],
   "name": [
     {
       "family": "Smith",

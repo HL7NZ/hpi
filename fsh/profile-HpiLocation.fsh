@@ -7,7 +7,7 @@ Alias: $hpiLocation-established = http://hl7.org.nz/fhir/StructureDefinition/loc
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
 
 Profile:        HpiLocation
-Parent:         CommonLocation
+Parent:         Location
 Id:             HpiLocation
 Title:          "HPI Location"
 Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
@@ -21,6 +21,45 @@ Description:    "A physical location from which health goods and/or services are
 * hoursOfOperation 0..0
 * availabilityExceptions 0..0
 * position 0..0
+
+
+//------- copied from commonLocation
+
+//Needs to be a different geocode as uses a different datum
+* address only CommonAddress
+
+//slice the identifier
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "use"
+
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "system"
+
+* identifier ^slicing.rules = #open
+
+* identifier contains 
+    facId 1..1 MS and
+    dormant 0..* MS and
+    legacyFacId 0..1 MS
+
+* identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
+* identifier[facId].use = #official (exactly)
+* identifier[facId] ^short = "The current Facility id for this location"
+
+* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
+* identifier[dormant].use = #old (exactly)
+* identifier[dormant] ^short = "Old facility id's that have been deprecated"
+
+
+* identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/legacy-tbd-id" (exactly)
+* identifier[legacyFacId].use = #official (exactly)
+* identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
+
+
+
+
+// -------------
+
 
 //top level  extensions
 * extension contains 
