@@ -241,7 +241,7 @@
           {
             "code": "Address",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/CommonAddress"
+              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
             ]
           }
         ]

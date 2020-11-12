@@ -26,7 +26,7 @@ Description:    "A physical location from which health goods and/or services are
 //------- copied from commonLocation
 
 //Needs to be a different geocode as uses a different datum
-* address only CommonAddress
+* address only NzAddress
 
 //slice the identifier
 * identifier ^slicing.discriminator.type = #value
@@ -76,7 +76,7 @@ Description:    "A physical location from which health goods and/or services are
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 
-* address only $commonAddress
+//* address only $commonAddress
 * address.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
 
 * type from https://standards.digital.health.nz/fhir/ValueSet/location-type-code

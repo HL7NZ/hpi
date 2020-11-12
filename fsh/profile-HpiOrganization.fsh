@@ -25,7 +25,7 @@ Description:    "An entity that provides services of interest to, or is involved
 
 // -------- copied from common
 
-* address only CommonAddress
+* address only NzAddress
 
 //slice the identifier for HPI Organization identifierr
 * identifier ^slicing.discriminator.type = #value

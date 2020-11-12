@@ -40,7 +40,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * extension contains 
     $nzEthnicity named nzEthnicity 0..6
 
-* address only CommonAddress
+* address only NzAddress
 
 //must be one name with a family name
 //todo - should we really insist on a family name? May not always be known...
