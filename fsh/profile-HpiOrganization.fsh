@@ -37,12 +37,16 @@ Description:    "An entity that provides services of interest to, or is involved
 
 * identifier ^slicing.rules = #open
 * identifier contains 
-    orgId 1..1 MS
+    orgId 1..1 MS and
+    legacyOrgId 0..1 MS
 
 * identifier[orgId].system = "https://standards.digital.health.nz/ns/hpi-organisation-id" (exactly)
 * identifier[orgId].use = #official (exactly)
 * identifier[orgId] ^short = "The current HPI organization Id for this Organization"
 
+* identifier[legacyOrgId].system = "https://standards.digital.health.nz/ns/nzhis-agency-id" (exactly)
+* identifier[legacyOrgId].use = #official (exactly)
+* identifier[legacyOrgId] ^short = "The MOH (NZHIS) Legacy agency code)"
 
 
 //------------
