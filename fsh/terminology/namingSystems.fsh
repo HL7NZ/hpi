@@ -356,7 +356,7 @@ Usage: #definition
 * responsible = "HISO"
 
 * uniqueId.type = #uri
-* uniqueId.value = "https://standards.digital.health.nz/ns/legacy-tbd-id"
+* uniqueId.value = "https://standards.digital.health.nz/ns/nzhis-facility-id"
 * uniqueId.preferred = true
 
 */

@@ -23,7 +23,7 @@ InstanceOf: HpiLocation
 
 //MOH facility code
 * identifier[2].use = #official
-* identifier[2].system = "https://standards.digital.health.nz/ns/legacy-tbd-id"
+* identifier[2].system = "https://standards.digital.health.nz/ns/nzhis-facility-id"
 * identifier[2].value = "FAC-code"
 
 

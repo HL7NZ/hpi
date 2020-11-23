@@ -51,7 +51,7 @@ Description:    "A physical location from which health goods and/or services are
 * identifier[dormant] ^short = "Old facility id's that have been deprecated"
 
 
-* identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/legacy-tbd-id" (exactly)
+* identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/nzhis-facility-id" (exactly)
 * identifier[legacyFacId].use = #official (exactly)
 * identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
 
