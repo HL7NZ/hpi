@@ -24,7 +24,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 # there is a dependency on the NHI to get address profile
 dependencies:
-  hl7.org.nz.fhir.ig.nhi: dev
+  hl7.org.nz.fhir.ig.nhi: current
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
