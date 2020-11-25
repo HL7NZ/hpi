@@ -10,7 +10,7 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.nz.hpi
+id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
 version: 0.2.0
 name: NewZealandHPIIG
@@ -24,7 +24,7 @@ license: CC0-1.0
 fhirVersion: 4.0.1
 # there is a dependency on the NHI to get address profile
 dependencies:
-  hl7.fhir.nz.nhi: current
+  hl7.org.nz.fhir.ig.nhi: dev
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+

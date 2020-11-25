@@ -112,10 +112,5 @@
 <h3>Extensions used but defined elsewhere</h3>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Url</th><th>Description</th><th>IG</th></tr>
-<tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-nz-ethnicity.html'>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</a></td>
-<td>The ethnicity of the individual. Uses level 4 codes (most detailed).</td>
-<td>nhi</td>
-</tr>
 </table>
 </div>
