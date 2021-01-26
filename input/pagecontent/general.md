@@ -39,12 +39,10 @@ Resources can be expressed either as Json or XML, and both formats are supported
 All of the FHIR resources in this implementation have both an id and an identifier.
 
 The id is the ‘physical’ identity of the resource, and the identifier is the business identifier. 
-Refer to the 'Identifier' tab for further details
-
 
 In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type in a resource). Thus the id for the resource above would be ‘96ZZZZ’, and the url something like:
 
-[http://hpi.moh.nz/fhir/Practitioner/](http://hpi.moh.nz/fhir/Practitioner/prac-X)96ZZZZ 
+http://hpi.moh.nz/fhir/Practitioner/96ZZZZ 
 
 (The actual root url for the HPI has not yet been determined).
 
@@ -54,9 +52,10 @@ This design allows an implementer to retrieve a resource from the HPI and save i
 #### Read resource by id
 
 
-Extract the value of the identifier where the value of use is ‘official’, and use that as the id for a direct read from the server. 
+Extract the value of the identifier where the value of the __use__ element is ‘official’, and use that as the id for a direct read from the server. 
 
-Example: [http://hpi.moh.nz/fhir/Practitioner](http://hpi.moh.nz/fhir/Practitioner/prac-X)/96ZZZZ
+
+http://hpi.moh.nz/fhir/Practitioner/prac-X96ZZZZ
 
 
 #### Query resource
@@ -64,12 +63,14 @@ Example: [http://hpi.moh.nz/fhir/Practitioner](http://hpi.moh.nz/fhir/Practition
 Use the identifier in a search query. 
 
 
-    Example: [http://hpi.moh.nz/fhir/Practitioner?](http://hpi.moh.nz/fhir/Practitioner/prac-X)identifier=https://standards.digital.health.nz/id/hpi|96ZZZZ
+Example: 
+
+http://hpi.moh.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi|96ZZZZ
 
 
 (Note that both system and value are included in the query, with values separated by a ‘|’. When making the query, the ‘|’ needs to be url-escaped)
 
-This will return a bundle of Practitioner resources with only a single entry. 
+This example will return a bundle of Practitioner resources with only a single entry (as the system enforces uniqueness of the HPI identifier). Other queries - eg name - may well return multiple instances.
 
 
 ### References between resources
