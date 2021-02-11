@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-110" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/vs/nhi-citizenship-source" />
+	<version value="1.1" />
+	<name value="Nhi_citizenship_source" />
+	<title value="NZ Citizenship Information Source" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for the source of information for NZ citizenship." />
+	<purpose value="A coded type for the source of information for NZ citizenship." />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/cs/nhi-information-source" />
+			<filter>
+				<property value="code" />
+				<op value="in" />
+				<value value="DIA,PPRT,NZCT,BRCT,NPRF" />
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

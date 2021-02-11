@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<!-- http://snomed.info/sct where concept is-a 223366009 (Healthcare professional) -->
+	<url value="http://snomed.info/sct/223366009" />
+	<version value="20190131" />
+	<name value="SnomedHealthOccupationSubset" />
+	<title value="SNOMED Health occupation subset (New Zealand Ministry of Health)" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2019-05-01T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description
+		value="Health occupation subset. Refset Id 451000210100. Module Id 21000210109." />
+	<purpose value="A coded value for practitioner roles." />
+	<caseSensitive value="true" />
+	<versionNeeded value="false" />
+	<content value="complete" />
+	<count value="76" />
+	<concept>
+		<code value="446701002"/>
+		<display value="Addiction medicine specialist"/>
+	</concept>
+	<concept>
+		<code value="224608005"/>
+		<display value="Administrative healthcare staff"/>
+	</concept>
+	<concept>
+		<code value="88189002"/>
+		<display value="Anaesthetist"/>
+	</concept>
+	<concept>
+		<code value="309418004"/>
+		<display value="Audiologist"/>
+	</concept>
+	<concept>
+		<code value="265951000"/>
+		<display value="Biological scientists and biochemists"/>
+	</concept>
+	<concept>
+		<code value="17561000"/>
+		<display value="Cardiologist"/>
+	</concept>
+	<concept>
+		<code value="309369000"/>
+		<display value="Cardiothoracic surgeon"/>
+	</concept>
+	<concept>
+		<code value="309347007"/>
+		<display value="Clinical haematologist"/>
+	</concept>
+	<concept>
+		<code value="63098009"/>
+		<display value="Clinical immunologist"/>
+	</concept>
+	<concept>
+		<code value="309348002"/>
+		<display value="Clinical neurophysiologist"/>
+	</concept>
+	<concept>
+		<code value="224570006"/>
+		<display value="Clinical nurse specialist"/>
+	</concept>
+	<concept>
+		<code value="310191001"/>
+		<display value="Clinical psychologist"/>
+	</concept>
+	<concept>
+		<code value="158999002"/>
+		<display value="Community midwife"/>
+	</concept>
+	<concept>
+		<code value="160008000"/>
+		<display value="Dental technician"/>
+	</concept>
+	<concept>
+		<code value="106289002"/>
+		<display value="Dentist"/>
+	</concept>
+	<concept>
+		<code value="18803008"/>
+		<display value="Dermatologist"/>
+	</concept>
+	<concept>
+		<code value="159033005"/>
+		<display value="Dietitian"/>
+	</concept>
+	<concept>
+		<code value="309372007"/>
+		<display value="Ear, nose and throat surgeon"/>
+	</concept>
+	<concept>
+		<code value="159036002"/>
+		<display value="ECG technician"/>
+	</concept>
+	<concept>
+		<code value="309294001"/>
+		<display value="Emergency department physician"/>
+	</concept>
+	<concept>
+		<code value="61894003"/>
+		<display value="Endocrinologist"/>
+	</concept>
+	<concept>
+		<code value="62247001"/>
+		<display value="Family medicine specialist"/>
+	</concept>
+	<concept>
+		<code value="71838004"/>
+		<display value="Gastroenterologist"/>
+	</concept>
+	<concept>
+		<code value="85733003"/>
+		<display value="General pathologist"/>
+	</concept>
+	<concept>
+		<code value="78703002"/>
+		<display value="General surgeon"/>
+	</concept>
+	<concept>
+		<code value="159141008"/>
+		<display value="Geneticist"/>
+	</concept>
+	<concept>
+		<code value="90655003"/>
+		<display value="Geriatrics specialist"/>
+	</concept>
+	<concept>
+		<code value="224577009"/>
+		<display value="Healthcare assistant"/>
+	</concept>
+	<concept>
+		<code value="158972004"/>
+		<display value="House officer"/>
+	</concept>
+	<concept>
+		<code value="76899008"/>
+		<display value="Infectious disease specialist"/>
+	</concept>
+	<concept>
+		<code value="309338004"/>
+		<display value="Intensive care specialist"/>
+	</concept>
+	<concept>
+		<code value="39677007"/>
+		<display value="Internal medicine specialist"/>
+	</concept>
+	<concept>
+		<code value="159282002"/>
+		<display value="Laboratory technician"/>
+	</concept>
+	<concept>
+		<code value="159283007"/>
+		<display value="Laboratory technician - general science"/>
+	</concept>
+	<concept>
+		<code value="224533002"/>
+		<display value="Medical officer"/>
+	</concept>
+	<concept>
+		<code value="310512001"/>
+		<display value="Medical oncologist"/>
+	</concept>
+	<concept>
+		<code value="159016003"/>
+		<display value="Medical radiographer"/>
+	</concept>
+	<concept>
+		<code value="398130009"/>
+		<display value="Medical student"/>
+	</concept>
+	<concept>
+		<code value="11911009"/>
+		<display value="Nephrologist"/>
+	</concept>
+	<concept>
+		<code value="56397003"/>
+		<display value="Neurologist"/>
+	</concept>
+	<concept>
+		<code value="45544007"/>
+		<display value="Neurosurgeon"/>
+	</concept>
+	<concept>
+		<code value="224571005"/>
+		<display value="Nurse practitioner"/>
+	</concept>
+	<concept>
+		<code value="309367003"/>
+		<display value="Obstetrician and gynaecologist"/>
+	</concept>
+	<concept>
+		<code value="80546007"/>
+		<display value="Occupational therapist"/>
+	</concept>
+	<concept>
+		<code value="422234006"/>
+		<display value="Ophthalmologist"/>
+	</concept>
+	<concept>
+		<code value="28229004"/>
+		<display value="Optometrist"/>
+	</concept>
+	<concept>
+		<code value="49993003"/>
+		<display value="Oral surgeon"/>
+	</concept>
+	<concept>
+		<code value="22731001"/>
+		<display value="Orthopaedic surgeon"/>
+	</concept>
+	<concept>
+		<code value="309383003"/>
+		<display value="Paediatric surgeon"/>
+	</concept>
+	<concept>
+		<code value="82296001"/>
+		<display value="Paediatrician"/>
+	</concept>
+	<concept>
+		<code value="309359006"/>
+		<display value="Palliative care physician"/>
+	</concept>
+	<concept>
+		<code value="46255001"/>
+		<display value="Pharmacist"/>
+	</concept>
+	<concept>
+		<code value="159040006"/>
+		<display value="Pharmacy technician"/>
+	</concept>
+	<concept>
+		<code value="449161006"/>
+		<display value="Physician assistant"/>
+	</concept>
+	<concept>
+		<code value="36682004"/>
+		<display value="Physiotherapist"/>
+	</concept>
+	<concept>
+		<code value="8724009"/>
+		<display value="Plastic surgeon"/>
+	</concept>
+	<concept>
+		<code value="159034004"/>
+		<display value="Podiatrist"/>
+	</concept>
+	<concept>
+		<code value="224595007"/>
+		<display value="Professional counsellor"/>
+	</concept>
+	<concept>
+		<code value="80584001"/>
+		<display value="Psychiatrist"/>
+	</concept>
+	<concept>
+		<code value="59944000"/>
+		<display value="Psychologist"/>
+	</concept>
+	<concept>
+		<code value="26369006"/>
+		<display value="Public health nurse"/>
+	</concept>
+	<concept>
+		<code value="41672002"/>
+		<display value="Pulmonologist"/>
+	</concept>
+	<concept>
+		<code value="763292005"/>
+		<display value="Radiation oncologist"/>
+	</concept>
+	<concept>
+		<code value="66862007"/>
+		<display value="Radiologist"/>
+	</concept>
+	<concept>
+		<code value="159018002"/>
+		<display value="Radiotherapist"/>
+	</concept>
+	<concept>
+		<code value="309453006"/>
+		<display value="Registered midwife"/>
+	</concept>
+	<concept>
+		<code value="224535009"/>
+		<display value="Registered nurse"/>
+	</concept>
+	<concept>
+		<code value="224531000"/>
+		<display value="Registrar"/>
+	</concept>
+	<concept>
+		<code value="45440000"/>
+		<display value="Rheumatologist"/>
+	</concept>
+	<concept>
+		<code value="106328005"/>
+		<display value="Social worker"/>
+	</concept>
+	<concept>
+		<code value="159026005"/>
+		<display value="Speech and language therapist"/>
+	</concept>
+	<concept>
+		<code value="158996009"/>
+		<display value="State enrolled nurse"/>
+	</concept>
+	<concept>
+		<code value="65853000"/>
+		<display value="Student"/>
+	</concept>
+	<concept>
+		<code value="15900500"/>
+		<display value="unable to determine name info"/>
+	</concept>
+	<concept>
+		<code value="24590004"/>
+		<display value="Urologist"/>
+	</concept>
+	<concept>
+		<code value="309388007"/>
+		<display value="Vascular surgeon"/>
+	</concept>
+</CodeSystem>

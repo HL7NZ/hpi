@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-67" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/address-not-validated-reason-code" />
+	<version value="1.1" />
+	<name value="Nhi_address_not_validated_reason" />
+	<title value="Address Not Validated Reason" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Reason why an address is not validated." />
+	<purpose value="To be used when an unvalidated address is returned." />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/ns/address-not-validated-reason-code" />
+		</include>
+	</compose>
+</ValueSet>

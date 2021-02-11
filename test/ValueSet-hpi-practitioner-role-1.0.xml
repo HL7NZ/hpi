@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-101" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code" />
+	<version value="1.0" />
+	<name value="Hpi_practitioner_role" />
+	<title value="PractitonerRole code" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-11-01T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="The role a practitioner holds." />
+	<purpose value="The role a practitioner holds." />
+	<compose>
+		<include>
+			<!-- ANZSCO - Australian and New Zealand Standard Classification of Occupations, 2013 -->
+			<system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0" />
+			<version value="1.2" />
+		</include>
+		<include>
+			<!-- SNOMED Health occupation subset (New Zealand Ministry of Health) -->
+			<system value="http://snomed.info/sct/223366009" />
+			<version value="20190131" />
+		</include>
+	</compose>
+</ValueSet>

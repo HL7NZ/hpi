@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-38" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/name-prefix-code" />
+	<version value="2.0" />
+	<name value="Name_prefix" />
+	<title value="Name Prefix" />
+	<status value="active" />
+	<experimental value="true" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for name prefixes." />
+	<purpose value="A coded type for name prefixes." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="73" />
+	<concept>
+		<code value="ac"/>
+		<display value="Aircraftman"/>
+	</concept>
+	<concept>
+		<code value="aircdre"/>
+		<display value="Air Commodore"/>
+	</concept>
+	<concept>
+		<code value="am"/>
+		<display value="Air Marshal"/>
+	</concept>
+	<concept>
+		<code value="amt"/>
+		<display value="Able Medical Assistant"/>
+	</concept>
+	<concept>
+		<code value="assoc prof"/>
+		<display value="Associate Professor"/>
+	</concept>
+	<concept>
+		<code value="asst prof"/>
+		<display value="Assistant Professor"/>
+	</concept>
+	<concept>
+		<code value="avm"/>
+		<display value="Air Vice Marshal"/>
+	</concept>
+	<concept>
+		<code value="bdr"/>
+		<display value="Bombardier"/>
+	</concept>
+	<concept>
+		<code value="br"/>
+		<display value="Brother"/>
+	</concept>
+	<concept>
+		<code value="brig"/>
+		<display value="Brigadier"/>
+	</concept>
+	<concept>
+		<code value="canon"/>
+		<display value="Canon"/>
+	</concept>
+	<concept>
+		<code value="capt"/>
+		<display value="Captain"/>
+	</concept>
+	<concept>
+		<code value="card"/>
+		<display value="Cardinal"/>
+	</concept>
+	<concept>
+		<code value="cdr"/>
+		<display value="Commander"/>
+	</concept>
+	<concept>
+		<code value="cdre"/>
+		<display value="Commodore"/>
+	</concept>
+	<concept>
+		<code value="col"/>
+		<display value="Colonel"/>
+	</concept>
+	<concept>
+		<code value="cpl"/>
+		<display value="Corporal"/>
+	</concept>
+	<concept>
+		<code value="cpomed"/>
+		<display value="Chief Petty Officer Medic"/>
+	</concept>
+	<concept>
+		<code value="dame"/>
+		<display value="Dame"/>
+	</concept>
+	<concept>
+		<code value="dr"/>
+		<display value="Doctor"/>
+	</concept>
+	<concept>
+		<code value="ens"/>
+		<display value="Ensign"/>
+	</concept>
+	<concept>
+		<code value="f/sgt"/>
+		<display value="Flight Sergeant"/>
+	</concept>
+	<concept>
+		<code value="fgoff"/>
+		<display value="Flying Officer"/>
+	</concept>
+	<concept>
+		<code value="fltlt"/>
+		<display value="Flight Lieutenant"/>
+	</concept>
+	<concept>
+		<code value="fr"/>
+		<display value="Father"/>
+	</concept>
+	<concept>
+		<code value="gen"/>
+		<display value="General"/>
+	</concept>
+	<concept>
+		<code value="gpcapt"/>
+		<display value="Group Captain"/>
+	</concept>
+	<concept>
+		<code value="her excel"/>
+		<display value="Her Excellency"/>
+	</concept>
+	<concept>
+		<code value="his excel"/>
+		<display value="His Excellency"/>
+	</concept>
+	<concept>
+		<code value="hon"/>
+		<display value="The Honourable"/>
+	</concept>
+	<concept>
+		<code value="lac"/>
+		<display value="Leading Aircraftman"/>
+	</concept>
+	<concept>
+		<code value="lady"/>
+		<display value="Lady"/>
+	</concept>
+	<concept>
+		<code value="lcpl"/>
+		<display value="Lance Corporal"/>
+	</concept>
+	<concept>
+		<code value="lmed"/>
+		<display value="Leading Medic"/>
+	</concept>
+	<concept>
+		<code value="lt"/>
+		<display value="Lieutenant"/>
+	</concept>
+	<concept>
+		<code value="lt cdr"/>
+		<display value="Lieutenant Commander"/>
+	</concept>
+	<concept>
+		<code value="lt col"/>
+		<display value="Lieutenant Colonel"/>
+	</concept>
+	<concept>
+		<code value="lt gen"/>
+		<display value="Lieutenant General"/>
+	</concept>
+	<concept>
+		<code value="maj"/>
+		<display value="Major"/>
+	</concept>
+	<concept>
+		<code value="maj gen"/>
+		<display value="Major General"/>
+	</concept>
+	<concept>
+		<code value="mid"/>
+		<display value="Midshipman"/>
+	</concept>
+	<concept>
+		<code value="miss"/>
+		<display value="Miss"/>
+	</concept>
+	<concept>
+		<code value="mon"/>
+		<display value="Monsignor"/>
+	</concept>
+	<concept>
+		<code value="most rev"/>
+		<display value="The Most Reverend"/>
+	</concept>
+	<concept>
+		<code value="mr"/>
+		<display value="Mr"/>
+	</concept>
+	<concept>
+		<code value="mrs"/>
+		<display value="Mrs"/>
+	</concept>
+	<concept>
+		<code value="ms"/>
+		<display value="Ms"/>
+	</concept>
+	<concept>
+		<code value="mx"/>
+		<display value="Mx"/>
+	</concept>
+	<concept>
+		<code value="omt"/>
+		<display value="Ordinary Medical Assistant"/>
+	</concept>
+	<concept>
+		<code value="pltoff"/>
+		<display value="Pilot Officer"/>
+	</concept>
+	<concept>
+		<code value="pomed"/>
+		<display value="Petty Officer Medic"/>
+	</concept>
+	<concept>
+		<code value="prof"/>
+		<display value="Professor"/>
+	</concept>
+	<concept>
+		<code value="pte"/>
+		<display value="Private"/>
+	</concept>
+	<concept>
+		<code value="ra"/>
+		<display value="Rear Admiral"/>
+	</concept>
+	<concept>
+		<code value="rev"/>
+		<display value="Reverend"/>
+	</concept>
+	<concept>
+		<code value="right rev"/>
+		<display value="The Right Reverend"/>
+	</concept>
+	<concept>
+		<code value="rt hon"/>
+		<display value="The Right Honourable"/>
+	</concept>
+	<concept>
+		<code value="sgn cdr"/>
+		<display value="Surgeon Commander"/>
+	</concept>
+	<concept>
+		<code value="sgn lt"/>
+		<display value="Surgeon Lieutenant"/>
+	</concept>
+	<concept>
+		<code value="sgn ltcdr"/>
+		<display value="Surgeon Lieutenant Commander"/>
+	</concept>
+	<concept>
+		<code value="sgt"/>
+		<display value="Sergeant"/>
+	</concept>
+	<concept>
+		<code value="sir"/>
+		<display value="Sir"/>
+	</concept>
+	<concept>
+		<code value="sister"/>
+		<display value="Sister"/>
+	</concept>
+	<concept>
+		<code value="slt"/>
+		<display value="Sub Lieutenant"/>
+	</concept>
+	<concept>
+		<code value="spr"/>
+		<display value="Sapper"/>
+	</concept>
+	<concept>
+		<code value="sqnldr"/>
+		<display value="Squadron Leader"/>
+	</concept>
+	<concept>
+		<code value="ssgt"/>
+		<display value="Staff Sergeant"/>
+	</concept>
+	<concept>
+		<code value="tpr"/>
+		<display value="Trooper"/>
+	</concept>
+	<concept>
+		<code value="ven"/>
+		<display value="The Venerable"/>
+	</concept>
+	<concept>
+		<code value="very rev"/>
+		<display value="The Very Reverend"/>
+	</concept>
+	<concept>
+		<code value="wgcdr"/>
+		<display value="Wing Commander"/>
+	</concept>
+	<concept>
+		<code value="wo"/>
+		<display value="Warrant Officer"/>
+	</concept>
+	<concept>
+		<code value="womed"/>
+		<display value="Warrant Officer Medic"/>
+	</concept>
+</CodeSystem>

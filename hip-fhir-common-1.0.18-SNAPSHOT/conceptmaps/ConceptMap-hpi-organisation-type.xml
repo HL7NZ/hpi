@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url
+		value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-organisation-type" />
+	<version value="1.0" />
+	<name value="Cm_hpi_organistaion_type" />
+	<title value="HPI Organisation Type Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description
+		value="Translation from HPI Organisation Type to FHIR Organisation Type" />
+	<purpose
+		value="To translate from 1.0 HPI Organisation Type to FHIR Organisation Type" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code|1.0" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code|1.1" />
+	<group>
+		<source
+			value="https://standards.digital.health.nz/ns/organisation-type-code" />
+		<sourceVersion value="1.0" />
+		<target
+			value="https://standards.digital.health.nz/ns/organisation-type-code" />
+		<targetVersion value="1.1" />
+		<element>
+			<code value="001" />
+			<target>
+				<code value="001" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="003" />
+			<target>
+				<code value="003" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="006" />
+			<target>
+				<code value="006" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="007" />
+			<target>
+				<code value="007" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="008" />
+			<target>
+				<code value="008" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="009" />
+			<target>
+				<code value="009" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="999" />
+			<target>
+				<code value="999" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<unmapped>
+			<mode value="fixed" />
+			<code value="999" />
+		</unmapped>
+	</group>
+</ConceptMap>

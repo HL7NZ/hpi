@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/address-not-validated-reason-code" />
+	<version value="1.0" />
+	<name value="Nhi_address_not_validated_reason" />
+	<title value="Address Not Validated Reason" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Reason why an address is not validated." />
+	<purpose value="To be used when an unvalidated address is returned." />
+	<caseSensitive value="false" />
+	<valueSet value="https://standards.digital.health.nz/fhir/ValueSet/address-not-validated-reason-code" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="6" />
+	<!-- From ADDRNVR 1.1 -->
+	<concept>
+		<code value="OSEA" />
+		<display value="Overseas Address" />
+		<definition value="An address for a country other than New Zealand" />
+	</concept>
+	<concept>
+		<code value="UKWN" />
+		<display value="Unknown" />
+		<definition value="The person's address is unknown" />
+	</concept>
+	<concept>
+		<code value="NFAB" />
+		<display value="No Fixed Abode" />
+		<definition value="The person has no address" />
+	</concept>
+	<concept>
+		<code value="NOSVC" />
+		<display value="Address Service Unavailable" />
+		<definition value="The e-SAM address service was unavailble for address validation due to Technical issues" />
+	</concept>
+	<concept>
+		<code value="OTHER" />
+		<display value="Other" />
+		<definition value="Other reason" />
+	</concept>
+	
+	<!-- From ADDRBVR 1.0 - deprecated -->
+	<concept>
+		<code value="MIGR" />
+		<display value="Migrated" />
+		<definition value="Migrated from the legacy NHI with no known external  source" />
+	</concept>
+</CodeSystem>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-93" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/hpi-nzscc4n" />
+	<version value="1999" />
+	<name value="Hpi_nzscc4n99" />
+	<title value="NZSCC4N99 four digit country code" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="4-digit country codes" />
+	<purpose value="A coded value for country." />
+	<compose>
+		<inactive value="true" />
+		<include>
+			<system value="https://standards.digital.health.nz/ns/nzscc4n" />
+			<version value="1999" />
+		</include>
+	</compose>
+</ValueSet>

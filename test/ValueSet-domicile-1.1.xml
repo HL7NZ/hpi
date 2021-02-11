@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-70" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/domicile-code" />
+	<version value="1.1" />
+	<name value="Domicile_code" />
+	<title value="Domicile Code" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for domicile." />
+	<purpose value="A coded type for domicile" />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/fhir/CodeSystem/domicile-code" />
+		</include>
+	</compose>
+</ValueSet>

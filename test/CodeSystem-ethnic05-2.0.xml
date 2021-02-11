@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-6" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url
+		value="https://standards.digital.health.nz/ns/ethnic-group-level-4-code" />
+	<version value="2.0" />
+	<name value="Ethnic05_2_2017" />
+	<title value="Ethnicity New Zealand Standard Classification 2005 (level 4)" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2017-09-01T00:00:00+13:00" />
+	<publisher value="Statistics New Zealand" />
+	<description
+		value="Ethnicity is a key social factor used with other topics in describing the New Zealand population. Information collected on ethnicity is used to inform, plan, and evaluate services and policies by a wide range of organisations, local authorities and government agencies." />
+	<purpose value="A coded value for ethnicity." />
+	<caseSensitive value="false" />
+	<valueSet
+		value="https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code" />
+	<versionNeeded value="false" />
+	<content value="complete" />
+	<count value="186" />
+	<concept>
+		<code value="10000" />
+		<display value="European nfd" />
+	</concept>
+	<concept>
+		<code value="11111" />
+		<display value="New Zealand European" />
+	</concept>
+	<concept>
+		<code value="12100" />
+		<display value="British nfd" />
+	</concept>
+	<concept>
+		<code value="12111" />
+		<display value="Celtic nfd" />
+	</concept>
+	<concept>
+		<code value="12112" />
+		<display value="Channel Islander" />
+	</concept>
+	<concept>
+		<code value="12113" />
+		<display value="Cornish" />
+	</concept>
+	<concept>
+		<code value="12114" />
+		<display value="English" />
+	</concept>
+	<concept>
+		<code value="12116" />
+		<display value="Irish" />
+	</concept>
+	<concept>
+		<code value="12117" />
+		<display value="Manx" />
+	</concept>
+	<concept>
+		<code value="12119" />
+		<display value="Scottish" />
+	</concept>
+	<concept>
+		<code value="12121" />
+		<display value="Welsh" />
+	</concept>
+	<concept>
+		<code value="12199" />
+		<display value="British nec" />
+	</concept>
+	<concept>
+		<code value="12211" />
+		<display value="Dutch" />
+	</concept>
+	<concept>
+		<code value="12311" />
+		<display value="Greek" />
+	</concept>
+	<concept>
+		<code value="12411" />
+		<display value="Polish" />
+	</concept>
+	<concept>
+		<code value="12500" />
+		<display value="South Slav nfd" />
+	</concept>
+	<concept>
+		<code value="12511" />
+		<display value="Croatian" />
+	</concept>
+	<concept>
+		<code value="12512" />
+		<display value="Dalmatian" />
+	</concept>
+	<concept>
+		<code value="12513" />
+		<display value="Macedonian" />
+	</concept>
+	<concept>
+		<code value="12514" />
+		<display value="Serbian" />
+	</concept>
+	<concept>
+		<code value="12515" />
+		<display value="Slovenian" />
+	</concept>
+	<concept>
+		<code value="12516" />
+		<display value="Bosnian" />
+	</concept>
+	<concept>
+		<code value="12599" />
+		<display value="South Slav nec" />
+	</concept>
+	<concept>
+		<code value="12611" />
+		<display value="Italian" />
+	</concept>
+	<concept>
+		<code value="12711" />
+		<display value="German" />
+	</concept>
+	<concept>
+		<code value="12811" />
+		<display value="Australian" />
+	</concept>
+	<concept>
+		<code value="12911" />
+		<display value="Albanian" />
+	</concept>
+	<concept>
+		<code value="12912" />
+		<display value="Armenian" />
+	</concept>
+	<concept>
+		<code value="12913" />
+		<display value="Austrian" />
+	</concept>
+	<concept>
+		<code value="12914" />
+		<display value="Belgian" />
+	</concept>
+	<concept>
+		<code value="12915" />
+		<display value="Bulgarian" />
+	</concept>
+	<concept>
+		<code value="12916" />
+		<display value="Belorussian" />
+	</concept>
+	<concept>
+		<code value="12918" />
+		<display value="Cypriot nfd" />
+	</concept>
+	<concept>
+		<code value="12919" />
+		<display value="Czech" />
+	</concept>
+	<concept>
+		<code value="12920" />
+		<display value="Danish" />
+	</concept>
+	<concept>
+		<code value="12921" />
+		<display value="Estonian" />
+	</concept>
+	<concept>
+		<code value="12922" />
+		<display value="Finnish" />
+	</concept>
+	<concept>
+		<code value="12923" />
+		<display value="Flemish" />
+	</concept>
+	<concept>
+		<code value="12924" />
+		<display value="French" />
+	</concept>
+	<concept>
+		<code value="12926" />
+		<display value="Hungarian" />
+	</concept>
+	<concept>
+		<code value="12927" />
+		<display value="Icelandic" />
+	</concept>
+	<concept>
+		<code value="12928" />
+		<display value="Latvian" />
+	</concept>
+	<concept>
+		<code value="12929" />
+		<display value="Lithuanian" />
+	</concept>
+	<concept>
+		<code value="12930" />
+		<display value="Maltese" />
+	</concept>
+	<concept>
+		<code value="12931" />
+		<display value="Norwegian" />
+	</concept>
+	<concept>
+		<code value="12932" />
+		<display value="Portuguese" />
+	</concept>
+	<concept>
+		<code value="12933" />
+		<display value="Romanian" />
+	</concept>
+	<concept>
+		<code value="12934" />
+		<display value="Romani" />
+	</concept>
+	<concept>
+		<code value="12935" />
+		<display value="Russian" />
+	</concept>
+	<concept>
+		<code value="12937" />
+		<display value="Slavic" />
+	</concept>
+	<concept>
+		<code value="12938" />
+		<display value="Slovak" />
+	</concept>
+	<concept>
+		<code value="12939" />
+		<display value="Spanish" />
+	</concept>
+	<concept>
+		<code value="12940" />
+		<display value="Swedish" />
+	</concept>
+	<concept>
+		<code value="12941" />
+		<display value="Swiss" />
+	</concept>
+	<concept>
+		<code value="12942" />
+		<display value="Ukrainian" />
+	</concept>
+	<concept>
+		<code value="12943" />
+		<display value="American" />
+	</concept>
+	<concept>
+		<code value="12945" />
+		<display value="Canadian" />
+	</concept>
+	<concept>
+		<code value="12947" />
+		<display value="New Caledonian" />
+	</concept>
+	<concept>
+		<code value="12948" />
+		<display value="South African European" />
+	</concept>
+	<concept>
+		<code value="12949" />
+		<display value="Afrikaner" />
+	</concept>
+	<concept>
+		<code value="12950" />
+		<display value="Zimbabwean European" />
+	</concept>
+	<concept>
+		<code value="12999" />
+		<display value="European nec" />
+	</concept>
+	<concept>
+		<code value="21111" />
+		<display value="Māori" />
+	</concept>
+	<concept>
+		<code value="30000" />
+		<display value="Pacific Peoples nfd" />
+	</concept>
+	<concept>
+		<code value="31111" />
+		<display value="Samoan" />
+	</concept>
+	<concept>
+		<code value="32100" />
+		<display value="Cook Islands Māori" />
+	</concept>
+	<concept>
+		<code value="33111" />
+		<display value="Tongan" />
+	</concept>
+	<concept>
+		<code value="34111" />
+		<display value="Niuean" />
+	</concept>
+	<concept>
+		<code value="35111" />
+		<display value="Tokelauan" />
+	</concept>
+	<concept>
+		<code value="36111" />
+		<display value="Fijian" />
+	</concept>
+	<concept>
+		<code value="37112" />
+		<display value="Indigenous Australian" />
+	</concept>
+	<concept>
+		<code value="37122" />
+		<display value="Hawaiian" />
+	</concept>
+	<concept>
+		<code value="37124" />
+		<display value="Kiribati" />
+	</concept>
+	<concept>
+		<code value="37130" />
+		<display value="Nauruan" />
+	</concept>
+	<concept>
+		<code value="37135" />
+		<display value="Papua New Guinean" />
+	</concept>
+	<concept>
+		<code value="37137" />
+		<display value="Pitcairn Islander" />
+	</concept>
+	<concept>
+		<code value="37138" />
+		<display value="Rotuman" />
+	</concept>
+	<concept>
+		<code value="37140" />
+		<display value="Tahitian" />
+	</concept>
+	<concept>
+		<code value="37141" />
+		<display value="Solomon Islander" />
+	</concept>
+	<concept>
+		<code value="37144" />
+		<display value="Tuvaluan" />
+	</concept>
+	<concept>
+		<code value="37145" />
+		<display value="Ni Vanuatu" />
+	</concept>
+	<concept>
+		<code value="37199" />
+		<display value="Pacific Peoples nec" />
+	</concept>
+	<concept>
+		<code value="40000" />
+		<display value="Asian nfd" />
+	</concept>
+	<concept>
+		<code value="41000" />
+		<display value="Southeast Asian nfd" />
+	</concept>
+	<concept>
+		<code value="41111" />
+		<display value="Filipino" />
+	</concept>
+	<concept>
+		<code value="41211" />
+		<display value="Cambodian" />
+	</concept>
+	<concept>
+		<code value="41311" />
+		<display value="Vietnamese" />
+	</concept>
+	<concept>
+		<code value="41411" />
+		<display value="Burmese" />
+	</concept>
+	<concept>
+		<code value="41412" />
+		<display value="Indonesian" />
+	</concept>
+	<concept>
+		<code value="41413" />
+		<display value="Lao" />
+	</concept>
+	<concept>
+		<code value="41414" />
+		<display value="Malay" />
+	</concept>
+	<concept>
+		<code value="41415" />
+		<display value="Thai" />
+	</concept>
+	<concept>
+		<code value="41416" />
+		<display value="Karen" />
+	</concept>
+	<concept>
+		<code value="41417" />
+		<display value="Chin" />
+	</concept>
+	<concept>
+		<code value="41499" />
+		<display value="Southeast Asian nec" />
+	</concept>
+	<concept>
+		<code value="42100" />
+		<display value="Chinese nfd" />
+	</concept>
+	<concept>
+		<code value="42111" />
+		<display value="Hong Kong Chinese" />
+	</concept>
+	<concept>
+		<code value="42112" />
+		<display value="Cambodian Chinese" />
+	</concept>
+	<concept>
+		<code value="42113" />
+		<display value="Malaysian Chinese" />
+	</concept>
+	<concept>
+		<code value="42114" />
+		<display value="Singaporean Chinese" />
+	</concept>
+	<concept>
+		<code value="42115" />
+		<display value="Vietnamese Chinese" />
+	</concept>
+	<concept>
+		<code value="42116" />
+		<display value="Taiwanese" />
+	</concept>
+	<concept>
+		<code value="42199" />
+		<display value="Chinese nec" />
+	</concept>
+	<concept>
+		<code value="43100" />
+		<display value="Indian nfd" />
+	</concept>
+	<concept>
+		<code value="43111" />
+		<display value="Bengali" />
+	</concept>
+	<concept>
+		<code value="43112" />
+		<display value="Fijian Indian" />
+	</concept>
+	<concept>
+		<code value="43114" />
+		<display value="Indian Tamil" />
+	</concept>
+	<concept>
+		<code value="43115" />
+		<display value="Punjabi" />
+	</concept>
+	<concept>
+		<code value="43116" />
+		<display value="Sikh" />
+	</concept>
+	<concept>
+		<code value="43117" />
+		<display value="Anglo Indian" />
+	</concept>
+	<concept>
+		<code value="43118" />
+		<display value="Malaysian Indian" />
+	</concept>
+	<concept>
+		<code value="43119" />
+		<display value="South African Indian" />
+	</concept>
+	<concept>
+		<code value="43199" />
+		<display value="Indian nec" />
+	</concept>
+	<concept>
+		<code value="44100" />
+		<display value="Sri Lankan nfd" />
+	</concept>
+	<concept>
+		<code value="44111" />
+		<display value="Sinhalese" />
+	</concept>
+	<concept>
+		<code value="44112" />
+		<display value="Sri Lankan Tamil" />
+	</concept>
+	<concept>
+		<code value="44199" />
+		<display value="Sri Lankan nec" />
+	</concept>
+	<concept>
+		<code value="44211" />
+		<display value="Japanese" />
+	</concept>
+	<concept>
+		<code value="44311" />
+		<display value="Korean" />
+	</concept>
+	<concept>
+		<code value="44411" />
+		<display value="Afghan" />
+	</concept>
+	<concept>
+		<code value="44412" />
+		<display value="Bangladeshi" />
+	</concept>
+	<concept>
+		<code value="44413" />
+		<display value="Nepali" />
+	</concept>
+	<concept>
+		<code value="44414" />
+		<display value="Pakistani" />
+	</concept>
+	<concept>
+		<code value="44415" />
+		<display value="Tibetan" />
+	</concept>
+	<concept>
+		<code value="44416" />
+		<display value="Eurasian" />
+	</concept>
+	<concept>
+		<code value="44417" />
+		<display value="Bhutanese" />
+	</concept>
+	<concept>
+		<code value="44418" />
+		<display value="Maldivian" />
+	</concept>
+	<concept>
+		<code value="44419" />
+		<display value="Mongolian" />
+	</concept>
+	<concept>
+		<code value="44499" />
+		<display value="Asian nec" />
+	</concept>
+	<concept>
+		<code value="51100" />
+		<display value="Middle Eastern nfd" />
+	</concept>
+	<concept>
+		<code value="51111" />
+		<display value="Algerian" />
+	</concept>
+	<concept>
+		<code value="51112" />
+		<display value="Arab" />
+	</concept>
+	<concept>
+		<code value="51113" />
+		<display value="Assyrian" />
+	</concept>
+	<concept>
+		<code value="51114" />
+		<display value="Egyptian" />
+	</concept>
+	<concept>
+		<code value="51115" />
+		<display value="Iranian/Persian" />
+	</concept>
+	<concept>
+		<code value="51116" />
+		<display value="Iraqi" />
+	</concept>
+	<concept>
+		<code value="51117" />
+		<display value="Israeli/Jewish" />
+	</concept>
+	<concept>
+		<code value="51118" />
+		<display value="Jordanian" />
+	</concept>
+	<concept>
+		<code value="51119" />
+		<display value="Kurd" />
+	</concept>
+	<concept>
+		<code value="51120" />
+		<display value="Lebanese" />
+	</concept>
+	<concept>
+		<code value="51122" />
+		<display value="Moroccan" />
+	</concept>
+	<concept>
+		<code value="51124" />
+		<display value="Palestinian" />
+	</concept>
+	<concept>
+		<code value="51125" />
+		<display value="Syrian" />
+	</concept>
+	<concept>
+		<code value="51127" />
+		<display value="Turkish" />
+	</concept>
+	<concept>
+		<code value="51199" />
+		<display value="Middle Eastern nec" />
+	</concept>
+	<concept>
+		<code value="52100" />
+		<display value="Latin American nfd" />
+	</concept>
+	<concept>
+		<code value="52111" />
+		<display value="Argentinian" />
+	</concept>
+	<concept>
+		<code value="52112" />
+		<display value="Bolivian" />
+	</concept>
+	<concept>
+		<code value="52113" />
+		<display value="Brazilian" />
+	</concept>
+	<concept>
+		<code value="52114" />
+		<display value="Chilean" />
+	</concept>
+	<concept>
+		<code value="52115" />
+		<display value="Colombian" />
+	</concept>
+	<concept>
+		<code value="52118" />
+		<display value="Ecuadorian" />
+	</concept>
+	<concept>
+		<code value="52123" />
+		<display value="Mexican" />
+	</concept>
+	<concept>
+		<code value="52127" />
+		<display value="Peruvian" />
+	</concept>
+	<concept>
+		<code value="52128" />
+		<display value="Puerto Rican" />
+	</concept>
+	<concept>
+		<code value="52129" />
+		<display value="Uruguayan" />
+	</concept>
+	<concept>
+		<code value="52130" />
+		<display value="Venezuelan" />
+	</concept>
+	<concept>
+		<code value="52199" />
+		<display value="Latin American nec" />
+	</concept>
+	<concept>
+		<code value="53100" />
+		<display value="African nfd" />
+	</concept>
+	<concept>
+		<code value="53113" />
+		<display value="Jamaican" />
+	</concept>
+	<concept>
+		<code value="53114" />
+		<display value="Kenyan" />
+	</concept>
+	<concept>
+		<code value="53115" />
+		<display value="Nigerian" />
+	</concept>
+	<concept>
+		<code value="53116" />
+		<display value="African American" />
+	</concept>
+	<concept>
+		<code value="53118" />
+		<display value="Caribbean" />
+	</concept>
+	<concept>
+		<code value="53119" />
+		<display value="Somali" />
+	</concept>
+	<concept>
+		<code value="53120" />
+		<display value="Eritrean" />
+	</concept>
+	<concept>
+		<code value="53121" />
+		<display value="Ethiopian" />
+	</concept>
+	<concept>
+		<code value="53122" />
+		<display value="Ghanaian" />
+	</concept>
+	<concept>
+		<code value="53123" />
+		<display value="Burundian" />
+	</concept>
+	<concept>
+		<code value="53124" />
+		<display value="Congolese" />
+	</concept>
+	<concept>
+		<code value="53125" />
+		<display value="Sudanese" />
+	</concept>
+	<concept>
+		<code value="53126" />
+		<display value="Zambian" />
+	</concept>
+	<concept>
+		<code value="53127" />
+		<display value="Other Zimbabwean" />
+	</concept>
+	<concept>
+		<code value="53199" />
+		<display value="African nec" />
+	</concept>
+	<concept>
+		<code value="61113" />
+		<display value="Indigenous American" />
+	</concept>
+	<concept>
+		<code value="61115" />
+		<display value="Mauritian" />
+	</concept>
+	<concept>
+		<code value="61116" />
+		<display value="Seychellois" />
+	</concept>
+	<concept>
+		<code value="61117" />
+		<display value="Other South African" />
+	</concept>
+	<concept>
+		<code value="61118" />
+		<display value="New Zealander" />
+	</concept>
+	<concept>
+		<code value="61199" />
+		<display value="Other Ethnicity nec" />
+	</concept>
+	<concept>
+		<code value="94444" />
+		<display value="Don't Know" />
+	</concept>
+	<concept>
+		<code value="95555" />
+		<display value="Refused to Answer" />
+	</concept>
+	<concept>
+		<code value="96666" />
+		<display value="Repeated Value" />
+	</concept>
+	<concept>
+		<code value="97777" />
+		<display value="Response Unidentifiable" />
+	</concept>
+	<concept>
+		<code value="98888" />
+		<display value="Response Outside Scope" />
+	</concept>
+	<concept>
+		<code value="99999" />
+		<display value="Not Stated" />
+	</concept>
+</CodeSystem>

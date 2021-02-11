@@ -18,7 +18,6 @@ Description:    "An entity that provides services of interest to, or is involved
 //elements that have been removed
 * address 0..0
 * contact 0..0
-* type 0..0
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 

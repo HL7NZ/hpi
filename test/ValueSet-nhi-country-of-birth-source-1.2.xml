@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-112" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/vs/nhi-country-of-birth-source" />
+	<version value="1.2" />
+	<name value="Nhi_country_of_birth_source" />
+	<title value="Country of Birth Information Source" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for the source of information for a birth country." />
+	<purpose value="A coded type for the source of information for a birth country." />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/cs/nhi-information-source" />
+			<filter>
+				<property value="code" />
+				<op value="in" />
+				<value value="BRCT,BREG,NPRF,NZCI,NZCT,NZET,NZRT,OTHR,PPRT,NZPV,NZTV" />
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

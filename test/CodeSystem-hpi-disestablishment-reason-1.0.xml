@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-20" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/hpi-disestablishment-reason" />
+	<version value="1.0" />
+	<name value="Hpi_disestablishment_reason_10" />
+	<title value="HPI Disestablishment Reason" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Disestablishment Reason Code (Organisation and Facility)" />
+	<purpose value="To be used when an organisation or facility is disestablished." />
+	<caseSensitive value="true" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="6" />
+	<concept>
+		<code value="BANKRUPT" />
+		<display value="Bankrupt" />
+	</concept>
+	<concept>
+		<code value="OWNERSHIP" />
+		<display value="Change of ownership" />
+		<definition value="The organisation has been sold or taken over" />
+	</concept>
+	<concept>
+		<code value="NLO" />
+		<display value="No longer operating" />
+	</concept>
+	<concept>
+		<code value="STRUCK-OFF" />
+		<display value="Removed from register" />
+	</concept>
+	<concept>
+		<code value="OTHER" />
+		<display value="Other" />
+		<definition value="There is some other reason for the closure of the organisation.  Details are to be documented in the notes." />
+	</concept>
+	<concept>
+		<code value="UNKN" />
+		<display value="Unknown" />
+		<definition value="Only for use when the disestablishment reason is not known." />
+	</concept>
+</CodeSystem>

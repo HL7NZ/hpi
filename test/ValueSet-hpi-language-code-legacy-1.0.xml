@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+<id value="id-86" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/hpi-legacy-language-code" />
+	<version value="1.0" />
+	<name value="Hpi_legacy_language_code" />
+	<title value="Old HPI two alpha language codes" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-10-29T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="2-alpha language codes" />
+	<purpose value="A coded value for language." />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/ns/hpi-legacy-language" />
+			<version value="1.0" />
+		</include>
+	</compose>
+</ValueSet>

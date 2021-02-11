@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+<id value="id-48" />
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-contact-type" />
+	<version value="1.0" />
+	<name value="Cm_hpi_contact_type" />
+	<title value="HPI Contact Type Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from HPI Contact Type to FHIR Contact Point System" />
+	<purpose value="To translate from internal HPI Contact Type to FHIR Contact Point System" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-type" />
+	<targetUri
+		value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-contact-type" />
+		<sourceVersion value="2.0" />
+		<target value="http://hl7.org/fhir/contact-point-system" />
+		<targetVersion value="4.0.1" />
+		<element>
+			<code value="C" />
+			<target>
+				<code value="phone" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="E" />
+			<target>
+				<code value="email" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="F" />
+			<target>
+				<code value="fax" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="P" />
+			<target>
+				<code value="pager" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="S" />
+			<target>
+				<code value="sms" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="T" />
+			<target>
+				<code value="phone" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="U" />
+			<target>
+				<code value="url" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="O" />
+			<target>
+				<code value="other" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<unmapped>
+			<mode value="fixed" />
+			<code value="other" />
+		</unmapped>
+	</group>
+</ConceptMap>

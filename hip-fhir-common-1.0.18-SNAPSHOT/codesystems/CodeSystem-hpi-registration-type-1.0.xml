@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/hpi-registration-type" />
+	<version value="1.0" />
+	<name value="Hpi_registration_type_legacy" />
+	<title value="HPI Registration Type" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A code to identify the type of professional registration the healthcare provider person has been assigned." />
+	<purpose
+		value="A code to identify the type of professional registration the healthcare provider person has been assigned." />
+	<caseSensitive value="false" />
+	<valueSet value="https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-type|1.0" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="24" />
+	<concept>
+		<code value="DH" />
+		<display value="Dental Council Register Number - Dental Hygienists" />
+	</concept>
+	<concept>
+		<code value="DD" />
+		<display value="Dental Council Register Number - Dentists" />
+	</concept>
+	<concept>
+		<code value="DN" />
+		<display value="Dental Council Register Number - Dental Technicians" />
+	</concept>
+	<concept>
+		<code value="DT" />
+		<display value="Dental Council Register Number - Dental Therapists" />
+	</concept>
+	<concept>
+		<code value="CH" />
+		<display value="Chiropractic Board Register" />
+	</concept>
+	<concept>
+		<code value="DI" />
+		<display value="Dietitians Board Register" />
+	</concept>
+	<concept>
+		<code value="LT" />
+		<display value="Medical Sciences Council Register" />
+	</concept>
+	<concept>
+		<code value="MC" />
+		<display value="Medical Council of New Zealand Register" />
+	</concept>
+	<concept>
+		<code value="MW" />
+		<display value="Midwifery Council Register" />
+	</concept>
+	<concept>
+		<code value="NC" />
+		<display value="Nursing Council of New Zealand Register" />
+	</concept>
+	<concept>
+		<code value="OD" />
+		<display value="Optometrists &amp; Dispensing Opticians Board Register" />
+	</concept>
+	<concept>
+		<code value="OS" />
+		<display value="Osteopathic Council Register" />
+	</concept>
+	<concept>
+		<code value="OT" />
+		<display value="Occupational Therapists Register" />
+	</concept>
+	<concept>
+		<code value="PB" />
+		<display value="Psychotherapists Board Register" />
+	</concept>
+	<concept>
+		<code value="PC" />
+		<display value="Psychologists Board Register" />
+	</concept>
+	<concept>
+		<code value="PM" />
+		<display value="Pharmacy Council of New Zealand Register" />
+	</concept>
+	<concept>
+		<code value="PO" />
+		<display value="Podiatrists Board Register" />
+	</concept>
+	<concept>
+		<code value="PT" />
+		<display value="Physiotherapy Board Register" />
+	</concept>
+	<concept>
+		<code value="RT" />
+		<display value="Medical Radiation Technologists Board Register" />
+	</concept>
+	<concept>
+		<code value="NR" />
+		<display value="Health Workers without a professional registration" />
+	</concept>
+	<concept>
+		<code value="AC" />
+		<display value="ACC Provider Number" />
+	</concept>
+	<concept>
+		<code value="HP" />
+		<display value="HealthPAC Provider Number" />
+	</concept>
+	<concept>
+		<code value="ST" />
+		<display value="Staff List or Employee Number" />
+	</concept>
+	<concept>
+		<code value="CS" />
+		<display value="Cervical Screening Identifier Number" />
+	</concept>
+</CodeSystem>

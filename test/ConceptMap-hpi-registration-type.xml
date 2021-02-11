@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+<id value="id-64" />
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-registration-type" />
+	<version value="1.0" />
+	<name value="Cm_hpi_registration_type" />
+	<title value="HPI Registration Type Mapping" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation between HPI Registration Type versions" />
+	<purpose value="To translate between HPI registration types" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-type|1.0" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code|2.0" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-registration-type" />
+		<sourceVersion value="1.0" />
+		<target value="https://standards.digital.health.nz/ns/practitioner-registration-authority-code" />
+		<targetVersion value="2.0" />
+		<!-- No changes for the following identifiers -->
+		<element>
+			<code value="CH" />
+			<target>
+				<code value="CH" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="DI" />
+			<target>
+				<code value="DI" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="LT" />
+			<target>
+				<code value="LT" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="MC" />
+			<target>
+				<code value="MC" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="MW" />
+			<target>
+				<code value="MW" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="NC" />
+			<target>
+				<code value="NC" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="OD" />
+			<target>
+				<code value="OD" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="OD" />
+			<target>
+				<code value="OS" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="OT" />
+			<target>
+				<code value="OT" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="PB" />
+			<target>
+				<code value="PB" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="PC" />
+			<target>
+				<code value="PC" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="PM" />
+			<target>
+				<code value="PM" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="PO" />
+			<target>
+				<code value="PO" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="PT" />
+			<target>
+				<code value="PT" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<element>
+			<code value="RT" />
+			<target>
+				<code value="RT" />
+				<equivalence value="equal" />
+			</target>
+		</element>
+		<!-- Retired identifiers but still supported: DH, DD, DN, DT -->
+		<element>
+			<code value="DH" />
+			<target>
+				<code value="DH" />
+				<equivalence value="subsumes" />
+			</target>
+		</element>
+		<element>
+			<code value="DD" />
+			<target>
+				<code value="DD" />
+				<equivalence value="subsumes" />
+			</target>
+		</element>
+		<element>
+			<code value="DN" />
+			<target>
+				<code value="DN" />
+				<equivalence value="subsumes" />
+			</target>
+		</element>
+		<element>
+			<code value="DT" />
+			<target>
+				<code value="DT" />
+				<equivalence value="subsumes" />
+			</target>
+		</element>
+		<!-- Retired identifiers: AC, HP, ST, CS -->
+	</group>
+</ConceptMap>

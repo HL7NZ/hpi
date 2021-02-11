@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/language-code" />
+	<version value="1.0" />
+	<name value="Hpi_language_code_iso_639_3" />
+	<title value="ISO 639-3:2007 (3-alpha language code)" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="3-alpha language codes" />
+	<purpose value="A coded value for language." />
+	<compose>
+		<include>
+			<system value="urn:iso:std:iso:639:-3" />
+			<version value="2007" />
+			<filter>
+				<property value="code" />
+				<op value="regex" />
+				<value value="[a-z]{3}" />
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

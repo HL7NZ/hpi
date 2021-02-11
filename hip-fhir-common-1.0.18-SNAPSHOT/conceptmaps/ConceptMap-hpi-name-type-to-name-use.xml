@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/cm/hpi-name-type-to-name-use" />
+	<version value="1.0" />
+	<name value="Cm_hpi_name_type_to_name_use" />
+	<title value="HPI Name type to Name Use Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from HPI Name Type to FHIR Name Use" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-name-type" />
+	<targetUri
+		value="http://hl7.org/fhir/ValueSet/name-use" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-name-type" />
+		<sourceVersion value="2.0" />
+		<target value="http://hl7.org/fhir/name-use" />
+		<targetVersion value="4.0.1" />
+		<element>
+			<code value="O" />
+			<target>
+				<code value="official" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="A" />
+			<target>
+				<code value="usual" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

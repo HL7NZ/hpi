@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hpi-contactpoint-use"/>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html"><code>http://hl7.org/fhir/contact-point-use</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html#contact-point-use-home">home</a></td><td>A communication contact point at a home; attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available.</td><td>A communication contact point at a home; attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html#contact-point-use-work">work</a></td><td>An office contact point. First choice for business related contacts during business hours.</td><td>An office contact point. First choice for business related contacts during business hours.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-contact-point-use.html#contact-point-use-mobile">mobile</a></td><td>A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business.</td><td>A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business.</td></tr></table></li></ul></div>
+  </text>
+  <url
+       value="https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code"/>
+  <version value="0.2.0"/>
+  <name value="Hpi-ContactPointUse"/>
+  <title value="Use values for a ContactPoint"/>
+  <status value="active"/>
+  <date value="2020-11-25T23:08:15+00:00"/>
+  <publisher value="David Hay"/>
+  <contact>
+    <name value="David Hay"/>
+    <telecom>
+      <system value="email"/>
+      <value value="mailto:david.hay25@gmail.com"/>
+    </telecom>
+  </contact>
+  <description value="Use values for a ContactPoint"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/contact-point-use"/>
+      <concept>
+        <code value="home"/>
+        <display
+                 value="A communication contact point at a home; attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available."/>
+      </concept>
+      <concept>
+        <code value="work"/>
+        <display
+                 value="An office contact point. First choice for business related contacts during business hours."/>
+      </concept>
+      <concept>
+        <code value="mobile"/>
+        <display
+                 value="A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable for urgent matters, not the first choice for routine business."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

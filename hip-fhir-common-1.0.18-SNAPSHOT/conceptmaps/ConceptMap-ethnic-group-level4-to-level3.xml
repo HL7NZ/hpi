@@ -1,0 +1,1327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/ethnic-group-level4-to-level3" />
+	<version value="1.0" />
+	<name value="Hpi_provider_person_extract_ethnicity_cm" />
+	<title value="HPI provider person extract ethnicity cm" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description
+		value="Translate from lvl 4 ethnicity codes down to level 3 ethnicity codes" />
+	<purpose
+		value="Down convert ethnicity codes from current lvl 4 to legacy lvl 3 codes" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-3-code" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/ethnic-group-level-4-code" />
+		<sourceVersion value="2.0" />
+		<target value="https://standards.digital.health.nz/ns/ethnic-group-level-3-code" />
+		<targetVersion value="1.0" />
+		<element>
+			<code value="10000" />
+			<target>
+				<code value="100" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="11111" />
+			<target>
+				<code value="111" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12100" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12111" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12112" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12113" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12114" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12116" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12117" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12119" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12121" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12199" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12211" />
+			<target>
+				<code value="122" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12311" />
+			<target>
+				<code value="123" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12411" />
+			<target>
+				<code value="124" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12500" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12511" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12512" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12513" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12514" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12515" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12516" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12599" />
+			<target>
+				<code value="125" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12611" />
+			<target>
+				<code value="126" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12711" />
+			<target>
+				<code value="127" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12811" />
+			<target>
+				<code value="128" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12911" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12912" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12913" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12914" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12915" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12916" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12918" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12919" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12920" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12921" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12922" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12923" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12924" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12926" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12927" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12928" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12929" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12930" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12931" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12932" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12933" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12934" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12935" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12937" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12938" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12939" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12940" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12941" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12942" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12943" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12945" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12947" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12948" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12949" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12950" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="12999" />
+			<target>
+				<code value="129" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="21111" />
+			<target>
+				<code value="211" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="30000" />
+			<target>
+				<code value="300" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="31111" />
+			<target>
+				<code value="311" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="32100" />
+			<target>
+				<code value="321" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="33111" />
+			<target>
+				<code value="331" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="34111" />
+			<target>
+				<code value="341" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="35111" />
+			<target>
+				<code value="351" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="36111" />
+			<target>
+				<code value="361" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37112" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37122" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37124" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37130" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37135" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37137" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37138" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37140" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37141" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37144" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37145" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="37199" />
+			<target>
+				<code value="371" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="40000" />
+			<target>
+				<code value="400" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41000" />
+			<target>
+				<code value="410" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41111" />
+			<target>
+				<code value="411" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41211" />
+			<target>
+				<code value="412" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41311" />
+			<target>
+				<code value="413" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41411" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41412" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41413" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41414" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41415" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41416" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41417" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="41499" />
+			<target>
+				<code value="414" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42100" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42111" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42112" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42113" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42114" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42115" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42116" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="42199" />
+			<target>
+				<code value="421" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43100" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43111" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43112" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43114" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43115" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43116" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43117" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43118" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43119" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="43199" />
+			<target>
+				<code value="431" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44100" />
+			<target>
+				<code value="441" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44111" />
+			<target>
+				<code value="441" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44112" />
+			<target>
+				<code value="441" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44199" />
+			<target>
+				<code value="441" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44211" />
+			<target>
+				<code value="442" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44311" />
+			<target>
+				<code value="443" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44411" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44412" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44413" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44414" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44415" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44416" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44417" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44418" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44419" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="44499" />
+			<target>
+				<code value="444" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51100" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51111" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51112" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51113" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51114" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51115" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51116" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51117" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51118" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51119" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51120" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51122" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51124" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51125" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51127" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="51199" />
+			<target>
+				<code value="511" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52100" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52111" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52112" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52113" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52114" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52115" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52118" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52123" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52127" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52128" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52129" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52130" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="52199" />
+			<target>
+				<code value="521" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53100" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53113" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53114" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53115" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53116" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53118" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53119" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53120" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53121" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53122" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53123" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53124" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53125" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53126" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53127" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="53199" />
+			<target>
+				<code value="531" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61113" />
+			<target>
+				<code value="611" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61115" />
+			<target>
+				<code value="611" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61116" />
+			<target>
+				<code value="611" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61117" />
+			<target>
+				<code value="611" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61118" />
+			<target>
+				<code value="111" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="61199" />
+			<target>
+				<code value="611" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="94444" />
+			<target>
+				<code value="944" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="95555" />
+			<target>
+				<code value="955" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="96666" />
+			<target>
+				<code value="966" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="97777" />
+			<target>
+				<code value="977" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="98888" />
+			<target>
+				<code value="988" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="99999" />
+			<target>
+				<code value="999" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

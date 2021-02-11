@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-26" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/hpi-name-qualifier" />
+	<version value="2.0" />
+	<name value="Hpi_name_qualifier" />
+	<title value="OrgFac Name Qualifier" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A code for organisation/facility name type/qualifier." />
+	<purpose value="A code for organisation/facility name type/qualifier." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="7" />
+	<concept>
+		<code value="AKA" />
+		<display value="Alternate name" />
+		<definition value="Any names by which the organisation/facility is known by (known as)." />
+	</concept>
+	<concept>
+		<code value="FORMER" />
+		<display value="Former name" />
+		<definition value="The previous legal name(s) of the organisation/facility." />
+	</concept>
+	<concept>
+		<code value="MAORI" />
+		<display value="Māori name" />
+		<definition value="The Māori name of the organisation/facility." />
+	</concept>
+	<concept>
+		<code value="LEGAL" />
+		<display value="Legal or Official name" />
+		<definition value="The legal name of the organisation/facility as recorded by in the NZ Register of Companies.  There is only one active Registered name at any one time.  Effective dates for names are recorded." />
+	</concept>
+	<concept>
+		<code value="SHORT" />
+		<display value="Abbreviated name" />
+		<definition value="An abbreviated name by which the organisation/facility is known." />
+	</concept>
+	<concept>
+		<code value="TRADE-AS" />
+		<display value="Trading as" />
+		<definition value="Used when the organisation/facility has a separate trading name." />
+	</concept>
+	<concept>
+		<code value="CURRENT" />
+		<display value="Current unverified or unofficial name" />
+		<definition value="The name currently used for a facility." />
+	</concept>
+</CodeSystem>

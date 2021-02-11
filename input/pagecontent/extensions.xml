@@ -3,7 +3,7 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-additional-authorization.html'>additional-authorization</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-additional-authorization.html'>additional-authorization</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/additional-authorization</td>
 <td>
 <div>Practitioner.qualification</div>
@@ -11,7 +11,7 @@
 <td>Additional authorizations that a practitioner is authorized to perform</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-alias-type.html'>alias-type</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-alias-type.html'>alias-type</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
 <td>
 <div>Location.alias</div>
@@ -19,7 +19,7 @@
 <td>Indicates the type of alias name. VS Binding is done by the profile.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-condition-on-practice.html'>condition-on-practice</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-condition-on-practice.html'>condition-on-practice</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice</td>
 <td>
 <div>Practitioner.qualification</div>
@@ -27,7 +27,7 @@
 <td>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-death-date.html'>death-date</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-death-date.html'>death-date</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
 <td>
 <div>Practitioner</div>
@@ -35,7 +35,7 @@
 <td>The date the person died.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-dhb.html'>dhb</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-dhb.html'>dhb</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/dhb</td>
 <td>
 <div>Patient</div>
@@ -44,7 +44,7 @@
 <td>The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly).</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-educational-qualification.html'>educational-qualification</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-educational-qualification.html'>educational-qualification</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/educational-qualification</td>
 <td>
 <div>Practitioner</div>
@@ -52,7 +52,7 @@
 <td>Educational qualifications.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-location-established.html'>location-established</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-location-established.html'>location-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/location-established</td>
 <td>
 <div>Location</div>
@@ -60,7 +60,7 @@
 <td>The period over which the location is open</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-organization-established.html'>organization-established</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-organization-established.html'>organization-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/organization-established</td>
 <td>
 <div>Organization</div>
@@ -68,7 +68,7 @@
 <td>The period over which the Organization is active</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-practitionerRole-creator.html'>practitionerRole-creator</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-practitionerRole-creator.html'>practitionerRole-creator</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
 <td>
 <div>PractitionerRole</div>
@@ -76,7 +76,7 @@
 <td>The organisation and person that created this role</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-practitionerRole-status.html'>practitionerRole-status</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-practitionerRole-status.html'>practitionerRole-status</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status</td>
 <td>
 <div>PractitionerRole</div>
@@ -84,7 +84,7 @@
 <td>The status of the role - active,ended</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-registration-initial-date.html'>registration-initial-date</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-registration-initial-date.html'>registration-initial-date</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date</td>
 <td>
 <div>Practitioner.qualification</div>
@@ -92,7 +92,7 @@
 <td>The date the practitioner first became registered with the Responsible Authority or professional body</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-registration-status-code.html'>registration-status-code</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-registration-status-code.html'>registration-status-code</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-status-code</td>
 <td>
 <div>Practitioner.qualification</div>
@@ -100,7 +100,7 @@
 <td>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</td>
 </tr>
 <tr>
-<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/master/StructureDefinition-scope-of-practice.html'>scope-of-practice</a></td>
+<td><a href='http://build.fhir.org/ig/HL7NZ/hpi/branches/main/StructureDefinition-scope-of-practice.html'>scope-of-practice</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice</td>
 <td>
 <div>Practitioner.qualification</div>

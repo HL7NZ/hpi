@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="hpi-identifier-use"/>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://hl7.org/fhir/R4/codesystem-name-use.html"><code>http://hl7.org/fhir/name-use</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-name-use.html#name-use-usual">usual</a></td><td>Known as/conventional/the one you normally use.</td><td>Known as/conventional/the one you normally use.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-name-use.html#name-use-official">official</a></td><td>The formal name as registered in an official (government) registry, but which name might not be commonly used. May be called 'legal name'.</td><td>The formal name as registered in an official (government) registry, but which name might not be commonly used. May be called &quot;legal name&quot;.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/codesystem-name-use.html#name-use-old">old</a></td><td>This name is no longer in use (or was never correct, but retained for records).</td><td>This name is no longer in use (or was never correct, but retained for records).</td></tr></table></li></ul></div>
+  </text>
+  <url
+       value="https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code"/>
+  <version value="0.2.0"/>
+  <name value="IdentfierUse"/>
+  <title value="IdentifierUse"/>
+  <purpose value="Identifies the purpose for this identifier, if known."/>
+  <status value="active"/>
+  <date value="2020-12-18T23:08:15+00:00"/>
+  <publisher value="New Zealand Ministry of Health"/>
+  <description value="Use values for an Identifier"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/identifier-use"/>
+      <concept>
+        <code value="official"/>
+        <display value="Official"/>
+      </concept>
+      <concept>
+        <code value="old"/>
+        <display value="Old"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-24" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url
+		value="https://standards.digital.health.nz/ns/hpi-legal-entity-type" />
+	<version value="2.0" />
+	<name value="Hpi_legal_entity_type" />
+	<title value="Legal Entity Type" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded value for organisation legal entity type." />
+	<purpose value="A coded value for organisation legal entity type." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="27" />
+	<concept>
+		<code value="BLDG-SOC" />
+		<display value="Building Society" />
+		<definition
+			value="The Building Societies Act 1965; the Building Societies Regulations 1989" />
+	</concept>
+	<concept>
+		<code value="CHAR-TRST" />
+		<display value="Charitable Trust" />
+		<definition
+			value="Charitable Trusts Act 1957" />
+	</concept>
+	<concept>
+		<code value="CHURCH" />
+		<display value="Church Acts" />
+		<definition
+			value="Various Acts as per the New Zealand Legislation website." />
+	</concept>
+	<concept>
+		<code value="COMPANY" />
+		<display value="Company" />
+		<definition
+			value="The Companies Act 1993; the Companies Act 1993 Regulations 1994" />
+	</concept>
+	<concept>
+		<code value="CROWN-ENT" />
+		<display value="Crown Entity" />
+		<definition
+			value="Crown Entities Act 2004. This excludes DHBs which are classified under the HD-ACT Publicly Owned Health and Disability Services." />
+	</concept>
+	<concept>
+		<code value="FRIEND-SOC" />
+		<display value="Credit Union and/or Friendly Society" />
+		<definition
+			value="Friendly Societies and Credit Unions Act 1982" />
+	</concept>
+	<concept>
+		<code value="HD-ACT" />
+		<display value="Publicly owned health and disability services" />
+		<definition
+			value="New Zealand Health and Disability Act 2004 (whose purpose is: to provide for the public funding and provision of personal health services, public health services, and disability support services, and to establish new publicly-owned health and disability organisations, in order to pursue the following objectives), including the improvement, promotion, and protection of their health, and facilitation of participation in society. (Section 2 New Zealand Public Health and Disability  Act 2000)" />
+	</concept>
+	<concept>
+		<code value="INCORP-SOC" />
+		<display value="Incorporated Society" />
+		<definition
+			value="Incorporated Societies Act 1908; the Incorporated Societies Regulations 1979" />
+	</concept>
+	<concept>
+		<code value="LOCAL-BODY" />
+		<display value="Local Bodies (i.e. City Councils)" />
+		<definition
+			value="Local Government Act 2002" />
+	</concept>
+	<concept>
+		<code value="MAORI-INC" />
+		<display value="Māori Incorporations" />
+		<definition
+			value="As per the New Zealand Legislation website" />
+	</concept>
+	<concept>
+		<code value="MAORI-IWI" />
+		<display value="Māori Iwi" />
+		<definition
+			value="A Māori Iwi registered as a Māori Trust Board within the meaning of the Māori Trust Board Act 1955" />
+	</concept>
+	<concept>
+		<code value="NOTLEGAL" />
+		<display value="Not Legally Constituted" />
+		<definition
+			value="This code describes a party that is not legally constituted, not a subsidiary and not a  sub organisation of  a legally constituted organisation. It has been added to the organisation index because the party needs to be identified for some purpose." />
+	</concept>
+	<concept>
+		<code value="NPSERV-DEP" />
+		<display value="Non-Public Service Departments" />
+		<definition
+			value="Departments not part of the Public Service in particular Police and the Defence Forces" />
+	</concept>
+	<concept>
+		<code value="NRPART" />
+		<display value="Non registered Partnership" />
+		<definition
+			value="Departments not part of the Public Service in particular Police and the Defence Forces" />
+	</concept>
+	<concept>
+		<code value="OSEAS-CO" />
+		<display value="Overseas Company" />
+		<definition
+			value="The Companies Act 1993 and registered on the Companies Overseas Register" />
+	</concept>
+	<concept>
+		<code value="OTHER" />
+		<display value="Other" />
+		<definition value="Constituted by an Act or Regulation not listed above eg Responsible Authorities listed in schedule 2 of Health Practitioners Competence Assurance Act 2003." />
+	</concept>
+	<concept>
+		<code value="PARTSHIP" />
+		<display value="Limited Partnerships NZ" />
+		<definition value="Limited Partnerships Act 2008; the Limited Partnerships Regulations 2008" />
+	</concept>
+	<concept>
+		<code value="PLUNKET" />
+		<display value="Plunket" />
+		<definition value="Plunket Society Rules Act 1959" />
+	</concept>
+	<concept>
+		<code value="PROV-SOC" />
+		<display value="Industrial and Provident Society" />
+		<definition value="Industrial and Provident Societies Act 1908; the Industrial and Provident Societies Regulations 1952" />
+	</concept>
+	<concept>
+		<code value="PSERV-DEP" />
+		<display value="Public Service Departments" />
+		<definition value="Public Service departments listed in Schedule 1 of  the State Sector Act 1988" />
+	</concept>
+	<concept>
+		<code value="PVT-TRUST" />
+		<display value="Private Trust" />
+	</concept>
+	<concept>
+		<code value="PVT-PART" />
+		<display value="Private Partnership" />
+	</concept>
+	<concept>
+		<code value="SOE" />
+		<display value="State Owned Enterprises" />
+		<definition value="Registered companies listed under Schedules 1 and 2 of the State Owned Enterprises Act 1986" />
+	</concept>
+	<concept>
+		<code value="SOLE-TRD" />
+		<display value="Sole Trader" />
+	</concept>
+	<concept>
+		<code value="SUB" />
+		<display value="Subsidiary or Sub Organisation" />
+		<definition value="This code describes an organisation that is not legally constituted  but is a subsidiary or sub organisation of a legally constituted organisation. A relationship must exist in the HPI relationships that relates the organisation to its legally constituted parent organisation." />
+	</concept>
+	<concept>
+		<code value="UNIT-TRUST" />
+		<display value="Unit Trusts" />
+		<definition value="Unit Trusts Act 1960; the Unit Trusts (Fees) Regulations 2008" />
+	</concept>
+	<concept>
+		<code value="TRAD-TRUST" />
+		<display value="Trading Trusts" />
+		<definition value="Private (unregistered) Trading trusts." />
+	</concept>
+</CodeSystem>

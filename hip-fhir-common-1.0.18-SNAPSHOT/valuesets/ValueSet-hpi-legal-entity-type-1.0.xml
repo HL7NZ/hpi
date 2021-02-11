@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/hpi-legal-entity-type" />
+	<version value="1.0" />
+	<name value="Hpi_legal_entity_type_10" />
+	<title value="Legal Entity Type" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Legal entity type" />
+	<purpose value="A coded value for organisation legal entity type." />
+	<compose>
+		<inactive value="true" />
+		<include>
+			<system value="https://standards.digital.health.nz/ns/hpi-legal-entity-type" />
+			<version value="1.0" />
+		</include>
+	</compose>
+</ValueSet>

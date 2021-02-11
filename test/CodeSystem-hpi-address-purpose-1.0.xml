@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+<id value="id-13" />
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/hpi-address-purpose" />
+	<version value="1.0" />
+	<name value="Hpi_address_purpose" />
+	<title value="OrgFac Address Purpose" />
+	<status value="retired" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for organisation/facility address purpose (qualifier)." />
+	<purpose value="A coded type for organisation/facility address purpose (qualifier)." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="3" />
+	<concept>
+		<code value="LEGAL" />
+		<display value="Legal Address" />
+		<definition value="An address of the legal registered office (active)." />
+	</concept>
+	<concept>
+		<code value="SERVICE" />
+		<display value="Service Delivery Address" />
+		<definition value="Physical location where health services are provided including (active)." />
+	</concept>
+	<concept>
+		<code value="BUSINESS" />
+		<display value="Business Address" />
+		<definition value="An address used for administrative purposes (active)." />
+	</concept>
+</CodeSystem>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+<id value="id-63" />
+	<url
+		value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-registration-status" />
+	<version value="1.0" />
+	<name value="Cm_hpi_registration_status" />
+	<title value="HPI Registration Type Mapping" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2020-10-27T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from legacy HPI to FHIR" />
+	<purpose value="To translate between HPI registration status codes" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-status" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code" />
+	<group>
+		<source
+			value="https://standards.digital.health.nz/ns/hpi-registration-status" />
+		<sourceVersion value="1.0" />
+		<target
+			value="https://standards.digital.health.nz/ns/practitioner-registration-status-code" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="C" />
+			<target>
+				<code value="current" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="I" />
+			<target>
+				<code value="inactive" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="R" />
+			<target>
+				<code value="removed" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="S" />
+			<target>
+				<code value="suspended" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url
+		value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-facility-type-down" />
+	<version value="1.0" />
+	<name value="Cm_hpi_facility_type_down" />
+	<title value="HPI Facility Type Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description
+		value="Translation from FHIR Location Type to legacy HPI Facility Type" />
+	<purpose
+		value="To translate from FHIR Location Type to legacy HPI Facility Type" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/location-type-code" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-type" />
+	<group>
+		<source
+			value="https://standards.digital.health.nz/ns/location-type-code" />
+		<sourceVersion value="1.0" />
+		<target
+			value="https://standards.digital.health.nz/ns/hpi-facility-type" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="dhbhosp" />
+			<target>
+				<code value="001" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="privhosp" />
+			<target>
+				<code value="002" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="privsurg" />
+			<target>
+				<code value="004" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="privhosp" />
+			<target>
+				<code value="005" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dhblab" />
+			<target>
+				<code value="007" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dhboutreach" />
+			<target>
+				<code value="008" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="armclinic" />
+			<target>
+				<code value="009" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dhbmhunit" />
+			<target>
+				<code value="010" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="gms" />
+			<target>
+				<code value="099" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="comclinic" />
+			<target>
+				<code value="100" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="gpenrol" />
+			<target>
+				<code value="101" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="specialist" />
+			<target>
+				<code value="102" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="lab" />
+			<target>
+				<code value="103" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="radiology" />
+			<target>
+				<code value="104" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="physio" />
+			<target>
+				<code value="105" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dental" />
+			<target>
+				<code value="106" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="occutherapy" />
+			<target>
+				<code value="107" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="pharm" />
+			<target>
+				<code value="108" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="counsell" />
+			<target>
+				<code value="109" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="midwife" />
+			<target>
+				<code value="110" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="nurseclinic" />
+			<target>
+				<code value="111" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="phsychology" />
+			<target>
+				<code value="112" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="afterhours" />
+			<target>
+				<code value="113" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="ngofacility" />
+			<target>
+				<code value="114" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="hthcentre" />
+			<target>
+				<code value="115" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="chiropractor" />
+			<target>
+				<code value="116" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="osteopathy" />
+			<target>
+				<code value="117" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="familyplan" />
+			<target>
+				<code value="118" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dermatology" />
+			<target>
+				<code value="119" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="optometry" />
+			<target>
+				<code value="120" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="screening" />
+			<target>
+				<code value="121" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="youth" />
+			<target>
+				<code value="122" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="prisclinic" />
+			<target>
+				<code value="200" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="plunket" />
+			<target>
+				<code value="201" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="armclinic" />
+			<target>
+				<code value="202" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="stuclinic" />
+			<target>
+				<code value="203" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="ambulance" />
+			<target>
+				<code value="260" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="agedcare" />
+			<target>
+				<code value="300" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="nhospmental" />
+			<target>
+				<code value="400" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="rescare" />
+			<target>
+				<code value="450" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="rehab" />
+			<target>
+				<code value="460" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="dhbhomebirth" />
+			<target>
+				<code value="500" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="homehosp" />
+			<target>
+				<code value="501" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="hospice" />
+			<target>
+				<code value="600" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="mso" />
+			<target>
+				<code value="700" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="msoclinic" />
+			<target>
+				<code value="710" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="phooffice" />
+			<target>
+				<code value="720" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="moh" />
+			<target>
+				<code value="730" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="privclinic" />
+			<target>
+				<code value="800" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="orthodontist" />
+			<target>
+				<code value="806" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="ndisppharm" />
+			<target>
+				<code value="808" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="podiatry" />
+			<target>
+				<code value="810" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="hands" />
+			<target>
+				<code value="815" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="orthopaedic" />
+			<target>
+				<code value="820" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="gynaecology" />
+			<target>
+				<code value="830" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="hearing" />
+			<target>
+				<code value="840" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="chinesemed" />
+			<target>
+				<code value="850" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="acupuncture" />
+			<target>
+				<code value="855" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="careersupp" />
+			<target>
+				<code value="860" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="occhealth" />
+			<target>
+				<code value="870" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="anaesthetics" />
+			<target>
+				<code value="880" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="fitness" />
+			<target>
+				<code value="890" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="unknown" />
+			<target>
+				<code value="888" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="other" />
+			<target>
+				<code value="999" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<unmapped>
+			<mode value="fixed" />
+			<code value="999" />
+		</unmapped>
+	</group>
+</ConceptMap>

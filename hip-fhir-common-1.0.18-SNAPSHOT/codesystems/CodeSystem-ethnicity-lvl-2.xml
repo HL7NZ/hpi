@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url
+		value="https://standards.digital.health.nz/ns/ethnic-group-level-2-code" />
+	<version value="1.0" />
+	<name value="Ethnicity_lvl_2" />
+	<title value="Ethnicity lvl 2" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2017-09-01T00:00:00+13:00" />
+	<publisher value="NZ Ministry of Health" />
+	<description value="Ethnic Group Codes at Level 2" />
+	<purpose value="A coded value for ethnicity." />
+	<caseSensitive value="false" />
+	<valueSet
+		value="https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-2-code" />
+	<versionNeeded value="false" />
+	<content value="complete" />
+	<count value="26" />
+	<concept>
+		<code value="10" />
+		<display value="European not further defined" />
+	</concept>
+	<concept>
+		<code value="11" />
+		<display value="NZ European" />
+	</concept>
+	<concept>
+		<code value="12" />
+		<display value="Other European" />
+	</concept>
+	<concept>
+		<code value="21" />
+		<display value="NZ Maori" />
+	</concept>
+	<concept>
+		<code value="30" />
+		<display value="Pacific Island not further defined" />
+	</concept>
+	<concept>
+		<code value="31" />
+		<display value="Samoan" />
+	</concept>
+	<concept>
+		<code value="32" />
+		<display value="Cook Island Maori" />
+	</concept>
+	<concept>
+		<code value="33" />
+		<display value="Tongan" />
+	</concept>
+	<concept>
+		<code value="34" />
+		<display value="Niuean" />
+	</concept>
+	<concept>
+		<code value="35" />
+		<display value="Tokelauan" />
+	</concept>
+	<concept>
+		<code value="36" />
+		<display value="Fijian" />
+	</concept>
+	<concept>
+		<code value="37" />
+		<display value="Other Pacific Island" />
+	</concept>
+	<concept>
+		<code value="40" />
+		<display value="Asian not further defined" />
+	</concept>
+	<concept>
+		<code value="41" />
+		<display value="Southeast Asian" />
+	</concept>
+	<concept>
+		<code value="42" />
+		<display value="Chinese" />
+	</concept>
+	<concept>
+		<code value="43" />
+		<display value="Indian" />
+	</concept>
+	<concept>
+		<code value="44" />
+		<display value="Other Asian" />
+	</concept>
+	<concept>
+		<code value="51" />
+		<display value="Middle Eastern" />
+	</concept>
+	<concept>
+		<code value="52" />
+		<display value="Latin American / Hispanic" />
+	</concept>
+	<concept>
+		<code value="53" />
+		<display value="African" />
+	</concept>
+	<concept>
+		<code value="54" />
+		<display value="Other" />
+	</concept>
+	<concept>
+		<code value="61" />
+		<display value="Other ethnicity" />
+	</concept>
+	<concept>
+		<code value="94" />
+		<display value="Don't know" />
+	</concept>
+	<concept>
+		<code value="95" />
+		<display value="Refused to answer" />
+	</concept>
+	<concept>
+		<code value="97" />
+		<display value="Response unidentifiable" />
+	</concept>
+	<concept>
+		<code value="99" />
+		<display value="Not stated" />
+	</concept>
+</CodeSystem>
