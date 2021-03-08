@@ -1,40 +1,51 @@
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <br/><strong>Extensions defined in this guide</strong><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th></tr>
-<tr>
+<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th>
+<th>FMM</th>
+<th>Status</th>
+</tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-additional-authorization.html'>additional-authorization</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/additional-authorization</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>
 <td>Additional authorizations that a practitioner is authorized to perform</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-alias-type.html'>alias-type</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
 <td>
 <div>Location.alias</div>
 </td>
 <td>Indicates the type of alias name. VS Binding is done by the profile.</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-condition-on-practice.html'>condition-on-practice</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>
 <td>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-death-date.html'>death-date</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
 <td>
 <div>Practitioner</div>
 </td>
 <td>The date the person died.</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-dhb.html'>dhb</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/dhb</td>
 <td>
@@ -42,70 +53,88 @@
 <div>Location</div>
 </td>
 <td>The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly).</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-educational-qualification.html'>educational-qualification</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/educational-qualification</td>
 <td>
 <div>Practitioner</div>
 </td>
 <td>Educational qualifications.</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-location-established.html'>location-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/location-established</td>
 <td>
 <div>Location</div>
 </td>
 <td>The period over which the location is open</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-organization-established.html'>organization-established</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/organization-established</td>
 <td>
 <div>Organization</div>
 </td>
 <td>The period over which the Organization is active</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-practitionerRole-creator.html'>practitionerRole-creator</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
 <td>
 <div>PractitionerRole</div>
 </td>
 <td>The organisation and person that created this role</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-practitionerRole-status.html'>practitionerRole-status</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status</td>
 <td>
 <div>PractitionerRole</div>
 </td>
 <td>The status of the role - active,ended</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-registration-initial-date.html'>registration-initial-date</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>
 <td>The date the practitioner first became registered with the Responsible Authority or professional body</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-registration-status-code.html'>registration-status-code</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-status-code</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>
 <td>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</td>
+<td>0</td>
+<td>active</td>
 </tr>
-<tr>
+<tr style='background-color:#FFCCCC'>
 <td><a href='StructureDefinition-scope-of-practice.html'>scope-of-practice</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice</td>
 <td>
 <div>Practitioner.qualification</div>
 </td>
 <td>The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.</td>
+<td>0</td>
+<td>active</td>
 </tr>
 </table>
 <a name="externalExtensions"> </a>

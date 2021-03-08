@@ -41,6 +41,7 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
+  Use cases: usecases.html
   General Notes: general.html
   API: capabilityStatement.html
   Profiles: profiles.html
