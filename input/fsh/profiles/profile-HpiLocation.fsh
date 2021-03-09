@@ -23,6 +23,7 @@ Description:    "A physical location from which health goods and/or services are
 * endpoint 0..0
 
 
+
 //------- copied from commonLocation
 
 //Needs to be a different geocode as uses a different datum
