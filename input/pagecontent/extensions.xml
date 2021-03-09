@@ -52,7 +52,7 @@
 <div>Patient</div>
 <div>Location</div>
 </td>
-<td>The District Health Board the patient resides in and a Location is associated with. It is derived from the patient's primary residential address (not updated directly).</td>
+<td>The District Health Board the Location is in. It is derived from the eSAM details of the location’s address that has use=work.</td>
 <td>0</td>
 <td>active</td>
 </tr>

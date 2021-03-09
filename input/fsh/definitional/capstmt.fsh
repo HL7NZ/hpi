@@ -47,15 +47,24 @@ Practitioner query
 * rest.resource.interaction[1].code = #search-type
 * rest.resource.interaction[1].documentation = ""
 
-//Search by name. todo - may need add docs about dependencies - eg dob as well
-* rest.resource.searchParam.name = "name"
-* rest.resource.searchParam.type = #string
-* rest.resource.searchParam.documentation = "Not case sensitive"
+* rest.resource.interaction[2].code = #create
+* rest.resource.interaction[2].documentation = ""
+
+* rest.resource.interaction[3].code = #update
+* rest.resource.interaction[3].documentation = ""
+
 
 //identifier 
-* rest.resource.searchParam[1].name = "identifier"
-* rest.resource.searchParam[1].type = #token
-* rest.resource.searchParam[1].documentation = "Will only return active identifiers"
+* rest.resource.searchParam[0].name = "identifier"
+* rest.resource.searchParam[0].type = #token
+* rest.resource.searchParam[0].documentation = "Will only return active identifiers"
+
+//Search by name. todo - may need add docs about dependencies - eg dob as well
+* rest.resource.searchParam[1].name = "name"
+* rest.resource.searchParam[1].type = #string
+* rest.resource.searchParam[1].documentation = "Not case sensitive"
+
+
 
 //family 
 * rest.resource.searchParam[2].name = "family"
@@ -75,13 +84,13 @@ Practitioner query
 //birthdate 
 * rest.resource.searchParam[5].name = "birthdate"
 * rest.resource.searchParam[5].type = #date
-* rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
+* rest.resource.searchParam[5].definition = "SearchParameter/HpiPractitionerBirthdate"
 * rest.resource.searchParam[5].documentation = "This is a custom search"
 
 //ra-identifier 
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
-* rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
+* rest.resource.searchParam[6].definition = "SearchParameter/HpiPractitionerRaIdentifier"
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
 
 /* #endregion */
@@ -98,12 +107,17 @@ PractitionerRole query
 * rest.resource[1].interaction.code = #read
 * rest.resource[1].interaction.documentation = "Used to retrieve a PractitionerRole resource by Id."
 
-* rest.resource[1].interaction[1].code = #update
+//search by various parameters
+* rest.resource[1].interaction[1].code = #search-type
 * rest.resource[1].interaction[1].documentation = ""
 
-//search by various parameters
-* rest.resource[1].interaction[2].code = #search-type
-* rest.resource[1].interaction[2].documentation = ""
+* rest.resource[1].interaction[2].code = #create
+* rest.resource[1].interaction[2].documentation = "Create a new PractitionerRole"
+
+* rest.resource[1].interaction[3].code = #update
+* rest.resource[1].interaction[3].documentation = "Update an existing PractitionerRole"
+
+
 
 * rest.resource[1].searchParam[0].name = "practitioner"
 * rest.resource[1].searchParam[0].type = #reference
@@ -156,7 +170,7 @@ Organization query
 
 * rest.resource[2].searchParam[0].name = "active"
 * rest.resource[2].searchParam[0].type = #token
-* rest.resource[2].searchParam[0].documentation = "Will only return active organizations"
+* rest.resource[2].searchParam[0].documentation = "To enable exclusion of inactive organizations"
 
 * rest.resource[2].searchParam[1].name = "name"
 * rest.resource[2].searchParam[1].type = #string
@@ -199,7 +213,7 @@ Location query
 
 * rest.resource[3].searchParam[1].name = "name"
 * rest.resource[3].searchParam[1].type = #string
-* rest.resource[3].searchParam[1].documentation = "Retrieve the Locations with the matching name"
+* rest.resource[3].searchParam[1].documentation = "Retrieve the Locations with the matching name or alias"
 
 * rest.resource[3].searchParam[2].name = "type"
 * rest.resource[3].searchParam[2].type = #token

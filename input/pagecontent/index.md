@@ -8,9 +8,9 @@
 * ig-data/input/pagecontent/index.md                                                    *
 *****************************************************************************************
 {% endcomment %} -->
-This is the Implementation Guide for the [HL7® FHIR©](hl7.org/fhir) interface to the New Zealand HPI - Health Practitioner Index. It brings together all the artifacts that are necessary to understand and use the FHIR API. O
+This is the Implementation Guide for the [HL7® FHIR©](hl7.org/fhir) interface to the New Zealand HPI - Health Provider Index. It brings together all the artifacts that are necessary to understand and use the FHIR API. O
 
-The HPI ([Health Practitioner Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from. The key entities that are supported are:
+The HPI ([Health Provider Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from. The key entities that are supported are:
 
 The Person - described by the FHIR [Practitioner](http://hl7.org/fhir/practitioner.html) resource. Note that these are intended to be all providers of healthcare.
 Facilities where healthcare is provided from. These are represented by [Location](http://hl7.org/fhir/location.html) resources.
@@ -35,7 +35,7 @@ Note that the HPI is not necessarily the actual source of information (eg Practi
 * **FAQ:** Frequently Asked Questions
 * **Artifact Index:** A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide. This page largely duplicates information in the Profiles and Extensions tab.
 * **Table of Contents** All pages in the guide
-* **Support** Links to the FHIR spec and downloads. Also has linke to the IG Companion (under review...)
+* **Support** Links to the FHIR spec and downloads. Also has links to the IG Companion (under review...)
 
 
 ### Logical Models

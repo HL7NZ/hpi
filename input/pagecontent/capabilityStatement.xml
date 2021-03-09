@@ -20,20 +20,28 @@
 <td>search-type</td>
 <td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
 </tr>
+<tr>
+<td>create</td>
+<td>undefined</td>
+</tr>
+<tr>
+<td>update</td>
+<td>undefined</td>
+</tr>
 </table>
 <strong>Search Parameters</strong>
 <table class='table table-bordered table-condensed'>
 <tr><th width='15%'>Name</th><th>Type</th><th width='70%'>Documentation</th></tr>
 <tr>
-<td>name</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Not case sensitive</p>
-</td>
-</tr>
-<tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
 <td><p>Will only return active identifiers</p>
+</td>
+</tr>
+<tr>
+<td>name</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
+<td><p>Not case sensitive</p>
 </td>
 </tr>
 <tr>
@@ -54,13 +62,13 @@
 <tr>
 <td>birthdate</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#date">date</a></td>
-<td><div>Definition: http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate</div><p>This is a custom search</p>
+<td><div>Definition: SearchParameter/HpiPractitionerBirthdate</div><p>This is a custom search</p>
 </td>
 </tr>
 <tr>
 <td>ra-identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><div>Definition: http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier</div><p>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</p>
+<td><div>Definition: SearchParameter/HpiPractitionerRaIdentifier</div><p>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</p>
 </td>
 </tr>
 </table>
@@ -78,12 +86,18 @@
 </td>
 </tr>
 <tr>
-<td>update</td>
-<td>undefined</td>
-</tr>
-<tr>
 <td>search-type</td>
 <td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
+</tr>
+<tr>
+<td>create</td>
+<td><p>Create a new PractitionerRole</p>
+</td>
+</tr>
+<tr>
+<td>update</td>
+<td><p>Update an existing PractitionerRole</p>
+</td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
@@ -165,7 +179,7 @@
 <tr>
 <td>active</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Will only return active organizations</p>
+<td><p>To enable exclusion of inactive organizations</p>
 </td>
 </tr>
 <tr>
@@ -213,7 +227,7 @@ like hospitals that are part of the Organization with the id 'cmdhd'</p>
 <tr>
 <td>name</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Retrieve the Locations with the matching name</p>
+<td><p>Retrieve the Locations with the matching name or alias</p>
 </td>
 </tr>
 <tr>
