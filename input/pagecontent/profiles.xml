@@ -4,11 +4,6 @@
 <table class='table table-bordered table-hover table-sm'>
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
-<td><a href='StructureDefinition-HpiEndpoint.html'>HpiEndpoint</a></td>
-<td>http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/HpiEndpoint</td>
-<td>undefined</td>
-</tr>
-<tr>
 <td><a href='StructureDefinition-HpiLocation.html'>HpiLocation</a></td>
 <td>http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/HpiLocation</td>
 <td>A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.</td>

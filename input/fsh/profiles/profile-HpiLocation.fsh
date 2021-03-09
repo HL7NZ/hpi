@@ -20,6 +20,7 @@ Description:    "A physical location from which health goods and/or services are
 * hoursOfOperation 0..0
 * availabilityExceptions 0..0
 * position 0..0
+* endpoint 0..0
 
 
 //------- copied from commonLocation
@@ -87,5 +88,3 @@ Description:    "A physical location from which health goods and/or services are
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
 * alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
 * alias.extension[alias-type] ^short = "The type of alias this is - eg its Maori name"
-
-* endpoint only Reference(HpiEndpoint)
