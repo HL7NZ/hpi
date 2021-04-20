@@ -308,7 +308,24 @@ Usage: #definition
 * uniqueId.value = "https://standards.digital.health.nz/ns/medical-sciences-council-id"
 * uniqueId.preferred = true
 
+Instance: nzparamed
+InstanceOf: NamingSystem
+Usage: #definition
 
+* name = "NZParamed"
+* description = "Paramedic Council Register Number"
+* status = #active
+* kind = #identifier
+* date = "2020-07-14"
+* responsible = "HISO"
+
+* type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#NPI "National provider identifier"
+
+* jurisdiction = urn:iso:std:iso:3166#NZ
+
+* uniqueId.type = #uri
+* uniqueId.value = "https://standards.digital.health.nz/ns/paramedic-council-id"
+* uniqueId.preferred = true
 
 Instance: nzocc
 InstanceOf: NamingSystem
