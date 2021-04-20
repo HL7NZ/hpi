@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-facility-address-purpose" />
+	<version value="1.0" />
+	<name value="Cm_hpi_facility_address_purpose" />
+	<title value="HPI Facility Address Purpose Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from HPI Address Purpose to FHIR Address Use" />
+	<purpose value="To translate from internal HPI Address Purpose to FHIR Address Use" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-address-purpose" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-address-purpose" />
+		<sourceVersion value="1.0" />
+		<target value="https://standards.digital.health.nz/ns/hpi-address-use" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="LEGAL" />
+			<target>
+				<code value="work" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="BUSINESS" />
+			<target>
+				<code value="work" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

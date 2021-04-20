@@ -17,7 +17,6 @@ These are identifiers defined in this IG. They are defined using <a href='http:/
 <tr><td>Chiropractic Board Register number</td><td><div>https://standards.digital.health.nz/ns/chiropractic-board-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.1 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Dental Council Register Number</td><td><div>https://standards.digital.health.nz/ns/dental-council-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.2 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Dietitians Board Register Number</td><td><div>https://standards.digital.health.nz/ns/dietitians-board-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.3 (oid) </li></ul></td><td>HISO</td></tr>
-<tr><td>Medical Laboratory Science Board Register Number</td><td><div>https://standards.digital.health.nz/ns/medical-laboratory-science-board-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.4 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Medical Council of New Zealand Register Number</td><td><div>https://standards.digital.health.nz/ns/medical-council-id</div></td><td><ul><li>2.16.840.1.113883.2.18.41 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Midwifery Council Register Number</td><td><div>https://standards.digital.health.nz/ns/midwifery-council-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.5 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Nursing Council of New Zealand Register Number</td><td><div>https://standards.digital.health.nz/ns/nursing-council-id</div></td><td><ul><li>2.16.840.1.113883.2.18.42 (oid) </li></ul></td><td>HISO</td></tr>
@@ -30,5 +29,6 @@ These are identifiers defined in this IG. They are defined using <a href='http:/
 <tr><td>Psychotherapists Board register Number</td><td><div>https://standards.digital.health.nz/ns/psychotherapists-board-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.7 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Psychologists Board Register Number</td><td><div>https://standards.digital.health.nz/ns/psychologists-board-id</div></td><td><ul><li>2.16.840.1.113883.2.18.70.9 (oid) </li></ul></td><td>HISO</td></tr>
 <tr><td>Medical Radiation Technologists Board Register Number</td><td><div>https://standards.digital.health.nz/ns/medical-radiation-technologists-board-id</div></td><td></td><td>HISO</td></tr>
+<tr><td>Medical Sciences Council Number</td><td><div>https://standards.digital.health.nz/ns/medical-sciences-council-id</div></td><td></td><td>HISO</td></tr>
 </table>
 <br/><br/>

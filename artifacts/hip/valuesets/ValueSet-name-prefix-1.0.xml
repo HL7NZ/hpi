@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/name-prefix-code" />
+	<version value="1.0" />
+	<name value="Hpi_name_prefix" />
+	<title value="HPI Name Prefix" />
+	<status value="retired" />
+	<experimental value="true" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for a name prefix or title eg Mr, Mrs, Dr." />
+	<purpose value="Controlled value set to be used in the name prefix field." />
+	<compose>
+		<inactive value="true" />
+		<include>
+			<system value="https://standards.digital.health.nz/ns/name-prefix-code" />
+			<version value="1.0" />
+		</include>
+	</compose>
+</ValueSet>

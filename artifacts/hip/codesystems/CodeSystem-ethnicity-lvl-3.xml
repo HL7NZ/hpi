@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url
+		value="https://standards.digital.health.nz/ns/ethnic-group-level-3-code" />
+	<version value="1.0" />
+	<name value="Ethnicity_lvl_3" />
+	<title value="Ethnicity lvl 3" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2017-09-01T00:00:00+13:00" />
+	<publisher value="NZ Ministry of Health" />
+	<description value="Ethnic Group Codes at Level 3" />
+	<purpose value="A coded value for ethnicity." />
+	<caseSensitive value="false" />
+	<valueSet
+		value="https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-3-code" />
+	<versionNeeded value="false" />
+	<content value="complete" />
+	<count value="42" />
+	<concept>
+		<code value="100" />
+		<display value="European nfd" />
+	</concept>
+	<concept>
+		<code value="111" />
+		<display value="New Zealand European" />
+	</concept>
+	<concept>
+		<code value="121" />
+		<display value="British and Irish" />
+	</concept>
+	<concept>
+		<code value="122" />
+		<display value="Dutch" />
+	</concept>
+	<concept>
+		<code value="123" />
+		<display value="Greek" />
+	</concept>
+	<concept>
+		<code value="124" />
+		<display value="Polish" />
+	</concept>
+	<concept>
+		<code value="125" />
+		<display value="South Slav" />
+	</concept>
+	<concept>
+		<code value="126" />
+		<display value="Italian" />
+	</concept>
+	<concept>
+		<code value="127" />
+		<display value="German" />
+	</concept>
+	<concept>
+		<code value="128" />
+		<display value="Australian" />
+	</concept>
+	<concept>
+		<code value="129" />
+		<display value="Other European" />
+	</concept>
+	<concept>
+		<code value="211" />
+		<display value="Māori" />
+	</concept>
+	<concept>
+		<code value="300" />
+		<display value="Pacific Peoples nfd" />
+	</concept>
+	<concept>
+		<code value="311" />
+		<display value="Samoan" />
+	</concept>
+	<concept>
+		<code value="321" />
+		<display value="Cook Islands Maori" />
+	</concept>
+	<concept>
+		<code value="331" />
+		<display value="Tongan" />
+	</concept>
+	<concept>
+		<code value="341" />
+		<display value="Niuean" />
+	</concept>
+	<concept>
+		<code value="351" />
+		<display value="Tokelauan" />
+	</concept>
+	<concept>
+		<code value="361" />
+		<display value="Fijian" />
+	</concept>
+	<concept>
+		<code value="371" />
+		<display value="Other Pacific Peoples" />
+	</concept>
+	<concept>
+		<code value="400" />
+		<display value="Asian nfd" />
+	</concept>
+	<concept>
+		<code value="410" />
+		<display value="Southeast Asian nfd" />
+	</concept>
+	<concept>
+		<code value="411" />
+		<display value="Filipino" />
+	</concept>
+	<concept>
+		<code value="412" />
+		<display value="Cambodian" />
+	</concept>
+	<concept>
+		<code value="413" />
+		<display value="Vietnamese" />
+	</concept>
+	<concept>
+		<code value="414" />
+		<display value="Other Southeast Asian" />
+	</concept>
+	<concept>
+		<code value="421" />
+		<display value="Chinese" />
+	</concept>
+	<concept>
+		<code value="431" />
+		<display value="Indian" />
+	</concept>
+	<concept>
+		<code value="441" />
+		<display value="Sri Lankan" />
+	</concept>
+	<concept>
+		<code value="442" />
+		<display value="Japanese" />
+	</concept>
+	<concept>
+		<code value="443" />
+		<display value="Korean" />
+	</concept>
+	<concept>
+		<code value="444" />
+		<display value="Other Asian" />
+	</concept>
+	<concept>
+		<code value="511" />
+		<display value="Middle Eastern" />
+	</concept>
+	<concept>
+		<code value="521" />
+		<display value="Latin American" />
+	</concept>
+	<concept>
+		<code value="531" />
+		<display value="African" />
+	</concept>
+	<concept>
+		<code value="611" />
+		<display value="Other Ethnicity" />
+	</concept>
+	<concept>
+		<code value="944" />
+		<display value="Don't Know" />
+	</concept>
+	<concept>
+		<code value="955" />
+		<display value="Refused to Answer" />
+	</concept>
+	<concept>
+		<code value="966" />
+		<display value="Repeated Value" />
+	</concept>
+	<concept>
+		<code value="977" />
+		<display value="Response Unidentifiable" />
+	</concept>
+	<concept>
+		<code value="988" />
+		<display value="Response Outside Scope" />
+	</concept>
+	<concept>
+		<code value="999" />
+		<display value="Not Stated" />
+	</concept>
+</CodeSystem>

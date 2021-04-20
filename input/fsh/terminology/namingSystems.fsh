@@ -266,6 +266,7 @@ Usage: #definition
 * uniqueId[1].type = #oid
 * uniqueId[1].value = "2.16.840.1.113883.2.18.70.3"
 
+/* 
 Instance: nzlab
 InstanceOf: NamingSystem
 Usage: #definition
@@ -285,6 +286,29 @@ Usage: #definition
 
 * uniqueId[1].type = #oid
 * uniqueId[1].value = "2.16.840.1.113883.2.18.70.4"
+
+*/
+
+Instance: nzscience
+InstanceOf: NamingSystem
+Usage: #definition
+
+* name = "NZScience"
+* description = "Medical Sciences Council Number"
+* status = #active
+* kind = #identifier
+* date = "2020-07-14"
+* responsible = "HISO"
+
+* type.coding = http://terminology.hl7.org/CodeSystem/v2-0203#NPI "National provider identifier"
+
+* jurisdiction = urn:iso:std:iso:3166#NZ
+
+* uniqueId.type = #uri
+* uniqueId.value = "https://standards.digital.health.nz/ns/medical-sciences-council-id"
+* uniqueId.preferred = true
+
+
 
 Instance: nzocc
 InstanceOf: NamingSystem

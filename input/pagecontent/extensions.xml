@@ -1,7 +1,7 @@
 <div xmlns='http://www.w3.org/1999/xhtml'>
 <br/><strong>Extensions defined in this guide</strong><br/><br/>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
-<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th>
+<tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 <th>FMM</th>
 <th>Status</th>
 </tr>
@@ -12,6 +12,7 @@
 <div>Practitioner.qualification</div>
 </td>
 <td>Additional authorizations that a practitioner is authorized to perform</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -22,6 +23,7 @@
 <div>Location.alias</div>
 </td>
 <td>Indicates the type of alias name. VS Binding is done by the profile.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -32,6 +34,7 @@
 <div>Practitioner.qualification</div>
 </td>
 <td>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -42,6 +45,7 @@
 <div>Practitioner</div>
 </td>
 <td>The date the person died.</td>
+<td>The date the person died. (def) </td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -53,6 +57,7 @@
 <div>Location</div>
 </td>
 <td>The District Health Board the Location is in. It is derived from the eSAM details of the location’s address that has use=work.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -63,6 +68,7 @@
 <div>Practitioner</div>
 </td>
 <td>Educational qualifications.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -73,6 +79,7 @@
 <div>Location</div>
 </td>
 <td>The period over which the location is open</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -83,6 +90,7 @@
 <div>Organization</div>
 </td>
 <td>The period over which the Organization is active</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -93,6 +101,7 @@
 <div>PractitionerRole</div>
 </td>
 <td>The organisation and person that created this role</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -103,6 +112,7 @@
 <div>PractitionerRole</div>
 </td>
 <td>The status of the role - active,ended</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -113,6 +123,7 @@
 <div>Practitioner.qualification</div>
 </td>
 <td>The date the practitioner first became registered with the Responsible Authority or professional body</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -123,6 +134,7 @@
 <div>Practitioner.qualification</div>
 </td>
 <td>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>
@@ -133,6 +145,7 @@
 <div>Practitioner.qualification</div>
 </td>
 <td>The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.</td>
+<td></td>
 <td>0</td>
 <td>active</td>
 </tr>

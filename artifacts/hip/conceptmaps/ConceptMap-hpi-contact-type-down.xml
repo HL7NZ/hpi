@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-contact-type-down" />
+	<version value="1.0" />
+	<name value="Cm_hpi_contact_type_down" />
+	<title value="HPI Contact Type Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from FHIR Contact Point System to HPI Contact Type" />
+	<purpose value="To translate from FHIR Contact Point System to internal HPI Contact Type" />
+	<sourceUri
+		value="http://hl7.org/fhir/ValueSet/contact-point-system" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-type" />
+	<group>
+		<source value="http://hl7.org/fhir/contact-point-system" />
+		<sourceVersion value="4.0.1" />
+		<target value="https://standards.digital.health.nz/ns/hpi-contact-type" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="email" />
+			<target>
+				<code value="E" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="fax" />
+			<target>
+				<code value="F" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="pager" />
+			<target>
+				<code value="P" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="sms" />
+			<target>
+				<code value="S" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="phone" />
+			<target>
+				<code value="T" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="url" />
+			<target>
+				<code value="U" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<!-- Currently used for HealthLink EDI only -->
+			<code value="other" />
+			<target>
+				<code value="M" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

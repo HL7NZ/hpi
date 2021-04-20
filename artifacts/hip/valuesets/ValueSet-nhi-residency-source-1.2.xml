@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/vs/nhi-residency-source" />
+	<version value="1.2" />
+	<name value="Nhi_residency_source" />
+	<title value="NZ Residency Information Source" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for the source of information for NZ residency." />
+	<purpose value="A coded type for the source of information for NZ residency." />
+	<compose>
+		<include>
+			<system value="https://standards.digital.health.nz/cs/nhi-information-source" />
+			<filter>
+				<property value="code" />
+				<op value="in" />
+				<value value="MIGR,HL7,PPRT,NPRF,INZ,NZPV,NZTV" />
+			</filter>
+		</include>
+	</compose>
+</ValueSet>

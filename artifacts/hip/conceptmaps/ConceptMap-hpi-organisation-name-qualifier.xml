@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-organisation-name-qualifier" />
+	<version value="1.0" />
+	<name value="Cm_hpi_organisation_name_qualifier" />
+	<title value="HPI Organisation Name Qualifier Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from HPI Name Qualifier to FHIR Organization Alias Type" />
+	<purpose value="To translate from internal HPI Name Qualifier to FHIR Organization Alias Type" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-name-qualifier" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-name-qualifier" />
+		<sourceVersion value="2.0" />
+		<target value="https://standards.digital.health.nz/ns/alias-type-code" />
+		<targetVersion value="1.0" />
+		<element>
+			<code value="AKA" />
+			<target>
+				<code value="aka" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="FORMER" />
+			<target>
+				<code value="old" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="MAORI" />
+			<target>
+				<code value="maori" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="LEGAL" />
+			<target>
+				<code value="legal" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="SHORT" />
+			<target>
+				<code value="short" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="TRADE-AS" />
+			<target>
+				<code value="trade-as" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

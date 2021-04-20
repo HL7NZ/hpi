@@ -1,0 +1,8 @@
+canonical: https://standards.digital.health.nz/fhir
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: standards.digital.health.fhir
+name: StandardsDigitalHealthFhir
+status: active
+version: "1.0"

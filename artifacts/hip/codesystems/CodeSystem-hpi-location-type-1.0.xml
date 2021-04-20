@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url
+		value="https://standards.digital.health.nz/ns/location-type-code" />
+	<version value="1.0" />
+	<name value="Hpi_location_type" />
+	<title value="Location Type" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded value for location type." />
+	<purpose value="A coded value for location type." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="100" />
+	<concept>
+		<code value="dhbhosp" />
+		<display value="DHB Hospital" />
+		<definition
+			value="A Hospital Campus offering inpatient, outpatient and daypatient services run by a DHB" />
+	</concept>
+	<concept>
+		<code value="dhbhospunit" />
+		<display value="DHB Hospital Unit" />
+		<definition
+			value="A DHB hospital department or ward (not otherwise specified)" />
+	</concept>
+	<concept>
+		<code value="dhbopservice" />
+		<display value="DHB non Hospital Service" />
+		<definition
+			value="A DHB unit that is independent of a specific hospital eg PHU or Admin office" />
+	</concept>
+	<concept>
+		<code value="dhbpharm" />
+		<display value="DHB Hospital Pharmacy" />
+		<definition
+			value="Internal Pharmacy Associated with DHB Hospital" />
+	</concept>
+	<concept>
+		<code value="dhblab" />
+		<display value="DHB Laboratory" />
+		<definition value="A Laboratory run by a DHB" />
+	</concept>
+	<concept>
+		<code value="dhboutreach" />
+		<display value="DHB Outreach Clinic" />
+		<definition
+			value="An outreach or immunisation clinic run by a DHB" />
+	</concept>
+	<concept>
+		<code value="dhbmhunit" />
+		<display value="DHB Mental Health Unit" />
+		<definition
+			value="A facility offering inpatient, outpatient and daypatient mental health services run by a DHB" />
+	</concept>
+	<concept>
+		<code value="dhbhomebirth" />
+		<display value="Home Birth" />
+		<definition value="Home Birth services as managed by DHBs" />
+	</concept>
+	<concept>
+		<code value="dhbmaternity" />
+		<display value="DHB Maternity" />
+		<definition
+			value="DHB maternity services - including maternity units and support for LMC/midwives." />
+	</concept>
+	<concept>
+		<code value="dhbed" />
+		<display value="DHB ED Department" />
+		<definition value="DHB emergency Departments." />
+	</concept>
+	<concept>
+		<code value="cancerreg" />
+		<display value="DHB Cancer Registrar" />
+		<definition
+			value="Facility Ids allocated to DHB Cancer registrars" />
+	</concept>
+	<concept>
+		<code value="dhbphu" />
+		<display value="DHB Public Health Unit" />
+		<definition
+			value="A place where a DHB provides Public Health advice and programs in an office setting." />
+	</concept>
+	<concept>
+		<code value="privhosp" />
+		<display value="Private Hospital" />
+		<definition
+			value="A facility offering inpatient, outpatient and daypatient services run by a Private Health Group or Trust" />
+	</concept>
+	<concept>
+		<code value="privhospunit" />
+		<display value="Private Hospital Unit" />
+		<definition
+			value="A private hospital department or ward (not otherwise specified)" />
+	</concept>
+	<concept>
+		<code value="privhosppharm" />
+		<display value="Private Hospital Pharmacy" />
+		<definition value="Internal Pharmacy" />
+	</concept>
+	<concept>
+		<code value="privsurg" />
+		<display value="Private Day Surgery" />
+		<definition
+			value="A facility where surgical procedures are performed - no overnight stays" />
+	</concept>
+	<concept>
+		<code value="hospice" />
+		<display value="Hospices" />
+		<definition />
+	</concept>
+	<concept>
+		<code value="agedcare" />
+		<display value="Aged Care facilities" />
+		<definition
+			value="Includes Retirement Villages, Rest Homes and any associated Hospital and or Dementia units." />
+	</concept>
+	<concept>
+		<code value="gms" />
+		<display value="General Medical Services" />
+		<definition
+			value="A place where primary care services are provided by a General Practitioner  who is not affiliated to a PHO" />
+	</concept>
+	<concept>
+		<code value="gpenrol" />
+		<display value="Enrolling GP Practice" />
+		<definition
+			value="A place where primary care services are provided to enrolled patients by a General Practitioner" />
+	</concept>
+	<concept>
+		<code value="comclinic" />
+		<display
+			value="Community based clinical service facility - unspecified" />
+		<definition
+			value="A place where unspecified services are provided in an office environment" />
+	</concept>
+	<concept>
+		<code value="nurseclinic" />
+		<display value="Community Nurse-Run Clinic" />
+		<definition
+			value="A place where services are provided by a registered nurse in an office setting" />
+	</concept>
+	<concept>
+		<code value="armclinic" />
+		<display value="Armed Forces Health Clinic" />
+		<definition
+			value="A health clinic run by a branch of the NZ Armed Forces" />
+	</concept>
+	<concept>
+		<code value="youth" />
+		<display value="Community Youth Service" />
+		<definition
+			value="A place where services are provided to youth in an office setting" />
+	</concept>
+	<concept>
+		<code value="prisclinic" />
+		<display value="Prison Health Clinic" />
+		<definition
+			value="A health clinic run by the Department of Corrections" />
+	</concept>
+	<concept>
+		<code value="stuclinic" />
+		<display value="Student Health Clinic" />
+		<definition
+			value="A health clinic in a school or University setting providing services to students" />
+	</concept>
+	<concept>
+		<code value="msoclinic" />
+		<display value="MSO / PHO clinics" />
+		<definition
+			value="Services provided in a clinical setting by PHO/MSO" />
+	</concept>
+	<concept>
+		<code value="sexualhealth" />
+		<display value="Sexual Health" />
+		<definition
+			value="A place where sexual health clinics take place" />
+	</concept>
+	<concept>
+		<code value="screening" />
+		<display value="Screening Service" />
+		<definition value="A place that offers screening services" />
+	</concept>
+	<concept>
+		<code value="occhealth" />
+		<display
+			value="Occupational health - including company health clinics" />
+		<definition
+			value="Includes facilities for Occupational Health practitioners" />
+	</concept>
+	<concept>
+		<code value="specialist" />
+		<display value="Community Specialist  unspecified" />
+		<definition
+			value="A place where specialist services are provided in an office environment" />
+	</concept>
+	<concept>
+		<code value="entspec" />
+		<display value="ENT Otolarygology" />
+		<definition
+			value="A place where ENT and Otolaryngology consultations occur" />
+	</concept>
+	<concept>
+		<code value="plasticsurg" />
+		<display value="Plastic Surgery / Cosmetic Surgery" />
+		<definition
+			value="A place where plastic/cosmetic surgery consultations and minor procedures occur." />
+	</concept>
+	<concept>
+		<code value="orthopaedic" />
+		<display value="Orthopaedics" />
+		<definition
+			value="A place where Orthopaedic consultations occur" />
+	</concept>
+	<concept>
+		<code value="gynaecology" />
+		<display value="Obstetrics - Gynaecology" />
+		<definition
+			value="A place where Obstetric and Gynaecological services are offered" />
+	</concept>
+	<concept>
+		<code value="anaesthetics" />
+		<display value="Anaesthetics" />
+		<definition
+			value="Facility for Anaesthetists consulting rooms and or base rather than site anaesthesia is performed." />
+	</concept>
+	<concept>
+		<code value="gensurgeon" />
+		<display value="Surgeons (not otherwise specified)" />
+		<definition
+			value="Consultation rooms for surgeons (not otherwise defined)" />
+	</concept>
+	<concept>
+		<code value="urology" />
+		<display value="Urology" />
+		<definition
+			value="Facility where Urology consultations Occur" />
+	</concept>
+	<concept>
+		<code value="cardiology" />
+		<display value="Cardiology /Heart" />
+		<definition
+			value="Facility where Cardiologists and Heart Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="neurology" />
+		<display value="Neurology" />
+		<definition
+			value="Facility where Neurologists and Neurology Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="rheumatology" />
+		<display value="Rheumatology" />
+		<definition
+			value="Facility where Rheumatology Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="sportsmed" />
+		<display value="Sports Medicine" />
+		<definition
+			value="Facility where Sports M Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="oms" />
+		<display value="Oral and Maxillofacial surgeons" />
+		<definition
+			value="Facility where Oral and Maxillofacial surgeons conduct consultations" />
+	</concept>
+	<concept>
+		<code value="opthalmology" />
+		<display value="Eye Surgery/Opthalmology" />
+		<definition
+			value="Facility where Eye Specialists and Opthalmologists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="pain" />
+		<display value="Pain / Musculoskeletal" />
+		<definition
+			value="Facility where Pain and Musculoskeletal Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="gastro" />
+		<display value="Gastroenterology, Endoscopy" />
+		<definition
+			value="Facility where Gastroenterologists and Endoscopy Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="psychiatry" />
+		<display value="Psychiatry" />
+		<definition
+			value="Facility where Psychiatrists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="paediatrics" />
+		<display value="Paediatrics" />
+		<definition
+			value="Facility where Paediatrics Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="internalmed" />
+		<display value="Internal Medicine, Endocrinology, Diabetes" />
+		<definition
+			value="Facility where Internal medicine, Endocrinologists and Diabetes Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="oncology" />
+		<display value="Oncology" />
+		<definition
+			value="Facility where Oncology Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="privclinic" />
+		<display value="Private Clinicians   Largely Obsolete" />
+		<definition
+			value="Historic facilities defined to cater for Private Clinicians in each area" />
+	</concept>
+	<concept>
+		<code value="dermatology" />
+		<display value="Community Dermatology" />
+		<definition
+			value="A place where dermatological services - including Skin cancer checks are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="allergies" />
+		<display value="Allergies Immunology" />
+		<definition
+			value="A place where Allergy and Immunology Specialists conduct consultations" />
+	</concept>
+	<concept>
+		<code value="lab" />
+		<display value="Community Laboratory" />
+		<definition
+			value="A laboratory run by a private health group in a non-hospital setting" />
+	</concept>
+	<concept>
+		<code value="radiology" />
+		<display value="Community Radiology" />
+		<definition
+			value="A place where a radiology service is provided by a private health group. Includes other imaging and ultrasound" />
+	</concept>
+	<concept>
+		<code value="physio" />
+		<display value="Community Physiotherapy" />
+		<definition
+			value="A place where physiotherapy services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="dental" />
+		<display value="Community Dental" />
+		<definition
+			value="A place where dental services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="orthodontist" />
+		<display value="Orthodontics" />
+		<definition
+			value="A place where orthodontic services are provided in a clinical setting" />
+	</concept>
+	<concept>
+		<code value="periodontics" />
+		<display value="Periodontics" />
+		<definition
+			value="A place where periodontic services are provided in a clinical setting" />
+	</concept>
+	<concept>
+		<code value="occutherapy" />
+		<display value="Community Occupational Therapy" />
+		<definition
+			value="A place where occupational therapy services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="pharm" />
+		<display value="Community Pharmacy" />
+		<definition
+			value="A place where pharmacy services are provided in a shop or community health centre" />
+	</concept>
+	<concept>
+		<code value="ndisppharm" />
+		<display value="Non Dispensing Pharmacies" />
+		<definition
+			value="Licensed for storage/use of Pharmacies but not open for dispensing to the public" />
+	</concept>
+	<concept>
+		<code value="counsell" />
+		<display value="Community Counselling" />
+		<definition
+			value="A place where counselling services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="midwife" />
+		<display value="Community Midwife" />
+		<definition
+			value="Where midwifery services are provided by an independent midwife" />
+	</concept>
+	<concept>
+		<code value="psychology" />
+		<display value="Community Psychology" />
+		<definition
+			value="A place where services are provided by a psychologist in an office setting" />
+	</concept>
+	<concept>
+		<code value="afterhours" />
+		<display value="Community After Hours Clinic" />
+		<definition
+			value="A place where after hours services are provided in a non-hospital setting" />
+	</concept>
+	<concept>
+		<code value="chiropractor" />
+		<display value="Community Chiropractic" />
+		<definition
+			value="A place where chiropractic services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="osteopathy" />
+		<display value="Community Osteopathy" />
+		<definition
+			value="A place where osteopathic services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="familyplan" />
+		<display value="Community Family Planning Clinic" />
+		<definition
+			value="A place where family planning services are provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="optometry" />
+		<display value="Community Optometry" />
+		<definition
+			value="A place where Optometry services are provided in an office or shop setting" />
+	</concept>
+	<concept>
+		<code value="hthcentre" />
+		<display value="Community Health Centre" />
+		<definition
+			value="A facility providing more than one service" />
+	</concept>
+	<concept>
+		<code value="podiatry" />
+		<display value="Podiatry" />
+		<definition
+			value="A facility where podiatry services are provided" />
+	</concept>
+	<concept>
+		<code value="hands" />
+		<display value="Hands" />
+		<definition
+			value="A place where services specifically related to hands are provided" />
+	</concept>
+	<concept>
+		<code value="hearing" />
+		<display value="Ears / Hearing" />
+		<definition
+			value="Audiological services as well as Ear Health." />
+	</concept>
+	<concept>
+		<code value="chinesemed" />
+		<display value="Chinese medicine" />
+		<definition
+			value="A place where Chinese medicine services are provided." />
+	</concept>
+	<concept>
+		<code value="acupuncture" />
+		<display value="Acupuncture" />
+		<definition
+			value="A place where Acupuncture services are provided" />
+	</concept>
+	<concept>
+		<code value="natmen" />
+		<display value="Natural Medicine" />
+		<definition
+			value="Includes places where naturopaths, Homeopaths etc provide services" />
+	</concept>
+	<concept>
+		<code value="diet" />
+		<display value="Nutrition / Dietetics" />
+		<definition
+			value="A place where nutrition/dietetic services are provided" />
+	</concept>
+	<concept>
+		<code value="fitness" />
+		<display value="Gyms, Wellness, Fitness, Health Spas" />
+		<definition
+			value="A place where services are provided to improve human physical wellness" />
+	</concept>
+	<concept>
+		<code value="speech" />
+		<display value="Speech Therapy" />
+		<definition
+			value="A placed where Speech Therapy services are provided" />
+	</concept>
+	<concept>
+		<code value="sleep" />
+		<display value="Sleep / Respiratory" />
+		<definition
+			value="A place where Sleep and Respiratory services are provided" />
+	</concept>
+	<concept>
+		<code value="nhospmental" />
+		<display value="Non Hospital Mental health" />
+		<definition
+			value="A place where mental health services are provided outside a hospital environment" />
+	</concept>
+	<concept>
+		<code value="addiction" />
+		<display value="Alcohol &amp; Drug" />
+		<definition
+			value="A place where Alcohol, Drug or Addiction services are offered" />
+	</concept>
+	<concept>
+		<code value="rescare" />
+		<display
+			value="Residential Support / Housing / Respite care facilities" />
+		<definition
+			value="A place where residential support or respite care is provided for mental Health or disabled patients (ie not Aged Care" />
+	</concept>
+	<concept>
+		<code value="ressupport" />
+		<display value="Residential Support" />
+		<definition
+			value="Includes residential and assisted living facilities" />
+	</concept>
+	<concept>
+		<code value="rehab" />
+		<display value="Rehabilitation Services" />
+		<definition
+			value="A place where rehabilitation services are provided" />
+	</concept>
+	<concept>
+		<code value="ambulance" />
+		<display value="Ambulance" />
+		<definition
+			value="A place where paramedics and ambulance staff are based for their provision of Healthcare services." />
+	</concept>
+	<concept>
+		<code value="plunket" />
+		<display value="Plunket Clinic" />
+		<definition
+			value="A place where services are provided by the Plunket Organisation" />
+	</concept>
+	<concept>
+		<code value="homehosp" />
+		<display value="Hospital in the Home" />
+		<definition
+			value="Services provided in the patients home environment by Nursing Services" />
+	</concept>
+	<concept>
+		<code value="ngofacility" />
+		<display value="NGO Facility" />
+		<definition
+			value="A place where services are provided by a Non-Government Organisation" />
+	</concept>
+	<concept>
+		<code value="careersupp" />
+		<display value="Career / Work Support" />
+		<definition
+			value="A place where career or work support is provided in an office setting" />
+	</concept>
+	<concept>
+		<code value="mso" />
+		<display value="Management Services Organisation" />
+		<definition
+			value="organisation that supports the provision but does not directly provide health services." />
+	</concept>
+	<concept>
+		<code value="moh" />
+		<display value="MOH" />
+		<definition
+			value="Facilities within MOH - allocated for historical or system purposes" />
+	</concept>
+	<concept>
+		<code value="phooffice" />
+		<display value="PHO Office" />
+		<definition
+			value="PHO Office or Location involved primarily in management of data" />
+	</concept>
+	<concept>
+		<code value="teaching" />
+		<display value="Teaching Facility" />
+		<definition
+			value="Facility providing Health Services as part of training new practitioners" />
+	</concept>
+	<concept>
+		<code value="covidtest" />
+		<display value="Covid testing facility" />
+		<definition
+			value="A place where Covid testing is done" />
+	</concept>
+	<concept>
+		<code value="covidmiq" />
+		<display value="Covid isolation and quarantine facility" />
+		<definition
+			value="A place for Covid isolation and quarantine" />
+	</concept>
+	<concept>
+		<code value="covidvac" />
+		<display value="Covid vaccination facility" />
+		<definition
+			value="A place where Covid vaccinations are given" />
+	</concept>
+	<concept>
+		<code value="unknown" />
+		<display value="Unknown" />
+	</concept>
+	<concept>
+		<code value="other" />
+		<display value="Other" />
+	</concept>
+</CodeSystem>

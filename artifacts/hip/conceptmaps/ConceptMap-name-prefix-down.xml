@@ -1,0 +1,539 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/cm/name-prefix-down" />
+	<version value="1.0" />
+	<name value="Cm_name_prefix" />
+	<title value="Name Prefix legacy translation" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description
+		value="Translated FHIR name prefix to legacy name prefix" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/name-prefix-code|2.0" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/name-prefix-code|1.0" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/name-prefix-code" />
+		<sourceVersion value="2.0" />
+		<target value="https://standards.digital.health.nz/ns/name-prefix-code" />
+		<targetVersion value="1.0" />
+		<element>
+			<code value="ac"/>
+			<target>
+				<code value="AC"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="aircdre"/>
+			<target>
+				<code value="AIRCDRE"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="am"/>
+			<target>
+				<code value="AM"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="amt"/>
+			<target>
+				<code value="AMT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="assoc prof"/>
+			<target>
+				<code value="ASSOC PROF"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="asst prof"/>
+			<target>
+				<code value="ASST PROF"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="avm"/>
+			<target>
+				<code value="AVM"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="bdr"/>
+			<target>
+				<equivalence value="unmatched"/>
+			</target>
+		</element>
+		<element>
+			<code value="br"/>
+			<target>
+				<code value="BR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="brig"/>
+			<target>
+				<code value="BRIG"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="canon"/>
+			<target>
+				<code value="CANON"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="capt"/>
+			<target>
+				<code value="CAPT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="card"/>
+			<target>
+				<code value="CARD"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="cdr"/>
+			<target>
+				<code value="CDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="cdre"/>
+			<target>
+				<code value="CDRE"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="col"/>
+			<target>
+				<code value="COL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="cpl"/>
+			<target>
+				<code value="CPL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="cpomed"/>
+			<target>
+				<code value="CPOMED"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="dame"/>
+			<target>
+				<code value="DAME"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="dr"/>
+			<target>
+				<code value="DR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="ens"/>
+			<target>
+				<code value="ENS"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="f/sgt"/>
+			<target>
+				<code value="FSGT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="fgoff"/>
+			<target>
+				<code value="FGOFF"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="fltlt"/>
+			<target>
+				<code value="FLTLT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="fr"/>
+			<target>
+				<code value="FR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="gen"/>
+			<target>
+				<code value="GEN"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="gpcapt"/>
+			<target>
+				<code value="GPCAPT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="her excel"/>
+			<target>
+				<code value="HER EXCEL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="his excel"/>
+			<target>
+				<code value="HIS EXCEL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="hon"/>
+			<target>
+				<code value="HON"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lac"/>
+			<target>
+				<code value="LAC"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lady"/>
+			<target>
+				<code value="LADY"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lcpl"/>
+			<target>
+				<code value="LCPL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lmed"/>
+			<target>
+				<code value="LMED"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lt"/>
+			<target>
+				<code value="LT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lt cdr"/>
+			<target>
+				<code value="LT CDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lt col"/>
+			<target>
+				<code value="LT COL"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="lt gen"/>
+			<target>
+				<code value="LT GEN"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="maj"/>
+			<target>
+				<code value="MAJ"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="maj gen"/>
+			<target>
+				<code value="MAJ GEN"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="mid"/>
+			<target>
+				<code value="MID"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="miss"/>
+			<target>
+				<code value="MISS"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="mon"/>
+			<target>
+				<code value="MON"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="most rev"/>
+			<target>
+				<code value="MOST REV"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="mr"/>
+			<target>
+				<code value="MR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="mrs"/>
+			<target>
+				<code value="MRS"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="ms"/>
+			<target>
+				<code value="MS"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="mx"/>
+			<target>
+				<code value="MX"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="omt"/>
+			<target>
+				<code value="OMT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="pltoff"/>
+			<target>
+				<code value="PLTOFF"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="pomed"/>
+			<target>
+				<code value="POMED"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="prof"/>
+			<target>
+				<code value="PROF"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="pte"/>
+			<target>
+				<code value="PTE"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="ra"/>
+			<target>
+				<code value="RA"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="rev"/>
+			<target>
+				<code value="REV"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="right rev"/>
+			<target>
+				<code value="RIGHT REV"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="rt hon"/>
+			<target>
+				<code value="RT HON"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sgn cdr"/>
+			<target>
+				<code value="SGN CDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sgn lt"/>
+			<target>
+				<code value="SGN LT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sgn ltcdr"/>
+			<target>
+				<code value="SGN LTCDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sgt"/>
+			<target>
+				<code value="SGT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sir"/>
+			<target>
+				<code value="SIR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sister"/>
+			<target>
+				<code value="SISTER"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="slt"/>
+			<target>
+				<code value="SLT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="spr"/>
+			<target>
+				<code value="SPR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="sqnldr"/>
+			<target>
+				<code value="SQNLDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="ssgt"/>
+			<target>
+				<code value="SSGT"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="tpr"/>
+			<target>
+				<code value="TPR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="ven"/>
+			<target>
+				<code value="VEN"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="very rev"/>
+			<target>
+				<code value="VERY REV"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="w/o"/>
+			<target>
+				<code value="WO"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="wgcdr"/>
+			<target>
+				<code value="WGCDR"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="wo"/>
+			<target>
+				<code value="WO"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+		<element>
+			<code value="womed"/>
+			<target>
+				<code value="WOMED"/>
+				<equivalence value="equal"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>

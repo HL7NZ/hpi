@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-contact-usage" />
+	<version value="1.0" />
+	<name value="Cm_hpi_contact_usage" />
+	<title value="HPI Contact Usage Mapping" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from HPI Contact Usage to FHIR Contact Point Use" />
+	<purpose value="To translate from internal HPI Contact Usage to FHIR Contact Point Use" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-usage" />
+	<targetUri
+		value="http://hl7.org/fhir/ValueSet/contact-point-use" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/hpi-contact-usage" />
+		<sourceVersion value="2.0" />
+		<target value="http://hl7.org/fhir/contact-point-use" />
+		<targetVersion value="4.0.1" />
+		<element>
+			<code value="B" />
+			<target>
+				<code value="work" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="B-OLD" />
+			<target>
+				<code value="old" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="T" />
+			<target>
+				<code value="temp" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="M" />
+			<target>
+				<code value="mobile" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

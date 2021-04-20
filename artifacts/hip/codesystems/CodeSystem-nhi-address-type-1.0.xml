@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/cs/nhi-address-type" />
+	<version value="1.0" />
+	<name value="Nhi_address_type" />
+	<title value="Patient Address Type" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-04-20T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for patient address." />
+	<purpose value="A coded type for patient address." />
+	<caseSensitive value="false" />
+	<versionNeeded value="true" />
+	<content value="complete" />
+	<count value="2" />
+	<concept>
+		<code value="M" />
+		<display value="Mailing" />
+		<definition value="This is the address that is used for mailing information (a postal address may be used in this field)." />
+	</concept>
+	<concept>
+		<code value="R" />
+		<display value="Residential" />
+		<definition value="The residential address of a patient." />
+	</concept>
+</CodeSystem>

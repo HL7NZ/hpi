@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/gender-from-r4" />
+	<version value="1.0" />
+	<name value="Cm_gender_from_r4" />
+	<title value="Gender Mapping (from R4)" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from FHIR Administrative Gender to HPI/NHI Gender Code" />
+	<purpose value="To translate from FHIR Administrative Gender to internal Gender Code " />
+	<sourceUri
+		value="http://hl7.org/fhir/ValueSet/administrative-gender" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/gender-code" />
+	<group>
+		<source value="http://hl7.org/fhir/administrative-gender" />
+		<sourceVersion value="4.0.1" />
+		<target value="https://standards.digital.health.nz/ns/gender-code" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="female" />
+			<target>
+				<code value="F" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="male" />
+			<target>
+				<code value="M" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="unknown" />
+			<target>
+				<code value="U" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="other" />
+			<target>
+				<code value="O" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>

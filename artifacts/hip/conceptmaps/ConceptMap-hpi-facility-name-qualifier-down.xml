@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://standards.digital.health.nz/fhir/ConceptMap/hpi-facility-name-qualifier-down" />
+	<version value="1.0" />
+	<name value="Cm_hpi_facility_name_qualifier_down" />
+	<title value="HPI Facility Name Qualifier Mapping Down" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="Translation from FHIR Location Alias Type to HPI Name Qualifier" />
+	<purpose value="To translate from FHIR Location Alias Type to internal HPI Name Qualifier" />
+	<sourceUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code" />
+	<targetUri
+		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-name-qualifier" />
+	<group>
+		<source value="https://standards.digital.health.nz/ns/alias-type-code" />
+		<sourceVersion value="1.0" />
+		<target value="https://standards.digital.health.nz/ns/hpi-name-qualifier" />
+		<targetVersion value="2.0" />
+		<element>
+			<code value="aka" />
+			<target>
+				<code value="AKA" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="old" />
+			<target>
+				<code value="FORMER" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="maori" />
+			<target>
+				<code value="MAORI" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="short" />
+			<target>
+				<code value="SHORT" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+		<element>
+			<code value="current" />
+			<target>
+				<code value="CURRENT" />
+				<equivalence value="equivalent" />
+			</target>
+		</element>
+	</group>
+</ConceptMap>
