@@ -294,7 +294,7 @@ InstanceOf: NamingSystem
 Usage: #definition
 
 * name = "NZScience"
-* description = "Medical Sciences Council Number"
+* description = "Medical Sciences Council Register Number"
 * status = #active
 * kind = #identifier
 * date = "2020-07-14"
@@ -413,7 +413,7 @@ InstanceOf: NamingSystem
 Usage: #definition
 
 * name = "NZPhysio"
-* description = "Physiotherapyƒ Board Register Number"
+* description = "Physiotherapy Board Register Number"
 * status = #active
 * kind = #identifier
 * date = "2020-07-14"
