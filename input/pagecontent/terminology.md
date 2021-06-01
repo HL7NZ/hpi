@@ -58,7 +58,6 @@
 ### Retired ValueSets
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Url</th><th>CodeSystem Urls</th></tr>
-### Retired ValueSets
 <tr><td width='20%'>Address Purpose (Qualifier) for Facility</td><td>Facility address purpose</td><td><a href='ValueSet-id-79.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-address-purpose</a></td><td><div><a href='CodeSystem-id-13.html'>https://standards.digital.health.nz/ns/hpi-address-purpose</a></div></td></tr>
 <tr><td width='20%'>Address Purpose (Qualifier) for Organisation</td><td>Organisation address purpose</td><td><a href='ValueSet-id-94.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-purpose</a></td><td><div><a href='CodeSystem-id-13.html'>https://standards.digital.health.nz/ns/hpi-address-purpose</a></div></td></tr>
 <tr><td width='20%'>Address Type for Facility</td><td>Facility address type</td><td><a href='ValueSet-id-80.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-address-type</a></td><td><div><a href='CodeSystem-id-14.html'>https://standards.digital.health.nz/ns/hpi-address-type</a></div></td></tr>
@@ -147,3 +146,21 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 <tr><td width='20%'>PractitionerRoleCodes</td><td>Coded roles that can be in a PractitionerRole</td><td><a href='CodeSystem-practitionerrole-codes.html'>https://standards.digital.health.nz/ns/practitioner-role-code</a></td></tr>
 <tr><td width='20%'>Scope of practice</td><td>A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority.</td><td><a href='CodeSystem-scopeOfPractice.html'>https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code</a></td></tr>
 <tr><td width='20%'>v2 Identifier Type</td><td>FHIR Value set/code system definition for HL7 v2 table 0203 ( Identifier Type)</td><td><a href='CodeSystem-v2-0203.html'>http://terminology.hl7.org/CodeSystem/v2-0203</a></td></tr>
+</table>
+
+### Duplicated ValueSets
+
+<table><tr><th>Url</th></tr>
+<tr><td><a href='ValueSet-dhb.html'>https://standards.digital.health.nz/fhir/ValueSet/dhb-code</a></td><tr>
+<tr><td><a href='ValueSet-hpi-practitionerrole-status-reason.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code</a></td><tr>
+<tr><td><a href='ValueSet-id-100.html'>https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code</a></td><tr>
+<tr><td><a href='ValueSet-id-101.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td><tr>
+<tr><td><a href='ValueSet-id-104.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code</a></td><tr>
+<tr><td><a href='ValueSet-id-106.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code</a></td><tr>
+<tr><td><a href='ValueSet-id-107.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code</a></td><tr>
+<tr><td><a href='ValueSet-id-72.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code</a></td><tr>
+<tr><td><a href='ValueSet-id-87.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-legal-entity-type</a></td><tr>
+<tr><td><a href='ValueSet-id-90.html'>https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code</a></td><tr>
+<tr><td><a href='ValueSet-id-91.html'>https://standards.digital.health.nz/fhir/ValueSet/location-type-code</a></td><tr>
+<tr><td><a href='ValueSet-id-98.html'>https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code</a></td><tr>
+</table>
