@@ -151,16 +151,63 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 ### Duplicated ValueSets
 
 <table><tr><th>Url</th></tr>
-<tr><td><a href='ValueSet-dhb.html'>https://standards.digital.health.nz/fhir/ValueSet/dhb-code</a></td><tr>
-<tr><td><a href='ValueSet-hpi-practitionerrole-status-reason.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code</a></td><tr>
-<tr><td><a href='ValueSet-id-100.html'>https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code</a></td><tr>
-<tr><td><a href='ValueSet-id-101.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td><tr>
-<tr><td><a href='ValueSet-id-104.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code</a></td><tr>
-<tr><td><a href='ValueSet-id-106.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code</a></td><tr>
-<tr><td><a href='ValueSet-id-107.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code</a></td><tr>
-<tr><td><a href='ValueSet-id-72.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code</a></td><tr>
-<tr><td><a href='ValueSet-id-87.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-legal-entity-type</a></td><tr>
-<tr><td><a href='ValueSet-id-90.html'>https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code</a></td><tr>
-<tr><td><a href='ValueSet-id-91.html'>https://standards.digital.health.nz/fhir/ValueSet/location-type-code</a></td><tr>
-<tr><td><a href='ValueSet-id-98.html'>https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code</a></td><tr>
+<tr><td><a href='ValueSet-dhb.html'>https://standards.digital.health.nz/fhir/ValueSet/dhb-code</a></td></tr>
+<tr><td><a href='ValueSet-hpi-practitionerrole-status-reason.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code</a></td></tr>
+<tr><td><a href='ValueSet-id-100.html'>https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code</a></td></tr>
+<tr><td><a href='ValueSet-id-101.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td></tr>
+<tr><td><a href='ValueSet-id-104.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code</a></td></tr>
+<tr><td><a href='ValueSet-id-106.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code</a></td></tr>
+<tr><td><a href='ValueSet-id-107.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code</a></td></tr>
+<tr><td><a href='ValueSet-id-72.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code</a></td></tr>
+<tr><td><a href='ValueSet-id-87.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-legal-entity-type</a></td></tr>
+<tr><td><a href='ValueSet-id-90.html'>https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code</a></td></tr>
+<tr><td><a href='ValueSet-id-91.html'>https://standards.digital.health.nz/fhir/ValueSet/location-type-code</a></td></tr>
+<tr><td><a href='ValueSet-id-98.html'>https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code</a></td></tr>
+</table>
+
+### ValueSets defined but not used
+
+<table><tr><th>Url</th></tr>
+<tr><td><a href='ValueSet-address-type.html'>http://hl7.org/fhir/ValueSet/address-type</a></td></tr>
+<tr><td><a href='ValueSet-address-use.html'>http://hl7.org/fhir/ValueSet/address-use</a></td></tr>
+<tr><td><a href='ValueSet-administrative-gender.html'>http://hl7.org/fhir/ValueSet/administrative-gender</a></td></tr>
+<tr><td><a href='ValueSet-contact-point-system.html'>http://hl7.org/fhir/ValueSet/contact-point-system</a></td></tr>
+<tr><td><a href='ValueSet-contact-point-use.html'>http://hl7.org/fhir/ValueSet/contact-point-use</a></td></tr>
+<tr><td><a href='ValueSet-id-103.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-status</a></td></tr>
+<tr><td><a href='ValueSet-id-105.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-type</a></td></tr>
+<tr><td><a href='ValueSet-id-108.html'>https://standards.digital.health.nz/fhir/ValueSet/name-prefix-code</a></td></tr>
+<tr><td><a href='ValueSet-id-109.html'>https://standards.digital.health.nz/vs/nhi-address-type</a></td></tr>
+<tr><td><a href='ValueSet-id-110.html'>https://standards.digital.health.nz/vs/nhi-citizenship-source</a></td></tr>
+<tr><td><a href='ValueSet-id-111.html'>https://standards.digital.health.nz/vs/nhi-citizenship-status</a></td></tr>
+<tr><td><a href='ValueSet-id-112.html'>https://standards.digital.health.nz/vs/nhi-country-of-birth-source</a></td></tr>
+<tr><td><a href='ValueSet-id-113.html'>https://standards.digital.health.nz/vs/nhi-date-of-birth-source</a></td></tr>
+<tr><td><a href='ValueSet-id-114.html'>https://standards.digital.health.nz/vs/nhi-date-of-death-source</a></td></tr>
+<tr><td><a href='ValueSet-id-115.html'>https://standards.digital.health.nz/vs/nhi-name-source</a></td></tr>
+<tr><td><a href='ValueSet-id-116.html'>https://standards.digital.health.nz/vs/nhi-residency-source</a></td></tr>
+<tr><td><a href='ValueSet-id-67.html'>https://standards.digital.health.nz/fhir/ValueSet/address-not-validated-reason-code</a></td></tr>
+<tr><td><a href='ValueSet-id-68.html'>https://standards.digital.health.nz/fhir/ValueSet/country-code</a></td></tr>
+<tr><td><a href='ValueSet-id-70.html'>https://standards.digital.health.nz/fhir/ValueSet/domicile-code</a></td></tr>
+<tr><td><a href='ValueSet-id-71.html'>https://standards.digital.health.nz/fhir/ValueSet/gender-code</a></td></tr>
+<tr><td><a href='ValueSet-id-74.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-type</a></td></tr>
+<tr><td><a href='ValueSet-id-75.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-usage</a></td></tr>
+<tr><td><a href='ValueSet-id-76.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-disestablishment-reason</a></td></tr>
+<tr><td><a href='ValueSet-id-77.html'>https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code</a></td></tr>
+<tr><td><a href='ValueSet-id-78.html'>https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-3-code</a></td></tr>
+<tr><td><a href='ValueSet-id-79.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-address-purpose</a></td></tr>
+<tr><td><a href='ValueSet-id-80.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-address-type</a></td></tr>
+<tr><td><a href='ValueSet-id-81.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-name-qualifier</a></td></tr>
+<tr><td><a href='ValueSet-id-82.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-type</a></td></tr>
+<tr><td><a href='ValueSet-id-85.html'>https://standards.digital.health.nz/fhir/ValueSet/language-code</a></td></tr>
+<tr><td><a href='ValueSet-id-86.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-legacy-language-code</a></td></tr>
+<tr><td><a href='ValueSet-id-88.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-legal-entity-type</a></td></tr>
+<tr><td><a href='ValueSet-id-92.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-name-type</a></td></tr>
+<tr><td><a href='ValueSet-id-93.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-nzscc4n</a></td></tr>
+<tr><td><a href='ValueSet-id-94.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-purpose</a></td></tr>
+<tr><td><a href='ValueSet-id-95.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-type</a></td></tr>
+<tr><td><a href='ValueSet-id-96.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-use-code</a></td></tr>
+<tr><td><a href='ValueSet-id-97.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-name-qualifier</a></td></tr>
+<tr><td><a href='ValueSet-id-99.html'>https://standards.digital.health.nz/fhir/ValueSet/organisation-type-code</a></td></tr>
+<tr><td><a href='ValueSet-identifier-use.html'>http://hl7.org/fhir/ValueSet/identifier-use</a></td></tr>
+<tr><td><a href='ValueSet-name-use.html'>http://hl7.org/fhir/ValueSet/name-use</a></td></tr>
+<tr><td><a href='ValueSet-organization-alias-type.html'>https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code</a></td></tr>
 </table>

@@ -8,7 +8,7 @@ rm -f input/vocabulary/*.json
 
 
 
-sushi fsh -o .
+sushi fsh -s -o .
 
 if [[ $? -eq 0 ]]
 then
