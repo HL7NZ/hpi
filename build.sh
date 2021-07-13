@@ -1,5 +1,6 @@
 
+# JAVA -jar ../publisher/publisher.jar -ig . #  -tx n/a
 
+JAVA -jar ../publisher/publisher.jar -ig . # -tx https://r4.ontoserver.csiro.au/fhir
 
-# JAVA -jar input-cache/publisher.jar -ig .
-JAVA -jar ../publisher/publisher.jar -ig .
+# https://r4.ontoserver.csiro.au/fhir

@@ -22,9 +22,11 @@ publisher:
 description: The HPI facade
 license: CC0-1.0
 fhirVersion: 4.0.1
+
 # there is a dependency on the NHI to get address profile
 dependencies:
-  hl7.org.nz.fhir.ig.nhi: current
+  hl7.org.nz.fhir.ig.base: dev
+  hl7.org.nz.fhir.ig.nhi: dev
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+
@@ -43,6 +45,7 @@ menu:
   IG Home: index.html
   # Use cases: usecases.html
   General Notes: general.html
+  Logical Models: logical.html
   API: capabilityStatement.html
   Profiles: profiles.html
   Extensions: extensions.html

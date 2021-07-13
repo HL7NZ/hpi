@@ -56,19 +56,13 @@ Description:    "A physical location from which health goods and/or services are
 * identifier[legacyFacId].use = #official (exactly)
 * identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
 
-
-
-
-// -------------
-
-
 //top level  extensions
 * extension contains 
     $hpiLocation-established named location-established 0..1 and
     $dhb named dhb 0..1 
    
- * extension[location-established] ^short = "The date when this location first became available for use"
- * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
+* extension[location-established] ^short = "The date when this location first became available for use"
+* extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
 
 * status from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code
 
