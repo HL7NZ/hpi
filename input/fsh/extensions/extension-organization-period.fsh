@@ -8,5 +8,8 @@ Description: "The period over which the Organization is active"
 * ^context.type = #element
 * ^context.expression = "Organization"
 
+* ^status = #draft
+
+
 * extension 0..0
 * value[x] only Period

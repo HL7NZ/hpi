@@ -8,6 +8,8 @@ Description: "The status of the role - active,ended"
 * ^context.type = #element
 * ^context.expression = "PractitionerRole"
 
+* ^status = #draft
+
 * extension contains
     active 0..1 and
     reason 0..1

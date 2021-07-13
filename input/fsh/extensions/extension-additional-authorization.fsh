@@ -5,6 +5,8 @@ Description: "Additional authorizations that a practitioner is authorized to per
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/additional-authorization"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
+* ^status = #draft
+
 * ^context.type = #element
 * ^context.expression = "Practitioner.qualification"
 

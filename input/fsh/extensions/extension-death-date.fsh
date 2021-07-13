@@ -5,6 +5,8 @@ Description: "The date the person died."
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
+* ^status = #draft
+
 * ^context.type = #element
 * ^context.expression = "Practitioner"
 

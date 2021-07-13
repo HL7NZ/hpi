@@ -6,5 +6,8 @@ Description: "The period over which the location is open"
 * ^context.type = #element
 * ^context.expression = "Location"
 
+* ^status = #draft
+
+
 * extension 0..0
 * value[x] only Period
