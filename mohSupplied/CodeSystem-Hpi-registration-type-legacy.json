@@ -1,0 +1,122 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "Hpi_registration_type_legacy",
+  "id": "Hpi-registration-type-legacy",
+  "title": "HPI Registration Type",
+  "description": "A code to identify the type of professional registration the healthcare provider person has been assigned.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-registration-type",
+  "concept": [
+    {
+      "code": "DH",
+      "display": "Dental Council Register Number - Dental Hygienists"
+    },
+    {
+      "code": "DD",
+      "display": "Dental Council Register Number - Dentists"
+    },
+    {
+      "code": "DN",
+      "display": "Dental Council Register Number - Dental Technicians"
+    },
+    {
+      "code": "DT",
+      "display": "Dental Council Register Number - Dental Therapists"
+    },
+    {
+      "code": "CH",
+      "display": "Chiropractic Board Register"
+    },
+    {
+      "code": "DI",
+      "display": "Dietitians Board Register"
+    },
+    {
+      "code": "LT",
+      "display": "Medical Sciences Council Register"
+    },
+    {
+      "code": "MC",
+      "display": "Medical Council of New Zealand Register"
+    },
+    {
+      "code": "MW",
+      "display": "Midwifery Council Register"
+    },
+    {
+      "code": "NC",
+      "display": "Nursing Council of New Zealand Register"
+    },
+    {
+      "code": "OD",
+      "display": "Optometrists & Dispensing Opticians Board Register"
+    },
+    {
+      "code": "OS",
+      "display": "Osteopathic Council Register"
+    },
+    {
+      "code": "OT",
+      "display": "Occupational Therapists Register"
+    },
+    {
+      "code": "PB",
+      "display": "Psychotherapists Board Register"
+    },
+    {
+      "code": "PC",
+      "display": "Psychologists Board Register"
+    },
+    {
+      "code": "PM",
+      "display": "Pharmacy Council of New Zealand Register"
+    },
+    {
+      "code": "PO",
+      "display": "Podiatrists Board Register"
+    },
+    {
+      "code": "PT",
+      "display": "Physiotherapy Board Register"
+    },
+    {
+      "code": "RT",
+      "display": "Medical Radiation Technologists Board Register"
+    },
+    {
+      "code": "NR",
+      "display": "Health Workers without a professional registration"
+    },
+    {
+      "code": "AC",
+      "display": "ACC Provider Number"
+    },
+    {
+      "code": "HP",
+      "display": "HealthPAC Provider Number"
+    },
+    {
+      "code": "ST",
+      "display": "Staff List or Employee Number"
+    },
+    {
+      "code": "CS",
+      "display": "Cervical Screening Identifier Number"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A code to identify the type of professional registration the healthcare provider person has been assigned.",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-type|1.0",
+  "versionNeeded": true,
+  "count": 24
+}

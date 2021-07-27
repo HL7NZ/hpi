@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Hpi_country_code_iso_3166_1",
+  "id": "Hpi-country-code-iso-3166-1",
+  "title": "ISO 3166-1:2013 (2-alpha country code)",
+  "description": "2-alpha country codes",
+  "version": "2013",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/country-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for country.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:3166",
+        "version": "2013",
+        "filter": [
+          {
+            "property": "code",
+            "op": "regex",
+            "value": "[A-Z]{2}"
+          }
+        ]
+      },
+      {
+        "system": "https://standards.digital.health.nz/ns/country-code",
+        "concept": [
+          {
+            "code": "XK"
+          },
+          {
+            "code": "ANHH"
+          },
+          {
+            "code": "CSHH"
+          },
+          {
+            "code": "ZRHH"
+          }
+        ]
+      }
+    ]
+  }
+}

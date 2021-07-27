@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "Hpi_disestablishment_reason_10",
+  "id": "Hpi-disestablishment-reason-10",
+  "title": "HPI Disestablishment Reason",
+  "description": "Disestablishment Reason Code (Organisation and Facility)",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-disestablishment-reason",
+  "concept": [
+    {
+      "code": "BANKRUPT",
+      "display": "Bankrupt"
+    },
+    {
+      "code": "OWNERSHIP",
+      "display": "Change of ownership",
+      "definition": "The organisation has been sold or taken over"
+    },
+    {
+      "code": "NLO",
+      "display": "No longer operating"
+    },
+    {
+      "code": "STRUCK-OFF",
+      "display": "Removed from register"
+    },
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "definition": "There is some other reason for the closure of the organisation.  Details are to be documented in the notes."
+    },
+    {
+      "code": "UNKN",
+      "display": "Unknown",
+      "definition": "Only for use when the disestablishment reason is not known."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "To be used when an organisation or facility is disestablished.",
+  "caseSensitive": true,
+  "versionNeeded": true,
+  "count": 6
+}

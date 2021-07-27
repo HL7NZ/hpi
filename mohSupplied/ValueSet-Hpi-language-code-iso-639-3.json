@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Hpi_language_code_iso_639_3",
+  "id": "Hpi-language-code-iso-639-3",
+  "title": "ISO 639-3:2007 (3-alpha language code)",
+  "description": "3-alpha language codes",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/language-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for language.",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:iso:std:iso:639:-3",
+        "version": "2007",
+        "filter": [
+          {
+            "property": "code",
+            "op": "regex",
+            "value": "[a-z]{3}"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Hpi_registration_status",
+  "id": "Hpi-registration-status",
+  "title": "HPI Registration Status",
+  "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/practitioner-registration-status-code",
+  "concept": [
+    {
+      "code": "current",
+      "display": "Current",
+      "definition": "A provider who holds or is deemed to hold a current practising certificate."
+    },
+    {
+      "code": "inactive",
+      "display": "Inactive",
+      "definition": "A provider who is not practising."
+    },
+    {
+      "code": "removed",
+      "display": "Removed",
+      "definition": "A provider who has been removed from the register – this includes voluntary removal, de-registration and deceased."
+    },
+    {
+      "code": "suspended",
+      "display": "Suspended",
+      "definition": "A provider who is suspended from practising by a Responsible Authority."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": true,
+  "date": "2020-10-16T00:00:00+12:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code",
+  "versionNeeded": false,
+  "count": 4
+}

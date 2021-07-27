@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-gender-from-r4",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/gender-from-r4",
+  "version": "1.0",
+  "name": "Cm_gender_from_r4",
+  "title": "Gender Mapping (from R4)",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from FHIR Administrative Gender to HPI/NHI Gender Code",
+  "purpose": "To translate from FHIR Administrative Gender to internal Gender Code ",
+  "sourceUri": "http://hl7.org/fhir/ValueSet/administrative-gender",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/gender-code",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/administrative-gender",
+      "sourceVersion": "4.0.1",
+      "target": "https://standards.digital.health.nz/ns/gender-code",
+      "targetVersion": "2.0",
+      "element": [
+        {
+          "code": "female",
+          "target": [
+            {
+              "code": "F",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "male",
+          "target": [
+            {
+              "code": "M",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "U",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "O",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

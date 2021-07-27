@@ -1,0 +1,71 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-hpi-facility-name-qualifier",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/hpi-facility-name-qualifier",
+  "version": "1.0",
+  "name": "Cm_hpi_facility_name_qualifier",
+  "title": "HPI Facility Name Qualifier Mapping",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from HPI Name Qualifier to FHIR Location Alias Type",
+  "purpose": "To translate from internal HPI Name Qualifier to FHIR Location Alias Type",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-name-qualifier",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/hpi-name-qualifier",
+      "sourceVersion": "2.0",
+      "target": "https://standards.digital.health.nz/ns/alias-type-code",
+      "targetVersion": "1.0",
+      "element": [
+        {
+          "code": "AKA",
+          "target": [
+            {
+              "code": "aka",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "FORMER",
+          "target": [
+            {
+              "code": "old",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "MAORI",
+          "target": [
+            {
+              "code": "maori",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "SHORT",
+          "target": [
+            {
+              "code": "short",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "CURRENT",
+          "target": [
+            {
+              "code": "current",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

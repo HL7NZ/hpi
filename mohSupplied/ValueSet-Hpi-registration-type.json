@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Hpi_registration_type",
+  "id": "Hpi-registration-type",
+  "title": "HPI Registration Type",
+  "description": "A coded type for professional registrations.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for professional registrations.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
+        "version": "2.0"
+      }
+    ]
+  }
+}

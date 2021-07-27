@@ -1,0 +1,1180 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.example",
+  "url": "http://example.org/ImplementationGuide/fhir.example",
+  "version": "0.1.0",
+  "name": "mohTerminology",
+  "status": "draft",
+  "packageId": "fhir.example",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/address-type"
+        },
+        "name": "AddressType",
+        "description": "The type of an address (physical / postal).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/address-use"
+        },
+        "name": "AddressUse",
+        "description": "The use of an address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/administrative-gender"
+        },
+        "name": "AdministrativeGender",
+        "description": "The gender of a person used for administrative purposes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/contact-point-system"
+        },
+        "name": "ContactPointSystem",
+        "description": "Telecommunications form for contact point.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/contact-point-use"
+        },
+        "name": "ContactPointUse",
+        "description": "Use of contact point.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Dhb-code"
+        },
+        "name": "District Health Board Code",
+        "description": "A coded type for a DHB.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Domicile-code"
+        },
+        "name": "Domicile Code",
+        "description": "A coded type for domicile.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Gender"
+        },
+        "name": "Gender",
+        "description": "A coded type for a person's gender.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-ContactPointSystem"
+        },
+        "name": "Use values for a ContactSystem",
+        "description": "System values for a ContactPoint",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-ContactPointUse"
+        },
+        "name": "Use values for a ContactPoint",
+        "description": "Use values for a ContactPoint",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-HumanNameUse"
+        },
+        "name": "Use values for a HumanName",
+        "description": "Use values for a HumanName",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-IdentfierUse"
+        },
+        "name": "IdentifierUse",
+        "description": "Use values for an Identifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-additional-authorisation"
+        },
+        "name": "HPI Additional Authorisation",
+        "description": "A coded type for additional authorisations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-contact-type"
+        },
+        "name": "Contact Type",
+        "description": "Contact type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-contact-usage"
+        },
+        "name": "Contact Usage",
+        "description": "Contact usage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-country-code-iso-3166-1"
+        },
+        "name": "ISO 3166-1:2013 (2-alpha country code)",
+        "description": "2-alpha country codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-disestablishment-reason"
+        },
+        "name": "HPI Disestablishment Reason",
+        "description": "Disestablishment Reason Code (Organisation and Facility)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-disestablishment-reason-10"
+        },
+        "name": "HPI Disestablishment Reason",
+        "description": "Disestablishment Reason Code (Organisation and Facility)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-ethnicity"
+        },
+        "name": "Ethnicity New Zealand Standard Classification 2005 (level 4)",
+        "description": "Level 4 ethnicity codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-ethnicity-lvl-2"
+        },
+        "name": "HPI 2 digit ethnicity codes",
+        "description": "HPI 2 digit ethnicity codes as used in the provider person extract",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-ethnicity-lvl-3"
+        },
+        "name": "HPI 3 digit ethnicity codes",
+        "description": "HPI 3 digit ethnicity codes as used in the provider person extract",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-facility-address-purpose"
+        },
+        "name": "Address Purpose (Qualifier) for Facility",
+        "description": "Facility address purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-facility-address-type"
+        },
+        "name": "Address Type for Facility",
+        "description": "Facility address type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-facility-name-qualifier"
+        },
+        "name": "Name qualifier for Facility",
+        "description": "Facility name qualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-facility-type"
+        },
+        "name": "Facility Type",
+        "description": "Facility type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-language-code-iso-639-3"
+        },
+        "name": "ISO 639-3:2007 (3-alpha language code)",
+        "description": "3-alpha language codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-legacy-language-code"
+        },
+        "name": "Old HPI two alpha language codes",
+        "description": "2-alpha language codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-legacy-name-type"
+        },
+        "name": "HPI Legacy Name Type",
+        "description": "A coded type for name type based on NAMTYP 2.0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-legal-entity-type"
+        },
+        "name": "Legal Entity Type",
+        "description": "Legal entity type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-legal-entity-type-10"
+        },
+        "name": "Legal Entity Type",
+        "description": "Legal entity type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-location-address-use"
+        },
+        "name": "Address Use for Location",
+        "description": "Location address use",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-location-alias-type"
+        },
+        "name": "HPI Alias Type (Location)",
+        "description": "A coded type for an alias name for facilities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-location-type"
+        },
+        "name": "HPI Location Type",
+        "description": "A coded type for types of facilities.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-name-prefix"
+        },
+        "name": "HPI Name Prefix",
+        "description": "A coded type for name prefixes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-name-prefix-10"
+        },
+        "name": "HPI Name Prefix",
+        "description": "A coded type for a name prefix or title eg Mr, Mrs, Dr.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-nzscc4n99"
+        },
+        "name": "NZSCC4N99 four digit country code",
+        "description": "4-digit country codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-address-purpose"
+        },
+        "name": "Address Purpose (Qualifier) for Organisation",
+        "description": "Organisation address purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-address-type"
+        },
+        "name": "Address Type for Organisation",
+        "description": "Organisation address type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-address-use"
+        },
+        "name": "Address Use for Organisation",
+        "description": "Organisation address use",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-name-qualifier"
+        },
+        "name": "Name qualifier for Organisation",
+        "description": "Organisation name qualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-type"
+        },
+        "name": "Organisation Type",
+        "description": "Organisation type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organisation-type-10"
+        },
+        "name": "Organisation Type",
+        "description": "Organisation type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-organization-alias-type"
+        },
+        "name": "HPI Alias Type (Organization)",
+        "description": "A coded type for an alias name for organisation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-practitioner-role"
+        },
+        "name": "PractitonerRole code",
+        "description": "The role a practitioner holds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-practitioner-role-status-reason"
+        },
+        "name": "PractitonerRole status reason",
+        "description": "The reason for the current status of PractitionerRole.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-registration-status"
+        },
+        "name": "HPI Registration Status",
+        "description": "A coded type for professional registration status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-registration-status-legacy"
+        },
+        "name": "HPI Registration Status",
+        "description": "A coded type for professional registration status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-registration-type"
+        },
+        "name": "HPI Registration Type",
+        "description": "A coded type for professional registrations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-registration-type-legacy"
+        },
+        "name": "HPI Registration Type",
+        "description": "A coded type for professional registrations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Hpi-scope-of-practice"
+        },
+        "name": "HPI Scope of Practice",
+        "description": "A coded type for professional scope of practice.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/identifier-type"
+        },
+        "name": "IdentifierType",
+        "description": "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/identifier-use"
+        },
+        "name": "IdentifierUse",
+        "description": "Identifies the purpose for this identifier, if known .",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/name-use"
+        },
+        "name": "NameUse",
+        "description": "The use of a human name.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-address-not-validated-reason"
+        },
+        "name": "Address Not Validated Reason",
+        "description": "Reason why an address is not validated.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-address-type"
+        },
+        "name": "Address Type for Patient",
+        "description": "Patient address type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-citizenship-source"
+        },
+        "name": "NZ Citizenship Information Source",
+        "description": "A coded type for the source of information for NZ citizenship.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-citizenship-status"
+        },
+        "name": "Citizenship or Residency Status",
+        "description": "A coded type for the status of citizenship/residency.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-country-of-birth-source"
+        },
+        "name": "Country of Birth Information Source",
+        "description": "A coded type for the source of information for a birth country.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-date-of-birth-source"
+        },
+        "name": "Date of Birth Information Source",
+        "description": "A coded type for the source of information for a birth date.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-date-of-death-source"
+        },
+        "name": "Date of Death Information Source",
+        "description": "A coded type for the source of information for a death date.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-name-source"
+        },
+        "name": "Name Information Source",
+        "description": "A coded type for the source of information for a name.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Nhi-residency-source"
+        },
+        "name": "NZ Residency Information Source",
+        "description": "A coded type for the source of information for NZ residency.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/address-type"
+        },
+        "name": "AddressType",
+        "description": "The type of an address (physical / postal).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/address-use"
+        },
+        "name": "AddressUse",
+        "description": "The use of an address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/contact-point-system"
+        },
+        "name": "ContactPointSystem",
+        "description": "Telecommunications form for contact point.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/contact-point-use"
+        },
+        "name": "ContactPointUse",
+        "description": "Use of contact point.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Domicile-code"
+        },
+        "name": "Domicile Code",
+        "description": "Domicile code table.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Ethnic05-2-2017"
+        },
+        "name": "Ethnicity New Zealand Standard Classification 2005 (level 4)",
+        "description": "Ethnicity is a key social factor used with other topics in describing the New Zealand population. Information collected on ethnicity is used to inform, plan, and evaluate services and policies by a wide range of organisations, local authorities and government agencies.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Ethnicity-lvl-2"
+        },
+        "name": "Ethnicity lvl 2",
+        "description": "Ethnic Group Codes at Level 2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Ethnicity-lvl-3"
+        },
+        "name": "Ethnicity lvl 3",
+        "description": "Ethnic Group Codes at Level 3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Gender-Legacy-1-1"
+        },
+        "name": "Gender",
+        "description": "A coded type for a person's gender.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Gender-Legacy-2-0"
+        },
+        "name": "Gender",
+        "description": "A coded type for a person's gender.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-additional-authorisation"
+        },
+        "name": "HPI Additional Authorisation",
+        "description": "Additional authorisations that a practitioner is authorised to practice or prescribe.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-address-purpose"
+        },
+        "name": "OrgFac Address Purpose",
+        "description": "A coded type for organisation/facility address purpose (qualifier).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-address-type"
+        },
+        "name": "OrgFac Address Type",
+        "description": "A coded type for organisation/facility address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-address-use"
+        },
+        "name": "OrgFac Address Use",
+        "description": "A coded type for organisation/facility address purpose (qualifier).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-alias-type"
+        },
+        "name": "HPI Alias Type",
+        "description": "A coded type for an alias name.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-contact-type"
+        },
+        "name": "OrgFac Contact Type",
+        "description": "A coded type for organisation/facility contact.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-contact-usage"
+        },
+        "name": "OrgFac Contact Usage",
+        "description": "A coded type for organisation/facility contact usage.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-country-code"
+        },
+        "name": "HPI Country Code",
+        "description": "Supplementary country codes to extend ISO3166-1.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-disestablishment-reason"
+        },
+        "name": "HPI Disestablishment Reason",
+        "description": "Disestablishment Reason Code (Organisation and Facility)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-disestablishment-reason-10"
+        },
+        "name": "HPI Disestablishment Reason",
+        "description": "Disestablishment Reason Code (Organisation and Facility)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-facility-type"
+        },
+        "name": "Facility Type",
+        "description": "A coded value for facility type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-legacy-language"
+        },
+        "name": "Legacy HPI 2 alpha language codes",
+        "description": "Legacy HPI two alpha language codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-legacy-name-prefix-10"
+        },
+        "name": "HPI Name Prefix",
+        "description": "A coded type for name prefixes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-legacy-name-type"
+        },
+        "name": "HPI Legacy Name Type",
+        "description": "A code for practitioner name type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-legal-entity-type"
+        },
+        "name": "Legal Entity Type",
+        "description": "A coded value for organisation legal entity type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-legal-entity-type-10"
+        },
+        "name": "Legal Entity Type",
+        "description": "A coded value for organisation legal entity type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-location-type"
+        },
+        "name": "Location Type",
+        "description": "A coded value for location type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-name-qualifier"
+        },
+        "name": "OrgFac Name Qualifier",
+        "description": "A code for organisation/facility name type/qualifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-organisation-type"
+        },
+        "name": "Organisation Type",
+        "description": "A coded value for organisation type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-organisation-type-10"
+        },
+        "name": "Organisation Type",
+        "description": "A coded value for organisation type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-practitioner-role-status-reason"
+        },
+        "name": "HPI PractitionerRole status reason",
+        "description": "The reason for the current status of PractitionerRole.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-registration-status"
+        },
+        "name": "HPI Registration Status",
+        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-registration-status-legacy"
+        },
+        "name": "HPI Registration Status",
+        "description": "The code list represents the current practicing status of the Provider Person as per their registration with an RA or a health worker source.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-registration-type-legacy"
+        },
+        "name": "HPI Registration Type",
+        "description": "A code to identify the type of professional registration the healthcare provider person has been assigned.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/identifier-use"
+        },
+        "name": "IdentifierUse",
+        "description": "Identifies the purpose for this identifier, if known .",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Iso3166-1-2013"
+        },
+        "name": "ISO3166-1 two character country code",
+        "description": "The purpose of ISO 3166 is to define internationally recognized codes of letters and/or numbers that we can use when we refer to countries and their subdivisions. However, it does not define the names of countries – this information comes from United Nations sources (Terminology Bulletin Country Names and the Country and Region Codes for Statistical Use maintained by the United Nations Statistics Divisions).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Iso639-3-2007"
+        },
+        "name": "ISO 639-3:2007 (3-alpha language code)",
+        "description": "ISO 639-3 is a set of codes that defines three-letter identifiers for all known human languages.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Name-prefix"
+        },
+        "name": "Name Prefix",
+        "description": "A coded type for name prefixes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Nhi-address-not-validated-reason"
+        },
+        "name": "Address Not Validated Reason",
+        "description": "Reason why an address is not validated.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Nhi-address-type"
+        },
+        "name": "Patient Address Type",
+        "description": "A coded type for patient address.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Nhi-citizenship-status"
+        },
+        "name": "Citizenship or Residency Status",
+        "description": "A coded type for the status of citizenship/residency.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Nhi-name-source"
+        },
+        "name": "Official Information Source",
+        "description": "A coded type for the source of a piece of information in the NHI (e.g. name).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Nzscc4n99"
+        },
+        "name": "NZSCC4N99 four digit country code",
+        "description": "NZSCC4N99 four digit numeric country codes (Statistics New Zealand Country Code List - NZSC 1999).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/SnomedHealthOccupationSubset"
+        },
+        "name": "SNOMED Health occupation subset (New Zealand Ministry of Health)",
+        "description": "Health occupation subset. Refset Id 451000210100. Module Id 21000210109.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ANZSCO-2013"
+        },
+        "name": "ANZSCO-2013",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-country-code"
+        },
+        "name": "Cm-country-code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-country-code-down"
+        },
+        "name": "Cm-country-code-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-disestablishment-reason"
+        },
+        "name": "Cm-disestablishment-reason",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-disestablishment-reason-down"
+        },
+        "name": "Cm-disestablishment-reason-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-gender-from-r4"
+        },
+        "name": "Cm-gender-from-r4",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-gender-to-r4"
+        },
+        "name": "Cm-gender-to-r4",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-contact-type"
+        },
+        "name": "Cm-hpi-contact-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-contact-type-down"
+        },
+        "name": "Cm-hpi-contact-type-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-contact-usage"
+        },
+        "name": "Cm-hpi-contact-usage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-contact-usage-down"
+        },
+        "name": "Cm-hpi-contact-usage-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-address-purpose"
+        },
+        "name": "Cm-hpi-facility-address-purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-address-purpose-down"
+        },
+        "name": "Cm-hpi-facility-address-purpose-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-address-type"
+        },
+        "name": "Cm-hpi-facility-address-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-address-type-down"
+        },
+        "name": "Cm-hpi-facility-address-type-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-name-qualifier"
+        },
+        "name": "Cm-hpi-facility-name-qualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-name-qualifier-down"
+        },
+        "name": "Cm-hpi-facility-name-qualifier-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-type"
+        },
+        "name": "Cm-hpi-facility-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-facility-type-down"
+        },
+        "name": "Cm-hpi-facility-type-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-name-type-to-name-use"
+        },
+        "name": "Cm-hpi-name-type-to-name-use",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-name-use-to-name-type"
+        },
+        "name": "Cm-hpi-name-use-to-name-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-address-purpose"
+        },
+        "name": "Cm-hpi-organisation-address-purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-address-purpose-down"
+        },
+        "name": "Cm-hpi-organisation-address-purpose-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-address-type"
+        },
+        "name": "Cm-hpi-organisation-address-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-address-type-down"
+        },
+        "name": "Cm-hpi-organisation-address-type-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-name-qualifier"
+        },
+        "name": "Cm-hpi-organisation-name-qualifier",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organisation-name-qualifier-down"
+        },
+        "name": "Cm-hpi-organisation-name-qualifier-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-organistaion-type"
+        },
+        "name": "Cm-hpi-organistaion-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-registration-status"
+        },
+        "name": "Cm-hpi-registration-status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-registration-status-down"
+        },
+        "name": "Cm-hpi-registration-status-down",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-hpi-registration-type"
+        },
+        "name": "Cm-hpi-registration-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-language-legacy-to-iso639-3-2007"
+        },
+        "name": "Cm-language-legacy-to-iso639-3-2007",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-name-prefix"
+        },
+        "name": "Cm-name-prefix",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Cm-nhi-address-type"
+        },
+        "name": "Cm-nhi-address-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Dhb-code"
+        },
+        "name": "Dhb-code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Gender-Legacy-1-0"
+        },
+        "name": "Gender-Legacy-1-0",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/Hpi-provider-person-extract-ethnicity-cm"
+        },
+        "name": "Hpi-provider-person-extract-ethnicity-cm",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-registration-type"
+        },
+        "name": "Hpi-registration-type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Hpi-scope-of-practice"
+        },
+        "name": "Hpi-scope-of-practice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/administrative-gender"
+        },
+        "name": "administrative-gender",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/name-use"
+        },
+        "name": "name-use",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/v2-0203"
+        },
+        "name": "v2-0203",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      }
+    ]
+  }
+}

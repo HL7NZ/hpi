@@ -77,8 +77,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * extension[death-date] ^short = "The date this person died"
 
-
-
 * identifier.type 0..0
 * identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 * name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code

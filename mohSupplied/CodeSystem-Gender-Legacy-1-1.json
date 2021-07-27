@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "Gender_Legacy_1_1",
+  "id": "Gender-Legacy-1-1",
+  "title": "Gender",
+  "description": "A coded type for a person's gender.",
+  "version": "1.1",
+  "url": "https://standards.digital.health.nz/ns/gender-code",
+  "concept": [
+    {
+      "code": "M",
+      "display": "Male",
+      "definition": "Male."
+    },
+    {
+      "code": "F",
+      "display": "Female",
+      "definition": "Female."
+    },
+    {
+      "code": "U",
+      "display": "Unspecified or Unknown",
+      "definition": "Unspecified or Unknown."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for gender.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 3
+}

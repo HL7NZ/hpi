@@ -1,0 +1,317 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Name_prefix",
+  "id": "Name-prefix",
+  "title": "Name Prefix",
+  "description": "A coded type for name prefixes.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/name-prefix-code",
+  "concept": [
+    {
+      "code": "ac",
+      "display": "Aircraftman"
+    },
+    {
+      "code": "aircdre",
+      "display": "Air Commodore"
+    },
+    {
+      "code": "am",
+      "display": "Air Marshal"
+    },
+    {
+      "code": "amt",
+      "display": "Able Medical Assistant"
+    },
+    {
+      "code": "assoc prof",
+      "display": "Associate Professor"
+    },
+    {
+      "code": "asst prof",
+      "display": "Assistant Professor"
+    },
+    {
+      "code": "avm",
+      "display": "Air Vice Marshal"
+    },
+    {
+      "code": "bdr",
+      "display": "Bombardier"
+    },
+    {
+      "code": "br",
+      "display": "Brother"
+    },
+    {
+      "code": "brig",
+      "display": "Brigadier"
+    },
+    {
+      "code": "canon",
+      "display": "Canon"
+    },
+    {
+      "code": "capt",
+      "display": "Captain"
+    },
+    {
+      "code": "card",
+      "display": "Cardinal"
+    },
+    {
+      "code": "cdr",
+      "display": "Commander"
+    },
+    {
+      "code": "cdre",
+      "display": "Commodore"
+    },
+    {
+      "code": "col",
+      "display": "Colonel"
+    },
+    {
+      "code": "cpl",
+      "display": "Corporal"
+    },
+    {
+      "code": "cpomed",
+      "display": "Chief Petty Officer Medic"
+    },
+    {
+      "code": "dame",
+      "display": "Dame"
+    },
+    {
+      "code": "dr",
+      "display": "Doctor"
+    },
+    {
+      "code": "ens",
+      "display": "Ensign"
+    },
+    {
+      "code": "f/sgt",
+      "display": "Flight Sergeant"
+    },
+    {
+      "code": "fgoff",
+      "display": "Flying Officer"
+    },
+    {
+      "code": "fltlt",
+      "display": "Flight Lieutenant"
+    },
+    {
+      "code": "fr",
+      "display": "Father"
+    },
+    {
+      "code": "gen",
+      "display": "General"
+    },
+    {
+      "code": "gpcapt",
+      "display": "Group Captain"
+    },
+    {
+      "code": "her excel",
+      "display": "Her Excellency"
+    },
+    {
+      "code": "his excel",
+      "display": "His Excellency"
+    },
+    {
+      "code": "hon",
+      "display": "The Honourable"
+    },
+    {
+      "code": "lac",
+      "display": "Leading Aircraftman"
+    },
+    {
+      "code": "lady",
+      "display": "Lady"
+    },
+    {
+      "code": "lcpl",
+      "display": "Lance Corporal"
+    },
+    {
+      "code": "lmed",
+      "display": "Leading Medic"
+    },
+    {
+      "code": "lt",
+      "display": "Lieutenant"
+    },
+    {
+      "code": "lt cdr",
+      "display": "Lieutenant Commander"
+    },
+    {
+      "code": "lt col",
+      "display": "Lieutenant Colonel"
+    },
+    {
+      "code": "lt gen",
+      "display": "Lieutenant General"
+    },
+    {
+      "code": "maj",
+      "display": "Major"
+    },
+    {
+      "code": "maj gen",
+      "display": "Major General"
+    },
+    {
+      "code": "mid",
+      "display": "Midshipman"
+    },
+    {
+      "code": "miss",
+      "display": "Miss"
+    },
+    {
+      "code": "mon",
+      "display": "Monsignor"
+    },
+    {
+      "code": "most rev",
+      "display": "The Most Reverend"
+    },
+    {
+      "code": "mr",
+      "display": "Mr"
+    },
+    {
+      "code": "mrs",
+      "display": "Mrs"
+    },
+    {
+      "code": "ms",
+      "display": "Ms"
+    },
+    {
+      "code": "mx",
+      "display": "Mx"
+    },
+    {
+      "code": "omt",
+      "display": "Ordinary Medical Assistant"
+    },
+    {
+      "code": "pltoff",
+      "display": "Pilot Officer"
+    },
+    {
+      "code": "pomed",
+      "display": "Petty Officer Medic"
+    },
+    {
+      "code": "prof",
+      "display": "Professor"
+    },
+    {
+      "code": "pte",
+      "display": "Private"
+    },
+    {
+      "code": "ra",
+      "display": "Rear Admiral"
+    },
+    {
+      "code": "rev",
+      "display": "Reverend"
+    },
+    {
+      "code": "right rev",
+      "display": "The Right Reverend"
+    },
+    {
+      "code": "rt hon",
+      "display": "The Right Honourable"
+    },
+    {
+      "code": "sgn cdr",
+      "display": "Surgeon Commander"
+    },
+    {
+      "code": "sgn lt",
+      "display": "Surgeon Lieutenant"
+    },
+    {
+      "code": "sgn ltcdr",
+      "display": "Surgeon Lieutenant Commander"
+    },
+    {
+      "code": "sgt",
+      "display": "Sergeant"
+    },
+    {
+      "code": "sir",
+      "display": "Sir"
+    },
+    {
+      "code": "sister",
+      "display": "Sister"
+    },
+    {
+      "code": "slt",
+      "display": "Sub Lieutenant"
+    },
+    {
+      "code": "spr",
+      "display": "Sapper"
+    },
+    {
+      "code": "sqnldr",
+      "display": "Squadron Leader"
+    },
+    {
+      "code": "ssgt",
+      "display": "Staff Sergeant"
+    },
+    {
+      "code": "tpr",
+      "display": "Trooper"
+    },
+    {
+      "code": "ven",
+      "display": "The Venerable"
+    },
+    {
+      "code": "very rev",
+      "display": "The Very Reverend"
+    },
+    {
+      "code": "wgcdr",
+      "display": "Wing Commander"
+    },
+    {
+      "code": "wo",
+      "display": "Warrant Officer"
+    },
+    {
+      "code": "womed",
+      "display": "Warrant Officer Medic"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": true,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for name prefixes.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 73
+}

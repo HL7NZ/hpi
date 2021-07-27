@@ -1,0 +1,1333 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "Hpi-scope-of-practice",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code",
+  "version": "1.0",
+  "name": "Hpi_scope_of_practice",
+  "title": "HPI Scope of Practice",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority.",
+  "purpose": "A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority.",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code",
+  "versionNeeded": false,
+  "content": "complete",
+  "count": 130,
+  "property": [
+    {
+      "code": "AUTHORITY",
+      "description": "The responsible authority code.",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "CHIR",
+      "display": "Chiropractor",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "CH"
+        }
+      ]
+    },
+    {
+      "code": "DEAA",
+      "display": "Administering Local Anaesthetic in Dental Hygiene Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEAC",
+      "display": "Adult Care in Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DECD",
+      "display": "Clinical Dental Technology Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEDA",
+      "display": "Dental Auxiliary Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEDH",
+      "display": "Dental Hygiene Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEDR",
+      "display": "Diagnostic Radiography in Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEDT",
+      "display": "Dental Technology Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEEN",
+      "display": "Endodontic Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEEO",
+      "display": "Extra Oral Radiography Practice in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEGD",
+      "display": "General Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEIA",
+      "display": "Implant over dentures in clinical dental technology practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEIO",
+      "display": "Intra Oral Radiography in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DENT",
+      "display": "General Dental Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOA",
+      "display": "Orthodontic Auxiliary Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOH",
+      "display": "Oral Health Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOM",
+      "display": "Oral Medicine Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOP",
+      "display": "Oral Pathology Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOR",
+      "display": "Oral and Maxillofacial Surgery Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEOS",
+      "display": "Oral Surgery Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEPA",
+      "display": "Paediatric Dentistry Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEPD",
+      "display": "Pulpotomies in Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEPE",
+      "display": "Periodontic Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEPH",
+      "display": "Public Health Dentistry (or Community Dentistry) Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEPS",
+      "display": "Prosthodontic Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DERD",
+      "display": "Radiography in Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DERE",
+      "display": "Restorative Dentistry Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DESN",
+      "display": "Special Needs Dentistry Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DESP",
+      "display": "Orthodontic Specialists",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DESS",
+      "display": "Stainless Steel Crowns in Dental Therapy Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DEUO",
+      "display": "Undertaking Orthodontic Procedures in Dental Hygiene Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DC"
+        }
+      ]
+    },
+    {
+      "code": "DIET",
+      "display": "Dietitian",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "DI"
+        }
+      ]
+    },
+    {
+      "code": "LTAT",
+      "display": "Anaesthetic Technician",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "LT"
+        }
+      ]
+    },
+    {
+      "code": "LTLS",
+      "display": "Medical Laboratory Scientist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "LT"
+        }
+      ]
+    },
+    {
+      "code": "LTLT",
+      "display": "Medical Laboratory Technician",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "LT"
+        }
+      ]
+    },
+    {
+      "code": "LTPA",
+      "display": "Medical Laboratory Pre-Analytical Technician",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "LT"
+        }
+      ]
+    },
+    {
+      "code": "MCAM",
+      "display": "Vocational Scope of Accident and Medical Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCAN",
+      "display": "Vocational Scope of Anaesthesia",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCAP",
+      "display": "Vocational Scope of Pain Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCBM",
+      "display": "Vocational Scope of Breast Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCCG",
+      "display": "Vocational Scope of Clinical Genetics",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCCS",
+      "display": "Vocational Scope of Cardiothoracic Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCDE",
+      "display": "Vocational Scope of Dermatology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCDI",
+      "display": "Vocational Scope of Diagnostic and Interventional Radiology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCEM",
+      "display": "Vocational Scope of Emergency Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCFP",
+      "display": "Vocational Scope of Family Planning/Reproductive Health",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCGE",
+      "display": "General Scope of Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCGP",
+      "display": "Vocational Scope of General Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCGS",
+      "display": "Vocational Scope of General Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCIC",
+      "display": "Vocational Scope of Intensive Care Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCIM",
+      "display": "Vocational Scope of Internal Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCMA",
+      "display": "Vocational Scope of Medical Administration",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCMM",
+      "display": "Vocational Scope of Musculoskeletal Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCNS",
+      "display": "Vocational Scope of Neurosurgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOG",
+      "display": "Vocational Scope of Obstetrics and Gynaecology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOH",
+      "display": "Vocational Scope of Otolaryngology Head and Neck Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOM",
+      "display": "Vocational Scope of Occupational Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOP",
+      "display": "Vocational Scope of Ophthalmology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOR",
+      "display": "Vocational Scope of Oral and Maxillofacial Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCOS",
+      "display": "Vocational Scope of Orthopaedic Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPA",
+      "display": "Vocational Scope of Pathology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPE",
+      "display": "Vocational Scope of Paediatrics",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPG",
+      "display": "Provisional General Scope of Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPH",
+      "display": "Vocational Scope of Public Health Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPM",
+      "display": "Vocational Scope of Palliative Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPR",
+      "display": "Vocational Scope of Plastic and Reconstructive Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPS",
+      "display": "Vocational Scope of Paediatric Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPV",
+      "display": "Provisional Vocational Scope of Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCPY",
+      "display": "Vocational Scope of Psychiatry",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCRH",
+      "display": "Vocational Scope of Rural Hospital Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCRM",
+      "display": "Vocational Scope of Rehabilitation Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCRO",
+      "display": "Vocational Scope of Radiation Oncology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCSH",
+      "display": "Vocational Scope of Sexual Health Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCSM",
+      "display": "Vocational Scope of Sports Medicine",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCSP",
+      "display": "Special Purpose Scope of Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCTR",
+      "display": "Medical Council Temporary Registration",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCUR",
+      "display": "Vocational Scope of Urology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCVO",
+      "display": "Vocational Scope of Practice",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MCVS",
+      "display": "Vocational Scope of Vascular Surgery",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MC"
+        }
+      ]
+    },
+    {
+      "code": "MWIF",
+      "display": "Midwife",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "MW"
+        }
+      ]
+    },
+    {
+      "code": "NCEN",
+      "display": "Enrolled Nurse",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "NC"
+        }
+      ]
+    },
+    {
+      "code": "NCNA",
+      "display": "Nurse Assistant",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "NC"
+        }
+      ]
+    },
+    {
+      "code": "NCNP",
+      "display": "Nurse Practitioner",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "NC"
+        }
+      ]
+    },
+    {
+      "code": "NCRN",
+      "display": "Registered Nurse",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "NC"
+        }
+      ]
+    },
+    {
+      "code": "OPDI",
+      "display": "Optical Dispensing (Dispensing Optician)",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OPED",
+      "display": "Educator in Optometry (Educator Optometrist)",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OPET",
+      "display": "Educator in Optometry (TPA Endorsement) (Educator Optometrist with Therapeutic Pharmaceutical Agents (TPA) Endorsement)",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OPPO",
+      "display": "Provisional Optometrist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OPTE",
+      "display": "Optometry (TPA Endorsement) (Optometrist with Therapeutic Pharmaceutical Agents (TPA) Endorsement)",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OPTP",
+      "display": "Optometry (Optometrist)",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OD"
+        }
+      ]
+    },
+    {
+      "code": "OSED",
+      "display": "Osteopath - Educator",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSGE",
+      "display": "Osteopath - Gerontology",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSTE",
+      "display": "Osteopath",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSPM",
+      "display": "Osteopath - Pain Management",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSSP",
+      "display": "Osteopath - Special Purpose",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSTO",
+      "display": "Trainee Osteopath",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSVO",
+      "display": "Visiting Osteopath Presenter",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSWA",
+      "display": "Osteopath - Western Medical Acupuncture",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OSCA",
+      "display": "Osteopath - Child and Adolescent Health",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OS"
+        }
+      ]
+    },
+    {
+      "code": "OCCT",
+      "display": "Occupational Therapist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "OT"
+        }
+      ]
+    },
+    {
+      "code": "PAPS",
+      "display": "Paramedic",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PA"
+        }
+      ]
+    },
+    {
+      "code": "PBPS",
+      "display": "Psychotherapist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PB"
+        }
+      ]
+    },
+    {
+      "code": "PBCA",
+      "display": "Psychotherapist with Child and Adolescent Specialism",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PB"
+        }
+      ]
+    },
+    {
+      "code": "PBIN",
+      "display": "Interim Psychotherapist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PB"
+        }
+      ]
+    },
+    {
+      "code": "PSCE",
+      "display": "Clinical and Educational",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSCL",
+      "display": "Clinical Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSCLPSED",
+      "display": "Clinical and Educational",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSCO",
+      "display": "Counselling Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSED",
+      "display": "Educational Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSHE",
+      "display": "Health Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSIT",
+      "display": "Trainee or Intern Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSNE",
+      "display": "Neuropsychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PSYC",
+      "display": "Psychologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PC"
+        }
+      ]
+    },
+    {
+      "code": "PHAR",
+      "display": "Pharmacist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PM"
+        }
+      ]
+    },
+    {
+      "code": "PHIN",
+      "display": "Intern Pharmacist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PM"
+        }
+      ]
+    },
+    {
+      "code": "PHPP",
+      "display": "Pharmacist Prescriber",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PM"
+        }
+      ]
+    },
+    {
+      "code": "PODI",
+      "display": "Podiatrist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PO"
+        }
+      ]
+    },
+    {
+      "code": "PODP",
+      "display": "Podiatric Prescriber",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PO"
+        }
+      ]
+    },
+    {
+      "code": "PODR",
+      "display": "Podiatric Radiographic Imager",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PO"
+        }
+      ]
+    },
+    {
+      "code": "PODS",
+      "display": "Podiatric Surgeon",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PO"
+        }
+      ]
+    },
+    {
+      "code": "POVD",
+      "display": "Visiting Podiatrist Educator/Presenter",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PO"
+        }
+      ]
+    },
+    {
+      "code": "PHSO",
+      "display": "Physiotherapist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "PT"
+        }
+      ]
+    },
+    {
+      "code": "RTMR",
+      "display": "Magnetic Resonance Technologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTMS",
+      "display": "Sonographer",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTMT",
+      "display": "Nuclear Medicine Technologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTRT",
+      "display": "Radiation Therapist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTTE",
+      "display": "Medical Imaging Technologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTTM",
+      "display": "Trainee Magnetic Resonance Imaging (MRI) Technologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTTN",
+      "display": "Trainee Nuclear Medicine Technologist",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    },
+    {
+      "code": "RTTS",
+      "display": "Trainee Sonographer",
+      "property": [
+        {
+          "code": "AUTHORITY",
+          "valueCode": "RT"
+        }
+      ]
+    }
+  ]
+}

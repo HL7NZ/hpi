@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "Hpi_contact_usage",
+  "id": "Hpi-contact-usage",
+  "title": "OrgFac Contact Usage",
+  "description": "A coded type for organisation/facility contact usage.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-contact-usage",
+  "concept": [
+    {
+      "code": "B",
+      "display": "Business",
+      "definition": "A general business contact for the organisation."
+    },
+    {
+      "code": "B-OLD",
+      "display": "Business (Inactive)",
+      "definition": "This contact point is no longer in use (or was never correct, but retained for records)."
+    },
+    {
+      "code": "E",
+      "display": "Emergency",
+      "definition": "A general emergency contact for the organisation."
+    },
+    {
+      "code": "H",
+      "display": "HealthLink",
+      "definition": "The HealthLink address number used for messaging through HealthLink  (To be retired)."
+    },
+    {
+      "code": "P",
+      "display": "Personal",
+      "definition": "A personal contact for the practitioner or health worker."
+    },
+    {
+      "code": "C",
+      "display": "Connected Health",
+      "definition": "Connected Health."
+    },
+    {
+      "code": "T",
+      "display": "Temporary",
+      "definition": "A temporary contact point. The period can provide more detailed information."
+    },
+    {
+      "code": "M",
+      "display": "Mobile",
+      "definition": "Mobile."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for organisation/facility contact usage.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 8
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Nhi_address_not_validated_reason",
+  "id": "Nhi-address-not-validated-reason",
+  "title": "Address Not Validated Reason",
+  "description": "Reason why an address is not validated.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/address-not-validated-reason-code",
+  "concept": [
+    {
+      "code": "OSEA",
+      "display": "Overseas Address",
+      "definition": "An address for a country other than New Zealand"
+    },
+    {
+      "code": "UKWN",
+      "display": "Unknown",
+      "definition": "The person's address is unknown"
+    },
+    {
+      "code": "NFAB",
+      "display": "No Fixed Abode",
+      "definition": "The person has no address"
+    },
+    {
+      "code": "NOSVC",
+      "display": "Address Service Unavailable",
+      "definition": "The e-SAM address service was unavailble for address validation due to Technical issues"
+    },
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "definition": "Other reason"
+    },
+    {
+      "code": "MIGR",
+      "display": "Migrated",
+      "definition": "Migrated from the legacy NHI with no known external  source"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "To be used when an unvalidated address is returned.",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/address-not-validated-reason-code",
+  "versionNeeded": true,
+  "count": 6
+}

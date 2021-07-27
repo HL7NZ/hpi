@@ -1,0 +1,44 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-nhi-address-type",
+  "url": "https://standards.digital.health.nz/cm/nhi-address-type",
+  "version": "1.0",
+  "name": "Cm_nhi_address_type",
+  "title": "NHI Patient Address Type Mapping",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from NHI Address Type to FHIR Address Type",
+  "purpose": "To translate from internal NHI Address Type to FHIR Address Type",
+  "sourceUri": "https://standards.digital.health.nz/vs/nhi-address-type",
+  "targetUri": "http://hl7.org/fhir/ValueSet/address-type",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/nhi-address-type",
+      "sourceVersion": "1.0",
+      "target": "http://hl7.org/fhir/address-type",
+      "targetVersion": "4.0.1",
+      "element": [
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "postal",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "R",
+          "target": [
+            {
+              "code": "physical",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

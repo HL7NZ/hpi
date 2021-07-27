@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Nhi_address_not_validated_reason",
+  "id": "Nhi-address-not-validated-reason",
+  "title": "Address Not Validated Reason",
+  "description": "Reason why an address is not validated.",
+  "version": "1.1",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/address-not-validated-reason-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "To be used when an unvalidated address is returned.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/address-not-validated-reason-code"
+      }
+    ]
+  }
+}

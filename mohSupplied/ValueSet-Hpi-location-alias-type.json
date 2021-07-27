@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Hpi_location_alias_type",
+  "id": "Hpi-location-alias-type",
+  "title": "HPI Alias Type (Location)",
+  "description": "A coded type for an alias name for facilities.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for an alias name for facilities.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/alias-type-code",
+        "version": "1.0",
+        "filter": [
+          {
+            "property": "code",
+            "op": "in",
+            "value": "aka,old,maori,short,current"
+          }
+        ]
+      }
+    ]
+  }
+}

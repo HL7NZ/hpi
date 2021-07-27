@@ -1,0 +1,39 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Hpi_address_use",
+  "id": "Hpi-address-use",
+  "title": "OrgFac Address Use",
+  "description": "A coded type for organisation/facility address purpose (qualifier).",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-address-use",
+  "concept": [
+    {
+      "code": "legal",
+      "display": "Legal Address",
+      "definition": "An address of the legal registered office (active)."
+    },
+    {
+      "code": "work",
+      "display": "Work Address",
+      "definition": "An office address. First choice for business related contacts during business hours."
+    },
+    {
+      "code": "old",
+      "display": "This address is no longer in use (or was never correct but retained for records)."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for organisation/facility address purpose (qualifier).",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 3
+}

@@ -1,0 +1,247 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "Hpi-registration-type",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "url": "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
+  "version": "2.0",
+  "name": "Hpi_registration_type",
+  "title": "HPI Registration Type",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "A code to identify the type of professional registration the healthcare provider person has been assigned.",
+  "purpose": "A code to identify the type of professional registration the healthcare provider person has been assigned.",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code",
+  "versionNeeded": true,
+  "content": "complete",
+  "count": 22,
+  "property": [
+    {
+      "code": "ASSIGNER",
+      "description": "Assigner is the organization that issued the id.",
+      "type": "string"
+    }
+  ],
+  "concept": [
+    {
+      "code": "CH",
+      "display": "Chiropractic Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00019-D"
+        }
+      ]
+    },
+    {
+      "code": "DC",
+      "display": "Dental Council Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00002-J"
+        }
+      ]
+    },
+    {
+      "code": "DI",
+      "display": "Dietitians Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00023-F"
+        }
+      ]
+    },
+    {
+      "code": "LT",
+      "display": "Medical Sciences Council Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00021-B"
+        }
+      ]
+    },
+    {
+      "code": "MC",
+      "display": "Medical Council of New Zealand Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00004-B"
+        }
+      ]
+    },
+    {
+      "code": "MW",
+      "display": "Midwifery Council Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00009-A"
+        }
+      ]
+    },
+    {
+      "code": "NC",
+      "display": "Nursing Council of New Zealand Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00008-K"
+        }
+      ]
+    },
+    {
+      "code": "OD",
+      "display": "Optometrists & Dispensing Opticians Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00015-G"
+        }
+      ]
+    },
+    {
+      "code": "OS",
+      "display": "Osteopathic Council Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00022-D"
+        }
+      ]
+    },
+    {
+      "code": "OT",
+      "display": "Occupational Therapy Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00000-E"
+        }
+      ]
+    },
+    {
+      "code": "PA",
+      "display": "Paramedic Council Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G0H578-C"
+        }
+      ]
+    },
+    {
+      "code": "PB",
+      "display": "Psychotherapists Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G03509-C"
+        }
+      ]
+    },
+    {
+      "code": "PC",
+      "display": "Psychologists Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00018-B"
+        }
+      ]
+    },
+    {
+      "code": "PM",
+      "display": "Pharmacy Council of New Zealand Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00010-H"
+        }
+      ]
+    },
+    {
+      "code": "PO",
+      "display": "Podiatrists Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00016-J"
+        }
+      ]
+    },
+    {
+      "code": "PT",
+      "display": "Physiotherapy Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00007-H"
+        }
+      ]
+    },
+    {
+      "code": "RT",
+      "display": "Medical Radiation Technologists Board Register",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00014-E"
+        }
+      ]
+    },
+    {
+      "code": "NR",
+      "display": "Health Workers without a professional registration"
+    },
+    {
+      "code": "DH",
+      "display": "Dental Council Register Number - Dental Hygienists",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00002-J"
+        }
+      ]
+    },
+    {
+      "code": "DD",
+      "display": "Dental Council Register Number - Dentists",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00002-J"
+        }
+      ]
+    },
+    {
+      "code": "DN",
+      "display": "Dental Council Register Number - Dental Technicians",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00002-J"
+        }
+      ]
+    },
+    {
+      "code": "DT",
+      "display": "Dental Council Register Number - Dental Therapists",
+      "property": [
+        {
+          "code": "ASSIGNER",
+          "valueString": "G00002-J"
+        }
+      ]
+    }
+  ]
+}

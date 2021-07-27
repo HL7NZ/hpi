@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Nhi_citizenship_status",
+  "id": "Nhi-citizenship-status",
+  "title": "Citizenship or Residency Status",
+  "description": "A coded type for the status of citizenship/residency.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/nhi-citizenship-status",
+  "concept": [
+    {
+      "code": "RESIDENT",
+      "display": "Resident",
+      "definition": "This patient is a resident (temporary or permanent)."
+    },
+    {
+      "code": "CITIZEN",
+      "display": "Citizen",
+      "definition": "This patient is a citizen."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "To convey whether a petient is citizen or resident of a country",
+  "caseSensitive": false,
+  "valueSet": "https://standards.digital.health.nz/vs/nhi-citizenship-status",
+  "versionNeeded": true,
+  "count": 2
+}

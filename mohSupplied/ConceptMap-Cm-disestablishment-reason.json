@@ -1,0 +1,83 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-disestablishment-reason",
+  "url": "https://standards.digital.health.nz/cm/disestablishment-reason",
+  "version": "1.0",
+  "name": "Cm_disestablishment_reason",
+  "title": "Disestablishment reason mapping",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-03-02T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translated legacy disestablishment reason to disestablishment reason",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-disestablishment-reason|1.0",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-disestablishment-reason|2.0",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/hpi-disestablishment-reason",
+      "sourceVersion": "1.0",
+      "target": "https://standards.digital.health.nz/ns/hpi-disestablishment-reason",
+      "targetVersion": "2.0",
+      "element": [
+        {
+          "code": "BANKRUPT",
+          "target": [
+            {
+              "code": "liquidation",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OWNERSHIP",
+          "target": [
+            {
+              "code": "ownership",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "NLO",
+          "target": [
+            {
+              "code": "nlo",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "STRUCK-OFF",
+          "target": [
+            {
+              "code": "removed",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "OTHER",
+          "target": [
+            {
+              "code": "other",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "UNKN",
+          "target": [
+            {
+              "code": "unknown",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ],
+      "unmapped": {
+        "mode": "fixed",
+        "code": "unknown"
+      }
+    }
+  ]
+}

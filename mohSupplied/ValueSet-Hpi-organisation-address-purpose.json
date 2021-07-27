@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "Hpi_organisation_address_purpose",
+  "id": "Hpi-organisation-address-purpose",
+  "title": "Address Purpose (Qualifier) for Organisation",
+  "description": "Organisation address purpose",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-purpose",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for the purpose of an organisation address.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/hpi-address-purpose",
+        "version": "1.0",
+        "filter": [
+          {
+            "property": "code",
+            "op": "in",
+            "value": "LEGAL,SERVICE"
+          }
+        ]
+      }
+    ]
+  }
+}

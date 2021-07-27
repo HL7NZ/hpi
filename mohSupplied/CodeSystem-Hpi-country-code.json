@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Hpi_country_code",
+  "id": "Hpi-country-code",
+  "title": "HPI Country Code",
+  "description": "Supplementary country codes to extend ISO3166-1.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/country-code",
+  "concept": [
+    {
+      "code": "XK",
+      "display": "Kosovo"
+    },
+    {
+      "code": "ANHH",
+      "display": "Netherlands Antilles"
+    },
+    {
+      "code": "CSHH",
+      "display": "Czechoslavakia"
+    },
+    {
+      "code": "ZRHH",
+      "display": "Zaire"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "To cover countries not included in ISO3166-1.",
+  "caseSensitive": false,
+  "versionNeeded": false,
+  "count": 4
+}

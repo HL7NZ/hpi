@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "Hpi_nzscc4n99",
+  "id": "Hpi-nzscc4n99",
+  "title": "NZSCC4N99 four digit country code",
+  "description": "4-digit country codes",
+  "version": "1999",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-nzscc4n",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for country.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/nzscc4n",
+        "version": "1999"
+      }
+    ]
+  }
+}

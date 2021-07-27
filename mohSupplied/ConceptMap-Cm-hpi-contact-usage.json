@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-hpi-contact-usage",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/hpi-contact-usage",
+  "version": "1.0",
+  "name": "Cm_hpi_contact_usage",
+  "title": "HPI Contact Usage Mapping",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from HPI Contact Usage to FHIR Contact Point Use",
+  "purpose": "To translate from internal HPI Contact Usage to FHIR Contact Point Use",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-usage",
+  "targetUri": "http://hl7.org/fhir/ValueSet/contact-point-use",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/hpi-contact-usage",
+      "sourceVersion": "2.0",
+      "target": "http://hl7.org/fhir/contact-point-use",
+      "targetVersion": "4.0.1",
+      "element": [
+        {
+          "code": "B",
+          "target": [
+            {
+              "code": "work",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "B-OLD",
+          "target": [
+            {
+              "code": "old",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "T",
+          "target": [
+            {
+              "code": "temp",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "M",
+          "target": [
+            {
+              "code": "mobile",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

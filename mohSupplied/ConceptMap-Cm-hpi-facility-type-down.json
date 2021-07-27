@@ -1,0 +1,606 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-hpi-facility-type-down",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/hpi-facility-type-down",
+  "version": "1.0",
+  "name": "Cm_hpi_facility_type_down",
+  "title": "HPI Facility Type Mapping",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from FHIR Location Type to legacy HPI Facility Type",
+  "purpose": "To translate from FHIR Location Type to legacy HPI Facility Type",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/location-type-code",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-facility-type",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/location-type-code",
+      "sourceVersion": "1.0",
+      "target": "https://standards.digital.health.nz/ns/hpi-facility-type",
+      "targetVersion": "2.0",
+      "element": [
+        {
+          "code": "dhbhosp",
+          "target": [
+            {
+              "code": "001",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "privhosp",
+          "target": [
+            {
+              "code": "002",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "privsurg",
+          "target": [
+            {
+              "code": "004",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "privhosp",
+          "target": [
+            {
+              "code": "005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dhblab",
+          "target": [
+            {
+              "code": "007",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dhboutreach",
+          "target": [
+            {
+              "code": "008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "armclinic",
+          "target": [
+            {
+              "code": "009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dhbmhunit",
+          "target": [
+            {
+              "code": "010",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gms",
+          "target": [
+            {
+              "code": "099",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "comclinic",
+          "target": [
+            {
+              "code": "100",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gpenrol",
+          "target": [
+            {
+              "code": "101",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "specialist",
+          "target": [
+            {
+              "code": "102",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "lab",
+          "target": [
+            {
+              "code": "103",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "radiology",
+          "target": [
+            {
+              "code": "104",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "physio",
+          "target": [
+            {
+              "code": "105",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dental",
+          "target": [
+            {
+              "code": "106",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "occutherapy",
+          "target": [
+            {
+              "code": "107",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "pharm",
+          "target": [
+            {
+              "code": "108",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "counsell",
+          "target": [
+            {
+              "code": "109",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "midwife",
+          "target": [
+            {
+              "code": "110",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nurseclinic",
+          "target": [
+            {
+              "code": "111",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "psychology",
+          "target": [
+            {
+              "code": "112",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "afterhours",
+          "target": [
+            {
+              "code": "113",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ngofacility",
+          "target": [
+            {
+              "code": "114",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hthcentre",
+          "target": [
+            {
+              "code": "115",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chiropractor",
+          "target": [
+            {
+              "code": "116",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "osteopathy",
+          "target": [
+            {
+              "code": "117",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "familyplan",
+          "target": [
+            {
+              "code": "118",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dermatology",
+          "target": [
+            {
+              "code": "119",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "optometry",
+          "target": [
+            {
+              "code": "120",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "screening",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "youth",
+          "target": [
+            {
+              "code": "122",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "prisclinic",
+          "target": [
+            {
+              "code": "200",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "plunket",
+          "target": [
+            {
+              "code": "201",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "armclinic",
+          "target": [
+            {
+              "code": "202",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "stuclinic",
+          "target": [
+            {
+              "code": "203",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ambulance",
+          "target": [
+            {
+              "code": "260",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "agedcare",
+          "target": [
+            {
+              "code": "300",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "nhospmental",
+          "target": [
+            {
+              "code": "400",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rescare",
+          "target": [
+            {
+              "code": "450",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "rehab",
+          "target": [
+            {
+              "code": "460",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "dhbhomebirth",
+          "target": [
+            {
+              "code": "500",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "homehosp",
+          "target": [
+            {
+              "code": "501",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hospice",
+          "target": [
+            {
+              "code": "600",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "mso",
+          "target": [
+            {
+              "code": "700",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "msoclinic",
+          "target": [
+            {
+              "code": "710",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "phooffice",
+          "target": [
+            {
+              "code": "720",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "moh",
+          "target": [
+            {
+              "code": "730",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "privclinic",
+          "target": [
+            {
+              "code": "800",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "orthodontist",
+          "target": [
+            {
+              "code": "806",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "ndisppharm",
+          "target": [
+            {
+              "code": "808",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "podiatry",
+          "target": [
+            {
+              "code": "810",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hands",
+          "target": [
+            {
+              "code": "815",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "orthopaedic",
+          "target": [
+            {
+              "code": "820",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "gynaecology",
+          "target": [
+            {
+              "code": "830",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "hearing",
+          "target": [
+            {
+              "code": "840",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "chinesemed",
+          "target": [
+            {
+              "code": "850",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "acupuncture",
+          "target": [
+            {
+              "code": "855",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "careersupp",
+          "target": [
+            {
+              "code": "860",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "occhealth",
+          "target": [
+            {
+              "code": "870",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "anaesthetics",
+          "target": [
+            {
+              "code": "880",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "fitness",
+          "target": [
+            {
+              "code": "890",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "unknown",
+          "target": [
+            {
+              "code": "888",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "other",
+          "target": [
+            {
+              "code": "999",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ],
+      "unmapped": {
+        "mode": "fixed",
+        "code": "999"
+      }
+    }
+  ]
+}

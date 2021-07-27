@@ -1,0 +1,53 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-hpi-organisation-address-type-down",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/hpi-organisation-address-type-down",
+  "version": "1.0",
+  "name": "Cm_hpi_organisation_address_type_down",
+  "title": "HPI Organisation Address Type Mapping",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from FHIR Address Type to HPI Address Type",
+  "purpose": "To translate from FHIR Address Type to internal HPI Address Type",
+  "sourceUri": "http://hl7.org/fhir/ValueSet/address-type",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-organisation-address-type",
+  "group": [
+    {
+      "source": "http://hl7.org/fhir/address-type",
+      "sourceVersion": "4.0.1",
+      "target": "https://standards.digital.health.nz/ns/hpi-address-type",
+      "targetVersion": "2.0",
+      "element": [
+        {
+          "code": "postal",
+          "target": [
+            {
+              "code": "M",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "physical",
+          "target": [
+            {
+              "code": "B",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "both",
+          "target": [
+            {
+              "code": "B",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Cm-hpi-registration-status-down",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/hpi-registration-status-down",
+  "version": "1.0",
+  "name": "Cm_hpi_registration_status_down",
+  "title": "HPI Registration Type Mapping Down Conversion",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-10-27T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translation from FHIR to Legacy HPI values",
+  "purpose": "To translate between HPI registration status codes",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-status",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/practitioner-registration-status-code",
+      "sourceVersion": "2.0",
+      "target": "https://standards.digital.health.nz/ns/hpi-registration-status",
+      "targetVersion": "1.0",
+      "element": [
+        {
+          "code": "current",
+          "target": [
+            {
+              "code": "C",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "inactive",
+          "target": [
+            {
+              "code": "I",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "removed",
+          "target": [
+            {
+              "code": "R",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "suspended",
+          "target": [
+            {
+              "code": "S",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "complete",
+  "name": "Hpi_legacy_name_type",
+  "id": "Hpi-legacy-name-type",
+  "title": "HPI Legacy Name Type",
+  "description": "A code for practitioner name type.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-name-type",
+  "concept": [
+    {
+      "code": "O",
+      "display": "Official Name Type"
+    },
+    {
+      "code": "A",
+      "display": "Alternate Name Type"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "Legacy use only.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 2
+}

@@ -1,0 +1,522 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Hpi_location_type",
+  "id": "Hpi-location-type",
+  "title": "Location Type",
+  "description": "A coded value for location type.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/ns/location-type-code",
+  "concept": [
+    {
+      "code": "dhbhosp",
+      "display": "DHB Hospital",
+      "definition": "A Hospital Campus offering inpatient, outpatient and daypatient services run by a DHB"
+    },
+    {
+      "code": "dhbhospunit",
+      "display": "DHB Hospital Unit",
+      "definition": "A DHB hospital department or ward (not otherwise specified)"
+    },
+    {
+      "code": "dhbopservice",
+      "display": "DHB non Hospital Service",
+      "definition": "A DHB unit that is independent of a specific hospital eg PHU or Admin office"
+    },
+    {
+      "code": "dhbpharm",
+      "display": "DHB Hospital Pharmacy",
+      "definition": "Internal Pharmacy Associated with DHB Hospital"
+    },
+    {
+      "code": "dhblab",
+      "display": "DHB Laboratory",
+      "definition": "A Laboratory run by a DHB"
+    },
+    {
+      "code": "dhboutreach",
+      "display": "DHB Outreach Clinic",
+      "definition": "An outreach or immunisation clinic run by a DHB"
+    },
+    {
+      "code": "dhbmhunit",
+      "display": "DHB Mental Health Unit",
+      "definition": "A facility offering inpatient, outpatient and daypatient mental health services run by a DHB"
+    },
+    {
+      "code": "dhbhomebirth",
+      "display": "Home Birth",
+      "definition": "Home Birth services as managed by DHBs"
+    },
+    {
+      "code": "dhbmaternity",
+      "display": "DHB Maternity",
+      "definition": "DHB maternity services - including maternity units and support for LMC/midwives."
+    },
+    {
+      "code": "dhbed",
+      "display": "DHB ED Department",
+      "definition": "DHB emergency Departments."
+    },
+    {
+      "code": "cancerreg",
+      "display": "DHB Cancer Registrar",
+      "definition": "Facility Ids allocated to DHB Cancer registrars"
+    },
+    {
+      "code": "dhbphu",
+      "display": "DHB Public Health Unit",
+      "definition": "A place where a DHB provides Public Health advice and programs in an office setting."
+    },
+    {
+      "code": "privhosp",
+      "display": "Private Hospital",
+      "definition": "A facility offering inpatient, outpatient and daypatient services run by a Private Health Group or Trust"
+    },
+    {
+      "code": "privhospunit",
+      "display": "Private Hospital Unit",
+      "definition": "A private hospital department or ward (not otherwise specified)"
+    },
+    {
+      "code": "privhosppharm",
+      "display": "Private Hospital Pharmacy",
+      "definition": "Internal Pharmacy"
+    },
+    {
+      "code": "privsurg",
+      "display": "Private Day Surgery",
+      "definition": "A facility where surgical procedures are performed - no overnight stays"
+    },
+    {
+      "code": "hospice",
+      "display": "Hospices"
+    },
+    {
+      "code": "agedcare",
+      "display": "Aged Care facilities",
+      "definition": "Includes Retirement Villages, Rest Homes and any associated Hospital and or Dementia units."
+    },
+    {
+      "code": "gms",
+      "display": "General Medical Services",
+      "definition": "A place where primary care services are provided by a General Practitioner  who is not affiliated to a PHO"
+    },
+    {
+      "code": "gpenrol",
+      "display": "Enrolling GP Practice",
+      "definition": "A place where primary care services are provided to enrolled patients by a General Practitioner"
+    },
+    {
+      "code": "comclinic",
+      "display": "Community based clinical service facility - unspecified",
+      "definition": "A place where unspecified services are provided in an office environment"
+    },
+    {
+      "code": "nurseclinic",
+      "display": "Community Nurse-Run Clinic",
+      "definition": "A place where services are provided by a registered nurse in an office setting"
+    },
+    {
+      "code": "armclinic",
+      "display": "Armed Forces Health Clinic",
+      "definition": "A health clinic run by a branch of the NZ Armed Forces"
+    },
+    {
+      "code": "youth",
+      "display": "Community Youth Service",
+      "definition": "A place where services are provided to youth in an office setting"
+    },
+    {
+      "code": "prisclinic",
+      "display": "Prison Health Clinic",
+      "definition": "A health clinic run by the Department of Corrections"
+    },
+    {
+      "code": "stuclinic",
+      "display": "Student Health Clinic",
+      "definition": "A health clinic in a school or University setting providing services to students"
+    },
+    {
+      "code": "msoclinic",
+      "display": "MSO / PHO clinics",
+      "definition": "Services provided in a clinical setting by PHO/MSO"
+    },
+    {
+      "code": "sexualhealth",
+      "display": "Sexual Health",
+      "definition": "A place where sexual health clinics take place"
+    },
+    {
+      "code": "screening",
+      "display": "Screening Service",
+      "definition": "A place that offers screening services"
+    },
+    {
+      "code": "occhealth",
+      "display": "Occupational health - including company health clinics",
+      "definition": "Includes facilities for Occupational Health practitioners"
+    },
+    {
+      "code": "specialist",
+      "display": "Community Specialist  unspecified",
+      "definition": "A place where specialist services are provided in an office environment"
+    },
+    {
+      "code": "entspec",
+      "display": "ENT Otolarygology",
+      "definition": "A place where ENT and Otolaryngology consultations occur"
+    },
+    {
+      "code": "plasticsurg",
+      "display": "Plastic Surgery / Cosmetic Surgery",
+      "definition": "A place where plastic/cosmetic surgery consultations and minor procedures occur."
+    },
+    {
+      "code": "orthopaedic",
+      "display": "Orthopaedics",
+      "definition": "A place where Orthopaedic consultations occur"
+    },
+    {
+      "code": "gynaecology",
+      "display": "Obstetrics - Gynaecology",
+      "definition": "A place where Obstetric and Gynaecological services are offered"
+    },
+    {
+      "code": "anaesthetics",
+      "display": "Anaesthetics",
+      "definition": "Facility for Anaesthetists consulting rooms and or base rather than site anaesthesia is performed."
+    },
+    {
+      "code": "gensurgeon",
+      "display": "Surgeons (not otherwise specified)",
+      "definition": "Consultation rooms for surgeons (not otherwise defined)"
+    },
+    {
+      "code": "urology",
+      "display": "Urology",
+      "definition": "Facility where Urology consultations Occur"
+    },
+    {
+      "code": "cardiology",
+      "display": "Cardiology /Heart",
+      "definition": "Facility where Cardiologists and Heart Specialists conduct consultations"
+    },
+    {
+      "code": "neurology",
+      "display": "Neurology",
+      "definition": "Facility where Neurologists and Neurology Specialists conduct consultations"
+    },
+    {
+      "code": "rheumatology",
+      "display": "Rheumatology",
+      "definition": "Facility where Rheumatology Specialists conduct consultations"
+    },
+    {
+      "code": "sportsmed",
+      "display": "Sports Medicine",
+      "definition": "Facility where Sports M Specialists conduct consultations"
+    },
+    {
+      "code": "oms",
+      "display": "Oral and Maxillofacial surgeons",
+      "definition": "Facility where Oral and Maxillofacial surgeons conduct consultations"
+    },
+    {
+      "code": "opthalmology",
+      "display": "Eye Surgery/Opthalmology",
+      "definition": "Facility where Eye Specialists and Opthalmologists conduct consultations"
+    },
+    {
+      "code": "pain",
+      "display": "Pain / Musculoskeletal",
+      "definition": "Facility where Pain and Musculoskeletal Specialists conduct consultations"
+    },
+    {
+      "code": "gastro",
+      "display": "Gastroenterology, Endoscopy",
+      "definition": "Facility where Gastroenterologists and Endoscopy Specialists conduct consultations"
+    },
+    {
+      "code": "psychiatry",
+      "display": "Psychiatry",
+      "definition": "Facility where Psychiatrists conduct consultations"
+    },
+    {
+      "code": "paediatrics",
+      "display": "Paediatrics",
+      "definition": "Facility where Paediatrics Specialists conduct consultations"
+    },
+    {
+      "code": "internalmed",
+      "display": "Internal Medicine, Endocrinology, Diabetes",
+      "definition": "Facility where Internal medicine, Endocrinologists and Diabetes Specialists conduct consultations"
+    },
+    {
+      "code": "oncology",
+      "display": "Oncology",
+      "definition": "Facility where Oncology Specialists conduct consultations"
+    },
+    {
+      "code": "privclinic",
+      "display": "Private Clinicians   Largely Obsolete",
+      "definition": "Historic facilities defined to cater for Private Clinicians in each area"
+    },
+    {
+      "code": "dermatology",
+      "display": "Community Dermatology",
+      "definition": "A place where dermatological services - including Skin cancer checks are provided in an office setting"
+    },
+    {
+      "code": "allergies",
+      "display": "Allergies Immunology",
+      "definition": "A place where Allergy and Immunology Specialists conduct consultations"
+    },
+    {
+      "code": "lab",
+      "display": "Community Laboratory",
+      "definition": "A laboratory run by a private health group in a non-hospital setting"
+    },
+    {
+      "code": "radiology",
+      "display": "Community Radiology",
+      "definition": "A place where a radiology service is provided by a private health group. Includes other imaging and ultrasound"
+    },
+    {
+      "code": "physio",
+      "display": "Community Physiotherapy",
+      "definition": "A place where physiotherapy services are provided in an office setting"
+    },
+    {
+      "code": "dental",
+      "display": "Community Dental",
+      "definition": "A place where dental services are provided in an office setting"
+    },
+    {
+      "code": "orthodontist",
+      "display": "Orthodontics",
+      "definition": "A place where orthodontic services are provided in a clinical setting"
+    },
+    {
+      "code": "periodontics",
+      "display": "Periodontics",
+      "definition": "A place where periodontic services are provided in a clinical setting"
+    },
+    {
+      "code": "occutherapy",
+      "display": "Community Occupational Therapy",
+      "definition": "A place where occupational therapy services are provided in an office setting"
+    },
+    {
+      "code": "pharm",
+      "display": "Community Pharmacy",
+      "definition": "A place where pharmacy services are provided in a shop or community health centre"
+    },
+    {
+      "code": "ndisppharm",
+      "display": "Non Dispensing Pharmacies",
+      "definition": "Licensed for storage/use of Pharmacies but not open for dispensing to the public"
+    },
+    {
+      "code": "counsell",
+      "display": "Community Counselling",
+      "definition": "A place where counselling services are provided in an office setting"
+    },
+    {
+      "code": "midwife",
+      "display": "Community Midwife",
+      "definition": "Where midwifery services are provided by an independent midwife"
+    },
+    {
+      "code": "psychology",
+      "display": "Community Psychology",
+      "definition": "A place where services are provided by a psychologist in an office setting"
+    },
+    {
+      "code": "afterhours",
+      "display": "Community After Hours Clinic",
+      "definition": "A place where after hours services are provided in a non-hospital setting"
+    },
+    {
+      "code": "chiropractor",
+      "display": "Community Chiropractic",
+      "definition": "A place where chiropractic services are provided in an office setting"
+    },
+    {
+      "code": "osteopathy",
+      "display": "Community Osteopathy",
+      "definition": "A place where osteopathic services are provided in an office setting"
+    },
+    {
+      "code": "familyplan",
+      "display": "Community Family Planning Clinic",
+      "definition": "A place where family planning services are provided in an office setting"
+    },
+    {
+      "code": "optometry",
+      "display": "Community Optometry",
+      "definition": "A place where Optometry services are provided in an office or shop setting"
+    },
+    {
+      "code": "hthcentre",
+      "display": "Community Health Centre",
+      "definition": "A facility providing more than one service"
+    },
+    {
+      "code": "podiatry",
+      "display": "Podiatry",
+      "definition": "A facility where podiatry services are provided"
+    },
+    {
+      "code": "hands",
+      "display": "Hands",
+      "definition": "A place where services specifically related to hands are provided"
+    },
+    {
+      "code": "hearing",
+      "display": "Ears / Hearing",
+      "definition": "Audiological services as well as Ear Health."
+    },
+    {
+      "code": "chinesemed",
+      "display": "Chinese medicine",
+      "definition": "A place where Chinese medicine services are provided."
+    },
+    {
+      "code": "acupuncture",
+      "display": "Acupuncture",
+      "definition": "A place where Acupuncture services are provided"
+    },
+    {
+      "code": "natmen",
+      "display": "Natural Medicine",
+      "definition": "Includes places where naturopaths, Homeopaths etc provide services"
+    },
+    {
+      "code": "diet",
+      "display": "Nutrition / Dietetics",
+      "definition": "A place where nutrition/dietetic services are provided"
+    },
+    {
+      "code": "fitness",
+      "display": "Gyms, Wellness, Fitness, Health Spas",
+      "definition": "A place where services are provided to improve human physical wellness"
+    },
+    {
+      "code": "speech",
+      "display": "Speech Therapy",
+      "definition": "A placed where Speech Therapy services are provided"
+    },
+    {
+      "code": "sleep",
+      "display": "Sleep / Respiratory",
+      "definition": "A place where Sleep and Respiratory services are provided"
+    },
+    {
+      "code": "nhospmental",
+      "display": "Non Hospital Mental health",
+      "definition": "A place where mental health services are provided outside a hospital environment"
+    },
+    {
+      "code": "addiction",
+      "display": "Alcohol & Drug",
+      "definition": "A place where Alcohol, Drug or Addiction services are offered"
+    },
+    {
+      "code": "rescare",
+      "display": "Residential Support / Housing / Respite care facilities",
+      "definition": "A place where residential support or respite care is provided for mental Health or disabled patients (ie not Aged Care"
+    },
+    {
+      "code": "ressupport",
+      "display": "Residential Support",
+      "definition": "Includes residential and assisted living facilities"
+    },
+    {
+      "code": "rehab",
+      "display": "Rehabilitation Services",
+      "definition": "A place where rehabilitation services are provided"
+    },
+    {
+      "code": "ambulance",
+      "display": "Ambulance",
+      "definition": "A place where paramedics and ambulance staff are based for their provision of Healthcare services."
+    },
+    {
+      "code": "plunket",
+      "display": "Plunket Clinic",
+      "definition": "A place where services are provided by the Plunket Organisation"
+    },
+    {
+      "code": "homehosp",
+      "display": "Hospital in the Home",
+      "definition": "Services provided in the patients home environment by Nursing Services"
+    },
+    {
+      "code": "ngofacility",
+      "display": "NGO Facility",
+      "definition": "A place where services are provided by a Non-Government Organisation"
+    },
+    {
+      "code": "careersupp",
+      "display": "Career / Work Support",
+      "definition": "A place where career or work support is provided in an office setting"
+    },
+    {
+      "code": "mso",
+      "display": "Management Services Organisation",
+      "definition": "organisation that supports the provision but does not directly provide health services."
+    },
+    {
+      "code": "moh",
+      "display": "MOH",
+      "definition": "Facilities within MOH - allocated for historical or system purposes"
+    },
+    {
+      "code": "phooffice",
+      "display": "PHO Office",
+      "definition": "PHO Office or Location involved primarily in management of data"
+    },
+    {
+      "code": "teaching",
+      "display": "Teaching Facility",
+      "definition": "Facility providing Health Services as part of training new practitioners"
+    },
+    {
+      "code": "covidtest",
+      "display": "Covid testing facility",
+      "definition": "A place where Covid testing is done"
+    },
+    {
+      "code": "covidmiq",
+      "display": "Covid isolation and quarantine facility",
+      "definition": "A place for Covid isolation and quarantine"
+    },
+    {
+      "code": "covidvac",
+      "display": "Covid vaccination facility",
+      "definition": "A place where Covid vaccinations are given"
+    },
+    {
+      "code": "unknown",
+      "display": "Unknown"
+    },
+    {
+      "code": "other",
+      "display": "Other"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for location type.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 100
+}

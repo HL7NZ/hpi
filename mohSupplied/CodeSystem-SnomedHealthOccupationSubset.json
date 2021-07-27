@@ -1,0 +1,329 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SnomedHealthOccupationSubset",
+  "id": "SnomedHealthOccupationSubset",
+  "title": "SNOMED Health occupation subset (New Zealand Ministry of Health)",
+  "description": "Health occupation subset. Refset Id 451000210100. Module Id 21000210109.",
+  "version": "20190131",
+  "url": "http://snomed.info/sct/223366009",
+  "concept": [
+    {
+      "code": "446701002",
+      "display": "Addiction medicine specialist"
+    },
+    {
+      "code": "224608005",
+      "display": "Administrative healthcare staff"
+    },
+    {
+      "code": "88189002",
+      "display": "Anaesthetist"
+    },
+    {
+      "code": "309418004",
+      "display": "Audiologist"
+    },
+    {
+      "code": "265951000",
+      "display": "Biological scientists and biochemists"
+    },
+    {
+      "code": "17561000",
+      "display": "Cardiologist"
+    },
+    {
+      "code": "309369000",
+      "display": "Cardiothoracic surgeon"
+    },
+    {
+      "code": "309347007",
+      "display": "Clinical haematologist"
+    },
+    {
+      "code": "63098009",
+      "display": "Clinical immunologist"
+    },
+    {
+      "code": "309348002",
+      "display": "Clinical neurophysiologist"
+    },
+    {
+      "code": "224570006",
+      "display": "Clinical nurse specialist"
+    },
+    {
+      "code": "310191001",
+      "display": "Clinical psychologist"
+    },
+    {
+      "code": "158999002",
+      "display": "Community midwife"
+    },
+    {
+      "code": "160008000",
+      "display": "Dental technician"
+    },
+    {
+      "code": "106289002",
+      "display": "Dentist"
+    },
+    {
+      "code": "18803008",
+      "display": "Dermatologist"
+    },
+    {
+      "code": "159033005",
+      "display": "Dietitian"
+    },
+    {
+      "code": "309372007",
+      "display": "Ear, nose and throat surgeon"
+    },
+    {
+      "code": "159036002",
+      "display": "ECG technician"
+    },
+    {
+      "code": "309294001",
+      "display": "Emergency department physician"
+    },
+    {
+      "code": "61894003",
+      "display": "Endocrinologist"
+    },
+    {
+      "code": "62247001",
+      "display": "Family medicine specialist"
+    },
+    {
+      "code": "71838004",
+      "display": "Gastroenterologist"
+    },
+    {
+      "code": "85733003",
+      "display": "General pathologist"
+    },
+    {
+      "code": "78703002",
+      "display": "General surgeon"
+    },
+    {
+      "code": "159141008",
+      "display": "Geneticist"
+    },
+    {
+      "code": "90655003",
+      "display": "Geriatrics specialist"
+    },
+    {
+      "code": "224577009",
+      "display": "Healthcare assistant"
+    },
+    {
+      "code": "158972004",
+      "display": "House officer"
+    },
+    {
+      "code": "76899008",
+      "display": "Infectious disease specialist"
+    },
+    {
+      "code": "309338004",
+      "display": "Intensive care specialist"
+    },
+    {
+      "code": "39677007",
+      "display": "Internal medicine specialist"
+    },
+    {
+      "code": "159282002",
+      "display": "Laboratory technician"
+    },
+    {
+      "code": "159283007",
+      "display": "Laboratory technician - general science"
+    },
+    {
+      "code": "224533002",
+      "display": "Medical officer"
+    },
+    {
+      "code": "310512001",
+      "display": "Medical oncologist"
+    },
+    {
+      "code": "159016003",
+      "display": "Medical radiographer"
+    },
+    {
+      "code": "398130009",
+      "display": "Medical student"
+    },
+    {
+      "code": "11911009",
+      "display": "Nephrologist"
+    },
+    {
+      "code": "56397003",
+      "display": "Neurologist"
+    },
+    {
+      "code": "45544007",
+      "display": "Neurosurgeon"
+    },
+    {
+      "code": "224571005",
+      "display": "Nurse practitioner"
+    },
+    {
+      "code": "309367003",
+      "display": "Obstetrician and gynaecologist"
+    },
+    {
+      "code": "80546007",
+      "display": "Occupational therapist"
+    },
+    {
+      "code": "422234006",
+      "display": "Ophthalmologist"
+    },
+    {
+      "code": "28229004",
+      "display": "Optometrist"
+    },
+    {
+      "code": "49993003",
+      "display": "Oral surgeon"
+    },
+    {
+      "code": "22731001",
+      "display": "Orthopaedic surgeon"
+    },
+    {
+      "code": "309383003",
+      "display": "Paediatric surgeon"
+    },
+    {
+      "code": "82296001",
+      "display": "Paediatrician"
+    },
+    {
+      "code": "309359006",
+      "display": "Palliative care physician"
+    },
+    {
+      "code": "46255001",
+      "display": "Pharmacist"
+    },
+    {
+      "code": "159040006",
+      "display": "Pharmacy technician"
+    },
+    {
+      "code": "449161006",
+      "display": "Physician assistant"
+    },
+    {
+      "code": "36682004",
+      "display": "Physiotherapist"
+    },
+    {
+      "code": "8724009",
+      "display": "Plastic surgeon"
+    },
+    {
+      "code": "159034004",
+      "display": "Podiatrist"
+    },
+    {
+      "code": "224595007",
+      "display": "Professional counsellor"
+    },
+    {
+      "code": "80584001",
+      "display": "Psychiatrist"
+    },
+    {
+      "code": "59944000",
+      "display": "Psychologist"
+    },
+    {
+      "code": "26369006",
+      "display": "Public health nurse"
+    },
+    {
+      "code": "41672002",
+      "display": "Pulmonologist"
+    },
+    {
+      "code": "763292005",
+      "display": "Radiation oncologist"
+    },
+    {
+      "code": "66862007",
+      "display": "Radiologist"
+    },
+    {
+      "code": "159018002",
+      "display": "Radiotherapist"
+    },
+    {
+      "code": "309453006",
+      "display": "Registered midwife"
+    },
+    {
+      "code": "224535009",
+      "display": "Registered nurse"
+    },
+    {
+      "code": "224531000",
+      "display": "Registrar"
+    },
+    {
+      "code": "45440000",
+      "display": "Rheumatologist"
+    },
+    {
+      "code": "106328005",
+      "display": "Social worker"
+    },
+    {
+      "code": "159026005",
+      "display": "Speech and language therapist"
+    },
+    {
+      "code": "158996009",
+      "display": "State enrolled nurse"
+    },
+    {
+      "code": "65853000",
+      "display": "Student"
+    },
+    {
+      "code": "15900500",
+      "display": "unable to determine name info"
+    },
+    {
+      "code": "24590004",
+      "display": "Urologist"
+    },
+    {
+      "code": "309388007",
+      "display": "Vascular surgeon"
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2019-05-01T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for practitioner roles.",
+  "caseSensitive": true,
+  "versionNeeded": false,
+  "count": 76
+}

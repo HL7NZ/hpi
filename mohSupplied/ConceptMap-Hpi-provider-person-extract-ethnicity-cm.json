@@ -1,0 +1,1700 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "Hpi-provider-person-extract-ethnicity-cm",
+  "url": "https://standards.digital.health.nz/fhir/ConceptMap/ethnic-group-level4-to-level3",
+  "version": "1.0",
+  "name": "Hpi_provider_person_extract_ethnicity_cm",
+  "title": "HPI provider person extract ethnicity cm",
+  "status": "draft",
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "description": "Translate from lvl 4 ethnicity codes down to level 3 ethnicity codes",
+  "purpose": "Down convert ethnicity codes from current lvl 4 to legacy lvl 3 codes",
+  "sourceUri": "https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code",
+  "targetUri": "https://standards.digital.health.nz/fhir/ValueSet/ethnic-group-level-3-code",
+  "group": [
+    {
+      "source": "https://standards.digital.health.nz/ns/ethnic-group-level-4-code",
+      "sourceVersion": "2.0",
+      "target": "https://standards.digital.health.nz/ns/ethnic-group-level-3-code",
+      "targetVersion": "1.0",
+      "element": [
+        {
+          "code": "10000",
+          "target": [
+            {
+              "code": "100",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "11111",
+          "target": [
+            {
+              "code": "111",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12100",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12111",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12112",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12113",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12114",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12116",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12117",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12119",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12121",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12199",
+          "target": [
+            {
+              "code": "121",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12211",
+          "target": [
+            {
+              "code": "122",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12311",
+          "target": [
+            {
+              "code": "123",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12411",
+          "target": [
+            {
+              "code": "124",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12500",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12511",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12512",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12513",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12514",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12515",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12516",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12599",
+          "target": [
+            {
+              "code": "125",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12611",
+          "target": [
+            {
+              "code": "126",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12711",
+          "target": [
+            {
+              "code": "127",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12811",
+          "target": [
+            {
+              "code": "128",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12911",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12912",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12913",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12914",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12915",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12916",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12918",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12919",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12920",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12921",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12922",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12923",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12924",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12926",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12927",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12928",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12929",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12930",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12931",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12932",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12933",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12934",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12935",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12937",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12938",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12939",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12940",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12941",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12942",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12943",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12945",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12947",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12948",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12949",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12950",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "12999",
+          "target": [
+            {
+              "code": "129",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "21111",
+          "target": [
+            {
+              "code": "211",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "30000",
+          "target": [
+            {
+              "code": "300",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "31111",
+          "target": [
+            {
+              "code": "311",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "32100",
+          "target": [
+            {
+              "code": "321",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "33111",
+          "target": [
+            {
+              "code": "331",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "34111",
+          "target": [
+            {
+              "code": "341",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "35111",
+          "target": [
+            {
+              "code": "351",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "36111",
+          "target": [
+            {
+              "code": "361",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37112",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37122",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37124",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37130",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37135",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37137",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37138",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37140",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37141",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37144",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37145",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "37199",
+          "target": [
+            {
+              "code": "371",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "40000",
+          "target": [
+            {
+              "code": "400",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41000",
+          "target": [
+            {
+              "code": "410",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41111",
+          "target": [
+            {
+              "code": "411",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41211",
+          "target": [
+            {
+              "code": "412",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41311",
+          "target": [
+            {
+              "code": "413",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41411",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41412",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41413",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41414",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41415",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41416",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41417",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41499",
+          "target": [
+            {
+              "code": "414",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42100",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42111",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42112",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42113",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42114",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42115",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42116",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42199",
+          "target": [
+            {
+              "code": "421",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43100",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43111",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43112",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43114",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43115",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43116",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43117",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43118",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43119",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "43199",
+          "target": [
+            {
+              "code": "431",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44100",
+          "target": [
+            {
+              "code": "441",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44111",
+          "target": [
+            {
+              "code": "441",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44112",
+          "target": [
+            {
+              "code": "441",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44199",
+          "target": [
+            {
+              "code": "441",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44211",
+          "target": [
+            {
+              "code": "442",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44311",
+          "target": [
+            {
+              "code": "443",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44411",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44412",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44413",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44414",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44415",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44416",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44417",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44418",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44419",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "44499",
+          "target": [
+            {
+              "code": "444",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51100",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51111",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51112",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51113",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51114",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51115",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51116",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51117",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51118",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51119",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51120",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51122",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51124",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51125",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51127",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "51199",
+          "target": [
+            {
+              "code": "511",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52100",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52111",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52112",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52113",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52114",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52115",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52118",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52123",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52127",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52128",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52129",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52130",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "52199",
+          "target": [
+            {
+              "code": "521",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53100",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53113",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53114",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53115",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53116",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53118",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53119",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53120",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53121",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53122",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53123",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53124",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53125",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53126",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53127",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53199",
+          "target": [
+            {
+              "code": "531",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61113",
+          "target": [
+            {
+              "code": "611",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61115",
+          "target": [
+            {
+              "code": "611",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61116",
+          "target": [
+            {
+              "code": "611",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61117",
+          "target": [
+            {
+              "code": "611",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61118",
+          "target": [
+            {
+              "code": "111",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "61199",
+          "target": [
+            {
+              "code": "611",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "94444",
+          "target": [
+            {
+              "code": "944",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "95555",
+          "target": [
+            {
+              "code": "955",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "96666",
+          "target": [
+            {
+              "code": "966",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "97777",
+          "target": [
+            {
+              "code": "977",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "98888",
+          "target": [
+            {
+              "code": "988",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "99999",
+          "target": [
+            {
+              "code": "999",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

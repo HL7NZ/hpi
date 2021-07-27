@@ -1,0 +1,157 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Hpi_legal_entity_type",
+  "id": "Hpi-legal-entity-type",
+  "title": "Legal Entity Type",
+  "description": "A coded value for organisation legal entity type.",
+  "version": "2.0",
+  "url": "https://standards.digital.health.nz/ns/hpi-legal-entity-type",
+  "concept": [
+    {
+      "code": "BLDG-SOC",
+      "display": "Building Society",
+      "definition": "The Building Societies Act 1965; the Building Societies Regulations 1989"
+    },
+    {
+      "code": "CHAR-TRST",
+      "display": "Charitable Trust",
+      "definition": "Charitable Trusts Act 1957"
+    },
+    {
+      "code": "CHURCH",
+      "display": "Church Acts",
+      "definition": "Various Acts as per the New Zealand Legislation website."
+    },
+    {
+      "code": "COMPANY",
+      "display": "Company",
+      "definition": "The Companies Act 1993; the Companies Act 1993 Regulations 1994"
+    },
+    {
+      "code": "CROWN-ENT",
+      "display": "Crown Entity",
+      "definition": "Crown Entities Act 2004. This excludes DHBs which are classified under the HD-ACT Publicly Owned Health and Disability Services."
+    },
+    {
+      "code": "FRIEND-SOC",
+      "display": "Credit Union and/or Friendly Society",
+      "definition": "Friendly Societies and Credit Unions Act 1982"
+    },
+    {
+      "code": "HD-ACT",
+      "display": "Publicly owned health and disability services",
+      "definition": "New Zealand Health and Disability Act 2004 (whose purpose is: to provide for the public funding and provision of personal health services, public health services, and disability support services, and to establish new publicly-owned health and disability organisations, in order to pursue the following objectives), including the improvement, promotion, and protection of their health, and facilitation of participation in society. (Section 2 New Zealand Public Health and Disability  Act 2000)"
+    },
+    {
+      "code": "INCORP-SOC",
+      "display": "Incorporated Society",
+      "definition": "Incorporated Societies Act 1908; the Incorporated Societies Regulations 1979"
+    },
+    {
+      "code": "LOCAL-BODY",
+      "display": "Local Bodies (i.e. City Councils)",
+      "definition": "Local Government Act 2002"
+    },
+    {
+      "code": "MAORI-INC",
+      "display": "Māori Incorporations",
+      "definition": "As per the New Zealand Legislation website"
+    },
+    {
+      "code": "MAORI-IWI",
+      "display": "Māori Iwi",
+      "definition": "A Māori Iwi registered as a Māori Trust Board within the meaning of the Māori Trust Board Act 1955"
+    },
+    {
+      "code": "NOTLEGAL",
+      "display": "Not Legally Constituted",
+      "definition": "This code describes a party that is not legally constituted, not a subsidiary and not a  sub organisation of  a legally constituted organisation. It has been added to the organisation index because the party needs to be identified for some purpose."
+    },
+    {
+      "code": "NPSERV-DEP",
+      "display": "Non-Public Service Departments",
+      "definition": "Departments not part of the Public Service in particular Police and the Defence Forces"
+    },
+    {
+      "code": "NRPART",
+      "display": "Non registered Partnership",
+      "definition": "Departments not part of the Public Service in particular Police and the Defence Forces"
+    },
+    {
+      "code": "OSEAS-CO",
+      "display": "Overseas Company",
+      "definition": "The Companies Act 1993 and registered on the Companies Overseas Register"
+    },
+    {
+      "code": "OTHER",
+      "display": "Other",
+      "definition": "Constituted by an Act or Regulation not listed above eg Responsible Authorities listed in schedule 2 of Health Practitioners Competence Assurance Act 2003."
+    },
+    {
+      "code": "PARTSHIP",
+      "display": "Limited Partnerships NZ",
+      "definition": "Limited Partnerships Act 2008; the Limited Partnerships Regulations 2008"
+    },
+    {
+      "code": "PLUNKET",
+      "display": "Plunket",
+      "definition": "Plunket Society Rules Act 1959"
+    },
+    {
+      "code": "PROV-SOC",
+      "display": "Industrial and Provident Society",
+      "definition": "Industrial and Provident Societies Act 1908; the Industrial and Provident Societies Regulations 1952"
+    },
+    {
+      "code": "PSERV-DEP",
+      "display": "Public Service Departments",
+      "definition": "Public Service departments listed in Schedule 1 of  the State Sector Act 1988"
+    },
+    {
+      "code": "PVT-TRUST",
+      "display": "Private Trust"
+    },
+    {
+      "code": "PVT-PART",
+      "display": "Private Partnership"
+    },
+    {
+      "code": "SOE",
+      "display": "State Owned Enterprises",
+      "definition": "Registered companies listed under Schedules 1 and 2 of the State Owned Enterprises Act 1986"
+    },
+    {
+      "code": "SOLE-TRD",
+      "display": "Sole Trader"
+    },
+    {
+      "code": "SUB",
+      "display": "Subsidiary or Sub Organisation",
+      "definition": "This code describes an organisation that is not legally constituted  but is a subsidiary or sub organisation of a legally constituted organisation. A relationship must exist in the HPI relationships that relates the organisation to its legally constituted parent organisation."
+    },
+    {
+      "code": "UNIT-TRUST",
+      "display": "Unit Trusts",
+      "definition": "Unit Trusts Act 1960; the Unit Trusts (Fees) Regulations 2008"
+    },
+    {
+      "code": "TRAD-TRUST",
+      "display": "Trading Trusts",
+      "definition": "Private (unregistered) Trading trusts."
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-04-20T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded value for organisation legal entity type.",
+  "caseSensitive": false,
+  "versionNeeded": true,
+  "count": 27
+}

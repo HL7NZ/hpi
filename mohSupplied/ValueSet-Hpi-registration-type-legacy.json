@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "Hpi_registration_type_legacy",
+  "id": "Hpi-registration-type-legacy",
+  "title": "HPI Registration Type",
+  "description": "A coded type for professional registrations.",
+  "version": "1.0",
+  "url": "https://standards.digital.health.nz/fhir/ValueSet/hpi-registration-type",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for professional registrations.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/hpi-registration-type",
+        "version": "1.0"
+      }
+    ]
+  }
+}
