@@ -123,7 +123,7 @@
 <tr>
 <td>Practitioner.qualification</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice</td>
-<td>The type or range of health services a practitioner is authorized to perform, as determined by the Responsible Authority or professional body.</td>
+<td>The type or range of health services a practitioner is authorised to perform, as determined by the Responsible Authority or professional body.</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-scope-of-practice.html'>nzbase</a></div>
 </td>
