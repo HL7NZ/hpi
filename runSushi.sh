@@ -19,6 +19,7 @@ echo "Updating the global summary of extensions and terminology"
 ../globalScripts/makeGlobalIGSummary.js
 echo
 
+
 echo "Creating Profiles and extensions summary pages..."
 ../scripts/makeProfilesAndExtensions.js hpi
 echo
