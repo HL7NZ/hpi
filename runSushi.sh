@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # clear the input folders b4 the generate. Assumes that only sushi to writing to them!
-rm -f input/examples/*.json
-rm -f input/extensions/*.json
-rm -f input/profiles/*.json
-rm -f input/vocabulary/*.json
+# rm -f input/examples/*.json
+# rm -f input/extensions/*.json
+# rm -f input/profiles/*.json
+# rm -f input/vocabulary/*.json
 
 
 
-sushi fsh -s -o .
+sushi  -s -o .
 
 if [[ $? -eq 0 ]]
 then
