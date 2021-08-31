@@ -1,6 +1,6 @@
 
 //Aliases for extensions
-Alias: $organization-established = http://hl7.org.nz/fhir/StructureDefinition/organization-established
+Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
 //Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
 
 Profile:        HpiOrganization
@@ -51,9 +51,9 @@ Description:    "An entity that provides services of interest to, or is involved
 
 //top level  extensions
 * extension contains 
-    $organization-established named organization-establishedestablished 0..1  
+    $established named established 0..1  
 
-* extension[organization-established] ^short = "The period over which this Organization has been established"
+* extension[established] ^short = "The period over which this Organization has been established"
     
 
 

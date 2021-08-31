@@ -16,33 +16,19 @@
 <td>0</td>
 <td>draft</td>
 </tr>
-<tr>
-<td><a href='StructureDefinition-location-established.html'>location-established</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/location-established</td>
-<td>
-<div>Location</div>
-</td>
-<td>The period over which the location is open</td>
-<td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-organization-established.html'>organization-established</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/organization-established</td>
-<td>
-<div>Organization</div>
-</td>
-<td>The period over which the Organization is active</td>
-<td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
 </table>
 <a name="externalExtensions"> </a>
 <h3>Extensions used but defined elsewhere</h3>
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
+<tr>
+<td>Location</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
+<td>The period over which the location or Organization is open</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>nzbase</a></div>
+</td>
+</tr>
 <tr>
 <td>Location</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/dhb</td>
@@ -57,6 +43,14 @@
 <td>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Organization</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
+<td>The period over which the location or Organization is open</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>nzbase</a></div>
 </td>
 </tr>
 <tr>

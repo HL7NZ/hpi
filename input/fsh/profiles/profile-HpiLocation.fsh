@@ -1,7 +1,7 @@
 // Aliases for extensions
 Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
-Alias: $hpiLocation-established = http://hl7.org.nz/fhir/StructureDefinition/location-established
+Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
 
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
 
@@ -58,10 +58,10 @@ Description:    "A physical location from which health goods and/or services are
 
 //top level  extensions
 * extension contains 
-    $hpiLocation-established named location-established 0..1 and
+    $established named established 0..1 and
     $dhb named dhb 0..1 
    
-* extension[location-established] ^short = "The date when this location first became available for use"
+* extension[established] ^short = "The date when this location first became available for use"
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
 
 * status from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code
