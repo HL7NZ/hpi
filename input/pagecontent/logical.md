@@ -1,22 +1,17 @@
-Logical models
-
-Notes: It is proposed to replace the old with the new. 
-
-Main reason is that the new ones use FSH so are easier to maintain and have better terminology links
-
-### New ones
+Logical Models represent the information that is contained within each resource in this guide. It closely mirrors the structure in the associated profile, but it is not exactly the same, being designed more for understandibility by a non-technical audience rather than an implementer.
 
 
-[Provider](StructureDefinition-ProviderModel.html)
+### [Provider](StructureDefinition-ProviderModel.html)
 
-[ProviderRole](StructureDefinition-ProviderRoleModel.html)
+### [ProviderRole](StructureDefinition-ProviderRoleModel.html)
 
-[Facility](StructureDefinition-FacilityModel.html)
+### [Facility](StructureDefinition-FacilityModel.html)
 
-[Organization](StructureDefinition-OrganizationModel.html)
+### [Organization](StructureDefinition-OrganizationModel.html)
 
-[Endpoint](StructureDefinition-EndpointModel.html)
+### [Endpoint](StructureDefinition-EndpointModel.html)
 
+<!--
 
 ### Previous ones
 
@@ -29,3 +24,5 @@ Main reason is that the new ones use FSH so are easier to maintain and have bett
 [Organization](StructureDefinition-HpiOrganizationLM.html)
 
 [Endpoint](StructureDefinition-HpiEndpointLM.html)
+
+-->

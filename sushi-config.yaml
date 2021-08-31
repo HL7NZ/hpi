@@ -26,7 +26,7 @@ fhirVersion: 4.0.1
 # there is a dependency on the NHI to get address profile
 dependencies:
   hl7.org.nz.fhir.ig.base: dev
-  hl7.org.nz.fhir.ig.nhi: dev
+
 parameters:
   show-inherited-invariants: false
 copyrightYear: 2020+

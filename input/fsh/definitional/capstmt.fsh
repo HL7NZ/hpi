@@ -84,13 +84,13 @@ Practitioner query
 //birthdate 
 * rest.resource.searchParam[5].name = "birthdate"
 * rest.resource.searchParam[5].type = #date
-* rest.resource.searchParam[5].definition = "SearchParameter/HpiPractitionerBirthdate"
-* rest.resource.searchParam[5].documentation = "This is a custom search"
+* rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
+* rest.resource.searchParam[5].documentation = "Supports a search on practitioner birthdate"
 
 //ra-identifier 
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
-* rest.resource.searchParam[6].definition = "SearchParameter/HpiPractitionerRaIdentifier"
+* rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
 
 /* #endregion */

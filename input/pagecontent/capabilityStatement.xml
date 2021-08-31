@@ -62,13 +62,13 @@
 <tr>
 <td>birthdate</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#date">date</a></td>
-<td><div>Definition: SearchParameter/HpiPractitionerBirthdate</div><p>This is a custom search</p>
+<td><div>Definition: http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate</div><p>Supports a search on practitioner birthdate</p>
 </td>
 </tr>
 <tr>
 <td>ra-identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><div>Definition: SearchParameter/HpiPractitionerRaIdentifier</div><p>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</p>
+<td><div>Definition: http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier</div><p>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</p>
 </td>
 </tr>
 </table>

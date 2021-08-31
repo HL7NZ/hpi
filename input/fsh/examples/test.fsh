@@ -4,8 +4,9 @@ Description: "Patient1"
 Usage: #example
 
 * name.text = "John Doe"
-* telecom.value = "abc1234"
-* telecom.system = #other
 
+* telecom.value = "hl1234"  //the actual edi address
+
+* telecom.system = #other
 * telecom.system.extension.url = "http://hl7.org.nz/fhir/StructureDefinition/edi-address"
-* telecom.system.extension.valueCode = #edi
+* telecom.system.extension.valueString = "healthLink"       //healthlink is the edi supplier

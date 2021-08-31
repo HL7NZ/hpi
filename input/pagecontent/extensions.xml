@@ -6,35 +6,13 @@
 <th>Status</th>
 </tr>
 <tr>
-<td><a href='StructureDefinition-additional-authorization.html'>additional-authorization</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/additional-authorization</td>
+<td><a href='StructureDefinition-esam-id.html'>esam-id</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/esam-id</td>
 <td>
-<div>Practitioner.qualification</div>
+<div>Location</div>
 </td>
-<td>Additional authorizations that a practitioner is authorized to perform</td>
+<td>The id from eSam</td>
 <td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-alias-type.html'>alias-type</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
-<td>
-<div>Location.alias</div>
-</td>
-<td>Indicates the type of alias name. VS Binding is done by the profile.</td>
-<td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-death-date.html'>death-date</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
-<td>
-<div>Practitioner</div>
-</td>
-<td>The date the person died.</td>
-<td>The date the person died. (def) </td>
 <td>0</td>
 <td>draft</td>
 </tr>
@@ -60,28 +38,6 @@
 <td>0</td>
 <td>draft</td>
 </tr>
-<tr>
-<td><a href='StructureDefinition-practitionerRole-creator.html'>practitionerRole-creator</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
-<td>
-<div>PractitionerRole</div>
-</td>
-<td>The organisation and person that created this role</td>
-<td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
-<tr>
-<td><a href='StructureDefinition-practitionerRole-status.html'>practitionerRole-status</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status</td>
-<td>
-<div>PractitionerRole</div>
-</td>
-<td>The status of the role - active,ended</td>
-<td></td>
-<td>0</td>
-<td>draft</td>
-</tr>
 </table>
 <a name="externalExtensions"> </a>
 <h3>Extensions used but defined elsewhere</h3>
@@ -96,18 +52,33 @@
 </td>
 </tr>
 <tr>
+<td>Location.alias</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
+<td>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
 <td>Practitioner</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
 <td>The ethnicity of the patient. Level 4 codes preferred (most detailed).</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>nzbase</a></div>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nhi/branches/master/StructureDefinition-nz-ethnicity.html'>nhi</a></div>
+</td>
+</tr>
+<tr>
+<td>Practitioner</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
+<td>The date of death of the individual, plus the source of that information</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-death-date.html'>nzbase</a></div>
 </td>
 </tr>
 <tr>
 <td>Practitioner</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/educational-qualification</td>
-<td>Educational qualifications.</td>
+<td>Educational qualifications a practitioner has. These may or may not be related to registration information.</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-educational-qualification.html'>nzbase</a></div>
 </td>
@@ -118,6 +89,14 @@
 <td>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-registration-status-code.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Practitioner.qualification</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation</td>
+<td>Additional authorisations that a practitioner is authorised to perform</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-additional-authorisation.html'>nzbase</a></div>
 </td>
 </tr>
 <tr>
@@ -142,6 +121,54 @@
 <td>The date the practitioner first became registered with the Responsible Authority or professional body</td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-registration-initial-date.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>PractitionerRole</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status</td>
+<td>The status of the role - active,ended</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-status.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>PractitionerRole</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
+<td>The organisation and person that created this role</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-creator.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/nz-geocode</td>
+<td>New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode.</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-geocode.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
+<td>Suburb element of a NZ Address.</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-suburb.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/building-name</td>
+<td>The name of a building cited in an address.</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-building-name.html'>nzbase</a></div>
+</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/domicile-code</td>
+<td>NZ Domicile Code. Derived from a patient's primary physical, home address.</td>
+<td>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-domicile-code.html'>nzbase</a></div>
 </td>
 </tr>
 </table>

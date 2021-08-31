@@ -81,5 +81,6 @@ Description:    "A physical location from which health goods and/or services are
     $aliasType named alias-type 1..1
 
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
-* alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
+
+* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/alias-type-code (preferred)
 * alias.extension[alias-type] ^short = "The type of alias this is - eg its Maori name"

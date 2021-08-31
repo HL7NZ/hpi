@@ -53,7 +53,7 @@ Note that the identifier query (whch is of type [token](http://hl7.org/fhir/sear
 
 #### Included resources
 
-It is possible to return resources that are referenced by the matching resource in the same query ising the [_include]() parameter. 
+It is possible to return resources that are referenced by the matching resource in the same query using the [_include](http://hl7.org/fhir/search.html#include) parameter. 
 
 For example the following query will return all patients whose name is 'smith' and include the referenced resources for general practitioner and organization (regardless of the type of the referenced resource).
 

@@ -2,7 +2,7 @@
 //Aliases for extensions
 Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
-Alias: $additional-authorization = http://hl7.org.nz/fhir/StructureDefinition/additional-authorization
+Alias: $additional-authorisation = http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
 
 
 Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
@@ -105,13 +105,14 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //many extensions on qualification
 * qualification.extension contains
     $registration-status-code named registration-status-code 0..1 and
-    $additional-authorization named additional-authorization 0..*   and
+    $additional-authorisation named additional-authorisation 0..*   and
     $scope-of-practice named scope-of-practice 0..* and
     $condition-on-practice named condition-on-practice 0..* and
     $registration-initial-date named registration-initial-date 0..1
+    
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
-* qualification.extension[additional-authorization] ^short = "Additional things the person is authorized to do"
+* qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
 * qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"

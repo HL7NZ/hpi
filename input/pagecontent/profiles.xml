@@ -23,5 +23,10 @@
 <td>http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/HpiPractitionerRole</td>
 <td>The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multple organizations.</td>
 </tr>
+<tr>
+<td><a href='StructureDefinition-NzAddress.html'>NzAddress</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/NzAddress</td>
+<td>Adds building name, suburb, domicile code and geocode to the Address datatype</td>
+</tr>
 </table>
 </div>

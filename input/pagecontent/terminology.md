@@ -11,9 +11,6 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>ValueSet</th><th>Purpose</th><th>Canonical url</th></tr>
-<tr><td width='20%'>Additional Authorisation for functions that a Practitioner can perform</td><td>A coded type for additional authorisations</td><td><a href='ValueSet-practitioner-additional-authorization.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code</a></td></tr>
-<tr><td width='20%'>Location alias types</td><td>The set of alias types that apply to Locations</td><td><a href='ValueSet-location-alias-type.html'>https://standards.digital.health.nz/fhir/ValueSet/location-alias-type-code</a></td></tr>
-<tr><td width='20%'>Organization alias types</td><td>The set of alias types that apply to Organizations</td><td><a href='ValueSet-organization-alias-type.html'>https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code</a></td></tr>
 <tr><td width='20%'>PractitionerRole status reason</td><td>The reason for the current status of PractitionerRole</td><td><a href='ValueSet-hpi-practitionerrole-status-reason.html'>https://standards.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code</a></td></tr>
 <tr><td width='20%'>PractitionerRoleCodes</td><td>Coded roles that can be in a PractitionerRole</td><td><a href='ValueSet-practitionerrole-codes.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code</a></td></tr>
 <tr><td width='20%'>Professional registration the healthcare provider has</td><td>Professional registration the healthcare provider has</td><td><a href='ValueSet-practitioner-registration-authority.html'>https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code</a></td></tr>
@@ -35,10 +32,8 @@ The [FHIR spec](http://hl7.org/fhir/terminology-module.html) has much more detai
 
 <table class='table table-bordered table-condensed'>
 <tr><th>CodeSystem</th><th>Purpose</th><th>Canonical Url</th></tr>
-<tr><td width='20%'>Type of Alias</td><td>Used in Organization and Location to indicate what is the type of Alias</td><td><a href='CodeSystem-alias-type.html'>https://standards.digital.health.nz/ns/alias-type-code</a></td></tr>
 <tr><td width='20%'>PractitionerRole status reason</td><td>The reason for the current status of PractitionerRole</td><td><a href='CodeSystem-hpi-practitionerRole-status-reason.html'>https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code</a></td></tr>
 <tr><td width='20%'>Type of Location</td><td>Type of Location</td><td><a href='CodeSystem-location-type.html'>https://standards.digital.health.nz/ns/location-type-code</a></td></tr>
-<tr><td width='20%'>Additional Authorisation</td><td>Additional authorisations that a practitioner is authorised to practice or prescribe.</td><td><a href='CodeSystem-practitioner-additional-authorization.html'>https://standards.digital.health.nz/ns/practitioner-additional-authorization-code</a></td></tr>
 <tr><td width='20%'>Professional registration the healthcare provider has</td><td>Professional registration the healthcare provider has</td><td><a href='CodeSystem-practitioner-registration-authority.html'>https://standards.digital.health.nz/ns/practitioner-registration-authority-code</a></td></tr>
 <tr><td width='20%'>PractitionerRoleCodes</td><td>Coded roles that can be in a PractitionerRole</td><td><a href='CodeSystem-practitionerrole-codes.html'>https://standards.digital.health.nz/ns/practitioner-role-code</a></td></tr>
 </table>
