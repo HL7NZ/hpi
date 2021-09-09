@@ -24,7 +24,7 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * extension[practitionerRole-creator] ^short = "The person and/or organization that created the PR"
     
 //elements that have been removed
-* active 0..0
+
 * specialty 0..0
 * healthcareService 0..0
 * availableTime 0..0
