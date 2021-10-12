@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+	</meta>
+	<url value="https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code" />
+	<version value="1.0" />
+	<name value="Hpi_scope_of_practice" />
+	<title value="HPI Scope of Practice" />
+	<status value="draft" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority." />
+	<purpose
+		value="A classification of the type or range of health services that a practitioner is authorised to provide, as determined by the Responsible Authority or other statutory authority (e.g. PHARMAC), that is, what the practitioner can or cannot do. It includes Scope of Practice as defined by the Health Practitioners Competence Assurance Act 2003, any special authorisations granted, and any conditions or limitations imposed by the Responsible Authority." />
+	<caseSensitive value="false" />
+	<valueSet value="https://standards.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code" />
+	<versionNeeded value="false" />
+	<content value="complete" />
+	<count value="130" />
+	<property>
+		<code value="AUTHORITY" />
+		<description value="The responsible authority code." />
+		<type value="code" />
+	</property>
+	<concept>
+		<code value="CHIR" />
+		<display value="Chiropractor" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="CH" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEAA" />
+		<display value="Administering Local Anaesthetic in Dental Hygiene Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEAC" />
+		<display value="Adult Care in Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DECD" />
+		<display value="Clinical Dental Technology Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEDA" />
+		<display value="Dental Auxiliary Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEDH" />
+		<display value="Dental Hygiene Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEDR" />
+		<display value="Diagnostic Radiography in Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEDT" />
+		<display value="Dental Technology Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEEN" />
+		<display value="Endodontic Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEEO" />
+		<display value="Extra Oral Radiography Practice in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEGD" />
+		<display value="General Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEIA" />
+		<display value="Implant over dentures in clinical dental technology practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEIO" />
+		<display value="Intra Oral Radiography in Dental Hygiene, Dental Auxiliary and Orthodontic Auxiliary Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DENT" />
+		<display value="General Dental Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOA" />
+		<display value="Orthodontic Auxiliary Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOH" />
+		<display value="Oral Health Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOM" />
+		<display value="Oral Medicine Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOP" />
+		<display value="Oral Pathology Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOR" />
+		<display value="Oral and Maxillofacial Surgery Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEOS" />
+		<display value="Oral Surgery Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEPA" />
+		<display value="Paediatric Dentistry Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEPD" />
+		<display value="Pulpotomies in Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEPE" />
+		<display value="Periodontic Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEPH" />
+		<display value="Public Health Dentistry (or Community Dentistry) Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEPS" />
+		<display value="Prosthodontic Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DERD" />
+		<display value="Radiography in Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DERE" />
+		<display value="Restorative Dentistry Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DESN" />
+		<display value="Special Needs Dentistry Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DESP" />
+		<display value="Orthodontic Specialists" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DESS" />
+		<display value="Stainless Steel Crowns in Dental Therapy Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DEUO" />
+		<display value="Undertaking Orthodontic Procedures in Dental Hygiene Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="DIET" />
+		<display value="Dietitian" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="DI" />
+		</property>
+	</concept>
+	<concept>
+		<code value="LTAT" />
+		<display value="Anaesthetic Technician" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="LT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="LTLS" />
+		<display value="Medical Laboratory Scientist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="LT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="LTLT" />
+		<display value="Medical Laboratory Technician" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="LT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="LTPA" />
+		<display value="Medical Laboratory Pre-Analytical Technician" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="LT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCAM" />
+		<display value="Vocational Scope of Accident and Medical Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCAN" />
+		<display value="Vocational Scope of Anaesthesia" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCAP" />
+		<display value="Vocational Scope of Pain Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCBM" />
+		<display value="Vocational Scope of Breast Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCCG" />
+		<display value="Vocational Scope of Clinical Genetics" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCCS" />
+		<display value="Vocational Scope of Cardiothoracic Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCDE" />
+		<display value="Vocational Scope of Dermatology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCDI" />
+		<display value="Vocational Scope of Diagnostic and Interventional Radiology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCEM" />
+		<display value="Vocational Scope of Emergency Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCFP" />
+		<display value="Vocational Scope of Family Planning/Reproductive Health" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCGE" />
+		<display value="General Scope of Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCGP" />
+		<display value="Vocational Scope of General Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCGS" />
+		<display value="Vocational Scope of General Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCIC" />
+		<display value="Vocational Scope of Intensive Care Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCIM" />
+		<display value="Vocational Scope of Internal Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCMA" />
+		<display value="Vocational Scope of Medical Administration" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCMM" />
+		<display value="Vocational Scope of Musculoskeletal Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCNS" />
+		<display value="Vocational Scope of Neurosurgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOG" />
+		<display value="Vocational Scope of Obstetrics and Gynaecology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOH" />
+		<display value="Vocational Scope of Otolaryngology Head and Neck Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOM" />
+		<display value="Vocational Scope of Occupational Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOP" />
+		<display value="Vocational Scope of Ophthalmology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOR" />
+		<display value="Vocational Scope of Oral and Maxillofacial Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCOS" />
+		<display value="Vocational Scope of Orthopaedic Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPA" />
+		<display value="Vocational Scope of Pathology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPE" />
+		<display value="Vocational Scope of Paediatrics" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPG" />
+		<display value="Provisional General Scope of Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPH" />
+		<display value="Vocational Scope of Public Health Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPM" />
+		<display value="Vocational Scope of Palliative Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPR" />
+		<display value="Vocational Scope of Plastic and Reconstructive Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPS" />
+		<display value="Vocational Scope of Paediatric Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPV" />
+		<display value="Provisional Vocational Scope of Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCPY" />
+		<display value="Vocational Scope of Psychiatry" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCRH" />
+		<display value="Vocational Scope of Rural Hospital Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCRM" />
+		<display value="Vocational Scope of Rehabilitation Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCRO" />
+		<display value="Vocational Scope of Radiation Oncology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCSH" />
+		<display value="Vocational Scope of Sexual Health Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCSM" />
+		<display value="Vocational Scope of Sports Medicine" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCSP" />
+		<display value="Special Purpose Scope of Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCTR" />
+		<display value="Medical Council Temporary Registration" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCUR" />
+		<display value="Vocational Scope of Urology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCVO" />
+		<display value="Vocational Scope of Practice" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MCVS" />
+		<display value="Vocational Scope of Vascular Surgery" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="MWIF" />
+		<display value="Midwife" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="MW" />
+		</property>
+	</concept>
+	<concept>
+		<code value="NCEN" />
+		<display value="Enrolled Nurse" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="NC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="NCNA" />
+		<display value="Nurse Assistant" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="NC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="NCNP" />
+		<display value="Nurse Practitioner" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="NC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="NCRN" />
+		<display value="Registered Nurse" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="NC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPDI" />
+		<display value="Optical Dispensing (Dispensing Optician)" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPED" />
+		<display value="Educator in Optometry (Educator Optometrist)" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPET" />
+		<display value="Educator in Optometry (TPA Endorsement) (Educator Optometrist with Therapeutic Pharmaceutical Agents (TPA) Endorsement)" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPPO" />
+		<display value="Provisional Optometrist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPTE" />
+		<display value="Optometry (TPA Endorsement) (Optometrist with Therapeutic Pharmaceutical Agents (TPA) Endorsement)" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OPTP" />
+		<display value="Optometry (Optometrist)" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OD" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSED" />
+		<display value="Osteopath - Educator" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSGE" />
+		<display value="Osteopath - Gerontology" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSTE" />
+		<display value="Osteopath" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSPM" />
+		<display value="Osteopath - Pain Management" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSSP" />
+		<display value="Osteopath - Special Purpose" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSTO" />
+		<display value="Trainee Osteopath" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSVO" />
+		<display value="Visiting Osteopath Presenter" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSWA" />
+		<display value="Osteopath - Western Medical Acupuncture" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OSCA" />
+		<display value="Osteopath - Child and Adolescent Health" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OS" />
+		</property>
+	</concept>
+	<concept>
+		<code value="OCCT" />
+		<display value="Occupational Therapist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="OT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PAPS" />
+		<display value="Paramedic" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PA" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PBPS" />
+		<display value="Psychotherapist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PB" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PBCA" />
+		<display value="Psychotherapist with Child and Adolescent Specialism" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PB" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PBIN" />
+		<display value="Interim Psychotherapist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PB" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSCE" />
+		<display value="Clinical and Educational" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSCL" />
+		<display value="Clinical Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSCLPSED" />
+		<display value="Clinical and Educational" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSCO" />
+		<display value="Counselling Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSED" />
+		<display value="Educational Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSHE" />
+		<display value="Health Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSIT" />
+		<display value="Trainee or Intern Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSNE" />
+		<display value="Neuropsychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PSYC" />
+		<display value="Psychologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PC" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PHAR" />
+		<display value="Pharmacist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PM" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PHIN" />
+		<display value="Intern Pharmacist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PM" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PHPP" />
+		<display value="Pharmacist Prescriber" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PM" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PODI" />
+		<display value="Podiatrist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PO" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PODP" />
+		<display value="Podiatric Prescriber" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PO" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PODR" />
+		<display value="Podiatric Radiographic Imager" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PO" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PODS" />
+		<display value="Podiatric Surgeon" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PO" />
+		</property>
+	</concept>
+	<concept>
+		<code value="POVD" />
+		<display value="Visiting Podiatrist Educator/Presenter" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PO" />
+		</property>
+	</concept>
+	<concept>
+		<code value="PHSO" />
+		<display value="Physiotherapist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="PT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTMR" />
+		<display value="Magnetic Resonance Technologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTMS" />
+		<display value="Sonographer" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTMT" />
+		<display value="Nuclear Medicine Technologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTRT" />
+		<display value="Radiation Therapist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTTE" />
+		<display value="Medical Imaging Technologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTTM" />
+		<display value="Trainee Magnetic Resonance Imaging (MRI) Technologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTTN" />
+		<display value="Trainee Nuclear Medicine Technologist" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+	<concept>
+		<code value="RTTS" />
+		<display value="Trainee Sonographer" />
+		<property>
+			<code value="AUTHORITY" />
+			<valueCode value="RT" />
+		</property>
+	</concept>
+</CodeSystem>

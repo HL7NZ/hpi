@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns="http://hl7.org/fhir">
+	<meta>
+		<profile
+			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+	</meta>
+	<url value="https://standards.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code" />
+	<version value="1.0" />
+	<name value="Hpi_additional_authorisation" />
+	<title value="HPI Additional Authorisation" />
+	<status value="active" />
+	<experimental value="false" />
+	<date value="2020-02-24T00:00:00+13:00" />
+	<publisher value="New Zealand Ministry of Health" />
+	<description value="A coded type for additional authorisations." />
+	<purpose value="A coded type for additional authorisations." />
+	<compose>
+		<inactive value="true" />
+		<include>
+			<system value="https://standards.digital.health.nz/ns/practitioner-additional-authorisation-code" />
+		</include>
+	</compose>
+</ValueSet>

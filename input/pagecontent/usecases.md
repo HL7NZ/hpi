@@ -1,189 +1,85 @@
-Use Cases to be elaborated in the IG
 
-### Type of implementer by Use case
-
-1-3, 9, 11-17	Health sector applications that manage or record information about health practitioners – PMS systems, Lab systems, Radiology systems, Clinical workstations, Healthpoint, MOH applications like Death Documents and COVID Immunisations register
-4-8	Registration Authority eg Medical Council, Midwifery Council application
-10	Health sector organisation supplying place of work details for their practitioners eg GP Practice and community specialist clinics PMS systems, hospital systems
-
-### Practitioner
-
-#### 1.	Implementer has a CPN and wants to 
-
-a.	check the identity details they have are correct and up-to-date
-b.	check the registration and APC are current 
-
-##### Solution
-
-Read with id
-
-#### 2.	Implementer has a registering authority identifier eg Medical Council number, Nursing Council number and wants to 
-
-a.	check the identity details they have are correct and up-to-date
-b.	get the CPN to use as their identifier for the practitioner
-c.	check the registration and APC are current 
-
-##### Solution
-
-
-Search using identifier.system and identifier.value
-
-#### 3.	Implementer has name and (possibly registering authority) and wants to
-
-a.	Get the CPN to use as their identifier for the practitioner
-
-##### Solution
-
-
-Search using name, 
-
-
-#### 4.	Implementer has name and date of birth and wants to
-
-a.	Check if the person already has a CPN prior to adding the person to the HPI
-b.	Get the CPN to use as their identifier for the practitioner
-
-##### Solution
-
-
-Search using name and birthdate
-
-#### 5.	Implementer has a person who has applied to be registered with a registering authority. and wants to 
-
-a.	Add the person to the HPI to get a CPN prior to completing the registration process
-
-##### Solution
-
-
-Search using name and birthdate
-Create Practitioner 
-
-#### 6.	Implementer has a person who has completed the registration process and has been issued an APC and wants to
-
-a.	Add the person to the HPI if they are not already there
-b.	Add/update all the registration, APC, qualification, demographics details for the person
-
-##### Solution
-
-
-Search using name and birthdate
-Create Practitioner OR
-Update Practitioner
-
-#### 7.	Implementer has a person whose has a new scope of practice or their registration has been removed, suspended or made inactive or they have a new condition of their practice and wants to
-
-a.	Update the person’s registration details 
-
-##### Solution
-
-
-Read with id
-Update Practitioner
-
-#### 8.	Implementer has a person who has renewed their Annual Practicing Certificate and wants to
-
-a.	Update the person’s demographics 
-b.	Add new APC period
-c.	Add/update the persons set of PractitionerRole(s)(ie places of work)
-
-##### Solution
-
-
-Read with id
-Update Practitioner
-Search Location, search organisation
-Create or update Practitioner Role
-
-### PractitionerRole
-
-#### 9.	Implementer has information to be delivered to a practitioner and wants to 
-
-a.	check their place of work is current 
-b.	find their Healthlink edi
-c.	find their contact details (phone and email)
-
-##### Solution
-
-
-Search PractitionerRole with CPN
-Include Location or Read Location with id
-
-#### 10. Implementer has a person whose place of work details have changed and wants to 
-
-a.	Create or Update one of the person’s PractitionerRole details 
-
-##### Solution
-
-
-Read PractitionerRole with id or
-Search PractitionerRole with CPN
-Update or Create PractitionerRole
-
-### Location
-
-#### 11.	Implementer has name and other details about a location and wants to
-
-a.	Get the HPI Facility ID for the location
-
-##### Solution
-
-
-Search Location by name, type, address
-
-#### 12.	Implementer has a Ministry legacy identifier for a facility and wants to
-
-a.	Get the HPI Facility ID for the facility
-
-##### Solution
-
-
-Search Location by identifier using identifier.system
-
-#### 13.	Implementer has a HPI Facility ID (eg from patient’s NES enrolment details) and wants to
-
-a.	Check the details they have about the facility are correct
-b.	Get the Health link edi or contact details for the facility
-
-##### Solution
-
-
-Read Location by id
-
-#### 14.	Implementer has a HPI Facility ID and wants to
-
-a.	Get the contact details of the managing Organisation
-
-##### Solution
-
-
-Read Location by id include managingOrganisation
-
-#### 15.	Implementer wants to
-
-a.	Find all the facilities of a particular type eg enrolling GP, within a particular DHB, in a particular city or suburb, 
-
-##### Solution
-
-
-Search Location using type, dhb, address
-
-### Organisation
-
-#### 16.	Implementer has a HPI Organisation ID and wants to
-
-a.	Check the details they have about the organisation are correct
-b.	Get the contact details for the organisation
-
-##### Solution
-
-
-Read Organization by id 
-
-#### 17.	Implementer has details about an organisation and wants to
-
-c.	Get the HPI Organization ID for the organization
-
-##### Solution
-
-
-Search Organization by name, partOf 
+### Read Practitioner with Identifier (CPN)
+<img style="width:900px; float:none" src="uc1.png"/>
+
+Read practitioner processing steps:
+1.	The user supplies a CPN number for the practitioner to be looked up.
+2.	The integrating application sends an HTTP GET request for the Practitioner resource using the CPN to identify the practitioner whose information is being requested. 
+E.g. GET https://hpi.api.health.govt.nz/practitioner/99ZZZZ
+3.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4.	The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
+5.	The response containing the Practitioner resource is returned
+
+
+### Query Practitioner with another identifier (e.g. Nursing Council Number)
+
+<img style="width:900px; float:none" src="uc2.png"/>
+
+Read practitioner processing steps:
+1.	The user supplies a nursing council number for the practitioner to be looked up.
+2.	The integrating application sends an HTTP GET request for the Practitioner resource using the nursing council id to identify the practitioner whose information is being requested. E.g. 
+GET https://hpi.api.health.govt.nz/practitioner?identifier=https://standards.digital.health.nz/ns/nursing-council-id|999999
+3.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4.	The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
+5.	The response containing the Practitioner resource is returned
+6.	The integrating application displays the matching practitioner to the user
+
+
+
+### Search Practitioner using name and DoB
+
+<img style="width:900px; float:none" src="uc3.png"/>
+
+Search practitioner processing steps:
+1.	The user of the integrating application searches for a practitioner by entering the name and date of birth.
+2.	The integrating application sends an HTTP GET request for the Practitioner resource using the family and given name, and birthdate elements as search parameters E.g. GET https://hpi.api.health.govt.nz/practitioner?family=smith&given=nikau&birthdate=2001-01-01
+3.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4.	The matching practitioners are retrieved from the HPI
+5.	The response containing a bundle of matching practitioners is returned to the integrating application
+6.	The integrating application displays the matching practitioners the user
+
+
+### Update contact details or end-date on a PractitionerRole 
+
+<img style="width:900px; float:none" src="uc4.png"/>
+
+Update PractitionerRole processing steps (steps 1-6 not required if practitionerRole id already known):
+1.	The user initiates updating a PractitionerRole in the integrating application.
+2.	The integrating application sends an HTTP GET request (a FHIR search) for the list of PractitionerRoles referencing the Practitioner resource for the supplied CPN number. E.g. 
+GET https://hpi.api.health.govt.nz/practitionerRole?practitioner:practitioner.identifier=https://standards.digital.health.nz/ns/hpi-person-id|99ZZZZ
+3.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4.	The practitionerRoles related to the supplied CPN are retrieved from the HPI - ALT: No practitionerRoles found. OperationOutcome resource returned
+5.	The response containing a bundle of practitionerRole resources is returned
+6.	The consuming application displays the matching roles to the user
+7.	The user selects a role to update and supplies new contact details or an end date.
+8.	The API consumer sends an HTTP PUT request (a FHIR update) containing the previously returned practitionerRole with the new details entered by the user. E.g. PUT https://hpi.api.health.govt.nz/practitionerRole/1234567
+9.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+10.	The supplied practitionerRole is updated on the HPI.
+11.	The HPI FHIR API confirms a successful update – HTTP 200
+12.	The integrating application indicates to the user the update has been successful. 
+
+### Add new practitionerRole 
+<img style="width:900px; float:none" src="uc5.png"/>
+
+Add new practitionerRole processing steps:
+1.	The user initiates creating a new PractitionerRole in the integrating application
+2.	The integrating application sends an HTTP POST request (a FHIR create) containing the practitionerRole details
+3.	The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4.	A practitionerRole record is created and a PractitionerRole ID issued.
+5.	The HPI FHIR API confirms a successful update – HTTP 200
+6.	The integrating application indicates to the user the create has been successful. 
+7.	The integrating application retains the PractitionerRole ID for subsequent update requests 
+
+### Lookup EDI for an enrolled patient’s GP
+
+<img style="width:900px; float:none" src="uc6.png"/>
+
+Lookup EDI for an enrolled patient’s GP:
+1.	The user initiates searching for an EDI of a patient’s GP to send something to. 
+2.	The integrating application calls the SOAP Enrolment service with the patient’s NHI number.
+3.	The SOAP Enrolment web service returns the enrolment for a patient containing the OrgID, FacID, and GP’s CPN. 
+4.	The integrating application sends a read request for the Facility (location resource) using the FacID to the HPI FHIR API. 
+E.g. GET https://hpi.api.health.govt.nz/location/ F99999B
+5.	The requested is validated - ALT: Validation failure. OperationOutcome resource returned
+6.	The location resource is returned from the HPI. 
+7.	The integrating application extracts the telecom’s ContactPoint containing the EDI number for 

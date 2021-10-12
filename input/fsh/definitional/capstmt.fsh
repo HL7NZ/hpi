@@ -33,7 +33,6 @@ This is the computable resource that describes the RESTful endpoint
 
 
 * rest.resource.type = #Practitioner
-* rest.resource.supportedProfile = "http://hl7.org.nz/healthalliance/HpiPractitioner"
 * rest.resource.documentation = """
 Practitioner query
 
@@ -47,17 +46,19 @@ Practitioner query
 * rest.resource.interaction[1].code = #search-type
 * rest.resource.interaction[1].documentation = ""
 
+/* not in the fisrt release
 * rest.resource.interaction[2].code = #create
 * rest.resource.interaction[2].documentation = ""
 
 * rest.resource.interaction[3].code = #update
 * rest.resource.interaction[3].documentation = ""
 
+*/
 
 //identifier 
 * rest.resource.searchParam[0].name = "identifier"
 * rest.resource.searchParam[0].type = #token
-* rest.resource.searchParam[0].documentation = "Will only return active identifiers"
+//* rest.resource.searchParam[0].documentation = ""
 
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[1].name = "name"
@@ -84,13 +85,13 @@ Practitioner query
 //birthdate 
 * rest.resource.searchParam[5].name = "birthdate"
 * rest.resource.searchParam[5].type = #date
-* rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
+//temp todo - need to figure out url * rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
 * rest.resource.searchParam[5].documentation = "Supports a search on practitioner birthdate"
 
 //ra-identifier 
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
-* rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
+//temp todo * rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
 
 /* #endregion */
@@ -183,8 +184,7 @@ Organization query
 * rest.resource[2].searchParam[3].name = "partOf"
 * rest.resource[2].searchParam[3].type = #reference
 * rest.resource[2].searchParam[3].documentation = """
-Locates Organizations that are 'part of' another. For example, [host]/Organization?partOf=cmdhb would return all Organizations
-like hospitals that are part of the Organization with the id 'cmdhd'
+Locates Organizations that are 'part of' another. 
 """
 
 
@@ -206,6 +206,8 @@ Location query
 * rest.resource[3].interaction[0].code = #search-type
 * rest.resource[3].interaction[0].documentation = ""
 
+
+//todo - add read interaction
 
 * rest.resource[3].searchParam[0].name = "identifier"
 * rest.resource[3].searchParam[0].type = #token

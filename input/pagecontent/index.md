@@ -3,7 +3,7 @@ This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) int
 
 The HPI ([Health Provider Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from. The key entities that are supported are:
 
-The Person - described by the FHIR [Practitioner](http://hl7.org/fhir/practitioner.html) resource. Note that these are intended to be all providers of healthcare.
+The Person - described by the FHIR [Practitioner](http://hl7.org/fhir/practitioner.html) resource. 
 Facilities where healthcare is provided from. These are represented by [Location](http://hl7.org/fhir/location.html) resources.
 Organizations such as DHB’s, PHO,s and primary care organizations ([Organization](http://hl7.org/fhir/organization.html))
 In addition, there is support for registering where a Practitioner works, and in what role - the [PractitionerRole](http://hl7.org/fhir/practitionerrole.html) resource.
@@ -11,17 +11,17 @@ In addition, there is support for registering where a Practitioner works, and in
 The HPI serves 2 primary purposes:
 
 * A unique identifier for each individual or entity
-* The source of truth for the key information about that entity. 
+* An authoritative for the key information about that entity. 
 
-Note that the HPI is not necessarily the actual source of information (eg Practitioners are supplied by a registration authority, healthcare workers are supplied by their employing organisation) but it is the place to go to find the information.
 
 ### Description of tabs
 
+* **BusinessOverview:**  Business context of the HPI
 * **General notes:**  Common notes about how the API and contents are organized
 * **API:** The specific API features supported by the HPI.
-* **Profiles:** A list of the profiles that are defined by the guide. They are all descendants of NZ Base.
+* **Profiles:** A list of the profiles that are defined by the guide. 
 * **Extensions:** A list of the extensions defined by the guide, and extensions that are defined elsewhere.
-* **Identifiers:** The Identifier systems (Register numbers) currently defined.
+* **Identifiers:** The Identifier systems currently defined.
 * **Terminology:** The ValueSets and CodeSystems defined by the guide. 
 * **FAQ:** Frequently Asked Questions
 * **Artifact Index:** A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide. This page largely duplicates information in the Profiles and Extensions tab.

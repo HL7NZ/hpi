@@ -43,10 +43,12 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  # Use cases: usecases.html
+  Use cases: usecases.html
+  Business View: businessView.html
   General Notes: general.html
   Logical Models: logical.html
   API: capabilityStatement.html
+  FAQ: faq.html
   Profiles: profiles.html
   Extensions: extensions.html
   Identifiers: namingSystems.html

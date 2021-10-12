@@ -1,7 +1,7 @@
 
 //Aliases for extensions
 Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
-//Alias: $aliasType = http://hl7.org.nz/fhir/hpi/StructureDefinition/aliasType
+Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 
 Profile:        HpiOrganization
 Parent:         Organization
@@ -18,6 +18,7 @@ Description:    "An entity that provides services of interest to, or is involved
 //elements that have been removed
 * address 0..0
 * contact 0..0
+* endpoint 0..0
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 
@@ -69,13 +70,11 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier[dormant].use = #old (exactly)
 
 
-/* todo
 //add an extension to alias
 * alias.extension contains
-    alias-type named alias-type 0..1
+    $aliasType named alias-type 0..1
 
 
 * alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code (preferred)
-* alias.extension[alias-type] ^short = "The type of alias for this Organization - eg its Maori name"'
+* alias.extension[alias-type] ^short = "The type of alias for this Organization - eg its Maori name"
 
-*/

@@ -18,7 +18,7 @@ Profile:        HpiPractitioner
 Parent:         Practitioner
 Id:             HpiPractitioner
 Title:          "HPI Practitioner"
-Description:    "The practitioner exposed by the HPI. This is the person who delivers care - regardless of qualification."
+Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 
@@ -60,7 +60,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier contains 
     HPI 1..1 MS 
 
-* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
 * identifier[HPI].type 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"
