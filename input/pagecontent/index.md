@@ -11,23 +11,29 @@ In addition, there is support for registering where a Practitioner works, and in
 The HPI serves 2 primary purposes:
 
 * A unique identifier for each individual or entity
-* An authoritative for the key information about that entity. 
+* An authoritative source for the key information about that entity. 
 
 
 ### Description of tabs
 
-* **BusinessOverview:**  Business context of the HPI
+* **Business view:**  Business context of the HPI
+* **Use Cases:**  Expected Use Cases that the HPI supports
 * **General notes:**  Common notes about how the API and contents are organized
 * **API:** The specific API features supported by the HPI.
 * **Profiles:** A list of the profiles that are defined by the guide. 
 * **Extensions:** A list of the extensions defined by the guide, and extensions that are defined elsewhere.
-* **Identifiers:** The Identifier systems currently defined.
 * **Terminology:** The ValueSets and CodeSystems defined by the guide. 
 * **FAQ:** Frequently Asked Questions
 * **Artifact Index:** A page with all artifacts (Logical Models, Profiles, Extensions, Terminology and others) defined in this guide. This page largely duplicates information in the Profiles and Extensions tab.
-* **Table of Contents** All pages in the guide
-* **Support** Links to the FHIR spec and downloads. Also has links to the IG Companion (under review...)
+* **Support** Links to the FHIR spec and downloads. 
 
+### Identifiers
+
+This IG makes extensive use of identifiers - such as the Common Person Number (CPN). These
+are defined in the [New Zealand Base IG](http://hl7.org.nz/fhir/ig/base/) on the identifiers tab there.
+
+Note that these identifiers are correct as at the time of publishing the Base IG. When
+new identifiers are added, they will be present in the [build version](http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/index.html) of NZBase (that has not yet been approved for release)
 
 ### Logical Models
 

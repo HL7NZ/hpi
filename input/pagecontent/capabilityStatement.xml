@@ -59,7 +59,7 @@
 <tr>
 <td>ra-identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)</p>
+<td><p>This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)</p>
 </td>
 </tr>
 </table>
@@ -97,19 +97,19 @@
 <tr>
 <td>practitioner</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Given a Practitoner id, returns the PractitonerRoles associated with that id</p>
+<td><p>Given a Practitioner id, returns the PractitionerRoles associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>organization</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Given a Organization id, returns the PractitonerRoles associated with that id</p>
+<td><p>Given a Organization id, returns the PractitionerRoles associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>location</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Given a Location id, returns the PractitonerRoles associated with that id</p>
+<td><p>Given a Location id, returns the PractitionerRoles associated with that id</p>
 </td>
 </tr>
 <tr>
@@ -182,7 +182,7 @@
 <tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>The HPI Organization id.</p>
+<td><p>The HPI Organization id or the New Zealand Business Number (NZBN).</p>
 </td>
 </tr>
 <tr>
@@ -241,7 +241,7 @@
 <tr>
 <td>dhb</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><div>Definition: http://hl7.fhir.org/fhir/SearchParameter/dhb</div><p>Locations that are in a DHBs catchment area. This is a custom search</p>
+<td><p>Locations that are in a DHBs catchment area. This is a custom search</p>
 </td>
 </tr>
 <tr>

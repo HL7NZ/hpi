@@ -3,7 +3,7 @@ Id: Dhb_code
 Title: "District Health Board Code"
 Description: "A coded type for a DHB."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^url = "https://standards.digital.health.nz/fhir/ValueSet/dhb-code"
+* ^url = "https://nzhts.digital.health.nz/fhir/ValueSet/dhb-code"
 * ^version = "1.0"
 * ^status = #active
 * ^experimental = false

@@ -1,7 +1,4 @@
 
-### Business context
-
-Is there material to go here?
 
 ### Purpose of HPI and history
 The purpose of the HPI is to uniquely identify health providers and issue a lifetime identifier for use in the NZ health systems.  The HPI was established in 2008 so that people working in the health sector could be identified using their HPI number, no matter what the context. This would reduce the number of identifiers in use for health providers and reduce the complexity of systems. The HPI number is increasingly being used as the identifier of choice by systems designers.  The HPI also recognises practitioners’ registration numbers and can be used to map from the registration number to the HPI number.  
@@ -40,7 +37,7 @@ HPI Facility (Location resource) - holds identity, location and contact details 
 HPI PractitionerRole – holds the relationship details of practitioners to the places where they work and the organizations they work for, and the role they have there.  
 
  
-<img style="width:900px; float:none" src="resources1.png"/>
+<img style="width:500px; float:none" src="resources1.png"/>
 
 #### Context
 Responsible Authorities provide all the practitioner details in the HPI, most provide it on a weekly basis. The Ministry maintains the organisation and facility indexes based on requests from Ministry teams, ACC, PHOs and DHBs.   
@@ -49,10 +46,6 @@ The HPI is currently being used by DHBs, ACC, laboratories, ESR who receive extr
   
 <img style="width:900px; float:none" src="context.png"/>
 
-
-### Usecases
-Add here what is in the other word document
-***link to separate page??***
 
 ### Business Rules
 #### Searching for Practitioners

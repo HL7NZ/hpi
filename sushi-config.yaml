@@ -12,13 +12,13 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
-version: 0.2.0
+version: 0.9.0
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
 publisher:
-  name: David Hay
-  email: mailto:david.hay25@gmail.com
+  name: Ministry of Health
+  email: mailto:integration@health.govt.nz
 description: The HPI facade
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -43,16 +43,16 @@ releaseLabel: CI Build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   IG Home: index.html
-  Use cases: usecases.html
   Business View: businessView.html
+  Use cases: usecases.html
   General Notes: general.html
   Logical Models: logical.html
   API: capabilityStatement.html
   FAQ: faq.html
   Profiles: profiles.html
   Extensions: extensions.html
-  Identifiers: namingSystems.html
   Terminology: terminology.html
   Artifact Index: artifacts.html
   Support:
     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
+    "Full IG" : full-ig.zip

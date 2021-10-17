@@ -21,6 +21,7 @@ Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Practitioner profile</div>"
 * ^text.status = #additional
@@ -33,22 +34,39 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * address 0..0
 * photo 0..0
 
-//-------- copied from commom
 
+//top level  extensions
+//* extension contains 
+//    $nzEthnicity named nzEthnicity 0..6
 
 //top level  extensions
 * extension contains 
+    $death-date named death-date 0..1 and
+    $educational-qualification named educational-qualification 0..* and 
     $nzEthnicity named nzEthnicity 0..6
+
+* extension[death-date] ^short = "The date this person died"
 
 
 * address only NzAddress
 
 //must be one name with a family name
-//todo - should we really insist on a family name? May not always be known...
 * name 1..* MS
-//* name.family 1..1 MS
+* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
+* name.use ^short = "usual | official | old"
 
+//---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
+
+* identifier.type 0..0
+* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+
+* identifier.use from $identifier-use-vs
+* identifier.use ^short = "official | old"
+
+//* identifier.system ^example.label = "HPI"
+//* identifier.system ^example.valueUri = "https://standards.digital.health.nz/ns/hpi-provider-id"
+
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
 
@@ -56,48 +74,40 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.discriminator[1].path = "system"
 
 * identifier ^slicing.description = "The identifiers"
-* identifier ^slicing.rules = #open
+* identifier ^slicing.rules = #openAtEnd
+
 * identifier contains 
-    HPI 1..1 MS 
+    HPI 1..1 MS and 
+    dormant 0..* MS
 
 * identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
+* identifier[HPI].use ^short = "fixed to official"
+
 * identifier[HPI].type 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
 
 
-
-//--------
-
-//top level  extensions
-* extension contains 
-    $death-date named death-date 0..1 and
-    $educational-qualification named educational-qualification 0..*
-
-* extension[death-date] ^short = "The date this person died"
-
-* identifier.type 0..0
-* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
-* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
-
 //slice identifier to add none or more dormant HPI as Must Support.
 //The nzBase profile is sliced to define the current HPI, but only the PI system itself records others...
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "use"
-* identifier ^slicing.rules = #openAtEnd
-* identifier contains 
-    dormant 0..* MS
+//* identifier ^slicing.discriminator.type = #value
+//* identifier ^slicing.discriminator.path = "use"
+//* identifier ^slicing.rules = #openAtEnd
+//* identifier contains 
+//    dormant 0..* MS
 
-* identifier.system ^example.label = "HPI"
-* identifier.system ^example.valueUri = "https://standards.digital.health.nz/ns/hpi-provider-id"
     
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
 * identifier[dormant].use = #old (exactly)
+* identifier[dormant].use ^short = "fixed to old"
+
 * identifier[dormant].type 0..0
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
 
+
+//-------- end of identifier slicing --------
 
 //the gender is required by the HPI
 * gender 1..1

@@ -12,7 +12,7 @@ Title:          "HPI Location"
 Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-location"
 //elements that have been removed
 * operationalStatus 0..0
 * mode 0..0
@@ -43,17 +43,23 @@ Description:    "A physical location from which health goods and/or services are
     dormant 0..* MS and
     legacyFacId 0..1 MS
 
+
+    //bind to https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+
 * identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[facId].use = #official (exactly)
+* identifier[facId].use ^short  = "fixed to official"
 * identifier[facId] ^short = "The current Facility id for this location"
 
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[dormant].use = #old (exactly)
+* identifier[dormant].use ^short  = "fixed to old"
 * identifier[dormant] ^short = "Old facility id's that have been deprecated"
 
 
 * identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/nzhis-facility-id" (exactly)
 * identifier[legacyFacId].use = #official (exactly)
+* identifier[legacyFacId].use ^short  = "fixed to official"
 * identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
 
 //top level  extensions
@@ -64,10 +70,14 @@ Description:    "A physical location from which health goods and/or services are
 * extension[established] ^short = "The date when this location first became available for use"
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
 
-* status from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code
+//* status from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code
 
 //the use elements use only a subset of the values...
 //* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
+* identifier.use from $identifier-use-vs
+* identifier.use ^short = "official | old"
+
+
 * telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 
@@ -82,5 +92,5 @@ Description:    "A physical location from which health goods and/or services are
 
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
 
-* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/alias-type-code (preferred)
+* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
 * alias.extension[alias-type] ^short = "The type of alias this is - eg its Maori name"

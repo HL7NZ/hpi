@@ -9,6 +9,7 @@ Title:          "HPI Practitioner role"
 Description:    "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner-role"
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI PractitionerRole profile</div>"
 * ^text.status = #additional

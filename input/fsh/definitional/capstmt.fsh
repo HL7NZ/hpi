@@ -23,7 +23,7 @@ This is the computable resource that describes the RESTful endpoint
 * format = #json
 
 * implementation.description = "The HPI endpoint"
-* implementation.url = "http://moh.org.nz/hpi/fhir"
+* implementation.url = "https://api.hip.digital.health.nz/fhir/hpi/v1/"
 
 * rest.mode = #server
 
@@ -92,7 +92,7 @@ Practitioner query
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
 //temp todo * rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
-* rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier suplied by the Registartion Authority (Practitioner.qualification.identifier)"
+* rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)"
 
 /* #endregion */
 
@@ -123,17 +123,17 @@ PractitionerRole query
 * rest.resource[1].searchParam[0].name = "practitioner"
 * rest.resource[1].searchParam[0].type = #reference
 //* rest.resource[1].searchParam[0].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[0].documentation = "Given a Practitoner id, returns the PractitonerRoles associated with that id"
+* rest.resource[1].searchParam[0].documentation = "Given a Practitioner id, returns the PractitionerRoles associated with that id"
 
 * rest.resource[1].searchParam[1].name = "organization"
 * rest.resource[1].searchParam[1].type = #reference
 //* rest.resource[1].searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[1].documentation = "Given a Organization id, returns the PractitonerRoles associated with that id"
+* rest.resource[1].searchParam[1].documentation = "Given a Organization id, returns the PractitionerRoles associated with that id"
 
 * rest.resource[1].searchParam[2].name = "location"
 * rest.resource[1].searchParam[2].type = #token
 //* rest.resource[1].searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[2].documentation = "Given a Location id, returns the PractitonerRoles associated with that id"
+* rest.resource[1].searchParam[2].documentation = "Given a Location id, returns the PractitionerRoles associated with that id"
 
 * rest.resource[1].searchParam[3].name = "identifier"
 * rest.resource[1].searchParam[3].type = #token
@@ -179,7 +179,7 @@ Organization query
 
 * rest.resource[2].searchParam[2].name = "identifier"
 * rest.resource[2].searchParam[2].type = #token
-* rest.resource[2].searchParam[2].documentation = "The HPI Organization id."
+* rest.resource[2].searchParam[2].documentation = "The HPI Organization id or the New Zealand Business Number (NZBN)."
 
 * rest.resource[2].searchParam[3].name = "partOf"
 * rest.resource[2].searchParam[3].type = #reference
@@ -231,7 +231,7 @@ Location query
 
 * rest.resource[3].searchParam[5].name = "dhb"
 * rest.resource[3].searchParam[5].type = #token
-* rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
+//* rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
 * rest.resource[3].searchParam[5].documentation = "Locations that are in a DHBs catchment area. This is a custom search"
 
 * rest.resource[3].searchParam[6].name = "status"

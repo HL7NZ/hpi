@@ -1,14 +1,6 @@
 <h3>ValueSets</h3>
 <table class='table table-bordered table-condensed'>
 <tr>
-<td> <a href="http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/ValueSet-location-alias-type.html">https://nzhts.digital.health.nz/fhir/ValueSet/alias-type-code</a> </td>
-<td> <p>The complete set of alias types that apply to Locations and Organizations</p> </td>
-<td>
-<div>Location.alias.extension.value[x]</div>
-</td>
-<td>NZ base</td>
-</tr>
-<tr>
 <td> <a href="http://build.fhir.org/ig/HL7NZ/hpi/branches/master/ValueSet-hpi-address-use.html">https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code</a> </td>
 <td> <p>Use values for an Address</p> </td>
 <td>
@@ -40,14 +32,7 @@
 <td>
 <div>Practitioner.identifier.system</div>
 <div>Practitioner.identifier.system</div>
-</td>
-<td>HPI</td>
-</tr>
-<tr>
-<td> <a href="http://build.fhir.org/ig/HL7NZ/hpi/branches/master/ValueSet-location-status.html">https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code</a> </td>
-<td> <p>Status of Location - is it still in use</p> </td>
-<td>
-<div>Location.status</div>
+<div>Practitioner.identifier.system</div>
 </td>
 <td>HPI</td>
 </tr>

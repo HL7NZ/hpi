@@ -9,7 +9,7 @@ Usage: #definition
 * text.status = #additional
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>Practitioner birthdate search</div>"
 
-* url = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
+* url = "http://hl7.org.nz/fhir/hpi/SearchParameter/hpi-practitioner-birth-date"
 * name = "HpiPractitionerBirthdate"
 
 * status = #draft

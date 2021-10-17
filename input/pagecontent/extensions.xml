@@ -59,14 +59,6 @@
 </tr>
 <tr>
 <td>Practitioner</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p></td>
-<td>
-<div><a href='undefinedStructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Practitioner</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
 <td><p>The date of death of the individual, plus the source of that information</p></td>
 <td>
@@ -79,6 +71,14 @@
 <td><p>Educational qualifications a practitioner has. These may or may not be related to registration information.</p></td>
 <td>
 <div><a href='undefinedStructureDefinition-educational-qualification.html'>NZ base</a></div>
+</td>
+</tr>
+<tr>
+<td>Practitioner</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
+<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p></td>
+<td>
+<div><a href='undefinedStructureDefinition-nz-ethnicity.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
