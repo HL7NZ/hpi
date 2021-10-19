@@ -51,7 +51,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * address only NzAddress
 
 //must be one name with a family name
-* name 1..* MS
+* name 1..* 
 * name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
 
@@ -89,13 +89,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
 
 
-//slice identifier to add none or more dormant HPI as Must Support.
-//The nzBase profile is sliced to define the current HPI, but only the PI system itself records others...
-//* identifier ^slicing.discriminator.type = #value
-//* identifier ^slicing.discriminator.path = "use"
-//* identifier ^slicing.rules = #openAtEnd
-//* identifier contains 
-//    dormant 0..* MS
 
     
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)

@@ -190,7 +190,7 @@ GET [host]/PractitionerResource?practitioner=96YYY
 
 The 'must support' indicator means that the client must have a strategy to deal with this element. details [here](http://hl7.org/fhir/profiling.html#mustsupport)
 
-(todo - more details needed)
+For this IG, that means that if the element is present, the client must know how to interpret it. For example display it to the user or store in in the local store.
 
 ### Contained resources
 

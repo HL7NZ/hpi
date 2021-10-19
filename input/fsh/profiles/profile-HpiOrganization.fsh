@@ -39,7 +39,8 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier ^slicing.rules = #open
 * identifier contains 
     orgId 1..1 MS and
-    legacyOrgId 0..1 MS
+    legacyOrgId 0..1 and 
+    nzbn 0..0 MS
     
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"
@@ -53,6 +54,11 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier[legacyOrgId].use = #official (exactly)
 * identifier[legacyOrgId].use ^short = "fixed to official"
 * identifier[legacyOrgId] ^short = "The MOH (NZHIS) Legacy agency code)"
+
+* identifier[nzbn].system = "https://standards.digital.health.nz/ns/hpi-nzbn" (exactly)
+* identifier[nzbn].use = #official (exactly)
+* identifier[nzbn].use ^short = "fixed to official"
+* identifier[nzbn] ^short = "The New Zealand Business Number"
 
 //------------
 

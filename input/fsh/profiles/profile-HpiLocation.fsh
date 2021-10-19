@@ -41,10 +41,10 @@ Description:    "A physical location from which health goods and/or services are
 * identifier contains 
     facId 1..1 MS and
     dormant 0..* MS and
-    legacyFacId 0..1 MS
+    legacyFacId 0..1 
 
 
-    //bind to https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+
 
 * identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[facId].use = #official (exactly)
