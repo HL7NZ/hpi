@@ -43,8 +43,6 @@ _Practitioner.qualification.identifier_ is the identifier assigned by the Regist
 
 The Practitioner resource has a single qualification element that holds 2 distinct categories of information from the perspective of the HPI.
 
-
-
 *   _Qualifications_ are regarded as recognition of a particular academic achievement. For example a medical or nursing degree
 *   _Registrations_ are statements of ‘fitness to practice’ in New Zealand, and are conferred by the Registration authority. Generally - though not always - there is a degree as well, though it is at the discretion of the Registration Authority that fitness to practice is stated.
 
