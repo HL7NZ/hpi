@@ -33,6 +33,7 @@ This is the computable resource that describes the RESTful endpoint
 
 
 * rest.resource.type = #Practitioner
+* rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
 * rest.resource.documentation = """
 Practitioner query
 
@@ -98,7 +99,7 @@ Practitioner query
 
 // ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
-* rest.resource[1].supportedProfile = "http://hl7.org.nz/healthalliance/HpiPractitionerRole"
+* rest.resource[1].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner-role"
 * rest.resource[1].documentation = """
 PractitionerRole query
 
@@ -155,7 +156,7 @@ PractitionerRole query
 
 // ============== The Organization endpoint
 * rest.resource[2].type = #Organization
-* rest.resource[2].supportedProfile = "http://hl7.org.nz/healthalliance/HpiOrganization"
+* rest.resource[2].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-organization"
 * rest.resource[2].documentation = """
 Organization query
 
@@ -192,7 +193,7 @@ Locates Organizations that are 'part of' another.
 //================== Location =================
 
 * rest.resource[3].type = #Location
-* rest.resource[3].supportedProfile = "http://hl7.org.nz/healthalliance/HpiLocation"
+* rest.resource[3].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-location"
 * rest.resource[3].documentation = """
 Location query
 
