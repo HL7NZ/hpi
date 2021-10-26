@@ -5,22 +5,22 @@
 <tr><th>Id</th><th>Url</th><th>Description</th></tr>
 <tr>
 <td><a href='StructureDefinition-HpiLocation.html'>HpiLocation</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/hpi-location</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/HPILocation</td>
 <td><p>A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-HpiOrganization.html'>HpiOrganization</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/hpi-organization</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization</td>
 <td><p>An entity that provides services of interest to, or is involved in, the business of health care service provision.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-HpiPractitioner.html'>HpiPractitioner</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner</td>
 <td><p>The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services.</p></td>
 </tr>
 <tr>
 <td><a href='StructureDefinition-HpiPractitionerRole.html'>HpiPractitionerRole</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner-role</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole</td>
 <td><p>The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations.</p></td>
 </tr>
 <tr>

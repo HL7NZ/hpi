@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 /**
  * generates the terminology tab page
- * Copied from the scripts folder Oct-7
+ * Copied from the scripts folder Oct-7 and subsequently modifier
+ * 
+ * Intention is to have a summary of all VS used by any profile / extension def 
+ * 
+ * Process:
+ *  1. examine all the SD's in the guide looking for bindings and assemple a list of VS
+ *  2. 
+ * 
  * Differs from the one in scripts as it includes all ValueSets referenced by profiles - not just
  * those defined in the IG so don't want to muck up NZ Base.
  * 
@@ -25,8 +32,6 @@ let pathToProfiles = 'fsh-generated/resources'
 //let terminologyFile = "./terminology.html"
 
 let terminologyFile =  "input/pagecontent/terminology.md";  // for IG publisher
-
-
 
 
 //This is the list of all ValueSets defined in all IG's 

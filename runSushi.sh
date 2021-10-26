@@ -26,7 +26,8 @@ echo
 
 echo "Making local terminology summary"  
 #../scripts/makeTerminologySummary.js hpi
-localscripts/makeTerminologySummary.js
+python3 ./localscripts/makeTermSummary.py
+# localscripts/makeTerminologySummary.js
 echo
 
 echo "Making API summary"

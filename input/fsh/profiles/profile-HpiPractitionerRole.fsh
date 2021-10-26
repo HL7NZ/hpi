@@ -1,6 +1,7 @@
 //Aliases for extensions
 Alias: $practitionerRole-status-reason = http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason
 Alias: $practitionerRole-creator = http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator
+Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        HpiPractitionerRole
 Parent:         PractitionerRole
@@ -9,7 +10,7 @@ Title:          "HPI Practitioner role"
 Description:    "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner-role"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
 
 
 
@@ -58,9 +59,10 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * location 0..1
 * code 0..1
 * endpoint 0..0
-* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
+* telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
-// - wrong, should ne a NamingSystem* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+* telecom.extension contains
+    $edi-address named edi-address 0..1
 
 
-* code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-role-code
+* code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-role-code

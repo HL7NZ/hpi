@@ -42,6 +42,14 @@
 </td>
 </tr>
 <tr>
+<td>Location.telecom</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
+<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
+<td>
+<div><a href='undefinedStructureDefinition-edi-address.html'>NZ base</a></div>
+</td>
+</tr>
+<tr>
 <td>Organization</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
 <td><p>The period over which the location or Organization is open</p></td>
@@ -135,6 +143,14 @@
 <td><p>The organisation and person that created this role</p></td>
 <td>
 <div><a href='undefinedStructureDefinition-practitionerRole-creator.html'>NZ base</a></div>
+</td>
+</tr>
+<tr>
+<td>PractitionerRole.telecom</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
+<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
+<td>
+<div><a href='undefinedStructureDefinition-edi-address.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>

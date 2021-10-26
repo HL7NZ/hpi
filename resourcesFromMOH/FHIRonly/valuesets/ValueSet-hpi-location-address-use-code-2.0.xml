@@ -4,7 +4,7 @@
 		<profile
 			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
 	</meta>
-	<url value="https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code" />
+	<url value="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code" />
 	<version value="2.0" />
 	<name value="Hpi_location_address_use" />
 	<title value="Address Use for Location" />

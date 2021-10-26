@@ -2,8 +2,8 @@
 Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
 Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
-
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
+Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        HpiLocation
 Parent:         Location
@@ -12,7 +12,7 @@ Title:          "HPI Location"
 Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-location"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
 //elements that have been removed
 * operationalStatus 0..0
 * mode 0..0
@@ -78,13 +78,15 @@ Description:    "A physical location from which health goods and/or services are
 * identifier.use ^short = "official | old"
 
 
-* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
+* telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
+* telecom.extension contains
+    $edi-address named edi-address 0..1
 
 //* address only $commonAddress
-* address.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
+* address.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
 
-* type from https://standards.digital.health.nz/fhir/ValueSet/location-type-code
+* type from https://nzhts.digital.health.nz/fhir/ValueSet/location-type-code
 
 
 * alias.extension contains 

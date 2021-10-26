@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns="http://hl7.org/fhir">
 	<url
-		value="https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code" />
+		value="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code" />
 	<version value="1.0" />
 	<name value="Hpi_IdentfierUse" />
 	<title value="IdentifierUse" />

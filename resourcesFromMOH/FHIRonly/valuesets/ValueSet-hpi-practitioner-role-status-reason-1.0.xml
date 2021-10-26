@@ -4,7 +4,7 @@
 		<profile
 			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
 	</meta>
-	<url value="https://standards.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code" />
+	<url value="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-practitioner-role-status-reason-code" />
 	<version value="1.0" />
 	<name value="Hpi_practitioner_role_status_reason" />
 	<title value="PractitonerRole status reason" />

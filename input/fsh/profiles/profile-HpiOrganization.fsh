@@ -10,7 +10,7 @@ Title:          "HPI Organization"
 Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-organization"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
 
 * ^purpose = "Describe the Organization that will be returned by the HPI"
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Organization  profile</div>"
@@ -20,7 +20,7 @@ Description:    "An entity that provides services of interest to, or is involved
 * address 0..0
 * contact 0..0
 * endpoint 0..0
-* telecom.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
+* telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
 
 
@@ -87,6 +87,6 @@ Description:    "An entity that provides services of interest to, or is involved
     $aliasType named alias-type 0..1
 
 
-* alias.extension[alias-type].valueCodeableConcept from https://standards.digital.health.nz/fhir/ValueSet/organization-alias-type-code (preferred)
+* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/organization-alias-type-code (preferred)
 * alias.extension[alias-type] ^short = "The type of alias for this Organization - eg its Maori name"
 

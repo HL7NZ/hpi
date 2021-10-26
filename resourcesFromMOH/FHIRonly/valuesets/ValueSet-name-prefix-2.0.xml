@@ -4,7 +4,7 @@
 		<profile
 			value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
 	</meta>
-	<url value="https://standards.digital.health.nz/fhir/ValueSet/name-prefix-code" />
+	<url value="https://nzhts.digital.health.nz/fhir/ValueSet/name-prefix-code" />
 	<version value="2.0" />
 	<name value="Hpi_name_prefix" />
 	<title value="HPI Name Prefix" />

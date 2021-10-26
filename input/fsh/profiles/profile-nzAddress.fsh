@@ -36,3 +36,4 @@ Description:    "Adds building name, suburb, domicile code and geocode to the Ad
 * extension[suburb] ^short = "The suburb part of the address"
 * extension[building-name] ^short = "The name of the building"
 * extension[domicile-code] ^short = "The domicile code associated with this address"
+* extension[esam-id] ^short = "The esam id for this address"

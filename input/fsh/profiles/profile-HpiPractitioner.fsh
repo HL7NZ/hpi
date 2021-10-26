@@ -21,7 +21,7 @@ Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Practitioner profile</div>"
 * ^text.status = #additional
@@ -52,14 +52,14 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 //must be one name with a family name
 * name 1..* 
-* name.use from https://standards.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
+* name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
 
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
 
 * identifier.type 0..0
-* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+* identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"
@@ -122,4 +122,4 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
-* qualification.code from https://standards.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
+* qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
