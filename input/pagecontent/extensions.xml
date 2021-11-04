@@ -22,7 +22,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
 <td><p>The period over which the location or Organization is open</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-established.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -30,7 +30,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/dhb</td>
 <td><p>District Health Board relating to a NZ Healthcare Service, Location (Facility) or Patient (primary, physical home address).</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-dhb.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-dhb.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -38,7 +38,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
 <td><p>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-alias-type.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -46,7 +46,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
 <td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-edi-address.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -54,7 +54,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
 <td><p>The period over which the location or Organization is open</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-established.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -62,7 +62,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
 <td><p>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-alias-type.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
 <td><p>The date of death of the individual, plus the source of that information</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-death-date.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-death-date.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -78,15 +78,17 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/educational-qualification</td>
 <td><p>Educational qualifications a practitioner has. These may or may not be related to registration information.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-educational-qualification.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-educational-qualification.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
 <td>Practitioner</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p></td>
+<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
+
+<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-nz-ethnicity.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -94,7 +96,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-status-code</td>
 <td><p>An indicator of the practicing status of the practitioner as supplied by their Responsible Authority or professional body.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-registration-status-code.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-registration-status-code.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -102,7 +104,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation</td>
 <td><p>Additional authorisations that a practitioner is authorised to perform</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-additional-authorisation.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-additional-authorisation.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -110,7 +112,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice</td>
 <td><p>The type or range of health services a practitioner is authorised to perform, as determined by the Responsible Authority or professional body.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-scope-of-practice.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-scope-of-practice.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -118,7 +120,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice</td>
 <td><p>A full description of the conditions the health practitioner is subject to in relation to their scope of practice.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-condition-on-practice.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-condition-on-practice.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -126,7 +128,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date</td>
 <td><p>The date the practitioner first became registered with the Responsible Authority or professional body</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-registration-initial-date.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-registration-initial-date.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -134,7 +136,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason</td>
 <td><p>The reason for the status. Generally only used for inactive resources.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-practitionerRole-status-reason.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-status-reason.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -142,7 +144,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
 <td><p>The organisation and person that created this role</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-practitionerRole-creator.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-creator.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -150,7 +152,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
 <td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-edi-address.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -158,7 +160,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/nz-geocode</td>
 <td><p>New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-nz-geocode.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-geocode.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -166,7 +168,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
 <td><p>Suburb element of a NZ Address.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-suburb.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-suburb.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -174,7 +176,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/building-name</td>
 <td><p>The name of a building cited in an address.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-building-name.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-building-name.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
@@ -182,7 +184,7 @@
 <td>http://hl7.org.nz/fhir/StructureDefinition/domicile-code</td>
 <td><p>NZ Domicile Code. Derived from a patient&#39;s primary physical, home address.</p></td>
 <td>
-<div><a href='undefinedStructureDefinition-domicile-code.html'>NZ base</a></div>
+<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-domicile-code.html'>NZ base</a></div>
 </td>
 </tr>
 </table>

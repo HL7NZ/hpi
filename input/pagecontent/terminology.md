@@ -1,6 +1,5 @@
 This is a list of ValueSets used in this IG
 It is accurate at the time of publishing, but may have been updated since.
-<br></br>
 <table class='table table-bordered'>
 <tr><th>Title</th><th>Description</th><th>Url</th><th>Paths</th></tr>
 <tr>
