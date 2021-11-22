@@ -56,12 +56,6 @@
 <td><p>Supports a search on practitioner birthdate</p>
 </td>
 </tr>
-<tr>
-<td>ra-identifier</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)</p>
-</td>
-</tr>
 </table>
 <a name="PractitionerRole"> </a>
 <h3>PractitionerRole</h3>

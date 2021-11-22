@@ -39,10 +39,10 @@ Use the identifier in a search query.
 
 Example: 
 
-http://hpi.moh.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi|99ZZZZ
+http://hpi.moh.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi\|99ZZZZ
 
 
-(Note that both system and value are included in the query, with values separated by a ‘|’. When making the query, the ‘|’ needs to be url-escaped)
+(Note that both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
 
 This example will return a bundle of Practitioner resources with only a single entry (as the system enforces uniqueness of the HPI identifier). Other queries - eg name - may well return multiple instances.
 

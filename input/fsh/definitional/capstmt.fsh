@@ -88,13 +88,13 @@ Practitioner query
 * rest.resource.searchParam[5].type = #date
 //temp todo - need to figure out url * rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
 * rest.resource.searchParam[5].documentation = "Supports a search on practitioner birthdate"
-
+/*
 //ra-identifier 
 * rest.resource.searchParam[6].name = "ra-identifier"
 * rest.resource.searchParam[6].type = #token
 //temp todo * rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
 * rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)"
-
+*/
 /* #endregion */
 
 // ============== The PractitionerRole endpoint =============
