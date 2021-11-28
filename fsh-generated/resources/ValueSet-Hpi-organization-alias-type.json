@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Hpi_organization_alias_type",
+  "id": "Hpi-organization-alias-type",
+  "title": "HPI Alias Type (Organization)",
+  "description": "A coded type for an alias name for organisation.",
+  "version": "1.0",
+  "url": "https://nzhts.digital.health.nz/fhir/ValueSet/organization-alias-type-code",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "date": "2020-02-24T00:00:00+13:00",
+  "publisher": "New Zealand Ministry of Health",
+  "purpose": "A coded type for an alias name for organisation.",
+  "compose": {
+    "include": [
+      {
+        "system": "https://standards.digital.health.nz/ns/alias-type-code",
+        "version": "1.0",
+        "filter": [
+          {
+            "property": "code",
+            "op": "in",
+            "value": "aka,old,maori,legal,short,trade-as"
+          }
+        ]
+      }
+    ]
+  }
+}

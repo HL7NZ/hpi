@@ -1,9 +1,3 @@
-# ╭────────────────────────────────────────────────────────────────────────────────────────────────╮
-# │  ACTION REQUIRED: REVIEW AND EDIT THIS FILE TO ENSURE IT ACCURATELY REFLECTS YOUR PROJECT!     │
-# │                                                                                                │
-# │  This file was generated from your existing project files and will be used for SUSHI           │
-# │  configuration from now on. You may delete your package.json as it is no longer needed.        │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 # ╭────────────────────────────ImplementationGuide-hl7.org.nz.hpi.json─────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
@@ -23,9 +17,9 @@ description: The HPI facade
 license: CC0-1.0
 fhirVersion: 4.0.1
 
-# there is a dependency on the NHI to get address profile
+# there is a dependency on NZBase to get the extensions defined in there
 dependencies:
-  hl7.org.nz.fhir.ig.base: dev
+  hl7.org.nz.fhir.ig.base: current
 
 parameters:
   show-inherited-invariants: false

@@ -1,14 +1,11 @@
 #!/bin/bash
 
-# clear the input folders b4 the generate. Assumes that only sushi to writing to them!
-# rm -f input/examples/*.json
-# rm -f input/extensions/*.json
-# rm -f input/profiles/*.json
-# rm -f input/vocabulary/*.json
+# Run sushi to build the local IG
+# if that runs OK, then execute a number of scripts that build
+# some of the summary pages.
 
 
-
-sushi  -s -o .
+sushi  -s -o .      # need to include the snapshot
 
 if [[ $? -eq 0 ]]
 then
@@ -21,7 +18,7 @@ echo
 
 
 echo "Creating Profiles and extensions summary pages..."
-../scripts/makeProfilesAndExtensions.js hpi
+./scriptCopy/makeProfilesAndExtensions.js hpi
 echo
 
 echo "Making local terminology summary"  
@@ -31,11 +28,11 @@ python3 ./localscripts/makeTermSummary.py
 echo
 
 echo "Making API summary"
-../scripts/makeCapabilityStatement.js hpi
+./scriptCopy/makeCapabilityStatement.js hpi
 echo
 
-echo "Making NamingSystem summary"
-../scripts/makeNamingSystemSummary.js hpi
+# echo "Making NamingSystem summary"
+# ../scripts/makeNamingSystemSummary.js hpi
 
 
 else 

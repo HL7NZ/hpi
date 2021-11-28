@@ -24,12 +24,11 @@
 let markdown = require( "markdown" ).markdown;
 
 let fs = require('fs');
-//let igRoot = "/Users/davidhay/IG/";
-//let globalVSFileName = igRoot + "globalScripts/allVS.json"
+
 let globalVSFileName =  "../globalScripts/allVS.json"
 
 let pathToProfiles = 'fsh-generated/resources'
-//let terminologyFile = "./terminology.html"
+
 
 let terminologyFile =  "input/pagecontent/terminology.md";  // for IG publisher
 
