@@ -220,7 +220,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/Hpi-organisation-type"
+          "reference": "ValueSet/HpiOrganisation-type"
         },
         "name": "Organisation Type",
         "description": "Organisation type",
@@ -324,7 +324,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/Hpi-organisation-type"
+          "reference": "CodeSystem/HpiOrganisation-type"
         },
         "name": "Organisation Type",
         "description": "A coded value for organisation type.",

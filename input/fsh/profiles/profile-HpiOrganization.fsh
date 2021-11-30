@@ -41,6 +41,8 @@ Description:    "An entity that provides services of interest to, or is involved
     orgId 1..1 MS and
     legacyOrgId 0..1 and 
     nzbn 0..0 MS
+
+* type from https://nzhts.digital.health.nz/fhir/ValueSet/organisation-type-code
     
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"

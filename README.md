@@ -1,5 +1,11 @@
 # Repository for HPI IG
 
+## Pre requisites
+
+* Install sushi
+* Install Node.js (used by scripts)
+* Install IG publisher (if using local builds)
+
 ## Running a build
 
 There are 2 parts to running the build process
@@ -84,7 +90,7 @@ The simplifier platform is an alternative way of producing IG's that doesn't use
 
 However, as Simplifier is the current NZ registry, we do need to populate it, and this is done by importing the /output/package.tgz file into simplifier. This will import all the FHIR resources, but not the textual material. The process for doing this is outside the scope of these notes.
 
-## Importing terminology
+## Importing terminology resources
 
 The 'master' copies of terminology (ValueSets, CodeSystems) are maintained by MOH and included
 in the IG for ease of access to the implementer. These artifacts can be in one of 2 different locations:

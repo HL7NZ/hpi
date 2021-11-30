@@ -1,5 +1,5 @@
 ValueSet: Hpi_organisation_type
-Id: Hpi-organisation-type
+Id: HpiOrganisation_type
 Title: "Organisation Type"
 Description: "Organisation type"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

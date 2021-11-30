@@ -8,7 +8,8 @@
   "dependencies": {
     "hl7.fhir.nz.base": "current",
     "hl7.fhir.r4.core": "4.0.1",
-    "markdown": "^0.5.0"
+    "markdown": "^0.5.0",
+    "remarkable": "^2.0.1"
   },
   "language": "en",
   "author": "David Hay",

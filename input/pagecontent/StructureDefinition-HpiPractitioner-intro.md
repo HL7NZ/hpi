@@ -1,13 +1,11 @@
 
-The Practitioner resource represents any provider of healthcare - not restricted to those with formal qualifications. 
+The Practitioner resource represents any provider of healthcare - not restricted to those with formal qualifications.
 
-The current HPI contains practitioners covered by the Health Practitioners Competence Assurance Amendment Act 2019. This includes all  Dentists, Dental hygienist and Dental and Oral health therapist, Dietitians, Medical Laboratory Scientist and Technicians including phlebotomists and mortuary technicians, Anaesthetic Technologists, Medical Radiation Technologists, Medical Practitioners (all doctors and specialists), Midwifes, Nurses,	Occupational Therapists, Optometrists and optical dispensers, Pharmacists, Physiotherapists, Psychologists,	Psychotherapists. 	
+The current HPI contains practitioners covered by the Health Practitioners Competence Assurance Amendment Act 2019. This includes all Chiropractors, Dentists, Dental hygienist and Dental and Oral health therapist, Dietitians, Medical Laboratory Scientist and Technicians including phlebotomists and mortuary technicians, Anaesthetic Technologists, Medical Radiation Technologists, Medical Practitioners (all doctors and specialists), Midwifes, Nurses, Occupational Therapists, Optometrists and optical dispensers, Osteopaths, Paramedics, Pharmacists, Physiotherapists, Podiatrist, Psychologists.
 
-Chiropractors, Podiatrist and Osteopaths also covered by the Act are working towards supplying their members data to the HPI also.
+It is intended with the upgraded capabilities that other professional groups may supply their members eg Social Workers, Acupuncturists, Audiologists, Counsellors, Cardiac Physiologists, Nutritionist.
 
-It is intended with the upgraded capabilities that other professional groups will also supply their members also eg Social Workers, Acupuncturists, Audiologists, Counsellors, Cardiac Physiologists, paramedics, Nutritionist.
-
-Other groups of health workers will need a CPN to be identified in digital records eg Allied Health assistants, Aged care, Personal Care and support workers, administrative staff, practice managers, students working in healthcare setting,
+Other groups of health workers will need a CPN to be identified in digital records eg Allied Health assistants, Aged care, Personal Care and support workers, administrative staff, practice managers, students working in healthcare setting.
 
 Consideration is being given to ‘self-asserted’ data.
 

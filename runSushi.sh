@@ -18,17 +18,17 @@ echo
 
 
 echo "Creating Profiles and extensions summary pages..."
-./scriptCopy/makeProfilesAndExtensions.js hpi
+./localscripts/makeProfilesAndExtensions.js hpi
 echo
 
 echo "Making local terminology summary"  
 #../scripts/makeTerminologySummary.js hpi
-python3 ./localscripts/makeTermSummary.py
-# localscripts/makeTerminologySummary.js
+# python3 ./localscripts/makeTermSummary.py
+./localscripts/makeTerminologySummary.js
 echo
 
 echo "Making API summary"
-./scriptCopy/makeCapabilityStatement.js hpi
+./localscripts/makeCapabilityStatement.js hpi
 echo
 
 # echo "Making NamingSystem summary"

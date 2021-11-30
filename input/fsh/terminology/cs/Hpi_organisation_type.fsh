@@ -1,9 +1,9 @@
 CodeSystem: Hpi_organisation_type
-Id: Hpi-organisation-type
+Id: HpiOrganisation_type
 Title: "Organisation Type"
 Description: "A coded value for organisation type."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
-* ^url = "https://standards.digital.health.nz/ns/organisation-type-code"
+* ^url = "https://nzhts.digital.health.nz/ns/organisation-type-code"
 * ^version = "1.1"
 * ^status = #active
 * ^experimental = false

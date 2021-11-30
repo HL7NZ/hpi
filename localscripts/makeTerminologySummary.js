@@ -1,22 +1,7 @@
 #!/usr/bin/env node
 /**
  * generates the terminology tab page
- * Copied from the scripts folder Oct-7 and subsequently modifier
- * 
- * Intention is to have a summary of all VS used by any profile / extension def 
- * 
- * Process:
- *  1. examine all the SD's in the guide looking for bindings and assemple a list of VS
- *  2. 
- * 
- * Differs from the one in scripts as it includes all ValueSets referenced by profiles - not just
- * those defined in the IG so don't want to muck up NZ Base.
- * 
- * It may be that this one becomes the one in scripts (as it will be used by dependant IGs)
- * and the one currently there becomes specific to NZBase
- * 
- * NEED TO EXECUTE ~/IG/globalScripts/makeGlobalIGSummary first, as it creates the 'allVS' file that has all VS defined by all IGs
- * 
+ * lists all VS used by the guide - but not VS from extensions defined in other IG (eg NZ Base)
  * Executed from the runSushi.sh script at the IG base
  * */
 
@@ -25,13 +10,13 @@ let markdown = require( "markdown" ).markdown;
 
 let fs = require('fs');
 
-let globalVSFileName =  "../globalScripts/allVS.json"
-
 let pathToProfiles = 'fsh-generated/resources'
 
-
+//the name of the file produced by this script
 let terminologyFile =  "input/pagecontent/terminology.md";  // for IG publisher
+let hashGlobalVS = {}
 
+/*
 
 //This is the list of all ValueSets defined in all IG's 
 //is a hash keyed on url  containing [{IG: (key) description: location: (url)}]
@@ -53,77 +38,96 @@ Object.keys(allVS1).forEach(function(key){
 
 //console.log(globalVS)
 
+*/
 
+//first, create a list of all ValueSets referred to by any profile or extension in the IG
 
-//first, create a list of all ValueSets defined in the IG
-
-//Next, go through all the profiles and get the bound elements
-
+let hashVS = {}     //all the VS referenced in any profile. key = url
+let hashVSDetails = {}   //the id of the VS. key = url
 let arFiles = fs.readdirSync(pathToProfiles);
+let hashPath = {}   //so that a path is only shown once...
+
 arFiles.forEach(function(fileName){
-    console.log(fileName)
+    
     if (fileName.indexOf('Structure') > -1) {
+        //a StructureDefinition - get the binding
         let SD = JSON.parse(fs.readFileSync(pathToProfiles + "/"+ fileName, {encoding: 'utf8'}));
         if (SD.snapshot && SD.snapshot.element && SD.kind !== 'logical') {
             SD.snapshot.element.forEach(function (ed) {
-                //console.log(ed.binding)
+               
                 if (ed.binding && ed.binding.valueSet) {
-                    console.log(ed.path + " " + ed.binding.valueSet)
-                    if (hashGlobalVS[ed.binding.valueSet]) {
-                        //ValueSet has been referenced
-                        //console.log('Binding to ' + ed.binding.valueSet + ' in ' + SD.url)
-                        //hashGlobalVS[ed.binding.valueSet].paths = hashGlobalVS[ed.binding.valueSet].paths || []
-                        if (hashGlobalVS[ed.binding.valueSet]) {
-                            hashGlobalVS[ed.binding.valueSet].paths.push({path:ed.path})
-                        } else {
-                            console.log(`>>>>>>> VS: ${ed.binding.valueSet} is in the ${ed.path} path, but the VS is not defined anywhere`)
-                        }
-                        
-
-                    } else {
-                        //A binding to a ValueSet not defined in this IG
-                        //could be from an extension of profile... 
-                        //arMissingBindings.push({path:ed.path,binding:ed.binding})
+                    let vsUrl = ed.binding.valueSet
+                    hashVS[vsUrl] = hashVS[vsUrl] || []
+                    if (! hashPath[ed.path]) {
+                        hashVS[vsUrl].push({path:ed.path})
+                        hashPath[ed.path] = true
                     }
+                    
                 }
                 
             })
         }
     }
-   
+
+    if (fileName.indexOf('ValueSet') > -1) {
+        //A valueset - get the id (as we need the VS.id for the link)
+        let VS = JSON.parse(fs.readFileSync(pathToProfiles + "/"+ fileName, {encoding: 'utf8'}));
+        hashVSDetails[VS.url] = {id:VS.id,description:VS.description}
+    }
 
 })
+
+//return
 
 //now assemble the html for all ValueSets references in any profile in the 
 
 let arVSHtml = []
+
 arVSHtml.push("<h3>ValueSets</h3>");
 
 arVSHtml.push("<table class='table table-bordered table-condensed'>");
 
-Object.keys(hashGlobalVS).forEach(function(key){
-    let vsItem = hashGlobalVS[key]
-    if (vsItem.paths.length > 0) {
-        console.log(vsItem)
-        //we're only interested in the VS where there is a paths element - ie some element in the profile referred to it
+Object.keys(hashVS).forEach(function(key){
+    let arPaths = hashVS[key]        //an array of paths. key = VS.url
+    let details = hashVSDetails[key]
 
-        let link = `<a href="${vsItem.location}">${key}</a> `
-        
+    if (details) {
+        //the VS is included in the IG
+
+        let link = `<a href="ValueSet-${details.id}.html">${key}</a> `
+
         arVSHtml.push("<tr>")
-        arVSHtml.push(`<td> ${link}</td>`)
-        arVSHtml.push(`<td> ${parseMarkDown(vsItem.description)} </td>`)
+        arVSHtml.push(`<td>${link}</td>`)
+        arVSHtml.push(`<td> ${parseMarkDown(details.description)} </td>`)
         arVSHtml.push("<td>")
-        vsItem.paths.forEach(function(path){
-         
-            arVSHtml.push(`<div>${path.path}</div>`)
+        arPaths.forEach(function(item){
+            arVSHtml.push(`<div>${item.path}</div>`)
         })
         arVSHtml.push("</td>")
-        arVSHtml.push(`<td>${vsItem.IGname}</td>`)
+        //arVSHtml.push(`<td>${vsItem.IGname}</td>`)
 
 
         arVSHtml.push("</tr>")
+    } else {
+        //this is a VS referred to in the IG, but not present in the IG
+        let link = `<a href="${key}">${key}</a> `    //Assume that the url resolves...
 
+        arVSHtml.push("<tr>")
+        arVSHtml.push(`<td>${link}</td>`)       //only the Url
+        //arVSHtml.push(`<td> ValueSet not present in the IG </td>`)
+        arVSHtml.push(`<td>  </td>`)
+        arVSHtml.push("<td>")
+        arPaths.forEach(function(item){
+            arVSHtml.push(`<div>${item.path}</div>`)
+        })
+        arVSHtml.push("</td>")
+        //arVSHtml.push(`<td>${vsItem.IGname}</td>`)
+
+
+        arVSHtml.push("</tr>")
     }
+
+   // }
 })
 
 let contents = arVSHtml.join("\r\n")
@@ -131,7 +135,7 @@ let contents = arVSHtml.join("\r\n")
 fs.writeFileSync(terminologyFile,contents);
 
 
-//console.log(hashGlobalVS)
+
 
 //convert markdown text to html
 function parseMarkDown(text) {
