@@ -27,7 +27,6 @@
 <td>
 <div>Location.identifier.type</div>
 <div>Organization.identifier.type</div>
-<div>Practitioner.identifier.type</div>
 <div>PractitionerRole.identifier.type</div>
 </td>
 </tr>
@@ -46,24 +45,10 @@
 </td>
 </tr>
 <tr>
-<td><a href="http://terminology.hl7.org/ValueSet/v2-0116">http://terminology.hl7.org/ValueSet/v2-0116</a> </td>
-<td>  </td>
-<td>
-<div>Location.operationalStatus</div>
-</td>
-</tr>
-<tr>
 <td><a href="ValueSet-Hpi-location-alias-type.html">https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code</a> </td>
 <td> <p>A coded type for an alias name for facilities.</p> </td>
 <td>
 <div>Location.alias.extension.value[x]</div>
-</td>
-</tr>
-<tr>
-<td><a href="http://hl7.org/fhir/ValueSet/location-mode|4.0.1">http://hl7.org/fhir/ValueSet/location-mode|4.0.1</a> </td>
-<td>  </td>
-<td>
-<div>Location.mode</div>
 </td>
 </tr>
 <tr>
@@ -107,18 +92,10 @@
 </td>
 </tr>
 <tr>
-<td><a href="http://hl7.org/fhir/ValueSet/location-physical-type">http://hl7.org/fhir/ValueSet/location-physical-type</a> </td>
-<td>  </td>
-<td>
-<div>Location.physicalType</div>
-</td>
-</tr>
-<tr>
 <td><a href="http://hl7.org/fhir/ValueSet/days-of-week|4.0.1">http://hl7.org/fhir/ValueSet/days-of-week|4.0.1</a> </td>
 <td>  </td>
 <td>
 <div>Location.hoursOfOperation.daysOfWeek</div>
-<div>PractitionerRole.availableTime.daysOfWeek</div>
 </td>
 </tr>
 <tr>
@@ -168,13 +145,6 @@
 <td> <p>The role a practitioner holds.</p> </td>
 <td>
 <div>PractitionerRole.code</div>
-</td>
-</tr>
-<tr>
-<td><a href="http://hl7.org/fhir/ValueSet/c80-practice-codes">http://hl7.org/fhir/ValueSet/c80-practice-codes</a> </td>
-<td>  </td>
-<td>
-<div>PractitionerRole.specialty</div>
 </td>
 </tr>
 <tr>
