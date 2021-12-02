@@ -55,7 +55,7 @@ arFiles.forEach(function(fileName){
         if (SD.snapshot && SD.snapshot.element && SD.kind !== 'logical') {
             SD.snapshot.element.forEach(function (ed) {
                
-                if (ed.binding && ed.binding.valueSet) {
+                if (ed.binding && ed.binding.valueSet && ed.max != "0") {
                     let vsUrl = ed.binding.valueSet
                     hashVS[vsUrl] = hashVS[vsUrl] || []
                     if (! hashPath[ed.path]) {
