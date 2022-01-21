@@ -1,4 +1,4 @@
-Afetr sushi and IG Publisher have bneen, run,  deploy the generated styructure definitions to nexus, with the command
+After sushi and IG Publisher have been, run,  deploy the generated structure definitions to nexus, with the command
 
 mvm clean deploy
 

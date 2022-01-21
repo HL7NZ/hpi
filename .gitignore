@@ -7,3 +7,5 @@ Thumbs.db
 /template
 /temp
 /.project
+/target/
+/.classpath

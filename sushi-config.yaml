@@ -6,6 +6,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
+#canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
 version: 0.9.0
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
@@ -19,7 +20,10 @@ fhirVersion: 4.0.1
 
 # there is a dependency on NZBase to get the extensions defined in there
 dependencies:
-  hl7.org.nz.fhir.ig.base: current
+  hl7.org.nz.fhir.ig.base:
+   uri: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
+   version: 1.0.0
+    
 
 parameters:
   show-inherited-invariants: false
