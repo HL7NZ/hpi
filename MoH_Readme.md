@@ -1,5 +1,13 @@
 # Building the IG
 
+
+
+| Current working branch | 0.9-snapshot |
+| ---------------------- | ------------ |
+| **latest release**     | -            |
+
+
+
 The HPI profiles are defined using the FSH (Fire Shorthand).  These are compiled into json [conformance modules](https://hl7.org/fhir/R4/conformance-module.html#:~:text=The%20Conformance%20Module%20represents%20metadata,used%20to%20create%20derived%20specifications.) (Structure Definitions, Value Sets , Code Sets and Capability Statements ...)  using sushi.  The Json files are used as input  to the IGPublisher tool which creates the static HTML files forthe IG web site
 
 Prerequisites
@@ -59,6 +67,9 @@ The HPI Profiles refer  to the HL7 NZ base profile. Currently this has to be ins
 
 3. Commit your  changes to the branch you wish to publish from 
 
+4. Deploy the conformance artifacts to Nexus: Run the command 
+   `mvn clean deploy`
+
 
 
 How to Publish
@@ -71,19 +82,4 @@ How to Publish
 `SnapshotBranchName`
 
  depending on the kind of release you are doing
-​    
 
-
-After sushi and IG Publisher have been, run,  deploy the generated structure definitions to nexus, with the command
-
-mvm clean deploy
-
-The  deployed artifact is is a zip of the xml files from output folder
-
-
-\
-
-
-
-To do
-- tidy this up with markdown
