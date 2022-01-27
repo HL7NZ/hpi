@@ -8,7 +8,7 @@
 
 
 
-The HPI profiles are defined using the FSH (Fire Shorthand).  These are compiled into json [conformance modules](https://hl7.org/fhir/R4/conformance-module.html#:~:text=The%20Conformance%20Module%20represents%20metadata,used%20to%20create%20derived%20specifications.) (Structure Definitions, Value Sets , Code Sets and Capability Statements ...)  using sushi.  The Json files are used as input  to the IGPublisher tool which creates the static HTML files forthe IG web site
+The HPI profiles are defined using the FSH (Fire Shorthand).  These are compiled into json [conformance modules](https://hl7.org/fhir/R4/conformance-module.html#:~:text=The%20Conformance%20Module%20represents%20metadata,used%20to%20create%20derived%20specifications.) (Structure Definitions, Value Sets , Code Sets and Capability Statements ...)  using sushi.  The Json files are used as input  to the IGPublisher tool which creates the static HTML files fort he IG web site
 
 Prerequisites
 -----------------
@@ -82,4 +82,6 @@ How to Publish
 `SnapshotBranchName`
 
  depending on the kind of release you are doing
+
+
 
