@@ -4,7 +4,7 @@ frontend:
     # IMPORTANT - Please verify your build commands
     build:
       commands: 
-        - unzip ./full-ig.zip
+        - unzip ./output/full-ig.zip
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
