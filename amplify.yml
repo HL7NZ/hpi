@@ -3,11 +3,12 @@ frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     build:
-      commands: []
+      commands: 
+        - unzip ./full-ig.zip
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: /output
+    baseDirectory: /
     files:
-      - full-ig.zip
+        - '**/*'
   cache:
     paths: []
