@@ -20,6 +20,863 @@
   "type": "http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/ProviderModel",
   "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
   "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "ProviderModel",
+        "path": "ProviderModel",
+        "short": "Healthcare provider",
+        "definition": "A person who delivers care",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.id",
+        "path": "ProviderModel.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.org/fhirpath/System.String",
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ]
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.extension",
+        "path": "ProviderModel.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.name",
+        "path": "ProviderModel.name",
+        "short": "Name of the practitioner",
+        "definition": "Name of the practitioner",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.name",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "HumanName"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.hpiCPN",
+        "path": "ProviderModel.hpiCPN",
+        "short": "The HPI Common Person Number",
+        "definition": "The HPI Common Person Number",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.hpiCPN",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.dormantCPN",
+        "path": "ProviderModel.dormantCPN",
+        "short": "Previously assigned CPN identifiers",
+        "definition": "Previously assigned CPN identifiers",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.dormantCPN",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.gender",
+        "path": "ProviderModel.gender",
+        "short": "Provider gender",
+        "definition": "Provider gender",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.gender",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        }
+      },
+      {
+        "id": "ProviderModel.birthDate",
+        "path": "ProviderModel.birthDate",
+        "short": "Date of Birth",
+        "definition": "Date of Birth",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.birthDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.deathDate",
+        "path": "ProviderModel.deathDate",
+        "short": "Date of Death",
+        "definition": "Date of Death",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.deathDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.communication",
+        "path": "ProviderModel.communication",
+        "short": "Language/s spoken by the provider",
+        "definition": "Language/s spoken by the provider",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.communication",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/languages"
+        }
+      },
+      {
+        "id": "ProviderModel.ethnicity",
+        "path": "ProviderModel.ethnicity",
+        "short": "Ethnicity of the provider",
+        "definition": "Ethnicity of the provider",
+        "min": 0,
+        "max": "6",
+        "base": {
+          "path": "ProviderModel.ethnicity",
+          "min": 0,
+          "max": "6"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/ethnic-group-level-4-code"
+        }
+      },
+      {
+        "id": "ProviderModel.registration",
+        "path": "ProviderModel.registration",
+        "short": "Professional registration",
+        "definition": "Professional registration",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.status",
+        "path": "ProviderModel.registration.status",
+        "short": "The status of the registration",
+        "definition": "The status of the registration",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.status",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code"
+        }
+      },
+      {
+        "id": "ProviderModel.registration.identifier",
+        "path": "ProviderModel.registration.identifier",
+        "short": "Any identifiers",
+        "definition": "Any identifiers",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.identifier",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.code",
+        "path": "ProviderModel.registration.code",
+        "short": "The code representing the qualification itself",
+        "definition": "The code representing the qualification itself",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.code",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.period",
+        "path": "ProviderModel.registration.period",
+        "short": "The period over which the registration is active (otherwise called the APC)",
+        "definition": "The period over which the registration is active (otherwise called the APC)",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.period",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.issuer",
+        "path": "ProviderModel.registration.issuer",
+        "short": "The organization that issued the registration",
+        "definition": "The organization that issued the registration",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.issuer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization"
+            ]
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.initialDate",
+        "path": "ProviderModel.registration.initialDate",
+        "short": "The date that this registration was first recorded",
+        "definition": "The date that this registration was first recorded",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.initialDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.additionalAuthorization",
+        "path": "ProviderModel.registration.additionalAuthorization",
+        "short": "Additional Authorizations for this provider",
+        "definition": "Additional Authorizations for this provider",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.additionalAuthorization",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.additionalAuthorization.code",
+        "path": "ProviderModel.registration.additionalAuthorization.code",
+        "short": "The code that represents the authorization",
+        "definition": "The code that represents the authorization",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.additionalAuthorization.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code"
+        }
+      },
+      {
+        "id": "ProviderModel.registration.additionalAuthorization.period",
+        "path": "ProviderModel.registration.additionalAuthorization.period",
+        "short": "The period over which the authorization is active",
+        "definition": "The period over which the authorization is active",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.additionalAuthorization.period",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.scopeOfPractice",
+        "path": "ProviderModel.registration.scopeOfPractice",
+        "short": "Scope of practice for this provider",
+        "definition": "Scope of practice for this provider",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.scopeOfPractice",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.scopeOfPractice.code",
+        "path": "ProviderModel.registration.scopeOfPractice.code",
+        "short": "The code that represents the Scope of practice",
+        "definition": "The code that represents the Scope of practice",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.scopeOfPractice.code",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code"
+        }
+      },
+      {
+        "id": "ProviderModel.registration.scopeOfPractice.description",
+        "path": "ProviderModel.registration.scopeOfPractice.description",
+        "short": "textual description",
+        "definition": "textual description",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.scopeOfPractice.description",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.scopeOfPractice.period",
+        "path": "ProviderModel.registration.scopeOfPractice.period",
+        "short": "The period over which the Scope of practice is active",
+        "definition": "The period over which the Scope of practice is active",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.scopeOfPractice.period",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.conditionOnPractice",
+        "path": "ProviderModel.registration.conditionOnPractice",
+        "short": "Conditions that affect what this provider can do",
+        "definition": "Conditions that affect what this provider can do",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.conditionOnPractice",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.conditionOnPractice.description",
+        "path": "ProviderModel.registration.conditionOnPractice.description",
+        "short": "textual description",
+        "definition": "textual description",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "ProviderModel.registration.conditionOnPractice.description",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      },
+      {
+        "id": "ProviderModel.registration.conditionOnPractice.period",
+        "path": "ProviderModel.registration.conditionOnPractice.period",
+        "short": "The period over which the condition is active",
+        "definition": "The period over which the condition is active",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "ProviderModel.registration.conditionOnPractice.period",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ]
+      }
+    ]
+  },
   "differential": {
     "element": [
       {

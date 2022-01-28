@@ -10,7 +10,7 @@ frontend:
         - cp ../output/full-ig.zip ./site/full-ig.zip
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: /
+    baseDirectory: /ig
     files:
         - '**/*'
   cache:

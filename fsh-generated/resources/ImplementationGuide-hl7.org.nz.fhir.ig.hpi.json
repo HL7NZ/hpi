@@ -26,10 +26,10 @@
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.org.nz.fhir.ig.base",
+      "packageId": "fhir.org.nz.ig.base",
       "uri": "https://fhir.org.nz/ig/base",
       "version": "1.0.0",
-      "id": "hl7_org_nz_fhir_ig_base"
+      "id": "fhir_org_nz_ig_base"
     }
   ],
   "definition": {

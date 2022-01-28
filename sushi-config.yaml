@@ -20,9 +20,11 @@ fhirVersion: 4.0.1
 
 # there is a dependency on NZBase to get the extensions defined in there
 dependencies:
-  hl7.org.nz.fhir.ig.base:
+  #hl7.org.nz.fhir.ig.base:
+  fhir.org.nz.ig.base:
    #uri: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
    uri: https://fhir.org.nz/ig/base
+   #version: 1.0.0
    version: 1.0.0
     
 
