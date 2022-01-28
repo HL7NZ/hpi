@@ -12,6 +12,6 @@ frontend:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
     files:
-        - '**/*
+        - '**/*'
   cache:
     paths: []
