@@ -12,9 +12,8 @@ frontend:
         - ls ./site
   artifacts:
     # IMPORTANT - Please verify your build output directory
-    baseDirectory: /ig
+    baseDirectory: /ig/site
     files:
         - '**/*'
-        - 'site/full-ig.zip'
   cache:
     paths: []
