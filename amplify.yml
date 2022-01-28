@@ -15,5 +15,6 @@ frontend:
     baseDirectory: /ig
     files:
         - '**/*'
+        - 'site/full-ig.zip'
   cache:
     paths: []
