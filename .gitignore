@@ -9,3 +9,4 @@ Thumbs.db
 /.project
 /target/
 /.classpath
+/fsh-generated/
