@@ -14,12 +14,12 @@
 <td><p>An entity that provides services of interest to, or is involved in, the business of health care service provision.</p></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-HpiPractitioner.html'>HpiPractitioner</a></td>
+<td><a href='StructureDefinition-HPIPractitioner.html'>HPIPractitioner</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner</td>
 <td><p>The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services.</p></td>
 </tr>
 <tr>
-<td><a href='StructureDefinition-HpiPractitionerRole.html'>HpiPractitionerRole</a></td>
+<td><a href='StructureDefinition-HPIPractitionerRole.html'>HPIPractitionerRole</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole</td>
 <td><p>The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations.</p></td>
 </tr>

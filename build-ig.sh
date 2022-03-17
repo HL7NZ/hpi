@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # echo cleaning up temp directory ...
-# rm -r  ./temp
+rm -r  ./temp
 
 echo running sushi ...
 ./runSushi.sh

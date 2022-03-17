@@ -5,7 +5,7 @@ Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 
 Profile:        HpiPractitionerRole
 Parent:         PractitionerRole
-Id:             HpiPractitionerRole
+Id:             HPIPractitionerRole
 Title:          "HPI Practitioner role"
 Description:    "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations."
 
@@ -25,7 +25,7 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * identifier ^slicing.rules = #openAtEnd
 
 * identifier contains 
-    RI 1..1 MS 
+    RI 0..1 MS 
 
 * identifier[RI].system = "https://standards.digital.health.nz/ns/hpi-practitionerrole-id" (exactly)
 * identifier[RI].use = #official (exactly)
@@ -42,7 +42,7 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
     $practitionerRole-status-reason named practitionerRole-status-reason 0..1 and 
     $practitionerRole-creator named practitionerRole-creator 0..1
 
-* extension[practitionerRole-status-reason] ^short = "The reson for the status of this role. Generally when it is inactive."
+* extension[practitionerRole-status-reason] ^short = "The reason for the status of this role. Generally when it is inactive."
 * extension[practitionerRole-creator] ^short = "The person and/or organization that created the PR"
     
 //elements that have been removed

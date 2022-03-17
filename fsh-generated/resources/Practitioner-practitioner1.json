@@ -8,9 +8,9 @@
   },
   "identifier": [
     {
-      "use": "official",
       "system": "https://standards.digital.health.nz/ns/hpi-person-id",
-      "value": "xxx1234"
+      "value": "xxx1234",
+      "use": "official"
     }
   ],
   "name": [

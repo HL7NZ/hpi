@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization",
-  "version": "0.9.0",
+  "version": "0.10-snapshot",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",

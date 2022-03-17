@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "OrganizationModel",
   "url": "http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/OrganizationModel",
-  "version": "0.9.0",
+  "version": "0.10-snapshot",
   "name": "OrganizationModel",
   "title": "An Organization involved in healthcare",
   "status": "active",

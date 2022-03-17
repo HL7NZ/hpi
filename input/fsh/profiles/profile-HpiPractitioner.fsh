@@ -16,7 +16,7 @@ Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 
 Profile:        HpiPractitioner
 Parent:         Practitioner
-Id:             HpiPractitioner
+Id:             HPIPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
 
@@ -42,7 +42,6 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //top level  extensions
 * extension contains 
     $death-date named death-date 0..1 and
-    $educational-qualification named educational-qualification 0..* and 
     $nzEthnicity named nzEthnicity 0..6
 
 * extension[death-date] ^short = "The date this person died"
@@ -77,7 +76,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.rules = #openAtEnd
 
 * identifier contains 
-    HPI 1..1 MS and 
+    HPI 0..1 MS and 
     dormant 0..* MS
 
 * identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
