@@ -24,16 +24,14 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 
 ### On-boarding
 1. To apply for access to the HPI test environment download these forms from [here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-it-developers)
-and email to integration@health.govt.nz
+and email to integration@health.govt.nz <br />
    a. privacy impact questionnaire  
-   b. onboarding questionnaire
-   c. access request form
-   
-The Ministry will issue credentials for the testing endpoint. 
+   b. onboarding questionnaire  
+   c. access request form  
+   The Ministry will issue credentials for the testing endpoint. 
 
-2. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)
-
-The Ministry will issue a compliance test report.
+2. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)  
+   The Ministry will issue a compliance test report.
 
 3. Each organisation using an application with HPI integrated services must apply individually for access to the production environment by completing an access request form and email
 to [integration@health.govt.nz](mailto:integration@health.govt.nz).
@@ -74,8 +72,7 @@ Provide the following details in a test report and email to [integration@health.
 | --------- | ------------------------------- | ------------ | ---------------- | --------- |
 | HPI-O-Search-1 | Minimum search criteria are included | Search for ‘New Zealand Army’ <br /> Search for ‘Hosptial Pharmacy’ | Organisation name is supplied and returns results | mandatory |
 | HPI-O-Search-2 | Search results are presented to user in score order |  | Results show highest scoring results first | mandatory |
-| HPI-O-Search-3 | System behaves appropriately when the name search criteria better matches an alias than the name | Search for ‘TryNSave Pharmacy’ | System allows user to view aliases before selecting a result <br />
-Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G | mandatory |
+| HPI-O-Search-3 | System behaves appropriately when the name search criteria better matches an alias than the name | Search for ‘TryNSave Pharmacy’ | System allows user to view aliases before selecting a result <br /> Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G | mandatory |
 | HPI-O-Search-4 | System can search using the NZBN identifier | NZBN= 9999999999057 | HPI details for GZZ920-C are presented | optional |
 
 
@@ -167,8 +164,8 @@ Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy 
 
 #### Security and Audit Assessment
 
-|Reference|Purpose|Mandatory|
-|---------||------|---------|
+| Reference | Purpose | Mandatory |
+| --------- | ------- | --------- |
 |Security 1|Credentials match those issued to the testing organisation|Mandatory|
 |Security 2|Sending user ID is an end user ID or a CPN|Mandatory|
 |Security 3|Sending user ID changes when different end users are initiating the request|Mandatory|
