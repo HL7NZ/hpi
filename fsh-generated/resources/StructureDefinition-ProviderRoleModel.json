@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "ProviderRoleModel",
   "url": "http://hl7.org.nz/fhir/ig/hpi/StructureDefinition/ProviderRoleModel",
-  "version": "0.10-snapshot",
+  "version": "0.10.0",
   "name": "ProviderRoleModel",
   "title": "Provider role",
   "status": "active",

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "0.9",
+  "version": "0.10.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -224,6 +224,11 @@
         {
           "nameUrl": "namingSystems.html",
           "title": "Naming Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "OnboardingAndComplianceTesting.html",
+          "title": "Onboarding And Compliance Testing",
           "generation": "markdown"
         },
         {
