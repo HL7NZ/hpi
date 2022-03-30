@@ -1,6 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "HpiCapabilityStatement",
+  "url": "http://hl7.org.nz/fhir/ig/hpi/CapabilityStatement/HpiCapabilityStatement",
   "jurisdiction": [
     {
       "coding": [

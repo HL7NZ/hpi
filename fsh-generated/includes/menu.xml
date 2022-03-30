@@ -55,7 +55,13 @@
         <a href="{{site.data.fhir.path}}index.html">FHIR Spec </a>
       </li>
       <li>
-        <a href="full-ig.zip">Full IG</a>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
       </li>
     </ul>
   </li>

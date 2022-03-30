@@ -1,6 +1,7 @@
 {
   "resourceType": "SearchParameter",
   "id": "HpiDHB",
+  "url": "http://hl7.org.nz/fhir/hpi/SearchParameter/hpi-dhb",
   "jurisdiction": [
     {
       "coding": [
@@ -11,7 +12,6 @@
       ]
     }
   ],
-  "url": "http://hl7.org.nz/fhir/hpi/SearchParameter/hpi-dhb",
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">DHB search</div>"

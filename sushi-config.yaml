@@ -58,4 +58,6 @@ menu:
   Artifact Index: artifacts.html
   Support:
     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
-    "Full IG" : full-ig.zip
+    "Download IG" : full-ig.zip
+    Artifacts (Json): definitions.json.zip
+    Artifacts (Xml): definitions.xml.zip
