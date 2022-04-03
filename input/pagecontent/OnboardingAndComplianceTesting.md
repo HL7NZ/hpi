@@ -41,18 +41,18 @@ to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 Provide the following details in a test report and email to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 
 1. Tester details
-   a. Organisation Name
-   b. Application name and version
-   c. HPI IG Version 
-   d. Test Script version
-   e. Testing start date and time and end date and time
-   f. Tester name and contact details
-   g. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
+..a. Organisation Name
+..b. Application name and version
+..c. HPI IG Version 
+..d. Test Script version
+..e. Testing start date and time and end date and time
+..f. Tester name and contact details
+..g. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
    
 2. For each test supply screen shots of:
-   a. the input data as entered in the integrating system (“the system”)
-   b. any warnings or error messages presented by the system
-   c. the confirmation or result of the request presented by the system
+..a. the input data as entered in the integrating system (“the system”)
+..b. any warnings or error messages presented by the system
+..c. the confirmation or result of the request presented by the system
 
 
 ### Tests
@@ -535,8 +535,7 @@ table, th, td {
 <tr>
 
 
-<h3>Security and Audit Assessment <br />
-All test messages will be assessed for the following</h3>
+<h3>Security and Audit Assessment</h3>
 <table>
 <style>
 table, th, td {
@@ -563,3 +562,5 @@ table, th, td {
 <td>Sending user ID changes when different end users are initiating the request</td>
 <td>Mandatory</td>
 <tr>
+
+All test messages will be assessed for the above security and audit requirements
