@@ -77,14 +77,6 @@
 </td>
 </tr>
 <tr>
-<td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/datum-code">https://nzhts.digital.health.nz/fhir/ValueSet/datum-code</a> </td>
-<td>  </td>
-<td>
-<div>Location.address.extension.extension.value[x]</div>
-<div>Address.extension.extension.value[x]</div>
-</td>
-</tr>
-<tr>
 <td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code">https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code</a> </td>
 <td>  </td>
 <td>

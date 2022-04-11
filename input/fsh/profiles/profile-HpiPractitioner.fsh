@@ -42,7 +42,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //top level  extensions
 * extension contains 
     $death-date named death-date 0..1 and
-    $nzEthnicity named nzEthnicity 0..6
+    $nzEthnicity named nzEthnicity 0..6 and 
+    $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
 
@@ -116,7 +117,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
-
+* qualification.id 0..0
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code

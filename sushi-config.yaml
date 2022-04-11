@@ -26,11 +26,15 @@ dependencies:
     
   hl7.org.nz.fhir.ig.hip-core:
      #uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
-     uri: 'https:ig-nhi.hip-uat.digital.health.nz'
+     #uri: 'https:ig-nhi.hip-uat.digital.health.nz'
+     uri: 'https://dev.d3ox9vcqia2rpj.amplifyapp.com/site'
      version: 1.0.0
      
 parameters:
   show-inherited-invariants: false
+  special-url:
+    - https://dev.d3ox9vcqia2rpj.amplifyapp.com/site
+  
 copyrightYear: 2020+
 releaseLabel: CI Build
 
