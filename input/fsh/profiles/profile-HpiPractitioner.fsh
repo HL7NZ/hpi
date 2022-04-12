@@ -47,8 +47,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
-#Idont think this is allwoed becase thge extenison is defined as "only" string
-#* extension[educational-qualification].extension[country].value[x] only  $country-code
+// I don't think this is allowed because the extension is defined as "only" string
+// * extension[educational-qualification].extension[country].value[x] only  $country-code
  
 * address only NzAddress
 
