@@ -102,7 +102,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //-------- end of identifier slicing --------
 
 //the gender is required by the HPI
-* gender 1..1
+//* gender 1..1
 
 //many extensions on qualification
 * qualification.extension contains
