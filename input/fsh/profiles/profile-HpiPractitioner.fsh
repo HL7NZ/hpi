@@ -47,15 +47,14 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
-// I don't think this is allowed because the extension is defined as "only" string
-// * extension[educational-qualification].extension[country].value[x] only  $country-code
- 
+* extension[death-date.source] 0..0
 * address only NzAddress
 
 //must be one name with a family name
-* name 1..* 
+// name 1..* Will use the standard name cardnality
 * name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
+* name.text 0..0
 
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
@@ -103,7 +102,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //-------- end of identifier slicing --------
 
 //the gender is required by the HPI
-* gender 1..1
+//* gender 1..1
 
 //many extensions on qualification
 * qualification.extension contains
@@ -120,6 +119,12 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 * qualification.id 0..0
+* qualification.identifier ^short = "The practitioner's identifier issued by the Responsible Authority eg medical council number, nursing council number"
+* qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
+* qualification.issuer ^short = "The HPI Organisation ID of the Responsible Authority that issues the registration"
+* qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
+* qualification.scope-of-practice ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
+
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
