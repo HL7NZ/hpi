@@ -46,7 +46,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
-
+* extension[death-date.source] 0..0
 
 * address only NzAddress
 
