@@ -29,7 +29,7 @@ The HPI serves 2 primary purposes:
 
 ### Identifiers
 
-This IG makes extensive use of identifiers - such as the Common Person Number (CPN). These
+This IG makes extensive use of identifiers - such as the HPI Person ID (CPN). These
 are defined in the [New Zealand Base IG](https://fhir.org.nz/ig/base/namingSystems.html) on the identifiers tab there.
 
 Note that these identifiers are correct as at the time of publishing the Base IG. When
