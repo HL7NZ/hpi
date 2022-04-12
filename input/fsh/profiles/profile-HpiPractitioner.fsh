@@ -54,6 +54,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 // name 1..* Will use the standard name cardnality
 * name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
+* name.text 0..0
 
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
