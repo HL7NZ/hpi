@@ -119,6 +119,12 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 * qualification.id 0..0
+* qualification.identifier ^short = "The practitioner's identifier issued by the Responsible Authority eg medical council number, nursing council number"
+* qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
+* qualification.issuer ^short = "The HPI Organisation ID of the Responsible Authority that issues the registration"
+* qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
+* qualification.scope-of-practice ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
+
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
