@@ -1,17 +1,22 @@
 
 This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) interface to the New Zealand HPI - Health Provider Index. It brings together all the artifacts that are necessary to understand and use the FHIR API.
 
-The HPI ([Health Provider Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from. The key entities that are supported are:
+The HPI ([Health Provider Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from.
 
-The Person - described by the FHIR [Practitioner](StructureDefinition-HPIPractitioner.html) resource. 
-Facilities where healthcare is provided from. These are represented by [Location](StructureDefinition-HpiLocation.html) resources.
-Organizations such as DHB’s, PHO,s and primary care organizations ([Organization](StructureDefinition-HpiOrganization.html)
-In addition, there is support for registering where a Practitioner works, and in what role - the [PractitionerRole](StructureDefinition-HPIPractitionerRole.html) resource.
+The key entities that are supported are:
+
+The Person - described by the FHIR [HPIPractitioner](StructureDefinition-HPIPractitioner.html) resource.
+
+Facilities where healthcare is provided from. These are represented by [HPILocation](StructureDefinition-HpiLocation.html) resource.
+
+Organizations such as DHB’s, PHO,s and primary care organizations. These are represented by the [HPIOrganization](StructureDefinition-HpiOrganization.html) resource.
+
+In addition, there is support for registering where a Practitioner works, and in what role - the [HPIPractitionerRole](StructureDefinition-HPIPractitionerRole.html) resource.
 
 The HPI serves 2 primary purposes:
 
 * A unique identifier for each individual or entity
-* An authoritative source for the key information about that entity. 
+* An authoritative source for the key information about that entity.
 
 
 ### Description of tabs
