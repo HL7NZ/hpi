@@ -51,7 +51,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * address only NzAddress
 
 //must be one name with a family name
-* name 1..* 
+// name 1..* Will use the standard name cardnality
 * name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
 
