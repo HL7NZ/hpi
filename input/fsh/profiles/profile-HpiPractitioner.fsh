@@ -12,6 +12,7 @@ Alias: $registration-initial-date = http://hl7.org.nz/fhir/StructureDefinition/r
 
 Alias: $scope-of-practice = http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
+Alias: $country-code = https://standards.digital.health.nz/ns/country-code
 
 
 Profile:        HpiPractitioner
@@ -46,8 +47,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
-
-
+#Idont think this is allwoed becase thge extenison is defined as "only" string
+#* extension[educational-qualification].extension[country].value[x] only  $country-code
+ 
 * address only NzAddress
 
 //must be one name with a family name
