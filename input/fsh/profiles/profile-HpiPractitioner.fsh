@@ -13,6 +13,7 @@ Alias: $registration-initial-date = http://hl7.org.nz/fhir/StructureDefinition/r
 Alias: $scope-of-practice = http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 Alias: $country-code = https://standards.digital.health.nz/ns/country-code
+Alias: $country-code-vs = https://nzhts.digital.health.nz/fhir/ValueSet/country-code
 
 
 Profile:        HpiPractitioner
@@ -47,8 +48,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
     $educational-qualification named educational-qualification 0..1
 
 * extension[death-date] ^short = "The date this person died"
-* extension[death-date.source] 0..0
+* extension[death-date].extension[source] 0..0
 * address only NzAddress
+
+* extension[educational-qualification].extension[country].value[x] from $country-code-vs
 
 //must be one name with a family name
 // name 1..* Will use the standard name cardnality
@@ -115,7 +118,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
-* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
+//* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 * qualification.id 0..0
@@ -123,7 +126,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
 * qualification.issuer ^short = "The HPI Organisation ID of the Responsible Authority that issues the registration"
 * qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
-* qualification.scope-of-practice ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
+* qualification.extension[scope-of-practice] ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
 
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 

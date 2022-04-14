@@ -21,14 +21,12 @@ fhirVersion: 4.0.1
 # there is a dependency on NZBase to get the extensions defined in there
 dependencies:
   fhir.org.nz.ig.base:
-     uri: 'http://fhir.org.nz/ig/base'
+     uri: 'http://hl7.org.nz/fhir/ig/base/ImplementationGuide/hl7.org.nz.fhir.ig.base'
      version: 1.0.0
     
   hl7.org.nz.fhir.ig.hip-core:
-     #uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
-     #uri: 'https:ig-nhi.hip-uat.digital.health.nz'
-     uri: 'https://dev.d3ox9vcqia2rpj.amplifyapp.com/site'
-     version: 1.0.0
+     uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
+     version: dev
      
 parameters:
   show-inherited-invariants: false

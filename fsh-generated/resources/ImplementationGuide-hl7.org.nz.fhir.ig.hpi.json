@@ -27,14 +27,14 @@
   "dependsOn": [
     {
       "packageId": "fhir.org.nz.ig.base",
-      "uri": "http://fhir.org.nz/ig/base",
+      "uri": "http://hl7.org.nz/fhir/ig/base/ImplementationGuide/hl7.org.nz.fhir.ig.base",
       "version": "1.0.0",
       "id": "fhir_org_nz_ig_base"
     },
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https://dev.d3ox9vcqia2rpj.amplifyapp.com/site",
-      "version": "1.0.0",
+      "uri": "https://nzhts.digital.health.nz/ig/hip-common-terminology",
+      "version": "dev",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     }
   ],
@@ -158,7 +158,7 @@
         },
         "name": "practitioner1",
         "description": "Example of practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        "exampleBoolean": true
       }
     ],
     "page": {

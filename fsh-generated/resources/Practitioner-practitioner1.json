@@ -1,11 +1,6 @@
 {
   "resourceType": "Practitioner",
   "id": "practitioner1",
-  "meta": {
-    "profile": [
-      "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
-    ]
-  },
   "identifier": [
     {
       "system": "https://standards.digital.health.nz/ns/hpi-person-id",
@@ -13,5 +8,9 @@
       "use": "official"
     }
   ],
-  "gender": "female"
+  "name": [
+    {
+      "text": "Dr Andrea welby"
+    }
+  ]
 }

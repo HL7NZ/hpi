@@ -120,6 +120,19 @@
 </td>
 </tr>
 <tr>
+<td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/dod-information-source-code">https://nzhts.digital.health.nz/fhir/ValueSet/dod-information-source-code</a> </td>
+<td>  </td>
+<td>
+<div>Practitioner.extension.extension.value[x]</div>
+</td>
+</tr>
+<tr>
+<td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/country-code">https://nzhts.digital.health.nz/fhir/ValueSet/country-code</a> </td>
+<td>  </td>
+<td>
+</td>
+</tr>
+<tr>
 <td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code">https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code</a> </td>
 <td>  </td>
 <td>
