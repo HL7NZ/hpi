@@ -7,7 +7,7 @@ All organisations and software vendors will be given access to all the HPI api o
 completing the on-boarding process described below.
 
 #### To the production environment:
-Access to **__HPI Organisation and HPI Facility Search and Get__** interactions is available to all health providers, responsible authorities and organisations who
+Access to **HPI Organisation and HPI Facility Search and Get** interactions is available to all health providers, responsible authorities and organisations who
 provide supporting services to health providers and responsible authorities.
 
 (Definitions: A health provider means a person or an organisation that provides, or arranges the provision of, personal health services or public health
@@ -17,20 +17,22 @@ Health Practitioners Competence Assurance Act 2003).
 Health providers and responsible authorities with existing HPI Data Access and Provision Agreements will be given access to Get and Search Practitioner under those
 agreements. This includes District Health Boards, ACC and Laboratories.
 
-Health providers without an agreement wanting access to __**Get and Search Practitioner**__ and any organisations wanting access to __**PractitionerRole Get, Search,
-Add and Update**__ interactions will need to apply to the Ministry of Health. The application will be assessed by the Ministry of Health Data Governance team and if
+Health providers without an agreement wanting access to **Get and Search Practitioner** and any organisations wanting access to **PractitionerRole Get, Search,
+Add and Update** interactions will need to apply to the Ministry of Health. The application will be assessed by the Ministry of Health Data Governance team and if
 granted an HPI Data Access Agreement must be signed prior to credentials being issued to production.
 
 
 ### On-boarding
 1. To apply for access to the HPI test environment download these forms from [here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-it-developers)
-and email to integration@health.govt.nz <br />
+and email to [integration@health.govt.nz](mailto:integration@health.govt.nz) <br />
    a. privacy impact questionnaire  
    b. onboarding questionnaire  
-   c. access request form  
+   c. access request form
+   
    The Ministry will issue credentials for the testing endpoint. 
 
-2. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)  
+2. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)
+
    The Ministry will issue a compliance test report.
 
 3. Each organisation using an application with HPI integrated services must apply individually for access to the production environment by completing an access request form and email
@@ -38,6 +40,7 @@ to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 
 
 ### Compliance testing
+
 Provide the following details in a test report and email to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 
 1. Tester details <br />
@@ -71,6 +74,7 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th>
 </tr>
+
 <tr>
 <td>HPI-O-Get-1</td>
 <td>System can supply a unique userID for each end user initiating requests</td>
@@ -78,18 +82,20 @@ table, th, td {
 <td>userID varies for each request</td>
 <td>mandatory</td>
 </tr>
+
 <tr>
-<td>HPI-O-Get-2</th>
-<td>System behaves appropriately when a dormant HPI-OrgID is requested</th>
-<td>GZZ995-A</th>
-<td>System does not error <br /> System returns appropriate messaging to user</th>
+<td>HPI-O-Get-2</td>
+<td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
+<td>GZZ995-A</td>
+<td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td>
 </tr>
+
 <tr>
-<td>HPI-O-Get-3</th>
-<td>System behaves appropriately when the organisation requested is no longer active</th>
+<td>HPI-O-Get-3</td>
+<td>System behaves appropriately when the organisation requested is no longer active</td>
 <td>GZZ903-C</th>
-<td>System returns appropriate messaging to user</th>
+<td>System returns appropriate messaging to user</td>
 <td>mandatory</td>
 </tr>
 </table>
@@ -102,19 +108,22 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<tr><th>Reference</th>
+<tr>
+<th>Reference</th>
 <th>Purpose – Demonstrate that the</th>
 <th>Input values</th>
 <th>Expected outcome</th>
-<th>Mandatory</th></tr>
-<tr>
+<th>Mandatory</th>
+</tr>
 
+<tr>
 <td>HPI-O-Search-1</td>
 <td>Minimum search criteria are included</td>
 <td>Search for ‘New Zealand Army’ <br /> Search for ‘Hosptial Pharmacy’</td>
 <td>Organisation name is supplied and returns results</td>
 <td>mandatory</td>
 </tr>
+
 <tr>
 <td>HPI-O-Search-2</td>
 <td>Search results are presented to user in score order</td>
@@ -122,6 +131,7 @@ table, th, td {
 <td>Results show highest scoring results first</td>
 <td>mandatory</td>
 </tr>
+
 <tr>
 <td>HPI-O-Search-3</td>
 <td>System behaves appropriately when the name search criteria better matches an alias than the name</td>
@@ -129,6 +139,7 @@ table, th, td {
 <td>System allows user to view aliases before selecting a result <br /> Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G</td>
 <td>mandatory</td>
 </tr>
+
 <tr>
 <td>HPI-O-Search-4</td>
 <td>System can search using the NZBN identifier</td>
