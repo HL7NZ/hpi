@@ -70,7 +70,7 @@ Description:    "A physical location from which health goods and/or services are
 * extension[established] ^short = "The date when this location first became available for use"
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
 
-//* status from https://standards.digital.health.nz/fhir/ValueSet/hpi-location-status-code
+* status from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code 
 
 //the use elements use only a subset of the values...
 //* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use

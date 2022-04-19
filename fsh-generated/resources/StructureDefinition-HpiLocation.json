@@ -2366,15 +2366,8 @@
         "isModifierReason": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid",
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "LocationStatus"
-            }
-          ],
           "strength": "required",
-          "description": "Indicates whether the location is still in use.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/location-status|4.0.1"
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code"
         },
         "mapping": [
           {
@@ -6043,6 +6036,14 @@
         "path": "Location.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/nzhis-facility-id"
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code"
+        }
       },
       {
         "id": "Location.operationalStatus",

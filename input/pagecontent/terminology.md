@@ -38,7 +38,7 @@
 </td>
 </tr>
 <tr>
-<td><a href="http://hl7.org/fhir/ValueSet/location-status|4.0.1">http://hl7.org/fhir/ValueSet/location-status|4.0.1</a> </td>
+<td><a href="https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code">https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code</a> </td>
 <td>  </td>
 <td>
 <div>Location.status</div>

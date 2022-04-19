@@ -59,11 +59,13 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * name.use ^short = "usual | official | old"
 * name.text 0..0
 
+
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
 
 * identifier.type 0..0
 * identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+* identifier.period 0..0
 
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"
