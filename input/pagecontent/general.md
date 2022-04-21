@@ -14,11 +14,9 @@ All of the FHIR resources in this implementation have both an id and an identifi
 
 The id is the ‘physical’ identity of the resource, and the identifier is the business identifier. 
 
-In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type and system in a resource). Thus the id for the resource above would be ‘99ZZZZ’, and the url something like:
+In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type and system in a resource). Thus the id for the resource above would be ‘99478’, and the url something like:
 
-http://hpi.moh.nz/fhir/Practitioner/99ZZZZ 
-
-(The actual root url for the HPI has not yet been determined).
+http://hpi.moh.nz/fhir/Practitioner/99478
 
 This design allows an implementer to retrieve a resource from the HPI and save it on their own system, but still be able to retrieve the original to check for updates. This can be done in 2 ways.
 
