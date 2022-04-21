@@ -16,7 +16,7 @@ The id is the ‘physical’ identity of the resource, and the identifier is the
 
 In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type and system in a resource). Thus the id for the resource above would be ‘99478’, and the url something like:
 
-http://hpi.moh.nz/fhir/Practitioner/99478
+http://hpi.moh.nz/fhir/Practitioner/92ZZRR
 
 This design allows an implementer to retrieve a resource from the HPI and save it on their own system, but still be able to retrieve the original to check for updates. This can be done in 2 ways.
 
