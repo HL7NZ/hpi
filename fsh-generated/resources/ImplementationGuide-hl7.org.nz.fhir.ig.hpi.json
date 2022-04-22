@@ -26,16 +26,16 @@
   ],
   "dependsOn": [
     {
+      "packageId": "hl7.org.nz.fhir.ig.hip-core",
+      "uri": "https:ig-nhi.hip-uat.digital.health.nz",
+      "version": "dev",
+      "id": "hl7_org_nz_fhir_ig_hip_core"
+    },
+    {
       "packageId": "fhir.org.nz.ig.base",
       "uri": "http://fhir.org.nz/ig/base",
       "version": "1.0.0",
       "id": "fhir_org_nz_ig_base"
-    },
-    {
-      "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https://dev.d3ox9vcqia2rpj.amplifyapp.com/site",
-      "version": "dev",
-      "id": "hl7_org_nz_fhir_ig_hip_core"
     }
   ],
   "definition": {
@@ -86,46 +86,6 @@
         },
         "name": "Esam_id",
         "description": "The id from eSam",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/EndpointModel"
-        },
-        "name": "Electronic connection point",
-        "description": "Describes the capabilities for electronic interaction",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/FacilityModel"
-        },
-        "name": "A facility involved in healthcare",
-        "description": "An actual physical location. Represented by a Location model in FHIR",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/OrganizationModel"
-        },
-        "name": "An Organization involved in healthcare",
-        "description": "An Organization involved in healthcare",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ProviderModel"
-        },
-        "name": "Healthcare provider",
-        "description": "A person who delivers care",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/ProviderRoleModel"
-        },
-        "name": "Provider role",
-        "description": "The role of a provider in a care delivery setting",
         "exampleBoolean": false
       },
       {
