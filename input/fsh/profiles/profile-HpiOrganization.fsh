@@ -40,7 +40,8 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier contains 
     orgId 1..1 MS and
     legacyOrgId 0..1 and 
-    nzbn 0..0 MS
+    nzbn 0..1 MS and
+    dormant 0..* MS
 
 * type from https://nzhts.digital.health.nz/fhir/ValueSet/organisation-type-code
     
@@ -62,6 +63,11 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier[nzbn].use ^short = "fixed to official"
 * identifier[nzbn] ^short = "The New Zealand Business Number"
 
+* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org" (exactly)
+* identifier[dormant].use = #old (exactly)
+* identifier[dormant].use ^short = "fixed to old"
+* identifier[dormant] ^short = "Identifiers which have been deprecated"
+
 //------------
 
 //top level  extensions
@@ -69,21 +75,7 @@ Description:    "An entity that provides services of interest to, or is involved
     $established named established 0..1  
 
 * extension[established] ^short = "The period over which this Organization has been established"
-    
-
-
-//slice the identifier
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "use"
-* identifier ^slicing.rules = #openAtEnd
-* identifier contains 
-    dormant 0..* MS
-
-
-* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org" (exactly)
-* identifier[dormant].use = #old (exactly)
-
-
+ 
 //add an extension to alias
 * alias.extension contains
     $aliasType named alias-type 0..1

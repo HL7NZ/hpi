@@ -545,7 +545,7 @@
               "path": "system"
             }
           ],
-          "rules": "openAtEnd"
+          "rules": "open"
         },
         "short": "Identifies this organization  across multiple systems",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
@@ -1894,7 +1894,7 @@
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Organization.identifier",
           "min": 0,
@@ -2339,7 +2339,7 @@
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
-        "short": "Identifies this organization  across multiple systems",
+        "short": "Identifiers which have been deprecated",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
@@ -2486,7 +2486,7 @@
       {
         "id": "Organization.identifier:dormant.use",
         "path": "Organization.identifier.use",
-        "short": "official | old",
+        "short": "fixed to old",
         "definition": "The purpose of this identifier.",
         "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
@@ -4283,7 +4283,7 @@
               "path": "system"
             }
           ],
-          "rules": "openAtEnd"
+          "rules": "open"
         },
         "min": 1
       },
@@ -4345,7 +4345,7 @@
         "sliceName": "nzbn",
         "short": "The New Zealand Business Number",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "mustSupport": true
       },
       {
@@ -4365,6 +4365,7 @@
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
+        "short": "Identifiers which have been deprecated",
         "min": 0,
         "max": "*",
         "mustSupport": true
@@ -4372,6 +4373,7 @@
       {
         "id": "Organization.identifier:dormant.use",
         "path": "Organization.identifier.use",
+        "short": "fixed to old",
         "min": 1,
         "fixedCode": "old"
       },
