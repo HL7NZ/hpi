@@ -22,8 +22,9 @@ Description:    "A physical location from which health goods and/or services are
 * position 0..0
 * endpoint 0..0
 
-
-
+* identifier.period 0..0
+* identifier.type 0..0
+ 
 //------- copied from commonLocation
 
 //Needs to be a different geocode as uses a different datum
@@ -42,8 +43,6 @@ Description:    "A physical location from which health goods and/or services are
     facId 1..1 MS and
     dormant 0..* MS and
     legacyFacId 0..1 
-
-
 
 
 * identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)

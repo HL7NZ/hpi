@@ -221,7 +221,7 @@
             {
               "name": "dhb",
               "type": "token",
-              "documentation": "Locations that are in a DHBs catchment area. This is a custom search"
+              "documentation": "Locations that are in a DHBs catchment area."
             },
             {
               "name": "status",
