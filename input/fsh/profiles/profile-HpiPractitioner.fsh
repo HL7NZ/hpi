@@ -63,9 +63,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
 
-* identifier.type 0..0
+
 * identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
-* identifier.period 0..0
+
 
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"
@@ -82,6 +82,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.description = "The identifiers"
 * identifier ^slicing.rules = #openAtEnd
 
+// setting type  and period to 0..0 at all slices level means is get set to 0..1 at individual slices, seems like a bug
+// * identifier.type 0..0
+// * identifier.period 0..0
+
 * identifier contains 
     HPI 0..1 MS and 
     dormant 0..* MS
@@ -91,6 +95,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[HPI].use ^short = "fixed to official"
 
 * identifier[HPI].type 0..0
+* identifier[HPI].period 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
 
@@ -100,6 +105,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[dormant].use ^short = "fixed to old"
 
 * identifier[dormant].type 0..0
+* identifier[dormant].period 0..0
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
 
