@@ -94,7 +94,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Get-3</td>
 <td>System behaves appropriately when the organisation requested is no longer active</td>
-<td>GZZ903-C</th>
+<td>GZZ903-C</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td>
 </tr>
