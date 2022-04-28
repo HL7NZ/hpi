@@ -1777,32 +1777,6 @@ Usage: #example
 * qualification.period.end = "2120-09-28"
 * qualification.issuer = Reference(Organization/G00004-B)
 
-Instance: 90ZZLP
-InstanceOf: Practitioner
-Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
-* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
-* extension[=].valueCodeableConcept.coding.version = "2.0"
-* extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
-* extension[=].valueCodeableConcept.text = "New Zealand European"
-* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
-* extension[=].valueDate = "2016-12-31"
-* identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
-* identifier.value = "90ZZLP"
-* identifier.assigner = Reference(Organization/G00001-G)
-* name.use = #official
-* name.text = "Father John Patrick Francis Mulcahy"
-* name.family = "Mulcahy"
-* name.given[0] = "John"
-* name.given[+] = "Patrick Francis"
-* name.prefix = "Father"
-* gender = #male
-* birthDate = "1932-10-20"
-* communication.coding.version = "2007"
-* communication.coding = urn:iso:std:iso:639:-3#eng "English"
-* communication.text = "English"
-
 Instance: 90ZZMG
 InstanceOf: Practitioner
 Usage: #example
@@ -1875,94 +1849,6 @@ Usage: #example
 * qualification.identifier.use = #official
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/medical-council-id"
 * qualification.identifier.value = "99530"
-* qualification.identifier.assigner = Reference(Organization/G00004-B)
-* qualification.code.coding.version = "2.0"
-* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC "Medical Council of New Zealand Register Number (MC)"
-* qualification.code.text = "Medical Council of New Zealand Register Number (MC)"
-* qualification.period.start = "2020-08-31"
-* qualification.period.end = "2022-08-31"
-* qualification.issuer = Reference(Organization/G00004-B)
-* communication.coding.version = "2007"
-* communication.coding = urn:iso:std:iso:639:-3#eng "English"
-* communication.text = "English"
-
-Instance: 92ZZRR
-InstanceOf: Practitioner
-Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
-* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
-* extension[=].valueCodeableConcept.coding.version = "2.0"
-* extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
-* extension[=].valueCodeableConcept.text = "New Zealand European"
-* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
-* extension[=].valueDate = "2000-04-10"
-* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
-* extension[=].extension[0].url = "fullname"
-* extension[=].extension[=].valueString = "Bachelor of Medicine Bachelor of Surgery"
-* extension[=].extension[+].url = "year"
-* extension[=].extension[=].valueDate = "1963"
-* extension[=].extension[+].url = "institution"
-* extension[=].extension[=].valueString = "Fort Wayne"
-* extension[=].extension[+].url = "city"
-* extension[=].extension[=].valueString = "Fort Wayne"
-* extension[=].extension[+].url = "country"
-* extension[=].extension[=].valueString = "UNITED STATES"
-* identifier[0].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
-* identifier[=].value = "92ZZRR"
-* identifier[=].assigner = Reference(Organization/G00001-G)
-* identifier[+].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
-* identifier[=].value = "99536"
-* identifier[=].assigner = Reference(Organization/G00004-B)
-* name.use = #official
-* name.text = "Major Frank Burns"
-* name.family = "Burns"
-* name.given = "Frank"
-* name.prefix = "Major"
-* gender = #male
-* birthDate = "1939-09-29"
-* qualification.extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
-* qualification.extension[=].extension[0].url = "code"
-* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "1.0"
-* qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#MCGE "General Scope of Practice"
-* qualification.extension[=].extension[=].valueCodeableConcept.text = "General Scope of Practice"
-* qualification.extension[=].extension[+].url = "description"
-* qualification.extension[=].extension[=].valueString = "General Scope of Practice"
-* qualification.extension[=].extension[+].url = "period"
-* qualification.extension[=].extension[=].valuePeriod.start = "2019-10-07"
-* qualification.extension[=].extension[=].valuePeriod.end = "2121-10-07"
-* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
-* qualification.extension[=].extension[0].url = "code"
-* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "1.0"
-* qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#MCPG "Provisional General Scope of Practice"
-* qualification.extension[=].extension[=].valueCodeableConcept.text = "Provisional General Scope of Practice"
-* qualification.extension[=].extension[+].url = "description"
-* qualification.extension[=].extension[=].valueString = "Provisional General Scope of Practice"
-* qualification.extension[=].extension[+].url = "period"
-* qualification.extension[=].extension[=].valuePeriod.start = "2019-10-07"
-* qualification.extension[=].extension[=].valuePeriod.end = "2121-10-07"
-* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
-* qualification.extension[=].extension[0].url = "description"
-* qualification.extension[=].extension[=].valueString = "Dr Burns is required to participate in an approved recertification programme relevant to the vocational scope of General Practice."
-* qualification.extension[=].extension[+].url = "period"
-* qualification.extension[=].extension[=].valuePeriod.start = "2020-10-06"
-* qualification.extension[=].extension[=].valuePeriod.end = "2120-10-06"
-* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
-* qualification.extension[=].extension[0].url = "description"
-* qualification.extension[=].extension[=].valueString = "Dr Church is required to practise medicine under supervision in the Emergency Medicine training programme"
-* qualification.extension[=].extension[+].url = "period"
-* qualification.extension[=].extension[=].valuePeriod.start = "2019-10-07"
-* qualification.extension[=].extension[=].valuePeriod.end = "2120-10-06"
-* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
-* qualification.extension[=].valueDate = "1964-04-01"
-* qualification.modifierExtension.url = "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"
-* qualification.modifierExtension.valueCodeableConcept.coding.version = "2.0"
-* qualification.modifierExtension.valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-registration-status-code#current "Current"
-* qualification.modifierExtension.valueCodeableConcept.text = "Current"
-* qualification.identifier.use = #official
-* qualification.identifier.system = "https://standards.digital.health.nz/ns/medical-council-id"
-* qualification.identifier.value = "99536"
 * qualification.identifier.assigner = Reference(Organization/G00004-B)
 * qualification.code.coding.version = "2.0"
 * qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC "Medical Council of New Zealand Register Number (MC)"
