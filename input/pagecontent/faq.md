@@ -35,3 +35,12 @@ There is no bulk operation supported at this time. However, the Practitioner Rea
 ### Why are the date of birth, gender and ethnicity missing from all practitioners?
 
 These details are supplied when a practitioner is added and maintained by their Responsible Authority and are used in non-identifiable analysis eg workforce planning. They are withheld on a Get Practitioner response and only available to users with admin permissions and only if they have a specific need for these details.
+
+
+### Which period  should be used for an APC expiration check?
+
+When checking that a practitioner is currently licenced, systems should check that the Registration Status Code is current and that todays date falls within the qualification period.
+
+The Practitioner.qualification.period is the start and end dates of the most recently issued Annual Practicing Certificate (APC).
+
+There is also a RegistrationStatusCode period that is part of the registration details for a practitioner. This is the start date that this status was applied.  If the status is ‘'removed’ then this is the date the practitioner was removed from the register.
