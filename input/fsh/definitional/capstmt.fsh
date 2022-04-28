@@ -40,6 +40,7 @@ Practitioner query
 """
 
 //read by id
+* rest.resource.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner" 
 * rest.resource.interaction.code = #read
 * rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id."
 

@@ -40,6 +40,7 @@
             "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
           ],
           "documentation": "Practitioner query\n",
+          "profile": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner",
           "interaction": [
             {
               "code": "read",
