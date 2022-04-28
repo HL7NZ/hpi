@@ -23,20 +23,20 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 
 
 ### On-boarding
-1. To apply for access to the HPI test environment download these forms from [here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-it-developers)
-and email to [integration@health.govt.nz](mailto:integration@health.govt.nz) <br />
-   a. privacy impact questionnaire  
-   b. onboarding questionnaire  
-   c. access request form
-   
-   The Ministry will issue credentials for the testing endpoint. 
 
-2. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)
+1. To apply for access to the HPI test environment complete and submit the [Register your Interest / Access a Test Environment](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/41) form.
+ 
+2. You may be requested to complete an additional security questionnaire.
 
-   The Ministry will issue a compliance test report.
+3. The Ministry will issue credentials for the testing endpoint.
 
-3. Each organisation using an application with HPI integrated services must apply individually for access to the production environment by completing an access request form and email
-to [integration@health.govt.nz](mailto:integration@health.govt.nz).
+4. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form.
+
+4. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)
+
+5. The Ministry will issue a compliance test report.
+
+6. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form.
 
 
 ### Compliance testing
@@ -94,7 +94,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Get-3</td>
 <td>System behaves appropriately when the organisation requested is no longer active</td>
-<td>GZZ903-C</th>
+<td>GZZ903-C</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td>
 </tr>
