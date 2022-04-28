@@ -37,16 +37,147 @@ _Practitioner.identifier_ is the top level identifier assigned by the HPI (and t
 _Practitioner.qualification.identifier_ is the identifier assigned by the Registration authority - for example the Medical Council Number, or Nursing Council number.
 
 
-### Practitioner Qualifications
+### Qualifications
 
-The Practitioner resource has a single qualification element that holds 2 distinct categories of information from the perspective of the HPI.
+To practice in NZ, practitioners must gain registration with a Responsible Authority (RA). The RA ensures practitioners are competent and fit to practice. 
+Practitioners may provide evidence of educational qualifications attained that are considered by the RA when granting registrations, however the educational qualifications alone do not give a practitioner the right to practice in NZ.
 
-*   _Qualifications_ are regarded as recognition of a particular academic achievement. For example a medical or nursing degree
-*   _Registrations_ are statements of ‘fitness to practice’ in New Zealand, and are conferred by the Registration authority. Generally - though not always - there is a degree as well, though it is at the discretion of the Registration Authority that fitness to practice is stated.
+In order to clearly distinguish a person’s licence to practice and their educational qualifications the HpiPractitioner profile uses the Practitioner.qualification element to represent the practitioner’s registration and the extension Practitioner.educational.qualification element to represent a person’s educational qualifications.
 
-There are 2 elements within the qualification element that are related to the Registration Authority.
+Other health providers (not considered Practitioners in NZ) are recorded in the HPI. They may not have a registration but will supply educational qualifications as part of their profile.  In the HPI educational qualifications are an element of practitioner not a sub element of practitioner.qualification (ie registration).
 
+<h3>A registration is made up of</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr>
+<th>Element</th>
+<th>Description</th>
+<th>Profile element</th>
+</tr>
 
+<tr>
+<td>Type</td>
+<td>the type of registration – nurse, physiotherapist, doctor etc.</td>
+<td>Practitioner.qualification.code</td>
+</tr>
 
-*   _qualification.issuer_ is a reference to the Organization resource that represents the asserter
-*   _qualification.identifier.system_  is a url that represents the namespace of the Registration Authority
+<tr>
+<td>Identifier</td>
+<td>an identifier issued by the responsible authority eg medical council number</td>
+<td>Practitioner.qualification.identifier</td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td>indicates whether the registration is current</td>
+<td>Practitioner.qualification.extension:registration-status-code</td>
+</tr>
+
+<tr>
+<td>Initial registration date</td>
+<td>date the practitioner was first registered with the responsible authority</td>
+<td>Practitioner.qualification.extension:registration-initial-date</td>
+</tr>
+
+<tr>
+<td>Annual practicing certificate</td>
+<td>the period of the most recently issued APC</td>
+<td>Practitioner.qualification.period</td>
+</tr>
+
+<tr>
+<td>Issuer</td>
+<td>HPI Identifier of the responsible authority</td>
+<td>Practitioner.qualification.issuer</td>
+</tr>
+
+<tr>
+<td>Scope of practice</td>
+<td>range of health services a practitioner is authorised to perform</td>
+<td>Practitioner.qualification.extension:scope-of-practice</td>
+</tr>
+
+<tr>
+<td>Condition on practice</td>
+<td>conditions the health practitioner is subject to in relation to their scope of practice</td>
+<td>Practitioner.qualification.extension:condition-on-practice</td>
+</tr>
+
+<tr>
+<td>Additional Authorisation</td>
+<td>additional services that a practitioner is authorised to perform</td>
+<td>Practitioner.qualification.extension:additional-authorisation</td>
+</tr>
+</table>
+
+<h3>An education qualification is made up of</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr>
+<th>Element</th>
+<th>Profile element</th>
+</tr>
+
+<tr>
+<td>Fullname</td>
+<td>Practitioner.extension:educational-qualification.extension:fullname</td>
+</tr>
+
+<tr>
+<td>Shortname</td>
+<td>Practitioner.extension:educational-qualification.extension:shortname</td>
+</tr>
+
+<tr>
+<td>Year</td>
+<td>Practitioner.extension:educational-qualification.extension:year</td>
+</tr>
+
+<tr>
+<td>Institution</td>
+<td>Practitioner.extension:educational-qualification.extension:institution</td>
+</tr>
+
+<tr>
+<td>City</td>
+<td>Practitioner.extension:educational-qualification.extension:city</td>
+</tr>
+
+<tr>
+<td>Country</td>
+<td>Practitioner.extension:educational-qualification.extension:country</td>
+</tr>
+</table>
+
+### Redacted Practitioner details
+
+A person can make a request to their council to make their record confidential. When this is the case the person’s name and other personal details will not be returned in any search or get response. Identifiers and registration details are returned. [See Confidentiality](/businessView.html#confidentiality).
+
+A practitioner’s Date of birth, Gender and Ethnicity are supplied when a practitioner is added and maintained by their Responsible Authority, but they are withheld on a Get Practitioner response.  Admin permissions are required to get all the practitioner details in a response.
+
+The Practitioner resources will contain a security element of redacted in the meta data when data items within the patient resource have been withheld.  
+
+Example
+ {
+  "resourceType": "Practitioner",
+  "id": "93ZZRW",
+  "meta": {
+    "versionId": "14368",
+    "profile": [ http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner ],
+    "security": [ {
+      "system": http://hl7.org/fhir/v3-SecurityIntegrityObservationValue,
+      "code": "REDACTED"
+  		  } ]
+  },
+…
+}
