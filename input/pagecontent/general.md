@@ -197,3 +197,7 @@ Contained resources are where the referenced (target) resource is contained with
 
 ### Modifier Extensions
 
+
+### HTTP Header Details
+
+All requests for all resources must include an http header **UserId** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
