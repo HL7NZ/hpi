@@ -90,19 +90,193 @@
       },
       {
         "reference": {
+          "reference": "Practitioner/90ZZLC"
+        },
+        "name": "90ZZLC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/90ZZLP"
+        },
+        "name": "90ZZLP",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/90ZZMG"
+        },
+        "name": "90ZZMG",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/92ZZRE"
+        },
+        "name": "92ZZRE",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/92ZZRR"
+        },
+        "name": "92ZZRR",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/92ZZSJ"
+        },
+        "name": "92ZZSJ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/93ZZRW"
+        },
+        "name": "93ZZRW",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/94ZZWZ"
+        },
+        "name": "94ZZWZ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/94ZZXF"
+        },
+        "name": "94ZZXF",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/95ZZDE"
+        },
+        "name": "95ZZDE",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/95ZZDR"
+        },
+        "name": "95ZZDR",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/95ZZEJ"
+        },
+        "name": "95ZZEJ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/95ZZQE"
+        },
+        "name": "95ZZQE",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/96ZZSG"
+        },
+        "name": "96ZZSG",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/97ZZXW"
+        },
+        "name": "97ZZXW",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/97ZZYC"
+        },
+        "name": "97ZZYC",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/97ZZYP"
+        },
+        "name": "97ZZYP",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZQJ"
+        },
+        "name": "98ZZQJ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZWL"
+        },
+        "name": "98ZZWL",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZXD"
+        },
+        "name": "98ZZXD",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZXQ"
+        },
+        "name": "98ZZXQ",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZYH"
+        },
+        "name": "98ZZYH",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/98ZZYU"
+        },
+        "name": "98ZZYU",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/99ZZRT"
+        },
+        "name": "99ZZRT",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/99ZZVA"
+        },
+        "name": "99ZZVA",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/99ZZVM"
+        },
+        "name": "99ZZVM",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "CapabilityStatement/HpiCapabilityStatement"
         },
         "name": "CapabilityStatement",
         "description": "Represents API exposed by HPI",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/practitioner1"
-        },
-        "name": "practitioner1",
-        "description": "Example of practitioner",
-        "exampleBoolean": true
       }
     ],
     "page": {
