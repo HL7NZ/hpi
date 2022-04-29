@@ -1193,7 +1193,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1352,7 +1352,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1641,7 +1641,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1800,7 +1800,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -2090,7 +2090,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -2249,7 +2249,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -2539,7 +2539,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -2698,7 +2698,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -4313,10 +4313,20 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:orgId.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:orgId.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
+      },
+      {
+        "id": "Organization.identifier:orgId.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
       },
       {
         "id": "Organization.identifier:legacyOrgId",
@@ -4334,10 +4344,20 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:legacyOrgId.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:legacyOrgId.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/nzhis-agency-id"
+      },
+      {
+        "id": "Organization.identifier:legacyOrgId.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
       },
       {
         "id": "Organization.identifier:nzbn",
@@ -4356,10 +4376,20 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:nzbn.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:nzbn.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-nzbn"
+      },
+      {
+        "id": "Organization.identifier:nzbn.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
       },
       {
         "id": "Organization.identifier:dormant",
@@ -4378,10 +4408,20 @@
         "fixedCode": "old"
       },
       {
+        "id": "Organization.identifier:dormant.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:dormant.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/id/hpi-org"
+      },
+      {
+        "id": "Organization.identifier:dormant.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
       },
       {
         "id": "Organization.type",
