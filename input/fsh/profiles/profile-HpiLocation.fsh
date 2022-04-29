@@ -1,3 +1,4 @@
+
 // Aliases for extensions
 Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
@@ -13,6 +14,7 @@ Description:    "A physical location from which health goods and/or services are
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
+
 //elements that have been removed
 * operationalStatus 0..0
 * mode 0..0
@@ -50,16 +52,24 @@ Description:    "A physical location from which health goods and/or services are
 * identifier[facId].use ^short  = "fixed to official"
 * identifier[facId] ^short = "The current Facility id for this location"
 
+* identifier[facId].type 0..0
+* identifier[facId].period 0..0
+
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short  = "fixed to old"
 * identifier[dormant] ^short = "Old facility id's that have been deprecated"
 
+* identifier[dormant].type 0..0
+* identifier[dormant].period 0..0
 
 * identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/nzhis-facility-id" (exactly)
 * identifier[legacyFacId].use = #official (exactly)
 * identifier[legacyFacId].use ^short  = "fixed to official"
 * identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
+
+* identifier[legacyFacId].type 0..0
+* identifier[legacyFacId].period 0..0
 
 //top level  extensions
 * extension contains 

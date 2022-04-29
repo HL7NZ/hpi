@@ -53,20 +53,32 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier[orgId].use ^short = "fixed to official"
 * identifier[orgId] ^short = "The current HPI organization Id for this Organization"
 
+* identifier[orgId].type 0..0
+* identifier[orgId].period 0..0
+
 * identifier[legacyOrgId].system = "https://standards.digital.health.nz/ns/nzhis-agency-id" (exactly)
 * identifier[legacyOrgId].use = #official (exactly)
 * identifier[legacyOrgId].use ^short = "fixed to official"
 * identifier[legacyOrgId] ^short = "The MOH (NZHIS) Legacy agency code)"
+
+* identifier[legacyOrgId].type 0..0
+* identifier[legacyOrgId].period 0..0
 
 * identifier[nzbn].system = "https://standards.digital.health.nz/ns/hpi-nzbn" (exactly)
 * identifier[nzbn].use = #official (exactly)
 * identifier[nzbn].use ^short = "fixed to official"
 * identifier[nzbn] ^short = "The New Zealand Business Number"
 
+* identifier[nzbn].type 0..0
+* identifier[nzbn].period 0..0
+
 * identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short = "fixed to old"
 * identifier[dormant] ^short = "Identifiers which have been deprecated"
+
+* identifier[dormant].type 0..0
+* identifier[dormant].period 0..0
 
 //------------
 
