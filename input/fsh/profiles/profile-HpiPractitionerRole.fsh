@@ -31,6 +31,8 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * identifier[RI].use = #official (exactly)
 * identifier[RI].use ^short = "PractitionerRole Id"
 
+* identifier[RI].type 0..0
+* identifier[RI].period 0..0
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI PractitionerRole profile</div>"
 * ^text.status = #additional
