@@ -235,7 +235,7 @@
 <tr>
 <td>dhb</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Locations that are in a DHBs catchment area. This is a custom search</p>
+<td><p>Locations that are in a DHBs catchment area.</p>
 </td>
 </tr>
 <tr>
@@ -245,4 +245,6 @@
 </td>
 </tr>
 </table>
+<h3>Contained Resources</h3>
+<p>When a resource contains a reference to another resource, the  HPI server will not render the references as a contained resource,  only the reference links themselves will be included in responses.</p>
 </div>
