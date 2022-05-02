@@ -139,3 +139,5 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
+
+* communication.coding from  https://nzhts.digital.health.nz/fhir/ValueSet/language-code

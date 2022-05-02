@@ -246,5 +246,5 @@
 </tr>
 </table>
 <h3>Contained Resources</h3>
-<p>When a resource contains a reference to another resource, the  HPI server will not render the references as a contained resource,  only the reference links themselves will be included in responses.</p>
+<p>When a resource contains a reference to another resource, the  HPI server will not render the reference as a contained resource,  only the reference links themselves will be included in responses.</p>
 </div>
