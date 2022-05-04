@@ -49,9 +49,6 @@ This example will return a bundle of Practitioner resources with only a single e
 
 References are directional - from a source to a target. 
 
-
-#### As a reference to the id of the target resource. 
-
 The following example shows a reference to a Practitioner with the id of "92ZZRR"
 
 
@@ -145,7 +142,7 @@ Contained resources are where the referenced (target) resource is contained with
 
 When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
 
-`{{ENDPOINT}}/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
+`https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 
 ### Modifier Extensions
