@@ -47,53 +47,28 @@ This example will return a bundle of Practitioner resources with only a single e
 
 ### References between resources
 
-References are directional - from a source to a target. There are 2 ways that references between resources can be represented in this implementation. 
+References are directional - from a source to a target. 
 
 
 #### As a reference to the id of the target resource. 
 
-The following example shows a reference to a Practitioner with the id of "example"
+The following example shows a reference to a Practitioner with the id of "92ZZRR"
 
 
 ``
 "practitioner": {
-"reference": "Practitioner/example",
+"reference": "Practitioner/92ZZRR",
 "display": "Dr Marcus welby"
   }
 ...
-``
 
-
-This is a relative reference (ie the target is on the same server as the source) from a property called ‘practitioner’ to the practitioner resource. This format is used when possible.
-
-
-#### Using the target resource identifier
-
-
-
-```
-...
-  "practitioner": {
-    "identifier": {
-        "system": "https://standards.digital.health.nz/id/hpi",
-        "value": "92ZZRR"
-    },
-    "type":"Practitioner",
-    "display": "Dr Adam Careful"
-  }
-
-...
-```
-
-
-This is a reference from a property called ‘practitioner’ to a Practitioner resource that has the identifier 92ZZRR in the system _https://standards.digital.health.nz/id/hpi_ . It has the disadvantage that if the client wishes to retrieve the target resource, then it must do a query by identifier. There are also a number of search queries that require a direct reference rather than an identifier.
 
 
 ### Merging resource and Dormant identifiers
 
 In some cases, a single entity may have been accidentally assigned multiple identifiers. When this is discovered to have occurred, one of the identifiers is deprecated and becomes a ‘dormant’ identifier, leaving the other as the active one. Both identifiers will appear in the active resource identifier list, with the dormant identifiers having a _use_ value of ‘old’ and the active having a _use_ value of ‘official’. 
 
-When reading the resource, if the deprecated id is used, then the resource that is returned will have the deprecated id, but the identifiers will be the correct ones (ie the one with a _use_ value of ‘official’.)
+When reading the resource, if the deprecated id is used, the resource returned will have the live id, but the identifiers will have both the live with a *use* value of ‘official’ and this dormant with a *use* value of ‘old’.)
 
 For example, assume that there are 2 Practitioner resources exposed by the HPI, each with a single identifier. The id of the resource matches the identifier value.
 
@@ -135,7 +110,7 @@ And
 
 They are determined to be the same person, and the identifier 96YYY is deprecated (made dormant) in favour of 92ZZRR.
 
-A GET call of GET [host]/Practitioner/92ZZRR) will return
+A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY) will return the same response
 
 
 ```
@@ -154,26 +129,7 @@ A GET call of GET [host]/Practitioner/92ZZRR) will return
 ```
 
 
-And a get call of GET [host]/Practitioner/96YYY) will return
 
-
-```
-{
-  "resourceType":"Practitioner",
-  "id" : "96YYY",
-  "identifier" : [
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"92ZZRR","use":"official"},
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYY","use":"old"}
-
-
-  ]
-… other data - the same as GET [host]/Practitioner/92ZZRR
-
-}
-```
-
-
-(note that in this case the id of the resource does not match the official HPI value)
 
 Resources that reference the Practitioner (such as the PractitionerRole resource) can use either id. For example, to return PractitionerRole resources for this Practitioner, either of the following queries will return the same set of PractitionerRole resources:
 
@@ -181,15 +137,15 @@ GET [host]/PractitionerResource?practitioner=92ZZRR
 
 GET [host]/PractitionerResource?practitioner=96YYY
 
-### Must support
 
-The 'must support' indicator means that the client must have a strategy to deal with this element. details [here](http://hl7.org/fhir/profiling.html#mustsupport)
-
-For this IG, that means that if the element is present, the client must know how to interpret it. For example display it to the user or store in in the local store.
 
 ### Contained resources
 
 Contained resources are where the referenced (target) resource is contained within the source resource.
+
+When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
+
+`{{ENDPOINT}}/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 
 ### Modifier Extensions
@@ -197,4 +153,4 @@ Contained resources are where the referenced (target) resource is contained with
 
 ### HTTP Header Details
 
-All requests for all resources must include an http header **userdd** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
+All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
