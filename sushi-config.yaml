@@ -46,12 +46,12 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   Business View: businessView.html
+  Profiles: profiles.html
+  API: capabilityStatement.html
   Use cases: usecases.html
   General Notes: general.html
   Logical Models: logical.html
-  API: capabilityStatement.html
   FAQ: faq.html
-  Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
   Artifact Index: artifacts.html
