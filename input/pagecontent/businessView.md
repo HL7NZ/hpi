@@ -4,31 +4,34 @@
 The purpose of the HPI is to uniquely identify health providers and issue a lifetime identifier for use in the NZ health systems.  The HPI was established in 2008 so that people working in the health sector could be identified using their HPI number, no matter what the context. This would reduce the number of identifiers in use for health providers and reduce the complexity of systems. The HPI number is increasingly being used as the identifier of choice by systems designers.  The HPI also recognises practitioners’ registration numbers and can be used to map from the registration number to the HPI number.  
 
 The HPI also provides an authoritative source of registration details, scopes of practice and annual practicing certificate periods in a highly available national database. Health provider organisations can access the most up-to-date details about all practitioners from one place no matter what registration the practitioner has. 
-The practitioner identity and registration information is supplied by each of the Responsible Authorities.  The current suppliers to the HPI are:
+The practitioner identity and registration information is supplied by each of the Responsible Authorities.
 
-* Chiropractic Board 
-* Dental Council 
-* Dietitians Board 
-* Medical Sciences Council 
-* Medical Council of New Zealand 
-* Medical Radiation Technologists Board
-* Midwifery Council 
-* Nursing Council of New Zealand 
-* Optometrists & Dispensing Opticians Board 
-* Osteopathic Council 
-* Occupational Therapists Therapy Board 
-* Paramedic Council 
-* Pharmacy Council of New Zealand 
-* Physiotherapy Board 
-* Podiatrists Board 
-* Psychologists Board 
-* (The Psychotherapists Board is the only authority that is not currently supplying their register of practitioners)
+The current suppliers to the HPI and the frequency they supply register updates are:
+
+* Chiropractic Board (monthly)
+* Dental Council (weekly)
+* Dietitians Board (monthly)
+* Medical Sciences Council (weekly)
+* Medical Council of New Zealand (weekly)
+* Medical Radiation Technologists Board (weekly)
+* Midwifery Council (weekly)
+* Nursing Council of New Zealand (weekly)
+* Optometrists & Dispensing Opticians Board (weekly)
+* Osteopathic Council (monthly)
+* Occupational Therapists Therapy Board (on request)
+* Paramedic Council (weekly)
+* Pharmacy Council of New Zealand (fortnighly)
+* Physiotherapy Board (fortnightly)
+* Podiatrists Board (monthly)
+* Psychologists Board (weekly)
+* Psychotherapists Board  (monthly)
 
 The Health Information Privacy Code (Rule 13) restricts the assignment the HPI number (HPI Common Provider Number CPN) to practitioners as defined by section 5(1) of the Health Practitioners Competence Assurance Act 2003. This limits the issuing of HPI numbers to only practitioners registered with the authorities listed above.  Work is underway to address this restriction and allow the HPI to include all health providers and health workers so that a common identifier can be used to identify all the various individuals providing healthcare and supporting services.  
 
 Practitioner has a special meaning in the New Zealand health system which is limited to those persons defined in the Health Practitioners Competence Assurance Act 2003. However, in this guide practitioner, health provider or person are terms used interchangeably and to include anyone directly or indirectly associated with providing healthcare services. 
 
 A national directory of places where a practitioner works and how to contact them has been a gap in the HPI functionality and has meant that many systems create and maintain this information independently at significant cost.   The HPI Practitioner Role resource will allow organisations and practitioners to make these details available nationally so various systems can rely on it to know the locations a practitioner works and the organisation they work for.   
+
 #### What the HPI contains
 The HPI consists of 4 indexes or data sets (in FHIR they are represented as resources)
 HPI Practitioner – holds identity and registration details for over 170,000 practitioners 
