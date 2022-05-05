@@ -1415,7 +1415,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -1860,7 +1860,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -5422,7 +5422,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -5462,7 +5462,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
             ],
             "extension": [
               {
@@ -6005,6 +6005,18 @@
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
       },
       {
+        "id": "Location.identifier:facId.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Location.identifier:dormant",
         "path": "Location.identifier",
         "sliceName": "dormant",
@@ -6027,6 +6039,18 @@
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
       },
       {
+        "id": "Location.identifier:dormant.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Location.identifier:legacyFacId",
         "path": "Location.identifier",
         "sliceName": "legacyFacId",
@@ -6046,6 +6070,18 @@
         "path": "Location.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/nzhis-facility-id"
+      },
+      {
+        "id": "Location.identifier:legacyFacId.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Location.status",
@@ -6164,6 +6200,36 @@
         "id": "Location.position",
         "path": "Location.position",
         "max": "0"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "Location.hoursOfOperation",

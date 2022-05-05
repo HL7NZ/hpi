@@ -41,35 +41,3 @@ are defined in the [New Zealand Base IG](https://fhir.org.nz/ig/base/namingSyste
 Note that these identifiers are correct as at the time of publishing the Base IG. When
 new identifiers are added, they will be present in the [build version](http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/index.html) of NZBase (that has not yet been approved for release)
 
-### Security
-
-The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the [SMART  specification  for backend services]( https://build.fhir.org/ig/HL7/smart-app-launch/backend-services.html)
-
-The following scopes are supported
-<table>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-
-<tr><th>Scope</th>           <th>Description</th>                     |<th> </th>
-
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> Read access to all Practitioner resources. </td><td> </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> Search access to Practitioner resources, Practitioners tagged as confidential are excluded from the results. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> Write access to all Practitioner resources. </td><td>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> Admin access to all Practitioner resources. </td><td><b>Allows access to confidential data.</b> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> Read access to all Location resources.  </td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td>Search access to all Location resources  </td><td> </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> Write access to all Location resources. </td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> Admin access to all Location resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> Read access to all Organization resources. </td><td> </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> Search access to all Organization resources </td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> Write access to all Organization resources. </td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> Admin access to all Organization resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> Read access to all Practitioner Role resources.</td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results. </td><td> </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> Write access to all Practitioner Role resources.</td><td> </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> Admin access to all Practitioner Role resources.</td><td> <b>Allows access to confidential data.</b></td></tr>
-</table>

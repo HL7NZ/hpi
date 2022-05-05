@@ -26,6 +26,8 @@ Description:    "A physical location from which health goods and/or services are
 
 * identifier.period 0..0
 * identifier.type 0..0
+* managingOrganization only Reference(HpiOrganization)
+* partOf only Reference(HpiLocation)
  
 //------- copied from commonLocation
 
@@ -51,25 +53,25 @@ Description:    "A physical location from which health goods and/or services are
 * identifier[facId].use = #official (exactly)
 * identifier[facId].use ^short  = "fixed to official"
 * identifier[facId] ^short = "The current Facility id for this location"
-
 * identifier[facId].type 0..0
 * identifier[facId].period 0..0
+* identifier[facId].assigner only Reference(HpiOrganization)
 
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short  = "fixed to old"
 * identifier[dormant] ^short = "Old facility id's that have been deprecated"
-
 * identifier[dormant].type 0..0
 * identifier[dormant].period 0..0
+* identifier[dormant].assigner only Reference(HpiOrganization)
 
 * identifier[legacyFacId].system = "https://standards.digital.health.nz/ns/nzhis-facility-id" (exactly)
 * identifier[legacyFacId].use = #official (exactly)
 * identifier[legacyFacId].use ^short  = "fixed to official"
 * identifier[legacyFacId] ^short = "The MOH (NZHIS) Legacy facility code)"
-
 * identifier[legacyFacId].type 0..0
 * identifier[legacyFacId].period 0..0
+* identifier[legacyFacId].assigner only Reference(HpiOrganization)
 
 //top level  extensions
 * extension contains 

@@ -93,22 +93,20 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
 * identifier[HPI].use ^short = "fixed to official"
-
 * identifier[HPI].type 0..0
 * identifier[HPI].period 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
-
+* identifier[HPI].assigner only Reference(HpiOrganization)
 
 * identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short = "fixed to old"
-
 * identifier[dormant].type 0..0
 * identifier[dormant].period 0..0
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
-
+* identifier[dormant].assigner only Reference(HpiOrganization)
 
 //-------- end of identifier slicing --------
 
@@ -133,6 +131,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.identifier ^short = "The practitioner's identifier issued by the Responsible Authority eg medical council number, nursing council number"
 * qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
 * qualification.issuer ^short = "The HPI Organisation ID of the Responsible Authority that issues the registration"
+* qualification.issuer only Reference(HpiOrganization)
 * qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
 * qualification.extension[scope-of-practice] ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
 

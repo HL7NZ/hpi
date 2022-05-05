@@ -145,9 +145,40 @@ When a resource contains a reference to another resource, the HPI server will no
 `https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 
-### Modifier Extensions
-
 
 ### HTTP Header Details
 
 All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
+
+#### Security
+The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
+
+The following scopes are supported
+
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th>Scope</th><th>Description</th> <th> </th></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> Read access to all Practitioner resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> Search access to Practitioner resources, Practitioners tagged as confidential are excluded from the results. </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> Write access to all Practitioner resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> Admin access to all Practitioner resources. </td><td><b>Allows access to confidential data.</b> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> Read access to all Location resources.  </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td>Search access to all Location resources  </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> Write access to all Location resources. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> Admin access to all Location resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> Read access to all Organization resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> Search access to all Organization resources </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> Write access to all Organization resources. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> Admin access to all Organization resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> Read access to all Practitioner Role resources.</td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> Write access to all Practitioner Role resources.</td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> Admin access to all Practitioner Role resources.</td><td> <b>Allows access to confidential data.</b></td></tr>
+</table>
+
+

@@ -12,9 +12,11 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
 
+* practitioner only Reference(HPIPractitioner)
+* organization only Reference(HpiOrganization)
+* location only Reference(HpiLocation)
 
-
-//slice identiifer - added wed
+//slice identifier - added wed
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "use"
 

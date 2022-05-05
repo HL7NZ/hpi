@@ -1407,7 +1407,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -1855,7 +1855,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -2753,7 +2753,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ]
           }
         ],
@@ -3813,7 +3813,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
             ],
             "extension": [
               {
@@ -4329,6 +4329,18 @@
         "max": "0"
       },
       {
+        "id": "Organization.identifier:orgId.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.identifier:legacyOrgId",
         "path": "Organization.identifier",
         "sliceName": "legacyOrgId",
@@ -4358,6 +4370,18 @@
         "id": "Organization.identifier:legacyOrgId.period",
         "path": "Organization.identifier.period",
         "max": "0"
+      },
+      {
+        "id": "Organization.identifier:legacyOrgId.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.identifier:nzbn",
@@ -4392,6 +4416,18 @@
         "max": "0"
       },
       {
+        "id": "Organization.identifier:nzbn.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
@@ -4422,6 +4458,18 @@
         "id": "Organization.identifier:dormant.period",
         "path": "Organization.identifier.period",
         "max": "0"
+      },
+      {
+        "id": "Organization.identifier:dormant.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.type",
@@ -4486,6 +4534,24 @@
             "code": "Address",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/hpi-nz-address"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
             ]
           }
         ]
