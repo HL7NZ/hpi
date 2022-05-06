@@ -150,7 +150,7 @@ When a resource contains a reference to another resource, the HPI server will no
 
 All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
 
-#### Security
+### Security
 The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
 
 The following scopes are supported
