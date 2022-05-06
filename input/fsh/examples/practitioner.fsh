@@ -1,6 +1,7 @@
 
 Instance: 99ZZVA
 InstanceOf: Practitioner
+Description: "Example HPI Practitioner"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
@@ -32,11 +33,11 @@ Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "99ZZVA"
-* identifier[=].assigner = Reference(Organization/G00001-G)
+* identifier[=].assigner = Reference(Organization/G00001G)
 * identifier[+].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
 * identifier[=].value = "99424"
-* identifier[=].assigner = Reference(HpiOrganization/G00004-B)
+* identifier[=].assigner = Reference(Organization/G00004B)
 * name[0].use = #official
 * name[=].family = "Two-Names"
 * name[=].given[0] = "Testtwo"
@@ -81,13 +82,12 @@ Usage: #example
 * qualification.identifier.use = #official
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/medical-council-id"
 * qualification.identifier.value = "99424"
-* qualification.identifier.assigner = Reference(HpiOrganization/G00004-B)
+* qualification.identifier.assigner = Reference(Organization/G00004B)
 * qualification.code.coding.version = "2.0"
-* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC "Medical Council of New Zealand Register Number (MC)"
-* qualification.code.text = "Medical Council of New Zealand Register"
+* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC
 * qualification.period.start = "2019-09-12"
 * qualification.period.end = "2020-09-11"
-* qualification.issuer = Reference(HpiOrganization/G00004-B)
+* qualification.issuer = Reference(Organization/G00004B)
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"
@@ -95,6 +95,7 @@ Usage: #example
 
 Instance: 90ZZLC
 InstanceOf: Practitioner
+Description: "Example HPI Practitioner"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
@@ -104,7 +105,7 @@ Usage: #example
 * identifier.use = #official
 * identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier.value = "90ZZLC"
-* identifier.assigner = Reference(HpiOrganization/G00001-G)
+* identifier.assigner = Reference(Organization/G00001G)
 * name.use = #official
 * name.family = "Klinger"
 * name.given[0] = "Maxwell"
@@ -119,6 +120,7 @@ Usage: #example
 
 Instance: 98ZZXQ
 InstanceOf: Practitioner
+Description: "Example HPI Practitioner"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
@@ -150,11 +152,11 @@ Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "98ZZXQ"
-* identifier[=].assigner = Reference(HpiOrganization/G00001-G)
+* identifier[=].assigner = Reference(Organization/G00001G)
 * identifier[+].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
 * identifier[=].value = "99468"
-* identifier[=].assigner = Reference(HpiOrganization/G00004-B)
+* identifier[=].assigner = Reference(Organization/G00004B)
 * name.use = #official
 * name.text = "Doctor TestThree Practitioner-Status Practitioner-Removed"
 * name.family = "Practitioner-Removed"
@@ -168,8 +170,6 @@ Usage: #example
 * qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "1.0"
 * qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#MCGE "General Scope of Practice"
 * qualification.extension[=].extension[=].valueCodeableConcept.text = "General Scope of Practice"
-* qualification.extension[=].extension[+].url = "description"
-* qualification.extension[=].extension[=].valueString = "General Scope of Practice"
 * qualification.extension[=].extension[+].url = "period"
 * qualification.extension[=].extension[=].valuePeriod.start = "2000-01-26"
 * qualification.extension[=].extension[=].valuePeriod.end = "2021-01-26"
@@ -190,19 +190,19 @@ Usage: #example
 * qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
 * qualification.extension[=].valueDate = "1994-12-13"
 * qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"
-* qualification.modifierExtension.valueCodeableConcept.coding.version = "2.0"
+* qualification.extension[=].extension[0].url = "status"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "2.0"
 * qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-registration-status-code#removed "Removed"
 * qualification.extension[=].extension[=].valueCodeableConcept.text = "Removed"
 * qualification.identifier.use = #official
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/medical-council-id"
 * qualification.identifier.value = "99468"
-* qualification.identifier.assigner = Reference(HpiOrganization/G00004-B)
+* qualification.identifier.assigner = Reference(Organization/G00004B)
 * qualification.code.coding.version = "2.0"
-* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC "Medical Council of New Zealand Register Number (MC)"
-* qualification.code.text = "Medical Council of New Zealand Register Number (MC)"
+* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC
 * qualification.period.start = "2019-09-26"
 * qualification.period.end = "2020-09-25"
-* qualification.issuer = Reference(HpiOrganization/G00004-B)
+* qualification.issuer = Reference(Organization/G00004B)
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"
@@ -210,6 +210,7 @@ Usage: #example
 
 Instance: 94ZZXF
 InstanceOf: Practitioner
+Description: "Example HPI Practitioner"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
@@ -237,11 +238,11 @@ Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "94ZZXF"
-* identifier[=].assigner = Reference(HpiOrganization/G00001-G)
+* identifier[=].assigner = Reference(Organization/G00001G)
 * identifier[+].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/dietitians-board-id"
 * identifier[=].value = "20-91292"
-* identifier[=].assigner = Reference(HpiOrganization/G00023-F)
+* identifier[=].assigner = Reference(Organization/G00023F)
 * name.use = #official
 * name.family = "Dietitian"
 * name.given[0] = "TestFive"
@@ -267,13 +268,13 @@ Usage: #example
 * qualification.identifier.use = #official
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/dietitians-board-id"
 * qualification.identifier.value = "20-91292"
-* qualification.identifier.assigner = Reference(HpiOrganization/G00023-F)
+* qualification.identifier.assigner = Reference(Organization/G00023F)
 * qualification.code.coding.version = "2.0"
-* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#DI "Dietitians Board Register Number (DI)"
-* qualification.code.text = "Dietitians Board Register Number (DI)"
+* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#DI
+* qualification.code.text = "Dietitians Board Register"
 * qualification.period.start = "2020-09-28"
 * qualification.period.end = "2022-09-29"
-* qualification.issuer = Reference(HpiOrganization/G00023-F)
+* qualification.issuer = Reference(Organization/G00023F)
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"
@@ -281,6 +282,7 @@ Usage: #example
 
 Instance: 90ZZMG
 InstanceOf: Practitioner
+Description: "Example HPI Practitioner"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
@@ -304,11 +306,11 @@ Usage: #example
 * identifier[0].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "90ZZMG"
-* identifier[=].assigner = Reference(HpiOrganization/G00001-G)
+* identifier[=].assigner = Reference(Organization/G00001G)
 * identifier[+].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
 * identifier[=].value = "99530"
-* identifier[=].assigner = Reference(HpiOrganization/G00004-B)
+* identifier[=].assigner = Reference(Organization/G00004B)
 * name.use = #official
 * name.family = "McIntyre"
 * name.given[0] = "Trapper"
@@ -348,13 +350,12 @@ Usage: #example
 * qualification.identifier.use = #official
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/medical-council-id"
 * qualification.identifier.value = "99530"
-* qualification.identifier.assigner = Reference(HpiOrganization/G00004-B)
+* qualification.identifier.assigner = Reference(Organization/G00004B)
 * qualification.code.coding.version = "2.0"
-* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC "Medical Council of New Zealand Register Number (MC)"
-* qualification.code.text = "Medical Council of New Zealand Register"
+* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MC
 * qualification.period.start = "2020-08-31"
 * qualification.period.end = "2022-08-31"
-* qualification.issuer = Reference(HpiOrganization/G00004-B)
+* qualification.issuer = Reference(Organization/G00004B)
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"

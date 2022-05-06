@@ -93,6 +93,7 @@
           "reference": "Practitioner/90ZZLC"
         },
         "name": "90ZZLC",
+        "description": "Example HPI Practitioner",
         "exampleBoolean": true
       },
       {
@@ -100,6 +101,7 @@
           "reference": "Practitioner/90ZZMG"
         },
         "name": "90ZZMG",
+        "description": "Example HPI Practitioner",
         "exampleBoolean": true
       },
       {
@@ -107,6 +109,7 @@
           "reference": "Practitioner/94ZZXF"
         },
         "name": "94ZZXF",
+        "description": "Example HPI Practitioner",
         "exampleBoolean": true
       },
       {
@@ -114,6 +117,7 @@
           "reference": "Practitioner/98ZZXQ"
         },
         "name": "98ZZXQ",
+        "description": "Example HPI Practitioner",
         "exampleBoolean": true
       },
       {
@@ -121,7 +125,32 @@
           "reference": "Practitioner/99ZZVA"
         },
         "name": "99ZZVA",
+        "description": "Example HPI Practitioner",
         "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00001G"
+        },
+        "name": "G00001G",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00004B"
+        },
+        "name": "G00004B",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00023F"
+        },
+        "name": "G00023F",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
       },
       {
         "reference": {
@@ -180,11 +209,6 @@
         {
           "nameUrl": "general.html",
           "title": "General",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "logical.html",
-          "title": "Logical",
           "generation": "markdown"
         },
         {

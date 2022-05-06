@@ -1415,7 +1415,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ],
@@ -1860,7 +1860,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ],
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ],
@@ -5422,7 +5422,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ],
@@ -6011,7 +6011,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ]
@@ -6045,7 +6045,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ]
@@ -6078,7 +6078,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ]
@@ -6208,7 +6208,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
             ]
           }
         ]
