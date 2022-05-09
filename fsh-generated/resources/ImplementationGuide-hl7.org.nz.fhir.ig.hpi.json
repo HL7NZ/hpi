@@ -94,7 +94,7 @@
         },
         "name": "90ZZLC",
         "description": "Example HPI Practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
@@ -102,7 +102,7 @@
         },
         "name": "90ZZMG",
         "description": "Example HPI Practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
@@ -110,7 +110,7 @@
         },
         "name": "94ZZXF",
         "description": "Example HPI Practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
@@ -118,7 +118,7 @@
         },
         "name": "98ZZXQ",
         "description": "Example HPI Practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
@@ -126,7 +126,7 @@
         },
         "name": "99ZZVA",
         "description": "Example HPI Practitioner",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
@@ -134,7 +134,7 @@
         },
         "name": "G00001G",
         "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {
@@ -142,7 +142,7 @@
         },
         "name": "G00004B",
         "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {
@@ -150,7 +150,7 @@
         },
         "name": "G00023F",
         "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {

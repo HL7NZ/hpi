@@ -10,7 +10,7 @@ Title:          "HPI Organization"
 Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
 
 * ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
-* ^url = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+* ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 
 * ^purpose = "Describe the Organization that will be returned by the HPI"
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Organization  profile</div>"

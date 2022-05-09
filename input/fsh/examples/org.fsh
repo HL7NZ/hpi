@@ -6,7 +6,7 @@ InstanceOf: Organization
 Description: "Example HPI Organization"
 Usage: #example
 
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "1900-01-01"
 * identifier.use = #official
@@ -37,7 +37,7 @@ InstanceOf: Organization
 Description: "Example HPI Organization"
 Usage: #example
 
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "2003-01-19"
 * identifier.use = #official
@@ -71,7 +71,7 @@ InstanceOf: Organization
 Description: "Example HPI Organization"
 Usage: #example
 
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "1989-02-05"
 * identifier.use = #official

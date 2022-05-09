@@ -45,7 +45,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * extension contains 
     $death-date named death-date 0..1 and
     $nzEthnicity named nzEthnicity 0..6 and 
-    $educational-qualification named educational-qualification 0..1
+    $educational-qualification named educational-qualification 0..*
 
 * extension[death-date] ^short = "The date this person died"
 * extension[death-date].extension[source] 0..0
@@ -64,7 +64,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //slice identifier to add the HPI as Must Support
 
 
-* identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+//* identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 
 * identifier.use from $identifier-use-vs
@@ -99,7 +99,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
 * identifier[HPI].assigner only Reference(HpiOrganization)
 
-* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short = "fixed to old"
 * identifier[dormant].type 0..0

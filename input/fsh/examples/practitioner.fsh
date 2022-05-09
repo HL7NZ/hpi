@@ -3,7 +3,7 @@ Instance: 99ZZVA
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
 * extension[=].valueCodeableConcept.coding.version = "2.0"
 * extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
@@ -18,7 +18,7 @@ Usage: #example
 * extension[=].extension[+].url = "city"
 * extension[=].extension[=].valueString = "STELLENBOSCH"
 * extension[=].extension[+].url = "country"
-* extension[=].extension[=].valueString = "SOUTH AFRICA"
+* extension[=].extension[=].valueString = "ZA"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
 * extension[=].extension[0].url = "fullname"
 * extension[=].extension[=].valueString = "Fellow of the Royal College of Pathologists of Australasia"
@@ -34,9 +34,9 @@ Usage: #example
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "99ZZVA"
 * identifier[=].assigner = Reference(Organization/G00001G)
-* identifier[+].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
-* identifier[=].value = "99424"
+* identifier[+].use = #old
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier[=].value = "99ZZDD"
 * identifier[=].assigner = Reference(Organization/G00004B)
 * name[0].use = #official
 * name[=].family = "Two-Names"
@@ -44,7 +44,6 @@ Usage: #example
 * name[=].given[+] = "Multiplenames"
 * name[=].prefix = "dr"
 * name[+].use = #usual
-* name[=].text = "Test Two Secondname Two-Names"
 * name[=].family = "Two-Names"
 * name[=].given[0] = "Test Two"
 * name[=].given[+] = "Secondname"
@@ -97,7 +96,7 @@ Instance: 90ZZLC
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
 * extension.valueCodeableConcept.coding.version = "2.0"
 * extension.valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
@@ -122,7 +121,7 @@ Instance: 98ZZXQ
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
 * extension[=].valueCodeableConcept.coding.version = "2.0"
 * extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
@@ -153,12 +152,12 @@ Usage: #example
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "98ZZXQ"
 * identifier[=].assigner = Reference(Organization/G00001G)
-* identifier[+].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
-* identifier[=].value = "99468"
+* identifier[+].use = #old
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier[=].value = "98ZZCC"
 * identifier[=].assigner = Reference(Organization/G00004B)
 * name.use = #official
-* name.text = "Doctor TestThree Practitioner-Status Practitioner-Removed"
+
 * name.family = "Practitioner-Removed"
 * name.given[0] = "TestThree"
 * name.given[+] = "Practitioner-Status"
@@ -212,7 +211,7 @@ Instance: 94ZZXF
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
 * extension[=].valueCodeableConcept.coding.version = "2.0"
 * extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
@@ -239,9 +238,9 @@ Usage: #example
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "94ZZXF"
 * identifier[=].assigner = Reference(Organization/G00001G)
-* identifier[+].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/dietitians-board-id"
-* identifier[=].value = "20-91292"
+* identifier[+].use = #old
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier[=].value = "94ZZBB"
 * identifier[=].assigner = Reference(Organization/G00023F)
 * name.use = #official
 * name.family = "Dietitian"
@@ -284,14 +283,14 @@ Instance: 90ZZMG
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiPractitioner"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
 * extension[=].valueCodeableConcept.coding.version = "2.0"
 * extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
 * extension[=].valueCodeableConcept.text = "New Zealand European"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/death-date"
 * extension[=].extension[0].url = "date"
-* extension[=].extension[=].valueDate = "2015-12-31"
+* extension[=].extension[=].valueDateTime = "2015-12-31"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
 * extension[=].extension[0].url = "fullname"
 * extension[=].extension[=].valueString = "Bachelor of Medicine Bachelor of Surgery"
@@ -307,9 +306,9 @@ Usage: #example
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "90ZZMG"
 * identifier[=].assigner = Reference(Organization/G00001G)
-* identifier[+].use = #official
-* identifier[=].system = "https://standards.digital.health.nz/ns/medical-council-id"
-* identifier[=].value = "99530"
+* identifier[+].use = #old
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier[=].value = "90ZZAA"
 * identifier[=].assigner = Reference(Organization/G00004B)
 * name.use = #official
 * name.family = "McIntyre"

@@ -15,7 +15,7 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization",
   "version": "0.10.0",
   "name": "HpiOrganization",
   "title": "HPI Organization",
@@ -1407,7 +1407,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -1855,7 +1855,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -2753,7 +2753,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -3813,7 +3813,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ],
             "extension": [
               {
@@ -4335,7 +4335,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ]
@@ -4378,7 +4378,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ]
@@ -4422,7 +4422,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ]
@@ -4466,7 +4466,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ]
@@ -4545,7 +4545,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ],
             "extension": [
               {
