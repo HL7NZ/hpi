@@ -38,6 +38,12 @@ Usage: #example
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier[=].value = "99ZZDD"
 * identifier[=].assigner = Reference(Organization/G00004B)
+* identifier[+].use = #official
+* identifier[=].value = "99ZZEE"
+* identifier[=].system = "https://standards.digital.health.nz/ns/chiropractic-board-id"
+* identifier[=].assigner = Reference(Organization/G00004B)
+
+
 * name[0].use = #official
 * name[=].family = "Two-Names"
 * name[=].given[0] = "Testtwo"

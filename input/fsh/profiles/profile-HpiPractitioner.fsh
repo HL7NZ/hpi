@@ -88,7 +88,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * identifier contains 
     HPI 0..1 MS and 
-    dormant 0..* MS
+    dormant 0..* MS and 
+    RA 0..* MS
 
 * identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
@@ -107,6 +108,17 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
 * identifier[dormant].assigner only Reference(HpiOrganization)
+
+
+
+* identifier[RA].system  from  https://nzhts.digital.health.nz/fhir/ValueSet/hpi-ra-identifier-code
+* identifier[RA].use = #official (exactly)
+* identifier[RA].use ^short = "fixed to official"
+* identifier[RA].type 0..0
+* identifier[RA].period 0..0
+* identifier[RA] ^short = "The RA Identifier"
+* identifier[RA].assigner only Reference(HpiOrganization)
+
 
 //-------- end of identifier slicing --------
 
