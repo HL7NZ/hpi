@@ -8,7 +8,7 @@
  * */
 
 let fs = require('fs');
-let igRoot = "/Users/davidhay/IG/";
+
 //let igRoot = "/Users/wendy/IG/";
 
 //const { Remarkable } = require('../globalScripts/node_modules/remarkable');
@@ -17,28 +17,12 @@ const { Remarkable } = require('remarkable');
 
 var md = new Remarkable();
 
+let rootPath = "./fsh-generated/resources/";
 
+let outFile1 = "./input/pagecontent/capabilityStatement.xml";  // for IG publisher
 
-let igName = process.argv[2];   
-if (!igName) {
-    console.log("No IG specified. Must be in the command eg: ./makeCapabilityStatement nhi")
-    return;
-}
+console.log('Building summary of the CapabilityStatement resource ')
 
-let fullPath = igRoot + igName;
-
-if ( ! fs.existsSync(fullPath)) {
-    console.log("The IG '" + igName + "' does not exist (at least, there is no folder with that name.")
-    return;
-}
-
-let rootPath = igRoot + igName +  "/fsh-generated/resources/";
-
-//let outFile = igRoot + igName + "/fsh/ig-data/input/pagecontent/CapabilityStatement.xml";
-let outFile1 = igRoot + igName + "/input/pagecontent/capabilityStatement.xml";  // for IG publisher
-
-console.log('Building summary of the CapabilityStatement resource ' + igName)
-console.log("IG is located at "+ fullPath);
 console.log('Location of CapabilityStatement:' + rootPath)
 console.log('Writing output to ' + outFile1)
 
@@ -173,8 +157,13 @@ if (fs.existsSync(rootPath)) {
 
 }
 
+ar.push("<h3>Contained Resources</h3>") 
+ar.push("<p>When a resource contains a reference to another resource, the  HPI server will not render the reference as a contained resource,  only the reference links themselves will be included in responses.</p>")
 
 ar.push("</div>")
+
+
+
 let file1 = ar.join('\r\n')
 //fs.writeFileSync(outFile,file1);
 fs.writeFileSync(outFile1,file1);

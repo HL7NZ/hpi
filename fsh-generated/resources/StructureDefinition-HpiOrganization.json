@@ -15,8 +15,8 @@
       "valueCode": "business"
     }
   ],
-  "url": "http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization",
-  "version": "0.10-snapshot",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization",
+  "version": "0.10.0",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",
@@ -545,7 +545,7 @@
               "path": "system"
             }
           ],
-          "rules": "openAtEnd"
+          "rules": "open"
         },
         "short": "Identifies this organization  across multiple systems",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
@@ -1193,7 +1193,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1352,7 +1352,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1407,7 +1407,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -1641,7 +1641,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1800,7 +1800,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1855,7 +1855,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -1894,7 +1894,7 @@
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "base": {
           "path": "Organization.identifier",
           "min": 0,
@@ -2090,7 +2090,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -2249,7 +2249,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -2339,7 +2339,7 @@
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
-        "short": "Identifies this organization  across multiple systems",
+        "short": "Identifiers which have been deprecated",
         "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems.",
         "requirements": "Organizations are known by a variety of ids. Some institutions maintain several, and most collect identifiers for exchange with other organizations concerning the organization.",
         "min": 0,
@@ -2486,7 +2486,7 @@
       {
         "id": "Organization.identifier:dormant.use",
         "path": "Organization.identifier.use",
-        "short": "official | old",
+        "short": "fixed to old",
         "definition": "The purpose of this identifier.",
         "comment": "Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.",
         "requirements": "Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.",
@@ -2539,7 +2539,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -2698,7 +2698,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -2753,7 +2753,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -3813,7 +3813,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ],
             "extension": [
               {
@@ -4283,7 +4283,7 @@
               "path": "system"
             }
           ],
-          "rules": "openAtEnd"
+          "rules": "open"
         },
         "min": 1
       },
@@ -4313,10 +4313,32 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:orgId.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:orgId.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-organisation-id"
+      },
+      {
+        "id": "Organization.identifier:orgId.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier:orgId.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.identifier:legacyOrgId",
@@ -4334,10 +4356,32 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:legacyOrgId.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:legacyOrgId.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/nzhis-agency-id"
+      },
+      {
+        "id": "Organization.identifier:legacyOrgId.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier:legacyOrgId.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.identifier:nzbn",
@@ -4345,7 +4389,7 @@
         "sliceName": "nzbn",
         "short": "The New Zealand Business Number",
         "min": 0,
-        "max": "0",
+        "max": "1",
         "mustSupport": true
       },
       {
@@ -4356,15 +4400,38 @@
         "fixedCode": "official"
       },
       {
+        "id": "Organization.identifier:nzbn.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
+      },
+      {
         "id": "Organization.identifier:nzbn.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-nzbn"
       },
       {
+        "id": "Organization.identifier:nzbn.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier:nzbn.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Organization.identifier:dormant",
         "path": "Organization.identifier",
         "sliceName": "dormant",
+        "short": "Identifiers which have been deprecated",
         "min": 0,
         "max": "*",
         "mustSupport": true
@@ -4372,14 +4439,37 @@
       {
         "id": "Organization.identifier:dormant.use",
         "path": "Organization.identifier.use",
+        "short": "fixed to old",
         "min": 1,
         "fixedCode": "old"
+      },
+      {
+        "id": "Organization.identifier:dormant.type",
+        "path": "Organization.identifier.type",
+        "max": "0"
       },
       {
         "id": "Organization.identifier:dormant.system",
         "path": "Organization.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/id/hpi-org"
+      },
+      {
+        "id": "Organization.identifier:dormant.period",
+        "path": "Organization.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Organization.identifier:dormant.assigner",
+        "path": "Organization.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Organization.type",
@@ -4444,6 +4534,24 @@
             "code": "Address",
             "profile": [
               "http://hl7.org.nz/fhir/StructureDefinition/hpi-nz-address"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Organization.partOf",
+        "path": "Organization.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
             ]
           }
         ]

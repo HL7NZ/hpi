@@ -20,10 +20,10 @@
     <a href="usecases.html">Use cases</a>
   </li>
   <li>
-    <a href="general.html">General Notes</a>
+    <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
   </li>
   <li>
-    <a href="logical.html">Logical Models</a>
+    <a href="general.html">General Notes</a>
   </li>
   <li>
     <a href="capabilityStatement.html">API</a>
@@ -52,7 +52,13 @@
         <a href="{{site.data.fhir.path}}index.html">FHIR Spec </a>
       </li>
       <li>
-        <a href="full-ig.zip">Full IG</a>
+        <a href="full-ig.zip">Download IG</a>
+      </li>
+      <li>
+        <a href="definitions.json.zip">Artifacts (Json)</a>
+      </li>
+      <li>
+        <a href="definitions.xml.zip">Artifacts (Xml)</a>
       </li>
     </ul>
   </li>

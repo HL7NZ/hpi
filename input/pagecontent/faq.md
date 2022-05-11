@@ -29,3 +29,18 @@ If a practitioner has retired and asked to be removed from the register their re
 ### Can I do bulk look ups of many practitioners at a time?
 
 There is no bulk operation supported at this time. However, the Practitioner Read by Id has a good response time and the HPI is designed to cope with high loads. If you need to send bulk requests or process high volumes, please contact us to discuss.
+
+
+
+### Why are the date of birth, gender and ethnicity missing from all practitioners?
+
+These details are supplied when a practitioner is added and maintained by their Responsible Authority and are used in non-identifiable analysis eg workforce planning. They are withheld on a Get Practitioner response and only available to users with admin permissions and only if they have a specific need for these details.
+
+
+### Which period  should be used for an APC expiration check?
+
+When checking that a practitioner is currently licenced, systems should check that the Registration Status Code is current and that todays date falls within the qualification period.
+
+The Practitioner.qualification.period is the start and end dates of the most recently issued Annual Practicing Certificate (APC).
+
+There is also a RegistrationStatusCode period that is part of the registration details for a practitioner. This is the start date that this status was applied.  If the status is ‘'removed’ then this is the date the practitioner was removed from the register.

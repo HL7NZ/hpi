@@ -12,6 +12,8 @@ Alias: $registration-initial-date = http://hl7.org.nz/fhir/StructureDefinition/r
 
 Alias: $scope-of-practice = http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
+Alias: $country-code = https://standards.digital.health.nz/ns/country-code
+Alias: $country-code-vs = https://nzhts.digital.health.nz/fhir/ValueSet/country-code
 
 
 Profile:        HpiPractitioner
@@ -42,23 +44,28 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //top level  extensions
 * extension contains 
     $death-date named death-date 0..1 and
-    $nzEthnicity named nzEthnicity 0..6
+    $nzEthnicity named nzEthnicity 0..6 and 
+    $educational-qualification named educational-qualification 0..*
 
 * extension[death-date] ^short = "The date this person died"
-
-
+* extension[death-date].extension[source] 0..0
 * address only NzAddress
 
+* extension[educational-qualification].extension[country].value[x] from $country-code-vs
+
 //must be one name with a family name
-* name 1..* 
+// name 1..* Will use the standard name cardnality
 * name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
+* name.text 0..0
+
 
 //---------- identifier slicing -----------
 //slice identifier to add the HPI as Must Support
 
-* identifier.type 0..0
-* identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+
+//* identifier.system from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
+
 
 * identifier.use from $identifier-use-vs
 * identifier.use ^short = "official | old"
@@ -75,32 +82,48 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * identifier ^slicing.description = "The identifiers"
 * identifier ^slicing.rules = #openAtEnd
 
+// setting type  and period to 0..0 at all slices level means is get set to 0..1 at individual slices, seems like a bug
+// * identifier.type 0..0
+// * identifier.period 0..0
+
 * identifier contains 
     HPI 0..1 MS and 
-    dormant 0..* MS
+    dormant 0..* MS and 
+    RA 0..* MS
 
 * identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[HPI].use = #official (exactly)
 * identifier[HPI].use ^short = "fixed to official"
-
 * identifier[HPI].type 0..0
+* identifier[HPI].period 0..0
 * identifier[HPI] ^short = "The currently active CPN (Common Person Name)"
 * identifier[HPI] ^definition = "The HPI Person Identifier or CPN of the person that is currently in use.   It can be referred to as the ‘Live’ CPN or “live” HPI Person ID”. A person can only have one live CPN"
+* identifier[HPI].assigner only Reference(HpiOrganization)
 
-
-* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-provider-id" (exactly)
+* identifier[HPI].system = "https://standards.digital.health.nz/ns/hpi-person-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short = "fixed to old"
-
 * identifier[dormant].type 0..0
+* identifier[dormant].period 0..0
 * identifier[dormant] ^short = "CPN (Common Person Name) identifiers that have been deprecated for this Person"
 * identifier[dormant] ^definition = "An HPI Person Identifier or CPN of the person that is no longer in use.   An HPI Person ID becomes dormant when it is discovered that 2 CPNs exist for the same person. The CPNs are linked, one becomes ‘live’ the other ‘dormant’."
+* identifier[dormant].assigner only Reference(HpiOrganization)
+
+
+
+* identifier[RA].system  from  https://nzhts.digital.health.nz/fhir/ValueSet/hpi-ra-identifier-code
+* identifier[RA].use = #official (exactly)
+* identifier[RA].use ^short = "fixed to official"
+* identifier[RA].type 0..0
+* identifier[RA].period 0..0
+* identifier[RA] ^short = "The RA Identifier"
+* identifier[RA].assigner only Reference(HpiOrganization)
 
 
 //-------- end of identifier slicing --------
 
 //the gender is required by the HPI
-* gender 1..1
+//* gender 1..1
 
 //many extensions on qualification
 * qualification.extension contains
@@ -113,10 +136,19 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
-* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
+//* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
+* qualification.id 0..0
+* qualification.identifier ^short = "The practitioner's identifier issued by the Responsible Authority eg medical council number, nursing council number"
+* qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
+* qualification.issuer ^short = "The HPI Organisation ID of the Responsible Authority that issues the registration"
+* qualification.issuer only Reference(HpiOrganization)
+* qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
+* qualification.extension[scope-of-practice] ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
 
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 
 * qualification.code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-authority-code
+
+* communication.coding from  https://nzhts.digital.health.nz/fhir/ValueSet/language-code

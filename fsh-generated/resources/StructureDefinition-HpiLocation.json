@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation",
-  "version": "0.10-snapshot",
+  "version": "0.10.0",
   "name": "HpiLocation",
   "title": "HPI Location",
   "status": "active",
@@ -757,7 +757,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -915,7 +915,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1201,7 +1201,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1360,7 +1360,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1415,7 +1415,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -1646,7 +1646,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -1805,7 +1805,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -1860,7 +1860,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -2090,7 +2090,7 @@
         "comment": "This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.",
         "requirements": "Allows users to make use of identifiers when the identifier system is not known.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.type",
           "min": 0,
@@ -2249,7 +2249,7 @@
         "short": "Time period when id is/was valid for use",
         "definition": "Time period during which identifier is/was valid for use.",
         "min": 0,
-        "max": "1",
+        "max": "0",
         "base": {
           "path": "Identifier.period",
           "min": 0,
@@ -2304,7 +2304,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -2366,15 +2366,8 @@
         "isModifierReason": "This element is labeled as a modifier because the status contains codes that mark the resource as not currently valid",
         "isSummary": true,
         "binding": {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
-              "valueString": "LocationStatus"
-            }
-          ],
           "strength": "required",
-          "description": "Indicates whether the location is still in use.",
-          "valueSet": "http://hl7.org/fhir/ValueSet/location-status|4.0.1"
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code"
         },
         "mapping": [
           {
@@ -5429,7 +5422,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Organization"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
             ]
           }
         ],
@@ -5469,7 +5462,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Location"
+              "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
             ],
             "extension": [
               {
@@ -5980,6 +5973,16 @@
         }
       },
       {
+        "id": "Location.identifier.type",
+        "path": "Location.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Location.identifier.period",
+        "path": "Location.identifier.period",
+        "max": "0"
+      },
+      {
         "id": "Location.identifier:facId",
         "path": "Location.identifier",
         "sliceName": "facId",
@@ -6000,6 +6003,18 @@
         "path": "Location.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
+      },
+      {
+        "id": "Location.identifier:facId.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
       },
       {
         "id": "Location.identifier:dormant",
@@ -6024,6 +6039,18 @@
         "fixedUri": "https://standards.digital.health.nz/ns/hpi-facility-id"
       },
       {
+        "id": "Location.identifier:dormant.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Location.identifier:legacyFacId",
         "path": "Location.identifier",
         "sliceName": "legacyFacId",
@@ -6043,6 +6070,26 @@
         "path": "Location.identifier.system",
         "min": 1,
         "fixedUri": "https://standards.digital.health.nz/ns/nzhis-facility-id"
+      },
+      {
+        "id": "Location.identifier:legacyFacId.assigner",
+        "path": "Location.identifier.assigner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.status",
+        "path": "Location.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code"
+        }
       },
       {
         "id": "Location.operationalStatus",
@@ -6153,6 +6200,36 @@
         "id": "Location.position",
         "path": "Location.position",
         "max": "0"
+      },
+      {
+        "id": "Location.managingOrganization",
+        "path": "Location.managingOrganization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Location.partOf",
+        "path": "Location.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
+            ],
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy",
+                "valueBoolean": true
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "Location.hoursOfOperation",

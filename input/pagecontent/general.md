@@ -9,16 +9,14 @@ Resources can be expressed either as Json or XML, and both formats are supported
 
 
 ### Id and Identifiers
-  
+
 All of the FHIR resources in this implementation have both an id and an identifier.
 
 The id is the ‘physical’ identity of the resource, and the identifier is the business identifier. 
 
-In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type and system in a resource). Thus the id for the resource above would be ‘99ZZZZ’, and the url something like:
+In this implementation, **the id of the resource will always be the same as the value of the identifier assigned by the HPI with a use value of ‘official’**. (There will only ever be a single identifier with this use type and system in a resource). Thus the id for the resource below would be ‘92ZZRR’, and the url something like:
 
-http://hpi.moh.nz/fhir/Practitioner/99ZZZZ 
-
-(The actual root url for the HPI has not yet been determined).
+https://api.hip.digital.health.nz/fhir/Practitioner/92ZZRR
 
 This design allows an implementer to retrieve a resource from the HPI and save it on their own system, but still be able to retrieve the original to check for updates. This can be done in 2 ways.
 
@@ -29,7 +27,7 @@ This design allows an implementer to retrieve a resource from the HPI and save i
 Extract the value of the identifier where the value of the __use__ element is ‘official’, and use that as the id for a direct read from the server. 
 
 
-http://hpi.moh.nz/fhir/Practitioner/prac-X99ZZZZ
+http://api.hip.digital.health.nz/fhir/Practitioner/92ZZRR
 
 
 #### Query resource
@@ -39,7 +37,7 @@ Use the identifier in a search query.
 
 Example: 
 
-http://hpi.moh.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi\|99ZZZZ
+http://api.hip.digital.health.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi\|92ZZRR
 
 
 (Note that both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
@@ -49,56 +47,25 @@ This example will return a bundle of Practitioner resources with only a single e
 
 ### References between resources
 
-References are directional - from a source to a target. There are 2 ways that references between resources can be represented in this implementation. 
+References are directional - from a source to a target. 
 
-
-#### As a reference to the id of the target resource. 
-
-The following example shows a reference to a Practitioner with the id of "example"
+The following example shows a reference to a Practitioner with the id of "92ZZRR"
 
 
 ``
 "practitioner": {
-"reference": "Practitioner/example",
+"reference": "Practitioner/92ZZRR",
 "display": "Dr Marcus welby"
   }
 ...
-``
 
-
-This is a relative reference (ie the target is on the same server as the source) from a property called ‘practitioner’ to the practitioner resource. This format is used when possible.
-
-
-#### Using the target resource identifier
-
-
-
-```
-...
-  "practitioner": {
-    "identifier": {
-        "system": "https://standards.digital.health.nz/id/hpi",
-        "value": "99ZZZZ"
-    },
-    "type":"Practitioner",
-    "display": "Dr Adam Careful"
-  }
-
-...
-```
-
-
-This is a reference from a property called ‘practitioner’ to a Practitioner resource that has the identifier _99ZZZZ_ 
-in the system _https://standards.digital.health.nz/id/hpi_  It has the disadvantage that if the client wishes to
-retrieve the target resource, then it must do a query by identifier. There are also a number of search queries
-that require a direct reference rather than an identifier.
 
 
 ### Merging resource and Dormant identifiers
 
 In some cases, a single entity may have been accidentally assigned multiple identifiers. When this is discovered to have occurred, one of the identifiers is deprecated and becomes a ‘dormant’ identifier, leaving the other as the active one. Both identifiers will appear in the active resource identifier list, with the dormant identifiers having a _use_ value of ‘old’ and the active having a _use_ value of ‘official’. 
 
-When reading the resource, if the deprecated id is used, then the resource that is returned will have the deprecated id, but the identifiers will be the correct ones (ie the 
+When reading the resource, if the deprecated id is used, the resource returned will have the live id, but the identifiers will have both the live with a *use* value of ‘official’ and this dormant with a *use* value of ‘old’.)
 
 For example, assume that there are 2 Practitioner resources exposed by the HPI, each with a single identifier. The id of the resource matches the identifier value.
 
@@ -106,9 +73,9 @@ For example, assume that there are 2 Practitioner resources exposed by the HPI, 
 ```
 {
   "resourceType":"Practitioner",
-  "id" : "99ZZZZ",
+  "id" : "92ZZRR",
   "identifier" : [
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"99ZZZZ","use":"official"}
+        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"92ZZRR","use":"official"}
 
 
   ]
@@ -117,7 +84,7 @@ For example, assume that there are 2 Practitioner resources exposed by the HPI, 
 ```
 
 
-(returned by GET [host]/Practitioner/99ZZZZ)
+(returned by GET [host]/Practitioner/92ZZRR)
 
 And 
 
@@ -130,7 +97,7 @@ And
         {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYY","use":"official"}
 
 
-  ]… other data (may be different to 99ZZZZ)
+  ]… other data (may be different to 92ZZRR)
 
 }
 ```
@@ -138,9 +105,9 @@ And
 
 (returned by GET [host]/Practitioner/96YYY)
 
-They are determined to be the same person, and the identifier 96YYY is deprecated (made dormant) in favour of 99ZZZZ.
+They are determined to be the same person, and the identifier 96YYY is deprecated (made dormant) in favour of 92ZZRR.
 
-A GET call of GET [host]/Practitioner/99ZZZZ) will return
+A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY) will return the same response
 
 
 ```
@@ -148,7 +115,7 @@ A GET call of GET [host]/Practitioner/99ZZZZ) will return
   "resourceType":"Practitioner",
   "id" : "99ZZZZ",
   "identifier" : [
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"99ZZZZ","use":"official"},
+        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"92ZZRR","use":"official"},
         {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYY","use":"old"}
 
 
@@ -159,43 +126,59 @@ A GET call of GET [host]/Practitioner/99ZZZZ) will return
 ```
 
 
-And a get call of GET [host]/Practitioner/96YYY) will return
 
-
-```
-{
-  "resourceType":"Practitioner",
-  "id" : "96YYY",
-  "identifier" : [
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"99ZZZZ","use":"official"},
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYY","use":"old"}
-
-
-  ]
-… other data - the same as GET [host]/Practitioner/99ZZZZ
-
-}
-```
-
-
-(note that in this case the id of the resource does not match the official HPI value)
 
 Resources that reference the Practitioner (such as the PractitionerRole resource) can use either id. For example, to return PractitionerRole resources for this Practitioner, either of the following queries will return the same set of PractitionerRole resources:
 
-GET [host]/PractitionerResource?practitioner=99ZZZZ
+GET [host]/PractitionerResource?practitioner=92ZZRR
 
 GET [host]/PractitionerResource?practitioner=96YYY
 
-### Must support
 
-The 'must support' indicator means that the client must have a strategy to deal with this element. details [here](http://hl7.org/fhir/profiling.html#mustsupport)
-
-For this IG, that means that if the element is present, the client must know how to interpret it. For example display it to the user or store in in the local store.
 
 ### Contained resources
 
 Contained resources are where the referenced (target) resource is contained within the source resource.
 
+When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
 
-### Modifier Extensions
+`https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
+
+
+
+### HTTP Header Details
+
+All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
+
+### Security
+The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
+
+The following scopes are supported
+
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th>Scope</th><th>Description</th> <th> </th></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> Read access to all Practitioner resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> Search access to Practitioner resources, Practitioners tagged as confidential are excluded from the results. </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> Write access to all Practitioner resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> Admin access to all Practitioner resources. </td><td><b>Allows access to confidential data.</b> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> Read access to all Location resources.  </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td>Search access to all Location resources  </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> Write access to all Location resources. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> Admin access to all Location resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> Read access to all Organization resources. </td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> Search access to all Organization resources </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> Write access to all Organization resources. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> Admin access to all Organization resources.</td><td> <b>Allows access to confidential data.</b> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> Read access to all Practitioner Role resources.</td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results. </td><td> </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> Write access to all Practitioner Role resources.</td><td> </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> Admin access to all Practitioner Role resources.</td><td> <b>Allows access to confidential data.</b></td></tr>
+</table>
+
 

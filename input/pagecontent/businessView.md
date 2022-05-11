@@ -4,31 +4,34 @@
 The purpose of the HPI is to uniquely identify health providers and issue a lifetime identifier for use in the NZ health systems.  The HPI was established in 2008 so that people working in the health sector could be identified using their HPI number, no matter what the context. This would reduce the number of identifiers in use for health providers and reduce the complexity of systems. The HPI number is increasingly being used as the identifier of choice by systems designers.  The HPI also recognises practitioners’ registration numbers and can be used to map from the registration number to the HPI number.  
 
 The HPI also provides an authoritative source of registration details, scopes of practice and annual practicing certificate periods in a highly available national database. Health provider organisations can access the most up-to-date details about all practitioners from one place no matter what registration the practitioner has. 
-The practitioner identity and registration information is supplied by each of the Responsible Authorities.  The current suppliers to the HPI are:
+The practitioner identity and registration information is supplied by each of the Responsible Authorities.
 
-* Chiropractic Board 
-* Dental Council 
-* Dietitians Board 
-* Medical Sciences Council 
-* Medical Council of New Zealand 
-* Medical Radiation Technologists Board
-* Midwifery Council 
-* Nursing Council of New Zealand 
-* Optometrists & Dispensing Opticians Board 
-* Osteopathic Council 
-* Occupational Therapists Therapy Board 
-* Paramedic Council 
-* Pharmacy Council of New Zealand 
-* Physiotherapy Board 
-* Podiatrists Board 
-* Psychologists Board 
-* (The Psychotherapists Board is the only authority that is not currently supplying their register of practitioners)
+The current suppliers to the HPI and the frequency they supply register updates are:
+
+* Chiropractic Board (monthly)
+* Dental Council (weekly)
+* Dietitians Board (monthly)
+* Medical Sciences Council (weekly)
+* Medical Council of New Zealand (weekly)
+* Medical Radiation Technologists Board (weekly)
+* Midwifery Council (weekly)
+* Nursing Council of New Zealand (weekly)
+* Optometrists & Dispensing Opticians Board (weekly)
+* Osteopathic Council (monthly)
+* Occupational Therapists Therapy Board (on request)
+* Paramedic Council (weekly)
+* Pharmacy Council of New Zealand (fortnighly)
+* Physiotherapy Board (fortnightly)
+* Podiatrists Board (monthly)
+* Psychologists Board (weekly)
+* Psychotherapists Board  (monthly)
 
 The Health Information Privacy Code (Rule 13) restricts the assignment the HPI number (HPI Common Provider Number CPN) to practitioners as defined by section 5(1) of the Health Practitioners Competence Assurance Act 2003. This limits the issuing of HPI numbers to only practitioners registered with the authorities listed above.  Work is underway to address this restriction and allow the HPI to include all health providers and health workers so that a common identifier can be used to identify all the various individuals providing healthcare and supporting services.  
 
 Practitioner has a special meaning in the New Zealand health system which is limited to those persons defined in the Health Practitioners Competence Assurance Act 2003. However, in this guide practitioner, health provider or person are terms used interchangeably and to include anyone directly or indirectly associated with providing healthcare services. 
 
 A national directory of places where a practitioner works and how to contact them has been a gap in the HPI functionality and has meant that many systems create and maintain this information independently at significant cost.   The HPI Practitioner Role resource will allow organisations and practitioners to make these details available nationally so various systems can rely on it to know the locations a practitioner works and the organisation they work for.   
+
 #### What the HPI contains
 The HPI consists of 4 indexes or data sets (in FHIR they are represented as resources)
 HPI Practitioner – holds identity and registration details for over 170,000 practitioners 
@@ -100,7 +103,7 @@ The PractitionerRole.period start and end dates can be replaced with any other p
 A practitionerRole record cannot be deleted. If a PractitionerRole record is entered incorrectly or by mistake, the way to logically delete it is to add a period end.date with an "Entered in Error" statusReason. PractitionerRole records with an enddate and statusReason = 'Duplicate' are also treated as logically deleted.  All records irrespective of their statusReason are part of the person's PracRole history.
 
 #### Linking - Live and Dormant Identifiers
-A person may have been registered on the HPI more than once and therefore have been assigned more than one HPI number (CPN). When this is discovered the records are ‘linked’.  Linking means that two or more HPI numbers will always be associated with a single person. One HPI number is nominated as the LIVE number.  The other numbers are referred to as DORMANT.  Usually, the earliest issued HPI number is designated as the live number. All relevant information from both records is retained e.g., all names. After linking, a request using either the live or a dormant HPI number will return the same response. 
+A person may have been registered on the HPI more than once and therefore have been assigned more than one HPI CPN number. When this is discovered the records are ‘linked’.  Linking means that two or more HPI CPN numbers will always be associated with a single person. One number is nominated as the LIVE number.  The other numbers are referred to as DORMANT.  Usually, the earliest issued HPI CPN number is designated as the live number. All relevant information from both records is retained e.g. all names. After linking, a request using either the live or a dormant HPI number will return the same response [See also](/general.html#merging-resource-and-dormant-identifiers).
 
 #### Confidentiality
 A person can make a request to their council to make their record confidential.  When this is the case the person’s name, gender, birth date, languages and ethnicity will not be returned in any search or read response. Identifiers and registration details are returned when the confidentiality flag is set so that if the HPI is being used to authorise a person’s access to records or functionality, the person’s ability to do their job is not impeded. The confidentiality flag can also be set on a one or more of a person’s PractitionerRole records. The records are returned but the location and organization details are redacted. 

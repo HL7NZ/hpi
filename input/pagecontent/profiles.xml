@@ -10,7 +10,7 @@
 </tr>
 <tr>
 <td><a href='StructureDefinition-HpiOrganization.html'>HpiOrganization</a></td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/hpiOrganization</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization</td>
 <td><p>An entity that provides services of interest to, or is involved in, the business of health care service provision.</p></td>
 </tr>
 <tr>

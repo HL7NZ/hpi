@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "0.9",
+  "version": "0.10.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -26,16 +26,16 @@
   ],
   "dependsOn": [
     {
+      "packageId": "hl7.org.nz.fhir.ig.hip-core",
+      "uri": "https:ig-nhi.hip-uat.digital.health.nz",
+      "version": "dev",
+      "id": "hl7_org_nz_fhir_ig_hip_core"
+    },
+    {
       "packageId": "fhir.org.nz.ig.base",
       "uri": "http://fhir.org.nz/ig/base",
       "version": "1.0.0",
       "id": "fhir_org_nz_ig_base"
-    },
-    {
-      "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https:ig-nhi.hip-uat.digital.health.nz",
-      "version": "1.0.0",
-      "id": "hl7_org_nz_fhir_ig_hip_core"
     }
   ],
   "definition": {
@@ -90,43 +90,67 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EndpointModel"
+          "reference": "Practitioner/90ZZLC"
         },
-        "name": "Electronic connection point",
-        "description": "Describes the capabilities for electronic interaction",
-        "exampleBoolean": false
+        "name": "90ZZLC",
+        "description": "Example HPI Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/FacilityModel"
+          "reference": "Practitioner/90ZZMG"
         },
-        "name": "A facility involved in healthcare",
-        "description": "An actual physical location. Represented by a Location model in FHIR",
-        "exampleBoolean": false
+        "name": "90ZZMG",
+        "description": "Example HPI Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/OrganizationModel"
+          "reference": "Practitioner/94ZZXF"
         },
-        "name": "An Organization involved in healthcare",
-        "description": "An Organization involved in healthcare",
-        "exampleBoolean": false
+        "name": "94ZZXF",
+        "description": "Example HPI Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ProviderModel"
+          "reference": "Practitioner/98ZZXQ"
         },
-        "name": "Healthcare provider",
-        "description": "A person who delivers care",
-        "exampleBoolean": false
+        "name": "98ZZXQ",
+        "description": "Example HPI Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "StructureDefinition/ProviderRoleModel"
+          "reference": "Practitioner/99ZZVA"
         },
-        "name": "Provider role",
-        "description": "The role of a provider in a care delivery setting",
-        "exampleBoolean": false
+        "name": "99ZZVA",
+        "description": "Example HPI Practitioner",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00001G"
+        },
+        "name": "G00001G",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00004B"
+        },
+        "name": "G00004B",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/G00023F"
+        },
+        "name": "G00023F",
+        "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {
@@ -135,30 +159,6 @@
         "name": "CapabilityStatement",
         "description": "Represents API exposed by HPI",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/HpiDHB"
-        },
-        "name": "Search on DHB",
-        "description": "Returns resources - eg Location -  that are in the catchment of the specified DHB",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "SearchParameter/HpiPractitionerBirthdate"
-        },
-        "name": "Search on birthdate",
-        "description": "Search the Practitioner by birthdate",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/practitioner1"
-        },
-        "name": "practitioner1",
-        "description": "Example of practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       }
     ],
     "page": {
@@ -212,11 +212,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "logical.html",
-          "title": "Logical",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "mohResources.html",
           "title": "Moh Resources",
           "generation": "html"
@@ -224,6 +219,11 @@
         {
           "nameUrl": "namingSystems.html",
           "title": "Naming Systems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "OnboardingAndComplianceTesting.html",
+          "title": "Onboarding And Compliance Testing",
           "generation": "markdown"
         },
         {
@@ -260,6 +260,10 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
+      },
+      {
+        "code": "special-url",
+        "value": "https://dev.d3ox9vcqia2rpj.amplifyapp.com/site"
       }
     ]
   }

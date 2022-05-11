@@ -1,6 +1,7 @@
 {
   "resourceType": "CapabilityStatement",
   "id": "HpiCapabilityStatement",
+  "url": "http://hl7.org.nz/fhir/ig/hpi/CapabilityStatement/HpiCapabilityStatement",
   "jurisdiction": [
     {
       "coding": [
@@ -39,6 +40,7 @@
             "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
           ],
           "documentation": "Practitioner query\n",
+          "profile": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner",
           "interaction": [
             {
               "code": "read",
@@ -220,7 +222,7 @@
             {
               "name": "dhb",
               "type": "token",
-              "documentation": "Locations that are in a DHBs catchment area. This is a custom search"
+              "documentation": "Locations that are in a DHBs catchment area."
             },
             {
               "name": "status",
