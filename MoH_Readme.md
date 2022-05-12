@@ -2,9 +2,9 @@
 
 
 
-| Current working branch | 0.10-snapshot |
+| Current working branch | - |
 | ---------------------- | ------------ |
-| **latest release**     | -            |
+| **latest release**     | 0.10.0         |
 
 
 
