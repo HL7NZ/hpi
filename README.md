@@ -1,4 +1,4 @@
-# Repository for HPI IG 
+# Repository for HPI IG  
 
 ## Pre requisites
 
