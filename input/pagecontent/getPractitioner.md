@@ -1,4 +1,5 @@
 
+
 ### Get Practitioner
 
 #### Read Practitioner with Identifier (CPN)
