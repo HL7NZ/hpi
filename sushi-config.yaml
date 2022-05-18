@@ -59,6 +59,7 @@ menu:
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
+  Table of Contents: toc.html
   Artifact Index: artifacts.html
   Support:
     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
