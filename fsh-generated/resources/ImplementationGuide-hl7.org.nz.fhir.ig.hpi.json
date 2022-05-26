@@ -172,6 +172,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "addPracRole.html",
+          "title": "Add Prac Role",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "api.html",
           "title": "Api",
           "generation": "markdown"
@@ -212,6 +217,16 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "getLocation.html",
+          "title": "Get Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "getPractitioner.html",
+          "title": "Get Practitioner",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "mohResources.html",
           "title": "Moh Resources",
           "generation": "html"
@@ -232,8 +247,28 @@
           "generation": "html"
         },
         {
+          "nameUrl": "searchLocation.html",
+          "title": "Search Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchPracRole.html",
+          "title": "Search Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchPractitioner.html",
+          "title": "Search Practitioner",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "updatePracRole.html",
+          "title": "Update Prac Role",
           "generation": "markdown"
         },
         {
