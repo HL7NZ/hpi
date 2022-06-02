@@ -4,7 +4,9 @@
 
 #### Read Loction with Identifier
 
+<div>
 {% include get-location.svg %}
+</div>
 
 Read location processing steps:
 1. The user supplies a facId number for the location to be looked up.
