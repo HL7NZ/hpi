@@ -15,3 +15,16 @@ E.g. GET https://hpi.api.health.govt.nz/location?name=Pukekohe Diamond Doctors
 4.	The matching facilities are retrieved from the HPI
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
+
+#### Other Search criteria
+
+**Address** 
+* Search location by address
+* GET https://hpi.api.health.govt.nz/Location?address=wilson street
+
+**LegacyFacId**
+* Search Organization by identifier Legacy organization id
+* GET https://hpi.api.health.govt.nz/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id|Z995
+
+#### Rules and errors
+TBC
