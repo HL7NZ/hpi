@@ -33,6 +33,7 @@ GET https://hpi.api.health.govt.nz/Organization?identifier=https://standards.dig
 
 GET https://hpi.api.health.govt.nz/Organization?address=Thorndon
 
+[For more information on search organization click here](/capabilityStatement.html)
 
 ### Rules and errors
 TBC
