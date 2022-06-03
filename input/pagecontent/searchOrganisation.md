@@ -15,3 +15,23 @@ E.g. GET https://hpi.api.health.govt.nz/organization?name=TryNSave Pharmacy
 4.	The matching organizations are retrieved from the HPI
 5.	The response containing a bundle of matching organizations is returned to the integrating application
 6.	The integrating application displays the matching organizations to the user
+
+#### Other Search criteria:
+
+**NZBN**
+* Search Organization by identifier NZBN
+* GET https://hpi.api.health.govt.nz/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn%7c9999999999001
+
+**Address** 
+* Search Organization by address
+* GET https://hpi.api.health.govt.nz/Organization?address=Thorndon
+
+**LegacyOrgId**
+* Search Organization by identifier Legacy organization id
+* GET https://hpi.api.health.govt.nz/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id%7c9000
+
+
+### Rules and errors
+TBC
+
+
