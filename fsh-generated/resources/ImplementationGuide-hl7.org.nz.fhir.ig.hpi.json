@@ -177,6 +177,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "addPractitioner.html",
+          "title": "Add Practitioner",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "api.html",
           "title": "Api",
           "generation": "markdown"
@@ -222,6 +227,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "getOrganisation.html",
+          "title": "Get Organisation",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "getPractitioner.html",
           "title": "Get Practitioner",
           "generation": "markdown"
@@ -249,6 +259,11 @@
         {
           "nameUrl": "searchLocation.html",
           "title": "Search Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchOrganisation.html",
+          "title": "Search Organisation",
           "generation": "markdown"
         },
         {

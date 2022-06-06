@@ -25,8 +25,39 @@
   <li>
     <a href="general.html">General Notes</a>
   </li>
-  <li>
-    <a href="capabilityStatement.html">API</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="getPractitioner.html">Get Practitioner</a>
+      </li>
+      <li>
+        <a href="searchPractitioner.html">Search Practitioner</a>
+      </li>
+      <li>
+        <a href="addPractitioner.html">Add Practitioner</a>
+      </li>
+      <li>
+        <a href="searchPracRole.html">Search Practitioner Role</a>
+      </li>
+      <li>
+        <a href="addPracRole.html">Add Practitioner Role</a>
+      </li>
+      <li>
+        <a href="getLocation.html">Get Facility (Location)</a>
+      </li>
+      <li>
+        <a href="searchLocation.html">Search Facility (Location)</a>
+      </li>
+      <li>
+        <a href="getOrganisation.html">Get Organisation</a>
+      </li>
+      <li>
+        <a href="searchOrganisation.html">Search Organisation</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="faq.html">FAQ</a>
