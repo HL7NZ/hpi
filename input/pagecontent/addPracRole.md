@@ -1,6 +1,6 @@
 
 
-### Add Practioner Role
+### Add Practitioner Role
 
 #### Add new Practitioner Role 
 
