@@ -15,11 +15,12 @@ Read location processing steps:
 4. The Location resource is retrieved from the HPI - ALT: Location not found. Operation Outcome resource returned
 5. The response containing the Location resource is returned
 
-[For more info click here](/general.html#read-resource-by-id)
 
 #### Query Loction with another identifier
 
 To query a location (facility) with ‘another identifier’, the integrating application sends an HTTP GET request for the Location resource using the ‘other identifier’
-to identify the location whose information is being requested. E.g. GET https://hpi.api.health.govt.nz/location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id|[legacyFacId]
+to identify the location whose information is being requested.
 
-[For more info click here](/general.html#query-resource)
+**Link to Search Fac when available**
+
+[For more information on read vs query click here](/general.html#read-resource-by-id)
