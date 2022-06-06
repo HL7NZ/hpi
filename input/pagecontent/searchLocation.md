@@ -4,7 +4,9 @@
 
 #### Search location by name
 
+<div>
 {% include search-location-with-name.svg %}
+</div>
 
 Search location processing steps:
 
