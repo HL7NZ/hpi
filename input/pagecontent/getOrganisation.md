@@ -15,7 +15,7 @@ Read organization processing steps:
 
 #### Query Organization with another identifier
 
-To query an Organization with ‘another identifier' is technically a FHIR search, but is treated internally as an Organization read. The integrating application sends an HTTP GET request for the Organization resource using the ‘other identifier’ to identify the Organization whose information is being requested.
+To query an Organization with ‘another identifier' the integrating application sends an HTTP GET request for the Organization resource using the ‘other identifier’ to identify the Organization whose information is being requested.
 
 **Link to Search org when available**
 
