@@ -4,7 +4,9 @@
 
 #### Search organization by name
 
-Diagram TBC
+<div>
+{% include search-organisation-name.svg %}
+</div>
 
 Search organization processing steps:
 
