@@ -24,5 +24,5 @@ To query a Practitioner with ‘another identifier' the integrating application 
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
-### Rules and errors
+#### Rules and errors
 TBC
