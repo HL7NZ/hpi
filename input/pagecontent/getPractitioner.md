@@ -20,7 +20,7 @@ Read practitioner processing steps:
 
 To query a Practitioner with ‘another identifier' the integrating application sends an HTTP GET request for the Practitioner resource using the ‘other identifier’ to identify the Practitioner whose information is being requested.
 
-[To review searching by othger identifiers click here](/searchPractitioner.html#other-search-criteria)
+[To review searching by other identifiers click here](/searchPractitioner.html#other-search-criteria)
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
