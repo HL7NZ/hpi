@@ -29,7 +29,7 @@ GET https://hpi.api.health.govt.nz/Location?address=wilson street
 **LegacyFacId**
 * Search location by identifier Legacy facility id
 
-GET https://hpi.api.health.govt.nz/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id|Z995
+GET https://hpi.api.health.govt.nz/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id | Z995
 
 
 #### Rules and errors
