@@ -18,5 +18,5 @@ Add new practitionerRole processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the PractitionerRole ID for subsequent update requests
 
-### Rules and errors
+#### Rules and errors
 TBC
