@@ -38,5 +38,5 @@ Search Practitioner by other identifier processing steps:
 
 [For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
 
-### Rules and errors
+#### Rules and errors
 TBC
