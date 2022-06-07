@@ -4,7 +4,9 @@
 
 #### Read Organization with Identifier
 
-Diagram TBC
+<div>
+{% include get-organization.svg %}
+</div>
 
 Read organization processing steps:
 1. The user supplies a hpi-organisation-id (HPIorgId) number for the Organization to be looked up.
@@ -17,7 +19,7 @@ Read organization processing steps:
 
 To query an Organization with ‘another identifier' the integrating application sends an HTTP GET request for the Organization resource using the ‘other identifier’ to identify the Organization whose information is being requested.
 
-**Link to Search org when available**
+[To review searching by other identifiers click here](/searchOrganisation.html#other-search-criteria)
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
