@@ -8,7 +8,7 @@
 {% include add-practitioner.svg %}
 </div>
 
-#### Add new Practitioner processing steps:
+Add new Practitioner processing steps:
 
 1. The user initiates creating a new Practitioner in the integrating application
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the Practitioner details
