@@ -37,7 +37,7 @@ GET https://hpi.api.health.govt.nz/Organization?address=Thorndon
 
 [For more information on search organization click here](/capabilityStatement.html)
 
-### Rules and errors
+#### Rules and errors
 TBC
 
 
