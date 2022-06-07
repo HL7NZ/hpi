@@ -21,7 +21,7 @@ Read location processing steps:
 To query a location (facility) with ‘another identifier’, the integrating application sends an HTTP GET request for the Location resource using the ‘other identifier’
 to identify the location whose information is being requested.
 
-**Link to Search Fac when available**
+[To review searching by other identifiers click here](/searchLocation.html#other-search-criteria)
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
