@@ -16,5 +16,5 @@
 5. The response containing a bundle of PractitionerRole resources is returned
 6. The consuming application displays the matching roles to the user
 
-### Rules and errors
+#### Rules and errors
 TBC
