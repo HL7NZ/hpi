@@ -1,0 +1,32 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Search Practitioner with name and birth date
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: Search with name and birth date
+activate A
+|||
+A -> B: GET (…)/Practitioner?name=[]&birthdate=[]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Search[name]&[birthdate]
+activate C
+|||
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:Return (bundle)
+deactivate B
+|||
+A -> User: Display list of matching Practitioners
+deactivate A
+|||
+@enduml
