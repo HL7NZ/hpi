@@ -262,7 +262,7 @@ table, th, td {
 
 <tr><td>HPI-P-Get-6</td>
 <td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
-<td>Tbd (only surname, only given name) <br /> 99ZZVM <br /> 99ZZVA</td>
+<td>Tbd (only surname, only given name) <br /> 91ZZWJ <br /> 91ZZVR</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user</td>
 <td>mandatory</td></tr>
 
