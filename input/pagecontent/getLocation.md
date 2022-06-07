@@ -24,3 +24,6 @@ to identify the location whose information is being requested.
 **Link to Search Fac when available**
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
+
+### Rules and errors
+TBC
