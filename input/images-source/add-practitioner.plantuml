@@ -1,0 +1,32 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Add Practitioner
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: User enters Practitioner details
+activate A
+|||
+A -> B: POST(...)/practitioner
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Add request
+activate C
+|||
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:
+deactivate B
+|||
+A -> User: 201 Created HTTP status code
+deactivate A
+|||
+@enduml
