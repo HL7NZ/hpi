@@ -5,7 +5,7 @@
 #### Search organization by name
 
 <div>
-{% include search-organisation-name.svg %}
+{% include search-organisationwithname.svg %}
 </div>
 
 Search organization processing steps:
