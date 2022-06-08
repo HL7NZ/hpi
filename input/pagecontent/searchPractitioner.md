@@ -5,7 +5,7 @@
 #### Search Practitioner by name and birth date
 
 <div>
-{% include search-practitioner-with-name-birthdate.svg %}
+{% include search-practitionerwithnamebirthdate.svg %}
 </div>
 
 Search Practitioner by name and birth date processing steps:
