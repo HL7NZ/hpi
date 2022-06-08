@@ -2,7 +2,7 @@
 
 ### Get Location (facility)
 
-#### Read Loction with Identifier
+#### Read Location with Identifier
 
 <div>
 {% include get-location.svg %}
