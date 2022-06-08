@@ -23,9 +23,7 @@ Search Practitioner by name and birth date processing steps:
 **Search Practitioner by other identifier**
 * E.g. Nursing Council Number:
 
-<div>
-{% include query-practitioner.plantuml.svg %}
-</div>
+Diagram TBC
 
 Search Practitioner by other identifier processing steps:
 
