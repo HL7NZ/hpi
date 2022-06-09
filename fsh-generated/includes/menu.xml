@@ -52,10 +52,10 @@
         <a href="searchLocation.html">Search Facility (Location)</a>
       </li>
       <li>
-        <a href="getOrganisation.html">Get Organisation</a>
+        <a href="getOrganization.html">Get Organization</a>
       </li>
       <li>
-        <a href="searchOrganisation.html">Search Organisation</a>
+        <a href="searchOrganization.html">Search Organization</a>
       </li>
     </ul>
   </li>

@@ -227,8 +227,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "getOrganisation.html",
-          "title": "Get Organisation",
+          "nameUrl": "getOrganization.html",
+          "title": "Get Organization",
           "generation": "markdown"
         },
         {
@@ -262,8 +262,8 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "searchOrganisation.html",
-          "title": "Search Organisation",
+          "nameUrl": "searchOrganization.html",
+          "title": "Search Organization",
           "generation": "markdown"
         },
         {
