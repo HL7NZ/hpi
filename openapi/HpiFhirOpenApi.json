@@ -280,6 +280,33 @@
 					}
 				}
 			},
+			"CodeableConcept": {
+				"description": "A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.",
+				"properties": {
+					"id": {
+						"description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+						"$ref": "#/components/schemas/string"
+					},
+					"extension": {
+						"description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+						"items": {
+							"$ref": "#/components/schemas/Extension"
+						},
+						"type": "array"
+					},
+					"coding": {
+						"description": "A reference to a code defined by a terminology system.",
+						"items": {
+							"$ref": "#/components/schemas/Coding"
+						},
+						"type": "array"
+					},
+					"text": {
+						"description": "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.",
+						"$ref": "#/components/schemas/string"
+					}
+				}
+			},
 			"Coding": {
 				"description": "A reference to a code defined by a terminology system.",
 				"properties": {
@@ -409,25 +436,42 @@
 						"pattern": "^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
 						"type": "string"
 					},
-					"valueAddress": {
-						"description": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-						"$ref": "#/definitions/Address"
-					},
 					"valueCodeableConcept": {
 						"description": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-						"$ref": "#/definitions/CodeableConcept"
+						"$ref": "#/components/schemas/CodeableConcept"
 					},
 					"valueCoding": {
 						"description": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-						"$ref": "#/definitions/Coding"
-					},
-					"valueContactPoint": {
-						"description": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-						"$ref": "#/definitions/ContactPoint"
+						"$ref": "#/components/schemas/Coding"
 					},
 					"valuePeriod": {
 						"description": "Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).",
-						"$ref": "#/definitions/Period"
+						"$ref": "#/components/schemas/Period"
+					}
+				},
+				"additionalProperties": false
+			},
+			"Period": {
+				"description": "A time period defined by a start and end date and optionally time.",
+				"properties": {
+					"id": {
+						"description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+						"$ref": "#/components/schemas/string"
+					},
+					"extension": {
+						"description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+						"items": {
+							"$ref": "#/components/schemas/Extension"
+						},
+						"type": "array"
+					},
+					"start": {
+						"description": "The start of the period. The boundary is inclusive.",
+						"$ref": "#/components/schemas/dateTime"
+					},
+					"end": {
+						"description": "The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.",
+						"$ref": "#/components/schemas/dateTime"
 					}
 				},
 				"additionalProperties": false
