@@ -451,6 +451,53 @@
 				},
 				"additionalProperties": false
 			},
+			"Identifier": {
+				"description": "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.",
+				"properties": {
+					"id": {
+						"description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+						"$ref": "#/components/schemas/string"
+					},
+					"extension": {
+						"description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+						"items": {
+							"$ref": "#/components/schemas/Extension"
+						},
+						"type": "array"
+					},
+					"use": {
+						"description": "The purpose of this identifier.",
+						"enum": [
+							"usual",
+							"official",
+							"temp",
+							"secondary",
+							"old"
+						]
+					},
+					"type": {
+						"description": "A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.",
+						"$ref": "#/components/schemas/CodeableConcept"
+					},
+					"system": {
+						"description": "Establishes the namespace for the value - that is, a URL that describes a set values that are unique.",
+						"$ref": "#/components/schemas/uri"
+					},
+					"value": {
+						"description": "The portion of the identifier typically relevant to the user and which is unique within the context of the system.",
+						"$ref": "#/components/schemas/string"
+					},
+					"period": {
+						"description": "Time period during which identifier is/was valid for use.",
+						"$ref": "#/components/schemas/Period"
+					},
+					"assigner": {
+						"description": "Organization that issued/manages the identifier.",
+						"$ref": "#/components/schemas/Reference"
+					}
+				},
+				"additionalProperties": false
+			},
 			"Period": {
 				"description": "A time period defined by a start and end date and optionally time.",
 				"properties": {
@@ -476,6 +523,44 @@
 				},
 				"additionalProperties": false
 			},
+			
+			"Reference": {
+      "description": "A reference from one resource to another.",
+      "properties": {
+        "id": {
+          "description": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+          "$ref": "#/components/schemas/string"
+        },
+        "extension": {
+          "description": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+          "items": {
+            "$ref": "#/components/schemas/Extension"
+          },
+          "type": "array"
+        },
+        "reference": {
+          "description": "A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with \u0027#\u0027) refer to contained resources.",
+          "$ref": "#/components/schemas/string"
+        },
+        
+        "type": {
+          "description": "The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.\n\nThe type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. \"Patient\" is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources).",
+          "$ref": "#/components/schemas/uri"
+        },
+        
+        "identifier": {
+          "description": "An identifier for the target resource. This is used when there is no way to reference the other resource directly, either because the entity it represents is not available through a FHIR server, or because there is no way for the author of the resource to convert a known identifier to an actual location. There is no requirement that a Reference.identifier point to something that is actually exposed as a FHIR instance, but it SHALL point to a business concept that would be expected to be exposed as a FHIR instance, and that instance would need to be of a FHIR resource type allowed by the reference.",
+          "$ref": "#/components/schemas/Identifier"
+        },
+        "display": {
+          "description": "Plain text narrative that identifies the resource in addition to the resource reference.",
+          "$ref": "#/components/schemas/string"
+        }
+     
+      },
+      "additionalProperties": false
+    },
+			
 			"CapabilityStatement": {
 				"description": "A Capability Statement documents a set of capabilities (behaviors) of a FHIR Server for a particular version of FHIR that may be used as a statement of actual server functionality or a statement of required or desired server implementation.",
 				"properties": {
@@ -793,6 +878,13 @@
 						"description": "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
 						"items": {
 							"$ref": "#/components/schemas/Extension"
+						},
+						"type": "array"
+					},
+					"identifier": {
+						"description": "An identifier that applies to this person in this role.",
+						"items": {
+							"$ref": "#/components/schemas/Identifier"
 						},
 						"type": "array"
 					}
