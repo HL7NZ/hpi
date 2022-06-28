@@ -54,6 +54,52 @@ paths:
             application/fhir+json:
               schema:
                 $ref: '#/components/schemas/Practitioner'
+              example:
+                resourceType: Organization
+                id: G00001G
+                meta:
+                  profile:
+                    - http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization
+                extension:
+                  - url: http://hl7.org.nz/fhir/StructureDefinition/established
+                    valuePeriod:
+                      start: '1900-01-01'
+                identifier:
+                  - use: official
+                    system: https://standards.digital.health.nz/ns/hpi-organisation-id
+                    value: G00001-G
+                active: true
+                type:
+                  - coding:
+                      - version: '1.1'
+                        code: '999'
+                        system: https://standards.digital.health.nz/ns/organisation-type-code
+                        display: Other
+                name: Ministry of Health
+                alias:
+                  - Ministry of Health
+                _alias:
+                  - extension:
+                      - url: http://hl7.org.nz/fhir/StructureDefinition/alias-type
+                        valueCodeableConcept:
+                          coding:
+                            - version: '1.0'
+                              code: legal
+                              system: https://standards.digital.health.nz/ns/alias-type-code
+                              display: Legal
+                          text: Legal
+                telecom:
+                  - system: email
+                    value: info@health.govt.nz
+                    use: work
+                    rank: 1
+                    period:
+                      start: '2010-01-01'
+                  - system: phone
+                    value: 33 2546124
+                    use: work
+                    rank: 2
+               
         default:
           description: Error, with details
           content:
@@ -647,8 +693,10 @@ components:
       properties:
         resourceType:
           description: This is a Practitioner resource
-        id:
+        #The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.
+        id: 
           $ref: '#/components/schemas/id'
+        #The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.
         meta:
           $ref: '#/components/schemas/Meta'
         extension:
@@ -656,9 +704,17 @@ components:
           items:
             $ref: '#/components/schemas/Practitioner_Extensions'
           type: object
+        #An identifier that applies to this person in this role
         identifier:
           items:
-            $ref: '#/components/schemas/Identifier'
+            anyOf:
+              #there should be exacvtly oine hpi identifier
+              - $ref: '#/components/schemas/HPI_Identifer'
+              #there may be many dormant identifiers
+              - $ref: '#/components/schemas/HPI_DormantIdentifer'
+              #there may be many RA identifiers
+              - $ref: '#/components/schemas/HPI_RAIdentifer'
+              
           type: array
         name:
           description: The name(s) associated with the practitioner.
@@ -675,6 +731,49 @@ components:
           items:
             $ref: '#/components/schemas/CodeableConcept'
           type: array
+    HPI_Identifer:
+      type: object
+      properties:
+        use: 
+          enum: 
+            - "official"
+        system:
+          enum:
+            - "https://standards.digital.health.nz/ns/hpi-person-id"
+        value:
+          type: string
+        assigner:
+          $ref: '#/components/schemas/Reference'
+          
+    HPI_DormantIdentifer:
+      type: object
+      properties:
+        use: 
+          enum: 
+            - "old"
+        system:
+          type: string
+        value:
+          type: string
+        assigner:
+          $ref: '#/components/schemas/Reference'         
+          
+          
+    HPI_RAIdentifer:
+      type: object
+      properties:
+        use: 
+          enum: 
+            - "old"
+        system:
+          # system must be from https://standards.digital.health.nz/ns/hpi-ra-identifier-code
+          type: string
+        value:
+          type: string
+        assigner:
+          $ref: '#/components/schemas/Reference'     
+          
+          
     Practitioner_Qualification:
       type: object
       description: A person who is directly or indirectly involved in the provisioning of healthcare.
