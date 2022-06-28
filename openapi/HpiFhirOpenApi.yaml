@@ -722,6 +722,8 @@ components:
             - http://hl7.org.nz/fhir/StructureDefinition/death-date
         valueDate:
           $ref: '#/components/schemas/date'
+      required:
+        - url
     Practitioner_Qualification_Extension:
       type: array
       items:
@@ -763,6 +765,8 @@ components:
                 type: string
               display:
                 type: string
+      required:
+        - url  
             
     scope-of-practice: 
       type: object
@@ -776,7 +780,9 @@ components:
             anyOf:
               - $ref: '#/components/schemas/practitioner-scope-of-practice-code'
               - $ref: '#/components/schemas/period-extension'
-    
+      required:
+        - url
+        
     additional-authorisation:
      type: array
      items: 
@@ -805,7 +811,9 @@ components:
                 type: string
               display:
                 type: string
-             
+      required:
+        - url
+                 
     condition-on-practice:
       type: array
       items: 
@@ -834,7 +842,9 @@ components:
                 type: string
               display:
                 type: string
-                
+      required:
+        - url
+                    
     period-extension:
         type: object
         properties:
@@ -843,7 +853,9 @@ components:
               - "period"
           valuePeriod:
              $ref: '#/components/schemas/Period'
-    
+        required:
+          - url
+           
     description-extension:
         type: object
         properties:
@@ -853,7 +865,9 @@ components:
           valueString:
             type:
               string
-    
+        required:
+          - url
+          
     Educational-Qualification:
       type: object
       properties:
@@ -871,6 +885,8 @@ components:
                     - fullname
                 valueString:
                   type: string
+              required: 
+                - url
             year:
               type: object
               properties:
@@ -879,6 +895,8 @@ components:
                     - year
                 valueString:
                   type: string
+              required: 
+                - url
             institution:
               type: object
               properties:
@@ -887,6 +905,8 @@ components:
                     - institution
                 valueString:
                   type: string
+              required: 
+                - url
             city:
               type: object
               properties:
@@ -895,6 +915,8 @@ components:
                     - city
                 valueString:
                   type: string
+              required: 
+                - url
             country:
               type: object
               properties:
@@ -903,6 +925,10 @@ components:
                     - country
                 valueString:
                   type: string
+              required: 
+                - url
+      required:
+        - url
   parameters:
     rid:
       name: rid
