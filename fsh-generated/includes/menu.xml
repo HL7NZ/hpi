@@ -94,6 +94,9 @@
       <li>
         <a href="definitions.xml.zip">Artifacts (Xml)</a>
       </li>
+      <li>
+        <a href="HpiFhirOpenApi.yaml">OpenApi 3 spec</a>
+      </li>
     </ul>
   </li>
 </ul>
