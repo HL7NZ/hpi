@@ -872,61 +872,69 @@ components:
         url:
           enum:
             - http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
-        extension:
-          type: object
-          properties:
-            fullname:
-              type: object
-              properties:
-                url:
-                  enum:
-                    - fullname
-                valueString:
-                  type: string
-              required: 
-                - url
-            year:
-              type: object
-              properties:
-                url:
-                  enum:
-                    - year
-                valueString:
-                  type: string
-              required: 
-                - url
-            institution:
-              type: object
-              properties:
-                url:
-                  enum:
-                    - institution
-                valueString:
-                  type: string
-              required: 
-                - url
-            city:
-              type: object
-              properties:
-                url:
-                  enum:
-                    - city
-                valueString:
-                  type: string
-              required: 
-                - url
-            country:
-              type: object
-              properties:
-                url:
-                  enum:
-                    - country
-                valueString:
-                  type: string
-              required: 
-                - url
+        extension:        
+          items:
+            anyOf:
+              - $ref: '#/components/schemas/eq-fullname'
+              - $ref: '#/components/schemas/eq-year'
+              - $ref: '#/components/schemas/eq-institution'
+              - $ref: '#/components/schemas/eq-city'
+              - $ref: '#/components/schemas/eq-country'
+          type: array
+                       
       required:
         - url
+        
+    eq-fullname:
+        type: object
+        properties:
+          url:
+            enum:
+              - fullname
+          valueString:
+            type: string
+        required: 
+          - url
+    eq-year:
+        type: object
+        properties:
+          url:
+            enum:
+              - year
+          valueString:
+            type: string
+        required: 
+          - url
+    eq-institution:
+        type: object
+        properties:
+          url:
+            enum:
+              - institution
+          valueString:
+            type: string
+        required: 
+          - url
+    eq-city:
+        type: object
+        properties:
+          url:
+            enum:
+              - city
+          valueString:
+            type: string
+        required: 
+          - url
+    eq-country:
+        type: object
+        properties:
+          url:
+            enum:
+              - country
+          valueString:
+            type: string
+        required: 
+          - url
   parameters:
     rid:
       name: rid
