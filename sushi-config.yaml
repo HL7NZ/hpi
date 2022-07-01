@@ -75,4 +75,4 @@ menu:
     "Download IG" : full-ig.zip
     Artifacts (Json): definitions.json.zip
     Artifacts (Xml): definitions.xml.zip
-    "OpenApi 3 spec": HpiFhirOpenApi.json
+    "OpenApi 3 spec": HpiFhirOpenApi.yaml

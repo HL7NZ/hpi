@@ -34,12 +34,13 @@ echo
 # echo "Making NamingSystem summary"
 # ../scripts/makeNamingSystemSummary.js hpi
 
-echo "validating examples agains openapi"
+echo "validating examples against openapi"
 cd ./openapi
 validate.sh
-cd..
 
-
+echo copying HpiFhirOpenApi.yaml into template content so it can be accesses from menu
+cp ./HpiFhirOpenApi.yaml $HOME/.fhir/packages/fhir.base.template#current/package/content
+cd ..
 
 else 
 echo
