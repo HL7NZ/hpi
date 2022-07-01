@@ -34,10 +34,18 @@ echo
 # echo "Making NamingSystem summary"
 # ../scripts/makeNamingSystemSummary.js hpi
 
+echo "validating examples agains openapi"
+cd ./openapi
+validate.sh
+cd..
+
+
 
 else 
 echo
 echo
 echo "There were errors, so the other scripts weren't run..."
 fi
+
+
 

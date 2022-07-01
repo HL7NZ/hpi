@@ -708,7 +708,7 @@ components:
       properties:
         url:
           enum:
-            - "http://hl7.org.nz/fhir/StructureDefinition/ondition-on-practice"    
+            - "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"    
         extension:
           type: array
           items: 
