@@ -39,7 +39,9 @@ cd ./openapi
 validate.sh
 
 echo copying HpiFhirOpenApi.yaml into template content so it can be accesses from menu
-cp ./HpiFhirOpenApi.yaml $HOME/.fhir/packages/fhir.base.template#current/package/content
+#zip it first so we can download it
+7z a ./HpiFhirOpenApi.zip ./HpiFhirOpenApi.yaml
+cp ./HpiFhirOpenApi.zip $HOME/.fhir/packages/fhir.base.template#current/package/content
 cd ..
 
 else 
