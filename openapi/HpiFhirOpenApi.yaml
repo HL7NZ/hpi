@@ -585,7 +585,7 @@ components:
             anyOf:
               - $ref: '#/components/schemas/Educational-Qualification'
               - $ref: '#/components/schemas/DeathDate'
-              - $ref: '#/components/schemas/nz-ethnicity-extension'
+              - $ref: '#/components/schemas/NzEthnicity_Extension'
           type: array
         #An identifier that applies to this person in this role
         identifier:
@@ -604,6 +604,7 @@ components:
             $ref: '#/components/schemas/HumanName'
           type: array
         qualification:
+          description: The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.      
           type : array
           items:
              type: object
@@ -613,7 +614,7 @@ components:
                   items:
                     anyOf:
                       - $ref: '#/components/schemas/ScopeOfPractice_Extension'
-                      - $ref: '#/components/schemas/registration-initial-date'
+                      - $ref: '#/components/schemas/Registration_Initial_Date'
                       - $ref: '#/components/schemas/ConditionOnPractice_Extension'
                       - $ref: '#/components/schemas/RegistrationStatusCode_Extension'
                 identifier:
@@ -621,7 +622,7 @@ components:
                     type: array
                     items:
                       $ref: '#/components/schemas/Identifier'
-                  # Coded representation of the qualification.
+                # Coded representation of the qualification.
                 code:          
                     $ref: '#/components/schemas/CodeableConcept'
                 # Period during which the qualification is valid  
@@ -693,8 +694,8 @@ components:
              type: array
              items:
               anyOf:
-                - $ref: '#/components/schemas/codeableconcept-extension'
-                - $ref: '#/components/schemas/period-extension'
+                - $ref: '#/components/schemas/CodeableConcept_Extension'
+                - $ref: '#/components/schemas/Period_Extension'
               
         valueCodeableConcept:
           #preferred https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code
@@ -707,13 +708,13 @@ components:
       properties:
         url:
           enum:
-            - "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"    
+            - "http://hl7.org.nz/fhir/StructureDefinition/ondition-on-practice"    
         extension:
           type: array
           items: 
             anyOf:
-              - $ref: '#/components/schemas/period-extension'
-              - $ref: '#/components/schemas/description-extension'
+              - $ref: '#/components/schemas/Period_Extension'
+              - $ref: '#/components/schemas/Description_Extension'
       required:
         - url
         
@@ -728,13 +729,9 @@ components:
           items: 
             anyOf:
               - $ref: '#/components/schemas/StatusCode'
-              - $ref: '#/components/schemas/period-extension'
+              - $ref: '#/components/schemas/Period_Extension'
       required:
-        - url
-    
-    
-   
-                    
+        - url                    
     DeathDate:
       type: object
       properties:
@@ -746,7 +743,7 @@ components:
       required:
         - url
            
-    registration-initial-date: 
+    Registration_Initial_Date: 
       type: object
       properties:
         url:
@@ -754,9 +751,7 @@ components:
             - "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
         valueDate:       
           $ref: '#/components/schemas/date'
-    
-  
-          
+         
     StatusCode:
       type: object
       properties:
@@ -768,7 +763,7 @@ components:
       required:
         - url  
             
-    scope-of-practice: 
+    ScopeOfPractice: 
       type: object
       properties:
         url:
@@ -780,21 +775,21 @@ components:
             items:         
               anyOf:
               #"A code identifying the services that the practitioner is permitted to perform"            
-                  - $ref: '#/components/schemas/codeableconcept-extension'
-                  - $ref: '#/components/schemas/period-extension'                                           
+                  - $ref: '#/components/schemas/CodeableConcept_Extension'
+                  - $ref: '#/components/schemas/Period_Extension'                                           
       required:
         - url
         
    
             
-    additional-authorisation:
+    AdditionalAuthorisation:
      type: array
      items: 
         anyOf:
-          - $ref: '#/components/schemas/period-extension'
-          - $ref: '#/components/schemas/codeableconcept-extension'
+          - $ref: '#/components/schemas/Period_Extension'
+          - $ref: '#/components/schemas/CodeableConcept_Extension'
               
-    codeableconcept-extension:
+    CodeableConcept_Extension:
       type: object
       properties:
         url:
@@ -807,7 +802,7 @@ components:
                  
 
                     
-    period-extension:
+    Period_Extension:
         type: object
         properties:
           url:
@@ -818,7 +813,7 @@ components:
         required:
           - url
            
-    description-extension:
+    Description_Extension:
         type: object
         properties:
           url:
@@ -830,7 +825,7 @@ components:
         required:
           - url
      
-    nz-ethnicity-extension:
+    NzEthnicity_Extension:
        type: object
        properties:
          url:
@@ -847,11 +842,7 @@ components:
        required:
           - url
           - valueCodeableConcept
-        
-      
-   
-        
-          
+                
     Educational-Qualification:
       type: object
       properties:
@@ -861,17 +852,17 @@ components:
         extension:        
           items:
             anyOf:
-              - $ref: '#/components/schemas/eq-fullname'
-              - $ref: '#/components/schemas/eq-year'
-              - $ref: '#/components/schemas/eq-institution'
-              - $ref: '#/components/schemas/eq-city'
-              - $ref: '#/components/schemas/eq-country'
+              - $ref: '#/components/schemas/EQ_Fullname'
+              - $ref: '#/components/schemas/EQ_Year'
+              - $ref: '#/components/schemas/EQ_Institution'
+              - $ref: '#/components/schemas/EQ_City'
+              - $ref: '#/components/schemas/EQ_Country'
           type: array
                        
       required:
         - url
         
-    eq-fullname:
+    EQ_Fullname:
         type: object
         properties:
           url:
@@ -881,7 +872,7 @@ components:
             type: string
         required: 
           - url
-    eq-year:
+    EQ_Year:
         type: object
         properties:
           url:
@@ -891,7 +882,7 @@ components:
             type: string
         required: 
           - url
-    eq-institution:
+    EQ_Institution:
         type: object
         properties:
           url:
@@ -901,7 +892,7 @@ components:
             type: string
         required: 
           - url
-    eq-city:
+    EQ_City:
         type: object
         properties:
           url:
@@ -911,7 +902,7 @@ components:
             type: string
         required: 
           - url
-    eq-country:
+    EQ_Country:
         type: object
         properties:
           url:
