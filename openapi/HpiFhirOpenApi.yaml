@@ -591,7 +591,7 @@ components:
         identifier:
           items:
             anyOf:
-              #there should be exacvtly oine hpi identifier
+              #there should be exatly one hpi identifier
               - $ref: '#/components/schemas/HPI_Identifer'
               #there may be many dormant identifiers
               - $ref: '#/components/schemas/HPI_DormantIdentifer'
@@ -604,15 +604,41 @@ components:
             $ref: '#/components/schemas/HumanName'
           type: array
         qualification:
-          description: The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner.  For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.
+          type : array
           items:
-            $ref: '#/components/schemas/Practitioner_Qualification'
-          type: array
+             type: object
+             properties:
+                extension:
+                  type: array
+                  items:
+                    anyOf:
+                      - $ref: '#/components/schemas/ScopeOfPractice_Extension'
+                      - $ref: '#/components/schemas/registration-initial-date'
+                      - $ref: '#/components/schemas/ConditionOnPractice_Extension'
+                      - $ref: '#/components/schemas/RegistrationStatusCode_Extension'
+                identifier:
+                    description: An identifier that applies to this person\u0027s qualification in this role
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Identifier'
+                  # Coded representation of the qualification.
+                code:          
+                    $ref: '#/components/schemas/CodeableConcept'
+                # Period during which the qualification is valid  
+                period:      
+                     $ref: '#/components/schemas/Period'
+               # Organization that regulates and issues the qualification.
+                issuer:
+                    $ref: '#/components/schemas/Reference' 
+                  
+                                              
         communication:
           description: A language the practitioner can use in patient communication.
           items:
             $ref: '#/components/schemas/CodeableConcept'
           type: array
+       
+                
     HPI_Identifer:
       type: object
       properties:
@@ -656,91 +682,89 @@ components:
           $ref: '#/components/schemas/Reference'     
           
           
-    Practitioner_Qualification:
+    ScopeOfPractice_Extension:
       type: object
       description: A person who is directly or indirectly involved in the provisioning of healthcare.
       properties:
-        id:
-          $ref: '#/components/schemas/string'
+        url:
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
         extension:
-          description: May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.
-          items:
-            $ref: '#/components/schemas/Practitioner_Qualification_Extension'
-          type: array
-        modifierExtension:
-          description: |-
-            May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
-
-            Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).
-          items:
-            $ref: '#/components/schemas/Practitioner_Qualification_Extension'
-          type: array
-        identifier:
-          description: An identifier that applies to this person's qualification in this role.
-          items:
-            $ref: '#/components/schemas/Identifier'
-          type: array
-        code:
+             type: array
+             items:
+              anyOf:
+                - $ref: '#/components/schemas/codeableconcept-extension'
+                - $ref: '#/components/schemas/period-extension'
+              
+        valueCodeableConcept:
+          #preferred https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code
           $ref: '#/components/schemas/CodeableConcept'
-        period:
-          $ref: '#/components/schemas/Period'
-        issuer:
-          $ref: '#/components/schemas/Reference'
-      additionalProperties: false
       required:
-        - code
-  
+        - url
+        
+    ConditionOnPractice_Extension:
+      type: object
+      properties:
+        url:
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"    
+        extension:
+          type: array
+          items: 
+            anyOf:
+              - $ref: '#/components/schemas/period-extension'
+              - $ref: '#/components/schemas/description-extension'
+      required:
+        - url
+        
+    RegistrationStatusCode_Extension:
+      type: object
+      properties:
+        url:
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"    
+        extension:
+          type: array
+          items: 
+            anyOf:
+              - $ref: '#/components/schemas/StatusCode'
+              - $ref: '#/components/schemas/period-extension'
+      required:
+        - url
+    
+    
+   
+                    
     DeathDate:
       type: object
       properties:
         url:
           enum:
-            - http://hl7.org.nz/fhir/StructureDefinition/death-date
+            - "http://hl7.org.nz/fhir/StructureDefinition/death-date"
         valueDate:
           $ref: '#/components/schemas/date'
       required:
         - url
-    Practitioner_Qualification_Extension:
-      type: array
-      items:
-        anyOf:
-          - $ref: '#/components/schemas/registration-status-code'
-          - $ref: '#/components/schemas/additional-authorisation'
-          - $ref: '#/components/schemas/scope-of-practice'
-          - $ref: '#/components/schemas/condition-on-practice'
-          - $ref: '#/components/schemas/registration-initial-date'
-          
-    registration-initial-date:  
-        $ref: '#/components/schemas/date'
+           
+    registration-initial-date: 
+      type: object
+      properties:
+        url:
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
+        valueDate:       
+          $ref: '#/components/schemas/date'
     
-    registration-status-code:
-      type: array
-      items:
-        anyOf:
-          - $ref: '#/components/schemas/registration-status-code-status'
-          - $ref: '#/components/schemas/period-extension'
+  
           
-    registration-status-code-status:
+    StatusCode:
       type: object
       properties:
         url:
           enum:
             - "status"
         valueCodeableConcept:
-         type: object
-         properties:
-          coding:
-            type: object
-            properties:
-              system:
-                type:
-                  string
-              version: 
-                type: string
-              code: 
-                type: string
-              display:
-                type: string
+             $ref: '#/components/schemas/CodeableConcept'
       required:
         - url  
             
@@ -749,16 +773,20 @@ components:
       properties:
         url:
           enum:
-            - http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice
-        extension:
-          type: array
-          items:
-            anyOf:
-              - $ref: '#/components/schemas/practitioner-scope-of-practice-code'
-              - $ref: '#/components/schemas/period-extension'
+            - http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice    
+        etension:
+            type: array
+           
+            items:         
+              anyOf:
+              #"A code identifying the services that the practitioner is permitted to perform"            
+                  - $ref: '#/components/schemas/codeableconcept-extension'
+                  - $ref: '#/components/schemas/period-extension'                                           
       required:
         - url
         
+   
+            
     additional-authorisation:
      type: array
      items: 
@@ -773,53 +801,12 @@ components:
           enum:
             - "code"
         valueCodeableConcept:
-         type: object
-         properties:
-          coding:
-            type: object
-            properties:
-              system:
-                type:
-                  string
-              version: 
-                type: string
-              code: 
-                type: string
-              display:
-                type: string
+           $ref: '#/components/schemas/CodeableConcept'
       required:
         - url
                  
-    condition-on-practice:
-      type: array
-      items: 
-        anyOf:
-          - $ref: '#/components/schemas/period-extension'
-          - $ref: '#/components/schemas/description-extension'
-              
-    practitioner-scope-of-practice-code:
-      type: object
-      properties:
-        url:
-          enum:
-            - "code"
-        valueCodeableConcept:
-         type: object
-         properties:
-          coding:
-            type: object
-            properties:
-              system:
-                enum:
-                  - "https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code"
-              version: 
-                type: string
-              code: 
-                type: string
-              display:
-                type: string
-      required:
-        - url
+    
+   
                     
     period-extension:
         type: object
@@ -871,7 +858,7 @@ components:
       properties:
         url:
           enum:
-            - http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
+            - "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
         extension:        
           items:
             anyOf:
