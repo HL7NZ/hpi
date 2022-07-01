@@ -672,7 +672,7 @@ components:
       properties:
         use: 
           enum: 
-            - "old"
+            - "official"
         system:
           # system must be from https://standards.digital.health.nz/ns/hpi-ra-identifier-code
           type: string
@@ -805,8 +805,7 @@ components:
       required:
         - url
                  
-    
-   
+
                     
     period-extension:
         type: object
