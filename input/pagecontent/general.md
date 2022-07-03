@@ -144,7 +144,9 @@ When a resource contains a reference to another resource, the HPI server will no
 
 `https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
+### Request Rules and Errors
 
+TBC
 
 ### HTTP Header Details
 
