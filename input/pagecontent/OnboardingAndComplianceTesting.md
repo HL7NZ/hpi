@@ -60,6 +60,47 @@ Provide the following details in a test report and email to [integration@health.
 
 ### Tests
 
+<h3>Security and Audit Assessment</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<caption>All test messages will be assessed against the security criteria in the table below</caption>
+<tr><th>Reference</th>
+<th>Purpose</th>
+<th>Input values</th>
+<th>Expected outcome</th>
+<th>Mandatory</th></tr>
+
+<tr><td>Security 1</td>
+<td>Credentials match those issued to the testing organisation</td>
+<td>Checked against all tests</td>
+<td>MoH will check internal logs</td>
+<td>Mandatory</td></tr>
+
+<tr><td>Security 2</td>
+<td>Sending user ID is an end user ID or a CPN</td>
+<td>Checked against all tests</td>
+<td>MoH will check internal logs</td>
+<td>Mandatory</td></tr>
+
+<tr><td>Security 3</td>
+<td>Sending user ID changes when different end users are initiating the request (Please make sure a seperate user creates a request)</td>
+<td>Checked against all tests</td>
+<td>MoH will check internal logs</td>
+<td>Mandatory</td></tr>
+
+<tr><td>Security 4</td>
+<td>Each has a unique request/transaction id in the X-Correlation-Id field</td>
+<td>Checked against all tests</td>
+<td>MoH will check internal logs</td>
+<td>Mandatory</td></tr>
+</table>
+
+
 <h3>HPI Organization GET</h3>
 <table>
 <style>
@@ -76,15 +117,9 @@ table, th, td {
 </tr>
 
 <tr>
-<td>HPI-O-Get-1</td>
-<td>System can supply a unique userID for each end user initiating requests</td>
-<td>Get GZZ999-J <br /> Get GZZ998-G</td>
-<td>userID varies for each request</td>
-<td>mandatory</td>
-</tr>
 
 <tr>
-<td>HPI-O-Get-2</td>
+<td>HPI-O-Get-1</td>
 <td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
 <td>GZZ995-A</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
@@ -92,7 +127,7 @@ table, th, td {
 </tr>
 
 <tr>
-<td>HPI-O-Get-3</td>
+<td>HPI-O-Get-2</td>
 <td>System behaves appropriately when the organisation requested is no longer active</td>
 <td>GZZ903-C</td>
 <td>System returns appropriate messaging to user</td>
@@ -127,7 +162,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-2</td>
 <td>Search results are presented to user in score order</td>
-<td> </td>
+<td>Use search from above</td>
 <td>Results show highest scoring results first</td>
 <td>mandatory</td>
 </tr>
@@ -165,36 +200,30 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-L-Get-1</td>
-<td>System can supply a unique userID for each end user initiating requests</td>
-<td>FZZ999-B <br /> FZZ997-J</td>
-<td>userID varies for each request</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-L-Get-2</td>
 <td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
 <td>FZZ997-J</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-L-Get-3</td>
+<tr><td>HPI-L-Get-2</td>
 <td>System behaves appropriately when the location requested is no longer active</td>
 <td>FZZ754-E <br /> FZZ753-C</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-L-Get-4</td>
+<tr><td>HPI-L-Get-3</td>
 <td>System behaves appropriately when more than one contact point is present</td>
 <td>FZZ968-B</td>
 <td>Where appropriate all contact points are displayed to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-L-Get-5</td>
+<tr><td>HPI-L-Get-4</td>
 <td>System behaves appropriately when using the contact point rank</td>
 <td>tbd</td>
 <td>When rank is present it is presented to user in an meaningful way</td>
 <td></td></tr>
 
-<tr><td>HPI-L-Get-6</td>
+<tr><td>HPI-L-Get-5</td>
 <td>System presents the address parts appropriately</td>
 <td>FZZ961-K <br /> FZZ960-H <br /> FZZ959-A <br /> FZZ958-K <br /> FZZ957-H</td>
 <td>All address formats are displayed appropriately</td>
@@ -248,61 +277,55 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th></tr>
 
-<tr><td>HPI-P-Get-4</td>
-<td>System can supply a unique userID for each end user initiating requests</td>
-<td>92ZZRR <br /> 92ZZRE</td>
-<td>userID varies for each request</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-P-Get-5</td>
+<tr><td>HPI-P-Get-1</td>
 <td>System can handle a response when a dormant CPN is requested</td>
-<td>tbd</td>
+<td>98ZZNY <br /> 90ZZJF</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-6</td>
+<tr><td>HPI-P-Get-2</td>
 <td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
-<td>Tbd (only surname, only given name) <br /> 91ZZWJ <br /> 91ZZVR</td>
+<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-7</td>
+<tr><td>HPI-P-Get-3</td>
 <td>System behaves appropriately when the requested practitioner has more than one registration</td>
-<td>95ZZEJ <br /> 98ZZNY <br /> 95ZZQE <br /> 98ZZQJ <br /> 95ZZDR <br /> 95ZZDE</td>
+<td><b>Do all</b> <br /> 95ZZEJ (dental/nursing) <br /> 98ZZNY (nursing/medical)<br /> 95ZZQE (medical sciences/nursing)<br /> 98ZZQJ (nursing/midwifery)<br /> 95ZZDR (nursing/psychology)<br /> 95ZZDE (optometry/nursing)</td>
 <td>The appropriate registration is used or both registrations are presented</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-8</td>
+<tr><td>HPI-P-Get-4</td>
 <td>System behaves appropriately when the requested practitioner has more than Scope of Practice</td>
-<td>98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
+<td><b>Do all</b> <br /> 98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
 <td>System returns appropriate messaging to user</td>
 <td>optional</td></tr>
 
-<tr><td>HPI-P-Get-9</td>
+<tr><td>HPI-P-Get-5</td>
 <td>System behaves appropriately when the requested practitioner does not have a registration</td>
 <td>90ZZLC <br /> 90ZZLP</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-10</td>
+<tr><td>HPI-P-Get-6</td>
 <td>System behaves appropriately for all registration statuses</td>
-<td>98ZZYU <br /> 98ZZYH <br /> 98ZZXQ <br /> 98ZZXD</td>
+<td><b>Do all</b> <br /> 98ZZYU (Current)<br /> 98ZZYH (Inactive) <br /> 98ZZXQ (Removed) <br /> 98ZZXD (Suspended)</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-11</td>
+<tr><td>HPI-P-Get-7</td>
 <td>System clearly distinguishes between educational qualifications and registration details</td>
 <td>97ZZYP <br /> 94ZZXF <br /> 97ZZYC <br /> 94ZZWZ <br /> 97ZZXW</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-12</td>
-<td>|System behaves appropriately when confidentiality settings have been set for a practitioner</td>
+<tr><td>HPI-P-Get-8</td>
+<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
 <td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-13</td>
+<tr><td>HPI-P-Get-9</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
@@ -342,7 +365,7 @@ table, th, td {
 <td>mandatory</td></tr>
 </table>
 
-*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the Integration team before developing this functionality into an application
+*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application
 
 
 <h3>HPI PractitionerRole Get</h3>
@@ -359,7 +382,7 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th></tr>
 
-<tr><td>HPI-PR-Get-4</td>
+<tr><td>HPI-PR-Get-1</td>
 <td>System can Get a record using the PractitionerRoleID and supply a unique userID for each end user initiating requests</td>
 <td>tbd</td>
 <td>userID varies for each request</td>
@@ -502,31 +525,3 @@ table, th, td {
 <td>Confidentiality settings are updated on the record</td>
 <td>optional</td></tr>
 </table>
-
-
-<h3>Security and Audit Assessment</h3>
-<table>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-<tr><th>Reference</th>
-<th>Purpose</th>
-<th>Mandatory</th></tr>
-
-<tr><td>Security 1</td>
-<td>Credentials match those issued to the testing organisation</td>
-<td>Mandatory</td></tr>
-
-<tr><td>Security 2</td>
-<td>Sending user ID is an end user ID or a CPN</td>
-<td>Mandatory</td></tr>
-
-<tr><td>Security 3</td>
-<td>Sending user ID changes when different end users are initiating the request</td>
-<td>Mandatory</td></tr>
-</table>
-
-All test messages will be assessed for the above security and audit requirements
