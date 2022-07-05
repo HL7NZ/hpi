@@ -30,9 +30,7 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 
 3. The Ministry will issue credentials for the testing endpoint.
 
-4. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form.
-
-4. Submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz)
+4. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 
 5. The Ministry will issue a compliance test report.
 
@@ -52,11 +50,12 @@ Provide the following details in a test report and email to [integration@health.
   f. Tester name and contact details <br />
   g. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
    
-2. For each test supply screen shots of: <br />
+2. For each test supply screen shots of the user interface for: <br />
   a. the input data as entered in the integrating system (“the system”) <br />
   b. any warnings or error messages presented by the system <br />
   c. the confirmation or result of the request presented by the system <br />
 
+3. For each test supply a text file with the json request (update / add) or response (get/search).
 
 ### Tests
 
