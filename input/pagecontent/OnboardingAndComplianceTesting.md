@@ -117,8 +117,6 @@ table, th, td {
 </tr>
 
 <tr>
-
-<tr>
 <td>HPI-O-Get-1</td>
 <td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
 <td>GZZ995-A</td>
@@ -219,7 +217,7 @@ table, th, td {
 
 <tr><td>HPI-L-Get-4</td>
 <td>System behaves appropriately when using the contact point rank</td>
-<td>tbd</td>
+<td>FZZ958-K <br /> FZZ960-H <br /> FZZ999-B</td>
 <td>When rank is present it is presented to user in an meaningful way</td>
 <td></td></tr>
 
