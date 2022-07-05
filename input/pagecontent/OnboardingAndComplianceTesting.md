@@ -76,7 +76,7 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>Security 1</td>
-<td>Credentials match those issued to the testing organisation</td>
+<td>Credentials match those issued to the testing organisation <br /> and their orgID and appID are auditing correctly</td>
 <td>Checked against all tests</td>
 <td>MoH will check internal logs</td>
 <td>Mandatory</td></tr>
@@ -94,7 +94,7 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 4</td>
-<td>Each has a unique request/transaction id in the X-Correlation-Id field</td>
+<td>Each request has a unique request/transaction id in the X-Correlation-Id field</td>
 <td>Checked against all tests</td>
 <td>MoH will check internal logs</td>
 <td>Mandatory</td></tr>
