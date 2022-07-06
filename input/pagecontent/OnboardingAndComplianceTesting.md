@@ -46,18 +46,17 @@ Provide the following details in a test report and email to [integration@health.
   b. Application name and version <br />
   c. HPI IG Version <br />
   d. Test Script version <br />
-  e. Testing start date and time and end date and time <br />
-  f. Tester name and contact details <br />
-  g. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
+  e. FHIR release version
+  f. Testing start date and time and end date and time <br />
+  g. Tester name and contact details <br />
+  h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
 
 2. For each test supply:
-  * Screen shots of the user interface for: <br />
-    * the input data as entered in the integrating system (“the system”) <br />
-    * any warnings or error messages presented by the system <br />
-    * the confirmation or result of the request presented by the system <br />
-
+  * Screen shots of the user interface for:
+    * the input data as entered in the integrating system (“the system”)
+    * any warnings or error messages presented by the system
+    * the confirmation or result of the request presented by the system
   * A screenshot of what is being logged for each request in the integrating system.
-
   * A text file with the json request (update / add) or response (get/search).
 
 
@@ -163,7 +162,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-2</td>
 <td>Search results are presented to user in score order</td>
-<td>Use search from above</td>
+<td>Use search results from above</td>
 <td>Results show highest scoring results first</td>
 <td>mandatory</td>
 </tr>
@@ -253,7 +252,7 @@ table, th, td {
 
 <tr><td>HPI-L-Search-2</td>
 <td>Search results are presented to user in score order</td>
-<td></td>
+<td>Use search results from above</td>
 <td>Results show highest scoring results first</td>
 <td>mandatory</td></tr>
 
@@ -361,7 +360,7 @@ table, th, td {
 
 <tr><td>HPI-P-Search-3</td>
 <td>Search results are presented to user in score order</td>
-<td></td>
+<td>Use search results from above</td>
 <td>Results show highest scoring results first</td>
 <td>mandatory</td></tr>
 </table>
