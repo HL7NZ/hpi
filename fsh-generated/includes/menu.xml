@@ -19,11 +19,21 @@
   <li>
     <a href="usecases.html">Use cases</a>
   </li>
-  <li>
-    <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
-  </li>
-  <li>
-    <a href="general.html">General Notes</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Important information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
+      </li>
+      <li>
+        <a href="general.html">General Notes</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">API
@@ -58,9 +68,6 @@
         <a href="searchOrganization.html">Search Organization</a>
       </li>
     </ul>
-  </li>
-  <li>
-    <a href="faq.html">FAQ</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>

@@ -237,6 +237,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "glossary.html",
+          "title": "Glossary",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "mohResources.html",
           "title": "Moh Resources",
           "generation": "html"
