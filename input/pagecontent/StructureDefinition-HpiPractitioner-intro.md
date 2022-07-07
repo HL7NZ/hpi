@@ -165,7 +165,7 @@ A person can make a request to their council to make their record confidential. 
 
 A practitioner’s Date of birth, Gender and Ethnicity are supplied when a practitioner is added and maintained by their Responsible Authority, but they are withheld on a Get Practitioner response.  Admin permissions are required to get all the practitioner details in a response.
 
-The Practitioner resources will contain a security element of redacted in the meta data when data items within the patient resource have been withheld.  
+The Practitioner resources will contain a security element of "REDACTED" in the meta data when data items within the practitioner resource have been withheld.  
 
 Example
  {
