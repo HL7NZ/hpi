@@ -110,6 +110,12 @@ paths:
             application/fhir+json:
               schema:
                 $ref: '#/components/schemas/OperationOutcome'
+        '401':
+          description: Not Authorized
+          content:
+            application/fhir+json:
+              schema:
+                $ref: '#/components/schemas/OperationOutcome'
       parameters:
         - $ref: '#/components/parameters/format'
         - $ref: '#/components/parameters/pretty'
@@ -200,6 +206,12 @@ paths:
                       text: English
           '400':
             description: Error, with details
+            content:
+              application/fhir+json:
+                schema:
+                  $ref: '#/components/schemas/OperationOutcome'
+          '401':
+            description: Not Authorized
             content:
               application/fhir+json:
                 schema:

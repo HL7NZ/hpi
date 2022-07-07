@@ -36,16 +36,6 @@
 </td>
 </tr>
 <tr>
-<td>family</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td></td>
-</tr>
-<tr>
-<td>given</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td></td>
-</tr>
-<tr>
 <td>gender</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
 <td></td>

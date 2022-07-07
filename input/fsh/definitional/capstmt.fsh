@@ -69,32 +69,23 @@ Practitioner query
 
 
 
-//family 
-* rest.resource.searchParam[2].name = "family"
-* rest.resource.searchParam[2].type = #string
-//* rest.resource.searchParam[2].documentation = ""
-
-//given
-* rest.resource.searchParam[3].name = "given"
-* rest.resource.searchParam[3].type = #string
-//* rest.resource.searchParam[3].documentation = ""
 
 //gender 
-* rest.resource.searchParam[4].name = "gender"
-* rest.resource.searchParam[4].type = #token
-//* rest.resource.searchParam[4].documentation = ""
+* rest.resource.searchParam[2].name = "gender"
+* rest.resource.searchParam[2].type = #token
+//* rest.resource.searchParam[2].documentation = ""
 
 //birthdate 
-* rest.resource.searchParam[5].name = "birthdate"
-* rest.resource.searchParam[5].type = #date
-//temp todo - need to figure out url * rest.resource.searchParam[5].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
-* rest.resource.searchParam[5].documentation = "Supports a search on practitioner birthdate"
+* rest.resource.searchParam[3].name = "birthdate"
+* rest.resource.searchParam[3].type = #date
+//temp todo - need to figure out url * rest.resource.searchParam[3].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
+* rest.resource.searchParam[3].documentation = "Supports a search on practitioner birthdate"
 /*
 //ra-identifier 
-* rest.resource.searchParam[6].name = "ra-identifier"
-* rest.resource.searchParam[6].type = #token
-//temp todo * rest.resource.searchParam[6].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
-* rest.resource.searchParam[6].documentation = "This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)"
+* rest.resource.searchParam[4].name = "ra-identifier"
+* rest.resource.searchParam[4].type = #token
+//temp todo * rest.resource.searchParam[4].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerRaIdentifier"
+* rest.resource.searchParam[4].documentation = "This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)"
 */
 /* #endregion */
 

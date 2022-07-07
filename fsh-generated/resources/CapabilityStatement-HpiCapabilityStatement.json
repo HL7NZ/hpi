@@ -62,14 +62,6 @@
               "documentation": "Not case sensitive"
             },
             {
-              "name": "family",
-              "type": "string"
-            },
-            {
-              "name": "given",
-              "type": "string"
-            },
-            {
               "name": "gender",
               "type": "token"
             },
