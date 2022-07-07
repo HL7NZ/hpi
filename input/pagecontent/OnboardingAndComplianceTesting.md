@@ -161,11 +161,10 @@ table, th, td {
 
 <tr>
 <td>HPI-O-Search-2</td>
-<td>Search results are presented to user in score order</td>
+<td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
-<td>Results show highest scoring results first</td>
-<td>mandatory</td>
-</tr>
+<td>Results presented in order provided</td>
+<td>mandatory</td></tr>
 
 <tr>
 <td>HPI-O-Search-3</td>
@@ -251,9 +250,9 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-L-Search-2</td>
-<td>Search results are presented to user in score order</td>
+<td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
-<td>Results show highest scoring results first</td>
+<td>Results presented in order provided</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-L-Search-3</td>
@@ -302,13 +301,13 @@ table, th, td {
 <td>optional</td></tr>
 
 <tr><td>HPI-P-Get-5</td>
-<td>System behaves appropriately when the requested practitioner does not have a registration</td>
+<td>System behaves appropriately when the requested practitioner does not have a registration (qualification)</td>
 <td>90ZZLC <br /> 90ZZLP</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-6</td>
-<td>System behaves appropriately for all registration statuses</td>
+<td>System behaves appropriately for all registration (qualification) statuses</td>
 <td><b>Do all</b> <br /> 98ZZYU (Current)<br /> 98ZZYH (Inactive) <br /> 98ZZXQ (Removed) <br /> 98ZZXD (Suspended)</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
@@ -359,9 +358,9 @@ table, th, td {
 <td>optional</td></tr>
 
 <tr><td>HPI-P-Search-3</td>
-<td>Search results are presented to user in score order</td>
+<td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
-<td>Results show highest scoring results first</td>
+<td>Results presented in order provided</td>
 <td>mandatory</td></tr>
 </table>
 
