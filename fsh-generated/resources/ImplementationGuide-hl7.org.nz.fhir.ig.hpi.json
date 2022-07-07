@@ -197,16 +197,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "capstmt.html",
-          "title": "Capstmt",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "companion.html",
-          "title": "Companion",
-          "generation": "html"
-        },
-        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
@@ -240,11 +230,6 @@
           "nameUrl": "glossary.html",
           "title": "Glossary",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "mohResources.html",
-          "title": "Moh Resources",
-          "generation": "html"
         },
         {
           "nameUrl": "namingSystems.html",
