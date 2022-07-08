@@ -90,67 +90,51 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/90ZZLC"
+          "reference": "Practitioner/92ZZRR"
         },
-        "name": "90ZZLC",
+        "name": "92ZZRR",
         "description": "Example HPI Practitioner",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "Practitioner/90ZZMG"
+          "reference": "Practitioner/99ZZRT"
         },
-        "name": "90ZZMG",
+        "name": "99ZZRT",
         "description": "Example HPI Practitioner",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "Practitioner/94ZZXF"
+          "reference": "Location/FZZ958-K"
         },
-        "name": "94ZZXF",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        "name": "FZZ958-K",
+        "description": "Example HPI Location (Facility)",
+        "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Practitioner/98ZZXQ"
+          "reference": "Location/FZZ999-B"
         },
-        "name": "98ZZXQ",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        "name": "FZZ999-B",
+        "description": "Example HPI Location (Facility)",
+        "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Practitioner/99ZZVA"
+          "reference": "Organization/G00001-G"
         },
-        "name": "99ZZVA",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00001G"
-        },
-        "name": "G00001G",
+        "name": "G00001-G",
         "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+        "exampleBoolean": true
       },
       {
         "reference": {
-          "reference": "Organization/G00004B"
+          "reference": "Organization/G00004-B"
         },
-        "name": "G00004B",
+        "name": "G00004-B",
         "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00023F"
-        },
-        "name": "G00023F",
-        "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+        "exampleBoolean": true
       },
       {
         "reference": {
@@ -159,6 +143,22 @@
         "name": "CapabilityStatement",
         "description": "Represents API exposed by HPI",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/R00000008-F"
+        },
+        "name": "R00000008-F",
+        "description": "Example HPI PractitionerRole",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/R00000009-H"
+        },
+        "name": "R00000009-H",
+        "description": "Example HPI PractitionerRole",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
       }
     ],
     "page": {
