@@ -13,7 +13,7 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve a Practitioner resource by Id.xxxxxxx</p>
+<td><p>Used to retrieve a Practitioner resource by Id.</p>
 </td>
 </tr>
 <tr>
