@@ -13,7 +13,7 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve a Practitioner resource by Id.</p>
+<td><p>Used to retrieve a Practitioner resource by Id.xxxxxxx</p>
 </td>
 </tr>
 <tr>
@@ -184,6 +184,11 @@
 <strong>Interactions</strong>
 <table class='table table-bordered table-condensed'>
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
+<tr>
+<td>read</td>
+<td><p>Used to retrieve an Organization resource by Id.</p>
+</td>
+</tr>
 <tr>
 <td>search-type</td>
 <td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>

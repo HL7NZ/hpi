@@ -188,16 +188,15 @@ Locates Organizations that are 'part of' another.
 * rest.resource[3].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-location"
 * rest.resource[3].documentation = """
 Location query
-
 """
 
 //read by id
-* rest.resource[3].interaction.code = #read
-* rest.resource[3].interaction.documentation = "Used to retrieve an Location resource by Id."
+* rest.resource[3].interaction[0].code = #read
+* rest.resource[3].interaction[0].documentation = "Used to retrieve an Organization resource by Id."
 
 //search by various parameters
-* rest.resource[3].interaction[0].code = #search-type
-* rest.resource[3].interaction[0].documentation = ""
+* rest.resource[3].interaction[1].code = #search-type
+* rest.resource[3].interaction[1].documentation = ""
 
 
 //todo - add read interaction
