@@ -55,9 +55,9 @@ Usage: #example
 * telecom[0].system = #email
 * telecom[=].value = "updgrade@email.co.nz"
 * telecom[=].use = #work
-* telecom[=].rank = 0
+* telecom[=].rank = 1
 * telecom[=].period.start = "2013-01-03"
 * telecom[+].system = #phone
 * telecom[=].value = "21 2546123"
 * telecom[=].use = #work
-* telecom[=].rank = 0
+* telecom[=].rank = 2
