@@ -71,5 +71,5 @@ Usage: #example
 * telecom[=].value = "1324654769"
 * telecom[=].use = #work
 * telecom[=].rank = 3
-* telecom[=].period.start = "2000-07-09"
+* telecom[=].period.start = "2000-07-08"
 * telecom[=].period.end = "2001-08-10"
