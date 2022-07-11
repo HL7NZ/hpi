@@ -52,9 +52,9 @@ Provide the following details in a test report and email to [integration@health.
   h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
 
 2. For each test supply screen shots of the user interface for:
-  * the input data as entered in the integrating system (“the system”)
-  * any warnings or error messages presented by the system
-  * the confirmation or result of the request presented by the system
+    * the input data as entered in the integrating system (“the system”)
+    * any warnings or error messages presented by the system
+    * the confirmation or result of the request presented by the system
 
 3. For each test supply a screenshot of what is being logged in the integrating system.
 
