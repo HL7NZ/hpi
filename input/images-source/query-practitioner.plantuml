@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: User enters alternative identifier to be looked up
 activate A
 |||
-A -> B: GET (…)/practitioner?identifier=[system]|[identifier]
+A -> B: GET (…)/Practitioner?identifier=[system]|[identifier]
 activate B
 |||
 B -> B: Validate[]
@@ -24,7 +24,7 @@ activate C
 C -[dashed]-> B:  
 deactivate C
 |||
-B -[dashed]-> A:Return (practitioner resource)
+B -[dashed]-> A:Return Practitioner resource
 deactivate B
 |||
 A -> User: Display matching Practitioner details
