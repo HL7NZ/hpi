@@ -78,17 +78,17 @@ Usage: #example
 * telecom[=].system = #other
 * telecom[=].value = "livefacedi"
 * telecom[=].use = #work
-* telecom[=].rank = 0
+* telecom[=].rank = 3
 * telecom[=].period.start = "2022-01-01"
 * telecom[+].system = #email
 * telecom[=].value = "email007@email.co.nz"
 * telecom[=].use = #work
-* telecom[=].rank = 0
+* telecom[=].rank = 1
 * telecom[=].period.start = "2013-01-02"
 * telecom[+].system = #phone
 * telecom[=].value = "021 222221"
 * telecom[=].use = #work
-* telecom[=].rank = 0
+* telecom[=].rank = 2
 * telecom[=].period.start = "2013-01-02"
 * address.extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/suburb"
 * address.extension[=].valueString = "Wellington 6011"
