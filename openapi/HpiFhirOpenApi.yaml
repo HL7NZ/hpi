@@ -86,7 +86,7 @@ paths:
                     system: https://standards.digital.health.nz/ns/hpi-person-id
                     value: 90ZZLC
                     assigner:
-                      reference: Organization/G00001G
+                      reference: Organization/G00001-G
                 name:
                   - use: official
                     family: Klinger
@@ -131,14 +131,7 @@ paths:
           description: Not case sensitive
           schema:
             type: string
-        - name: family
-          in: query
-          schema:
-            type: string
-        - name: given
-          in: query
-          schema:
-            type: string
+       
         - name: gender
           in: query
           schema:
@@ -151,7 +144,7 @@ paths:
             pattern: >-
               ([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\.[0-9]+)?(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?
     
-  /fhir/hpi/v1/Practitioner/{practitioner-id}:
+  /fhir/hpi/v1/Practitioner/{rid}:
       summary: Read/Write/etc resource instance of type Practitioner
       description: >-
         Access to services to manage the state of a single resource of type Practitioner
@@ -474,6 +467,19 @@ components:
         period:
           $ref: '#/components/schemas/Period'
       additionalProperties: false
+      
+    HPIHumanName:
+     allOf:
+     - $ref:  '#/components/schemas/HumanName'
+     - type: object
+       properties:
+         use:
+           enum:
+            - usual
+            - official
+            - old
+         
+      
     Period:
       type: object
       description: A time period defined by a start and end date and optionally time.
@@ -816,7 +822,7 @@ components:
         name:
           description: The name(s) associated with the practitioner.
           items:
-            $ref: '#/components/schemas/HumanName'
+            $ref: '#/components/schemas/HPIHumanName'
           type: array
         qualification:
           description: >-
@@ -835,7 +841,7 @@ components:
                     - $ref: '#/components/schemas/ScopeOfPracticeExtension'
                     - $ref: '#/components/schemas/RegistrationInitialDate'
                     - $ref: '#/components/schemas/ConditionOnPracticeExtension'
-                    - $ref: '#/components/schemas/RegistrationStatusCodeExtension'
+                    - $ref: '#/components/schemas/RegistrationStatusCodeExtension'              
               identifier:
                 description: >-
                   An identifier that applies to this person\u0027s qualification
