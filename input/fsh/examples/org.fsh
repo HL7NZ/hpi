@@ -5,11 +5,11 @@ Instance: G00001-G
 InstanceOf: Organization
 Description: "Example HPI Organization"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
-* extension.url = "http://hl7.org.nz/fhir/StructureDefinition/organization-established"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "1900-01-01"
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-organization-id"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
 * identifier.value = "G00001-G"
 * identifier.assigner = Reference(G00001-G)
 * active = true
@@ -36,11 +36,11 @@ Instance: G00004-B
 InstanceOf: Organization
 Description: "Example HPI Organization"
 Usage: #example
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HpiOrganization"
-* extension.url = "http://hl7.org.nz/fhir/StructureDefinition/organization-established"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "1989-02-05"
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-organization-id"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
 * identifier.value = "G00004-B"
 * identifier.assigner = Reference(Organization/G00001-G)
 * active = true
