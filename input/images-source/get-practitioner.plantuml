@@ -6,13 +6,13 @@ skinparam sequenceParticipant bold
 title GET Practitioner
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
-participant "<FHIR API> NHI" as B #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: Look up Practitioner with HPI PersonID
+User -> A: Look up Practitioner using hpi-person-id
 activate A
 |||
-A -> B: GET (…)/practitioner/[HPI PersonID]
+A -> B: GET (…)/Practitioner/[hpi-person-id]
 activate B
 |||
 B -> B: Validate[]
