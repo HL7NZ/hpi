@@ -842,7 +842,7 @@ components:
                     - $ref: '#/components/schemas/RegistrationInitialDate'
                     - $ref: '#/components/schemas/ConditionOnPracticeExtension'
                     - $ref: '#/components/schemas/RegistrationStatusCodeExtension'   
-                    - $ref: '#/components/schemas/AdditionalAuthorisation'            
+                    - $ref: '#/components/schemas/AdditionalAuthorisationExtension'            
               identifier:
                 description: >-
                   An identifier that applies to this person\u0027s qualification
@@ -1079,11 +1079,22 @@ components:
           items:
             anyOf:
               - $ref: '#/components/schemas/EQFullname'
+              - $ref: '#/components/schemas/EQShortname'
               - $ref: '#/components/schemas/EQYear'
               - $ref: '#/components/schemas/EQInstitution'
               - $ref: '#/components/schemas/EQCity'
               - $ref: '#/components/schemas/EQCountry'
           type: array
+      required:
+        - url
+    EQShortname:
+      type: object
+      properties:
+        url:
+          enum:
+            - shortname
+        valueString:
+          type: string
       required:
         - url
     EQFullname:

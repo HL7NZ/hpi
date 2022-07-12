@@ -243,6 +243,12 @@
 <td><p>Not yet enabled. To enable exclusion of inactive locations</p>
 </td>
 </tr>
+<tr>
+<td>_include</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
+<td><p>Supported resource types : practitioner, organization  and location</p>
+</td>
+</tr>
 </table>
 <h3>Contained Resources</h3>
 <p>When a resource contains a reference to another resource, the  HPI server will not render the reference as a contained resource,  only the reference links themselves will be included in responses.</p>

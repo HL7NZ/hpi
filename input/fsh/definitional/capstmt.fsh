@@ -229,3 +229,7 @@ Location query
 * rest.resource[3].searchParam[6].name = "status"
 * rest.resource[3].searchParam[6].type = #token
 * rest.resource[3].searchParam[6].documentation = "Not yet enabled. To enable exclusion of inactive locations"
+
+* rest.resource[3].searchParam[7].name = "_include"
+* rest.resource[3].searchParam[7].type = #string
+* rest.resource[3].searchParam[7].documentation = "Supported resource types : practitioner, organization  and location"
