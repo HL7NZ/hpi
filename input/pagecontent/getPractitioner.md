@@ -14,7 +14,7 @@ Read practitioner processing steps:
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
 5. The response containing the Practitioner resource is returned
 
-### Query Practitioner with another identifier (e.g. Nursing Council Number)
+### Query Practitioner with another identifier (nursing-council-id)
 
 To query a Practitioner with ‘another identifier' the integrating application sends an HTTP GET request for the Practitioner resource using the ‘other identifier’ to identify the Practitioner whose information is being requested.
 
