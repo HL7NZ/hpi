@@ -225,6 +225,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "getPracRole.html",
+          "title": "Get Prac Role",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "getPractitioner.html",
           "title": "Get Practitioner",
           "generation": "markdown"
@@ -277,6 +282,11 @@
         {
           "nameUrl": "updatePracRole.html",
           "title": "Update Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "updatePractitioner.html",
+          "title": "Update Practitioner",
           "generation": "markdown"
         },
         {

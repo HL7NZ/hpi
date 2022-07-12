@@ -34,10 +34,16 @@
         <a href="addPractitioner.html">Add Practitioner</a>
       </li>
       <li>
+        <a href="getPracRole.html">Get Practitioner Role</a>
+      </li>
+      <li>
         <a href="searchPracRole.html">Search Practitioner Role</a>
       </li>
       <li>
         <a href="addPracRole.html">Add Practitioner Role</a>
+      </li>
+      <li>
+        <a href="updatePracRole.html">Update Practitioner Role</a>
       </li>
       <li>
         <a href="getLocation.html">Get Facility (Location)</a>
