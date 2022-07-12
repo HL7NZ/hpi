@@ -2,13 +2,11 @@
 
 ### Add Practitioner Role
 
-#### Add new Practitioner Role 
-
 <div>
 {% include add-practitionerrole.svg %}
 </div>
 
-Add new practitionerRole processing steps:
+Add new PractitionerRole processing steps:
 
 1. The user initiates creating a new PractitionerRole in the integrating application
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the PractitionerRole details
