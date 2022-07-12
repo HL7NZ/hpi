@@ -46,7 +46,7 @@ Practitioner query
 
 //search by various parameters
 * rest.resource.interaction[1].code = #search-type
-* rest.resource.interaction[1].documentation = ""
+* rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)."
 
 /* not in the fisrt release
 * rest.resource.interaction[2].code = #create
@@ -60,12 +60,12 @@ Practitioner query
 //identifier 
 * rest.resource.searchParam[0].name = "identifier"
 * rest.resource.searchParam[0].type = #token
-//* rest.resource.searchParam[0].documentation = ""
+//* rest.resource.searchParam[0].documentation = "For searching a Practitioner resource using their council/board registration number"
 
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[1].name = "name"
 * rest.resource.searchParam[1].type = #string
-* rest.resource.searchParam[1].documentation = "Not case sensitive"
+* rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name. "
 
 
 
@@ -73,13 +73,13 @@ Practitioner query
 //gender 
 * rest.resource.searchParam[2].name = "gender"
 * rest.resource.searchParam[2].type = #token
-//* rest.resource.searchParam[2].documentation = ""
+//* rest.resource.searchParam[2].documentation = "Use with name and birthdate. Search by gender alone is not allowed."
 
 //birthdate 
 * rest.resource.searchParam[3].name = "birthdate"
 * rest.resource.searchParam[3].type = #date
 //temp todo - need to figure out url * rest.resource.searchParam[3].definition = "http://hl7.org.nz/fhir/hpi/SearchParameter/HpiPractitionerBirthdate"
-* rest.resource.searchParam[3].documentation = "Supports a search on practitioner birthdate"
+* rest.resource.searchParam[3].documentation = "Use with name and gender. Search by birthdate alone is not allowed."
 /*
 //ra-identifier 
 * rest.resource.searchParam[4].name = "ra-identifier"
@@ -103,30 +103,30 @@ PractitionerRole query
 
 //search by various parameters
 * rest.resource[1].interaction[1].code = #search-type
-* rest.resource[1].interaction[1].documentation = ""
+* rest.resource[1].interaction[1].documentation = "Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources)."
 
 * rest.resource[1].interaction[2].code = #create
 * rest.resource[1].interaction[2].documentation = "Create a new PractitionerRole"
 
 * rest.resource[1].interaction[3].code = #update
-* rest.resource[1].interaction[3].documentation = "Update an existing PractitionerRole"
+* rest.resource[1].interaction[3].documentation = "Update contact details and end date on an existing PractitionerRole record."
 
 
 
 * rest.resource[1].searchParam[0].name = "practitioner"
 * rest.resource[1].searchParam[0].type = #reference
 //* rest.resource[1].searchParam[0].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[0].documentation = "Given a Practitioner id, returns the PractitionerRoles associated with that id"
+* rest.resource[1].searchParam[0].documentation = "Given an hpi-person-id, returns the PractitionerRole records associated with that id"
 
 * rest.resource[1].searchParam[1].name = "organization"
 * rest.resource[1].searchParam[1].type = #reference
 //* rest.resource[1].searchParam[1].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[1].documentation = "Given a Organization id, returns the PractitionerRoles associated with that id"
+* rest.resource[1].searchParam[1].documentation = "Not yet enabled. Given an hpi-organization-id, returns the PractitionerRole records associated with that id"
 
 * rest.resource[1].searchParam[2].name = "location"
 * rest.resource[1].searchParam[2].type = #token
 //* rest.resource[1].searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[2].documentation = "Given a Location id, returns the PractitionerRoles associated with that id"
+* rest.resource[1].searchParam[2].documentation = "Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id"
 
 * rest.resource[1].searchParam[3].name = "identifier"
 * rest.resource[1].searchParam[3].type = #token
@@ -135,11 +135,11 @@ PractitionerRole query
 
 * rest.resource[1].searchParam[4].name = "role"
 * rest.resource[1].searchParam[4].type = #token
-* rest.resource[1].searchParam[4].documentation = "Returns PractitionerRoles based on role"
+* rest.resource[1].searchParam[4].documentation = "Not yet enabled. Returns PractitionerRole records based on role code"
 
 * rest.resource[1].searchParam[5].name = "active"
 * rest.resource[1].searchParam[5].type = #token
-* rest.resource[1].searchParam[5].documentation = "To enable exclusion of inactive PractitionerRoles"
+* rest.resource[1].searchParam[5].documentation = "Not yet enabled. To enable exclusion of inactive PractitionerRole records"
 
 * rest.resource[1].searchInclude[0] = "practitioner"
 * rest.resource[1].searchInclude[1] = "organization"
@@ -160,24 +160,24 @@ Organization query
 
 //search by various parameters
 * rest.resource[2].interaction[1].code = #search-type
-* rest.resource[2].interaction[1].documentation = ""
+* rest.resource[2].interaction[1].documentation = "Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources)."
 
 * rest.resource[2].searchParam[0].name = "active"
 * rest.resource[2].searchParam[0].type = #token
-* rest.resource[2].searchParam[0].documentation = "To enable exclusion of inactive organizations"
+* rest.resource[2].searchParam[0].documentation = "Not yet enabled. To enable exclusion of inactive organizations"
 
 * rest.resource[2].searchParam[1].name = "name"
 * rest.resource[2].searchParam[1].type = #string
-* rest.resource[2].searchParam[1].documentation = "Will only return active organizations"
+* rest.resource[2].searchParam[1].documentation = "For searching using the organisation’s name or an alias name"
 
 * rest.resource[2].searchParam[2].name = "identifier"
 * rest.resource[2].searchParam[2].type = #token
-* rest.resource[2].searchParam[2].documentation = "The HPI Organization id or the New Zealand Business Number (NZBN)."
+* rest.resource[2].searchParam[2].documentation = "For searching using an organisation’s New Zealand Business Number (NZBN) or their legacy NZHIS agency code."
 
 * rest.resource[2].searchParam[3].name = "partOf"
 * rest.resource[2].searchParam[3].type = #reference
 * rest.resource[2].searchParam[3].documentation = """
-Locates Organizations that are 'part of' another. 
+Not yet enabled. For retrieving organizations that are 'part of' another. 
 """
 
 
@@ -192,26 +192,26 @@ Location query
 
 //read by id
 * rest.resource[3].interaction[0].code = #read
-* rest.resource[3].interaction[0].documentation = "Used to retrieve an Organization resource by Id."
+* rest.resource[3].interaction[0].documentation = "Used to retrieve an Location resource by Id."
 
 //search by various parameters
 * rest.resource[3].interaction[1].code = #search-type
-* rest.resource[3].interaction[1].documentation = ""
+* rest.resource[3].interaction[1].documentation = "Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources)."
 
 
 //todo - add read interaction
 
 * rest.resource[3].searchParam[0].name = "identifier"
 * rest.resource[3].searchParam[0].type = #token
-* rest.resource[3].searchParam[0].documentation = "Retrieve the Location with the identifier"
+* rest.resource[3].searchParam[0].documentation = "For searching using an organization’s legacy NZHIS facility code."
 
 * rest.resource[3].searchParam[1].name = "name"
 * rest.resource[3].searchParam[1].type = #string
-* rest.resource[3].searchParam[1].documentation = "Retrieve the Locations with the matching name or alias"
+* rest.resource[3].searchParam[1].documentation = "For searching using the Locations name or alias name"
 
 * rest.resource[3].searchParam[2].name = "type"
 * rest.resource[3].searchParam[2].type = #token
-* rest.resource[3].searchParam[2].documentation = "Retrieve Locations of the given type"
+* rest.resource[3].searchParam[2].documentation = "Not yet enabled. Retrieve Locations of the given type"
 
 * rest.resource[3].searchParam[3].name = "address"
 * rest.resource[3].searchParam[3].type = #string
@@ -219,13 +219,13 @@ Location query
 
 * rest.resource[3].searchParam[4].name = "organization"
 * rest.resource[3].searchParam[4].type = #reference
-* rest.resource[3].searchParam[4].documentation = "Locations with the given ManagingOrganization"
+* rest.resource[3].searchParam[4].documentation = "Not yet enabled. Retrieve Locations with the given ManagingOrganization"
 
 * rest.resource[3].searchParam[5].name = "dhb"
 * rest.resource[3].searchParam[5].type = #token
 //* rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
-* rest.resource[3].searchParam[5].documentation = "Locations that are in a DHBs catchment area."
+* rest.resource[3].searchParam[5].documentation = "Not yet enabled. Searching for Locations that are in a DHBs catchment area."
 
 * rest.resource[3].searchParam[6].name = "status"
 * rest.resource[3].searchParam[6].type = #token
-* rest.resource[3].searchParam[6].documentation = "The current status of the Location"
+* rest.resource[3].searchParam[6].documentation = "Not yet enabled. To enable exclusion of inactive locations"
