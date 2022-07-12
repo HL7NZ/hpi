@@ -9,10 +9,10 @@ participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: Look up organization with HPI-OrgId
+User -> A: Look up organization with hpi-organisation-id
 activate A
 |||
-A -> B: GET (…)/organization/[HPI-OrgId]
+A -> B: GET (…)/organization/[hpi-organisation-id]
 activate B
 |||
 B -> B: Validate[]
@@ -27,7 +27,7 @@ deactivate C
 B -[dashed]-> A:Return organization record
 deactivate B
 |||
-A -> User:Display Organization details to user 
+A -> User:Display Organization details 
 deactivate A
 |||
 @enduml
