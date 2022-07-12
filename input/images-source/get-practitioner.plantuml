@@ -24,10 +24,10 @@ activate C
 C -[dashed]-> B:  
 deactivate C
 |||
-B -[dashed]-> A:
+B -[dashed]-> A:Return Practitioner record
 deactivate B
 |||
-A -> User: Return Practitioner record
+A -> User: Display Practitioner details
 deactivate A
 |||
 @enduml
