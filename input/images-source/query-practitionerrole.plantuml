@@ -7,7 +7,7 @@ title Query PractitionerRole with another identifier (HPI PersonID)
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
-participant "HPI MDM" as C #CornflowerBlue
+participant "HPI Practitioner Role database" as C #CornflowerBlue
 |||
 User -> A: User enters identifier to be looked up
 activate A
