@@ -56,6 +56,7 @@ menu:
     Add Practitioner: addPractitioner.html
     Search Practitioner Role: searchPracRole.html
     Add Practitioner Role: addPracRole.html
+    Update Practitioner Role: updatePracRole.html
     Get Facility (Location): getLocation.html
     Search Facility (Location): searchLocation.html
     Get Organization: getOrganization.html
