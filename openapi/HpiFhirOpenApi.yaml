@@ -958,7 +958,7 @@ components:
       properties:
         url:
           enum:       
-             - http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
+             - http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
         valueCodeableConcept:
           allOf:
             - $ref: '#/components/schemas/CodeableConcept'
