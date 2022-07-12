@@ -20,9 +20,9 @@ fhirVersion: 4.0.1
 
 dependencies:
 
-#  hl7.org.nz.fhir.ig.hip-core:
-#     uri: 'https:ig-nhi.hip-uat.digital.health.nz'   
-#     version: dev
+  hl7.org.nz.fhir.ig.hip-core:
+     uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
+     version: 1.0.0
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
@@ -35,7 +35,7 @@ parameters:
   show-inherited-invariants: false
 
 copyrightYear: 2020+
-releaseLabel: CI Build
+releaseLabel: Release 1.0.0
 
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
