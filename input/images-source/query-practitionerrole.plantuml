@@ -9,10 +9,10 @@ participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: User enters alternative identifier to be looked up
+User -> A: User enters identifier to be looked up
 activate A
 |||
-A -> B: GET (…)/PractitionerRole?identifier=[system]|[identifier]
+A -> B: GET (…)/PractitionerRole?practitioner=99ZZZ
 activate B
 |||
 B -> B: Validate[]
