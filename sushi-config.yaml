@@ -54,6 +54,7 @@ menu:
     Get Practitioner: getPractitioner.html
     Search Practitioner: searchPractitioner.html
     Add Practitioner: addPractitioner.html
+    Get Practitioner Role: getPracRole.html
     Search Practitioner Role: searchPracRole.html
     Add Practitioner Role: addPracRole.html
     Update Practitioner Role: updatePracRole.html
