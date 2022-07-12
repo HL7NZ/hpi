@@ -3,7 +3,7 @@ skinparam sequenceArrowThickness 2
 skinparam roundcorner 5
 skinparam maxmessagesize 180
 skinparam sequenceParticipant bold
-title Add Practitioner
+title Add new Practitioner to HPI
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: User enters Practitioner details
 activate A
 |||
-A -> B: POST(...)/practitioner
+A -> B: POST(...)/Practitioner
 activate B
 |||
 B -> B: Validate[]
