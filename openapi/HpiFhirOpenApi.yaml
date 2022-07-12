@@ -5,7 +5,7 @@ info:
   license:
     name: Creative Commons Zero v1.0 Universal
     url: http://spdx.org/licenses/CC0-1.0.html
-  version: 0.10.0
+  version: 1.0.0
   contact:
     name: Ministry of Health
     email: integration@health.govt.nz
@@ -20,7 +20,7 @@ x-amazon-apigateway-request-validators:
     validateRequestBody: false
     validateRequestParameters: true
 externalDocs:
-  url: http://hl7.org.nz/fhir/ig/hpi/CapabilityStatement/HpiCapabilityStatement
+  url: https://hpi-ig.hip.digital.health.nz/CapabilityStatement-HpiCapabilityStatement.html
   description: FHIR CapabilityStatement
 paths:
   /fhir/hpi/v1/metadata:
@@ -841,7 +841,8 @@ components:
                     - $ref: '#/components/schemas/ScopeOfPracticeExtension'
                     - $ref: '#/components/schemas/RegistrationInitialDate'
                     - $ref: '#/components/schemas/ConditionOnPracticeExtension'
-                    - $ref: '#/components/schemas/RegistrationStatusCodeExtension'              
+                    - $ref: '#/components/schemas/RegistrationStatusCodeExtension'   
+                    - $ref: '#/components/schemas/AdditionalAuthorisation'            
               identifier:
                 description: >-
                   An identifier that applies to this person\u0027s qualification
@@ -873,6 +874,9 @@ components:
           type: string
         assigner:
           $ref: '#/components/schemas/Reference'
+      required:
+        - use
+        - system
     HPIDormantIdentifer:
       type: object
       properties:
@@ -885,6 +889,8 @@ components:
           type: string
         assigner:
           $ref: '#/components/schemas/Reference'
+      required:
+        - use
     HPIRAIdentifer:
       type: object
       properties:
@@ -897,6 +903,8 @@ components:
           type: string
         assigner:
           $ref: '#/components/schemas/Reference'
+      required:
+        - use
     ScopeOfPracticeExtension:
       type: object
       description: >-
@@ -935,8 +943,7 @@ components:
       properties:
         url:
           enum:
-            - >-
-              http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
+            - http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
         extension:
           type: array
           items:
@@ -945,6 +952,32 @@ components:
               - $ref: '#/components/schemas/PeriodExtension'
       required:
         - url
+        
+    AdditionalAuthorisationExtension:
+      type: object
+      properties:
+        url:
+          enum:       
+             - http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
+        valueCodeableConcept:
+          allOf:
+            - $ref: '#/components/schemas/CodeableConcept'
+            - type: object
+              properties:          
+                system: 
+                  enum:
+                    - https://standards.digital.health.nz/ns/practitioner-additional-authorisation-code
+              required:
+                    - system
+        extension:
+          type: array
+          items:
+              anyOf:
+                - $ref: '#/components/schemas/PeriodExtension'
+                - $ref: '#/components/schemas/CodeableConceptExtension'    
+      required:
+        - url
+            
     DeathDate:
       type: object
       properties:
@@ -988,12 +1021,7 @@ components:
               - $ref: '#/components/schemas/PeriodExtension'
       required:
         - url
-    AdditionalAuthorisation:
-      type: array
-      items:
-        anyOf:
-          - $ref: '#/components/schemas/PeriodExtension'
-          - $ref: '#/components/schemas/CodeableConceptExtension'
+   
     CodeableConceptExtension:
       type: object
       properties:

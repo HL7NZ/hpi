@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -25,12 +25,6 @@
     "4.0.1"
   ],
   "dependsOn": [
-    {
-      "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https:ig-nhi.hip-uat.digital.health.nz",
-      "version": "dev",
-      "id": "hl7_org_nz_fhir_ig_hip_core"
-    },
     {
       "packageId": "fhir.org.nz.ig.base",
       "uri": "http://fhir.org.nz/ig/base",
@@ -109,16 +103,16 @@
           "reference": "Location/FZZ958-K"
         },
         "name": "FZZ958-K",
-        "description": "Example HPI Location (Facility)",
-        "exampleBoolean": true
+        "description": "Example HPI Location",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
         "reference": {
           "reference": "Location/FZZ999-B"
         },
         "name": "FZZ999-B",
-        "description": "Example HPI Location (Facility)",
-        "exampleBoolean": true
+        "description": "Example HPI Location",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
         "reference": {
@@ -126,7 +120,7 @@
         },
         "name": "G00001-G",
         "description": "Example HPI Organization",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {
@@ -134,7 +128,7 @@
         },
         "name": "G00004-B",
         "description": "Example HPI Organization",
-        "exampleBoolean": true
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
         "reference": {
@@ -295,10 +289,6 @@
       {
         "code": "show-inherited-invariants",
         "value": "false"
-      },
-      {
-        "code": "special-url",
-        "value": "https://dev.d3ox9vcqia2rpj.amplifyapp.com/site"
       }
     ]
   }
