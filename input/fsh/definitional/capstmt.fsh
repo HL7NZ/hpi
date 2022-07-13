@@ -60,7 +60,7 @@ Practitioner query
 //identifier 
 * rest.resource.searchParam[0].name = "identifier"
 * rest.resource.searchParam[0].type = #token
-//* rest.resource.searchParam[0].documentation = "For searching a Practitioner resource using their council/board registration number"
+* rest.resource.searchParam[0].documentation = "For searching a Practitioner resource using their council/board registration number"
 
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[1].name = "name"
@@ -73,7 +73,7 @@ Practitioner query
 //gender 
 * rest.resource.searchParam[2].name = "gender"
 * rest.resource.searchParam[2].type = #token
-//* rest.resource.searchParam[2].documentation = "Use with name and birthdate. Search by gender alone is not allowed."
+* rest.resource.searchParam[2].documentation = "Use with name and birthdate. Search by gender alone is not allowed."
 
 //birthdate 
 * rest.resource.searchParam[3].name = "birthdate"
@@ -128,23 +128,21 @@ PractitionerRole query
 //* rest.resource[1].searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
 * rest.resource[1].searchParam[2].documentation = "Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id"
 
-* rest.resource[1].searchParam[3].name = "identifier"
+
+* rest.resource[1].searchParam[3].name = "role"
 * rest.resource[1].searchParam[3].type = #token
-//* rest.resource[1].searchParam[3].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[3].documentation = "Returns PractitionerRoles based on identifier"
+* rest.resource[1].searchParam[3].documentation = "Not yet enabled. Returns PractitionerRole records based on role code"
 
-* rest.resource[1].searchParam[4].name = "role"
+* rest.resource[1].searchParam[4].name = "active"
 * rest.resource[1].searchParam[4].type = #token
-* rest.resource[1].searchParam[4].documentation = "Not yet enabled. Returns PractitionerRole records based on role code"
-
-* rest.resource[1].searchParam[5].name = "active"
-* rest.resource[1].searchParam[5].type = #token
-* rest.resource[1].searchParam[5].documentation = "Not yet enabled. To enable exclusion of inactive PractitionerRole records"
+* rest.resource[1].searchParam[4].documentation = "Not yet enabled. To enable exclusion of inactive PractitionerRole records"
 
 * rest.resource[1].searchInclude[0] = "practitioner"
 * rest.resource[1].searchInclude[1] = "organization"
 * rest.resource[1].searchInclude[2] = "location"
-
+* rest.resource[1].searchInclude[0].documentation = "PractitionerRole:practitioner"
+* rest.resource[1].searchInclude[1].documentation = "PractitionerRole:organization"
+* rest.resource[1].searchInclude[2].documentation = "PractitionerRole:location"
 
 // ============== The Organization endpoint
 * rest.resource[2].type = #Organization
@@ -230,6 +228,3 @@ Location query
 * rest.resource[3].searchParam[6].type = #token
 * rest.resource[3].searchParam[6].documentation = "Not yet enabled. To enable exclusion of inactive locations"
 
-* rest.resource[3].searchParam[7].name = "_include"
-* rest.resource[3].searchParam[7].type = #string
-* rest.resource[3].searchParam[7].documentation = "Supported resource types : practitioner, organization  and location"

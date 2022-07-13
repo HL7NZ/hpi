@@ -478,7 +478,7 @@ components:
             - usual
             - official
             - old
-         
+       additionalProperties: false
       
     Period:
       type: object
@@ -573,6 +573,7 @@ components:
           items:
             $ref: '#/components/schemas/CapabilityStatementRest'
           type: array
+      additionalProperties: false
     CapabilityStatementSoftware:
       type: object
       description: >-
@@ -629,6 +630,7 @@ components:
           items:
             $ref: '#/components/schemas/CapabilityStatementResource'
           type: array
+      additionalProperties: false
     CapabilityStatementResource:
       type: object
       description: >-
@@ -666,6 +668,7 @@ components:
           items:
             $ref: '#/components/schemas/CapabilityStatementSearchParam'
           type: array
+      additionalProperties: false
     CapabilityStatementInteraction:
       type: object
       description: >-
@@ -699,6 +702,7 @@ components:
           items:
             $ref: '#/components/schemas/CapabilityStatementSearchParam'
           type: array
+      additionalProperties: false
     CapabilityStatementSearchParam:
       type: object
       description: >-
@@ -725,6 +729,7 @@ components:
             - special
         documentation:
           $ref: '#/components/schemas/markdown'
+      additionalProperties: false
     OperationOutcome:
       type: object
       description: >-
@@ -738,6 +743,7 @@ components:
           items:
             $ref: '#/components/schemas/OperationOutcomeIssue'
           type: array
+      additionalProperties: false
     OperationOutcomeIssue:
       type: object
       description: >-
@@ -793,6 +799,7 @@ components:
             - informational
         diagnostics:
           $ref: '#/components/schemas/string'
+      additionalProperties: false
     Practitioner:
       type: object
       description: >-
@@ -856,11 +863,13 @@ components:
                 $ref: '#/components/schemas/Period'
               issuer:
                 $ref: '#/components/schemas/Reference'
+            additionalProperties: false
         communication:
           description: A language the practitioner can use in patient communication.
           items:
             $ref: '#/components/schemas/CodeableConcept'
           type: array
+      additionalProperties: false
     HPIIdentifer:
       type: object
       properties:
@@ -877,6 +886,7 @@ components:
       required:
         - use
         - system
+      additionalProperties: false
     HPIDormantIdentifer:
       type: object
       properties:
@@ -891,6 +901,7 @@ components:
           $ref: '#/components/schemas/Reference'
       required:
         - use
+      additionalProperties: false
     HPIRAIdentifer:
       type: object
       properties:
@@ -905,6 +916,7 @@ components:
           $ref: '#/components/schemas/Reference'
       required:
         - use
+      additionalProperties: false
     ScopeOfPracticeExtension:
       type: object
       description: >-
@@ -924,6 +936,7 @@ components:
           $ref: '#/components/schemas/CodeableConcept'
       required:
         - url
+      additionalProperties: false
     ConditionOnPracticeExtension:
       type: object
       properties:
@@ -938,6 +951,7 @@ components:
               - $ref: '#/components/schemas/DescriptionExtension'
       required:
         - url
+      additionalProperties: false
     RegistrationStatusCodeExtension:
       type: object
       properties:
@@ -952,7 +966,7 @@ components:
               - $ref: '#/components/schemas/PeriodExtension'
       required:
         - url
-        
+      additionalProperties: false 
     AdditionalAuthorisationExtension:
       type: object
       properties:
@@ -977,7 +991,7 @@ components:
                 - $ref: '#/components/schemas/CodeableConceptExtension'    
       required:
         - url
-            
+      additionalProperties: false      
     DeathDate:
       type: object
       properties:
@@ -988,6 +1002,7 @@ components:
           $ref: '#/components/schemas/date'
       required:
         - url
+      additionalProperties: false
     RegistrationInitialDate:
       type: object
       properties:
@@ -997,6 +1012,7 @@ components:
               http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date
         valueDate:
           $ref: '#/components/schemas/date'
+      additionalProperties: false
     StatusCode:
       type: object
       properties:
@@ -1007,6 +1023,7 @@ components:
           $ref: '#/components/schemas/CodeableConcept'
       required:
         - url
+      additionalProperties: false
     ScopeOfPractice:
       type: object
       properties:
@@ -1021,7 +1038,7 @@ components:
               - $ref: '#/components/schemas/PeriodExtension'
       required:
         - url
-   
+      additionalProperties: false
     CodeableConceptExtension:
       type: object
       properties:
@@ -1032,6 +1049,7 @@ components:
           $ref: '#/components/schemas/CodeableConcept'
       required:
         - url
+      additionalProperties: false
     PeriodExtension:
       type: object
       properties:
@@ -1042,6 +1060,8 @@ components:
           $ref: '#/components/schemas/Period'
       required:
         - url
+      additionalProperties: false  
+      
     DescriptionExtension:
       type: object
       properties:
@@ -1052,6 +1072,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
     NzEthnicityExtension:
       type: object
       properties:
@@ -1068,6 +1089,7 @@ components:
       required:
         - url
         - valueCodeableConcept
+      additionalProperties: false
     EducationalQualification:
       type: object
       properties:
@@ -1087,6 +1109,7 @@ components:
           type: array
       required:
         - url
+      additionalProperties: false
     EQShortname:
       type: object
       properties:
@@ -1107,6 +1130,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
     EQYear:
       type: object
       properties:
@@ -1117,6 +1141,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
     EQInstitution:
       type: object
       properties:
@@ -1127,6 +1152,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
     EQCity:
       type: object
       properties:
@@ -1137,6 +1163,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
     EQCountry:
       type: object
       properties:
@@ -1147,6 +1174,7 @@ components:
           type: string
       required:
         - url
+      additionalProperties: false
   parameters:
     rid:
       name: rid

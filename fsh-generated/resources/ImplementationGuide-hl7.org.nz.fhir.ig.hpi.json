@@ -308,7 +308,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "Release 1.0.0"
+        "value": "Release"
       },
       {
         "code": "show-inherited-invariants",

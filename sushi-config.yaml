@@ -35,7 +35,7 @@ parameters:
   show-inherited-invariants: false
 
 copyrightYear: 2020+
-releaseLabel: Release 1.0.0
+releaseLabel: Release
 
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
