@@ -15,7 +15,9 @@ Search Practitioner with Identifier (hpi-person-id) Processing steps
 5. The response containing a bundle of PractitionerRole resources is returned
 6. The consuming application displays the matching Practitioner Role details to the user
 
-Note: Using _ include parameter allows either a Practitioner, Organization or Location resource to be returned alongside the PractitionerRole Resource
+### Using _ include parameter
+When specified by the _ include, the practitioner, organization and location records are included in the response.
+Note: This requires read permission on the included resource.
 E.g. GET (...)/PractitionerRole?practitioner=99ZZZS&_include=PractitionerRole:practitioner
 
   
