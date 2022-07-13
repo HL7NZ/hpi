@@ -344,6 +344,18 @@ components:
       pattern: ^urn:uuid:[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$
       type: string
       description: A UUID, represented as a URI
+    
+    valueDate:
+        type: string
+        pattern: "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$"
+        description: Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
+    
+    valueDateTime: 
+        type: string        
+        pattern: "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$"
+        description: Value of extension - must be one of a constrained set of the data types (see [Extensibility](extensibility.html) for a list).
+        
+    
     Meta:
       type: object
       description: >-
@@ -423,7 +435,7 @@ components:
         assigner:
           $ref: '#/components/schemas/Reference'
       additionalProperties: false
-    HumanName:
+    HPIHumanName:
       type: object
       description: A human's name with the ability to identify parts and usage.
       properties:
@@ -434,11 +446,7 @@ components:
           enum:
             - usual
             - official
-            - temp
-            - nickname
-            - anonymous
             - old
-            - maiden
         text:
           $ref: '#/components/schemas/string'
         family:
@@ -468,17 +476,7 @@ components:
           $ref: '#/components/schemas/Period'
       additionalProperties: false
       
-    HPIHumanName:
-     allOf:
-     - $ref:  '#/components/schemas/HumanName'
-     - type: object
-       properties:
-         use:
-           enum:
-            - usual
-            - official
-            - old
-       additionalProperties: false
+  
       
     Period:
       type: object
@@ -504,6 +502,8 @@ components:
         display:
           $ref: '#/components/schemas/string'
       additionalProperties: false
+      
+          
     CapabilityStatement:
       type: object
       description: >-
@@ -991,18 +991,38 @@ components:
                 - $ref: '#/components/schemas/CodeableConceptExtension'    
       required:
         - url
-      additionalProperties: false      
+      additionalProperties: false    
+        
+   
+   
     DeathDate:
       type: object
       properties:
         url:
           enum:
-            - http://hl7.org.nz/fhir/StructureDefinition/death-date
-        valueDate:
-          $ref: '#/components/schemas/date'
+             - http://hl7.org.nz/fhir/StructureDefinition/death-date
+        extension:
+          type: array
+          items:
+           $ref: '#/components/schemas/DeathDateExtension'
       required:
         - url
-      additionalProperties: false
+      additionalProperties: false  
+      
+      
+    DeathDateExtension:
+      type: object
+      properties:
+        url:
+          enum:
+            - date
+        valueDateTime:
+          $ref: '#/components/schemas/valueDateTime'
+      required:
+        - url
+      additionalProperties: false  
+      
+   
     RegistrationInitialDate:
       type: object
       properties:
@@ -1137,8 +1157,8 @@ components:
         url:
           enum:
             - year
-        valueString:
-          type: string
+        valueDate:
+           $ref: '#/components/schemas/valueDate'
       required:
         - url
       additionalProperties: false

@@ -6,7 +6,7 @@
 #OpenApi validation
 for FILE in  ../fsh-generated/resources/Practitioner-*.json
 do
-	openapi-examples-validator -n -s $.components.schemas.Practitioner -e ${FILE} ./HpiFhirOpenApi.yaml
+	openapi-examples-validator --no-additional-properties -s $.components.schemas.Practitioner -e ${FILE} ./HpiFhirOpenApi.yaml
 done	
 
 #FHIR validator
