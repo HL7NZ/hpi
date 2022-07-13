@@ -140,9 +140,6 @@ PractitionerRole query
 * rest.resource[1].searchInclude[0] = "practitioner"
 * rest.resource[1].searchInclude[1] = "organization"
 * rest.resource[1].searchInclude[2] = "location"
-* rest.resource[1].searchInclude[0].documentation = "PractitionerRole:practitioner"
-* rest.resource[1].searchInclude[1].documentation = "PractitionerRole:organization"
-* rest.resource[1].searchInclude[2].documentation = "PractitionerRole:location"
 
 // ============== The Organization endpoint
 * rest.resource[2].type = #Organization

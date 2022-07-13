@@ -28,7 +28,8 @@
 <tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td></td>
+<td><p>For searching a Practitioner resource using their council/board registration number</p>
+</td>
 </tr>
 <tr>
 <td>name</td>
@@ -39,7 +40,8 @@
 <tr>
 <td>gender</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td></td>
+<td><p>Use with name and birthdate. Search by gender alone is not allowed.</p>
+</td>
 </tr>
 <tr>
 <td>birthdate</td>
@@ -96,12 +98,6 @@
 <td>location</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
 <td><p>Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id</p>
-</td>
-</tr>
-<tr>
-<td>identifier</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Returns PractitionerRoles based on identifier</p>
 </td>
 </tr>
 <tr>
@@ -241,12 +237,6 @@
 <td>status</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
 <td><p>Not yet enabled. To enable exclusion of inactive locations</p>
-</td>
-</tr>
-<tr>
-<td>_include</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Supported resource types : practitioner, organization  and location</p>
 </td>
 </tr>
 </table>
