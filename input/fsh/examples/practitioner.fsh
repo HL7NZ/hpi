@@ -1,7 +1,7 @@
 
 Instance: 98ZZQJ
 InstanceOf: Practitioner
-Description: "Example HPI Practitioner - 2 Registrations"
+Description: "Example HPI Practitioner with two 2 Registrations"
 Usage: #example
 * meta.versionId = "10099"
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
@@ -107,7 +107,7 @@ Usage: #example
 * qualification[=].extension[=].extension[=].valuePeriod.end = "2023-04-11"
 * qualification[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
 * qualification[=].extension[=].extension[0].url = "description"
-* qualification[=].extension[=].extension[=].valueString = "NCRN Must have a competence assessment completed by a senior nurse every 12 months"
+* qualification[=].extension[=].extension[=].valueString = "Must have a competence assessment completed every 12 months"
 * qualification[=].extension[=].extension[+].url = "period"
 * qualification[=].extension[=].extension[=].valuePeriod.start = "2019-04-08"
 * qualification[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
@@ -131,7 +131,7 @@ Usage: #example
 
 Instance: 90ZZLP
 InstanceOf: Practitioner
-Description: "Example HPI Practitioner - NR"
+Description: "Example HPI Practitioner with No Registration"
 Usage: #example
 * meta.versionId = "9971"
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
