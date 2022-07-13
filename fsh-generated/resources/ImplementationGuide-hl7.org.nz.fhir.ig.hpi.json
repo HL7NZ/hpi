@@ -90,26 +90,18 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/91ZZWJ"
+          "reference": "Practitioner/90ZZLP"
         },
-        "name": "91ZZWJ",
-        "description": "Example HPI Practitioner",
+        "name": "90ZZLP",
+        "description": "Example HPI Practitioner - NR",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "Practitioner/92ZZRR"
+          "reference": "Practitioner/98ZZQJ"
         },
-        "name": "92ZZRR",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "Practitioner/99ZZRT"
-        },
-        "name": "99ZZRT",
-        "description": "Example HPI Practitioner",
+        "name": "98ZZQJ",
+        "description": "Example HPI Practitioner - 2 Registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -130,18 +122,9 @@
       },
       {
         "reference": {
-          "reference": "Organization/G00001-G"
+          "reference": "Organization/GZZ956-B"
         },
-        "name": "G00001-G",
-        "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00004-B"
-        },
-        "name": "G00004-B",
-        "description": "Example HPI Organization",
+        "name": "GZZ956-B",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
@@ -154,18 +137,18 @@
       },
       {
         "reference": {
-          "reference": "PractitionerRole/R00000008-F"
+          "reference": "PractitionerRole/R00000012-G"
         },
-        "name": "R00000008-F",
-        "description": "Example HPI PractitionerRole",
+        "name": "R00000012-G",
+        "description": "Example HPI PractitionerRole Medical Receptionist",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
       },
       {
         "reference": {
-          "reference": "PractitionerRole/R00000009-H"
+          "reference": "PractitionerRole/R00000013-J"
         },
-        "name": "R00000009-H",
-        "description": "Example HPI PractitionerRole",
+        "name": "R00000013-J",
+        "description": "Example HPI PractitionerRole Specialist Physician",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
       }
     ],
