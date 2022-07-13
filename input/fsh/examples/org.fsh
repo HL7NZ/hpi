@@ -3,6 +3,7 @@ Alias: $alias-type-code = https://standards.digital.health.nz/ns/alias-type-code
 
 Instance: GZZ956-B
 InstanceOf: Organization
+Description: "Example HPI Organization"
 Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
