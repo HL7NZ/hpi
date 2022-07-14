@@ -1,28 +1,31 @@
+#!/bin/bash   
 #run from project root
-#validation
+set -x #echo on
+
+#create a bundle for the results
 cd ./output
+rm -r ./temp
+mkdir ./temp
+
 echo validating Practitioner examples
-for FILE in  ./Practitioner-*.json
-do
-	java -jar /C/apps/FHIR_validator/validator_cli.jar ${FILE}  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation.html
-done
-	
+cp ./Practitioner-*.json ./temp
+java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPIPractitioner.html
+rm ./*temp/*.json
+
 echo validating Organization examples
-for FILE in  ./Organization-*.json
-do
-	java -jar /C/apps/FHIR_validator/validator_cli.jar ${FILE}  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation.html
-done	
+cp ./Organization-*.json ./temp
+java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization  -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPIOrganization.html
+rm ./*temp/*.json
+
 
 echo validating Location examples
-for FILE in  ./Location-*.json
-do
-	java -jar /C/apps/FHIR_validator/validator_cli.jar ${FILE}  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPILocation -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation.html
-done	
+cp ./Location-*.json ./temp
+java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPILocation  -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPILocation.html
+rm ./*temp/*.json
+
 
 echo validating PractitionerRole examples
-for FILE in  ./PractitionerRole-*.json
-do
-	java -jar /C/apps/FHIR_validator/validator_cli.jar ${FILE}  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation.html
-done
-
+cp ./PractitionerRole-*.json ./temp
+java -jar /C/apps/FHIR_validator/validator_cli.jar ./temp  -ig ./package.tgz -profile http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole   -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -html-output ./validation_HPIPractitionerRole.html
+rm ./*temp/*.json
 cd ..
