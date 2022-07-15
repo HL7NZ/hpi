@@ -73,7 +73,7 @@ Description:    "An entity that provides services of interest to, or is involved
 * identifier[nzbn].period 0..0
 * identifier[nzbn].assigner only Reference(HpiOrganization)
 
-* identifier[dormant].system = "https://standards.digital.health.nz/id/hpi-org" (exactly)
+* identifier[dormant].system = "https://standards.digital.health.nz/ns/hpi-organisation-id" (exactly)
 * identifier[dormant].use = #old (exactly)
 * identifier[dormant].use ^short = "fixed to old"
 * identifier[dormant] ^short = "Identifiers which have been deprecated"

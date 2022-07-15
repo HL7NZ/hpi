@@ -12,7 +12,7 @@
     }
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "name": "HpiLocation",
   "title": "HPI Location",
   "status": "active",

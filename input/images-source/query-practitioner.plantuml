@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Query Practitioner with another identifier 
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: User enters alternative identifier to be looked up
+activate A
+|||
+A -> B: GET (…)/Practitioner?identifier=[system]|[identifier]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Get[Practitioner]
+activate C
+|||
+
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:Return Practitioner resource
+deactivate B
+|||
+A -> User: Display matching Practitioner details
+deactivate A
+|||
+@enduml

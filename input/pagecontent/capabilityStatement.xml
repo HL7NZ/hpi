@@ -18,7 +18,8 @@
 </tr>
 <tr>
 <td>search-type</td>
-<td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
+<td><p>Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources).</p>
+</td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
@@ -27,33 +28,25 @@
 <tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td></td>
+<td><p>For searching a Practitioner resource using their council/board registration number</p>
+</td>
 </tr>
 <tr>
 <td>name</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Not case sensitive</p>
+<td><p>Should contain the person’s full name, include all given names and family name.</p>
 </td>
-</tr>
-<tr>
-<td>family</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td></td>
-</tr>
-<tr>
-<td>given</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td></td>
 </tr>
 <tr>
 <td>gender</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td></td>
+<td><p>Use with name and birthdate. Search by gender alone is not allowed.</p>
+</td>
 </tr>
 <tr>
 <td>birthdate</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#date">date</a></td>
-<td><p>Supports a search on practitioner birthdate</p>
+<td><p>Use with name and gender. Search by birthdate alone is not allowed.</p>
 </td>
 </tr>
 </table>
@@ -72,7 +65,8 @@
 </tr>
 <tr>
 <td>search-type</td>
-<td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
+<td><p>Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources).</p>
+</td>
 </tr>
 <tr>
 <td>create</td>
@@ -81,7 +75,7 @@
 </tr>
 <tr>
 <td>update</td>
-<td><p>Update an existing PractitionerRole</p>
+<td><p>Update contact details and end date on an existing PractitionerRole record.</p>
 </td>
 </tr>
 </table>
@@ -91,37 +85,31 @@
 <tr>
 <td>practitioner</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Given a Practitioner id, returns the PractitionerRoles associated with that id</p>
+<td><p>Given an hpi-person-id, returns the PractitionerRole records associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>organization</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Given a Organization id, returns the PractitionerRoles associated with that id</p>
+<td><p>Not yet enabled. Given an hpi-organization-id, returns the PractitionerRole records associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>location</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Given a Location id, returns the PractitionerRoles associated with that id</p>
-</td>
-</tr>
-<tr>
-<td>identifier</td>
-<td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Returns PractitionerRoles based on identifier</p>
+<td><p>Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>role</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Returns PractitionerRoles based on role</p>
+<td><p>Not yet enabled. Returns PractitionerRole records based on role code</p>
 </td>
 </tr>
 <tr>
 <td>active</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>To enable exclusion of inactive PractitionerRoles</p>
+<td><p>Not yet enabled. To enable exclusion of inactive PractitionerRole records</p>
 </td>
 </tr>
 </table>
@@ -155,7 +143,8 @@
 </tr>
 <tr>
 <td>search-type</td>
-<td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
+<td><p>Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources).</p>
+</td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
@@ -164,25 +153,25 @@
 <tr>
 <td>active</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>To enable exclusion of inactive organizations</p>
+<td><p>Not yet enabled. To enable exclusion of inactive organizations</p>
 </td>
 </tr>
 <tr>
 <td>name</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Will only return active organizations</p>
+<td><p>For searching using the organisation’s name or an alias name</p>
 </td>
 </tr>
 <tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>The HPI Organization id or the New Zealand Business Number (NZBN).</p>
+<td><p>For searching using an organisation’s New Zealand Business Number (NZBN) or their legacy NZHIS agency code.</p>
 </td>
 </tr>
 <tr>
 <td>partOf</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Locates Organizations that are 'part of' another.</p>
+<td><p>Not yet enabled. For retrieving organizations that are 'part of' another.</p>
 </td>
 </tr>
 </table>
@@ -195,8 +184,14 @@
 <table class='table table-bordered table-condensed'>
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
+<td>read</td>
+<td><p>Used to retrieve an Location resource by Id.</p>
+</td>
+</tr>
+<tr>
 <td>search-type</td>
-<td>Queries against the resource type. Will return a Bundle (even if there are no matching resources).</td>
+<td><p>Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources).</p>
+</td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
@@ -205,19 +200,19 @@
 <tr>
 <td>identifier</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Retrieve the Location with the identifier</p>
+<td><p>For searching using an organization’s legacy NZHIS facility code.</p>
 </td>
 </tr>
 <tr>
 <td>name</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
-<td><p>Retrieve the Locations with the matching name or alias</p>
+<td><p>For searching using the Locations name or alias name</p>
 </td>
 </tr>
 <tr>
 <td>type</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Retrieve Locations of the given type</p>
+<td><p>Not yet enabled. Retrieve Locations of the given type</p>
 </td>
 </tr>
 <tr>
@@ -229,19 +224,19 @@
 <tr>
 <td>organization</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Locations with the given ManagingOrganization</p>
+<td><p>Not yet enabled. Retrieve Locations with the given ManagingOrganization</p>
 </td>
 </tr>
 <tr>
 <td>dhb</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Locations that are in a DHBs catchment area.</p>
+<td><p>Not yet enabled. Searching for Locations that are in a DHBs catchment area.</p>
 </td>
 </tr>
 <tr>
 <td>status</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>The current status of the Location</p>
+<td><p>Not yet enabled. To enable exclusion of inactive locations</p>
 </td>
 </tr>
 </table>

@@ -7,7 +7,7 @@
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
 #canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
-version: 0.10.0
+version: 1.0.0
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
@@ -21,8 +21,8 @@ fhirVersion: 4.0.1
 dependencies:
 
   hl7.org.nz.fhir.ig.hip-core:
-     uri: 'https:ig-nhi.hip-uat.digital.health.nz'   
-     version: dev
+     uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
+     version: 1.0.0
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
@@ -33,11 +33,9 @@ dependencies:
      
 parameters:
   show-inherited-invariants: false
-  special-url:
-    - https://dev.d3ox9vcqia2rpj.amplifyapp.com/site
-  
+
 copyrightYear: 2020+
-releaseLabel: CI Build
+releaseLabel: Release
 
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
@@ -51,17 +49,32 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   Business View: businessView.html
-  Use cases: usecases.html
-  Onboarding and Compliance testing: OnboardingAndComplianceTesting.html
-  General Notes: general.html
+  Use cases:
+    Use cases: usecases.html
+    Get Practitioner: getPractitioner.html
+    Search Practitioner: searchPractitioner.html
+    Add Practitioner: addPractitioner.html
+    Get Practitioner Role: getPracRole.html
+    Search Practitioner Role: searchPracRole.html
+    Add Practitioner Role: addPracRole.html
+    Update Practitioner Role: updatePracRole.html
+    Get Facility (Location): getLocation.html
+    Search Facility (Location): searchLocation.html
+    Get Organization: getOrganization.html
+    Search Organization: searchOrganization.html
+  Important information:
+    Onboarding and Compliance testing: OnboardingAndComplianceTesting.html
+    General Notes: general.html
+    FAQ: faq.html
   API: capabilityStatement.html
-  FAQ: faq.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
+  Table of Contents: toc.html
   Artifact Index: artifacts.html
   Support:
     "FHIR Spec ": "{{site.data.fhir.path}}index.html"
     "Download IG" : full-ig.zip
     Artifacts (Json): definitions.json.zip
     Artifacts (Xml): definitions.xml.zip
+    "OpenApi 3 spec": HpiFhirOpenApi.zip

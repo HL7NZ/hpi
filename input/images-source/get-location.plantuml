@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title GET location (facility) 
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: Look up location with hpi-facility-id
+activate A
+|||
+A -> B: GET (…)/location/[hpi-facility-id]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Request
+activate C
+|||
+
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:Return location record
+deactivate B
+|||
+A -> User: Display location(facility) details
+deactivate A
+|||
+@enduml

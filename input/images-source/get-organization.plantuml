@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title GET Organization
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: Look up organization with hpi-organisation-id
+activate A
+|||
+A -> B: GET (…)/organization/[hpi-organisation-id]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Request
+activate C
+|||
+
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:Return organization record
+deactivate B
+|||
+A -> User:Display Organization details 
+deactivate A
+|||
+@enduml

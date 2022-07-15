@@ -16,20 +16,67 @@
   <li>
     <a href="businessView.html">Business View</a>
   </li>
-  <li>
-    <a href="usecases.html">Use cases</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Use cases
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="usecases.html">Use cases</a>
+      </li>
+      <li>
+        <a href="getPractitioner.html">Get Practitioner</a>
+      </li>
+      <li>
+        <a href="searchPractitioner.html">Search Practitioner</a>
+      </li>
+      <li>
+        <a href="addPractitioner.html">Add Practitioner</a>
+      </li>
+      <li>
+        <a href="getPracRole.html">Get Practitioner Role</a>
+      </li>
+      <li>
+        <a href="searchPracRole.html">Search Practitioner Role</a>
+      </li>
+      <li>
+        <a href="addPracRole.html">Add Practitioner Role</a>
+      </li>
+      <li>
+        <a href="updatePracRole.html">Update Practitioner Role</a>
+      </li>
+      <li>
+        <a href="getLocation.html">Get Facility (Location)</a>
+      </li>
+      <li>
+        <a href="searchLocation.html">Search Facility (Location)</a>
+      </li>
+      <li>
+        <a href="getOrganization.html">Get Organization</a>
+      </li>
+      <li>
+        <a href="searchOrganization.html">Search Organization</a>
+      </li>
+    </ul>
   </li>
-  <li>
-    <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
-  </li>
-  <li>
-    <a href="general.html">General Notes</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Important information
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
+      </li>
+      <li>
+        <a href="general.html">General Notes</a>
+      </li>
+      <li>
+        <a href="faq.html">FAQ</a>
+      </li>
+    </ul>
   </li>
   <li>
     <a href="capabilityStatement.html">API</a>
-  </li>
-  <li>
-    <a href="faq.html">FAQ</a>
   </li>
   <li>
     <a href="profiles.html">Profiles</a>
@@ -39,6 +86,9 @@
   </li>
   <li>
     <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -59,6 +109,9 @@
       </li>
       <li>
         <a href="definitions.xml.zip">Artifacts (Xml)</a>
+      </li>
+      <li>
+        <a href="HpiFhirOpenApi.zip">OpenApi 3 spec</a>
       </li>
     </ul>
   </li>

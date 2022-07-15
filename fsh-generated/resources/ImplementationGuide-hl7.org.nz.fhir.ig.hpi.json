@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "0.10.0",
+  "version": "1.0.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -27,8 +27,8 @@
   "dependsOn": [
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https:ig-nhi.hip-uat.digital.health.nz",
-      "version": "dev",
+      "uri": "https://nzhts.digital.health.nz/ig/hip-common-terminology",
+      "version": "1.0.0",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
@@ -90,66 +90,41 @@
       },
       {
         "reference": {
-          "reference": "Practitioner/90ZZLC"
+          "reference": "Practitioner/90ZZLP"
         },
-        "name": "90ZZLC",
-        "description": "Example HPI Practitioner",
+        "name": "90ZZLP",
+        "description": "Example HPI Practitioner - NR",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "Practitioner/90ZZMG"
+          "reference": "Practitioner/98ZZQJ"
         },
-        "name": "90ZZMG",
-        "description": "Example HPI Practitioner",
+        "name": "98ZZQJ",
+        "description": "Example HPI Practitioner - 2 Registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
         "reference": {
-          "reference": "Practitioner/94ZZXF"
+          "reference": "Location/FZZ958-K"
         },
-        "name": "94ZZXF",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        "name": "FZZ958-K",
+        "description": "Example HPI Location",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
         "reference": {
-          "reference": "Practitioner/98ZZXQ"
+          "reference": "Location/FZZ999-B"
         },
-        "name": "98ZZXQ",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        "name": "FZZ999-B",
+        "description": "Example HPI Location",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
         "reference": {
-          "reference": "Practitioner/99ZZVA"
+          "reference": "Organization/GZZ956-B"
         },
-        "name": "99ZZVA",
-        "description": "Example HPI Practitioner",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00001G"
-        },
-        "name": "G00001G",
-        "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00004B"
-        },
-        "name": "G00004B",
-        "description": "Example HPI Organization",
-        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
-      },
-      {
-        "reference": {
-          "reference": "Organization/G00023F"
-        },
-        "name": "G00023F",
-        "description": "Example HPI Organization",
+        "name": "GZZ956-B",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
@@ -159,6 +134,22 @@
         "name": "CapabilityStatement",
         "description": "Represents API exposed by HPI",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/R00000012-G"
+        },
+        "name": "R00000012-G",
+        "description": "Example HPI PractitionerRole Medical Receptionist",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/R00000013-J"
+        },
+        "name": "R00000013-J",
+        "description": "Example HPI PractitionerRole Specialist Physician",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
       }
     ],
     "page": {
@@ -172,8 +163,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "api.html",
-          "title": "Api",
+          "nameUrl": "addPracRole.html",
+          "title": "Add Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "addPractitioner.html",
+          "title": "Add Practitioner",
           "generation": "markdown"
         },
         {
@@ -184,16 +180,6 @@
         {
           "nameUrl": "capabilityStatement.html",
           "title": "Capability Statement",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "capstmt.html",
-          "title": "Capstmt",
-          "generation": "html"
-        },
-        {
-          "nameUrl": "companion.html",
-          "title": "Companion",
           "generation": "html"
         },
         {
@@ -212,9 +198,29 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "mohResources.html",
-          "title": "Moh Resources",
-          "generation": "html"
+          "nameUrl": "getLocation.html",
+          "title": "Get Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "getOrganization.html",
+          "title": "Get Organization",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "getPracRole.html",
+          "title": "Get Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "getPractitioner.html",
+          "title": "Get Practitioner",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "glossary.html",
+          "title": "Glossary",
+          "generation": "markdown"
         },
         {
           "nameUrl": "namingSystems.html",
@@ -232,8 +238,38 @@
           "generation": "html"
         },
         {
+          "nameUrl": "searchLocation.html",
+          "title": "Search Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchOrganization.html",
+          "title": "Search Organization",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchPracRole.html",
+          "title": "Search Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchPractitioner.html",
+          "title": "Search Practitioner",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "updatePracRole.html",
+          "title": "Update Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "updatePractitioner.html",
+          "title": "Update Practitioner",
           "generation": "markdown"
         },
         {
@@ -255,15 +291,11 @@
       },
       {
         "code": "releaselabel",
-        "value": "CI Build"
+        "value": "Release"
       },
       {
         "code": "show-inherited-invariants",
         "value": "false"
-      },
-      {
-        "code": "special-url",
-        "value": "https://dev.d3ox9vcqia2rpj.amplifyapp.com/site"
       }
     ]
   }
