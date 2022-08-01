@@ -37,7 +37,7 @@ Use the identifier in a search query.
 
 Example: 
 
-http://api.hip.digital.health.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/id/hpi\|92ZZRR
+http://api.hip.digital.health.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/ns/hpi-person-id\|92ZZRR
 
 
 (Note that both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
@@ -113,10 +113,10 @@ A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY)
 ```
 {
   "resourceType":"Practitioner",
-  "id" : "99ZZZZ",
+  "id" : "92ZZRR",
   "identifier" : [
         {"system":"https://standards.digital.health.nz/id/hpi-person","value":"92ZZRR","use":"official"},
-        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYY","use":"old"}
+        {"system":"https://standards.digital.health.nz/id/hpi-person","value":"96YYYY","use":"old"}
 
 
   ]
@@ -132,7 +132,7 @@ Resources that reference the Practitioner (such as the PractitionerRole resource
 
 GET [host]/PractitionerRole?practitioner=92ZZRR
 
-GET [host]/PractitionerRole?practitioner=96YYY
+GET [host]/PractitionerRole?practitioner=96YYYY
 
 
 
@@ -142,7 +142,7 @@ Contained resources are where the referenced (target) resource is contained with
 
 When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
 
-`https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/nx/hpi-practitioner-role-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
+`https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/ns/hpi-practitionerrole-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 ### Request Rules and Errors
 
@@ -158,7 +158,7 @@ When a resource contains a reference to another resource, the HPI server will no
  
 ### HTTP Header Details
 
-All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
+All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the hpi-person-id of the user would be provided, if known, otherwise a userid that allows the authenticated organisation to identify the individual.
 
 ### Security
 The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
