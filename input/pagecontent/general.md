@@ -3,9 +3,9 @@ The following notes apply to all resources in this implementation.
 
 
 
-### Resource representation: Json & XML
+### Resource representation: Json
 
-Resources can be expressed either as Json or XML, and both formats are supported by this implementation.
+Only Json is supported by this implementation.
 
 
 ### Id and Identifiers
@@ -130,9 +130,9 @@ A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY)
 
 Resources that reference the Practitioner (such as the PractitionerRole resource) can use either id. For example, to return PractitionerRole resources for this Practitioner, either of the following queries will return the same set of PractitionerRole resources:
 
-GET [host]/PractitionerResource?practitioner=92ZZRR
+GET [host]/PractitionerRole?practitioner=92ZZRR
 
-GET [host]/PractitionerResource?practitioner=96YYY
+GET [host]/PractitionerRole?practitioner=96YYY
 
 
 
@@ -146,8 +146,16 @@ When a resource contains a reference to another resource, the HPI server will no
 
 ### Request Rules and Errors
 
-TBC
+* **Request rules**
+  * Every request must include an:
+    * http header item UserId that uniquely identifies the individual initiating the request.
+    * OAuth 2 access token
+  * Each user must have an individual userID
 
+* _Request errors_
+  * _Authentication: missing userid header_,  _HTTP401, Processing_
+  * _Unauthorized_,  _HTTP401_
+ 
 ### HTTP Header Details
 
 All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the CPN of the user would be provided, if known, otherwise a user name that allows the authenticated organisation to identify the individual.
