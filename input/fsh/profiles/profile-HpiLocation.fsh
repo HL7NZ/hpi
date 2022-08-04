@@ -5,6 +5,7 @@ Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
 Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
 Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+Alias: $messaging-address = http://hl7.org.nz/fhir/StructureDefinition/messaging-address
 
 Profile:        HpiLocation
 Parent:         Location
@@ -76,7 +77,9 @@ Description:    "A physical location from which health goods and/or services are
 //top level  extensions
 * extension contains 
     $established named established 0..1 and
-    $dhb named dhb 0..1 
+    $dhb named dhb 0..1 and
+    $messaging-address named messaging-address 0..*
+    
    
 * extension[established] ^short = "The date when this location first became available for use"
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
@@ -91,8 +94,8 @@ Description:    "A physical location from which health goods and/or services are
 
 * telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 
-* telecom.extension contains
-    $edi-address named edi-address 0..1
+// * telecom.extension contains
+//    $edi-address named edi-address 0..1
 
 //* address only $commonAddress
 * address.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code

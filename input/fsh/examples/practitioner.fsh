@@ -151,3 +151,8 @@ Usage: #example
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/messaging-address"
+* extension[1].extension[0].url = "provider"
+* extension[1].extension[0].valueString = "healthlink"
+* extension[1].extension[1].url = "value"
+* extension[1].extension[1].valueString = "nawtonhc"
