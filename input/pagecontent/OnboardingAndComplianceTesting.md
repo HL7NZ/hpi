@@ -46,7 +46,7 @@ Provide the following details in a test report and email to [integration@health.
   b. Application name and version <br />
   c. HPI IG Version <br />
   d. Test Script version <br />
-  e. FHIR release version
+  e. FHIR release version <br />
   f. Testing start date and time and end date and time <br />
   g. Tester name and contact details <br />
   h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
@@ -285,7 +285,7 @@ table, th, td {
 
 <tr><td>HPI-P-Get-2</td>
 <td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
-<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR 93ZZWU</td>
+<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user</td>
 <td>mandatory</td></tr>
 
