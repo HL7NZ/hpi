@@ -24,17 +24,15 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 
 ### On-boarding
 
-1. To apply for access to the HPI test environment complete and submit the [Register your Interest / Access a Test Environment](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/41) form.
- 
+1. To apply for access to the HPI test environment complete and submit the [Register your Interest / Access a Test Environment](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/41) form or email [integration@health.govt.nz](mailto:integration@health.govt.nz) and the Integration team will send you the relevant forms to complete.
 2. You may be requested to complete an additional security questionnaire.
-
-3. The Ministry will issue credentials for the testing endpoint.
-
-4. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
-
-5. The Ministry will issue a compliance test report.
-
-6. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form.
+3. Submit the forms or send the forms back to [integration@health.govt.nz](mailto:integration@health.govt.nz)
+4. You will receive your credentials in seperate emails, one of which has a blank subject.
+5. You will also recieve the access token url, provided scopes, and the UAT endpoint.
+6. Complete your development and testing.
+7. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
+8. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
+9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers
 
 
 ### Compliance testing
@@ -81,25 +79,25 @@ table, th, td {
 <tr><td>Security 1</td>
 <td>Credentials match those issued to the testing organisation <br /> and their orgID and appID are auditing correctly</td>
 <td>Checked against all tests</td>
-<td>MoH will check internal logs</td>
+<td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
 
 <tr><td>Security 2</td>
 <td>Sending user ID is an end user ID or a CPN</td>
 <td>Checked against all tests</td>
-<td>MoH will check internal logs</td>
+<td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
 
 <tr><td>Security 3</td>
 <td>Sending user ID changes when different end users are initiating the request (Please make sure a seperate user creates a request)</td>
 <td>Checked against all tests</td>
-<td>MoH will check internal logs</td>
+<td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
 
 <tr><td>Security 4</td>
 <td>Each request has a unique request/transaction id in the X-Correlation-Id field</td>
 <td>Checked against all tests</td>
-<td>MoH will check internal logs</td>
+<td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
 </table>
 
@@ -121,7 +119,7 @@ table, th, td {
 
 <tr>
 <td>HPI-O-Get-1</td>
-<td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
+<td>System behaves appropriately when a dormant hpi-organisation-id is requested</td>
 <td>GZZ995-A</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td>
@@ -200,7 +198,7 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-L-Get-1</td>
-<td>System behaves appropriately when a dormant HPI-OrgID is requested</td>
+<td>System behaves appropriately when a dormant hpi-facility-id is requested</td>
 <td>FZZ997-J</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
@@ -278,14 +276,14 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-P-Get-1</td>
-<td>System can handle a response when a dormant CPN is requested</td>
+<td>System can handle a response when a dormant hpi-person-id is requested</td>
 <td>98ZZNY <br /> 90ZZJF</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-2</td>
 <td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
-<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR 93ZZWU</td>
+<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user</td>
 <td>mandatory</td></tr>
 
@@ -354,7 +352,7 @@ table, th, td {
 
 <tr><td>HPI-P-Search-2</td>
 <td>Minimum search criteria are included</td>
-<td>Name = Walter O’Reilly <br /> Date of birth=24/05/1943 <br /> Name = Brian Hunnicutt <br /> Date of birth= 6/02/1939</td>
+<td>Name = Walter O’Reilly <br /> Name = Brian Hunnicutt</td>
 <td>A name and date of birth are provided in the request</td>
 <td>optional</td></tr>
 
@@ -383,7 +381,7 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-PR-Get-1</td>
-<td>System can Get a record using the PractitionerRoleID and supply a unique userID for each end user initiating requests</td>
+<td>System can Get a record using the hpi-practitionerrole-id</td>
 <td>tbd</td>
 <td>userID varies for each request</td>
 <td>mandatory</td></tr>
@@ -406,7 +404,7 @@ table, th, td {
 <tr><td>HPI-PR-Search-1</td>
 <td>Minimum search criteria are included</td>
 <td>tbd</td>
-<td>CPN is always provided</td>
+<td>hpi-person-id is always provided</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-PR-Search-2</td>
@@ -416,7 +414,7 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-PR-Search-3</td>
-<td>System behaves appropriately where a role does not include an organization ID</td>
+<td>System behaves appropriately where a role does not include an hpi-organisation-id</td>
 <td>tbd</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
@@ -462,8 +460,8 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-PR-Add-1</td>
-<td>Minimum add criteria are provided (CPN and facility)</td>
-<td>Select HPI-CPN from test IDs <br /> Select HPI-FacID from the test IDs</td>
+<td>Minimum add criteria are provided (hpi-person-id and hpi-facility-id)</td>
+<td>Select hpi-person-id from test IDs <br /> Select hpi-facility-id from the test IDs</td>
 <td>PractitionerRole record is added</td>
 <td>mandatory</td></tr>
 
@@ -475,7 +473,7 @@ table, th, td {
 
 <tr><td>HPI-PR-Add-3</td>
 <td>System can provide the confidentiality settings</td>
-<td></td>
+<td>TBC</td>
 <td>PractitionerRole record is added with appropriate confidentiality settings</td>
 <td>optional</td></tr>
 </table>
@@ -498,7 +496,7 @@ table, th, td {
 <tr><td>HPI-PR-Update</td>
 <td>System can end a PractitionerRole record that it has created</td>
 <td>Use role created in HPI-PR-Add-1 test</td>
-<td>CPN is always provided</td>
+<td>hpi-person-id is always provided</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-PR-Update</td>
@@ -521,7 +519,7 @@ table, th, td {
 
 <tr><td>HPI-PR-Update</td>
 <td>System can provide the confidentiality settings</td>
-<td>Use role created in HPI-PR-Add-1 to 3</td>
+<td>TBC - Use role created in HPI-PR-Add-1 to 3</td>
 <td>Confidentiality settings are updated on the record</td>
 <td>optional</td></tr>
 </table>
