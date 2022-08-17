@@ -23,53 +23,11 @@
 <td>Defined outside of known IG's</td>
 </tr>
 <tr>
-<td>Practitioner</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity</td>
-<td><p>The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group.</p>
-
-<p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
 <td>PractitionerRole.telecom</td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
 <td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/nz-geocode</td>
-<td><p>New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-geocode.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/suburb</td>
-<td><p>Suburb element of a NZ Address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-suburb.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/building-name</td>
-<td><p>The name of a building cited in an address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-building-name.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Address</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/domicile-code</td>
-<td><p>NZ Domicile Code. Derived from a patient&#39;s primary physical, home address.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-domicile-code.html'>NZ base</a></div>
 </td>
 </tr>
 </table>

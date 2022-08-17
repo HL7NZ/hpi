@@ -38,14 +38,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * extension[iwi] 0..0
 
 
-//top level  extensions
-//* extension contains 
-//    $nzEthnicity named nzEthnicity 0..6
+// elements with cardinality changes
+* extension[ethnicity] 0..6
 
-//top level  extensions
-* extension contains 
-    $nzEthnicity named nzEthnicity 0..6 
-    
 
 * extension[death-date] ^short = "The date this person died"
 * extension[death-date].extension[source] 0..0

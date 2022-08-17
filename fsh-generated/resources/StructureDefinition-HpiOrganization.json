@@ -3773,7 +3773,7 @@
           {
             "code": "Address",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpi-nz-address"
+              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
             ]
           }
         ],
@@ -4510,7 +4510,7 @@
           {
             "code": "Address",
             "profile": [
-              "http://hl7.org.nz/fhir/StructureDefinition/hpi-nz-address"
+              "http://hl7.org.nz/fhir/StructureDefinition/NzAddress"
             ]
           }
         ]
