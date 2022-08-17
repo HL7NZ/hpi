@@ -1,0 +1,547 @@
+@startuml
+hide <<Path>> circle
+hide <<Response>> circle
+hide <<Parameter>> circle
+hide empty methods
+hide empty fields
+set namespaceSeparator none
+
+class "base64Binary" {
+  {field} value : string
+}
+
+class "boolean" {
+  {field} value : boolean
+}
+
+class "canonical" {
+  {field} value : string
+}
+
+class "code" {
+  {field} value : string
+}
+
+class "date" {
+  {field} value : string
+}
+
+class "dateTime" {
+  {field} value : string
+}
+
+class "decimal" {
+  {field} value : decimal
+}
+
+class "id" {
+  {field} value : string
+}
+
+class "instant" {
+  {field} value : string
+}
+
+class "integer" {
+  {field} value : decimal
+}
+
+class "markdown" {
+  {field} value : string
+}
+
+class "oid" {
+  {field} value : string
+}
+
+class "positiveInt" {
+  {field} value : decimal
+}
+
+class "string" {
+  {field} value : string
+}
+
+class "time" {
+  {field} value : string
+}
+
+class "unsignedInt" {
+  {field} value : decimal
+}
+
+class "uri" {
+  {field} value : string
+}
+
+class "url" {
+  {field} value : string
+}
+
+class "uuid" {
+  {field} value : string
+}
+
+class "valueDate" {
+  {field} value : string
+}
+
+class "valueDateTime" {
+  {field} value : string
+}
+
+class "Meta" {
+}
+
+class "CodeableConcept" {
+}
+
+class "Coding" {
+}
+
+class "Identifier" {
+  {field} use : string {O}
+}
+
+class "HPIHumanName" {
+  {field} use : string {O}
+  {field} given : string[] {O}
+  {field} prefix : string[] {O}
+  {field} suffix : string[] {O}
+}
+
+class "Period" {
+}
+
+class "Reference" {
+}
+
+class "CapabilityStatement" {
+  {field} resourceType : string {O}
+  {field} status : string {O}
+  {field} kind : string {O}
+  {field} fhirVersion : string {O}
+}
+
+class "CapabilityStatementSoftware" {
+}
+
+class "CapabilityStatementImplementation" {
+}
+
+class "CapabilityStatementRest" {
+  {field} mode : string {O}
+}
+
+class "CapabilityStatementResource" {
+  {field} searchInclude : string[] {O}
+  {field} searchRevInclude : string[] {O}
+}
+
+class "CapabilityStatementInteraction" {
+  {field} code : string {O}
+  {field} searchInclude : string[] {O}
+}
+
+class "CapabilityStatementSearchParam" {
+  {field} type : string {O}
+}
+
+class "OperationOutcome" {
+}
+
+class "OperationOutcomeIssue" {
+  {field} severity : string {O}
+  {field} code : string {O}
+}
+
+class "Practitioner.qualification" {
+  {field} extension : string[] {O}
+}
+
+class "Practitioner" {
+  {field} extension : string[] {O}
+  {field} identifier : string[] {O}
+}
+
+class "HPIIdentifer" {
+  {field} use : string
+  {field} system : string
+  {field} value : string {O}
+}
+
+class "HPIDormantIdentifer" {
+  {field} use : string
+  {field} system : string {O}
+  {field} value : string {O}
+}
+
+class "HPIRAIdentifer" {
+  {field} use : string
+  {field} system : string {O}
+  {field} value : string {O}
+}
+
+class "ScopeOfPracticeExtension" {
+  {field} url : string
+  {field} extension : string[] {O}
+}
+
+class "ConditionOnPracticeExtension" {
+  {field} url : string
+  {field} extension : string[] {O}
+}
+
+class "RegistrationStatusCodeExtension" {
+  {field} url : string
+  {field} extension : string[] {O}
+}
+
+class "AdditionalAuthorisationExtension.valueCodeableConcept" {
+  {field} system : string
+}
+
+class "AdditionalAuthorisationExtension" {
+  {field} url : string
+  {field} extension : string[] {O}
+}
+
+class "DeathDate" {
+  {field} url : string
+}
+
+class "DeathDateExtension" {
+  {field} url : string
+}
+
+class "RegistrationInitialDate" {
+  {field} url : string {O}
+}
+
+class "StatusCode" {
+  {field} url : string
+}
+
+class "ScopeOfPractice" {
+  {field} url : string
+  {field} etension : string[] {O}
+}
+
+class "CodeableConceptExtension" {
+  {field} url : string
+}
+
+class "PeriodExtension" {
+  {field} url : string
+}
+
+class "DescriptionExtension" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "NzEthnicityExtension.valueCodeableConcept" {
+}
+
+class "NzEthnicityExtension" {
+  {field} url : string
+}
+
+class "EducationalQualification" {
+  {field} url : string
+  {field} extension : string[] {O}
+}
+
+class "EQShortname" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "EQFullname" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "EQYear" {
+  {field} url : string
+}
+
+class "EQInstitution" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "EQCity" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "EQCountry" {
+  {field} url : string
+  {field} valueString : string {O}
+}
+
+class "rid" <<Parameter>> {
+  {field} value : string
+}
+
+class "hid" <<Parameter>> {
+  {field} value : string
+}
+
+enum "summary" <<Parameter>> {
+  true
+  text
+  data
+  count
+  false
+}
+
+class "format" <<Parameter>> {
+  {field} value : string
+}
+
+class "pretty" <<Parameter>> {
+  {field} value : boolean
+}
+
+class "elements.1" <<Parameter>> {
+}
+
+class "elements" <<Parameter>> {
+}
+
+class "count" <<Parameter>> {
+  {field} value : decimal
+}
+
+class "userid_header" <<Parameter>> {
+  {field} value : string
+}
+
+class "GET /fhir/hpi/v1/metadata" <<Path>> {
+}
+
+class "GET /fhir/hpi/v1/Practitioner" <<Path>> {
+  {field} identifier : string {O}
+  {field} name : string {O}
+  {field} gender : string {O}
+  {field} birthdate : string {O}
+}
+
+class "GET /fhir/hpi/v1/Practitioner/{rid}" <<Path>> {
+  {field} identifier : string {O}
+  {field} name : string {O}
+  {field} family : string {O}
+  {field} given : string {O}
+  {field} gender : string {O}
+  {field} birthdate : string {O}
+}
+
+"Meta" --> "0..1" "id"  :  "versionId"
+
+"Meta" --> "*" "canonical"  :  "profile"
+
+"Meta" --> "*" "Coding"  :  "security"
+
+"CodeableConcept" --> "0..1" "string"  :  "id"
+
+"CodeableConcept" --> "*" "Coding"  :  "coding"
+
+"CodeableConcept" --> "0..1" "string"  :  "text"
+
+"Coding" --> "0..1" "uri"  :  "system"
+
+"Coding" --> "0..1" "string"  :  "version"
+
+"Coding" --> "0..1" "code"
+
+"Coding" --> "0..1" "string"  :  "display"
+
+"Identifier" --> "0..1" "string"  :  "id"
+
+"Identifier" --> "0..1" "CodeableConcept"  :  "type"
+
+"Identifier" --> "0..1" "uri"  :  "system"
+
+"Identifier" --> "0..1" "string"  :  "value"
+
+"Identifier" --> "0..1" "Period"  :  "period"
+
+"Identifier" --> "0..1" "Reference"  :  "assigner"
+
+"HPIHumanName" --> "0..1" "string"  :  "id"
+
+"HPIHumanName" --> "0..1" "string"  :  "text"
+
+"HPIHumanName" --> "0..1" "string"  :  "family"
+
+"HPIHumanName" --> "0..1" "Period"  :  "period"
+
+"Period" --> "0..1" "string"  :  "id"
+
+"Period" --> "0..1" "dateTime"  :  "start"
+
+"Period" --> "0..1" "dateTime"  :  "end"
+
+"Reference" --> "0..1" "string"  :  "id"
+
+"Reference" --> "0..1" "string"  :  "reference"
+
+"Reference" --> "0..1" "uri"  :  "type"
+
+"Reference" --> "0..1" "string"  :  "display"
+
+"CapabilityStatement" --> "0..1" "id"
+
+"CapabilityStatement" --> "0..1" "string"  :  "name"
+
+"CapabilityStatement" --> "0..1" "dateTime"  :  "date"
+
+"CapabilityStatement" --> "0..1" "string"  :  "publisher"
+
+"CapabilityStatement" --> "0..1" "CapabilityStatementSoftware"  :  "software"
+
+"CapabilityStatement" --> "0..1" "CapabilityStatementImplementation"  :  "implementation"
+
+"CapabilityStatement" --> "*" "code"  :  "format"
+
+"CapabilityStatement" --> "*" "canonical"  :  "implementationGuide"
+
+"CapabilityStatement" --> "*" "CapabilityStatementRest"  :  "rest"
+
+"CapabilityStatementSoftware" --> "0..1" "string"  :  "id"
+
+"CapabilityStatementSoftware" --> "0..1" "string"  :  "name"
+
+"CapabilityStatementSoftware" --> "0..1" "string"  :  "version"
+
+"CapabilityStatementSoftware" --> "0..1" "dateTime"  :  "releaseDate"
+
+"CapabilityStatementImplementation" --> "0..1" "string"  :  "id"
+
+"CapabilityStatementImplementation" --> "0..1" "string"  :  "description"
+
+"CapabilityStatementImplementation" --> "0..1" "url"
+
+"CapabilityStatementImplementation" --> "0..1" "Reference"  :  "custodian"
+
+"CapabilityStatementRest" --> "*" "CapabilityStatementResource"  :  "resource"
+
+"CapabilityStatementResource" --> "0..1" "code"  :  "type"
+
+"CapabilityStatementResource" --> "0..1" "canonical"  :  "profile"
+
+"CapabilityStatementResource" --> "*" "CapabilityStatementInteraction"  :  "interaction"
+
+"CapabilityStatementResource" --> "*" "CapabilityStatementSearchParam"  :  "searchParam"
+
+"CapabilityStatementInteraction" --> "*" "CapabilityStatementSearchParam"  :  "searchParam"
+
+"CapabilityStatementSearchParam" --> "0..1" "string"  :  "name"
+
+"CapabilityStatementSearchParam" --> "0..1" "markdown"  :  "documentation"
+
+"OperationOutcome" --> "*" "OperationOutcomeIssue"  :  "issue"
+
+"OperationOutcomeIssue" --> "0..1" "string"  :  "diagnostics"
+
+"Practitioner" --> "0..1" "id"
+
+"Practitioner" --> "0..1" "Meta"  :  "meta"
+
+"Practitioner" --> "*" "HPIHumanName"  :  "name"
+
+"Practitioner.qualification" --> "*" "Identifier"  :  "identifier"
+
+"Practitioner.qualification" --> "0..1" "CodeableConcept"  :  "code"
+
+"Practitioner.qualification" --> "0..1" "Period"  :  "period"
+
+"Practitioner.qualification" --> "0..1" "Reference"  :  "issuer"
+
+"Practitioner" --> "*" "Practitioner.qualification"  :  "qualification"
+
+"Practitioner" --> "*" "CodeableConcept"  :  "communication"
+
+"HPIIdentifer" --> "0..1" "Reference"  :  "assigner"
+
+"HPIDormantIdentifer" --> "0..1" "Reference"  :  "assigner"
+
+"HPIRAIdentifer" --> "0..1" "Reference"  :  "assigner"
+
+"ScopeOfPracticeExtension" --> "0..1" "CodeableConcept"  :  "valueCodeableConcept"
+
+"AdditionalAuthorisationExtension" --> "1" "CodeableConcept"  :  "valueCodeableConcept"
+
+"AdditionalAuthorisationExtension" --> "1" "AdditionalAuthorisationExtension.valueCodeableConcept"  :  "valueCodeableConcept"
+
+"DeathDate" --> "*" "DeathDateExtension"  :  "extension"
+
+"DeathDateExtension" --> "0..1" "valueDateTime"
+
+"RegistrationInitialDate" --> "0..1" "date"  :  "valueDate"
+
+"StatusCode" --> "0..1" "CodeableConcept"  :  "valueCodeableConcept"
+
+"CodeableConceptExtension" --> "0..1" "CodeableConcept"  :  "valueCodeableConcept"
+
+"PeriodExtension" --> "0..1" "Period"  :  "valuePeriod"
+
+"NzEthnicityExtension.valueCodeableConcept" --> "*" "Coding"  :  "coding"
+
+"NzEthnicityExtension" --> "1" "NzEthnicityExtension.valueCodeableConcept"  :  "valueCodeableConcept"
+
+"EQYear" --> "0..1" "valueDate"
+
+"elements" --> "*" "elements.1"
+
+"GET /fhir/hpi/v1/metadata" --> "1" "format"  :  "_format"
+
+"GET /fhir/hpi/v1/metadata" --> "1" "pretty"  :  "_pretty"
+
+"GET /fhir/hpi/v1/metadata" --> "1" "summary"  :  "_summary"
+
+"GET /fhir/hpi/v1/metadata" --> "1" "elements"  :  "_elements"
+
+"GET /fhir/hpi/v1/metadata" --> "1" "userid_header"  :  "userid"
+
+"GET /fhir/hpi/v1/metadata" ..> "1" "CapabilityStatement"  :  "200 application/fhir+json"
+
+"GET /fhir/hpi/v1/metadata" ..> "1" "OperationOutcome"  :  "401 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner" --> "1" "format"  :  "_format"
+
+"GET /fhir/hpi/v1/Practitioner" --> "1" "pretty"  :  "_pretty"
+
+"GET /fhir/hpi/v1/Practitioner" --> "1" "summary"  :  "_summary"
+
+"GET /fhir/hpi/v1/Practitioner" --> "1" "elements"  :  "_elements"
+
+"GET /fhir/hpi/v1/Practitioner" --> "1" "userid_header"  :  "userid"
+
+"GET /fhir/hpi/v1/Practitioner" ..> "1" "Practitioner"  :  "200 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner" ..> "1" "OperationOutcome"  :  "400 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner" ..> "1" "OperationOutcome"  :  "401 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "rid"  :  "rid"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "format"  :  "_format"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "pretty"  :  "_pretty"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "summary"  :  "_summary"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "elements"  :  "_elements"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" --> "1" "userid_header"  :  "userid"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" ..> "1" "Practitioner"  :  "200 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" ..> "1" "OperationOutcome"  :  "400 application/fhir+json"
+
+"GET /fhir/hpi/v1/Practitioner/{rid}" ..> "1" "OperationOutcome"  :  "401 application/fhir+json"
+
+@enduml

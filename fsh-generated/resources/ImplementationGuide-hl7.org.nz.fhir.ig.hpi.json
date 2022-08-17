@@ -28,13 +28,13 @@
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
       "uri": "https://nzhts.digital.health.nz/ig/hip-common-terminology",
-      "version": "1.0.0",
+      "version": "dev",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
       "packageId": "fhir.org.nz.ig.base",
       "uri": "http://fhir.org.nz/ig/base",
-      "version": "1.0.0",
+      "version": "dev",
       "id": "fhir_org_nz_ig_base"
     }
   ],
@@ -93,7 +93,7 @@
           "reference": "Practitioner/90ZZLP"
         },
         "name": "90ZZLP",
-        "description": "Example HPI Practitioner - NR",
+        "description": "Example HPI Practitioner with No Registration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -101,7 +101,7 @@
           "reference": "Practitioner/98ZZQJ"
         },
         "name": "98ZZQJ",
-        "description": "Example HPI Practitioner - 2 Registrations",
+        "description": "Example HPI Practitioner with two 2 Registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -125,6 +125,7 @@
           "reference": "Organization/GZZ956-B"
         },
         "name": "GZZ956-B",
+        "description": "Example HPI Organization",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
