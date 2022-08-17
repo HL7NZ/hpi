@@ -97,10 +97,11 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 4</td>
-<td>Each request has a unique request/transaction id in the X-Correlation-Id field</td>
+<td>Each request has a unique request/transaction id in the X-Correlation-Id field <br />
+If present this will be returned in the response</td>
 <td>Checked against all tests</td>
 <td>MoH will check internal logs</td>
-<td>Mandatory</td></tr>
+<td>Optional</td></tr>
 </table>
 
 
