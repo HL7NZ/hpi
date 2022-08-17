@@ -18,60 +18,9 @@
 <table width='100%' border='1' cellspacing='0' cellpadding='5px'>
 <tr><th>Path</th><th>Url</th><th>Description</th><th>IG where defined</th></tr>
 <tr>
-<td>Location</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
-<td><p>The period over which the location or Organization is open</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Location</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/dhb</td>
-<td><p>District Health Board relating to a NZ Healthcare Service, Location (Facility) or Patient (primary, physical home address).</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-dhb.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Location.alias</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
-<td><p>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Location.telecom</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/edi-address</td>
-<td><p>Represents an Electronic Data Interchange (EDI) address. It is intended as an extension on ContactPoint.system, with the system value being &#39;other&#39;. The value of the extension is the EDI supplier, the actual EDI address is the value element.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-edi-address.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Organization</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/established</td>
-<td><p>The period over which the location or Organization is open</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-established.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Organization.alias</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/alias-type</td>
-<td><p>Used to indicate what sort of alias is being used in a Location or Organization - eg that it is a legal name.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-alias-type.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>Practitioner</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/death-date</td>
-<td><p>The date of death of the individual, plus the source of that information</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-death-date.html'>NZ base</a></div>
-</td>
+<td>Location.extension</td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/messaging-address</td>
+<td>Defined outside of known IG's</td>
 </tr>
 <tr>
 <td>Practitioner</td>
@@ -81,22 +30,6 @@
 <p>The Stats New Zealand standard can be found <a href="http://aria.stats.govt.nz/aria/#ClassificationView:uri=http://stats.govt.nz/cms/ClassificationVersion/YVqOcFHSlguKkT17">here</a>.</p></td>
 <td>
 <div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-nz-ethnicity.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>PractitionerRole</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason</td>
-<td><p>The reason for the status. Generally only used for inactive resources.</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-status-reason.html'>NZ base</a></div>
-</td>
-</tr>
-<tr>
-<td>PractitionerRole</td>
-<td>http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator</td>
-<td><p>The organisation and person that created this role</p></td>
-<td>
-<div><a href='http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/StructureDefinition-practitionerRole-creator.html'>NZ base</a></div>
 </td>
 </tr>
 <tr>
