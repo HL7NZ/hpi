@@ -456,10 +456,20 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
-        "isModifier": false
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "Organization.extension:funded-programme",
@@ -500,10 +510,20 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
-        "isModifier": false
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "Organization.modifierExtension",
@@ -3118,10 +3138,20 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
-        "isModifier": false
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          },
+          {
+            "identity": "rim",
+            "map": "N/A"
+          }
+        ]
       },
       {
         "id": "Organization.alias.extension:alias-type.id",
@@ -3400,8 +3430,7 @@
             "severity": "error",
             "human": "The telecom of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "xpath": "count(f:use[@value='home']) = 0"
           }
         ],
         "isModifier": false,
@@ -3794,8 +3823,7 @@
             "severity": "error",
             "human": "An address of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "xpath": "count(f:use[@value='home']) = 0"
           }
         ],
         "isModifier": false,
