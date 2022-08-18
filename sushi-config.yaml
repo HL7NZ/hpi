@@ -50,7 +50,7 @@ menu:
   IG Home: index.html
   Business View: businessView.html
   Use cases:
-    Use cases: Composite usecases.html
+    Composite use cases: Composite usecases.html
     Get Practitioner: getPractitioner.html
     Search Practitioner: searchPractitioner.html
     Add Practitioner: addPractitioner.html
