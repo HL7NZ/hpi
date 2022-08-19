@@ -100,7 +100,7 @@ table, th, td {
 <td>Each request has a unique request/transaction id in the X-Correlation-Id field</td>
 <td>Checked against all tests</td>
 <td>MoH will check internal logs</td>
-<td>Mandatory</td></tr>
+<td>Optional</td></tr>
 </table>
 
 
