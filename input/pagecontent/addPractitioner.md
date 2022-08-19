@@ -2,6 +2,14 @@
 
 ### Add Practitioner
 
+#### Overview
+
+An ‘Add Practitioner’ operation is initiated by a user who needs to add a new practitioner record for a provider to the HPI.
+
+Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the provider does not already exist.
+
+If the provider is found in the HPI then an update operation is required. If not found then a new practitioner record may be added, see below.
+
 <div>
 {% include add-practitioner.svg %}
 </div>
