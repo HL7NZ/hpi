@@ -1,6 +1,6 @@
 
 
-### Read Organization with Identifier
+### Read Organization with Identifier (hpi-organisation-id)
 
 <div>
 {% include get-organization.svg %}
