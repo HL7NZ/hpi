@@ -25,7 +25,7 @@ E.g. GET(Endpoint)/Location?name=Pukekohe Diamond Doctors
 GET(Endpoint)/Location?address=wilson street
 
 **LegacyFacId**
-* Search location by identifier Legacy facility id
+* Query location by identifier Legacy facility id
 
 GET(Endpoint)/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id‘\|’Z995
 
