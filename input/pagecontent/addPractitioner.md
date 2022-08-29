@@ -20,9 +20,9 @@ Add new Practitioner processing steps:
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the Practitioner details
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 4. A Practitioner record is created and a Practitioner ID issued (hpi-person-id)
-5. The HPI FHIR API confirms a successful update – HTTP 201 Created status code
+5. The HPI FHIR API confirms a successful Practitioner add – HTTP 201 Created status code
 6. The integrating application indicates to the user the create has been successful
-7. The integrating application retains the Practitioner ID for subsequent update requests
+7. The integrating application retains the hpi-person-id and version number for future requests relating to this record
 
 ### Rules and errors
 
