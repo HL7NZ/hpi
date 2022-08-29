@@ -13,7 +13,7 @@
 4. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 5. The matching practitioners are retrieved from the HPI
 6. The response containing a bundle of matching practitioners is returned to the integrating application
-7. The integrating application displays the matching practitioners the user
+7. The integrating application displays the matching practitioners to the user
 
 
 ### Search Practitioner by name and birth date
@@ -29,7 +29,7 @@
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 4. The matching practitioners are retrieved from the HPI
 5. The response containing a bundle of matching practitioners is returned to the integrating application
-6. The integrating application displays the matching practitioners the user
+6. The integrating application displays the matching practitioners to the user
 
 
 ### Query Practitioner with another identifier
@@ -46,8 +46,8 @@ E.g.nursing-council-id:
 2. The integrating application sends an HTTP GET request for the Practitioner resource using the nursing council identifier to identify the practitioner whose information is being requested. E.g. GET(Endpoint)/Practitioner?identifier=https://standards.digital.health.nz/ns/nursing-council-id‘\|’999999
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
-5. The response containing the Practitioner resource is returned
-6. The integrating application displays the matching practitioner to the use
+5. The response containing a bundle with a single Practitioner resource is returned
+6. The integrating application displays the matching practitioner to the user
 
 [For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
 
