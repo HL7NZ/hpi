@@ -1,6 +1,6 @@
 
 
-### Read Location with Identifier
+### Read Location with Identifier (hpi-facility-id)
 
 <div>
 {% include get-location.svg %}
