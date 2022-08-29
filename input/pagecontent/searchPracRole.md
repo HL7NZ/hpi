@@ -1,12 +1,12 @@
 
 
-### Search PractitionerRole with other Identifier (hpi-person-id)
+### Search PractitionerRole by practitioner (hpi-person-id)
 
 <div>
 {% include query-practitionerrole.svg %}
 </div>
 
-Search PractitionerRole with practitioner (hpi-person-id) Processing steps
+Search PractitionerRole by practitioner (hpi-person-id) Processing steps
 
 1. The user initiates searching a PractitionerRole in the integrating application.
 2. The integrating application sends an HTTP GET request (a FHIR search) for the list of PractitionerRole resources that reference the Practitioner resource for the supplied hpi-person-id. E.g. GET(Endpoint)/PractitionerRole?practitioner=99ZZZZ
@@ -20,6 +20,7 @@ When specified by _ include, the practitioner, organization and location records
 Note: This requires read permission on the included resource.<br />
 E.g. GET(Endpoint)/PractitionerRole?practitioner=99ZZZS&_include=PractitionerRole:practitioner
 
+[For more information on search PractitionerRole click here](/capabilityStatement.html#practitionerrole)
   
 ### Rules and errors
 TBC
