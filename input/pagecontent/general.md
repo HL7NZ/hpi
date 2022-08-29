@@ -27,7 +27,7 @@ Extract the value of the identifier where the value of the __use__ element is â€
 
 Example:
 
-Get(Endpoint)/Resource/Resource-identifier
+Get(Endpoint)/Resource/identifier
 
 Get(Endpoint)/Practitioner/92ZZRR <br />
 Get(Endpoint)/Organization/GZZ999-J
