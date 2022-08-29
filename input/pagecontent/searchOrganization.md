@@ -19,12 +19,12 @@ E.g. GET(Endpoint)/organization?name=TryNSave Pharmacy
 ### Other Search criteria:
 
 **NZBN**
-* Search Organization by identifier NZBN
+* Query Organization by identifier NZBN
 
 GET(Endpoint)/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn‘\|’9999999999001
 
 **LegacyOrgId**
-* Search Organization by identifier Legacy organization id
+* Query Organization by identifier Legacy organization id
 
 GET(Endpoint)/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id‘\|’9000
 
