@@ -33,7 +33,7 @@ GET(Endpoint)/Organization?identifier=https://standards.digital.health.nz/ns/nzh
 
 GET(Endpoint)/Organization?address=Thorndon
 
-[For more information on search organization click here](/capabilityStatement.html)
+[For more information on search organization click here](/capabilityStatement.html#organization)
 
 ### Rules and errors
 TBC
