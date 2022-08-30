@@ -14,7 +14,7 @@ Add new PractitionerRole processing steps:
 4. A PractitionerRole record is created and a hpi-practitionerrole-id issued
 5. The HPI FHIR API confirms a successful update – HTTP 201 Created status code
 6. The integrating application indicates to the user the create has been successful
-7. The integrating application retains the hpi-practitionerrole-id and vrsion number for future requests relating to this record
+7. The integrating application retains the hpi-practitionerrole-id and version number for future requests relating to this record
 
 ### Rules and errors
 TBC
