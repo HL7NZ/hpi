@@ -23,27 +23,57 @@ This design allows an implementer to retrieve a resource from the HPI and save i
 
 #### Read resource by id
 
-
 Extract the value of the identifier where the value of the __use__ element is ‘official’, and use that as the id for a direct read from the server. 
 
+Example:
 
-http://api.hip.digital.health.nz/fhir/Practitioner/92ZZRR
+Get{{Endpoint}}/Resource/identifier
+
+Get{{Endpoint}}/Practitioner/92ZZRR <br />
+Get{{Endpoint}}/Organization/GZZ999-J
+
+For more information look at the __Get Use cases__ in the menu
 
 
 #### Query resource
 
-Use the identifier in a search query. 
+Use an identifier (medical-council-id) in a search query
 
+Each resource has more than one identifier. If a user wants to query the HPI using _another identifier_, both the system and identifier needs to be provided
 
 Example: 
 
-http://api.hip.digital.health.nz/fhir/Practitioner?identifier=https://standards.digital.health.nz/ns/hpi-person-id\|92ZZRR
+* Practitioner:
+  * medical-council-id
+    * System - https://standards.digital.health.nz/ns/medical-council-id
+    * Identifier - 99536
+  * nursing-council-id
+    * System - https://standards.digital.health.nz/ns/nursing-council-id
+    * Identifier - 961049
 
+* Organization
+  * legacyOrgId
+    * System - https://standards.digital.health.nz/ns/nzhis-agency-id
+    * Identifier - 9000
+  * nzbn
+    * System - https://standards.digital.health.nz/ns/hpi-nzbn
+    * Identifier - 9999999999001
 
-(Note that both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
+* Location
+  * legacyFacId
+    * System - https://standards.digital.health.nz/ns/nzhis-facility-id
+    * Identifier - Z995
 
-This example will return a bundle of Practitioner resources with only a single entry (as the system enforces uniqueness of the HPI identifier). Other queries - eg name - may well return multiple instances.
+__Note:__ Both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
 
+Get{{Endpoint}}/Practitioner?identifier=https://standards.digital.health.nz/ns/medical-council-id\|99536 <br />
+Get{{Endpoint}}/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999057 <br />
+Get{{Endpoint}}/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000 <br />
+Get{{Endpoint}}/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z995 <br />
+
+These examples will return a bundle of resources with only a single entry (as the system enforces uniqueness of the identifier). Other queries - eg name - may well return multiple instances.
+
+For more information look at the __Search Use cases__ in the menu
 
 ### References between resources
 
@@ -84,7 +114,7 @@ For example, assume that there are 2 Practitioner resources exposed by the HPI, 
 ```
 
 
-(returned by GET [host]/Practitioner/92ZZRR)
+(returned by GET{{Endpoint}}/Practitioner/92ZZRR)
 
 And 
 
@@ -103,11 +133,11 @@ And
 ```
 
 
-(returned by GET [host]/Practitioner/96YYY)
+(returned by GET{{Endpoint}}/Practitioner/96YYY)
 
 They are determined to be the same person, and the identifier 96YYY is deprecated (made dormant) in favour of 92ZZRR.
 
-A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY) will return the same response
+A Get call on {{Endpoint}}/Practitioner/92ZZRR or {{Endpoint}}/Practitioner/96YYYY will return the same response
 
 
 ```
@@ -130,9 +160,9 @@ A GET call of GET [host]/Practitioner/92ZZRR) or GET [host]/Practitioner/96YYYY)
 
 Resources that reference the Practitioner (such as the PractitionerRole resource) can use either id. For example, to return PractitionerRole resources for this Practitioner, either of the following queries will return the same set of PractitionerRole resources:
 
-GET [host]/PractitionerRole?practitioner=92ZZRR
+GET{{Endpoint}}/PractitionerRole?practitioner=92ZZRR
 
-GET [host]/PractitionerRole?practitioner=96YYYY
+GET{{Endpoint}}/PractitionerRole?practitioner=96YYYY
 
 
 
@@ -142,7 +172,7 @@ Contained resources are where the referenced (target) resource is contained with
 
 When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
 
-`https://api.hip-uat.digital.health.nz/fhir/hpi/v1/PractitionerRole?identifier=https://standards.digital.health.nz/ns/hpi-practitionerrole-id|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
+Get{{Endpoint}}/PractitionerRole?identifier=https://standards.digital.health.nz/ns/hpi-practitionerrole-id\|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 ### Request Rules and Errors
 
@@ -153,8 +183,8 @@ When a resource contains a reference to another resource, the HPI server will no
   * Each user must have an individual userID
 
 * _Request errors_
-  * _Authentication: missing userid header_,  _HTTP401, Processing_
-  * _Unauthorized_,  _HTTP401_
+  * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
+  * _"Unauthorized"  (HTTP 401)_
  
 ### HTTP Header Details
 

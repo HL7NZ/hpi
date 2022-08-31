@@ -44,7 +44,7 @@ Provide the following details in a test report and email to [integration@health.
   b. Application name and version <br />
   c. HPI IG Version <br />
   d. Test Script version <br />
-  e. FHIR release version
+  e. FHIR release version <br />
   f. Testing start date and time and end date and time <br />
   g. Tester name and contact details <br />
   h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
@@ -53,10 +53,9 @@ Provide the following details in a test report and email to [integration@health.
     * the input data as entered in the integrating system (“the system”)
     * any warnings or error messages presented by the system
     * the confirmation or result of the request presented by the system
+    * **Note**: If non-interactive, please provide JSON request (update / add) or response (get/search).
 
-3. For each test supply a screenshot of what is being logged in the integrating system.
-
-4. For each test supply a text file with the json request (update / add) or response (get/search).
+3. For each test supply a timestamp when each request is sent.
 
 
 ### Tests
@@ -83,7 +82,7 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 2</td>
-<td>Sending user ID is an end user ID or a CPN</td>
+<td>Sending user ID an end user ID or a hpi-person-id</td>
 <td>Checked against all tests</td>
 <td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
@@ -95,11 +94,11 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 4</td>
-<td>Each request has a unique request/transaction id in the X-Correlation-Id field <br />
+<td>Each request has a unique request id in the X-Correlation-Id field <br />
 If present this will be returned in the response</td>
 <td>Checked against all tests</td>
 <td>Te Whatu Ora will check internal logs</td>
-<td>Mandatory</td></tr>
+<td>Recommended</td></tr>
 </table>
 
 
