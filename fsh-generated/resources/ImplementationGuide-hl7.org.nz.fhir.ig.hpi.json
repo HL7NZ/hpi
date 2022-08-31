@@ -184,11 +184,6 @@
           "generation": "html"
         },
         {
-          "nameUrl": "Compositeusecases.html",
-          "title": "Compositeusecases",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
@@ -226,6 +221,11 @@
         {
           "nameUrl": "glossary.html",
           "title": "Glossary",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Guidance.html",
+          "title": "Guidance",
           "generation": "markdown"
         },
         {
