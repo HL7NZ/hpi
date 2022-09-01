@@ -36,6 +36,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * address 0..0
 * photo 0..0
 
+* name.suffix 0..0
+* name.period 0..0
+
 
 //top level  extensions
 //* extension contains 
