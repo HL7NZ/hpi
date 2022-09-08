@@ -1,0 +1,33 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Lookup EDI number for an enrolled Patient's GP
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<Enrolment web service> (NES)" as B #CornflowerBlue
+participant "<FHIR API> HPI" as C #CornflowerBlue
+|||
+User -> A: Lookup EDI number for GP Patient is enrolled with[]
+activate A
+|||
+A -> B: Get Enrolment for NHI []
+activate B
+|||
+B -> A: Return enrolling [hpi-organisation-id], [hpi-facility-id], [hpi-person-id]
+deactivate B
+|||
+A -> C: Get\{{Endpoint}}Location/[hpi-facility-id]
+activate C
+|||
+
+C -[dashed]-> A:Return Facility [Location resource]
+deactivate C
+|||
+A -[dashed]-> A: Extract the messaging address containing the EDI number for the GP clinic
+|||
+A -> User: Display EDI number to user
+deactivate A
+|||
+@enduml
