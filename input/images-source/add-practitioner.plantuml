@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: User enters Practitioner details
 activate A
 |||
-A -> B: POST\{{Endpoint}}/Practitioner
+A -> B: POST{{Endpoint}}/Practitioner
 activate B
 |||
 B -> B: Validate[]
