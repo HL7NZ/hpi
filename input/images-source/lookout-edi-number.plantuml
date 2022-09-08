@@ -8,6 +8,7 @@ actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<Enrolment web service> (NES)" as B #CornflowerBlue
 participant "<FHIR API> HPI" as C #CornflowerBlue
+participant "HPI MDM" as D #CornflowerBlue
 |||
 User -> A: Lookup EDI number for GP Patient is enrolled with[]
 activate A
@@ -18,8 +19,16 @@ activate B
 B -> A: Return enrolling [hpi-organisation-id], [hpi-facility-id], [hpi-person-id]
 deactivate B
 |||
-A -> C: Get\{{Endpoint}}Location/[hpi-facility-id]
+A -> C: Get{{Endpoint}}Location/[hpi-facility-id]
 activate C
+|||
+C -> C: Validate[]
+|||
+C -> D: Request
+activate D
+|||
+D -[dashed]-> C:  
+deactivate D
 |||
 C -[dashed]-> A:Return Facility [Location resource]
 deactivate C
