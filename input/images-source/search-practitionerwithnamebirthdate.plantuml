@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: Search with name and birth date
 activate A
 |||
-A -> B: GET (…)/Practitioner?name=[]&birthdate=[]
+A -> B: GET\{{Endpoint}}/Practitioner?name=[]&birthdate=[]
 activate B
 |||
 B -> B: Validate[]
