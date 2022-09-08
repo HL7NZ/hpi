@@ -17,7 +17,7 @@ Alias: $country-code-vs = https://nzhts.digital.health.nz/fhir/ValueSet/country-
 
 
 Profile:        HpiPractitioner
-Parent:         Practitioner
+Parent:         NzPractitioner
 Id:             HPIPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
@@ -35,20 +35,15 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * telecom 0..0
 * address 0..0
 * photo 0..0
+* extension[iwi] 0..0
 
 * name.suffix 0..0
 * name.period 0..0
 
 
-//top level  extensions
-//* extension contains 
-//    $nzEthnicity named nzEthnicity 0..6
+// elements with cardinality changes
+* extension[ethnicity] 0..6
 
-//top level  extensions
-* extension contains 
-    $death-date named death-date 0..1 and
-    $nzEthnicity named nzEthnicity 0..6 and 
-    $educational-qualification named educational-qualification 0..*
 
 * extension[death-date] ^short = "The date this person died"
 * extension[death-date].extension[source] 0..0
@@ -129,17 +124,18 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //* gender 1..1
 
 //many extensions on qualification
-* qualification.extension contains
-    $registration-status-code named registration-status-code 0..1 and
-    $additional-authorisation named additional-authorisation 0..*   and
-    $scope-of-practice named scope-of-practice 0..* and
-    $condition-on-practice named condition-on-practice 0..* and
-    $registration-initial-date named registration-initial-date 0..1
+//* photo 0..0
+// * qualification.extension contains
+   // $registration-status-code named registration-status-code 0..1 and
+   // $additional-authorisation named additional-authorisation 0..*   and
+   // $scope-of-practice named scope-of-practice 0..* and
+   // $condition-on-practice named condition-on-practice 0..* and
+   // $registration-initial-date named registration-initial-date 0..1
     
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
-//* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
+* qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 * qualification.id 0..0
@@ -149,6 +145,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.issuer only Reference(HpiOrganization)
 * qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
 * qualification.extension[scope-of-practice] ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
+
+* qualification.extension[educational-qualification] 0..0
 
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 

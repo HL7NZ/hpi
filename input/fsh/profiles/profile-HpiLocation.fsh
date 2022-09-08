@@ -4,10 +4,11 @@ Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 Alias: $dhb = http://hl7.org.nz/fhir/StructureDefinition/dhb
 Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
-Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+//Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+Alias : $messaging-address =  http://hl7.org.nz/fhir/StructureDefinition/messaging-address
 
 Profile:        HpiLocation
-Parent:         Location
+Parent:         NzLocation
 Id:             HpiLocation
 Title:          "HPI Location"
 Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
@@ -24,6 +25,9 @@ Description:    "A physical location from which health goods and/or services are
 * position 0..0
 * endpoint 0..0
 
+* extension[pho] 0..0
+* extension[funded-programme] 0..0
+ 
 * identifier.period 0..0
 * identifier.type 0..0
 * managingOrganization only Reference(HpiOrganization)
@@ -47,7 +51,7 @@ Description:    "A physical location from which health goods and/or services are
     facId 1..1 MS and
     dormant 0..* MS and
     legacyFacId 0..1 
-
+    
 
 * identifier[facId].system = "https://standards.digital.health.nz/ns/hpi-facility-id" (exactly)
 * identifier[facId].use = #official (exactly)
@@ -75,8 +79,7 @@ Description:    "A physical location from which health goods and/or services are
 
 //top level  extensions
 * extension contains 
-    $established named established 0..1 and
-    $dhb named dhb 0..1 
+  		$messaging-address  named messaging-address  0..1
    
 * extension[established] ^short = "The date when this location first became available for use"
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
@@ -93,8 +96,8 @@ Description:    "A physical location from which health goods and/or services are
 * telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 * telecom.use ^short = "work | temp - purpose of this contact point"
 
-* telecom.extension contains
-    $edi-address named edi-address 0..1
+//* telecom.extension contains
+//    $edi-address named edi-address 0..1
 
 //* address only $commonAddress
 * address.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
@@ -103,10 +106,10 @@ Description:    "A physical location from which health goods and/or services are
 * type from https://nzhts.digital.health.nz/fhir/ValueSet/location-type-code
 
 
-* alias.extension contains 
-    $aliasType named alias-type 1..1
+// * alias.extension contains 
+//    $aliasType named alias-type 1..1
 
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
 
-* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
-* alias.extension[alias-type] ^short = "The type of alias this is - eg its Maori name"
+* extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
+* extension[alias-type] ^short = "The type of alias this is - eg its Maori name"
