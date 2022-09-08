@@ -216,6 +216,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "Guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "namingSystems.html",
           "title": "Naming Systems",
           "generation": "markdown"
@@ -263,11 +268,6 @@
         {
           "nameUrl": "updatePractitioner.html",
           "title": "Update Practitioner",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "usecases.html",
-          "title": "Usecases",
           "generation": "markdown"
         },
         {

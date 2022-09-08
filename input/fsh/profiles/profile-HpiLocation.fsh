@@ -85,6 +85,7 @@ Description:    "A physical location from which health goods and/or services are
 * extension[dhb] ^short = "The identifier for the DHB that is associated with this location"
 
 * status from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-status-code 
+* status ^short = "active | inactive"
 
 //the use elements use only a subset of the values...
 //* identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use
@@ -93,12 +94,14 @@ Description:    "A physical location from which health goods and/or services are
 
 
 * telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
+* telecom.use ^short = "work | temp - purpose of this contact point"
 
 //* telecom.extension contains
 //    $edi-address named edi-address 0..1
 
 //* address only $commonAddress
 * address.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
+* address.use ^short = "work | old - purpose of this address"
 
 * type from https://nzhts.digital.health.nz/fhir/ValueSet/location-type-code
 
