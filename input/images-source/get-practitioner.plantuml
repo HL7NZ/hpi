@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: Look up Practitioner using hpi-person-id
 activate A
 |||
-A -> B: GET (…)/Practitioner/[hpi-person-id]
+A -> B: GET\{{Endpoint}}/Practitioner/[hpi-person-id]
 activate B
 |||
 B -> B: Validate[]
@@ -20,7 +20,6 @@ B -> B: Validate[]
 B -> C: Request
 activate C
 |||
-
 C -[dashed]-> B:  
 deactivate C
 |||
