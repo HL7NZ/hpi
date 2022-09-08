@@ -52,6 +52,13 @@ Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
 * extension.url = "http://hl7.org.nz/fhir/StructureDefinition/established"
 * extension.valuePeriod.start = "2013-01-02"
+
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/messaging-address"
+* extension[1].extension[0].url = "provider"
+* extension[1].extension[0].valueString = "healthlink"
+* extension[1].extension[1].url = "value"
+* extension[1].extension[1].valueString = "nawtonhc"
+
 * identifier[0].use = #official
 * identifier[=].system = "https://standards.digital.health.nz/ns/hpi-facility-id"
 * identifier[=].value = "FZZ999-B"
@@ -100,3 +107,5 @@ Usage: #example
 * address.line[0] = "Thorndon"
 * address.line[+] = "133 Molesworth Street"
 * managingOrganization = Reference(Organization/GZZ999-J) "Verification Test Organisation"
+
+

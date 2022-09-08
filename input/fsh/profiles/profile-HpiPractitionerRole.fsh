@@ -1,10 +1,10 @@
 //Aliases for extensions
 Alias: $practitionerRole-status-reason = http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason
 Alias: $practitionerRole-creator = http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator
-Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
+Alias : $messaging-address =  http://hl7.org.nz/fhir/StructureDefinition/messaging-address
 
 Profile:        HpiPractitionerRole
-Parent:         PractitionerRole
+Parent:         NzPractitionerRole
 Id:             HPIPractitionerRole
 Title:          "HPI Practitioner role"
 Description:    "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations."
@@ -43,9 +43,8 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 
 //top level  extensions
 * extension contains 
-    $practitionerRole-status-reason named practitionerRole-status-reason 0..1 and 
-    $practitionerRole-creator named practitionerRole-creator 0..1
-
+	$messaging-address  named messaging-address  0..1
+	
 * extension[practitionerRole-status-reason] ^short = "The reason for the status of this role. Generally when it is inactive."
 * extension[practitionerRole-creator] ^short = "The person and/or organization that created the PR"
     
@@ -64,9 +63,5 @@ Description:    "The practitioner role exposed by the HPI. Used to connect Pract
 * code 0..1
 * endpoint 0..0
 * telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
-
-* telecom.extension contains
-    $edi-address named edi-address 0..1
-
 
 * code from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-role-code

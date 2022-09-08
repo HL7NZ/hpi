@@ -28,13 +28,13 @@
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
       "uri": "https://nzhts.digital.health.nz/ig/hip-common-terminology",
-      "version": "1.0.0",
+      "version": "dev",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
       "packageId": "fhir.org.nz.ig.base",
       "uri": "http://fhir.org.nz/ig/base",
-      "version": "1.0.0",
+      "version": "dev",
       "id": "fhir_org_nz_ig_base"
     }
   ],
@@ -70,14 +70,6 @@
         },
         "name": "HPI Practitioner role",
         "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/NzAddress"
-        },
-        "name": "Common NZ Address datatype",
-        "description": "Adds building name, suburb, domicile code and geocode to the Address datatype",
         "exampleBoolean": false
       },
       {

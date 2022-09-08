@@ -4,7 +4,7 @@
 //Alias: $aliasType = http://hl7.org.nz/fhir/StructureDefinition/alias-type
 
 Profile:        HpiOrganization
-Parent:         Organization
+Parent:         NzOrganization
 Id:             HpiOrganization
 Title:          "HPI Organization"
 Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
@@ -20,6 +20,8 @@ Description:    "An entity that provides services of interest to, or is involved
 * address 0..0
 * contact 0..0
 * endpoint 0..0
+
+* extension[funded-programme] 0..0
 
 * telecom.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-contact-point-use-code
 * partOf only Reference(HpiOrganization)
@@ -83,14 +85,14 @@ Description:    "An entity that provides services of interest to, or is involved
 //------------
 
 //top level  extensions
-* extension contains 
-    $established named established 0..1  
+//* extension contains 
+//    $established named established 0..1  
 
 * extension[established] ^short = "The period over which this Organization has been established"
  
 //add an extension to alias
-* alias.extension contains
-    $aliasType named alias-type 0..1
+//* alias.extension contains
+//    $aliasType named alias-type 0..1
 
 
 * alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/organization-alias-type-code (preferred)
