@@ -65,7 +65,7 @@ Practitioner query
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[1].name = "name"
 * rest.resource.searchParam[1].type = #string
-* rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name. "
+* rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name."
 
 
 
