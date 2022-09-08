@@ -93,7 +93,7 @@
           "reference": "Practitioner/90ZZLP"
         },
         "name": "90ZZLP",
-        "description": "Example HPI Practitioner - NR",
+        "description": "Example HPI Practitioner with No Registration",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -101,7 +101,7 @@
           "reference": "Practitioner/98ZZQJ"
         },
         "name": "98ZZQJ",
-        "description": "Example HPI Practitioner - 2 Registrations",
+        "description": "Example HPI Practitioner with two 2 Registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -125,6 +125,7 @@
           "reference": "Organization/GZZ956-B"
         },
         "name": "GZZ956-B",
+        "description": "Example HPI Organization",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
@@ -223,6 +224,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "Guidance.html",
+          "title": "Guidance",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "namingSystems.html",
           "title": "Naming Systems",
           "generation": "markdown"
@@ -270,11 +276,6 @@
         {
           "nameUrl": "updatePractitioner.html",
           "title": "Update Practitioner",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "usecases.html",
-          "title": "Usecases",
           "generation": "markdown"
         },
         {
