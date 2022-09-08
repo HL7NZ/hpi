@@ -2,7 +2,7 @@
 ### Lookup EDI for an enrolled patient’s GP
 
 <div>
-{% include lookout-edi-number.svg %}
+{% include lookup-edi-number.svg %}
 </div>
 
 Processing steps:
