@@ -37,6 +37,9 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * photo 0..0
 * extension[iwi] 0..0
 
+* name.suffix 0..0
+* name.period 0..0
+
 
 // elements with cardinality changes
 * extension[ethnicity] 0..6
