@@ -21,7 +21,6 @@ deactivate B
 A -> C: Get\{{Endpoint}}Location/[hpi-facility-id]
 activate C
 |||
-
 C -[dashed]-> A:Return Facility [Location resource]
 deactivate C
 |||
