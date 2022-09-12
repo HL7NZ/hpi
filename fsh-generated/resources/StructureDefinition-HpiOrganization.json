@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",
@@ -456,20 +456,10 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
+        "isModifier": false
       },
       {
         "id": "Organization.extension:funded-programme",
@@ -510,20 +500,10 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
+        "isModifier": false
       },
       {
         "id": "Organization.modifierExtension",
@@ -3138,20 +3118,10 @@
             "human": "Must have either extensions or value[x], not both",
             "expression": "extension.exists() != value.exists()",
             "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
           }
         ],
-        "isModifier": false,
-        "mapping": [
-          {
-            "identity": "rim",
-            "map": "n/a"
-          },
-          {
-            "identity": "rim",
-            "map": "N/A"
-          }
-        ]
+        "isModifier": false
       },
       {
         "id": "Organization.alias.extension:alias-type.id",
