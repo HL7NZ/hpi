@@ -12,7 +12,7 @@ participant "HPI Practitioner Role database" as C #CornflowerBlue
 User -> A: User enters identifier to be looked up
 activate A
 |||
-A -> B: GET{{Endpoint}}/PractitionerRole?practitioner=99ZZZ
+A -> B: GET<Endpoint>/PractitionerRole?practitioner=99ZZZ
 activate B
 |||
 B -> B: Validate[]
