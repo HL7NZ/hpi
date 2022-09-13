@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: Look up location with hpi-facility-id
 activate A
 |||
-A -> B: GET{{Endpoint}}/Location/[hpi-facility-id]
+A -> B: GET<Endpoint>/Location/[hpi-facility-id]
 activate B
 |||
 B -> B: Validate[]
