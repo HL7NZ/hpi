@@ -12,7 +12,7 @@ participant "HPI Practitioner Role database" as C #CornflowerBlue
 User -> A: Look up PractitionerRole with hpi-practitionerrole-id
 activate A
 |||
-A -> B: GET{{Endpoint}}/PractitionerRole/[hpi-practitionerrole-id]
+A -> B: GET<Endpoint>/PractitionerRole/[hpi-practitionerrole-id]
 activate B
 |||
 B -> B: Validate[]
