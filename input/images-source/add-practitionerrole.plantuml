@@ -12,7 +12,7 @@ participant "HPI Practitioner Role database" as C #CornflowerBlue
 User -> A: User specifies Practitioner, Organisation, Facility, Start date
 activate A
 |||
-A -> B: POST{{Endpoint}}/PractitionerRole
+A -> B: POST<Endpoint>/PractitionerRole
 activate B
 |||
 B -> B: Validate[]
