@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: User enters alternative identifier to be looked up
 activate A
 |||
-A -> B: GET{{Endpoint}}/Practitioner?identifier=[system]|[identifier]
+A -> B: GET<Endpoint>/Practitioner?identifier=[system]|[identifier]
 activate B
 |||
 B -> B: Validate[]
