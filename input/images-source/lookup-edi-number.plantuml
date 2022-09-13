@@ -19,7 +19,7 @@ activate B
 B -> A: Return enrolling [hpi-organisation-id], [hpi-facility-id], [hpi-person-id]
 deactivate B
 |||
-A -> C: Get{{Endpoint}}Location/[hpi-facility-id]
+A -> C: Get<Endpoint>/Location/[hpi-facility-id]
 activate C
 |||
 C -> C: Validate[]
