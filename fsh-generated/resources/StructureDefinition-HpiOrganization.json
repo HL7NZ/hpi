@@ -174,7 +174,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
-                "valueUrl": "string"
+                "valueUrl": "id"
               }
             ]
           }
@@ -3400,7 +3400,8 @@
             "severity": "error",
             "human": "The telecom of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,
@@ -3793,7 +3794,8 @@
             "severity": "error",
             "human": "An address of an organization can never be of use 'home'",
             "expression": "where(use = 'home').empty()",
-            "xpath": "count(f:use[@value='home']) = 0"
+            "xpath": "count(f:use[@value='home']) = 0",
+            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
           }
         ],
         "isModifier": false,
