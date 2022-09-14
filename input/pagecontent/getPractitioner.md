@@ -9,7 +9,7 @@
 Read practitioner processing steps:
 
 1. The user supplies an hpi-person-id number for the practitioner to be looked up.
-2. The integrating application sends an HTTP GET request for the Practitioner resource using the hpi-person-id to identify the practitioner whose information is being requested. E.g. GET{{Endpoint}}/Practitioner/99ZZRT
+2. The integrating application sends an HTTP GET request for the Practitioner resource using the hpi-person-id to identify the practitioner whose information is being requested. E.g. GET\<Endpoint>/Practitioner/99ZZRT
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
 5. The response containing the Practitioner resource is returned
