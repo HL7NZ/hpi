@@ -14,7 +14,8 @@ Alias: $scope-of-practice = http://hl7.org.nz/fhir/StructureDefinition/scope-of-
 Alias: $nzEthnicity = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 Alias: $country-code = https://standards.digital.health.nz/ns/country-code
 Alias: $country-code-vs = https://nzhts.digital.health.nz/fhir/ValueSet/country-code
-
+Alias: $name-prefix-vs = https://nzhts.digital.health.nz/fhir/ValueSet/name-prefix-code
+Alias: $name-suffix-vs = https://nzhts.digital.health.nz/fhir/ValueSet/name-suffix-code
 
 Profile:        HpiPractitioner
 Parent:         NzPractitioner
@@ -56,6 +57,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * name.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-human-name-use-code
 * name.use ^short = "usual | official | old"
 * name.text 0..0
+
+* name.prefix from $name-prefix-vs
+* name.suffix from $name-suffix-vs 
+
 
 
 //---------- identifier slicing -----------
@@ -146,7 +151,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.period ^short = "The period of the annual practicing certificate issued by the  Responsible Authority"
 * qualification.extension[scope-of-practice] ^short = "the health services a practitioner is authorised to perform eg Nurse Practitioner"
 
-* qualification.extension[educational-qualification] 0..0
+//* qualification.extension[educational-qualification] 0..0
 
 //* qualification.identifier.system from https://standards.digital.health.nz/fhir/ValueSet/hpi-identifier-use-code
 

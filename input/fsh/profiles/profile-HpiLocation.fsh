@@ -6,6 +6,7 @@ Alias: $established = http://hl7.org.nz/fhir/StructureDefinition/established
 Alias: $commonAddress = http://hl7.org.nz/fhir/StructureDefinition/CommonAddress
 //Alias: $edi-address = http://hl7.org.nz/fhir/StructureDefinition/edi-address
 Alias : $messaging-address =  http://hl7.org.nz/fhir/StructureDefinition/messaging-address
+Alias: $country-code-vs = https://nzhts.digital.health.nz/fhir/ValueSet/country-code
 
 Profile:        HpiLocation
 Parent:         NzLocation
@@ -100,6 +101,7 @@ Description:    "A physical location from which health goods and/or services are
 //    $edi-address named edi-address 0..1
 
 //* address only $commonAddress
+* address.country from  $country-code-vs
 * address.use from https://nzhts.digital.health.nz/fhir/ValueSet/hpi-location-address-use-code
 * address.use ^short = "work | old - purpose of this address"
 
@@ -111,5 +113,5 @@ Description:    "A physical location from which health goods and/or services are
 
 //set that the Valueset is from the set of alias types for Location (It's not set on the extension)
 
-* extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
-* extension[alias-type] ^short = "The type of alias this is - eg its Maori name"
+* alias.extension[alias-type].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/location-alias-type-code (preferred)
+* alias.extension[alias-type] ^short = "The type of alias this is - eg its Maori name"
