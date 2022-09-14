@@ -65,7 +65,7 @@ Practitioner query
 //Search by name. todo - may need add docs about dependencies - eg dob as well
 * rest.resource.searchParam[1].name = "name"
 * rest.resource.searchParam[1].type = #string
-* rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name. "
+* rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name."
 
 
 
@@ -126,16 +126,16 @@ PractitionerRole query
 * rest.resource[1].searchParam[2].name = "location"
 * rest.resource[1].searchParam[2].type = #token
 //* rest.resource[1].searchParam[2].definition = "http://hl7.org/fhir/SearchParameter/Practitioner-gender"
-* rest.resource[1].searchParam[2].documentation = "Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id"
+* rest.resource[1].searchParam[2].documentation = "Given an hpi-facility-id, returns the PractitionerRole records associated with that id"
 
 
 * rest.resource[1].searchParam[3].name = "role"
 * rest.resource[1].searchParam[3].type = #token
-* rest.resource[1].searchParam[3].documentation = "Not yet enabled. Returns PractitionerRole records based on role code"
+* rest.resource[1].searchParam[3].documentation = "Returns PractitionerRole records based on role code"
 
 * rest.resource[1].searchParam[4].name = "active"
 * rest.resource[1].searchParam[4].type = #token
-* rest.resource[1].searchParam[4].documentation = "Not yet enabled. To enable exclusion of inactive PractitionerRole records"
+* rest.resource[1].searchParam[4].documentation = "To enable exclusion of inactive PractitionerRole records"
 
 * rest.resource[1].searchInclude[0] = "practitioner"
 * rest.resource[1].searchInclude[1] = "organization"
@@ -159,7 +159,7 @@ Organization query
 
 * rest.resource[2].searchParam[0].name = "active"
 * rest.resource[2].searchParam[0].type = #token
-* rest.resource[2].searchParam[0].documentation = "Not yet enabled. To enable exclusion of inactive organizations"
+* rest.resource[2].searchParam[0].documentation = "To enable exclusion of inactive organizations"
 
 * rest.resource[2].searchParam[1].name = "name"
 * rest.resource[2].searchParam[1].type = #string
@@ -169,10 +169,14 @@ Organization query
 * rest.resource[2].searchParam[2].type = #token
 * rest.resource[2].searchParam[2].documentation = "For searching using an organisation’s New Zealand Business Number (NZBN) or their legacy NZHIS agency code."
 
-* rest.resource[2].searchParam[3].name = "partOf"
-* rest.resource[2].searchParam[3].type = #reference
-* rest.resource[2].searchParam[3].documentation = """
-Not yet enabled. For retrieving organizations that are 'part of' another. 
+* rest.resource[2].searchParam[3].name = "type"
+* rest.resource[2].searchParam[3].type = #token
+* rest.resource[2].searchParam[3].documentation = "For searching using an organisation's type E.g. DHB, RA, Educational institution"
+
+* rest.resource[2].searchParam[4].name = "partOf"
+* rest.resource[2].searchParam[4].type = #reference
+* rest.resource[2].searchParam[4].documentation = """
+For retrieving organizations that are 'part of' another. 
 """
 
 
@@ -206,7 +210,7 @@ Location query
 
 * rest.resource[3].searchParam[2].name = "type"
 * rest.resource[3].searchParam[2].type = #token
-* rest.resource[3].searchParam[2].documentation = "Not yet enabled. Retrieve Locations of the given type"
+* rest.resource[3].searchParam[2].documentation = "Retrieve Locations of the given type"
 
 * rest.resource[3].searchParam[3].name = "address"
 * rest.resource[3].searchParam[3].type = #string
@@ -214,12 +218,12 @@ Location query
 
 * rest.resource[3].searchParam[4].name = "organization"
 * rest.resource[3].searchParam[4].type = #reference
-* rest.resource[3].searchParam[4].documentation = "Not yet enabled. Retrieve Locations with the given ManagingOrganization"
+* rest.resource[3].searchParam[4].documentation = "Retrieve Locations with the given ManagingOrganization"
 
 * rest.resource[3].searchParam[5].name = "dhb"
 * rest.resource[3].searchParam[5].type = #token
 //* rest.resource[3].searchParam[5].definition = "http://hl7.fhir.org/fhir/SearchParameter/dhb"
-* rest.resource[3].searchParam[5].documentation = "Not yet enabled. Searching for Locations that are in a DHBs catchment area."
+* rest.resource[3].searchParam[5].documentation = "Searching for Locations that are in a DHBs catchment area."
 
 * rest.resource[3].searchParam[6].name = "status"
 * rest.resource[3].searchParam[6].type = #token
