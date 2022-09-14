@@ -1,6 +1,22 @@
 
 
-### Read Practitioner with Identifier (hpi-person-id)
+### Read Practitioner (hpi-person-id)
+
+* A practitioner read request returns a practitioner record with the following attributes (if populated):
+  * The ‘last updated single instance’ from across all sources:
+    * deathdate,
+    * official and usual names,
+    * set of languages, and
+  * All:
+    * educational qualifications
+    * ‘old’ names, and
+    * registraion details (qualification) 
+
+* A user with administration permissions will also see the ‘last updated single instance’ from across all sources:
+  * set of ethnicities
+  * gender
+  * birthdate.
+
 
 <div>
 {% include get-practitioner.svg %}
@@ -22,5 +38,14 @@ To query a Practitioner with ‘another identifier' the integrating application 
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
-### Rules and errors
-TBC
+
+#### Get Practitioner Rules and errors
+
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
+
+* **Get Practitioner rules**
+  * A Practitioner read request must include a valid hpi-person-id
+
+* _Get Practitioner errors_
+    * _"Invalid hpi-person-id" (HTTP 404 Not found, Error, Processing)_
+    * _"hpi-person-id not found" (HTTP 404 Not found, Error, Processing)_
