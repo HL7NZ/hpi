@@ -36,7 +36,7 @@
   * Health provider organisation wants to add a new employee to the HPI
 
 * Steps involved for an RA adding a new practitioner to the HPI
-  * The user searches the HPI for the health provider
+  * The user searches the HPI for the health provider [Search Practitioner](/searchPractitioner.html)
   * If a practitioner resource is found, then an update of that practitioner resource is required *(Update method TBC)*
   * If not found, the user provides the details to be added to the HPI:
     * Name, birthdate, gender and ethnicity (mandatory)
@@ -49,7 +49,7 @@
 
 * Steps involved for a Health Provider adding a new employee (NR) record to the HPI
   * *Note: When adding an NR record to the HPI best practice requires a PractitionerRole to be created for that record*
-  * The user searches the HPI for the employee.
+  * The user searches the HPI for the employee [Search Practitioner](/searchPractitioner.html)
   * If a practitioner resource is found, then an update of that practitioner resource is required *(Update method TBC)*
   * If not found, the user provides the employee details to be added to the HPI:
     * Name, birthdate, gender and ethnicity (mandatory)
@@ -177,7 +177,7 @@ E.g. GET https://hpi.api.health.govt.nz/location/ F99999B
   * The user can select the appropriate PractitionerRole record to view
 
 
-#### An authorised user wants to add a new PractitionerRole record.
+#### An authorised user wants to add a new PractitionerRole record
 * Scenarios
   * A person starts a new job
   * An existing employee changes their role
@@ -192,7 +192,7 @@ E.g. GET https://hpi.api.health.govt.nz/location/ F99999B
 
 #### An authorised user wants to update a PractitionerRole record
 * Scenario
-  * An authorised user wants to update an employee’s contact details or change the end date of a practitioner role record.
+  * An authorised user wants to update an employee’s contact details or change the end date of a practitioner role record
   * *Note: No other updates are currently allowed*
 
 * Steps involved:
