@@ -97,19 +97,19 @@
 <tr>
 <td>location</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. Given an hpi-facility-id, returns the PractitionerRole records associated with that id</p>
+<td><p>Given an hpi-facility-id, returns the PractitionerRole records associated with that id</p>
 </td>
 </tr>
 <tr>
 <td>role</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. Returns PractitionerRole records based on role code</p>
+<td><p>Returns PractitionerRole records based on role code</p>
 </td>
 </tr>
 <tr>
 <td>active</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. To enable exclusion of inactive PractitionerRole records</p>
+<td><p>To enable exclusion of inactive PractitionerRole records</p>
 </td>
 </tr>
 </table>
@@ -153,7 +153,7 @@
 <tr>
 <td>active</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. To enable exclusion of inactive organizations</p>
+<td><p>To enable exclusion of inactive organizations</p>
 </td>
 </tr>
 <tr>
@@ -169,9 +169,15 @@
 </td>
 </tr>
 <tr>
+<td>type</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
+<td><p>For searching using an organisation's type E.g. DHB, RA, Educational institution</p>
+</td>
+</tr>
+<tr>
 <td>partOf</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Not yet enabled. For retrieving organizations that are 'part of' another.</p>
+<td><p>For retrieving organizations that are 'part of' another.</p>
 </td>
 </tr>
 </table>
@@ -212,7 +218,7 @@
 <tr>
 <td>type</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. Retrieve Locations of the given type</p>
+<td><p>Retrieve Locations of the given type</p>
 </td>
 </tr>
 <tr>
@@ -224,13 +230,13 @@
 <tr>
 <td>organization</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#reference">reference</a></td>
-<td><p>Not yet enabled. Retrieve Locations with the given ManagingOrganization</p>
+<td><p>Retrieve Locations with the given ManagingOrganization</p>
 </td>
 </tr>
 <tr>
 <td>dhb</td>
 <td><a target='_blank' href="http://hl7.org/fhir/search.html#token">token</a></td>
-<td><p>Not yet enabled. Searching for Locations that are in a DHBs catchment area.</p>
+<td><p>Searching for Locations that are in a DHBs catchment area.</p>
 </td>
 </tr>
 <tr>
