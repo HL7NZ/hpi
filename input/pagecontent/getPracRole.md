@@ -30,6 +30,5 @@ To query a PractitionerRole with ‘another identifier' the integrating applicat
 * **Get PractitionerRole rules**
   * A PractitionerRole read request must include a valid hpi-practitionerrole-id
 
-* _Add Practitioner errors_
-  * _“Invalid hpi-practitionerrole-id” (HTTP 404 Not found, Error, Processing)_
-  * _“hpi-practitionerrole-id not found" (HTTP 404 Not found, Error, Processing)_
+* _Get PractitionerRole errors_
+  * _“Invalid id: ” (HTTP 404 Not found, Error, Processing)_
