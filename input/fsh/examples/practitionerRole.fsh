@@ -1,26 +1,23 @@
-
 Instance: R00000012-G
 InstanceOf: PractitionerRole
 Description: "Example HPI PractitionerRole Medical Receptionist"
 Usage: #example
 * meta.versionId = "0"
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
-* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
-* extension[=].extension[0].url = "active"
-* extension[=].extension[=].valueBoolean = false
-* extension[=].extension[+].url = "reason"
-* extension[=].extension[=].valueCodeableConcept.coding.version = "1.0"
-* extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code#other "Other"
-* extension[=].extension[=].valueCodeableConcept.text = "Other"
+* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason"
+* extension[=].valueCodeableConcept.coding.version = "1.0"
+* extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code#other "Other"
+* extension[=].valueCodeableConcept.text = "Other"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
 * extension[=].extension[0].url = "person"
 * extension[=].extension[=].valueReference = Reference(Person/testall)
 * extension[=].extension[+].url = "organization"
 * extension[=].extension[=].valueReference = Reference(Organization/G00001-G)
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-practitioner-role-id"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-practitionerrole-id"
 * identifier.value = "R00000012-G"
 * identifier.assigner = Reference(Organization/G00001-G)
+* active = false
 * period.start = "2000-02-10"
 * period.end = "2010-05-02"
 * practitioner = Reference(Practitioner/90ZZLP)
@@ -49,22 +46,20 @@ Description: "Example HPI PractitionerRole Specialist Physician"
 Usage: #example
 * meta.versionId = "0"
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
-* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status"
-* extension[=].extension[0].url = "active"
-* extension[=].extension[=].valueBoolean = false
-* extension[=].extension[+].url = "reason"
-* extension[=].extension[=].valueCodeableConcept.coding.version = "1.0"
-* extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code#other "Other"
-* extension[=].extension[=].valueCodeableConcept.text = "Other"
+* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-status-reason"
+* extension[=].valueCodeableConcept.coding.version = "1.0"
+* extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/hpi-practitioner-role-status-reason-code#other "Other"
+* extension[=].valueCodeableConcept.text = "Other"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/practitionerRole-creator"
 * extension[=].extension[0].url = "person"
 * extension[=].extension[=].valueReference = Reference(Person/testall)
 * extension[=].extension[+].url = "organization"
 * extension[=].extension[=].valueReference = Reference(Organization/G00001-G)
 * identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-practitioner-role-id"
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-practitionerrole-id"
 * identifier.value = "R00000013-J"
 * identifier.assigner = Reference(Organization/G00001-G)
+* active = false
 * period.start = "2000-02-10"
 * period.end = "2010-05-02"
 * practitioner = Reference(Practitioner/98ZZYU)
