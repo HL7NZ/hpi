@@ -24,9 +24,9 @@ Add new Practitioner processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-person-id and version number for future requests relating to this record
 
-### Rules and errors
+### Add Rules and errors
 
-[For Request rules and errors click here](/general.html)
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
 
 * **Add Practitioner rules**
   * An Add practitioner request must include:
