@@ -319,7 +319,7 @@ table, th, td {
 
 <tr><td>HPI-P-Get-8</td>
 <td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
-<td>CPN for practitioner that has registration status=Current and the APC period in the past</td>
+<td>90ZZSR <br /> 90ZZMG</td>
 <td>The user is informed the practitioners APC has expired</td>
 <td>mandatory</td></tr>
 
