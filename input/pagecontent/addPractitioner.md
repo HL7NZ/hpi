@@ -24,7 +24,7 @@ Add new Practitioner processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-person-id and version number for future requests relating to this record
 
-### Rules and errors
+### Add Practitioner Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
@@ -56,19 +56,19 @@ Add new Practitioner processing steps:
 
 ---
 
-* **Add birth date rules**
+* **Add Practitioner birth date rules**
   * A practitioner must have a birthdate that is after 1 January 1800 and not in the future
   * Birthdate must be a complete date and formatted YYYY-MM-DD
   * Practitioner must be greater than 10 years old
 
-* _Add birthdate errors_
+* _Add Practitioner birthdate errors_
   * _Practitioner birthdate cannot be a future date_
   * _Birthdate not valid, must be a complete date and formatted YYYY-MM-DD_
   * _Practitioner must be greater than 10 years old_
 
 ---
 
-* **Add name rules**
+* **Add Practitioner name rules**
   * A person must have either a usual or an official name
   * A person can only have one official name
   * A person can only have one usual name
@@ -79,7 +79,7 @@ Add new Practitioner processing steps:
   * A name can only include these characters **TBC**
   * The first character of a name must be an Alpha (A-Z or a-z) or apostrophe.
 
-* _Add name errors_
+* _Add Practitioner name errors_
   * _A usual or an official name is required_
   * _Only one official or usual name is allowed_
   * _Name use old is not valid for an add_
@@ -89,15 +89,15 @@ Add new Practitioner processing steps:
 
 ---
 
-* **Add ethnicity rules**
+* **Add Practitioner ethnicity rules**
   * A set of ethnicity codes must contain at least 1 ethnicity and can contain up to 6 ethnicities
 
-* _Add ethnicity errors_
+* _Add Practitioner ethnicity errors_
   * _A Practitioner must have at least one valid ethnicity code, only one instance of each selected ethnicity, and no more than one ‘unspecified’ ethnicity code_
 
 ---
 
-* **Add educational qualification rules**
+* **Add Practitioner educational qualification rules**
   * An educational qualification add request must not contain an Id
   * An educational qualification add request must include
     * fullname,
@@ -107,7 +107,7 @@ Add new Practitioner processing steps:
     * country
   * An educational qualification can only include these characters **TBC**
 
-* _Add educational qualification errors_
+* _Add Practitioner educational qualification errors_
   * _Educational qualification fullname is a required field_
   * _Educational qualification year is a required field_
   * _Educational qualification institution is a required field_
@@ -118,8 +118,8 @@ Add new Practitioner processing steps:
 
 ---
 
-* **Add language (communication) rules**
+* **Add Practitioner language (communication) rules**
   * TBC
 
-* _Add  language (communication) errors_
+* _Add  Practitioner language (communication) errors_
   * _TBC_
