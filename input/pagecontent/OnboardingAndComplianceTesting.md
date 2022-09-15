@@ -318,12 +318,18 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-8</td>
-<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
-<td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
-<td>System does not error <br /> System returns appropriate messaging to user</td>
+<td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
+<td>CPN for practitioner that has registration status=Current and the APC period in the past</td>
+<td>The user is informed the practitioners APC has expired</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-9</td>
+<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
+<td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
+<td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
+<td>mandatory</td></tr>
+
+<tr><td>HPI-P-Get-10</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
