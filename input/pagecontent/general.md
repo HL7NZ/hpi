@@ -43,7 +43,7 @@ Each resource has more than one identifier. If a user wants to query the HPI usi
 
 Example: 
 
-* Practitioner:
+* **Practitioner**:
   * medical-council-id
     * System - https://standards.digital.health.nz/ns/medical-council-id
     * Identifier - 99536
@@ -51,7 +51,7 @@ Example:
     * System - https://standards.digital.health.nz/ns/nursing-council-id
     * Identifier - 961049
 
-* Organization
+* **Organization**
   * legacyOrgId
     * System - https://standards.digital.health.nz/ns/nzhis-agency-id
     * Identifier - 9000
@@ -59,21 +59,43 @@ Example:
     * System - https://standards.digital.health.nz/ns/hpi-nzbn
     * Identifier - 9999999999001
 
-* Location
+* **Location**
   * legacyFacId
     * System - https://standards.digital.health.nz/ns/nzhis-facility-id
     * Identifier - Z995
 
 __Note:__ Both system and value are included in the query, with values separated by a ‘\|’. When making the query, the ‘\|’ needs to be url-escaped)
 
-Get\<Endpoint>/Practitioner?identifier=https://standards.digital.health.nz/ns/medical-council-id\|99536 <br />
-Get\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999057 <br />
-Get\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000 <br />
-Get\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z995 <br />
+* Get\<Endpoint>/Practitioner?identifier=https://standards.digital.health.nz/ns/medical-council-id\|99536 <br />
+* Get\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999057 <br />
+* Get\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000 <br />
+* Get\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z995 <br />
 
 These examples will return a bundle of resources with only a single entry (as the system enforces uniqueness of the identifier). Other queries - eg name - may well return multiple instances.
 
 For more information look at the __Search Use cases__ in the menu
+
+
+### Search resource using a string
+
+* For a simple string search, a string parameter serves as the input for a search against sequences of characters.
+* By default, a field matches a string query if the value of the field equals or starts with the supplied parameter value.
+* The _:contains modifier_ returns results that include the supplied parameter value anywhere within the field being searched.
+* The _:exact modifier_ returns results that match the entire supplied parameter, including casing and accents.
+
+
+* **Examples**
+
+* Get\<Endpoint>/Organization?name=Pharmacy
+  * Any organisations with the name "Pharmacy” at the start of the name. E.g. Pharmacy council of New Zealand will be returned in the bundle. 
+
+* Get\<Endpoint>/Organization?name:contains=Pharmacy
+  * Any organisations with a name containing "Pharmacy" at any position. E.g. This would return “Pharmacy council of New Zealand”, as well as “shopNSave Discount Pharmacy” among others in the bundle.
+
+* Get\<Endpoint>/Organization?name:exact=Pharmacy
+  * Any organisations with a name that is exactly "Pharmacy". Note: This would not return any of the above examples. However if this was Get\<Endpoint>/Organization?name:exact=shopNSave Discount Pharmacy it would return a bundle with that resource.
+
+
 
 ### References between resources
 

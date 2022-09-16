@@ -6,9 +6,11 @@
 
 An ‘Add Practitioner’ operation is initiated by a user who needs to add a new practitioner record for a provider to the HPI.
 
-Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the provider does not already exist.
+**Expectations**
 
-If the provider is found in the HPI then an update operation is required. If not found then a new practitioner record may be added, see below.
+* Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the provider does not already exist.
+* Duplicate HPI records won’t be checked upfront, but will create a task for a potential duplicateto be resolved.
+* If the provider is found in the HPI then an update operation is required. If not found then a new practitioner record may be added, see below.
 
 <div>
 {% include add-practitioner.svg %}
@@ -24,9 +26,9 @@ Add new Practitioner processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-person-id and version number for future requests relating to this record
 
-### Rules and errors
+### Add Practitioner Rules and errors
 
-[For Request rules and errors click here](/general.html)
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
 
 * **Add Practitioner rules**
   * An Add practitioner request must include:
@@ -34,92 +36,83 @@ Add new Practitioner processing steps:
     * birth date,
     * gender
     * ethnicity
-   * An add practitioner request made by an RA must include an RA identifier
+   * An add request made by an RA must include a unique RA source person identifier that does not already exist in HPI within the same source as that submitted
    * A request cannot create an HPI record which is a duplicate of another Practitioner record
    * An add request cannot contain an RA identifier that already exists in the HPI
-   * An add request can include
+   * An add request may include:
       * educational qualifications
-      * languages 
-   * An add request must not contain 
-      * registration details (registration details can only be added with an update request)
-      * death date
+      * languages (communication) 
+   * An add request must not contain:
+      * registration details (Practitioner.qualification). Registration details can only be added with an update request
+      * deathdate. deathdate can only be added with an update request
 
 
 * _Add Practitioner errors_
   * _Name is required_
   * _Birth date is a required field_
   * _RA identifier is required_
-  * _RA identifier is already assigned to CPN XXXXX_
+  * _RA identifier is already assigned to an hpi-person-id_
   * _The practitioner identity information supplied may result in duplication of another identity. Please check the list of potential duplicates before resubmitting_
    * _Death date not valid for an add_
    * _Registration details not valid for an add_
 
 ---
 
-* **Add birth date rules**
-  * A practitioner must have a birthdate that is after 1 January 1800 and not in the future
-  * Birthdate must be a complete date and formatted YYYY-MM-DD
-  * Practitioner must be greater than 10 years old
+* **Add Practitioner birth date rules**
+  *	Practitioner birthdate must be a complete date and formatted YYYY-MM-DD
+  *	Practitioner must be aged between 14 and 90
 
-* _Add birthdate errors_
-  * _Practitioner birthdate cannot be a future date_
+
+* _Add Practitioner birthdate errors_
   * _Birthdate not valid, must be a complete date and formatted YYYY-MM-DD_
-  * _Practitioner must be greater than 10 years old_
+  * _Practitioner birthdate cannot be a future date_
+  * _Practitioner must be greater than 14, and les than 90 years old_
 
 ---
 
-* **Add name rules**
+* **Add Practitioner name rules**
   * A person must have either a usual or an official name
   * A person can only have one official name
   * A person can only have one usual name
   * Name use is a mandatory field
   * A person cannot be added with a name use old
   * A name must have a given or a family at minimum
-  * A given name is required when ‘other given names’ are present
-  * A name can only include these characters **TBC**
-  * The first character of a name must be an Alpha (A-Z or a-z) or apostrophe.
+  * The first character of a name must be an Alpha (A-Z or a-z) or apostrophe
 
-* _Add name errors_
+* _Add Practitioner name errors_
   * _A usual or an official name is required_
   * _Only one official or usual name is allowed_
   * _Name use old is not valid for an add_
   * _Name must contain either a Given name or a Family and a Name Use_
-  * _Given name is required when Other Given Names are present_
-  * _Name contains invalid text_
 
 ---
 
-* **Add ethnicity rules**
-  * A set of ethnicity codes must contain at least 1 ethnicity and can contain up to 6 ethnicities
+* **Add Practitioner ethnicity rules**
+  * A set of ethnicity codes must contain at least 1 ethnicity, only one instance of each selected ethnicity, no more than one ‘unspecified’ ethnicity code and can contain up to 6 ethnicities
 
-* _Add ethnicity errors_
+* _Add Practitioner ethnicity errors_
   * _A Practitioner must have at least one valid ethnicity code, only one instance of each selected ethnicity, and no more than one ‘unspecified’ ethnicity code_
 
 ---
 
-* **Add educational qualification rules**
-  * An educational qualification add request must not contain an Id
-  * An educational qualification add request must include
+* **Add Practitioner educational qualification rules**
+  * An educational qualification add request must not contain an id (this will be generated by the HPI and should be stored by the local system for later use)
+  * An educational qualification add request must include:
     * fullname,
     * year,
     * institution,
     * city,
     * country
-  * An educational qualification can only include these characters **TBC**
 
-* _Add educational qualification errors_
+* _Add Practitioner educational qualification errors_
   * _Educational qualification fullname is a required field_
   * _Educational qualification year is a required field_
   * _Educational qualification institution is a required field_
   * _Educational qualification city is a required field_
   * _Educational qualification country is a required field_
   * _Educational qualification year must be formatted YYYY_
-  * _Educational qualification contains invalid text_
 
 ---
 
-* **Add language (communication) rules**
-  * TBC
-
-* _Add  language (communication) errors_
-  * _TBC_
+* **Add Practitioner language (communication) rules**
+  * A set of communication codes must contain at least 1 language, only one instance of each selected language, and can contain up to 10 languages

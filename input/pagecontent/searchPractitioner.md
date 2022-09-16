@@ -51,7 +51,16 @@ E.g.nursing-council-id:
 
 [For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
 
-[For more information on search ptactitioner click here](/capabilityStatement.html#practitioner)
+[For more information on search practitioner click here](/capabilityStatement.html#practitioner)
 
-### Rules and errors
-TBC
+### Search Practitioner Rules and errors
+
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
+
+* **Search Practitioner rules**
+  * A search practitioner request by identifier must include a 'system' and value
+  * A search practitioner request using 'other parameters' must include a name at minimum
+  * A search practitioner request using 'other parameters' may include birthdate and gender
+
+* _Search Practitioner errors_
+  * _Name is required_

@@ -22,5 +22,19 @@ E.g. GET\<Endpoint>/PractitionerRole?practitioner=99ZZZS&_include=PractitionerRo
 
 [For more information on search PractitionerRole click here](/capabilityStatement.html#practitionerrole)
   
-### Rules and errors
-TBC
+
+
+### Search Practitioner Rules and errors
+
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
+
+* **Search PractitionerRole rules**
+  * A PractitionerRole search request must include a valid hpi-person-id
+  * A PractitionerRole search may include: 
+    * hpi-facility-id
+    * hpi-organisation-id
+    * role
+    * active status
+
+* _Search PractitionerRole errors_
+  * _"practitioner.required" (HTTP 422 Unknown, Error, Processing)_

@@ -22,5 +22,29 @@ Prior to an update a user should do an HTTP GET request using the Practitioner R
 6.	The HPI FHIR API confirms a successful update – HTTP 200 ok
 7.	The integrating application indicates to the user the update has been successful and retains the version number for future requests relating to this record
 
-#### Rules and errors
-TBC
+### Update PractitionerRole Rules and errors
+
+[For Request rules and errors click here](/general.html#request-rules-and-errors)
+
+* **Update PractitionerRole rules**
+  * A PractitionerRole update can only modify contact point and period end-date.
+  * A PractitionerRole update must contain:
+    * a valid hpi-practitionerrole-id and version-id
+    * an hpi-person-id matching the PractitionerRole record
+    * an hpi-organisation-id and/or the hpi-facility-id (if present on the PractitionerRole record)
+    * a PractitionerRole code (if present on the PractitionerRole record)
+  * A practitionerRole-status-reason is mandatory when a period end-date is supplied
+  * A PractitionerRole update request cannot create a duplicate, or overlap another PractitionerRole record
+
+* _Update PractitionerRole errors_
+  * _"hpi-person-id invalid" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"hpi-person-id is required" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"hpi-organization-id or hpi-facility-id is required" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"Resource validation error: duplicate" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"PractitionerRole code requird" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"practitionerRole-status-reason is required" (HTTP 422, Unprocessable, Error, Processing)_
+
+---
+
+* PractitionerRole update contact and period end-date rules and errors
+  * See Add rules and errors

@@ -284,7 +284,7 @@ table, th, td {
 <tr><td>HPI-P-Get-2</td>
 <td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
 <td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
-<td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user</td>
+<td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user <br /> System should retain the name as a Family name when a practitioner has only a Given Name on the HPI </td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-3</td>
@@ -318,12 +318,18 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-8</td>
-<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
-<td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
-<td>System does not error <br /> System returns appropriate messaging to user</td>
+<td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
+<td>90ZZSR <br /> 90ZZMG</td>
+<td>The user is informed the practitioners APC has expired</td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-9</td>
+<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
+<td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
+<td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
+<td>mandatory</td></tr>
+
+<tr><td>HPI-P-Get-10</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
