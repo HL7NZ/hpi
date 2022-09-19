@@ -24,7 +24,7 @@ E.g. GET\<Endpoint>/PractitionerRole?Practitioner=99ZZZS&_include=PractitionerRo
   
 
 
-### Search Practitioner Rules and errors
+### Search PractitionerRole Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
