@@ -1,15 +1,15 @@
 
 
-### Search location (facility) by name
+### Search Facility (Location) by name
 
 <div>
 {% include search-locationwithname.svg %}
 </div>
 
-Search location processing steps:
+Search Facility (Location) processing steps:
 
-1.	The user of the integrating application searches for a location by entering the location name.
-2.	The integrating application sends an HTTP GET request for the location resource using the name as a search parameter
+1.	The user of the integrating application searches for a Facility by entering the Facility name
+2.	The integrating application sends an HTTP GET request for the Location resource using the name as a search parameter
 E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 3.	The request is validated - ALT: Validation failure. Operation Outcome resource returned
 4.	The matching facilities are retrieved from the HPI
@@ -19,17 +19,12 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 
 ### Other Search criteria
 
-**Address**
-* Search location by address
+**Search Location using address**
 
 GET\<Endpoint>/Location?address=wilson street
 
-**LegacyFacId**
-* Query location by identifier Legacy facility id
+**Search (Query) Location using Legacy facility id**
 
 GET\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z995
 
 [For more information on search location click here](/capabilityStatement.html#location)
-
-### Rules and errors
-TBC
