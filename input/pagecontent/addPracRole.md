@@ -27,8 +27,8 @@ Add new PractitionerRole processing steps:
     * Period (start date and end if applicable)
     * Messaging-address (EDI)
     * Contact details (telecom)
-  * A practitionerRole-status-reason is mandatory when a period end-date is supplied
-  * A PractitionerRole add request cannot create a duplicate, or overlap another PractitionerRole record
+  * A PractitionerRole-status-reason is mandatory when a period end-date is supplied
+  * A PractitionerRole add request cannot create a duplicate, or overlap another PractitionerRole record [See also](/glossary.html#practitioner-role)
 
 * _Add PractitionerRole errors_
   * _"hpi-person-id invalid" (HTTP 422, Unprocessable, Error, Processing)_
