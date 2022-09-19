@@ -32,6 +32,7 @@
 6. The integrating application displays the matching practitioners to the user
 
 
+
 ### Query Practitioner with another identifier
 
 <div>
@@ -53,6 +54,7 @@ E.g.nursing-council-id:
 
 [For more information on search practitioner click here](/capabilityStatement.html#practitioner)
 
+
 ### Search Practitioner Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
@@ -63,4 +65,4 @@ E.g.nursing-council-id:
   * A search practitioner request using 'other parameters' may include birthdate and gender
 
 * _Search Practitioner errors_
-  * _Name is required_
+  * "Invalid request: ..." (HTTP 400 Bad Request, Error, not-supported)
