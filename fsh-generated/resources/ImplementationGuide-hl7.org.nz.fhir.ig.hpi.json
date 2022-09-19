@@ -6,10 +6,10 @@
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
-  "publisher": "Ministry of Health",
+  "publisher": "Te Whatu Ora",
   "contact": [
     {
-      "name": "Ministry of Health",
+      "name": "Te Whatu Ora",
       "telecom": [
         {
           "system": "email",
