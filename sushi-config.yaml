@@ -12,7 +12,7 @@ name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
 publisher:
-  name: Ministry of Health
+  name: Te Whatu Ora
   email: mailto:integration@health.govt.nz
 description: The HPI facade
 license: CC0-1.0
