@@ -84,7 +84,7 @@ For more information look at the __Search Use cases__ in the menu
 * The _:exact modifier_ returns results that match the entire supplied parameter, including casing and accents.
 
 
-* **Examples**
+**Examples**
 
 * Get\<Endpoint>/Organization?name=Pharmacy
   * Any organisations with the name "Pharmacy” at the start of the name. E.g. Pharmacy council of New Zealand will be returned in the bundle. 
@@ -198,7 +198,7 @@ Get\<Endpoint>/PractitionerRole?identifier=https://standards.digital.health.nz/n
 
 ### Request Rules and Errors
 
-* **Request rules**
+* Request rules
   * Every request must include an:
     * http header item UserId that uniquely identifies the individual initiating the request.
     * OAuth 2 access token
