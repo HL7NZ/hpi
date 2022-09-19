@@ -6,11 +6,11 @@
   * The ‘last updated single instance’ from across all sources:
     * deathdate,
     * official and usual names,
-    * set of languages, and
+    * set of languages (Practitioner.communication, and
   * All:
     * educational qualifications
     * ‘old’ names, and
-    * registraion details (qualification) 
+    * registraion details (Practitioner.qualification) 
 
 * A user with administration permissions will also see the ‘last updated single instance’ from across all sources:
   * set of ethnicities
@@ -30,6 +30,8 @@ Read practitioner processing steps:
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
 5. The response containing the Practitioner resource is returned
 
+
+
 ### Query Practitioner with another identifier (nursing-council-id)
 
 To query a Practitioner with ‘another identifier' the integrating application sends an HTTP GET request for the Practitioner resource using the ‘other identifier’ to identify the Practitioner whose information is being requested.
@@ -37,6 +39,8 @@ To query a Practitioner with ‘another identifier' the integrating application 
 [To review searching by other identifiers click here](/searchPractitioner.html#other-search-criteria)
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
+
+
 
 
 #### Get Practitioner Rules and errors
