@@ -9,7 +9,7 @@ An ‘Add Practitioner’ operation is initiated by a user who needs to add a ne
 **Expectations**
 
 * Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the provider does not already exist.
-* Duplicate HPI records won’t be checked upfront, but will create a task for a potential duplicateto be resolved.
+* Duplicate HPI records will not be checked upfront, but will create a task for a potential duplicate to be resolved.
 * If the provider is found in the HPI then an update operation is required. If not found then a new practitioner record may be added, see below.
 
 <div>
