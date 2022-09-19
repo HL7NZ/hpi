@@ -1,6 +1,6 @@
 
 
-### Add new Practitioner Role resource
+### Add new PractitionerRole resource
 
 <div>
 {% include add-practitionerrole.svg %}
@@ -16,7 +16,7 @@ Add new PractitionerRole processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-practitionerrole-id and version number for future requests relating to this record
 
-### Add Practitioner Rules and errors
+### Add PractitionerRole Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
@@ -44,18 +44,18 @@ Add new PractitionerRole processing steps:
   * A PractitionerRole period start date must be less than, or equal to end date
 
 * _Add PractitionerRole period errors_
-* _Period is not valid; format must be yyyy-mm-dd_
-* _Period start date must be less than, or equal to end date_
+  * _Period is not valid; format must be yyyy-mm-dd_
+  * _Period start date must be less than, or equal to end date_
 
 ---
 
 *	**Add PractitionerRole contact rules** (If supplied).
   * A request must not result in a duplicate contact
   * A contact point value must have a valid format (HISO recommends)
-    * _valid mobile phone number format_
+    * _Valid mobile phone number format_
     * International ITU-T E.164 numbers are variable length numeric strings without punctuation, composed of country code, area code or mobile network code and subscriber number
     * Numbers should be entered, validated and displayed as separate components, eg: 64 4 232nnnn, 64 20 412nnnnn
-    * _valid email format_
+    * _Valid email format_
     * an email address must have a local-part@domain-part format
     * the address length must not exceed 256 characters
     * can contain any UTF-8 characters except control characters.
@@ -64,8 +64,8 @@ Add new PractitionerRole processing steps:
   * Rank must be unique across the set of supplied contactpoints, Gaps in the sequence of rank are allowed, 1 is the highest rank, Rank 0 is invalid, When rank is not supplied it will be assigned the next lowest rank within the PracRole telecom contactpoints.
 
 * _Add PractitionerRole contact errors_
-  * The contact point you are creating is a duplicate of another on this record
-  * The mobile phone format is invalid
-  * The email format is invalid
-  * Contact period is invalid; format must be yyyy-mm-dd
-  * Contact period start date must be less than or equal to a contact point period end date 
+  * _The contact point you are creating is a duplicate of another on this record_
+  * _The mobile phone format is invalid_
+  * _The email format is invalid_
+  * _Contact period is invalid; format must be yyyy-mm-dd_
+  * _Contact period start date must be less than or equal to a contact point period end date_ 
