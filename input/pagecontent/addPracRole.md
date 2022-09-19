@@ -35,7 +35,7 @@ Add new PractitionerRole processing steps:
   * _"hpi-person-id is required" (HTTP 422, Unprocessable, Error, Processing)_
   * _"hpi-organization-id or hpi-facility-id is required" (HTTP 422, Unprocessable, Error, Processing)_
   * _"Resource validation error: duplicate" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"practitionerRole-status-reason is required" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"PractitionerRole-status-reason is required" (HTTP 422, Unprocessable, Error, Processing)_
 
 ---
 
