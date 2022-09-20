@@ -282,8 +282,8 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-2</td>
-<td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
-<td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
+<td>System can handle a response when practitioner has <br /> only a surname <br /> multiple names</td>
+<td> <b>Do both</b> <br /> 91ZZWJ <br /> 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user <br /> System should retain the name as a Family name when a practitioner has only a Given Name on the HPI </td>
 <td>mandatory</td></tr>
 
