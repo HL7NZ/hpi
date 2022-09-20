@@ -215,6 +215,8 @@ All requests for all resources must include an http header **userid** that uniqu
 ### Security
 The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
 
+For more information see [OAuth additional information](/OAuth.html)
+
 The following scopes are supported
 
 <table>
