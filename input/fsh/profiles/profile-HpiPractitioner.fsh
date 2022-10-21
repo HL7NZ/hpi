@@ -23,7 +23,7 @@ Id:             HPIPractitioner
 Title:          "HPI Practitioner"
 Description:    "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services."
 
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+//* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 
 * ^text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI Practitioner profile</div>"
