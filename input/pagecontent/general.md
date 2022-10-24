@@ -198,22 +198,138 @@ Get\<Endpoint>/PractitionerRole?identifier=https://standards.digital.health.nz/n
 
 ### Request Rules and Errors
 
-* Request rules
+* **Request rules**
   * Every request must include an:
     * http header item UserId that uniquely identifies the individual initiating the request.
     * OAuth 2 access token
+    * An api-key
   * Each user must have an individual userID
 
 * _Request errors_
   * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
   * _"Unauthorized"  (HTTP 401)_
- 
+   * _Forbidden, HTTP403_
+
+#### Error Format
+
+Error responses may contain a FHIR operation outcome:
+We’re transitioning to the following operation outcome
+
+```
+
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "details": {
+      "coding": [ {
+        "system": "https://standards.digital.health.nz/ns/hip-operation-outcome-details-code",
+        "code": "EM07106",
+        "display": "Record version provided is out of date. The record cannot be updated"
+      } ]
+    },
+    "expression": [ "Practitioner.identifier:HPI" ]
+  } ]
+}
+
+```
+
+But not all errors have been converted or assigned error codes, the unconverted errors use:
+
+```
+
+{
+  "resourceType": "OperationOutcome",
+  "issue": [ {
+    "severity": "error",
+    "code": "processing",
+    "diagnostics": "Authentication: missing userid header"
+  }
+
+```
+
 ### HTTP Header Details
 
-All requests for all resources must include an http header **userid** that uniquely identifies the individual initiating the request. Preferably the hpi-person-id of the user would be provided, if known, otherwise a userid that allows the authenticated organisation to identify the individual.
+* This list is any additions to standard HTTP header protocol
+
+<h3>Request Headers</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th> HTTP Header (Key) </th>
+<th>HTTP Header (Value)</th>
+<th>Description</th>
+<th>Mandatory / Recommended / Optional</th></tr>
+
+<tr><td> Authorization </td>
+<td> Bearer <_string_> </td>
+<td> The OAuth2 access token </td>
+<td> Mandatory </td></tr>
+
+<tr><td> userid </td>
+<td> Bearer <_string_> </td>
+<td> Client provided <br />
+All requests for all resources must include an http header userid that uniquely identifies the individual initiating the request <br />
+Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
+<td>Mandatory</td></tr>
+
+<tr><td> X-Correlation-Id </td>
+<td> <_string_> </td>
+<td> Client provided <br />
+All requests should contain a unique transaction id in the X-Correlation-Id field <br />
+If present in the request this will be returned in the response, and can be used to track API calls <br />
+Preferred less than 64 characters <br /> </td>
+<td> Recommended </td></tr>
+
+<tr><td> Content-Type </td>
+<td> Application/json </td>
+<td> Supported content type </td>
+<td> Mandatory </td></tr>
+
+<tr><td> x-api-key </td>
+<td> <_string_> </td>
+<td> Te Whatu Ora Provided – issued with client credentials </td>
+<td> Mandatory </td></tr>
+</table>
+
+<h3>Response Headers</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th> Element name </th>
+<th> Value </th>
+<th> Description </th></tr>
+
+<tr><td> X-Correlation-Id </td>
+<td> <_string_> </td>
+<td> Returned if provided </td></tr>
+
+<tr><td> X-request-Id </td>
+<td> <_string_> </td>
+<td> Unique identifier for the request within the NHI </td></tr>
+
+<tr><td> ETag </td>
+<td> <_string_> </td>
+<td> The resource version number, returned on a Get </td></tr>
+</table>
 
 ### Security
+
+#### OAUTH2
+
 The HPI server uses the OAUTH2 Client Credentials flow for authentication and authorisation and complies with the SMART specification for backend services
+
+
+#### Scopes
 
 The following scopes are supported
 
@@ -224,23 +340,58 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<tr><th>Scope</th><th>Description</th></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> Read access to all Practitioner resources. <br /> Gender, birthDate and ethnicity are not disclosed. </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> Search access to Practitioner resources. <br /> Gender, birthDate and  ethnicity are not disclosed. <br /> Practitioners tagged as confidential are excluded from the results. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> Write access to all Practitioner resources. <br /> Allows user to create and update practitioner records. </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> Admin access to all Practitioner resources. <br /> Allows access to confidential data, gender, birthDate and ethnicity. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> Read access to all Location resources.  </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td>Search access to all Location resources  </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> Write access to all Location resources. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> Admin access to all Location resources.</td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> Read access to all Organization resources. </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> Search access to all Organization resources </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> Write access to all Organization resources. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> Admin access to all Organization resources.</td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> Read access to all Practitioner Role resources.</td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results. </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> Write access to all Practitioner Role resources.</td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> Admin access to all Practitioner Role resources. <br /> Allows access to confidential data.</td></tr>
+<tr><th> Version 1 Scopes </th><th> SMART on FHIR Scopes </th><th> Description </th></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.r </td><td> Read access to all Practitioner resources. <br /> Gender, birthDate and ethnicity are not disclosed </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.s </td><td> Search access to Practitioner resources <br /> Gender, birthDate and  ethnicity are not disclosed <br /> Practitioners tagged as confidential are excluded from the results </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.u <br /> https://api.hip.digital.health.nz/fhir/system/Practitioner.c </td><td> Write access to all Practitioner resources. <br /> Allows user to create and update practitioner records </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.a </td><td> Admin access to all Practitioner resources <br /> Allows access to confidential data, gender, birthDate and ethnicity <br /> Allows access to merge records </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> https://api.hip.digital.health.nz/fhir/system/Location.r </td><td> Read access to all Location resources  </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td> https://api.hip.digital.health.nz/fhir/system/Location.s </td><td>Search access to all Location resources  </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> https://api.hip.digital.health.nz/fhir/system/Location.u <br /> https://api.hip.digital.health.nz/fhir/system/Location.c </td><td> Write access to all Location resources </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> https://api.hip.digital.health.nz/fhir/system/Location.a </td><td> Admin access to all Location resources <br /> Allows access to merge and delete records </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.r </td><td> Read access to all Organization resources </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.s </td><td> Search access to all Organization resources </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.u <br /> https://api.hip.digital.health.nz/fhir/system/Organization.c </td><td> Write access to all Organization resources </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.a </td><td> Admin access to all Organization resources <br /> Allows access to merge and delete records </td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r </td><td> Read access to all Practitioner Role resources </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results </td></tr>
+<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u <br /> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c </td><td> Write access to all Practitioner Role resources.</td></tr>
+<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a </td><td> Admin access to all Practitioner Role resources <br /> Allows access to confidential data <br /> Allows access to merge records </td></tr>
 </table>
 
+#### API Keys and Usage Plans
 
+Clients will be emailed their API key, which should be treated as confidential information and not shared with other parties.
+
+An api-key associates the client with a usage plan, which sets upper limits on the API request volume which is permitted. If a client exceeds their usage plan allocation an http error will be returned.
+
+Clients will need to add there api key to the x-api-key header in each API request. If no API key is included in the request header, a “Forbidden” error will be returned
+
+<h3>Usage Plans</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th> Plan </th>
+<th> Rate </th>
+<th> Quota </th></tr>
+
+<tr><td> bronze </td>
+<td> 1 request per second </td>
+<td> 1,000 requests per month </td></tr>
+
+<tr><td> silver </td>
+<td> 5 requests per second </td>
+<td> 250,000 requests per day </td></tr>
+
+<tr><td> gold </td>
+<td> 10 requests per second </td>
+<td> 500,000 requests per day </td></tr>
+</table>
+
+All test accounts will be assigned to the bronze usage plan
+
+Production accounts will be assigned to the silver usage plan. If a client wished to be assigned to the gold usage plan, they should contact the integration team
