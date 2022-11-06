@@ -6,8 +6,8 @@ The update Practitioner operations allow an authorised user to update a health p
 
 * **update-core** - To update Provider name, birthdate and death-date
 * **update-personal-details** - To update Provider gender, ethnicity and languages
-* **update-educational-qualifications - To update a Providers education qualifications
-* **update-registration - To update a providers registration details (APC, scope of practice etc.)
+* **update-educational-qualifications** - To update a Providers education qualifications
+* **update-registration** - To update a providers registration details (APC, scope of practice etc.)
 
 ### update-core
 
