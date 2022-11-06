@@ -4,7 +4,7 @@
 
 The update Practitioner operations allow an authorised user to update a health providers details on the HPI. The operations are broken down into four custom update operations:
 
-* **update-core** - To update Provider name, birthdate and deceaseddate
+* **update-core** - To update Provider name, birthdate and death-date
 * **update-personal-details** - To update Provider gender, ethnicity and languages
 * **update-educational-qualifications - To update a Providers education qualifications
 * **update-registration - To update a providers registration details (APC, scope of practice etc.)
@@ -14,7 +14,7 @@ The update Practitioner operations allow an authorised user to update a health p
 * Allows an authorised user to update a Provider's core details
   * name
   * birthdate
-  * deceaseddate
+  * death-date
 
 <div>
 {% include update-practitioner-core.svg %}
@@ -109,9 +109,38 @@ set-address example request:
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
-* **Practitioner update-core rules**
+* Practitioner update rules
+  * A Practitioner update must include a valid hpi-person-id
+  * A Practitioner update must include the official hpi-person-id
+  * A Practitioner update must include the latest version-id for the practitioner record
+  * An RA must include an RA identifier and can only update records for their own Practitioners
 
-* _Practitioner update-core errors_
+* _Practitioner update errors_
+
+* **Practitioner update-core 'name' rules**
+  * All name rules in add request apply and,
+  * Cannot update a name with name use = old
+  * If a usual or official name is replaced the previous name/s will be returned as name use old
+  * Cannot add a name that has been deleted by Te Whatu Ora
+
+* _Practitioner update-core 'name' errors_
+
+
+* **Practitioner update-core 'birthdate' rules**
+  * All birthdate rules in add request apply and,
+  * An update will replace the current birthdate.
+
+* _Practitioner update-core 'birthdate' errors_
+ 
+
+* **Practitioner update-core 'death-date' rules**
+  * death-date must be a complete date and formatted YYYY-MM-DD
+  * death-date cannot be a future date
+  * death-date must be greater than birthdate
+  * An update will replace the current death-date.
+
+* _Practitioner update-core 'death-date' errors_
+
 
 
 ### update-personal-details
