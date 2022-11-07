@@ -1,11 +1,16 @@
-# Building the IG
+# Building the IG 
 
 
 
-| Current working branch | 0.10-snapshot |
-| ---------------------- | ------------ |
-| **latest release**     | -            |
+## Building with CodeBuild
+Log in to AWS as HipCoderRole and run the CodeBuild project hip-hpi-ig-build
+This should output the build logs and full-ig.zip to the S3 bucket
+`s3://nz-govt-moh-hip-build/hip-hpi-fhir-ig/hpi/`
+**Note** - the buildspec.yaml file mastered in this project is referenced by codebuild from the S3 bucket. If you change it, you need to copy it to the s3 bucket for the changes to take effect:
+`s3://nz-govt-moh-hip-build/hip-hpi-fhir-ig/buildspec.yml`
 
+
+## Building the IG Locally
 
 
 The HPI profiles are defined using the FSH (Fire Shorthand).  These are compiled into json [conformance modules](https://hl7.org/fhir/R4/conformance-module.html#:~:text=The%20Conformance%20Module%20represents%20metadata,used%20to%20create%20derived%20specifications.) (Structure Definitions, Value Sets , Code Sets and Capability Statements ...)  using sushi.  The Json files are used as input  to the IGPublisher tool which creates the static HTML files fort he IG web site
@@ -46,18 +51,18 @@ The HPI Profiles refer  to the HL7 NZ base profile. Currently this has to be ins
 
 3. . You may need to add a package.json file {
 
-   	"name": "hl7.org.nz.fhir.ig.base",
-   	"version": "0.9.0",
-   	"canonical": "http://build.fhir.org/ig/HL7NZ/nzbase/branches/master",
-   	"title": "HL7 FHIR New Zealand Base Implementation Guide",
-   	"description": "temp",
-   	"dependencies": {
-   		"hl7.fhir.core": "4.0.1"
-   	},
-   	"author": "HL7 NZ"
-   }
+    "name": "hl7.org.nz.fhir.ig.base",
+    	"version": "0.9.0",
+    	"canonical": "http://build.fhir.org/ig/HL7NZ/nzbase/branches/master",
+    	"title": "HL7 FHIR New Zealand Base Implementation Guide",
+    	"description": "temp",
+    	"dependencies": {
+    		"hl7.fhir.core": "4.0.1"
+    	},
+    	"author": "HL7 NZ"
+       }
 
-## Build Instructions
+### Build Instructions
 
 1. run sushi - from a bash shell (use GitBash if on windows) , from your project root directory, run
    `./runSushi.sh`
@@ -73,8 +78,12 @@ The HPI Profiles refer  to the HL7 NZ base profile. Currently this has to be ins
 
 
 
-How to Publish
-----------------
+#  Deploying the IG
+Check in your changes including the new full-ig.zip to github. Amplify will autobuild on commit 
+
+
+## Initial Setup of Amplify
+
 1. Run the CFN template `/hip-build-env-infra/04.hpi/8-create-hpi-ig-amplify.yaml`l in the environment you wish to publish to,
 2. Configure the template parameters - you will typically only change the release branch either
 
