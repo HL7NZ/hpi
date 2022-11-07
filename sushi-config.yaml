@@ -7,7 +7,7 @@
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
 #canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
-version: 1.1.0
+version: 1.1.12-SNAPSHOT
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
@@ -26,7 +26,7 @@ dependencies:
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
-     uri: 'http://fhir.org.nz/ig/base'
+     uri: 'http://build.fhir.org/ig/HL7NZ/nzbase/branches/master'
      version: dev
     
 

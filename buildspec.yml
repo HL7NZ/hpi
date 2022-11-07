@@ -34,20 +34,22 @@ phases:
   build:
     commands:
       - ls 
-      - rm -r hpi 
+      
       - git clone https://pat-ryan-health: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@github.com/HL7NZ/hpi     
-      - cd nhi
+      - cd hpi
       - git checkout $BRANCH
       - ls
       - echo getting depenencdies
       #- mvn package -ntp
-      - mvn package
+      # get hip-fhir-common package
+      - mvn validate
       - echo building IG
       - ls -l
       - ls -l ./hfc_package
       - sudo chmod +x ./build-ig-cicd.sh     
       - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
-
+      # deploy the hpi conformance artefacts
+      - mvn deploy
      
       
 artifacts:
