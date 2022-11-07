@@ -46,7 +46,7 @@
 					<execution>
 						<id>unpack-hpicm</id>
 						<phase>
-							generate-sources
+							validate
 						</phase>
 						<goals>
 							<goal>unpack-dependencies</goal>
