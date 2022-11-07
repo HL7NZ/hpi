@@ -14,7 +14,7 @@ Id:             HpiLocation
 Title:          "HPI Location"
 Description:    "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility."
 
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+//* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
 
 //elements that have been removed

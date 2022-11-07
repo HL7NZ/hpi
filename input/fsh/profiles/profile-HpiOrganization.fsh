@@ -9,7 +9,7 @@ Id:             HpiOrganization
 Title:          "HPI Organization"
 Description:    "An entity that provides services of interest to, or is involved in, the business of health care service provision."
 
-* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
+//* ^jurisdiction.coding = urn:iso:std:iso:3166#NZ
 * ^url = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 
 * ^purpose = "Describe the Organization that will be returned by the HPI"
