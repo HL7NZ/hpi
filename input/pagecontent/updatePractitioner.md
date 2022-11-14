@@ -41,17 +41,21 @@ table, th, td {
 <th> Mandatory / Optional </th>
 <th> Description </th></tr>
 
-<tr><td> identifier </td>
-<td> * Mandatory for an RA update </td>
-<td> The RA identifier </td></tr>
+<tr><td> cpn </td>
+<td> * Mandatory </td>
+<td> The hpi-person-id (cpn) </td></tr>
 
 <tr><td> version-id </td>
 <td> Mandatory </td>
 <td> The current Practitioner record version number </td></tr>
+ 
+<tr><td> ra-identifier </td>
+<td> * Mandatory for an RA update </td>
+<td> The RA identifier </td></tr>
 
 <tr><td> name </td>
 <td> Optional </td>
-<td> Must provide all if updating (use, prefix, given, family) </td></tr>
+<td> An update replaces the full set of name attributes (use, prefix, given, family) </td></tr>
 
 <tr><td> death-date </td>
 <td> Optional </td>
@@ -74,11 +78,14 @@ set-address example request:
 "resourceType":"Parameters",
   "parameter":[
     {
+      "name":"cpn",
+      "valueString":"99ZZRT"
+    },    {
       "name":"version-id",
-      "valueInteger":29450
+      "valueString":"29450"
     },
     {
-      "name":"identifier",
+      "name":"ra-identifier",
       "valueString":"998877"
     },
     {
