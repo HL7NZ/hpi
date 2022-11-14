@@ -12,7 +12,7 @@ participant "HPI MDM" as C #CornflowerBlue
 User -> A: Provide core details to be updated
 activate A
 |||
-A -> B: POST<Endpoint>/Provider/$update-core
+A -> B: POST<Endpoint>/Practitioner/$update-core
 activate B
 |||
 B -> B: Validate[]
