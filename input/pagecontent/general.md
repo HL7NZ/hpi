@@ -194,7 +194,7 @@ Contained resources are where the referenced (target) resource is contained with
 
 When a resource contains a reference to another resource, the HPI server will not normally render the references as a contained resource, only the reference links themselves will be included in responses. The exception is PractitionerRole, here the server may return contained resources if requested to. This is an example of a request made for the referenced resources to be included
 
-Get\<Endpoint>/PractitionerRole?identifier=https://standards.digital.health.nz/ns/hpi-practitionerrole-id\|R00000297&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
+GET\<Endpoint>/PractitionerRole?practitioner=99ZZZZ&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
 ### Request Rules and Errors
 
