@@ -262,24 +262,24 @@ table, th, td {
 }
 </style>
 <tr><th> HTTP Header (Key) </th>
-<th>HTTP Header (Value)</th>
-<th>Description</th>
-<th>Mandatory / Recommended / Optional</th></tr>
+<th> HTTP Header (Value) </th>
+<th> Description </th>
+<th> Mandatory / Recommended / Optional </th></tr>
 
 <tr><td> Authorization </td>
-<td> Bearer <_string_> </td>
+<td> Bearer {string} </td>
 <td> The OAuth2 access token </td>
 <td> Mandatory </td></tr>
 
 <tr><td> userid </td>
-<td> Bearer <_string_> </td>
+<td> Bearer {string} </td>
 <td> Client provided <br />
 All requests for all resources must include an http header userid that uniquely identifies the individual initiating the request <br />
 Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
 <td>Mandatory</td></tr>
 
 <tr><td> X-Correlation-Id </td>
-<td> <_string_> </td>
+<td> {string} </td>
 <td> Client provided <br />
 All requests should contain a unique transaction id in the X-Correlation-Id field <br />
 If present in the request this will be returned in the response, and can be used to track API calls <br />
@@ -292,7 +292,7 @@ Preferred less than 64 characters <br /> </td>
 <td> Mandatory </td></tr>
 
 <tr><td> x-api-key </td>
-<td> <_string_> </td>
+<td> {string} </td>
 <td> Te Whatu Ora Provided – issued with client credentials </td>
 <td> Mandatory </td></tr>
 </table>
@@ -310,15 +310,15 @@ table, th, td {
 <th> Description </th></tr>
 
 <tr><td> X-Correlation-Id </td>
-<td> <_string_> </td>
+<td> {string} </td>
 <td> Returned if provided </td></tr>
 
 <tr><td> X-request-Id </td>
-<td> <_string_> </td>
+<td> {string} </td>
 <td> Unique identifier for the request within the NHI </td></tr>
 
 <tr><td> ETag </td>
-<td> <_string_> </td>
+<td> {string} </td>
 <td> The resource version number, returned on a Get </td></tr>
 </table>
 
