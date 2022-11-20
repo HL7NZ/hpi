@@ -295,6 +295,11 @@ Preferred less than 64 characters <br /> </td>
 <td> {string} </td>
 <td> Te Whatu Ora Provided – issued with client credentials </td>
 <td> Mandatory </td></tr>
+
+<tr><td> if-Match </td>
+<td> {integer} </td>
+<td> The version-id of the record to be updated </td>
+<td> * Mandatory - PracRole update only * </td></tr>
 </table>
 
 <h3>Response Headers</h3>
