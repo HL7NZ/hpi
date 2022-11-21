@@ -67,7 +67,7 @@ table, th, td {
 </table>
 
 * Behaviour:
-  * The HPI is validated
+  * The hpi-person-id (cpn) is validated
   * The Practitioner version-id is validated
   * The parameters are validated
 
