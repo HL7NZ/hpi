@@ -21,7 +21,7 @@ fhirVersion: 4.0.1
 dependencies:
 
   hl7.org.nz.fhir.ig.hip-core:
-     uri: 'https://nzhts.digital.health.nz/ig/hip-common-terminology'
+     uri: https://common-ig-v1-1-0.hip.digital.health.nz/site
      version: dev
      
   # there is a dependency on NZBase to get the extensions defined in there  
