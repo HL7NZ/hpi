@@ -71,7 +71,7 @@ table, th, td {
   * The Practitioner version-id is validated
   * The parameters are validated
 
-* set-address example request:
+* update-core example request:
 
 ```  
 {
