@@ -63,18 +63,10 @@ sudo chmod +x ./localscripts/*.js
 echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
 
-echo copying custom content to template  
-sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
-cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
-
-cd ./openapi
-validate.sh
-
-echo copying HpiFhirOpenApi.yaml into template content so it can be accesses from menu
-#zip it first so we can download it
-7z a ./HpiFhirOpenApi.zip ./HpiFhirOpenApi.yaml
-cp ./HpiFhirOpenApi.zip ~/.fhir/packages/fhir.base.template#current/package/content
-cd ..
+#to do find a way to get add custom content - the follwoign doesnt work, oti seem the template does not get downloaded by iG publisher if the directroy exists?
+#echo copying custom content to template  
+#sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
+#cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
 
 echo running ig publisher
 java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi
