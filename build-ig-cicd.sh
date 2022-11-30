@@ -58,8 +58,12 @@ echo running sushi ...
 sushi -o .
 
 echo running local scripts
-sudo chmod +x ./localscripts/makeTerminologySummary.js
+sudo chmod +x ./localscripts/*.js
 ./localscripts/makeTerminologySummary.js
+echo "Making API summary"
+./localscripts/makeCapabilityStatement.js hpi
+echo
+
 pwd
 
 echo running ig publisher
