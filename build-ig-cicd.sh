@@ -65,7 +65,7 @@ echo "Making API summary"
 echo
 
 pwd
-cp ./input/template/* $HOME/.fhir/packages/fhir.base.template#current/package/content
+cp ./template/* $HOME/.fhir/packages/fhir.base.template#current/package/content
 echo running ig publisher
 java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi
 
