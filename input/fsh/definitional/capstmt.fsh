@@ -48,14 +48,14 @@ Practitioner query
 * rest.resource.interaction[1].code = #search-type
 * rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)."
 
-/* not in the fisrt release
 * rest.resource.interaction[2].code = #create
 * rest.resource.interaction[2].documentation = ""
 
+/*
 * rest.resource.interaction[3].code = #update
 * rest.resource.interaction[3].documentation = ""
-
 */
+
 
 //identifier 
 * rest.resource.searchParam[0].name = "identifier"
@@ -88,6 +88,12 @@ Practitioner query
 * rest.resource.searchParam[4].documentation = "This is a custom search. It queries on the identifier supplied by the Registration Authority (Practitioner.qualification.identifier)"
 */
 /* #endregion */
+
+
+* rest.resource.operation[1].name = "update-core"
+* rest.resource.operation[1].definition = "https:/hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
+* rest.resource.operation[1].documentation = "an operation that updates a health providers name, birthdate, death-date" 
+
 
 // ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
