@@ -49,7 +49,7 @@ Practitioner query
 * rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)."
 
 * rest.resource.interaction[2].code = #create
-* rest.resource.interaction[2].documentation = ""
+* rest.resource.interaction[2].documentation = "creates a new Practitioner record"
 
 /*
 * rest.resource.interaction[3].code = #update
