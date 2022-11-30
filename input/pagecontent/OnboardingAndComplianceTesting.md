@@ -168,7 +168,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-3</td>
 <td>System behaves appropriately when the name search criteria better matches an alias than the name</td>
-<td>Search for ‘TryNSave Pharmacy’</td>
+<td>Search for ‘TryNSave’</td>
 <td>System allows user to view aliases before selecting a result <br /> Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G</td>
 <td>mandatory</td>
 </tr>
@@ -256,7 +256,7 @@ table, th, td {
 
 <tr><td>HPI-L-Search-3</td>
 <td>System behaves appropriately when the name search criteria better matches an alias than the name</td>
-<td>Name = “Pukekohe Diamond Doctors”</td>
+<td>Name = “Red Diamond Pukekohe”</td>
 <td>System allows user to view aliases before selecting a result <br /> Name= Pukekohe Diamond Doctors <br /> Alias= Pukekohe Diamond Doctors <br /> HPI = F=FZZ857-D</td>
 <td>mandatory</td></tr>
 </table>
