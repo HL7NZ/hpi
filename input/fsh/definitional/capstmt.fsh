@@ -90,9 +90,9 @@ Practitioner query
 /* #endregion */
 
 
-* rest.resource.operation[1].name = "update-core"
-* rest.resource.operation[1].definition = "https:/hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
-* rest.resource.operation[1].documentation = "an operation that updates a health providers name, birthdate, death-date" 
+* rest.resource.operation[0].name = "update-core"
+* rest.resource.operation[0].definition = "https:/hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
+* rest.resource.operation[0].documentation = "an operation that updates a health providers name, birthdate, death-date" 
 
 
 // ============== The PractitionerRole endpoint =============
