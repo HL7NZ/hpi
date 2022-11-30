@@ -32,7 +32,7 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 6. Complete your development and testing.
 7. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 8. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
-9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers
+9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or [click here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers)
 
 
 ### Compliance testing
