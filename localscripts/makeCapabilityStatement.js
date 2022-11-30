@@ -83,6 +83,23 @@ if (fs.existsSync(rootPath)) {
                         ar.push("</table>")
                     }
                     
+                    if (res.operation) {
+                        ar.push("<strong>Operations</strong>")
+                        ar.push("<table class='table table-bordered table-condensed'>")
+                        ar.push("<tr><th width='30%'>Name</th><th width='30%'>Definition</th><th width='40%'>Documentation</th></tr>")
+                        res.operation.forEach(function(int){
+                            ar.push("<tr>")
+                            ar.push(`<td>${int.name}</td>`)
+                            ar.push(`<td><a href ="${int.name}.xml"> ${int.definition} </a></td>`)
+                            let documentation = cleanText(int.documentation) || hashInteraction[int.name]                          
+                            ar.push(`<td>${documentation}</td>`)
+                            
+                            ar.push("</tr>")
+    
+                        })
+                        ar.push("</table>")
+                    }
+                    
                     if (res.searchParam) {
                         ar.push("<strong>Search Parameters</strong>")
                         ar.push("<table class='table table-bordered table-condensed'>")
@@ -156,10 +173,10 @@ if (fs.existsSync(rootPath)) {
     })
 
 }
-
+/*
 ar.push("<h3>Contained Resources</h3>") 
 ar.push("<p>When a resource contains a reference to another resource, the  HPI server will not render the reference as a contained resource,  only the reference links themselves will be included in responses.</p>")
-
+*/
 ar.push("</div>")
 
 

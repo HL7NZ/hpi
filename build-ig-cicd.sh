@@ -58,12 +58,20 @@ echo running sushi ...
 sushi -o .
 
 echo running local scripts
-sudo chmod +x ./localscripts/makeTerminologySummary.js
+sudo chmod +x ./localscripts/*.js
 ./localscripts/makeTerminologySummary.js
-pwd
+echo "Making API summary"
+./localscripts/makeCapabilityStatement.js hpi
+
+#to do find a way to get add custom content - the follwoign doesnt work, oti seem the template does not get downloaded by iG publisher if the directroy exists?
+#echo copying custom content to template  
+#sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
+#cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
 
 echo running ig publisher
 java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi
+
+
 
 sudo chmod +x ./fhirValidate.sh
 ./fhirValidate.sh
