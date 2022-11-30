@@ -62,12 +62,24 @@ sudo chmod +x ./localscripts/*.js
 ./localscripts/makeTerminologySummary.js
 echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
-echo
 
-pwd
-cp ./template/* $HOME/.fhir/packages/fhir.base.template#current/package/content
+echo copying custom content to template  
+sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
+cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
+
+cd ./openapi
+validate.sh
+
+echo copying HpiFhirOpenApi.yaml into template content so it can be accesses from menu
+#zip it first so we can download it
+7z a ./HpiFhirOpenApi.zip ./HpiFhirOpenApi.yaml
+cp ./HpiFhirOpenApi.zip ~/.fhir/packages/fhir.base.template#current/package/content
+cd ..
+
 echo running ig publisher
 java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi
+
+
 
 sudo chmod +x ./fhirValidate.sh
 ./fhirValidate.sh
