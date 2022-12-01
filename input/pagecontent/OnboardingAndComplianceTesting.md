@@ -359,7 +359,7 @@ table, th, td {
 <tr><td>HPI-P-Search-2</td>
 <td>Minimum search criteria are included</td>
 <td>Name = Walter O’Reilly <br /> Name = Brian Hunnicutt</td>
-<td>A name and date of birth are provided in the request</td>
+<td>A name is provided in the request</td>
 <td>optional</td></tr>
 
 <tr><td>HPI-P-Search-3</td>
