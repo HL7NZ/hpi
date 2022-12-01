@@ -90,7 +90,7 @@ if (fs.existsSync(rootPath)) {
                         res.operation.forEach(function(int){
                             ar.push("<tr>")
                             ar.push(`<td>${int.name}</td>`)
-                            ar.push(`<td><a href ="${int.name}.xml"> ${int.definition} </a></td>`)
+                            ar.push(`<td><a href ="${int.name}.html"> ${int.definition} </a></td>`)
                             let documentation = cleanText(int.documentation) || hashInteraction[int.name]                          
                             ar.push(`<td>${documentation}</td>`)
                             
