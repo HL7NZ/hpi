@@ -33,7 +33,7 @@ dependencies:
      
 parameters:
   show-inherited-invariants: false
-  path-binary: ./extra
+  path-binary: .input//extra
 copyrightYear: 2020+
 releaseLabel: Release
 
