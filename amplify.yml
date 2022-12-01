@@ -8,7 +8,7 @@ frontend:
         - cd ig
         - unzip ../output/full-ig.zip
         - cp ../output/full-ig.zip ./site/full-ig.zip
-        - cp ../input/extra/HpiFhirOpenApi.zip ./site/HpiFhirOpenApi.zip
+        - cp ../input/extra/* ./site
         - ls 
         - ls ./site
   artifacts:
