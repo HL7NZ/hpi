@@ -68,8 +68,6 @@ You can include either markdown and XML files - the IG Publisher is quite picky 
 the xml versions. I usually use MD - keeping xml for generated files that use a table.
 
 
- 
-
 
 ### scriptCopy
 
