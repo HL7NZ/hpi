@@ -168,8 +168,8 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-3</td>
 <td>System behaves appropriately when the name search criteria better matches an alias than the name</td>
-<td>Search for ‘TryNSave’</td>
-<td>System allows user to view aliases before selecting a result <br /> Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G</td>
+<td>Search for ‘Discount Pharmaceuticals Limited’</td>
+<td>System allows user to view aliases before selecting a result <br /> Name= TryNSave Discount Pharmacy <br /> Alias= Discount Pharmaceuticals Limited <br /> HPI-O= GZZ869-G</td>
 <td>mandatory</td>
 </tr>
 
@@ -363,10 +363,23 @@ table, th, td {
 <td>optional</td></tr>
 
 <tr><td>HPI-P-Search-3</td>
+<td>Other search criteria are included</td>
+<td>Name = Walter O’Reilly <br />
+Birthdate = 1943-05-24 <br />
+Gender = male <br />
+Name = Brian Hunnicutt
+Birthdate = 1939-02-06 <br />
+Gender = male</td>
+<td>Name, gender and birthdate can be provided in the request</td>
+<td>optional</td></tr>
+
+<tr><td>HPI-P-Search-4</td>
 <td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
 <td>Results presented in order provided</td>
 <td>mandatory</td></tr>
+
+
 </table>
 
 *NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application
