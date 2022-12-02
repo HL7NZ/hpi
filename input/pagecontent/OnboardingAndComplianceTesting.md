@@ -367,7 +367,7 @@ table, th, td {
 <td>Name = Walter O’Reilly <br />
 Birthdate = 1943-05-24 <br />
 Gender = male <br />
-Name = Brian Hunnicutt
+Name = Brian Hunnicutt <br />
 Birthdate = 1939-02-06 <br />
 Gender = male</td>
 <td>Name, gender and birthdate can be provided in the request</td>
@@ -378,8 +378,6 @@ Gender = male</td>
 <td>Use search results from above</td>
 <td>Results presented in order provided</td>
 <td>mandatory</td></tr>
-
-
 </table>
 
 *NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application
