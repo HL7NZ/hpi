@@ -42,14 +42,14 @@ Practitioner query
 //read by id
 * rest.resource.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner" 
 * rest.resource.interaction.code = #read
-* rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id."
+* rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id  HTTP Request: 'GET'  Scope required: practitioner:read / Practitioner.r"
 
 //search by various parameters
 * rest.resource.interaction[1].code = #search-type
-* rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)."
+* rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)  HTTP Request: 'GET'  Scope required: practitioner:search / Practitioner.s"
 
 * rest.resource.interaction[2].code = #create
-* rest.resource.interaction[2].documentation = "creates a new Practitioner record"
+* rest.resource.interaction[2].documentation = "Creates a new Practitioner record  HTTP Request 'POST'  Scope required: practitioner:write / Practitioner.c"
 
 /*
 * rest.resource.interaction[3].code = #update
@@ -66,9 +66,6 @@ Practitioner query
 * rest.resource.searchParam[1].name = "name"
 * rest.resource.searchParam[1].type = #string
 * rest.resource.searchParam[1].documentation = "Should contain the person’s full name, include all given names and family name."
-
-
-
 
 //gender 
 * rest.resource.searchParam[2].name = "gender"
@@ -92,7 +89,7 @@ Practitioner query
 
 * rest.resource.operation[0].name = "update-core"
 * rest.resource.operation[0].definition = "https:/hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
-* rest.resource.operation[0].documentation = "an operation that updates a health providers name, birthdate, death-date" 
+* rest.resource.operation[0].documentation = "An operation that updates a health providers name, birthdate, death-date  HTTP Request 'POST'  Scope required: practitioner:write / Practitioner.u"
 
 
 // ============== The PractitionerRole endpoint =============
@@ -105,17 +102,17 @@ PractitionerRole query
 
 //read by id
 * rest.resource[1].interaction.code = #read
-* rest.resource[1].interaction.documentation = "Used to retrieve a PractitionerRole resource by Id."
+* rest.resource[1].interaction.documentation = "Used to retrieve a PractitionerRole resource by Id.  HTTP Request 'GET'  Scope required: pracrole:read / PractitionerRole.r"
 
 //search by various parameters
 * rest.resource[1].interaction[1].code = #search-type
-* rest.resource[1].interaction[1].documentation = "Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources)."
+* rest.resource[1].interaction[1].documentation = "Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources)  HTTP Request 'GET'  Scope required: pracrole:search / PractitionerRole.s"
 
 * rest.resource[1].interaction[2].code = #create
-* rest.resource[1].interaction[2].documentation = "Create a new PractitionerRole"
+* rest.resource[1].interaction[2].documentation = "Create a new PractitionerRole  HTTP Request 'POST'  Scope required: pracrole:create / PractitionerRole.c"
 
 * rest.resource[1].interaction[3].code = #update
-* rest.resource[1].interaction[3].documentation = "Update contact details and end date on an existing PractitionerRole record."
+* rest.resource[1].interaction[3].documentation = "Update contact details and end date on an existing PractitionerRole record.  HTTP Request 'PUT'  Scope required: pracrole:write / PractitionerRole.u"
 
 
 
@@ -157,11 +154,11 @@ Organization query
 
 //read by id
 * rest.resource[2].interaction[0].code = #read
-* rest.resource[2].interaction[0].documentation = "Used to retrieve an Organization resource by Id."
+* rest.resource[2].interaction[0].documentation = "Used to retrieve an Organization resource by Id.  HTTP Request 'GET'  Scope required: organization:read / Organization.r"
 
 //search by various parameters
 * rest.resource[2].interaction[1].code = #search-type
-* rest.resource[2].interaction[1].documentation = "Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources)."
+* rest.resource[2].interaction[1].documentation = "Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources).  HTTP Request 'GET'  Scope required: organization:search / Organization.s"
 
 * rest.resource[2].searchParam[0].name = "active"
 * rest.resource[2].searchParam[0].type = #token
@@ -197,11 +194,11 @@ Location query
 
 //read by id
 * rest.resource[3].interaction[0].code = #read
-* rest.resource[3].interaction[0].documentation = "Used to retrieve an Location resource by Id."
+* rest.resource[3].interaction[0].documentation = "Used to retrieve an Location resource by Id.  HTTP Request 'GET'  Scope required: location:read / Location.r"
 
 //search by various parameters
 * rest.resource[3].interaction[1].code = #search-type
-* rest.resource[3].interaction[1].documentation = "Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources)."
+* rest.resource[3].interaction[1].documentation = "Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources).  HTTP Request 'GET'  Scope required: location:search / Location.s"
 
 
 //todo - add read interaction
