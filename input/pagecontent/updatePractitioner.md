@@ -2,16 +2,16 @@
 
 ### Update Practitioner Overview
 
-The update Practitioner operations allow an authorised user to update a health providers details on the HPI. The operations are broken down into four custom update operations:
+The update Practitioner operations allow an authorised user to update a person's details on the HPI. The operations are broken down into four custom update operations:
 
-* **Update-core** - To update Provider name, birthdate and death-date
-* **Update-personal-details** - To update Provider gender, ethnicity and languages
-* **Update-educational-qualifications** - To update a Providers education qualifications
-* **Update-registration** - To update a providers registration details (APC, scope of practice etc.)
+* **Update-core** - To update name, birthdate and death-date
+* **Update-personal-details** - To update gender, ethnicity and languages
+* **Update-educational-qualifications** - To update educational qualifications
+* **Update-registration** - To update registration details (APC, scope of practice etc.)
 
 ### Update-core
 
-* Allows an authorised user to update a Provider's core details
+* Allows an authorised user to update a person's core details
   * name
   * birthdate
   * death-date
@@ -22,12 +22,12 @@ The update Practitioner operations allow an authorised user to update a health p
 
 **Update-core processing steps:**
 
-1. The user provides updated Provider core details
+1. The user provides updated core details
 2. The integrating application sends an HTTP Post request using the $update-core operation to the HPI E.g. Post<Endpoint>/Patient/$update-core
 3. The request is validated - ALT: Validation failure. Operation Outcome resource returned
-4. The Providers core details are updated
-5. The updated Provider record is returned with an HTTP 200 ok response
-6. The integrating application displays the updated Provider details to the user
+4. The core details are updated
+5. The updated record is returned with an HTTP 200 ok response
+6. The integrating application displays the updated details to the user
 
 <h3>In Parameters</h3>
 <table>
