@@ -59,11 +59,11 @@ table, th, td {
 
 <tr><td> death-date </td>
 <td> Optional </td>
-<td> The Providers date of death, can only be set by an admin user </td></tr>
+<td> The date of death, can only be set by an admin user </td></tr>
 
 <tr><td> birth-date </td>
 <td> Optional </td>
-<td> The Providers birthdate, can only be set by an admin user </td></tr>
+<td> The birthdate, can only be set by an admin user </td></tr>
 </table>
 
 * Behaviour:
@@ -112,7 +112,7 @@ table, th, td {
 ```
 
 
-#### Update-core Rules and errors
+#### Update-core Rules and Errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
@@ -120,13 +120,13 @@ table, th, td {
   * A Practitioner update must include a valid hpi-person-id
   * A Practitioner update must include the official hpi-person-id
   * A Practitioner update must include the latest version-id for the practitioner record
-  * An RA must include an RA identifier and can only update records for their own Practitioners
+  * An RA must include their RA identifier and can only update records for their own Practitioners
 
 * _Practitioner update errors_
 
 * **Practitioner update-core 'name' rules**
-  * All name rules in add request apply and,
-  * Cannot update a name with name use = old
+  * All name rules in [add request apply](/addPractitioner.html#add-practitioner-rules-and-errors) and,
+  * Cannot update a name to name use = old
   * If a usual or official name is replaced the previous name/s will be returned as name use old
   * Cannot add a name that has been deleted by Te Whatu Ora
 
@@ -152,16 +152,16 @@ table, th, td {
 
 ### Update-personal-details
 
-* Allows an authorised user to update a Provider's personal details
+* Allows an authorised user to update personal details
   * gender
   * ethnicity
   * languages
 
 ### Update-educational-qualifications
 
-* Allows an authorised user to update a Provider's educational qualifications
+* Allows an authorised user to update educational qualifications
 
 
 ### Update-registration
 
-* Allows an authorised user to update a Provider's registration details (APC, scope of practice etc.)
+* Allows an authorised user to update registration details (APC, scope of practice etc.)
