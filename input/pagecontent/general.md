@@ -382,21 +382,27 @@ table, th, td {
 </style>
 <tr><th> Plan </th>
 <th> Rate </th>
+<th> Burst </th>
 <th> Quota </th></tr>
 
 <tr><td> bronze </td>
 <td> 1 request per second </td>
-<td> 1,000 requests per month </td></tr>
+<td> 5 </td>
+<td> 10,000 requests per day </td></tr>
 
 <tr><td> silver </td>
 <td> 5 requests per second </td>
+<td> 25 </td>
 <td> 250,000 requests per day </td></tr>
 
 <tr><td> gold </td>
 <td> 10 requests per second </td>
+<td> 50 </td>
 <td> 500,000 requests per day </td></tr>
 </table>
 
 All test accounts will be assigned to the bronze usage plan
 
-Production accounts will be assigned to the silver usage plan. If a client wished to be assigned to the gold usage plan, they should contact the integration team
+Production accounts will be assigned to the silver usage plan. If an Organisation wished to be assigned to the gold usage plan, they should contact the Te Whatu Ora [HPI access team](HI_Provider@health.govt.nz)
+
+If an application reaches its usage plan limit an HTTP 429 error will be returned. The expected behaviour is that the application will retry several times with an exponentially increasing delay
