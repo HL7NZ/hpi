@@ -1,6 +1,90 @@
+Instance: 91ZABY
+InstanceOf: Practitioner
+Description: "Example HPI Practitioner with one registration"
+Usage: #example
+* meta.versionId = "10952"
+* meta.lastUpdated = "2022-12-20T09:27:27.000+13:00"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+* meta.security = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#L
+* extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
+* extension[=].valueCodeableConcept.coding.version = "2.0"
+* extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
+* extension[=].valueCodeableConcept.text = "New Zealand European"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
+* extension[=].extension[0].url = "fullname"
+* extension[=].extension[=].valueString = "Bachelor of Occupational Therapy"
+* extension[=].extension[+].url = "year"
+* extension[=].extension[=].valueDate = "2009"
+* extension[=].extension[+].url = "institution"
+* extension[=].extension[=].valueString = "Wintec"
+* extension[=].extension[+].url = "city"
+* extension[=].extension[=].valueString = "HAMILTON"
+* extension[=].extension[+].url = "country"
+* extension[=].extension[=].valueString = "NZ"
+* extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
+* extension[=].extension[0].url = "fullname"
+* extension[=].extension[=].valueString = "Master of Occupational Therapy"
+* extension[=].extension[+].url = "year"
+* extension[=].extension[=].valueDate = "2019"
+* extension[=].extension[+].url = "institution"
+* extension[=].extension[=].valueString = "Otago Polytechnic"
+* extension[=].extension[+].url = "city"
+* extension[=].extension[=].valueString = "DUNEDIN"
+* extension[=].extension[+].url = "country"
+* extension[=].extension[=].valueString = "NZ"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier[=].value = "91ZABY"
+* identifier[=].assigner = Reference(Organization/G00001-G)
+* identifier[+].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/occupational-therapy-board-id"
+* identifier[=].value = "96-20154"
+* identifier[=].assigner = Reference(Organization/G00000-E)
+* name.use = #official
+* name.family = "Rhode"
+* name.given[0] = "Lyndi"
+* name.given[+] = "Jane"
+* name.prefix = "ms"
+* gender = #female
+* birthDate = "1975-01-19"
+* qualification.extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-status-code"
+* qualification.extension[=].extension[0].url = "status"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "2.0"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-registration-status-code#current "A provider who holds or is deemed to hold a current practising certificate."
+* qualification.extension[=].extension[=].valueCodeableConcept.text = "A provider who holds or is deemed to hold a current practising certificate."
+* qualification.extension[=].extension[+].url = "period"
+* qualification.extension[=].extension[=].valuePeriod.start = "2009-02-01"
+* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
+* qualification.extension[=].extension[0].url = "code"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "1.0.0"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#OCCT "Occupational Therapist"
+* qualification.extension[=].extension[=].valueCodeableConcept.text = "Occupational Therapist"
+* qualification.extension[=].extension[+].url = "period"
+* qualification.extension[=].extension[=].valuePeriod.start = "2009-02-01"
+* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/condition-on-practice"
+* qualification.extension[=].extension[0].url = "description"
+* qualification.extension[=].extension[=].valueString = "Must complete annual eye test"
+* qualification.extension[=].extension[+].url = "period"
+* qualification.extension[=].extension[=].valuePeriod.start = "2019-09-19"
+* qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/registration-initial-date"
+* qualification.extension[=].valueDate = "2009-02-01"
+* qualification.identifier.use = #official
+* qualification.identifier.system = "https://standards.digital.health.nz/ns/occupational-therapy-board-id"
+* qualification.identifier.value = "96-20154"
+* qualification.identifier.assigner = Reference(Organization/G00000-E)
+* qualification.code.coding.version = "2.0"
+* qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#OT "Occupational Therapy Board Register"
+* qualification.code.text = "Occupational Therapy Board Register"
+* qualification.period.start = "2021-04-01"
+* qualification.period.end = "2122-03-31"
+* qualification.issuer = Reference(Organization/G00000-E)
+* communication.coding.version = "2007"
+* communication.coding = urn:iso:std:iso:639:-3#eng "English"
+* communication.text = "English"
+
 Instance: 98ZZQJ
 InstanceOf: Practitioner
-Description: "Example HPI Practitioner with two Registrations"
+Description: "Example HPI Practitioner with two registrations"
 Usage: #example
 * meta.versionId = "10594"
 * meta.lastUpdated = "2022-08-30T14:34:08.000+12:00"
@@ -131,21 +215,6 @@ Usage: #example
 * communication[=].text = "English"
 
 
-Instance: 90ZZLP
-InstanceOf: Practitioner
-Description: "Example HPI Practitioner with confidentiality R"
-Usage: #example
-* meta.versionId = "9971"
-* meta.lastUpdated = "2022-04-07T09:12:26.000+12:00"
-* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
-* meta.security[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#REDACTED
-* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
-* identifier.use = #official
-* identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
-* identifier.value = "90ZZLP"
-* identifier.assigner = Reference(Organization/G00001-G)
-
-
 Instance: 92ZZRE
 InstanceOf: Practitioner
 Description: "Example HPI Practitioner with No Registration 'NR'"
@@ -168,3 +237,18 @@ Usage: #example
 * communication.coding.version = "2007"
 * communication.coding = urn:iso:std:iso:639:-3#eng "English"
 * communication.text = "English"
+
+
+Instance: 90ZZLP
+InstanceOf: Practitioner
+Description: "Example HPI Practitioner with No Registration 'NR' with confidentiality R"
+Usage: #example
+* meta.versionId = "9971"
+* meta.lastUpdated = "2022-04-07T09:12:26.000+12:00"
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+* meta.security[0] = http://terminology.hl7.org/CodeSystem/v3-ObservationValue#REDACTED
+* meta.security[+] = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#R
+* identifier.use = #official
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier.value = "90ZZLP"
+* identifier.assigner = Reference(Organization/G00001-G)
