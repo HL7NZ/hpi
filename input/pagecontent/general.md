@@ -272,7 +272,7 @@ table, th, td {
 <td> Mandatory </td></tr>
 
 <tr><td> userid </td>
-<td> Bearer {string} </td>
+<td> {string} </td>
 <td> Client provided <br />
 All requests for all resources must include an http header userid that uniquely identifies the individual initiating the request <br />
 Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
