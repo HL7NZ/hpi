@@ -4,27 +4,27 @@
 
 #### Overview
 
-An ‘Add Practitioner’ operation is initiated by a user who needs to add a new practitioner record for a provider to the HPI.
+An ‘Add Practitioner’ operation is initiated by a user who needs to add a new practitioner record for to the HPI.
 
 **Expectations**
 
-* Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the provider does not already exist.
+* Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the person does not already exist.
 * Duplicate HPI records will not be checked upfront, but will create a task for a potential duplicate to be resolved.
-* If the provider is found in the HPI then an update operation is required. If not found then a new practitioner record may be added, see below.
+* If the person is found in the HPI then an update operation is required. If not found then an add practitioner opertion should be completed.
 
 <div>
 {% include add-practitioner.svg %}
 </div>
 
-Add new Practitioner processing steps:
+Add Practitioner processing steps:
 
 1. The user initiates creating a new Practitioner in the integrating application
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the Practitioner details E.g. Post\<Endpoint>/Practitioner
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
 4. A Practitioner record is created and a Practitioner ID issued (hpi-person-id)
-5. The HPI FHIR API confirms a successful Practitioner add – HTTP 201 Created status code
-6. The integrating application indicates to the user the create has been successful
-7. The integrating application retains the hpi-person-id and version number for future requests relating to this record
+5. The HPI FHIR API confirms a Practitioner record has been created – HTTP 201 Created status code
+6. The integrating application indicates to the user the record has been successfully created
+7. The integrating application retains the hpi-person-id and version-id for future requests relating to this record
 
 ### Add Practitioner Rules and errors
 
@@ -38,7 +38,6 @@ Add new Practitioner processing steps:
     * ethnicity
    * An add request made by an RA must include a unique RA source person identifier that does not already exist in HPI within the same source as that submitted
    * A request cannot create an HPI record which is a duplicate of another Practitioner record
-   * An add request cannot contain an RA identifier that already exists in the HPI
    * An add request may include:
       * educational qualifications
       * languages (communication) 
