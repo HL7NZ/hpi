@@ -196,19 +196,52 @@ When a resource contains a reference to another resource, the HPI server will no
 
 GET\<Endpoint>/PractitionerRole?practitioner=99ZZZZ&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
-### Request Rules and Errors
 
-* **Request rules**
-  * Every request must include an:
-    * http header item UserId that uniquely identifies the individual initiating the request.
-    * OAuth 2 access token
-    * An api-key
-  * Each user must have an individual userID
+### Errors
 
-* _Request errors_
-  * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
-  * _"Unauthorized"  (HTTP 401)_
-   * _Forbidden, HTTP403_
+#### HTTP Error response codes
+
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th> Status code </th>
+<th> Description </th></tr>
+
+<tr><td> 400 </td>
+<td> Bad Request </td></tr>
+
+<tr><td> 401 </td>
+<td> The client needs to provide credentials, or has provided invalid credentials. </td></tr>
+
+<tr><td> 403 </td>
+<td> Authentication was provided, but the authenticated user is not permitted to perform the requested operation. </td></tr>
+
+<tr><td> 404 </td>
+<td> Resource not found </td></tr>
+
+<tr><td> 405 </td>
+<td> HTTP method not allowed </td></tr>
+
+<tr><td> 409 </td>
+<td> Resource conflict, the version provided for the resource is not the current version </td></tr>
+
+<tr><td> 413 </td>
+<td> The request body was too big for the server to accept </td></tr>
+
+<tr><td> 422 </td>
+<td> Unprocessable Entity, resource was rejected by the server because it “violated applicable FHIR profiles or server business rules” </td></tr>
+
+<tr><td> 500 </td>
+<td> General system failure </td></tr>
+
+<tr><td> 429 </td>
+<td> Exceeded quota </td></tr>
+</table>
+
 
 #### Error Format
 
@@ -248,6 +281,22 @@ But not all errors have been converted or assigned error codes, the unconverted 
   }
 
 ```
+
+
+### Request Rules and Errors
+
+* **Request rules**
+  * Every request must include an:
+    * http header item UserId that uniquely identifies the individual initiating the request.
+    * OAuth 2 access token
+    * An api-key
+  * Each user must have an individual userID
+
+* _Request errors_
+  * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
+  * _"Unauthorized"  (HTTP 401)_
+   * _Forbidden, HTTP403_
+
 
 ### HTTP Header Details
 
