@@ -35,7 +35,7 @@ phases:
     commands:
       - ls 
       
-      - git clone https://pat-ryan-health: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@github.com/HL7NZ/hpi     
+      - git clone https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi     
       - cd hpi
       - git checkout $BRANCH
       - ls
