@@ -26,7 +26,8 @@ dependencies:
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
-     uri: 'http://build.fhir.org/ig/HL7NZ/nzbase/branches/master'
+     #uri: 'http://build.fhir.org/ig/HL7NZ/nzbase/branches/master'
+     uri: 'https://fhir.org.nz/ig/base'
      version: dev
     
 
