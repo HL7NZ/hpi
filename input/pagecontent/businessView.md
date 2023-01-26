@@ -115,8 +115,14 @@ If your system uses the practitioners name from the HPI to populate your local i
 #### Case
 Information in the HPI is collected in mixed case and preserved in the format provided by the source.
 
+
 #### Māori macrons
-Updates to the HPI using the FHIR interfaces will allow information supplied to the HPI to include UTF-8 encoded Maori accented characters. This is dependent on the source systems supplying these.
+
+Māori macrons are not currently able to be updated in FHIR.
+
+Future development will allow updates to the HPI using the FHIR interfaces to include UTF-8 encoded Maori accented characters.
+
+This is dependent on the source systems supplying these.
 
 ### Implementation requirements and on-boarding
 All consumers of the HPI are subject to the Privacy Act 1993 and the Health Information Privacy Code 2020. Privacy impact assessments and security assessments should be completed prior to applying for access to the HPI. An access agreement with user organisations will be signed before access is granted to production services [See also](/OnboardingAndComplianceTesting.html) 
