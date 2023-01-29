@@ -1,6 +1,6 @@
 
 
-### Practitioner
+### Practitioner resource use cases
 
 
 #### An authorised user wants to lookup a practitioner’s details on the HPI
@@ -85,7 +85,7 @@
 
 
 
-### Organisation
+### Organisation resource use cases
 
 
 #### An authorised user wants to view an organizations details on the HPI
@@ -116,7 +116,7 @@
 
 
 
-### Facility (Location)
+### Facility (Location) resource use cases
 
 
 #### An authorised user wants to view a facilities details on the HPI
@@ -142,7 +142,7 @@
 
 
 
-### Practitioner Role
+### Practitioner Role resource use cases
 
 
 #### An authorised user wants to find a PractitionerRole record
