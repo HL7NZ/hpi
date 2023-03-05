@@ -47,7 +47,7 @@ The Practitioner.qualification.period is the start and end dates of the most rec
 
 There is also a registration-status-code period that is part of the registration details for a practitioner. This is the start date that this status was applied.  If the status is ‘removed’ then this is the date the practitioner was removed from the register.
 
-### Facility 
+### Facility
 
 #### Have all facility addresses been validated?
 
