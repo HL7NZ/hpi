@@ -294,7 +294,7 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-4</td>
-<td>System behaves appropriately when the requested practitioner has more than Scope of Practice</td>
+<td>System behaves appropriately when the requested practitioner has more than one Scope of Practice</td>
 <td><b>Do all</b> <br /> 98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
 <td>System returns appropriate messaging to user</td>
 <td>optional</td></tr>
