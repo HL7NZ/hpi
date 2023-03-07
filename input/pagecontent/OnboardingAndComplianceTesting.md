@@ -60,7 +60,11 @@ Provide the following details in a test report and email to [integration@health.
 
 ### Tests
 
-<h3>Security and Audit Assessment</h3>
+#### Mandatory vs Optional tests
+
+If there is a test below that is labelled mandatory but do fit the application use case then please let us know why.
+
+<h4>Security and Audit Assessment</h4>
 <table>
 <style>
 table, th, td {
@@ -102,7 +106,7 @@ If present this will be returned in the response</td>
 </table>
 
 
-<h3>HPI Organization GET</h3>
+<h4>HPI Organization GET</h4>
 <table>
 <style>
 table, th, td {
@@ -134,7 +138,7 @@ table, th, td {
 </tr>
 </table>
 
-<h3>HPI Organization SEARCH</h3>
+<h4>HPI Organization SEARCH</h4>
 <table>
 <style>
 table, th, td {
@@ -183,7 +187,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI Location/Facility GET</h3>
+<h4>HPI Location/Facility GET</h4>
 <table>
 <style>
 table, th, td {
@@ -228,7 +232,7 @@ table, th, td {
 <td></td></tr>
 </table>
 
-<h3>HPI Location/Facility Search</h3>
+<h4>HPI Location/Facility Search</h4>
 <table>
 <style>
 table, th, td {
@@ -261,7 +265,7 @@ table, th, td {
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI Practitioner GET</h3>
+<h4>HPI Practitioner GET</h4>
 <table>
 <style>
 table, th, td {
@@ -318,25 +322,31 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-8</td>
+<td>System clearly displays all condition’s of practice / additional authorisation’s to user</td>
+<td> TBC </td>
+<td>System returns appropriate messaging to user</td>
+<td>optional</td></tr>
+
+<tr><td>HPI-P-Get-9</td>
 <td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
 <td>90ZZSR <br /> 90ZZMG</td>
 <td>The user is informed the practitioners APC has expired</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-9</td>
+<tr><td>HPI-P-Get-10</td>
 <td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
 <td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
 <td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-10</td>
+<tr><td>HPI-P-Get-11</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI Practitioner Search</h3>
+<h4>HPI Practitioner Search</h4>
 <table>
 <style>
 table, th, td {
@@ -344,6 +354,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
+<caption>*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application</caption>
 <tr><th>Reference</th>
 <th>Purpose – Demonstrate that the</th>
 <th>Input values</th>
@@ -380,10 +391,8 @@ Gender = male</td>
 <td>mandatory</td></tr>
 </table>
 
-*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application
 
-
-<h3>HPI PractitionerRole Get</h3>
+<h4>HPI PractitionerRole Get</h4>
 <table>
 <style>
 table, th, td {
@@ -404,7 +413,7 @@ table, th, td {
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI PractitionerRole Search</h3>
+<h4>HPI PractitionerRole Search</h4>
 <table>
 <style>
 table, th, td {
@@ -462,7 +471,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI PractitionerRole Add</h3>
+<h4>HPI PractitionerRole Add</h4>
 <table>
 <style>
 table, th, td {
@@ -496,7 +505,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI PractitionerRole Update</h3>
+<h4>HPI PractitionerRole Update</h4>
 <table>
 <style>
 table, th, td {
