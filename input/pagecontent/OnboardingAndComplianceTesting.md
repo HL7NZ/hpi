@@ -62,7 +62,7 @@ Provide the following details in a test report and email to [integration@health.
 
 #### Mandatory vs Optional tests
 
-If there is a test below that is labelled mandatory but do fit the application use case then please let us know why.
+If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.
 
 <h4>Security and Audit Assessment</h4>
 <table>
