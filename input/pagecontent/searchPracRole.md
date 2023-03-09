@@ -18,7 +18,7 @@
 ### Using _ include parameter
 When specified by _ include, the Practitioner, Organization and Location records are included in the response <br />
 __Note:__ This requires read permission on the included resource <br />
-E.g. GET\<Endpoint>/PractitionerRole?Practitioner=99ZZZS&_include=PractitionerRole:practitioner
+E.g. GET\<Endpoint>/PractitionerRole?practitioner=99ZZZS&_include=PractitionerRole:practitioner
 
 [For more information on search PractitionerRole click here](/capabilityStatement.html#practitionerrole)
   
