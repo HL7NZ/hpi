@@ -23,7 +23,7 @@ The update Practitioner operations allow an authorised user to update a person's
 **Update-core processing steps:**
 
 1. The user provides updated core details
-2. The integrating application sends an HTTP Post request using the $update-core operation to the HPI E.g. Post<Endpoint>/Patient/$update-core
+2. The integrating application sends an HTTP Post request using the $update-core operation to the HPI E.g. Post<Endpoint>/Practitioner/$update-core
 3. The request is validated - ALT: Validation failure. Operation Outcome resource returned
 4. The core details are updated
 5. The updated record is returned with an HTTP 200 ok response
