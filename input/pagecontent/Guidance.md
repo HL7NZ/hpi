@@ -197,7 +197,7 @@
 * This use case requires permission to access the NHI, NES enrollment's and HPI facility information.
 
 <div>
-{% include lookup-edi-number.svg %}
+{% include lookup-edi-number-NHI.svg %}
 </div>
 
 * Steps involved:
