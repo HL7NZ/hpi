@@ -200,6 +200,7 @@
 {% include lookup-edi-number-NHI.svg %}
 </div>
 
+
 * Steps involved:
   1.	The user initiates searching for an EDI number for a patient’s General Practitioner
   2.	The integrating application sends a read request for the Patient Resource using the nhi-id to the NHI FHIR API E.g. GET\<Endpoint>/Patient/ZZZ0008
@@ -218,6 +219,7 @@
 <div>
 {% include lookup-edi-number-NES.svg %}
 </div>
+
 
 * Steps involved:
 1.	The user initiates searching for an EDI number for a patient’s General Practitioner 
