@@ -221,13 +221,13 @@ table, th, td {
 
 <tr><td>HPI-L-Get-4</td>
 <td>System behaves appropriately when using the contact point rank</td>
-<td>FZZ958-K <br /> FZZ960-H <br /> FZZ999-B</td>
+<td>FZZ065-D</td>
 <td>When rank is present it is presented to user in an meaningful way</td>
 <td></td></tr>
 
 <tr><td>HPI-L-Get-5</td>
 <td>System presents the address parts appropriately</td>
-<td>FZZ961-K <br /> FZZ960-H <br /> FZZ959-A <br /> FZZ958-K <br /> FZZ957-H</td>
+<td>FZZ961-K <br /> FZZ960-H <br /> FZZ959-A <br /> FZZ958-K <br /> FZZ065-D</td>
 <td>All address formats are displayed appropriately</td>
 <td></td></tr>
 </table>
