@@ -176,29 +176,29 @@ table, th, td {
 }
 </style>
 <tr>
+<th>Confidentiality level</th>
 <th>Code</th>
-<th>Display</th>
 <th>HPI Use</th>
 <th>Information that is redacted with a read scope</th>
 </tr>
 
 <tr>
+<td>Low</td>
 <td>L</td>
-<td>low</td>
 <td>All Registered Practitioner records with no confidentiality flag set</td>
 <td>Gender, birthDate and ethnicity</td>
 </tr>
 
 <tr>
+<td>Moderate</td>
 <td>M</td>
-<td>moderate</td>
 <td>All Non-registered Practitioner records with no confidentiality flag set</td>
 <td>Gender, birthDate and ethnicity</td>
 </tr>
 
 <tr>
-<td>R and, <br /> REDACTED </td>
-<td>restricted, and <br /> 'redacted'</td>
+<td>Restricted and, <br /> Redacted </td>
+<td>R, and <br /> REDACTED</td>
 <td>All Practitioner records with confidentiality set (Registered and Non-registered Practitioners)</td>
 <td>Name Official <br />
 Name Usual <br />
@@ -212,7 +212,7 @@ ConditionOnPractice (Applies to Registered Practitioner only)</td>
 </tr>
 </table>
 
-#### Example
+#### Example of Practitioner with confidentiality flag set
 
 ```
 {
