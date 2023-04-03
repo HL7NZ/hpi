@@ -1,7 +1,25 @@
 
 The Practitioner resource represents any provider of healthcare - not restricted to those with formal qualifications.
 
-The current HPI contains practitioners covered by the Health Practitioners Competence Assurance Amendment Act 2019. This includes all Chiropractors, Dentists, Dental hygienist and Dental and Oral health therapist, Dietitians, Medical Laboratory Scientist and Technicians including phlebotomists and mortuary technicians, Anaesthetic Technologists, Medical Radiation Technologists, Medical Practitioners (all doctors and specialists), Midwifes, Nurses, Occupational Therapists, Optometrists and optical dispensers, Osteopaths, Paramedics, Pharmacists, Physiotherapists, Podiatrist, Psychologists.
+The current HPI contains practitioners covered by the Health Practitioners Competence Assurance Amendment Act 2019. This includes all:
+* Chiropractors, 
+* Dentists, 
+* Dental hygienist and Dental and Oral health therapist, 
+* Dietitians, 
+* Medical Laboratory Scientist and Technicians including phlebotomists and mortuary technicians, 
+* Anaesthetic Technologists, 
+* Medical Radiation Technologists, 
+* Medical Practitioners (all doctors and specialists), 
+* Midwifes, 
+* Nurses, 
+* Occupational Therapists, 
+* Optometrists and optical dispensers, 
+* Osteopaths, 
+* Paramedics, 
+* Pharmacists, 
+* Physiotherapists, 
+* Podiatrists, and 
+* Psychologists.
 
 It is intended with the upgraded capabilities that other professional groups may supply their members eg Social Workers, Acupuncturists, Audiologists, Counsellors, Cardiac Physiologists, Nutritionist.
 
@@ -11,8 +29,6 @@ Consideration is being given to ‘self-asserted’ data.
 
 
 ### Key differences from spec
-
-
 
 *   DeathDate extension
 *   Ethnicity extension
@@ -32,9 +48,9 @@ A registration authority is an organization that asserts the information about a
 
 There are 2 levels of identifier in the practitioner resource. 
 
-_Practitioner.identifier_ is the top level identifier assigned by the HPI (and the source of the resource id as described in the background section). There can be multiple identifiers for any given resource as part of managing the Practitioner (for example removal of duplicate identifiers). The current identifier will have a _use_ value of ‘official’, others will have a _use_ value of ‘old’. It is the client's responsibility to check the value of the use element.
+_Practitioner.identifier_ is the top level identifier assigned by the HPI (and the source of the resource id as described in the background section). There can be multiple identifiers for any given resource as part of managing the Practitioner (for example removal of duplicate identifiers). The current identifier will have a _use_ value of ‘official’, others will have a _use_ value of ‘old’. The HPI identifier will always have a system value of '\https://standards.digital.health.nz/ns/hpi-person-id' It is the client's responsibility to check the value of the use element.
 
-_Practitioner.qualification.identifier_ is the identifier assigned by the Registration authority - for example the Medical Council Number, or Nursing Council number.
+_Practitioner.qualification.identifier_ is the identifier assigned by the Registration authority - for example the Medical Council Number, or Nursing Council number. This will also be found under the _Practitioner.identifier_ but with a system value related to the Registration authority who issued it, for nursing council this will be 'https://standards.digital.health.nz/ns/nursing-council-id'. 
 
 
 ### Qualifications
