@@ -167,17 +167,73 @@ A practitioner’s Date of birth, Gender and Ethnicity are supplied when a pract
 
 The Practitioner resources will contain a security element of "REDACTED" in the meta data when data items within the practitioner resource have been withheld.  
 
-Example
- {
-  "resourceType": "Practitioner",
-  "id": "93ZZRW",
-  "meta": {
-    "versionId": "14368",
-    "profile": [ http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner ],
-    "security": [ {
-      "system": http://hl7.org/fhir/v3-SecurityIntegrityObservationValue,
-      "code": "REDACTED"
-  		  } ]
-  },
+<h4>HPI Practitioner security labels</h4>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr>
+<th>Code</th>
+<th>Display</th>
+<th>HPI Use</th>
+<th>Information that is redacted with a read scope</th>
+</tr>
+
+<tr>
+<td>L</td>
+<td>low</td>
+<td>All Registered Practitioner records with no confidentiality flag set</td>
+<td>Gender, birthDate and ethnicity</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>moderate</td>
+<td>All Non-registered Practitioner records with no confidentiality flag set</td>
+<td>Gender, birthDate and ethnicity</td>
+</tr>
+
+<tr>
+<td>R and, <br /> REDACTED </td>
+<td>restricted, and <br /> 'redacted'</td>
+<td>All Practitioner records with confidentiality set (Registered and Non-registered Practitioners)</td>
+<td>Name Official <br />
+Name Usual <br />
+Name(s) Old <br />
+Gender <br />
+Date of Birth <br />
+Date of death <br />
+Language(s) <br />
+Ethnicity <br />
+ConditionOnPractice (Applies to Registered Practitioner only)</td>
+</tr>
+</table>
+
+#### Example
+
+```
+{
+    "resourceType": "Practitioner",
+    "id": "90ZZLP",
+    "meta": {
+        "versionId": "9971",
+        "lastUpdated": "2022-04-07T09:12:26.000+12:00",
+        "profile": [
+            "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+        ],
+        "security": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+                "code": "REDACTED"
+            },
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+                "code": "R"
+            }
+        ]
 …
 }
+```
