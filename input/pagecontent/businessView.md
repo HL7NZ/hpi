@@ -118,11 +118,11 @@ Information in the HPI is collected in mixed case and preserved in the format pr
 
 #### Māori macrons
 
-Māori macrons are not currently able to be updated in FHIR.
+Māori macrons are not currently supported by the HIP FHIR service.
 
-Future development will allow updates to the HPI using the FHIR interfaces to include UTF-8 encoded Maori accented characters.
+This is due to the effect macrons would have on downstream systems and update conflicts that would occur between the HL7 legacy, SOAP and FHIR services.
 
-This is dependent on the source systems supplying these.
+Future development will allow updates to the HPI using the FHIR interfaces to include UTF-8 encoded Maori accented characters. This is dependent on the source systems supplying these.
 
 ### Implementation requirements and on-boarding
 All consumers of the HPI are subject to the Privacy Act 1993 and the Health Information Privacy Code 2020. Privacy impact assessments and security assessments should be completed prior to applying for access to the HPI. An access agreement with user organisations will be signed before access is granted to production services [See also](/OnboardingAndComplianceTesting.html) 
