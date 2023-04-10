@@ -32,7 +32,7 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 6. Complete your development and testing.
 7. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
 8. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
-9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or [click here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers)
+9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or [click here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers) **Getting access to production credentials for the HPI may take up to 5 days so please give yourself sufficient time prior to go live date**.
 
 
 ### Compliance testing
@@ -62,7 +62,7 @@ Provide the following details in a test report and email to [integration@health.
 
 #### Mandatory vs Optional tests
 
-If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.
+**If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.**
 
 <h4>Security and Audit Assessment</h4>
 <table>
@@ -286,60 +286,69 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-2</td>
-<td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
+<td>System can display the information required to confirm a health providers identity <br />
+Full name <br />
+hpi-person-id (CPN) <br />
+Registration type (RA Provider only) </td>
+<td> 91ZZWJ <br /> 90ZZLC </td>
+<td>System displays information required to confirm identity</td>
+<td>mandatory</td></tr>
+
+<tr><td>HPI-P-Get-3</td>
+<td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> Has both official and usual names</td>
 <td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user <br /> System should retain the name as a Family name when a practitioner has only a Given Name on the HPI </td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-3</td>
+<tr><td>HPI-P-Get-4</td>
 <td>System behaves appropriately when the requested practitioner has more than one registration</td>
 <td><b>Do all</b> <br /> 95ZZEJ (dental/nursing) <br /> 98ZZNY (nursing/medical)<br /> 95ZZQE (medical sciences/nursing)<br /> 98ZZQJ (nursing/midwifery)<br /> 95ZZDR (nursing/psychology)<br /> 95ZZDE (optometry/nursing)</td>
 <td>The appropriate registration is used or both registrations are presented</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-4</td>
+<tr><td>HPI-P-Get-5</td>
 <td>System behaves appropriately when the requested practitioner has more than one Scope of Practice</td>
 <td><b>Do all</b> <br /> 98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
 <td>System returns appropriate messaging to user</td>
-<td>optional</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-5</td>
+<tr><td>HPI-P-Get-6</td>
 <td>System behaves appropriately when the requested practitioner does not have a registration (qualification)</td>
 <td>90ZZLC <br /> 90ZZLP</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-6</td>
+<tr><td>HPI-P-Get-7</td>
 <td>System behaves appropriately for all registration (qualification) statuses</td>
 <td><b>Do all</b> <br /> 98ZZYU (Current)<br /> 98ZZYH (Inactive) <br /> 98ZZXQ (Removed) <br /> 98ZZXD (Suspended)</td>
 <td>System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-7</td>
+<tr><td>HPI-P-Get-8</td>
 <td>System clearly distinguishes between educational qualifications and registration details</td>
 <td>97ZZYP <br /> 94ZZXF <br /> 97ZZYC <br /> 94ZZWZ <br /> 97ZZXW</td>
 <td>System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-8</td>
+<tr><td>HPI-P-Get-9</td>
 <td>System clearly displays all condition’s of practice / additional authorisation’s to user</td>
 <td> TBC </td>
 <td>System returns appropriate messaging to user</td>
 <td>optional</td></tr>
 
-<tr><td>HPI-P-Get-9</td>
+<tr><td>HPI-P-Get-10</td>
 <td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
 <td>90ZZSR <br /> 90ZZMG</td>
 <td>The user is informed the practitioners APC has expired</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-10</td>
+<tr><td>HPI-P-Get-11</td>
 <td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
 <td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
 <td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-11</td>
+<tr><td>HPI-P-Get-12</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
