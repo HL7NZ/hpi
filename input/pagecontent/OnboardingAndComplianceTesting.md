@@ -22,17 +22,20 @@ Add and Update** interactions will need to apply to the Ministry of Health. The 
 granted an HPI Data Access Agreement must be signed prior to credentials being issued to production.
 
 
-### On-boarding
+### On-boarding and Implementation
 
-1. To apply for access to the HPI test environment complete and submit the [Register your Interest / Access a Test Environment](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/41) form or email [integration@health.govt.nz](mailto:integration@health.govt.nz) and the Integration team will send you the relevant forms to complete.
-2. You may be requested to complete an additional security questionnaire.
-3. Submit the forms or send the forms back to [integration@health.govt.nz](mailto:integration@health.govt.nz)
-4. You will receive your credentials in seperate emails, one of which has a blank subject.
-5. You will also recieve the access token url, provided scopes, and the UAT endpoint.
-6. Complete your development and testing.
-7. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
-8. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
-9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or [click here](https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers) **Please allow at least 5 working days for these applications to be processed and production credentials issued. If your product is to be used by many different organisations please get in touch to discuss your rollout plans and how we might assist.**
+1. To get started, complete the [online onboarding request form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/67). You will need to provide information about your organisation and the API you will integrate with.
+2. Once your onboarding request has been approved, you will be provided with the information to start integration. The integration team will be in touch if further information is required.
+  * You will receive your credentials in an email and a sms message to the details provided in the onboarding form.
+  * You will also receive the access token url, provided scopes, and the UAT endpoint.
+3. Complete your development and testing.
+4. Submit the results of the compliance tests by email to the [integration team](mailto:integration@health.govt.nz).
+5. The integration team team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
+6. Each organisation using your application with NHI integrated services must apply individually for access to the production environment by completing the production form, please email [NHI Access](mailto:nhi_access@health.govt.nz).
+
+Please allow at least 5 working days for these applications to be processed and production credentials issued. If your product is to be used by many different organisations please get in touch to discuss your rollout plans and how we might assist.
+
+If you require help or have any questions regarding the onboarding process, please contact our team by completing a [General enquiry form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/36).
 
 
 ### Compliance testing
@@ -50,9 +53,11 @@ Provide the following details in a test report and email to [integration@health.
   h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
 
 2. For each test supply screen shots of the user interface for:
-    * the input data as entered in the integrating system (“the system”)
-    * any warnings or error messages presented by the system
-    * the confirmation or result of the request presented by the system
+    * the input data as entered in the integrating application (“the application”)
+    * the output:
+      * any error messages presented by the application
+      * the confirmation or result of the request presented by the application
+    * For update operations the state of the record pre-request should be included. 
     * **Note**: If non-interactive, please provide JSON request (update / add) or response (get/search).
 
 3. For each test supply a timestamp when each request is sent.
