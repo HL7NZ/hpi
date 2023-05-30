@@ -31,7 +31,7 @@ granted an HPI Data Access Agreement must be signed prior to credentials being i
 3. Complete your development and testing.
 4. Submit the results of the compliance tests by email to the [integration team](mailto:integration@health.govt.nz).
 5. The integration team team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
-6. Each organisation using your application with NHI integrated services must apply individually for access to the production environment by completing the production form, please email [NHI Access](mailto:nhi_access@health.govt.nz).
+6. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the production form, please email [HPI queries](mailto:HI_Provider@health.govt.nz).
 
 Please allow at least 5 working days for these applications to be processed and production credentials issued. If your product is to be used by many different organisations please get in touch to discuss your rollout plans and how we might assist.
 
