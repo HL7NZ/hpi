@@ -91,7 +91,7 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 2</td>
-<td>Sending user ID an end user ID or a hpi-person-id</td>
+<td>Sending user ID is an end user ID or a hpi-person-id</td>
 <td>Checked against all tests</td>
 <td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
