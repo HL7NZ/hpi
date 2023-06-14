@@ -3,7 +3,6 @@
 .DS_Store
 Thumbs.db
 /input-cache
-/output
 /template
 /temp
 /.project

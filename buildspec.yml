@@ -47,6 +47,10 @@ phases:
       - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
       # deploy the hpi conformance artefacts
       - mvn deploy
+      - echo checking in full-ig.zip
+      - git add ./output/full-ig.zip
+      - git commit -m "new IG build"
+      - git push
       
 artifacts:
   files:
