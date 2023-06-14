@@ -65,10 +65,9 @@ Provide the following details in a test report and email to [integration@health.
 
 ### Tests
 
-#### Mandatory vs Optional tests
-
-**If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.**
-**Some tests are labelled *mandatory if*. These tests are Mandatory only if you are using this piece of data for your use case.**
+**Mandatory vs Optional tests**
+* If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.
+* Some tests are labelled *mandatory if*. These tests are Mandatory only if you are using this piece of data for your use case.
 
 <h4>Security and Audit Assessment</h4>
 <table>
@@ -92,7 +91,7 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 2</td>
-<td>Sending user ID an end user ID or a hpi-person-id</td>
+<td>Sending user ID is an end user ID or a hpi-person-id</td>
 <td>Checked against all tests</td>
 <td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
