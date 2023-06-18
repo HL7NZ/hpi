@@ -39,7 +39,7 @@ phases:
       - cd hpi
       - git checkout $BRANCH
       - ls
-      - echo getting depenencdies
+      - echo getting depenencies
       #- mvn package -ntp
       # get hip-fhir-common package
       - mvn validate
