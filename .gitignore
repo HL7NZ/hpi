@@ -9,3 +9,5 @@ Thumbs.db
 /target/
 /.classpath
 /fsh-generated/
+/output
+!/output/full-ig.zip
