@@ -6,12 +6,12 @@
 
 	<groupId>nz.health.digital.hpi.fhir</groupId>
 	<artifactId>hip-hpi-conformance-module</artifactId>
-	<version>1.2.1</version>
+	<version>1.2.0</version>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<revision>0.10.1</revision>
-		<fhir-common.version>1.1.12-SNAPSHOT</fhir-common.version>
+		<revision>1.2.0</revision>
+		<fhir-common.version>1.2.0</fhir-common.version>
 	</properties>
 	<dependencies>
 
