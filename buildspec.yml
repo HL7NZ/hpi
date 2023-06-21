@@ -1,6 +1,13 @@
 version: 0.2
 
+env:
+    secrets-manager:
+      GITUSERNAME: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:secrets.hip-hl7nz-github-m2GhOv:username'
+      GITTOKEN: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:secrets.hip-hl7nz-github-m2GhOv:token'
+      MAVEN_USER: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:hip-secrets.nexus.username:hip-secrets.nexus.username'
+      MAVEN_PASSWORD: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:hip-secrets.nexus.password:hip-secrets.nexus.password'
     
+   
 phases:
   install:
     runtime-versions:   
@@ -34,8 +41,8 @@ phases:
   build:
     commands:
       - ls 
-      
-      - git clone https://pat-ryan-health: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@github.com/HL7NZ/hpi     
+     
+      - git clone https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
       - cd hpi
       - git checkout $BRANCH
       - ls
