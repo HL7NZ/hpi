@@ -13,6 +13,7 @@
 			<directory>${project.basedir}/output//</directory>
 			<includes>
 				<include>**/*.xml</include>
+				<include>**/package.tgz</include>
 			</includes>
 		</fileSet>
 	</fileSets>
