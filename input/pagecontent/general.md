@@ -196,19 +196,52 @@ When a resource contains a reference to another resource, the HPI server will no
 
 GET\<Endpoint>/PractitionerRole?practitioner=99ZZZZ&_include=PractitionerRole:practitioner&_include=PractitionerRole:organization&_include=PractitionerRole:location`
 
-### Request Rules and Errors
 
-* **Request rules**
-  * Every request must include an:
-    * http header item UserId that uniquely identifies the individual initiating the request.
-    * OAuth 2 access token
-    * An api-key
-  * Each user must have an individual userID
+### Errors
 
-* _Request errors_
-  * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
-  * _"Unauthorized"  (HTTP 401)_
-   * _Forbidden, HTTP403_
+#### HTTP Error response codes
+
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<tr><th> Status code </th>
+<th> Description </th></tr>
+
+<tr><td> 400 </td>
+<td> Bad Request </td></tr>
+
+<tr><td> 401 </td>
+<td> The client needs to provide credentials, or has provided invalid credentials. </td></tr>
+
+<tr><td> 403 </td>
+<td> Authentication was provided, but the authenticated user is not permitted to perform the requested operation. </td></tr>
+
+<tr><td> 404 </td>
+<td> Resource not found </td></tr>
+
+<tr><td> 405 </td>
+<td> HTTP method not allowed </td></tr>
+
+<tr><td> 409 </td>
+<td> Resource conflict, the version provided for the resource is not the current version </td></tr>
+
+<tr><td> 413 </td>
+<td> The request body was too big for the server to accept </td></tr>
+
+<tr><td> 422 </td>
+<td> Unprocessable Entity, resource was rejected by the server because it “violated applicable FHIR profiles or server business rules” </td></tr>
+
+<tr><td> 500 </td>
+<td> General system failure </td></tr>
+
+<tr><td> 429 </td>
+<td> Exceeded quota </td></tr>
+</table>
+
 
 #### Error Format
 
@@ -249,6 +282,22 @@ But not all errors have been converted or assigned error codes, the unconverted 
 
 ```
 
+
+### Request Rules and Errors
+
+* **Request rules**
+  * Every request must include an:
+    * http header item UserId that uniquely identifies the individual initiating the request.
+    * OAuth 2 access token
+    * An api-key
+  * Each user must have an individual userID
+
+* _Request errors_
+  * _"Authentication: missing userid header  (HTTP 401, Error, Processing)_
+  * _"Unauthorized"  (HTTP 401)_
+   * _Forbidden, HTTP403_
+
+
 ### HTTP Header Details
 
 * This list is any additions to standard HTTP header protocol
@@ -272,7 +321,7 @@ table, th, td {
 <td> Mandatory </td></tr>
 
 <tr><td> userid </td>
-<td> Bearer {string} </td>
+<td> {string} </td>
 <td> Client provided <br />
 All requests for all resources must include an http header userid that uniquely identifies the individual initiating the request <br />
 Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
@@ -382,21 +431,27 @@ table, th, td {
 </style>
 <tr><th> Plan </th>
 <th> Rate </th>
+<th> Burst </th>
 <th> Quota </th></tr>
 
 <tr><td> bronze </td>
 <td> 1 request per second </td>
-<td> 1,000 requests per month </td></tr>
+<td> 5 </td>
+<td> 10,000 requests per day </td></tr>
 
 <tr><td> silver </td>
 <td> 5 requests per second </td>
+<td> 25 </td>
 <td> 250,000 requests per day </td></tr>
 
 <tr><td> gold </td>
 <td> 10 requests per second </td>
+<td> 50 </td>
 <td> 500,000 requests per day </td></tr>
 </table>
 
 All test accounts will be assigned to the bronze usage plan
 
-Production accounts will be assigned to the silver usage plan. If a client wished to be assigned to the gold usage plan, they should contact the integration team
+Production accounts will be assigned to the silver usage plan. If an Organisation wished to be assigned to the gold usage plan, they should contact the Te Whatu Ora [HPI access team](HI_Provider@health.govt.nz)
+
+If an application reaches its usage plan limit an HTTP 429 error will be returned. The expected behaviour is that the application will retry several times with an exponentially increasing delay

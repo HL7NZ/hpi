@@ -1,0 +1,50 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Lookup EDI number for an enrolled Patient's General Practice
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> NHI" as B #CornflowerBlue
+participant "<FHIR API> HPI" as C #CornflowerBlue
+participant "NHI MDM" as D #CornflowerBlue
+participant "HPI MDM" as E #CornflowerBlue
+|||
+User -> A: Lookup EDI number the General Practice the Patient is enrolled with
+activate A
+|||
+A -> B: GET<Endpoint>/Patient/[nhi-id]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> D: Request
+activate D
+|||
+D -[dashed]-> B:  
+deactivate D
+|||
+B -> A: Return Patient resource (including Patients enrolled General Practitioner details)
+deactivate B
+|||
+A -> C: Use hpi-facility-id to get EDI Get<Endpoint>/Location/[hpi-facility-id]
+activate C
+|||
+C -> C: Validate[]
+|||
+C -> E: Request
+activate E
+|||
+E -[dashed]-> C:  
+deactivate E
+|||
+C -[dashed]-> A:Return Facility [Location resource]
+deactivate C
+|||
+A -[dashed]-> A: Extract the messaging address containing the EDI number for the General Practice
+|||
+A -> User: Display EDI number to user
+deactivate A
+|||
+@enduml

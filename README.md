@@ -69,8 +69,6 @@ the xml versions. I usually use MD - keeping xml for generated files that use a 
 
 
 
- 
-
 ### scriptCopy
 
 Holds a copy of scripts used to generate summary pages for the IG.

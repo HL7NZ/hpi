@@ -1,6 +1,6 @@
 
 
-### Practitioner
+### Practitioner resource use cases
 
 
 #### An authorised user wants to lookup a practitioner’s details on the HPI
@@ -85,7 +85,7 @@
 
 
 
-### Organisation
+### Organisation resource use cases
 
 
 #### An authorised user wants to view an organizations details on the HPI
@@ -116,7 +116,7 @@
 
 
 
-### Facility (Location)
+### Facility (Location) resource use cases
 
 
 #### An authorised user wants to view a facilities details on the HPI
@@ -141,25 +141,8 @@
   * The user can select the appropriate facility to view
 
 
-#### Lookup EDI for an enrolled patient’s GP
 
-<div>
-{% include lookup-edi-number.svg %}
-</div>
-
-Processing steps:
-1.	The user initiates searching for an EDI number of a patient’s GP
-2.	The integrating application calls the SOAP Enrolment service with the patient’s NHI number (nhi-id)
-3.	The SOAP Enrolment web service returns the enrolment for a patient containing the hpi-organisation-id, hpi-facility-id, GP's hpi-person-id
-4.	The integrating application sends a read request for the Facility (Location resource) using the hpi-facility-id to the HPI FHIR API
-E.g. GET\<Endpoint>/Location/F99999B
-5.	The requested is validated - ALT: Validation failure. OperationOutcome resource returned
-6.	The Location resource is returned from the HPI
-7.	The integrating application extracts the messaging address containing the EDI number for the GP clinic
-
-
-
-### Practitioner Role
+### Practitioner Role resource use cases
 
 
 #### An authorised user wants to find a PractitionerRole record
@@ -204,3 +187,47 @@ E.g. GET\<Endpoint>/Location/F99999B
   * The integrating application updates the PractitionerRole [Update PractitionerRole](/updatePracRole.html)
   * The HPI returns the updated version-id to be saved locally
   
+
+
+### Multi-resource Use cases
+
+
+#### Lookup EDI for an enrolled patient’s General Practice - using NHI FHIR API
+
+* This use case requires permission to access the NHI, NES enrollment's and HPI facility information.
+
+<div>
+{% include lookup-edi-number-NHI.svg %}
+</div>
+
+
+* Steps involved:
+  1.	The user initiates searching for an EDI number for a patient’s General Practitioner
+  2.	The integrating application sends a read request for the Patient Resource using the nhi-id to the NHI FHIR API E.g. GET\<Endpoint>/Patient/ZZZ0008
+  3.	The requested is validated - ALT: Validation failure. OperationOutcome resource returned
+  4.	The Patient resource (containing the Patients enrolled General Practice details) is returned from the HPI
+  5.	The integrating application sends a read request for the Facility details (Location resource) using the hpi-facility-id to the HPI FHIR API E.g. GET\<Endpoint>/Location/F99999B
+  6.	The requested is validated - ALT: Validation failure. OperationOutcome resource returned
+  7.	The Location resource is returned from the HPI
+  8.	The integrating application extracts the messaging address containing the EDI number for the GP clinic
+
+
+#### Lookup EDI for an enrolled patient’s General Practice - using NES SOAP
+
+* This use case requires permission to access the NHI, NES enrollment's and HPI facility information.
+
+<div>
+{% include lookup-edi-number-NES.svg %}
+</div>
+
+
+* Steps involved:
+1.	The user initiates searching for an EDI number for a patient’s General Practitioner 
+2.	The integrating application calls the SOAP Enrolment service with the patient’s NHI number.
+3.	The SOAP Enrolment web service returns the enrolment for a patient containing the OrgID, FacID, and GP’s CPN. 
+4.	The integrating application sends a read request for the Facility (location resource) using the FacID to the HPI FHIR API. 
+E.g. GET https://hpi.api.health.govt.nz/location/\F99999B
+5.	The requested is validated - ALT: Validation failure. OperationOutcome resource returned
+6.	The location resource is returned from the HPI. 
+7.	The integrating application extracts the messaging address containing the EDI number 
+

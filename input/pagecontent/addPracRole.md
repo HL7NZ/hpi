@@ -50,12 +50,12 @@ Add new PractitionerRole processing steps:
 ---
 
 *	**Add PractitionerRole contact rules** (If supplied).
-  * A request must not result in a duplicate contact
-  * A contact point value must have a valid format (HISO recommends)
-    * _Valid mobile phone number format_
+  *	A request must not result in a duplicate contact
+  *	A contact point value must have a valid format (HISO recommends)
+    * **Valid mobile phone number format**
     * International ITU-T E.164 numbers are variable length numeric strings without punctuation, composed of country code, area code or mobile network code and subscriber number
     * Numbers should be entered, validated and displayed as separate components, eg: 64 4 232nnnn, 64 20 412nnnnn
-    * _Valid email format_
+    * **Valid email format**
     * an email address must have a local-part@domain-part format
     * the address length must not exceed 256 characters
     * can contain any UTF-8 characters except control characters.

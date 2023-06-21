@@ -3,11 +3,11 @@
 .DS_Store
 Thumbs.db
 /input-cache
-/output
 /template
 /temp
 /.project
 /target/
 /.classpath
 /fsh-generated/
+/output
 !/output/full-ig.zip

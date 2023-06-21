@@ -22,17 +22,20 @@ Add and Update** interactions will need to apply to the Ministry of Health. The 
 granted an HPI Data Access Agreement must be signed prior to credentials being issued to production.
 
 
-### On-boarding
+### On-boarding and Implementation
 
-1. To apply for access to the HPI test environment complete and submit the [Register your Interest / Access a Test Environment](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/41) form or email [integration@health.govt.nz](mailto:integration@health.govt.nz) and the Integration team will send you the relevant forms to complete.
-2. You may be requested to complete an additional security questionnaire.
-3. Submit the forms or send the forms back to [integration@health.govt.nz](mailto:integration@health.govt.nz)
-4. You will receive your credentials in seperate emails, one of which has a blank subject.
-5. You will also recieve the access token url, provided scopes, and the UAT endpoint.
-6. Complete your development and testing.
-7. Submit the results of the compliance tests using the [Apply for Product Certification](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/34) form or submit the results of the compliance tests below to [integration@health.govt.nz](mailto:integration@health.govt.nz).
-8. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
-9. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the [Become a Registered User of a Certified Product](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/43) form or https://www.health.govt.nz/our-work/health-identity/health-provider-index/hpi-information-health-providers
+1. To get started, complete the [online onboarding request form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/67). You will need to provide information about your organisation and the API you will integrate with.
+2. Once your onboarding request has been approved, you will be provided with the information to start integration. The integration team will be in touch if further information is required.
+  * You will receive your credentials in an email and a sms message to the details provided in the onboarding form.
+  * You will also receive the access token url, provided scopes, and the UAT endpoint.
+3. Complete your development and testing.
+4. Submit the results of the compliance tests by email to the [integration team](mailto:integration@health.govt.nz).
+5. The integration team team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
+6. Each organisation using your application with HPI integrated services must apply individually for access to the production environment by completing the production form, please email [HPI queries](mailto:HI_Provider@health.govt.nz).
+
+Please allow at least 5 working days for these applications to be processed and production credentials issued. If your product is to be used by many different organisations please get in touch to discuss your rollout plans and how we might assist.
+
+If you require help or have any questions regarding the onboarding process, please contact our team by completing a [General enquiry form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/36).
 
 
 ### Compliance testing
@@ -50,9 +53,11 @@ Provide the following details in a test report and email to [integration@health.
   h. List of interactions included in your integration (eg Get Practitioner, Get Location, Search Location)
 
 2. For each test supply screen shots of the user interface for:
-    * the input data as entered in the integrating system (“the system”)
-    * any warnings or error messages presented by the system
-    * the confirmation or result of the request presented by the system
+    * the input data as entered in the integrating application (“the application”)
+    * the output:
+      * any error messages presented by the application
+      * the confirmation or result of the request presented by the application
+    * For update operations the state of the record pre-request should be included. 
     * **Note**: If non-interactive, please provide JSON request (update / add) or response (get/search).
 
 3. For each test supply a timestamp when each request is sent.
@@ -60,7 +65,11 @@ Provide the following details in a test report and email to [integration@health.
 
 ### Tests
 
-<h3>Security and Audit Assessment</h3>
+**Mandatory vs Optional tests**
+* If there are tests below that are labelled mandatory but do fit the application's use case then please let us know why.
+* Some tests are labelled *mandatory if*. These tests are Mandatory only if you are using this piece of data for your use case.
+
+<h4>Security and Audit Assessment</h4>
 <table>
 <style>
 table, th, td {
@@ -82,7 +91,7 @@ table, th, td {
 <td>Mandatory</td></tr>
 
 <tr><td>Security 2</td>
-<td>Sending user ID an end user ID or a hpi-person-id</td>
+<td>Sending user ID is an end user ID or a hpi-person-id</td>
 <td>Checked against all tests</td>
 <td>Te Whatu Ora will check internal logs</td>
 <td>Mandatory</td></tr>
@@ -102,7 +111,7 @@ If present this will be returned in the response</td>
 </table>
 
 
-<h3>HPI Organization GET</h3>
+<h4>HPI Organization GET</h4>
 <table>
 <style>
 table, th, td {
@@ -134,7 +143,7 @@ table, th, td {
 </tr>
 </table>
 
-<h3>HPI Organization SEARCH</h3>
+<h4>HPI Organization SEARCH</h4>
 <table>
 <style>
 table, th, td {
@@ -168,8 +177,8 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-3</td>
 <td>System behaves appropriately when the name search criteria better matches an alias than the name</td>
-<td>Search for ‘TryNSave’</td>
-<td>System allows user to view aliases before selecting a result <br /> Name= Discount Pharmaceuticals Limited <br /> Alias= TryNSave Discount Pharmacy <br /> HPI-O= GZZ869-G</td>
+<td>Search for ‘Discount Pharmaceuticals Limited’</td>
+<td>System allows user to view aliases before selecting a result <br /> Name= TryNSave Discount Pharmacy <br /> Alias= Discount Pharmaceuticals Limited <br /> HPI-O= GZZ869-G</td>
 <td>mandatory</td>
 </tr>
 
@@ -183,7 +192,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI Location/Facility GET</h3>
+<h4>HPI Location/Facility GET</h4>
 <table>
 <style>
 table, th, td {
@@ -217,18 +226,18 @@ table, th, td {
 
 <tr><td>HPI-L-Get-4</td>
 <td>System behaves appropriately when using the contact point rank</td>
-<td>FZZ958-K <br /> FZZ960-H <br /> FZZ999-B</td>
+<td>FZZ065-D</td>
 <td>When rank is present it is presented to user in an meaningful way</td>
 <td></td></tr>
 
 <tr><td>HPI-L-Get-5</td>
 <td>System presents the address parts appropriately</td>
-<td>FZZ961-K <br /> FZZ960-H <br /> FZZ959-A <br /> FZZ958-K <br /> FZZ957-H</td>
+<td>FZZ961-K <br /> FZZ960-H <br /> FZZ959-A <br /> FZZ958-K <br /> FZZ065-D</td>
 <td>All address formats are displayed appropriately</td>
 <td></td></tr>
 </table>
 
-<h3>HPI Location/Facility Search</h3>
+<h4>HPI Location/Facility Search</h4>
 <table>
 <style>
 table, th, td {
@@ -261,7 +270,7 @@ table, th, td {
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI Practitioner GET</h3>
+<h4>HPI Practitioner GET</h4>
 <table>
 <style>
 table, th, td {
@@ -282,61 +291,76 @@ table, th, td {
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Get-2</td>
-<td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> multiple names</td>
+<td>System can display the information required to confirm a health providers identity <br />
+Full name <br />
+hpi-person-id (CPN) <br />
+Registration type (RA Provider only) </td>
+<td> 91ZZWJ <br /> 90ZZLC </td>
+<td>System displays information required to confirm identity</td>
+<td>mandatory</td></tr>
+
+<tr><td>HPI-P-Get-3</td>
+<td>System can handle a response when practitioner has <br /> only a surname; <br /> only a given name; <br /> Has both official and usual names</td>
 <td> <b>Do all</b> <br /> 91ZZWJ <br /> 91ZZVR <br /> 93ZZWU</td>
 <td>System does not error <br /> System returns all name parts when present <br /> Order of name parts is clear to the user <br /> System should retain the name as a Family name when a practitioner has only a Given Name on the HPI </td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-P-Get-3</td>
+<tr><td>HPI-P-Get-4</td>
 <td>System behaves appropriately when the requested practitioner has more than one registration</td>
 <td><b>Do all</b> <br /> 95ZZEJ (dental/nursing) <br /> 98ZZNY (nursing/medical)<br /> 95ZZQE (medical sciences/nursing)<br /> 98ZZQJ (nursing/midwifery)<br /> 95ZZDR (nursing/psychology)<br /> 95ZZDE (optometry/nursing)</td>
 <td>The appropriate registration is used or both registrations are presented</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-P-Get-4</td>
-<td>System behaves appropriately when the requested practitioner has more than Scope of Practice</td>
-<td><b>Do all</b> <br /> 98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
-<td>System returns appropriate messaging to user</td>
-<td>optional</td></tr>
+<td>mandatory if</td></tr>
 
 <tr><td>HPI-P-Get-5</td>
+<td>System behaves appropriately when the requested practitioner has more than one Scope of Practice</td>
+<td><b>Do all</b> <br /> 98ZZNY <br /> 90ZZJF <br /> 98ZZNM</td>
+<td>System returns appropriate messaging to user</td>
+<td>mandatory if</td></tr>
+
+<tr><td>HPI-P-Get-6</td>
 <td>System behaves appropriately when the requested practitioner does not have a registration (qualification)</td>
 <td>90ZZLC <br /> 90ZZLP</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-6</td>
+<tr><td>HPI-P-Get-7</td>
 <td>System behaves appropriately for all registration (qualification) statuses</td>
 <td><b>Do all</b> <br /> 98ZZYU (Current)<br /> 98ZZYH (Inactive) <br /> 98ZZXQ (Removed) <br /> 98ZZXD (Suspended)</td>
 <td>System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-7</td>
+<tr><td>HPI-P-Get-8</td>
 <td>System clearly distinguishes between educational qualifications and registration details</td>
 <td>97ZZYP <br /> 94ZZXF <br /> 97ZZYC <br /> 94ZZWZ <br /> 97ZZXW</td>
 <td>System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-8</td>
+<tr><td>HPI-P-Get-9</td>
+<td>System clearly displays all condition’s of practice / additional authorisation’s to user</td>
+<td> TBC </td>
+<td>System returns appropriate messaging to user</td>
+<td>optional</td></tr>
+
+<tr><td>HPI-P-Get-10</td>
 <td>When a system is assessing a practitioners authority to practice that both the APC period and the registration status is used</td>
 <td>90ZZSR <br /> 90ZZMG</td>
 <td>The user is informed the practitioners APC has expired</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-9</td>
+<tr><td>HPI-P-Get-11</td>
 <td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
 <td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
 <td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
-<td>mandatory</td></tr>
+<td>mandatory if</td></tr>
 
-<tr><td>HPI-P-Get-10</td>
+<tr><td>HPI-P-Get-12</td>
 <td>System behaves appropriately when practitioner record has a date of death</td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI Practitioner Search</h3>
+<h4>HPI Practitioner Search</h4>
 <table>
 <style>
 table, th, td {
@@ -344,6 +368,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
+<caption>*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application</caption>
 <tr><th>Reference</th>
 <th>Purpose – Demonstrate that the</th>
 <th>Input values</th>
@@ -359,20 +384,29 @@ table, th, td {
 <tr><td>HPI-P-Search-2</td>
 <td>Minimum search criteria are included</td>
 <td>Name = Walter O’Reilly <br /> Name = Brian Hunnicutt</td>
-<td>A name and date of birth are provided in the request</td>
+<td>A name is provided in the request</td>
 <td>optional</td></tr>
 
 <tr><td>HPI-P-Search-3</td>
+<td>Other search criteria are included</td>
+<td>Name = Walter O’Reilly <br />
+Birthdate = 1943-05-24 <br />
+Gender = male <br />
+Name = Brian Hunnicutt <br />
+Birthdate = 1939-02-06 <br />
+Gender = male</td>
+<td>Name, gender and birthdate can be provided in the request</td>
+<td>optional</td></tr>
+
+<tr><td>HPI-P-Search-4</td>
 <td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
 <td>Results presented in order provided</td>
 <td>mandatory</td></tr>
 </table>
 
-*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application
 
-
-<h3>HPI PractitionerRole Get</h3>
+<h4>HPI PractitionerRole Get</h4>
 <table>
 <style>
 table, th, td {
@@ -393,7 +427,7 @@ table, th, td {
 <td>mandatory</td></tr>
 </table>
 
-<h3>HPI PractitionerRole Search</h3>
+<h4>HPI PractitionerRole Search</h4>
 <table>
 <style>
 table, th, td {
@@ -451,7 +485,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI PractitionerRole Add</h3>
+<h4>HPI PractitionerRole Add</h4>
 <table>
 <style>
 table, th, td {
@@ -485,7 +519,7 @@ table, th, td {
 </table>
 
 
-<h3>HPI PractitionerRole Update</h3>
+<h4>HPI PractitionerRole Update</h4>
 <table>
 <style>
 table, th, td {
