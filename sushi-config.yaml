@@ -26,15 +26,14 @@ dependencies:
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
-     #uri: 'http://build.fhir.org/ig/HL7NZ/nzbase/branches/master'
-     uri: 'https://fhir.org.nz/ig/base'
+     uri: 'https://fhir.org.nz/ig/base/'
      version: dev
     
 
      
 parameters:
   show-inherited-invariants: false
-  path-binary: .input//extra
+
 copyrightYear: 2020+
 releaseLabel: Release
 

@@ -1,6 +1,13 @@
 version: 0.2
 
+env:
+    secrets-manager:
+      GITUSERNAME: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:secrets.hip-hl7nz-github-m2GhOv:username'
+      GITTOKEN: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:secrets.hip-hl7nz-github-m2GhOv:token'
+      MAVEN_USER: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:hip-secrets.nexus.username:hip-secrets.nexus.username'
+      MAVEN_PASSWORD: 'arn:aws:secretsmanager:ap-southeast-2:262112264387:secret:hip-secrets.nexus.password:hip-secrets.nexus.password'
     
+   
 phases:
   install:
     runtime-versions:   
@@ -10,6 +17,9 @@ phases:
     commands:
       - env
       - aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/settings-clean.xml - | envsubst > /root/.m2/settings.xml
+      - export HTTP_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
+      - export HTTPS_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
+      - export NO_PROXY="10.*,192.168.*,172.16.80.*,172.22.80.*,169.254.169.254,*.ap-southeast-2.amazonaws.com,*.vpce.amazonaws.com,*.moh-aws.nz,lxddypd1.moh.govt.nz"
       - wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128  https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar  >/dev/null 2>&1
       - cp publisher.jar ~/publisher.jar
       - wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar  >/dev/null 2>&1
@@ -31,12 +41,12 @@ phases:
   build:
     commands:
       - ls 
-      
-      - git clone https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi     
+     
+      - git clone https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
       - cd hpi
       - git checkout $BRANCH
       - ls
-      - echo getting depenencdies
+      - echo getting depenencies
       #- mvn package -ntp
       # get hip-fhir-common package
       - mvn validate
@@ -48,10 +58,9 @@ phases:
       # deploy the hpi conformance artefacts
       - mvn deploy
       - echo checking in full-ig.zip
-      - git add ./output/full-ig.zip
+      - git add -f ./output/full-ig.zip
       - git commit -m "new IG build"
       - git push
-      
 artifacts:
   files:
     - 'hpi/output/full-ig.zip'
