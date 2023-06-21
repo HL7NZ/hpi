@@ -9,7 +9,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<revision>0.10.1</revision>
-		<fhir-common.version>1.1.12-SNAPSHOT</fhir-common.version>
+		<fhir-common.version>1.3-SNAPSHOT</fhir-common.version>
 	</properties>
 	<dependencies>
 
