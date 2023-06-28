@@ -25,7 +25,8 @@ phases:
       - wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar  >/dev/null 2>&1
       - cp validator_cli.jar ~/validator_cli.jar
       - npm config set proxy http://WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128
-      - npm install -g fsh-sushi
+      #- npm install -g fsh-sushi
+      - npm install -g fsh-sushi@2.6.1
       - npm install markdown
       - gem install jekyll bundler
       - sudo wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128  https://github.com/mikefarah/yq/releases/download/v4.28.1/yq_linux_386 -O /usr/bin/yq &&     
