@@ -51,18 +51,18 @@ menu:
   Business View: businessView.html
   Use cases:
     Guidance: Guidance.html
+    Get Facility (Location): getLocation.html
+    Search Facility (Location): searchLocation.html
+    Get Organization: getOrganization.html
+    Search Organization: searchOrganization.html
     Get Practitioner: getPractitioner.html
     Search Practitioner: searchPractitioner.html
-    Add Practitioner: addPractitioner.html
+    Create Practitioner: createPractitioner.html
     Update Practitioner: updatePractitioner.html
     Get PractitionerRole: getPracRole.html
     Search PractitionerRole: searchPracRole.html
     Add PractitionerRole: addPracRole.html
     Update PractitionerRole: updatePracRole.html
-    Get Facility (Location): getLocation.html
-    Search Facility (Location): searchLocation.html
-    Get Organization: getOrganization.html
-    Search Organization: searchOrganization.html
   Important information:
     Onboarding and Compliance testing: OnboardingAndComplianceTesting.html
     General Notes: general.html
