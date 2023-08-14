@@ -1,12 +1,12 @@
 
 
-### Add new PractitionerRole resource
+### Create new PractitionerRole resource
 
 <div>
-{% include add-practitionerrole.svg %}
+{% include create-practitionerrole.svg %}
 </div>
 
-Add new PractitionerRole processing steps:
+Create new PractitionerRole processing steps:
 
 1. The user initiates creating a new PractitionerRole in the integrating application
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the PractitionerRole details E.g. Post\<Endpoint>/PractitionerRole
@@ -16,21 +16,21 @@ Add new PractitionerRole processing steps:
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-practitionerrole-id and version number for future requests relating to this record
 
-### Add PractitionerRole Rules and errors
+### Create PractitionerRole Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
-* **Add PractitionerRole rules**
-  * A PractitionerRole add request must include a valid hpi-person-id, an hpi-facility-id and/or hpi-organisation-id
-  * A PractitionerRole add request may include:
+* **Create PractitionerRole rules**
+  * A PractitionerRole create request must include a valid hpi-person-id, an hpi-facility-id and/or hpi-organisation-id
+  * A PractitionerRole create request may include:
     * Role code
     * Period (start date and end if applicable)
     * Messaging-address (EDI)
     * Contact details (telecom)
   * A PractitionerRole-status-reason is mandatory when a period end-date is supplied
-  * A PractitionerRole add request cannot create a duplicate, or overlap another PractitionerRole record [See also](/glossary.html#practitioner-role)
+  * A PractitionerRole create request cannot create a duplicate, or overlap another PractitionerRole record [See also](/glossary.html#practitioner-role)
 
-* _Add PractitionerRole errors_
+* _Create PractitionerRole errors_
   * _"hpi-person-id invalid" (HTTP 422, Unprocessable, Error, Processing)_
   * _"hpi-person-id is required" (HTTP 422, Unprocessable, Error, Processing)_
   * _"hpi-organization-id or hpi-facility-id is required" (HTTP 422, Unprocessable, Error, Processing)_
@@ -39,17 +39,17 @@ Add new PractitionerRole processing steps:
 
 ---
 
-* **Add PractitionerRole period rules** (if supplied)
+* **Create PractitionerRole period rules** (if supplied)
   * A PractitionerRole period date must be formatted YYYY-MM-DD
   * A PractitionerRole period start date must be less than, or equal to end date
 
-* _Add PractitionerRole period errors_
+* _Create PractitionerRole period errors_
   * _Period is not valid; format must be yyyy-mm-dd_
   * _Period start date must be less than, or equal to end date_
 
 ---
 
-*	**Add PractitionerRole contact rules** (If supplied).
+*	**Create PractitionerRole contact rules** (If supplied).
   *	A request must not result in a duplicate contact
   *	A contact point value must have a valid format (HISO recommends)
     * **Valid mobile phone number format**
@@ -63,7 +63,7 @@ Add new PractitionerRole processing steps:
   * Contact period start date must be less than, or equal to end date
   * Rank must be unique across the set of supplied contactpoints, Gaps in the sequence of rank are allowed, 1 is the highest rank, Rank 0 is invalid, When rank is not supplied it will be assigned the next lowest rank within the PracRole telecom contactpoints.
 
-* _Add PractitionerRole contact errors_
+* _Create PractitionerRole contact errors_
   * _The contact point you are creating is a duplicate of another on this record_
   * _The mobile phone format is invalid_
   * _The email format is invalid_
