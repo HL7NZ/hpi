@@ -286,7 +286,7 @@ table, th, td {
 
 <tr><td>HPI-P-Get-1</td>
 <td>System can handle a response when a dormant hpi-person-id is requested</td>
-<td>98ZZRT <br /> 90ZZJF</td>
+<td>99ZZRT <br /> 90ZZJF</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
 
