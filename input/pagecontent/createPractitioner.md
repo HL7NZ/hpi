@@ -1,22 +1,22 @@
 
 
-### Add Practitioner
+### Create Practitioner
 
 #### Overview
 
-An ‘Add Practitioner’ operation is initiated by a user who needs to add a new practitioner record for to the HPI.
+A Create Practitioner operation is initiated by a user who needs to add a new practitioner record to the HPI.
 
 **Expectations**
 
 * Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the person does not already exist.
 * Duplicate HPI records will not be checked upfront, but will create a task for a potential duplicate to be resolved.
-* If the person is found in the HPI then an update operation is required. If not found then an add practitioner opertion should be completed.
+* If the person is found in the HPI then an update operation is required. If not found then a create practitioner operation should be completed.
 
 <div>
-{% include add-practitioner.svg %}
+{% include create-practitioner.svg %}
 </div>
 
-Add Practitioner processing steps:
+Create Practitioner processing steps:
 
 1. The user initiates creating a new Practitioner in the integrating application
 2. The integrating application sends an HTTP POST request (a FHIR create) containing the Practitioner details E.g. Post\<Endpoint>/Practitioner
@@ -26,50 +26,50 @@ Add Practitioner processing steps:
 6. The integrating application indicates to the user the record has been successfully created
 7. The integrating application retains the hpi-person-id and version-id for future requests relating to this record
 
-### Add Practitioner Rules and errors
+### Create Practitioner Rules and errors
 
 [For Request rules and errors click here](/general.html#request-rules-and-errors)
 
-* **Add Practitioner rules**
-  * An Add practitioner request must include:
+* **Create Practitioner rules**
+  * A Create practitioner request must include:
     * name,
     * birth date,
     * gender
     * ethnicity
-   * An add request made by an RA must include a unique RA source person identifier that does not already exist in HPI within the same source as that submitted
+   * A request made by an RA must include a unique RA source person identifier that does not already exist in HPI within the same source as that submitted
    * A request cannot create an HPI record which is a duplicate of another Practitioner record
-   * An add request may include:
+   * A request may include:
       * educational qualifications
       * languages (communication) 
-   * An add request must not contain:
+   * A request must not contain:
       * registration details (Practitioner.qualification). Registration details can only be added with an update request
-      * deathdate. deathdate can only be added with an update request
+      * deathdate. Deathdate can only be added with an update request
 
 
-* _Add Practitioner errors_
+* _Create Practitioner errors_
   * _Name is required_
   * _Birth date is a required field_
   * _RA identifier is required_
   * _RA identifier is already assigned to an hpi-person-id_
   * _The practitioner identity information supplied may result in duplication of another identity. Please check the list of potential duplicates before resubmitting_
-   * _Death date not valid for an add_
-   * _Registration details not valid for an add_
+   * _Death date not valid with a create practitioner operation_
+   * _Registration details not valid with a create practitioner operation_
 
 ---
 
-* **Add Practitioner birth date rules**
+* **Create Practitioner birth date rules**
   *	Practitioner birthdate must be a complete date and formatted YYYY-MM-DD
   *	Practitioner must be aged between 14 and 90
 
 
-* _Add Practitioner birthdate errors_
+* _Create Practitioner birthdate errors_
   * _Birthdate not valid, must be a complete date and formatted YYYY-MM-DD_
   * _Practitioner birthdate cannot be a future date_
   * _Practitioner must be greater than 14, and les than 90 years old_
 
 ---
 
-* **Add Practitioner name rules**
+* **Create Practitioner name rules**
   * A person must have either a usual or an official name
   * A person can only have one official name
   * A person can only have one usual name
@@ -78,32 +78,32 @@ Add Practitioner processing steps:
   * A name must have a given or a family at minimum
   * The first character of a name must be an Alpha (A-Z or a-z) or apostrophe
 
-* _Add Practitioner name errors_
+* _Create Practitioner name errors_
   * _A usual or an official name is required_
   * _Only one official or usual name is allowed_
-  * _Name use old is not valid for an add_
+  * _Name use old is not valid with a create practitioner operation_
   * _Name must contain either a Given name or a Family and a Name Use_
 
 ---
 
-* **Add Practitioner ethnicity rules**
+* **Create Practitioner ethnicity rules**
   * A set of ethnicity codes must contain at least 1 ethnicity, only one instance of each selected ethnicity, no more than one ‘unspecified’ ethnicity code and can contain up to 6 ethnicities
 
-* _Add Practitioner ethnicity errors_
+* _Create Practitioner ethnicity errors_
   * _A Practitioner must have at least one valid ethnicity code, only one instance of each selected ethnicity, and no more than one ‘unspecified’ ethnicity code_
 
 ---
 
-* **Add Practitioner educational qualification rules**
-  * An educational qualification add request must not contain an id (this will be generated by the HPI and should be stored by the local system for later use)
-  * An educational qualification add request must include:
+* **Create Practitioner educational qualification rules**
+  * An educational qualification request must not contain an id (this will be generated by the HPI and should be stored by the local system for later use)
+  * An educational qualification request must include:
     * fullname,
     * year,
     * institution,
     * city,
     * country
 
-* _Add Practitioner educational qualification errors_
+* _Create Practitioner educational qualification errors_
   * _Educational qualification fullname is a required field_
   * _Educational qualification year is a required field_
   * _Educational qualification institution is a required field_
@@ -113,5 +113,5 @@ Add Practitioner processing steps:
 
 ---
 
-* **Add Practitioner language (communication) rules**
+* **Create Practitioner language (communication) rules**
   * A set of communication codes must contain at least 1 language, only one instance of each selected language, and can contain up to 10 languages
