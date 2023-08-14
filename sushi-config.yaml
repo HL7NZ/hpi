@@ -61,7 +61,7 @@ menu:
     Update Practitioner: updatePractitioner.html
     Get PractitionerRole: getPracRole.html
     Search PractitionerRole: searchPracRole.html
-    Add PractitionerRole: addPracRole.html
+    Create PractitionerRole: createPracRole.html
     Update PractitionerRole: updatePracRole.html
   Important information:
     Onboarding and Compliance testing: OnboardingAndComplianceTesting.html
