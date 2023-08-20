@@ -53,66 +53,66 @@ table, th, td {
 <tr><td>Get Facility</td>
 <td>Get Facility using hpi-facility-id</td>
 <td>Returns a location resource <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="getLocation.html">See Get Facility use case</a></td></tr>
 
 <tr><td>Search Facility</td>
 <td>Search Facilities by name, address, type and other parameters</td>
 <td>Returns a bundle containing location resources <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchLocation.html">See Search Facility use case</a></td></tr>
 
 <tr><td>Get Organisation</td>
 <td>Get Organisation using hpi-organisation-id</td>
 <td>Returns an Organization resource <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="getOrganization.html">See Get Organisation use case</a></td></tr>
 
 <tr><td>Search Organisation</td>
 <td>Search Organisation by name, type and other parameters</td>
 <td>Returns a bundle containing Organisation resources <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchOrganization.html">See Search Organisation use case</a></td></tr>
 
 <tr><td>Get Practitioner</td>
 <td>Get Practitioner using CPN or RA-id</td>
 <td>Returns a Practitioner resource <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="getPractitioner.html">See Get Practitioner use case</a></td></tr>
 
 <tr><td> Search Practitioner</td>
 <td>Search Practitioner by name, date of birth and other demographics</td>
 <td>Returns a bundle containing Practitioner resources <br /> 
-<a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchPractitioner.html">See Search Practitioner use case</a></td></tr>
 
 <tr><td>Update Practitioner </td>
 <td>Update Practitioner records</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="updatePractitioner.html">See Update Practitioner use case</a></td></tr>
 
 <tr><td>Create Practitioner</td>
 <td>Create Practitioner records</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="createPractitioner.html">See Create Practitioner use case</a></td></tr>
 
 <tr><td>Get PractitionerRole </td>
 <td>Get PractitionerRole using hpi-practitionerrole-id</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="getPracRole.html">See Get PractitionerRole use case</a></td></tr>
 
 <tr><td> Search PractitionerRole </td>
 <td>Search PractitionerRole using Practitioner and other parameters</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchPracRole.html">See Search PractitionerRole use case</a></td></tr>
 
 <tr><td>Update PractitionerRole </td>
 <td>Update PractitionerRole records</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="updatePracRole.html">See Update PractitionerRole use case</a></td></tr>
 
 <tr><td> Create PractitionerRole </td>
 <td>Create PractitionerRole records</td>
-<td><a href="OnboardingAndComplianceTesting.html#to-the-production-environment">See who can access the production environment</a> <br />
+<td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="createPracRole.html">See Create PractitionerRole use casse</a></td></tr>
 </table>
