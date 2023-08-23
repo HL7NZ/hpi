@@ -114,5 +114,5 @@ table, th, td {
 <tr><td> Create PractitionerRole </td>
 <td>Create PractitionerRole records</td>
 <td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
-<a href="createPracRole.html">See Create PractitionerRole use casse</a></td></tr>
+<a href="createPracRole.html">See Create PractitionerRole use case</a></td></tr>
 </table>
