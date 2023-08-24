@@ -45,7 +45,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<caption>See below for available business functions - for more information on how these could be used in patient interactions <a href="guidance.html">See the use case guidance page</a> <br /> By using Te Whatu Ora APIs you are accessing personally identifiable information from the HPI which is not directly from the individual concerned. You need to consider your obligations under HIPC principle 2, and we may request to see your privacy impact assessment prir to access to production. </caption>
+<caption>See below for available business functions. For more information on how these could be used in healthcare interactions <a href="guidance.html">See the use case guidance page</a> <br /> By using Te Whatu Ora APIs you are accessing personally identifiable information from the HPI which is not directly from the individual concerned. You need to consider your obligations under HIPC principle 2, and we may request to see your privacy impact assessment prir to access to production. </caption>
 <tr><th>Business Functions</th>
 <th>Description</th>
 <th>Comments</th></tr>
