@@ -394,23 +394,78 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<tr><th> Version 1 Scopes </th><th> SMART on FHIR Scopes </th><th> Description </th></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:read   </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.r </td><td> Read access to all Practitioner resources. <br /> Gender, birthDate and ethnicity are not disclosed </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:search </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.s </td><td> Search access to Practitioner resources <br /> Gender, birthDate and  ethnicity are not disclosed <br /> Practitioners tagged as confidential are excluded from the results </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/practitioner:write  </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.u <br /> https://api.hip.digital.health.nz/fhir/system/Practitioner.c </td><td> Write access to all Practitioner resources. <br /> Allows user to create and update practitioner records </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/practitioner:admin  </td><td> https://api.hip.digital.health.nz/fhir/system/Practitioner.a </td><td> Admin access to all Practitioner resources <br /> Allows access to confidential data, gender, birthDate and ethnicity <br /> Allows access to merge records </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:read       </td><td> https://api.hip.digital.health.nz/fhir/system/Location.r </td><td> Read access to all Location resources  </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:search    </td><td> https://api.hip.digital.health.nz/fhir/system/Location.s </td><td>Search access to all Location resources  </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/location:write     </td><td> https://api.hip.digital.health.nz/fhir/system/Location.u <br /> https://api.hip.digital.health.nz/fhir/system/Location.c </td><td> Write access to all Location resources </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/location:admin    </td><td> https://api.hip.digital.health.nz/fhir/system/Location.a </td><td> Admin access to all Location resources <br /> Allows access to merge and delete records </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:read  </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.r </td><td> Read access to all Organization resources </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/organization:search </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.s </td><td> Search access to all Organization resources </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:write </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.u <br /> https://api.hip.digital.health.nz/fhir/system/Organization.c </td><td> Write access to all Organization resources </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/organization:admin  </td><td> https://api.hip.digital.health.nz/fhir/system/Organization.a </td><td> Admin access to all Organization resources <br /> Allows access to merge and delete records </td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:read     </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r </td><td> Read access to all Practitioner Role resources </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:search    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s </td><td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results </td></tr>
-<tr><td>https://api.hip.digital.health.nz/fhir/pracrole:write    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u <br /> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c </td><td> Write access to all Practitioner Role resources.</td></tr>
-<tr><td> https://api.hip.digital.health.nz/fhir/pracrole:admin    </td><td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a </td><td> Admin access to all Practitioner Role resources <br /> Allows access to confidential data <br /> Allows access to merge records </td></tr>
+<tr>
+<th> SMART on FHIR Scopes </th>
+<th> Description </th></tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Practitioner.r </td>
+<td> Read access to all Practitioner resources. <br /> Gender, birthDate and ethnicity are not disclosed </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Practitioner.s </td>
+<td> Search access to Practitioner resources <br /> Gender, birthDate and  ethnicity are not disclosed <br /> Practitioners tagged as confidential are excluded from the results </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Practitioner.u </td>
+<td> Allows user to update practitioner records</td>
+<tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Practitioner.c </td>
+<td> Allows user to create practitioner records </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Practitioner.a </td>
+<td> Admin access to all Practitioner resources <br /> Allows access to confidential data, gender, birthDate and ethnicity <br /> Allows access to merge records </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Location.r </td>
+<td> Read access to all Location resources  </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Location.s </td>
+<td>Search access to all Location resources  </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Organization.r </td>
+<td> Read access to all Organization resources </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/Organization.s </td>
+<td> Search access to all Organization resources </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r </td>
+<td> Read access to all Practitioner Role resources </td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s </td>
+<td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results </td>
+
+</tr>
+<td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u</td>
+<td> Update access to all Practitioner Role resources.</td>
+</tr>
+
+<tr>
+https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c </td>
+<td> Create access to all Practitioner Role resources.</td>
+</tr>
+
+<tr>
+<td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a </td>
+<td> Admin access to all Practitioner Role resources <br /> Allows access to confidential data <br /> Allows access to merge records </td>
+</tr>
 </table>
 
 #### API Keys and Usage Plans
