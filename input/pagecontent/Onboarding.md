@@ -86,7 +86,7 @@ table, th, td {
 <a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchPractitioner.html">See Search Practitioner use case</a></td></tr>
 
-<tr><td>Update Practitioner </td>
+<tr><td>Maintain Practitioner </td>
 <td>Update Practitioner records</td>
 <td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="updatePractitioner.html">See Update Practitioner use case</a></td></tr>
@@ -106,7 +106,7 @@ table, th, td {
 <td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="searchPracRole.html">See Search PractitionerRole use case</a></td></tr>
 
-<tr><td>Update PractitionerRole </td>
+<tr><td>Maintain PractitionerRole </td>
 <td>Update PractitionerRole records</td>
 <td><a href="Onboarding.html#to-the-production-environment">See who can access the production environment</a> <br />
 <a href="updatePracRole.html">See Update PractitionerRole use case</a></td></tr>
