@@ -64,7 +64,8 @@ menu:
     Create PractitionerRole: createPracRole.html
     Update PractitionerRole: updatePracRole.html
   Important information:
-    Onboarding and Compliance testing: OnboardingAndComplianceTesting.html
+    Onboarding: Onboarding.html
+    Compliance testing: ComplianceTesting.html
     General Notes: general.html
     FAQ: faq.html
   API: capabilityStatement.html
