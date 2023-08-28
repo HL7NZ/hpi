@@ -713,6 +713,8 @@ A PractitionerRole record with:
 <td>Mandatory</td></tr>
 </table>
 
+
+
 <h4>HPI Create PractitionerRole</h4>
 <table>
 <style>
@@ -727,23 +729,98 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th></tr>
 
-<tr><td>HPI-PR-Add-1</td>
-<td>Minimum add criteria are provided (hpi-person-id and hpi-facility-id)</td>
-<td>Select hpi-person-id from test IDs <br /> Select hpi-facility-id from the test IDs</td>
-<td>PractitionerRole record is added</td>
+<tr><td>HPI-PR-Create-1</td>
+<td>application can create a PractitionerRole record with the minimum criteria provided
+  <ul>
+    <li>hpi-person-id </li>
+    <li>hpi-facility-id or hpi-org-id</li>
+    <li>role code</li>
+  </ul>
+</td>
+<td>Select required identifiers from the test dataset</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li> User can input minimum data to create a PractitionerRole record </li>
+      </ul>
+    </li>
+    <li> Output
+      <ul>
+        <li>PractitionerRole record is created with minimum dataset.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-PR-Add-2</td>
-<td>System can supply all possible PractitionerRole attributes</td>
-<td>Add a record with location, organization, role code,  multiple contact points and a period</td>
-<td>PractitionerRole record is added</td>
+<tr><td>HPI-PR-Create-2</td>
+<td>application can create a PractitionerRole record with additional items provided <br />
+  <ul>
+    <li>hpi-person-id </li>
+    <li>hpi-facility-id and/or hpi-org-id</li>
+    <li>role code</li>
+    <li>contact points (as many as required)</li>
+    <li>period</li>
+    <li>messaging address</li>
+  </ul>
+</td>
+<td>Create record with identifiers from the test dataset <br />
+Use all information required by use case <br /></td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li> User can create a PractitionerRole record with the additional items </li>
+      </ul>
+    </li>
+    <li> Output
+      <ul>
+        <li>PractitionerRole record is created with additional items included.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>mandatory - use case dependent</td></tr>
+
+<tr><td>HPI-PR-Create-3</td>
+<td>describe the business process used if a health provider asks for their record to be labelled confidential</td>
+<td>Create record with identifiers from the test dataset <br />
+Use all information required by use case <br /></td>
+<td>Description of business process to request Te Whatu Ora to set confidential security label</td>
 <td>optional</td></tr>
 
-<tr><td>HPI-PR-Add-3</td>
-<td>System can provide the confidentiality settings</td>
-<td>TBC</td>
-<td>PractitionerRole record is added with appropriate confidentiality settings</td>
-<td>optional</td></tr>
+<tr><td>HPI-PR-Create-error-1</td>
+<td>application will show the correct error when attempting to create a PractitionerRole without a Practitioner CPN (hpi-person-id)</td>
+<td>Create record with only an hpi-organisation-id or hpi-facility-id</td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text: PractitionerRole.Practitioner</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-Create-error-2</td>
+<td>application will show the correct error when attempting to create a PractitionerRole without an organisation or facility.</td>
+<td>Create record with only an hpi-person-id (CPN)</td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text: PractitionerRole.Facility, PractitionerRole.Organisation</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-Create-error-3</td>
+<td>application will show the correct error when attempting to create a PractitionerRole without a role code.</td>
+<td>Create record without a role code</td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text: PractitionerRole.code</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-Create-error-4</td>
+<td>aapplication will show the correct error when attempting to create a duplicate PractitionerRole record</td>
+<td>Create a duplicte Practitionerrole <a href="glossary.html#practitioner-role">See duplicate definition</a></td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text: PractitionerRole</td>
+<td>Mandatory</td></tr>
 </table>
 
 
@@ -761,33 +838,250 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th></tr>
 
-<tr><td>HPI-PR-Update</td>
-<td>System can end a PractitionerRole record that it has created</td>
-<td>Use role created in HPI-PR-Add-1 test</td>
-<td>hpi-person-id is always provided</td>
+<tr><td>HPI-PR-Update-1</td>
+<td>application can replace the contact details on a PractitionerRole record</td>
+<td>Update PracRole xxx with multiple contact details e.g.<br />
+<ul>
+  <li> system-phone
+    <ul>
+      <li>use - work</li>
+      <li>rank -1</li>
+      <li>value-ficticious</li>
+    </ul>
+  </li>
+  <li> system-phone
+    <ul>
+      <li>use - work</li>
+      <li>rank -2</li>
+      <li>value-ficticious</li>
+    </ul>
+  </li>
+  <li> system-phone
+    <ul>
+      <li>use - temp</li>
+      <li>rank - 2</li>
+      <li>value-ficticious</li>
+    </ul>
+  </li>
+</ul>  
+</td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li>User can input new contact information</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Contact details are added to the HPI record correctly</li>
+        <li>Contact information displayed to the user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory - use case dependent</td></tr>
+
+<tr><td>HPI-PR-Update-2</td>
+<td>application can replace just the phone number on a PractitionerRole record</td>
+<td>Update PracRole used above with:<br />
+<ul>
+  <li>Replace this contact:
+    <ul>
+        <li> system-phone
+          <ul>
+            <li>use - work</li>
+            <li>rank -1</li>
+            <li>value-ficticious</li>
+          </ul>
+        </li>
+    </ul>
+  </li>
+  <li> With this contact information
+    <ul>
+      <li> system-phone
+        <ul>
+          <li>use - work</li>
+          <li>rank - 5</li>
+          <li>value-ficticious</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li>User can input new contact information</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Contact details are added to the HPI record correctly, other contact details remain unchanged</li>
+        <li>Contact information displayed to the user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory- use case dependent</td></tr>
+
+<tr><td>HPI-PR-Update-3</td>
+<td>application can remove a contactpoint on a PractitionerRole record</td>
+<td>Update PracRole used above and remove:<br />
+  <li> This contact information
+    <ul>
+      <li> system-phone
+        <ul>
+          <li>use - temp</li>
+          <li>rank - 2</li>
+          <li>value-ficticious</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li>User can update contact information</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Output: temp phone is removed from the HPI record, other contact details remain unchanged</li>
+        <li>Contact information displayed to the user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory- use case dependent</td></tr>
+
+<tr><td>HPI-PR-Update-4</td>
+<td>application can update the contact rank on a PractitionerRole record</td>
+<td>
+<ul>
+  <li>Replace this contact rank:
+    <ul>
+        <li> system-phone
+          <ul>
+            <li>use - work</li>
+            <li>rank -2</li>
+          </ul>
+        </li>
+    </ul>
+  </li>
+  <li> With this contact information
+    <ul>
+      <li> system-phone
+        <ul>
+          <li>use - work</li>
+          <li>rank - 1</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+</td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li>User can update contact rank only</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Output: Contact rak is updated, other contact details remain unchanged</li>
+        <li>Contact information displayed to the user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory- use case dependent</td></tr>
+
+<tr><td>HPI-PR-Update-5</td>
+<td>application can add / replace the messaging address on a PractitionerRole record</td>
+<td> update PractitionerRole used above with Messaging address <br />
+<ul>
+  <li>provider - heathlink </li>
+  <li>value “ficticious value”</li>
+</ul>
+</td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li>User can input messaging address</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Output: Messaging address added to the HPI PractitionerRole record correctly</li>
+        <li>Contact information displayed to the user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory- use case dependent</td></tr>
+
+<tr><td>HPI-PR-Update-6</td>
+<td>application can end a PractitionerRole record</td>
+<td> Use role created above <br />
+add an end date an end reason </td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li> user can add an end date and end reason</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Output: Details displayed to user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
 <td>mandatory</td></tr>
 
-<tr><td>HPI-PR-Update</td>
-<td>System can add a contactpoint</td>
-<td>Use role created in HPI-PR-Add-1 to 3</td>
-<td>Contactpoint is added to the record</td>
-<td>optional</td></tr>
+<tr><td>HPI-PR-Update-6</td>
+<td>application can remove an end date on a PractitionerRole record</td>
+<td> Use PractitionerRole above <br />
+remove the end date an end reason </td>
+<td>
+  <ul>
+    <li> Input
+      <ul>
+        <li> user can remove an end date and end reason</li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li>Output: Details displayed to user</li>
+      </ul>      
+    </li>
+  </ul>
+</td>
+<td>mandatory</td></tr>
 
-<tr><td>HPI-PR-Update</td>
-<td>System can remove a contactpoint</td>
-<td>Use role created in HPI-PR-Add-1 to 3</td>
-<td>Contactpoint is removed from the record</td>
-<td>optional</td></tr>
+<tr><td>HPI-PR-Update-error-1</td>
+<td>application will show the correct error when attempting to update a PractitionerRole record with an end date and no reason</td>
+<td> Use PractitionerRole above <br />
+add an end date only </td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text:PractitionerRole.statusReason</td>
+<td>mandatory</td></tr>
 
-<tr><td>HPI-PR-Update</td>
-<td>System can update the rank on a contactpoint</td>
-<td>Use role created in HPI-PR-Add-1 to 3</td>
-<td>Rank is updated on a contactpoint</td>
-<td>optional</td></tr>
-
-<tr><td>HPI-PR-Update</td>
-<td>System can provide the confidentiality settings</td>
-<td>TBC - Use role created in HPI-PR-Add-1 to 3</td>
-<td>Confidentiality settings are updated on the record</td>
-<td>optional</td></tr>
+<tr><td>HPI-PR-Update-error-2</td>
+<td>application will show the correct error when attempting to update a PractitionerRole record with an end reason and no end date</td>
+<td> Use PractitionerRole above <br />
+add an end date only </td>
+<td>Error: EM07201 <br />
+Display "Required value missing"<br />
+Text:PractitionerRole.period.end</td>
+<td>mandatory</td></tr>
 </table>
