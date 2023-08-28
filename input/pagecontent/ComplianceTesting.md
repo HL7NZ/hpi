@@ -366,7 +366,7 @@ Gender = male</td>
 </table>
 
 
-<h4>HPI PractitionerRole Get</h4>
+<h4>HPI PractitionerRole minimum data requirements Get and Search</h4>
 <table>
 <style>
 table, th, td {
@@ -380,72 +380,340 @@ table, th, td {
 <th>Expected outcome</th>
 <th>Mandatory</th></tr>
 
-<tr><td>HPI-PR-Get-1</td>
-<td>System can Get a record using the hpi-practitionerrole-id</td>
-<td>tbd</td>
-<td>userID varies for each request</td>
-<td>mandatory</td></tr>
+<tr><td>HPI-PR-MD-1</td>
+<td>application can Get a record using the hpi-practitionerrole-id</td>
+<td>
+  <ul>
+    <li> Get: R00000055-Q </li>
+    <li> Search: NA </li>
+  </ul>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: NA </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> Record returned and appropriate parts displayed correctly (use case dependent).</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - use case dependent</td></tr>
+
+<tr><td>HPI-PR-MD-2</td>
+<td>application allows the user to search using the minimum search criteria and displays the search results in order appropriate to use case</td>
+<td>
+  <li>Get:N/A</li>
+  <li>Search: Search criteria (practitioner).</li>
+</td>
+<td>
+   <ul>
+     <li> Input:
+       <ul>
+         <li>hpi-person-id (CPN)</li>
+       </ul>
+     </li>
+    <li> Output:
+      <ul>
+        <li> - Search results displayed in appropriate order (use case dependent).</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-MD-3</td>
+<td>application allows the user to search using other search criteria depending on the use case. <br />
+Make sure the search criteria you are using is relevant for the use case (Reference to Health Information Privacy Code 2020, Rule 1).</td>
+<td>
+  <ul>
+    <li>Get:N/A</li>
+    <li>Search:
+      <ul>
+        <li>Practitioner</li>
+        <li>Organisation</li>
+        <li>Location</li>
+        <li>Role</li>
+        <li>Active(status)</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>
+   <ul>
+     <li> Input:
+       <ul>
+         <li>hpi-person-id (CPN) an,</li>
+         <li>other search criteria can be included</li>
+       </ul>
+     </li>
+    <li> Output:
+      <ul>
+        <li> - Search results displayed in appropriate order (use case dependent).</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - depdending on use case</td></tr>
+
+<tr><td>HPI-PR-MD-4</td>
+<td>application will show the correct error when attempting to search without a Practitioner</td>
+<td>
+  <ul>
+    <li>Get:N/A</li>
+    <li>Search: using one of the other criteria only
+      <ul>
+        <li>Organisation</li>
+        <li>Location</li>
+        <li>Role</li>
+        <li>Active(status)</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>
+   <ul>
+     <li> Input:
+       <ul>
+         <li>other search criteria provided</li>
+       </ul>
+     </li>
+    <li> Output:
+      <ul>
+        <li> - Error EM07201: Display Required value missing</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - depdending on use case</td></tr>
+
+<tr><td>HPI-PR-MD-5</td>
+<td>application does not error, and can provide relevant information for each of the following scenarios. <br />
+A PractitionerRole record with:
+<ol>
+  <li>Practitioner, Facility, Role code</li>
+  <li>Practitioner, Organisation,  Role code</li>
+  <li>Practitioner, Organisation, Facility, Role code</li>
+  <li>Practitioner, Organisation, Facility, Role code, period</li>
+</ol>
+</td>
+<td><b> Do all </b>
+<ol>
+  <li>
+    <ul>
+      <li>Get:R00000161-P</li>
+      <li>Search: practitioner:97ZABV, location:FZZ961-K, role:542111</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Get:R00000160-M</li>
+      <li>Search: practitioner:97ZABV, organization:GZZ998-G, role:542111</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Get:R00000162-R</li>
+      <li>Search: practitioner:97ZABV, location:FZZ961-K, organization:GZZ998-G, role:512211</li>
+    </ul>
+  </li>
+  <li>
+    <ul>
+      <li>Get:R00000167-B</li>
+      <li>Search: practitioner:97ZABV, location:FZZ961-K, organization:GZZ998-G, role:521111</li>
+    </ul>
+  </li>
+</ol>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> Record returned and appropriate parts displayed correctly (use case dependent).</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - use case dependent</td></tr>
+
+<tr><td>HPI-PR-MD-6</td>
+<td>application can make appropriate use of the facility messaging address and / or PractitionerRole messaging address.</td>
+<td> <b> Do both </b>
+  <ol>
+    <li>PracRole without messaging address
+      <ul>
+        <li>Get:PracRole-ID (withoutEDI)</li>
+        <li>Search: Search criteria (withoutEDI).</li>
+      </ul>
+    </li>
+    <li>PracRole with messaging address
+      <ul>
+        <li>Get:PracRole-ID (withEDI)</li>
+        <li>Search: Search criteria (withEDI).</li>
+      </ul>
+    </li>
+  </ol>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application makes appropriate use of messaging address.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - if using messaging address.</td></tr>
+
+<tr><td>HPI-PR-MD-7</td>
+<td>application can make appropriate use of contact details <br />
+A PractitionerRole record with:
+<ul>
+  <li>an email address</li>
+  <li>a phone number</li>
+  <li>contact rank</li>
+</ul>
+</td>
+<td>
+  <li>Get:Pracrole-ID (with email and phone).</li>
+  <li>Search: Search criteria (with email and phone).</li>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application makes appropriate use of contact details.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - if using contact details</td></tr>
+
+<tr><td>HPI-PR-MD-8</td>
+<td>application can make appropriate use of contact details where record has multiple sets, including contact rank. <br />
+A PractitionerRole record with:
+<ul>
+  <li>2 email addresses</li>
+  <li>3 phone number's</li>
+  <li>mixture of temp and work </li>
+  <li>contact rank</li>
+</ul>
+</td>
+<td>
+  <li>Get:Pracrole-ID (with 2email and 3phone).</li>
+  <li>Search: Search criteria (with 2email and 3phone).</li>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application makes appropriate use of contact details.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory - if using contact details</td></tr>
+
+<tr><td>HPI-PR-MD-9</td>
+<td>application makes appropriate use of a PractitionerRole record that is not active (has period end date and end reason).</td>
+<td>
+  <li>Get:Pracrole-ID (not active).</li>
+  <li>Search: Search criteria (not active).</li>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application makes appropriate use of PractitionerRole record that as ended.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-MD-10</td>
+<td>application makes appropriate use of a PractitionerRole record without a period.</td>
+<td>
+  <li>Get:Pracrole-ID (no period).</li>
+  <li>Search: Search criteria (no period).</li>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application makes appropriate use of PractitionerRole record without a period.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory</td></tr>
+
+<tr><td>HPI-PR-MD-11</td>
+<td>application behaves appropriately when confidentiality settings have been set for a practitioner</td>
+<td>
+  <li>Get:Pracrole-ID (practitioner with c).</li>
+  <li>Search: Search criteria (practitioner with c).</li>
+</td>
+<td>
+  <ul>
+    <li> Input:
+      <ul>
+        <li>Get: HPI-PractitionerRole-id</li>
+        <li>Search: Criteria provided </li>
+      </ul>
+    </li>
+    <li>Output:
+      <ul>
+        <li> application returns appropriate messaging to user.</li>
+      </ul>
+    </li>
+  </ul>
+</td>
+<td>Mandatory</td></tr>
 </table>
 
-<h4>HPI PractitionerRole Search</h4>
-<table>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-<tr><th>Reference</th>
-<th>Purpose – Demonstrate that the</th>
-<th>Input values</th>
-<th>Expected outcome</th>
-<th>Mandatory</th></tr>
-
-<tr><td>HPI-PR-Search-1</td>
-<td>Minimum search criteria are included</td>
-<td>tbd</td>
-<td>hpi-person-id is always provided</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-PR-Search-2</td>
-<td>System behaves appropriately when the record contains a role that has ended</td>
-<td>tbd</td>
-<td>System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-PR-Search-3</td>
-<td>System behaves appropriately where a role does not include an hpi-organisation-id</td>
-<td>tbd</td>
-<td>System does not error <br /> System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-PR-Search-4</td>
-<td>System behaves appropriately where a role does not include a role code</td>
-<td>tbd</td>
-<td>System does not error <br /> System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-PR-Search-5</td>
-<td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
-<td>tbd</td>
-<td>System does not error <br /> System returns appropriate messaging to user</td>
-<td>mandatory</td></tr>
-
-<tr><td>HPI-PR-Search-6</td>
-<td>System behaves appropriately when the record contains one or more contact points</td>
-<td>tbd</td>
-<td>Where appropriate all contact points are displayed to user</td>
-<td>optional</td></tr>
-
-<tr><td>HPI-PR-Search-7</td>
-<td>System behaves appropriately when using the contact point rank</td>
-<td>tbd</td>
-<td>When rank is present it is presented to user in an meaningful way</td>
-<td>optional</td></tr>
-</table>
-
-
-<h4>HPI PractitionerRole Add</h4>
+<h4>HPI Create PractitionerRole</h4>
 <table>
 <style>
 table, th, td {
