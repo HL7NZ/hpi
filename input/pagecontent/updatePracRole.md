@@ -53,4 +53,4 @@ For Put PractitionerRole examples [click here](putPractitionerRoleExample.html)
 ---
 
 * **PractitionerRole update contact and period end-date rules and errors**
-  * See [Add PractitionerRole rules and errors](/addPracRole.html)
+  * See [Create PractitionerRole rules and errors](/createPracRole.html)
