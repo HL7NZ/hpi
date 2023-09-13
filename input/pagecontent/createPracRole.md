@@ -2,10 +2,9 @@
 
 ### Create PractitionerRole Overview
 
-The Create PractitionerRole operation is initia
+The Create PractitionerRole operation is initiated by a user who needs to create a PractitionerRole record for a person not found on the HPI. <br />
+The user has sourced the required information, searched PractitionerRole to make sure the role doesn't currently exist, and initiates the request to create a new PractitionerRole record.
 
-initiated by a user who needs to create a new identity record for a person not found on the NHI. <br />
-The user has sourced the required identity information, done a thorough search of the NHI, and initiates a request to create a new patient identity record in the NHI.
 <div>
 {% include create-practitionerrole.svg %}
 </div>
@@ -19,6 +18,10 @@ Create new PractitionerRole processing steps:
 5. The HPI FHIR API confirms a successful update – HTTP 201 Created status code
 6. The integrating application indicates to the user the create has been successful
 7. The integrating application retains the hpi-practitionerrole-id and version number for future requests relating to this record
+
+#### Create PractitionerRole Example
+
+For a Create Practitioner Role example [click here](createPracRoleExample.html)
 
 ### Create PractitionerRole Rules and errors
 
