@@ -23,7 +23,7 @@ Prior to an update a user should have the hpi-practitionerrole-id and have the l
 6.	The HPI FHIR API confirms a successful update – HTTP 200 ok
 7.	The integrating application indicates to the user the update has been successful and retains the version number for future requests relating to this record
 
-#### Put PractitionerRole Examples
+#### Udate PractitionerRole Examples
 
 For Put PractitionerRole examples [click here](putPractitionerRoleExample.html)
 
