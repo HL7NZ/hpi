@@ -74,7 +74,7 @@ Create new PractitionerRole processing steps:
     * can contain any UTF-8 characters except control characters.
 * Contact period must be formatted YYYY-MM-DD
 * Contact period start date must be less than, or equal to end date
-* Rank must be unique across the set of supplied contactpoints, Gaps in the sequence of rank are allowed, 1 is the highest rank, Rank 0 is invalid, When rank is not supplied it will be assigned the next lowest rank within the PracRole telecom contactpoints.
+* Rank may be supplied for contactpoints, Gaps in the sequence of rank are allowed, 1 is the highest rank, Rank 0 is invalid, When rank is not supplied it will be assigned the next lowest rank within the PracRole telecom contactpoints.
 
 
 ---
