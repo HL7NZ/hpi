@@ -1,8 +1,6 @@
 
 ### HPI PractitionerRole
 
-Holds the relationship details of practitioners to the places where they work and the organizations they work for, and the role they have there.
-
 <h4>Practitioner Role Attributes</h4>
 <table>
 <style>
@@ -26,7 +24,7 @@ table, th, td {
 
 <tr>
 <td>Messaging-address</td>
-<td>The electronic messaging address for the person's role <br /> Only to be used if the Facility messaging address is not appropriate for the specific role <br> Used for the edi-address</td>
+<td>The electronic messaging address for the person's role <br /> Only to be used if the Facility messaging address is not appropriate for the specific role <br> Used for the healthlink edi-address</td>
 </tr>
 
 <tr>
@@ -41,7 +39,7 @@ table, th, td {
 
 <tr>
 <td>Period</td>
-<td>The start and end dates for a PractitinerRole</td>
+<td>The start and end dates for a PractitinerRole record</td>
 </tr>
 
 <tr>
@@ -56,16 +54,16 @@ table, th, td {
 
 <tr>
 <td>Code</td>
-<td>The role he Practitioner is assinged</td>
+<td>The role the Practitioner is assinged to</td>
 </tr>
 
 <tr>
 <td>Location</td>
-<td>The Facility the Practitioner works at in this role <br /> hpi-facility-id and name </td>
+<td>The Facility where the Practitioner works in this role <br /> hpi-facility-id and name </td>
 </tr>
 
 <tr>
 <td>Telecom</td>
-<td>The Contact details for this person in this role</td>
+<td>The Contact details for this Practitioner in this role</td>
 </tr>
 </table>
