@@ -415,7 +415,7 @@ table, th, td {
    <ul>
      <li> Input:
        <ul>
-         <li>hpi-person-id (CPN)</li>
+         <li>97ZABV</li>
        </ul>
      </li>
     <li> Output:
@@ -425,7 +425,7 @@ table, th, td {
     </li>
   </ul>
 </td>
-<td>Mandatory</td></tr>
+<td>Mandatory - use case dependent</td></tr>
 
 <tr><td>HPI-PR-MD-3</td>
 <td>application allows the user to search using other search criteria depending on the use case. <br />
@@ -435,11 +435,11 @@ Make sure the search criteria you are using is relevant for the use case (Refere
     <li>Get:N/A</li>
     <li>Search:
       <ul>
-        <li>Practitioner</li>
-        <li>Organisation</li>
-        <li>Location</li>
-        <li>Role</li>
-        <li>Active(status)</li>
+        <li>Practitioner - 97ZABV</li>
+        <li>Organisation - GZZ998-G</li>
+        <li>Facility - FZZ961-K</li>
+        <li>Role code - 542114</li>
+        <li>Active - True / False</li>
       </ul>
     </li>
   </ul>
