@@ -7,7 +7,7 @@
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
 #canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
-version: 1.2.0
+version: 1.2.1
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
@@ -16,6 +16,7 @@ publisher:
   email: mailto:integration@health.govt.nz
 description: The HPI facade
 license: CC0-1.0
+date: 2023-09-03
 fhirVersion: 4.0.1
 
 dependencies:
