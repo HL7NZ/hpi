@@ -66,10 +66,15 @@ menu:
     Update PractitionerRole: updatePracRole.html
   Important information:
     Onboarding: Onboarding.html
-    Compliance testing: ComplianceTesting.html
     General Notes: general.html
     FAQ: faq.html
     Glossary: glossary.html
+  Compliance testing:
+    Compliance testing important information: ComplianceTestingImportantInformation.html
+    Organisation Compliance testing: OrganisationComplianceTesting.html
+    Facility Compliance testing: FacilityComplianceTesting.html
+    Practitioner Compliance testing: PractitionerComplianceTesting.html
+    PractitionerRole Compliance testing: PractitionerRoleComplianceTesting.html
   API: capabilityStatement.html
   Profiles: profiles.html
   Extensions: extensions.html
