@@ -510,3 +510,13 @@ All test accounts will be assigned to the bronze usage plan
 Production accounts will be assigned to the silver usage plan. If an Organisation wished to be assigned to the gold usage plan, they should contact the Te Whatu Ora [HPI access team](HI_Provider@health.govt.nz)
 
 If an application reaches its usage plan limit an HTTP 429 error will be returned. The expected behaviour is that the application will retry several times with an exponentially increasing delay
+
+
+#### GEO Restriction 
+
+GEO Restriction rules prevent access from clients with IPs located in countries other than those listed below. If you need access from another country,  please contact our team by completing the [Enquiry form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/36) or adding a comment to the online onboarding request form if you have one.
+
+* New Zealand
+* Australia
+* Canada
+* Cook Islands
