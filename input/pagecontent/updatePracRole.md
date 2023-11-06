@@ -34,21 +34,13 @@ For Put PractitionerRole examples [click here](putPractitionerRoleExample.html)
 * **Update PractitionerRole rules**
   * A PractitionerRole update can only modify contact point, messaging address and period end-date
   * A PractitionerRole update must contain:
-    * a valid hpi-practitionerrole-id
-    * the curret version-id (added to the header as 'if-Match' {version-id}
-    * an hpi-person-id matching the PractitionerRole record
-    * an hpi-organisation-id and/or the hpi-facility-id (if present on the PractitionerRole record)
-    * a PractitionerRole code (if present on the PractitionerRole record)
+    * The PractitionerRole id
+    * The PractitionerRole identifier
   * A PractitionerRole-status-reason is mandatory when a period end-date is supplied
   * A PractitionerRole update request cannot create a duplicate, or overlap another PractitionerRole record
 
 * _Update PractitionerRole errors_
-  * _"hpi-person-id invalid" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"hpi-person-id is required" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"hpi-organization-id or hpi-facility-id is required" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"Resource validation error: duplicate" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"PractitionerRole code requird" (HTTP 422, Unprocessable, Error, Processing)_
-  * _"practitionerRole-status-reason is required" (HTTP 422, Unprocessable, Error, Processing)_
+  * _"A PractitionerRole update request may only update telecom, messaging-address, period, and practitionerRole-status-reason."_
 
 ---
 
