@@ -59,7 +59,7 @@ About 90% of facilities have eSAM validated addresses. The facilities with unval
 
 #### Do inactive facilities get returned on the HPI FHIR API?
 
-When the HPI access team find a facility that is no longer operating they add a disestablishment date, making the facility inactive on the HPI.
+When the HPI access team find a facility that is no longer operating they add a disestablishment date making the facility inactive on the HPI.
 
 In FHIR this is represented in two ways. The facility will have:
 * an 'established' period with an end date, and
@@ -67,4 +67,4 @@ In FHIR this is represented in two ways. The facility will have:
 
 Inactive facilities are returned via the API, either by [searching for a facility](searchLocation.html) or by doing a [read on the resource](/getLocation.html) (providng the hpi-facility-id).
 
-The ability to exclude inactive facilites when searching for a facility is a requirement on the HPI FIHR backlog. Until this is delivered integrators wanting to view only active facilities will need to filter the search results to exclude facilites with a 'status of inactive' or with the 'estabished period end dated'.
+The ability to exclude inactive facilites when searching for a facility is a requirement on the HPI FHIR backlog. Until this is delivered integrators wanting to view only active facilities will need to filter the search results to exclude facilites with a 'status of inactive' or with the 'estabished period end dated'.
