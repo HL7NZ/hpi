@@ -396,7 +396,8 @@ table, th, td {
 </style>
 <tr>
 <th> SMART on FHIR Scopes </th>
-<th> Description </th></tr>
+<th> Description </th>
+</tr>
 
 <tr>
 <td> https://api.hip.digital.health.nz/fhir/system/Practitioner.r </td>
@@ -411,7 +412,7 @@ table, th, td {
 <tr>
 <td> https://api.hip.digital.health.nz/fhir/system/Practitioner.u </td>
 <td> Allows user to update practitioner records</td>
-<tr>
+</tr>
 
 <tr>
 <td> https://api.hip.digital.health.nz/fhir/system/Practitioner.c </td>
@@ -451,8 +452,9 @@ table, th, td {
 <tr>
 <td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s </td>
 <td> Search access to all active Practitioner Role resources, inactive roles are excluded from the results </td>
-
 </tr>
+
+<tr>
 <td> https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u</td>
 <td> Update access to all Practitioner Role resources.</td>
 </tr>
@@ -484,25 +486,33 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<tr><th> Plan </th>
+<tr>
+<th> Plan </th>
 <th> Rate </th>
 <th> Burst </th>
-<th> Quota </th></tr>
+<th> Quota </th>
+</tr>
 
-<tr><td> bronze </td>
+<tr>
+<td> bronze </td>
 <td> 1 request per second </td>
 <td> 5 </td>
-<td> 10,000 requests per day </td></tr>
+<td> 10,000 requests per day </td>
+</tr>
 
-<tr><td> silver </td>
+<tr>
+<td> silver </td>
 <td> 5 requests per second </td>
 <td> 25 </td>
-<td> 250,000 requests per day </td></tr>
+<td> 250,000 requests per day </td>
+</tr>
 
-<tr><td> gold </td>
+<tr>
+<td> gold </td>
 <td> 10 requests per second </td>
 <td> 50 </td>
-<td> 500,000 requests per day </td></tr>
+<td> 500,000 requests per day </td>
+</tr>
 </table>
 
 All test accounts will be assigned to the bronze usage plan
