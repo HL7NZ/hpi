@@ -57,15 +57,14 @@ About 90% of facilities have eSAM validated addresses. The facilities with unval
 •	Facilities in the process of being set up where the address has not yet been supplied
 •	New addresses – that have not yet been added to the NZ Post address database
 
-#### Do closed 'inactive' facilities get returned on the HPI FHIR API?
+#### Do inactive facilities get returned on the HPI FHIR API?
 
-When the HPI access team find a facility that is no longer operating, they add a disestablishment date.
+When the HPI access team find a facility that is no longer operating they add a disestablishment date, making the facility inactive on the HPI.
 
-In FHIR this is represented in two ways
-* An 'established' period with an end date, and
-* A status = inactive.
+In FHIR this is represented in two ways. The facility will have:
+* an 'established' period with an end date, and
+* a status = inactive.
 
-Inactive facilities are returned to the user either when searching for a facility (e.g. by name) or by doing a read on the resource (providng the hpi-facility-id).
+Inactive facilities are returned via the API, either by [searching for a facility](searchLocation.html) or by doing a [read on the resource](/getLocation.html) (providng the hpi-facility-id).
 
-The HIP team have a requirement on the backlog to provide 'status' as a search parameter. This will allow the API to exclude inactive locations in a search result. Until this is delivered integrators wanting to view only active facilities will need to filter the search results to exclude facilites with a 'status of inactive' or with the 'estabished period end dated'.
-
+The ability to exclude inactive facilites when searching for a facility is a requirement on the HPI FIHR backlog. Until this is delivered integrators wanting to view only active facilities will need to filter the search results to exclude facilites with a 'status of inactive' or with the 'estabished period end dated'.
