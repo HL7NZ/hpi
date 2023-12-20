@@ -34,7 +34,13 @@ Update and Create** operations will need to apply to Te Whatu Ora / Health New Z
 
 Please allow at least 5 working days for these applications to be processed and production credentials issued. If your product is to be used by many different organisations please get in touch to discuss your rollout plans and how we might assist.
 
-If you require help or have any questions regarding the onboarding process, please contact our team by completing a [General enquiry form](https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/36).
+### Assistance
+
+Please fill in the [General Enquiry form] (https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/36) if you:
+* have a general enquiry,
+* require help or have any questions regarding the onboarding process,
+* want to add new business functions to an existing application, or
+* want to add a new set of credentials to an existing application.
 
 
 <h3>Business Functions</h3>
