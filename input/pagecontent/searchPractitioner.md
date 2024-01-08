@@ -31,38 +31,63 @@
 5. The response containing a bundle of matching practitioners is returned to the integrating application
 6. The integrating application displays the matching practitioners to the user
 
+<h3>Search Practitioner Rules and errors</h3>
+<table>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<caption><a href="general.html#request-rules-and-errors">For Request rules and errors click here</a></caption>
+<tr><th>Rule</th>
+<th>Error code</th>
+<th>Error description</th>
+<th>Error text / expression</th>
+<th>Http code</th></tr>
 
-
-### Query Practitioner with another identifier
-
-<div>
-{% include query-practitioner.svg %}
-</div>
-
-**processing steps**
-
-E.g.nursing-council-id:
-
-1. The user supplies the system (https://standards.digital.health.nz/ns/nursing-council-id) and identifier (nursing-council-id) for the practitioner to be looked up.
-2. The integrating application sends an HTTP GET request for the Practitioner resource using the nursing council identifier to identify the practitioner whose information is being requested. E.g. GET\<Endpoint>/Practitioner?identifier=https://standards.digital.health.nz/ns/nursing-council-id\|999999
-3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
-4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
-5. The response containing a bundle with a single Practitioner resource is returned
-6. The integrating application displays the matching practitioner to the user
-
-[For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
-
-[For more information on search practitioner click here](/capabilityStatement.html#practitioner)
-
-
-### Search Practitioner Rules and errors
-
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
-
-* **Search Practitioner rules**
-  * A search practitioner request by identifier must include a 'system' and value
-  * A search practitioner request using 'other parameters' must include a name at minimum
-  * A search practitioner request using 'other parameters' may include birthdate and gender
-
-* _Search Practitioner errors_
-  * "Invalid request: ..." (HTTP 400 Bad Request, Error, not-supported)
+<tr>
+<td>A search practitioner request must include a name at minimum</td>
+<td>
+ <ul>
+  <li>TBC</li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li>TBC</li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li>TBC</li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li>422 Unknown</li>
+ </ul>
+ </td>
+ <td>A search practitioner request may include birthdate and gender</td>
+<td>
+ <ul>
+  <li></li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li></li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li></li>
+ </ul>
+</td>
+<td>
+ <ul>
+  <li></li>
+ </ul>
+ </td>
+</tr>
+</table>
