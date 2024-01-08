@@ -3,13 +3,13 @@ skinparam sequenceArrowThickness 2
 skinparam roundcorner 5
 skinparam maxmessagesize 180
 skinparam sequenceParticipant bold
-title Query Practitioner with another identifier 
+title Get Practitioner using registration authority identifier sequence diagram 
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: User enters alternative identifier to be looked up
+User -> A: User enters registration authority identifier and register
 activate A
 |||
 A -> B: GET<Endpoint>/Practitioner?identifier=[system]|[identifier]
@@ -23,10 +23,10 @@ activate C
 C -[dashed]-> B:  
 deactivate C
 |||
-B -[dashed]-> A:Return Practitioner resource
+B -[dashed]-> A:Return Bundle containing the Practitioner record
 deactivate B
 |||
-A -> User: Display matching Practitioner details
+A -> User: Display Practitioner details to user
 deactivate A
 |||
 @enduml
