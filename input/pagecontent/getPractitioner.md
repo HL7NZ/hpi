@@ -1,6 +1,6 @@
 
 
-### Get Practitioner record
+### Get Practitioner
 
 A practitioner read request returns a practitioner record with the following attributes (if populated):
 * The ‘last updated single instance’ from across all sources:
