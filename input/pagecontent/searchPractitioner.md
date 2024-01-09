@@ -25,7 +25,7 @@ The search Practitioner operation allows a user to search the Practitioner index
 7. The integrating application displays the matching practitioners to the user
 
 
-### Search Practitioner using name and birth date
+#### Search Practitioner using name and birth date
 
 <div>
 {% include search-practitionerwithnamebirthdate.svg %}
@@ -40,7 +40,7 @@ The search Practitioner operation allows a user to search the Practitioner index
 5. The response containing a bundle of matching practitioners is returned to the integrating application
 6. The integrating application displays the matching practitioners to the user
  
-<h3>Search Practitioner Rules and errors</h3>
+<h4>Search Practitioner Rules and errors</h4>
 <table>
 <style>
 table, th, td {
