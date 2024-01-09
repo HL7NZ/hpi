@@ -52,7 +52,6 @@ table, th, td {
 <td>
  <ul>
   <li>EM07240</li>
-  <li>EM12021</li>
  </ul>
 </td>
 <td>
