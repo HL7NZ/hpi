@@ -1,6 +1,15 @@
 
 
-### Search Practitioner with name
+### Search Practitioner using demographics
+
+The search Practitioner operation allows a user to search the Practitioner index with known demographics 
+* name,
+* gender, and
+* birthdate
+
+[For more information of available search parameters click here](/capabilityStatement.html#practitioner)
+
+#### Search Practitioner using name
 
 <div>
 {% include search-practitioner-withname.svg %}
@@ -16,7 +25,7 @@
 7. The integrating application displays the matching practitioners to the user
 
 
-### Search Practitioner by name and birth date
+### Search Practitioner using name and birth date
 
 <div>
 {% include search-practitionerwithnamebirthdate.svg %}
@@ -30,7 +39,7 @@
 4. The matching practitioners are retrieved from the HPI
 5. The response containing a bundle of matching practitioners is returned to the integrating application
 6. The integrating application displays the matching practitioners to the user
-
+ 
 <h3>Search Practitioner Rules and errors</h3>
 <table>
 <style>
@@ -50,17 +59,17 @@ table, th, td {
 <td>A search practitioner request must include a name at minimum</td>
 <td>
  <ul>
-  <li>TBC</li>
+  <li>EM07201</li>
  </ul>
 </td>
 <td>
  <ul>
-  <li>TBC</li>
+  <li>Required value missing</li>
  </ul>
 </td>
 <td>
  <ul>
-  <li>TBC</li>
+  <li>Practitioner.SearchParam.name</li>
  </ul>
 </td>
 <td>
@@ -68,10 +77,11 @@ table, th, td {
   <li>422 Unknown</li>
  </ul>
  </td>
+
  <td>A search practitioner request may include birthdate and gender</td>
 <td>
  <ul>
-  <li></li>
+  <li><i>No error</i></li>
  </ul>
 </td>
 <td>
