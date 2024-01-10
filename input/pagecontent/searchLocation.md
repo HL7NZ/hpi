@@ -8,7 +8,7 @@ The Search facility operation allows a user to search for:
 * all facilities of a specific type e.g. pharmacies
 * all facilities with a given Managing Organisation
 
-[For more information on search location click here](/capabilityStatement.html#location)
+[For more facility search parmeters click here](/capabilityStatement.html#location)
 
 #### Search Facility by name
 
@@ -28,7 +28,7 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
 
-[For more search parmeters click here](/capabilityStatement.html#location)
+[For more facility search parmeters click here](/capabilityStatement.html#location)
 
 
 ### Search Facilities by type.
@@ -52,4 +52,4 @@ E.g. GET\<Endpoint>/Location?type=pharm
 6.	The integrating application displays the matching locations to the user
 7.	To get more than the default 10 records see ** to learn about the _count and _offset parameters
 
-[For more search parmeters click here](/capabilityStatement.html#location)
+[For more facility search parmeters click here](/capabilityStatement.html#location)
