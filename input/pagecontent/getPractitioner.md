@@ -73,7 +73,7 @@ table, th, td {
 </table>
 
 
-#### Query Practitioner using registration authority identifier
+#### Query Practitioner using the registration authority identifier
 
 To query a Practitioner with a registration authority identifier (E.g. nursing-council-id) the integrating application sends an HTTP GET request for the Practitioner resource using the registration authority identifier and identifiying the required register.
 
