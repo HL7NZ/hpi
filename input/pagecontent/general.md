@@ -344,14 +344,6 @@ All requests for all resources must include an http header userid that uniquely 
 Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
 <td>Mandatory</td></tr>
 
-<tr><td> X-Correlation-Id </td>
-<td> {string} </td>
-<td> Client provided <br />
-All requests should contain a unique transaction id in the X-Correlation-Id field <br />
-If present in the request this will be returned in the response, and can be used to track API calls <br />
-Preferred less than 64 characters <br /> </td>
-<td> Recommended </td></tr>
-
 <tr><td> Content-Type </td>
 <td> Application/json </td>
 <td> Supported content type </td>
@@ -361,6 +353,19 @@ Preferred less than 64 characters <br /> </td>
 <td> {string} </td>
 <td> Te Whatu Ora Provided – issued with client credentials </td>
 <td> Mandatory </td></tr>
+
+<tr><td> User-Agent </td>
+<td> {string} </td>
+<td> The user-agent header is a string field that lets Te Whatu Ora know the application and version of application accessing the HIP APIs. </td>
+<td> Mandatory </td></tr>
+
+<tr><td> X-Correlation-Id </td>
+<td> {string} </td>
+<td> Client provided <br />
+All requests should contain a unique transaction id in the X-Correlation-Id field <br />
+If present in the request this will be returned in the response, and can be used to track API calls <br />
+Preferred less than 64 characters <br /> </td>
+<td> Recommended </td></tr>
 
 <tr><td> if-Match </td>
 <td> {integer} </td>
