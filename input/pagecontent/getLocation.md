@@ -2,7 +2,8 @@
 
 ### Get Facility
 
-The Get Facility use case looks at how a user can find an HPI facility record and return the details.
+The Get Facility use case looks at how a user can find an HPI facility record.
+
 HPI Facilities use the FHIR Location resource.
 
 #### Get facility using an hpi-facility-id
@@ -71,12 +72,12 @@ To query a Facility with the NZHIS (Legacy) identifier, the integrating applicat
 
 **Query facility (location) processing steps**
 
-The user supplies the system (https://standards.digital.health.nz/ns/nzhis-facility-id) and identifier (NZHIS-id) for the facility.
-The integrating application sends an HTTP Get request for the Location resource using the NZHIS identifier to identify the facility whose information is being requested. E.g. GET\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z997
-The request is validated - ALT: Validation failure. OperationOutcome resource returned
-The Location resource is retrieved from the HPI - ALT: Location reource not found. OperationOutcome resource returned
-The response containing a bundle with a single facility record is returned
-The integrating application displays the facility details to the user
+1. The user supplies the system (https://standards.digital.health.nz/ns/nzhis-facility-id) and identifier (NZHIS-id) for the facility.
+2. The integrating application sends an HTTP Get request for the Location resource using the NZHIS identifier to identify the facility whose information is being requested. E.g. GET\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/nzhis-facility-id\|Z997
+3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
+4. The Location resource is retrieved from the HPI - ALT: Location reource not found. OperationOutcome resource returned
+5. The response containing a bundle with a single facility record is returned
+6. The integrating application displays the facility details to the user
 
 <h5>Query Facility rules and errors</h5>
 <table>
