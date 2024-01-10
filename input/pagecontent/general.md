@@ -356,7 +356,7 @@ Preferably the hpi-person-id of the user would be provided if known, otherwise a
 
 <tr><td> User-Agent </td>
 <td> {string} </td>
-<td> The user-agent header is a string field that lets Te Whatu Ora know the application and version of application accessing the HIP APIs. </td>
+<td> The user-agent header is a string field that lets Te Whatu Ora know the application and version of the application accessing the HIP APIs. </td>
 <td> Mandatory </td></tr>
 
 <tr><td> X-Correlation-Id </td>
