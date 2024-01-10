@@ -35,7 +35,7 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 
 This extract style search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
 
-For more informaton on extrac style searches see **Extract style searches TBC** 
+[For more informaton on extract style searches see](/general.html#extract-style-hpi-searches)
 
 <div>
 {% include search-locationbytype.svg %}
