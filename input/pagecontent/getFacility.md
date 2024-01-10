@@ -104,7 +104,7 @@ table, th, td {
 </td>
 <td>
  <ul>
-  <li>Unknown identifier system: https://standards.digital.health.nz/ns/nzhis-fcility-id</li>
+  <li>Unknown identifier system: https://standards.digital.health.nz/ns/nzhis-facility-id</li>
   <li>Resource not found</li>
  </ul>
 </td>
