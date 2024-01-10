@@ -8,7 +8,7 @@ The Search facility operation allows a user to search for:
 * all facilities of a specific type e.g. pharmacies
 * all facilities with a given Managing Organisation
 
-[For more facility search parmeters click here](/capabilityStatement.html#location)
+[For more facility search parameters click here](/capabilityStatement.html#location)
 
 #### Search Facilities by name
 
@@ -28,10 +28,10 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
 
-[For more facility search parmeters click here](/capabilityStatement.html#location)
+[For more facility search parameters click here](/capabilityStatement.html#location)
 
 
-### Search Facilities by type
+### Search Facility by type
 
 This extract style search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
 
@@ -41,7 +41,7 @@ This extract style search operation allows a user to search for all facilities o
 {% include search-locationbytype.svg %}
 </div>
 
-**Search Facilities by type processing steps:**
+**Search Facility by type processing steps:**
 
 1.	The user of the integrating application searches for a list of facilities by entering the facility type
 2.	The integrating application sends an HTTP GET request for the Location resource using type as a search parameter
@@ -50,6 +50,6 @@ E.g. GET\<Endpoint>/Location?type=pharm
 4.	The first 10 matching facilities are retrieved from the HPI
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
-7.	To get more than the default 10 records see ** to learn about the _count and _offset parameters
+7.	[To get more than the default 10 records see]((/general.html#extract-style-hpi-searches)) to learn about the _count and _offset parameters
 
-[For more facility search parmeters click here](/capabilityStatement.html#location)
+[For more facility search parameters click here](/capabilityStatement.html#location)
