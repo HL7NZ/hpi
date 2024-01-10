@@ -2,7 +2,7 @@
 
 ### Get Organisation
 
-The Get Organisation use case looks at how a user can find an HPI organisation record.
+The Get Organisation use case looks at how a user can access an HPI organisation record from the HPI.
 
 #### Get Organisation using hpi-organisation-id
 
