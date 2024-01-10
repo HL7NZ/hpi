@@ -91,7 +91,7 @@ Registration type (RA Provider only) </td>
 <td>mandatory</td></tr>
 
 <tr><td>HPI-P-Query-1</td>
-<td>System can query a practitioner using the registration identifier eg Medical Council number, Nursing Council number</td>
+<td>System can query a practitioner using the registration identifier eg Medical Council number, Nursing Council number <br /> Show a selection of RA's that apply</td>
 <td>Medical Council <br /> Medical Council #= 99478 <br /> <br /> Nursing Council <br /> Nursing Council #= 961049 <br /> <br /> Medical Sciences Council <br /> Medical Sciences Council #= 30-91697</td>
 <td>System retrieves record successfully</td>
 <td>optional</td></tr>
