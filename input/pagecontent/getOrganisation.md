@@ -1,23 +1,23 @@
 
 
-### Get Organization
+### Get Organisation
 
 The Get Organisation use case looks at how a user can find an HPI organisation record.
 
-#### Get Organization using hpi-organisation-id
+#### Get Organisation using hpi-organisation-id
 
 <div>
-{% include get-organization.svg %}
+{% include get-organisation.svg %}
 </div>
 
-**Get Organization processing steps:**
+**Get Organisation processing steps:**
 
-1. The user supplies a hpi-organisation-id for the Organization to be looked up
-2. The integrating application sends an HTTP GET request for the Organization resource using the hpi-organisation-id to identify the Organization whose information is being requested E.g. GET\<Endpoint>/Organization/GZZ999-J
+1. The user supplies a hpi-organisation-id for the Organisation to be looked up
+2. The integrating application sends an HTTP GET request for the Organization resource using the hpi-organisation-id to identify the Organisation whose information is being requested E.g. GET\<Endpoint>/Organization/GZZ999-J
 3. The request is validated - ALT: Validation failure. Operation Outcome resource returned
 4. The Organization resource is retrieved from the HPI - ALT: Organization not found. Operation Outcome resource returned
 5. The response containing the Organization resource is returned
-6. The Organization details are provided to the user
+6. The Organisation details are provided to the user
 
 <h5>Get organisation rules and errors</h5>
 <table>
