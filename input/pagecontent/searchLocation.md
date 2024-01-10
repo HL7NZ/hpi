@@ -10,7 +10,7 @@ The Search facility operation allows a user to search for:
 
 [For more facility search parmeters click here](/capabilityStatement.html#location)
 
-#### Search Facility by name
+#### Search Facilities by name
 
 This operation is used to search for a specific facility using known facilities demographics.
 
@@ -18,7 +18,7 @@ This operation is used to search for a specific facility using known facilities 
 {% include search-locationwithname.svg %}
 </div>
 
-**Search Facility by name processing steps:**
+**Search Facilities by name processing steps:**
 
 1.	The user of the integrating application searches for a Facility by entering the Facility name
 2.	The integrating application sends an HTTP GET request for the Location resource using the name as a search parameter
@@ -31,7 +31,7 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 [For more facility search parmeters click here](/capabilityStatement.html#location)
 
 
-### Search Facilities by type.
+### Search Facilities by type
 
 This extract style search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
 
