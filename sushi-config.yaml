@@ -54,8 +54,8 @@ menu:
     Guidance: Guidance.html
     Get Facility (Location): getLocation.html
     Search Facility (Location): searchLocation.html
-    Get Organization: getOrganization.html
-    Search Organization: searchOrganization.html
+    Get Organisation: getOrganisation.html
+    Search Organisation: searchOrganisation.html
     Get Practitioner: getPractitioner.html
     Search Practitioner: searchPractitioner.html
     Create Practitioner: createPractitioner.html
