@@ -64,8 +64,10 @@ table, th, td {
 To query an Organisation with an ‘other identifier' the integrating application sends an HTTP GET request for the Organisation resource using the ‘other identifier’ and the identifier system to identify the organisation whose information is being requested.
 
 The 'other identifier's that may be requested include
-* The Legacy agency code (NZHIS)
-* The New Zealand Business Number (NZBN)
+* The Legacy agency code (NZHIS) GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000
+* The New Zealand Business Number (NZBN) GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
+
+**Query Organisation using other identifier - NZ Business number (NZBN)**
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
@@ -73,14 +75,14 @@ The 'other identifier's that may be requested include
 {% include query-organisation.svg %}
 </div>
 
-**Query organisation processing steps** (E.g. NZBN)
+**Query organisation using other identifier processing steps (E.g. NZBN)**
 
 1. The user supplies the system (https://standards.digital.health.nz/ns/hpi-nzbn) and identifier (NZBN) for the organisation.
-2. The integrating application sends an HTTP Get request for the organization resource using the NZBN to identify the organisation whose information is being requested. E.g. GET\<Endpoint>/Location?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
+2. The integrating application sends an HTTP Get request for the organization resource using the NZBN to identify the organisation whose information is being requested. E.g. GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
 3. The request is validated - ALT: Validation failure. OperationOutcome resource returned
-4. The Location resource is retrieved from the HPI - ALT: Location reource not found. OperationOutcome resource returned
-5. The response containing a bundle with a single facility record is returned
-6. The integrating application displays the facility details to the user
+4. The Organization resource is retrieved from the HPI - ALT: Organization reource not found. OperationOutcome resource returned
+5. The response containing a bundle with a single Organisation record is returned
+6. The integrating application displays the Organisation details to the user
 
 <h5>Query organisation rules and errors</h5>
 <table>
