@@ -1,8 +1,6 @@
 
 The following notes apply to all resources in this implementation.
 
-
-
 ### Resource representation: Json
 
 Only Json is supported by this implementation.
@@ -95,7 +93,26 @@ For more information look at the __Search Use cases__ in the menu
 * Get\<Endpoint>/Organization?name:exact=Pharmacy
   * Any organisations with a name that is exactly "Pharmacy". Note: This would not return any of the above examples. However if this was Get\<Endpoint>/Organization?name:exact=shopNSave Discount Pharmacy it would return a bundle with that resource.
 
+### Extract style HPI searches
 
+The HPI allows extract style searches on the Facility and Organisation indexes.
+
+* **Facility**
+  * Search for all facilites of a given type
+  * Search for all facilities in a given DHB
+* **Organisation**
+  * Search for all organisations of a given type.
+
+These extract style searches default to return 10 records in the search result E.g. GET\<Endpoint>/Location?type=pharm will return the first 10 HPI facilites of type pharm.
+
+To extend an extract style search to get all facilities returned there are two parameters to include _count and _offset.
+* _count - This search parameter is used to extend the search and has a limit of 50 search results.
+* _offset - This search parameter is used to get the next set of facilities
+
+E.g. For how to use these parameters
+* First request - GET\<Endpoint>/Location?type=pharm&_count=50
+* Second request - GET\{{ENDPOINT}}/Location?type=pharm&_count=50&_offset=50
+* Third request - GET\{{ENDPOINT}}/Location?type=pharm&_count=50&_offset=100
 
 ### References between resources
 
