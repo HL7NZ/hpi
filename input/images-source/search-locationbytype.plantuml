@@ -1,0 +1,32 @@
+@startuml
+skinparam sequenceArrowThickness 2
+skinparam roundcorner 5
+skinparam maxmessagesize 180
+skinparam sequenceParticipant bold
+title Search location (facility) by type sequence diagram
+actor "Integrating application user" as User #CornflowerBlue
+participant "Integrating application" as A #CornflowerBlue
+participant "<FHIR API> HPI" as B #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
+|||
+User -> A: Enters HPI type e.g. Pharmacy
+activate A
+|||
+A -> B: GET<Endpoint>/Location?type=[]
+activate B
+|||
+B -> B: Validate[]
+|||
+B -> C: Search[type]
+activate C
+|||
+C -[dashed]-> B:  
+deactivate C
+|||
+B -[dashed]-> A:Return(bundle)
+deactivate B
+|||
+A -> User: Return list of matching locations
+deactivate A
+|||
+@enduml
