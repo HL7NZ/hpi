@@ -89,6 +89,12 @@ Registration type (RA Provider only) </td>
 <td>90ZZLP <br /> 90ZZMG <br /> 92ZZSJ <br /> 92ZZRR</td>
 <td>System returns appropriate messaging to user</td>
 <td>mandatory</td></tr>
+
+<tr><td>HPI-P-Query-1</td>
+<td>System can query a practitioner using the registration identifier eg Medical Council number, Nursing Council number</td>
+<td>Medical Council <br /> Medical Council #= 99478 <br /> <br /> Nursing Council <br /> Nursing Council #= 961049 <br /> <br /> Medical Sciences Council <br /> Medical Sciences Council #= 30-91697</td>
+<td>System retrieves record successfully</td>
+<td>optional</td></tr>
 </table>
 
 <h4>HPI Practitioner Search</h4>
@@ -99,7 +105,7 @@ table, th, td {
   border-collapse: collapse;
 }
 </style>
-<caption>*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the [Integration team](mailto:integration@health.govt.nz) before developing this functionality into an application</caption>
+<caption>*NOTE: Access is restricted to Practitioner Search by name and date of birth – prior permission should be sort from the <a href="mailto:integration@health.govt.nz">Integration team</a>before developing this functionality into an application</caption>
 <tr><th>Reference</th>
 <th>Purpose – Demonstrate that the</th>
 <th>Input values</th>
@@ -107,18 +113,12 @@ table, th, td {
 <th>Mandatory</th></tr>
 
 <tr><td>HPI-P-Search-1</td>
-<td>System can search using the practitioner’s registration identifier eg Medical Council number, Nursing Council number</td>
-<td>Medical Council <br /> Medical Council #= 99478 <br /> <br /> Nursing Council <br /> Nursing Council #= 961049 <br /> <br /> Medical Sciences Council <br /> Medical Sciences Council #= 30-91697</td>
-<td>System retrieves record successfully</td>
-<td>optional</td></tr>
-
-<tr><td>HPI-P-Search-2</td>
 <td>Minimum search criteria are included</td>
 <td>Name = Walter O’Reilly <br /> Name = Brian Hunnicutt</td>
 <td>A name is provided in the request</td>
 <td>optional</td></tr>
 
-<tr><td>HPI-P-Search-3</td>
+<tr><td>HPI-P-Search-2</td>
 <td>Other search criteria are included</td>
 <td>Name = Walter O’Reilly <br />
 Birthdate = 1943-05-24 <br />
@@ -129,7 +129,7 @@ Gender = male</td>
 <td>Name, gender and birthdate can be provided in the request</td>
 <td>optional</td></tr>
 
-<tr><td>HPI-P-Search-4</td>
+<tr><td>HPI-P-Search-3</td>
 <td>Search results are presented to user in order provided by the HPI <br /> if not please provide a reason</td>
 <td>Use search results from above</td>
 <td>Results presented in order provided</td>
