@@ -3,30 +3,30 @@ skinparam sequenceArrowThickness 2
 skinparam roundcorner 5
 skinparam maxmessagesize 180
 skinparam sequenceParticipant bold
-title GET Organization
+title Query Facility using NZBN identifier sequence diagram 
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: Look up organization with hpi-organisation-id
+User -> A: User enters NZBN and identifier system
 activate A
 |||
-A -> B: GET<Endpoint>/Organization/[hpi-organisation-id]
+A -> B: GET<Endpoint>/Organization?identifier=[system]|[identifier]
 activate B
 |||
 B -> B: Validate[]
 |||
-B -> C: Request
+B -> C: Get[Organisation]
 activate C
 |||
 C -[dashed]-> B:  
 deactivate C
 |||
-B -[dashed]-> A:Return organization record
+B -[dashed]-> A:Return Bundle containing the Organisation record
 deactivate B
 |||
-A -> User:Display Organization details 
+A -> User: Display Organisation details to user
 deactivate A
 |||
 @enduml

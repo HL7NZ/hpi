@@ -1,8 +1,6 @@
 
 The following notes apply to all resources in this implementation.
 
-
-
 ### Resource representation: Json
 
 Only Json is supported by this implementation.
@@ -95,7 +93,26 @@ For more information look at the __Search Use cases__ in the menu
 * Get\<Endpoint>/Organization?name:exact=Pharmacy
   * Any organisations with a name that is exactly "Pharmacy". Note: This would not return any of the above examples. However if this was Get\<Endpoint>/Organization?name:exact=shopNSave Discount Pharmacy it would return a bundle with that resource.
 
+### Extract style HPI searches
 
+The HPI allows extract style searches on the Facility and Organisation indexes.
+
+* **Facility**
+  * Search for all facilites of a given type
+  * Search for all facilities in a given DHB
+* **Organisation**
+  * Search for all organisations of a given type.
+
+These extract style searches default to return 10 records in the search result E.g. GET\<Endpoint>/Location?type=pharm will return the first 10 HPI facilites of type pharm.
+
+To extend an extract style search to get all facilities returned there are two parameters to include _count and _offset.
+* _count - This search parameter is used to extend the search and has a limit of 50 search results.
+* _offset - This search parameter is used to get the next set of facilities
+
+E.g. For how to use these parameters
+* First request - GET\<Endpoint>/Location?type=pharm&_count=50
+* Second request - GET\{{ENDPOINT}}/Location?type=pharm&_count=50&_offset=50
+* Third request - GET\{{ENDPOINT}}/Location?type=pharm&_count=50&_offset=100
 
 ### References between resources
 
@@ -327,14 +344,6 @@ All requests for all resources must include an http header userid that uniquely 
 Preferably the hpi-person-id of the user would be provided if known, otherwise a userid that allows the authenticated organisation to identify the individual </td>
 <td>Mandatory</td></tr>
 
-<tr><td> X-Correlation-Id </td>
-<td> {string} </td>
-<td> Client provided <br />
-All requests should contain a unique transaction id in the X-Correlation-Id field <br />
-If present in the request this will be returned in the response, and can be used to track API calls <br />
-Preferred less than 64 characters <br /> </td>
-<td> Recommended </td></tr>
-
 <tr><td> Content-Type </td>
 <td> Application/json </td>
 <td> Supported content type </td>
@@ -344,6 +353,19 @@ Preferred less than 64 characters <br /> </td>
 <td> {string} </td>
 <td> Te Whatu Ora Provided – issued with client credentials </td>
 <td> Mandatory </td></tr>
+
+<tr><td> User-Agent </td>
+<td> {string} </td>
+<td> The user-agent header is a string field that lets Te Whatu Ora know the application and version of the application accessing the HIP APIs. </td>
+<td> Mandatory </td></tr>
+
+<tr><td> X-Correlation-Id </td>
+<td> {string} </td>
+<td> Client provided <br />
+All requests should contain a unique transaction id in the X-Correlation-Id field <br />
+If present in the request this will be returned in the response, and can be used to track API calls <br />
+Preferred less than 64 characters <br /> </td>
+<td> Recommended </td></tr>
 
 <tr><td> if-Match </td>
 <td> {integer} </td>

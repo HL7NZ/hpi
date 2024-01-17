@@ -1,6 +1,6 @@
 
 
-### Get Practitioner information
+### Get Practitioner
 
 A practitioner read request returns a practitioner record with the following attributes (if populated):
 * The ‘last updated single instance’ from across all sources:
@@ -32,7 +32,7 @@ Get practitioner processing steps:
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
 5. The response containing the Practitioner resource is returned
 
-<h3>Get Practitioner Rules and errors</h3>
+<h5>Get Practitioner Rules and errors</h5>
 <table>
 <style>
 table, th, td {
@@ -52,7 +52,6 @@ table, th, td {
 <td>
  <ul>
   <li>EM07240</li>
-  <li>EM12021</li>
  </ul>
 </td>
 <td>
@@ -74,7 +73,7 @@ table, th, td {
 </table>
 
 
-#### Query Practitioner using registration authority identifier
+#### Query Practitioner using the registration authority identifier
 
 To query a Practitioner with a registration authority identifier (E.g. nursing-council-id) the integrating application sends an HTTP GET request for the Practitioner resource using the registration authority identifier and identifiying the required register.
 
@@ -95,7 +94,7 @@ To query a Practitioner with a registration authority identifier (E.g. nursing-c
 
 [For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
 
-<h3>Query Practitioner Rules and errors</h3>
+<h5>Query Practitioner Rules and errors</h5>
 <table>
 <style>
 table, th, td {

@@ -9,7 +9,7 @@ participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
 participant "HPI Practitioner Role database" as C #CornflowerBlue
 |||
-User -> A: Update PractitionerRole using hpi-practitionerrole-id
+User -> A: Update PractitionerRole using hpi-practitionerrole-id sequence diagram
 activate A
 |||
 A -> B: PUT<Endpoint>/PractitionerRole/[hpi-practitionerrole-id]

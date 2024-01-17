@@ -3,30 +3,30 @@ skinparam sequenceArrowThickness 2
 skinparam roundcorner 5
 skinparam maxmessagesize 180
 skinparam sequenceParticipant bold
-title Query PractitionerRole with hpi-person-id (HPI-CPN) sequence diagram
+title Get Organization sequence diagram
 actor "Integrating application user" as User #CornflowerBlue
 participant "Integrating application" as A #CornflowerBlue
 participant "<FHIR API> HPI" as B #CornflowerBlue
-participant "HPI PractitionerRole database" as C #CornflowerBlue
+participant "HPI MDM" as C #CornflowerBlue
 |||
-User -> A: User enters identifier to be looked up
+User -> A: Look up organization with hpi-organisation-id
 activate A
 |||
-A -> B: GET<Endpoint>/PractitionerRole?practitioner=99ZZZ
+A -> B: GET<Endpoint>/Organization/[hpi-organisation-id]
 activate B
 |||
 B -> B: Validate[]
 |||
-B -> C: Get[PractitionerRole]
+B -> C: Request
 activate C
 |||
 C -[dashed]-> B:  
 deactivate C
 |||
-B -[dashed]-> A:Return Bundle with matching PractitionerRole resources
+B -[dashed]-> A:Return organization record
 deactivate B
 |||
-A -> User: Display matching PractitionerRole details
+A -> User:Display Organization details 
 deactivate A
 |||
 @enduml
