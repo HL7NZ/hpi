@@ -1,10 +1,10 @@
 
 
-### Get Organisation
+### Get Organisation Overview
 
-The Get Organisation use case looks at how a user can access an HPI organisation record from the HPI.
+The Get Organisation use case describes how a user can access an HPI organisation record from the HPI.
 
-#### Get Organisation using hpi-organisation-id
+### Get Organisation using hpi-organisation-id
 
 <div>
 {% include get-organisation.svg %}
@@ -19,7 +19,7 @@ The Get Organisation use case looks at how a user can access an HPI organisation
 5. The response containing the Organization resource is returned
 6. The Organisation details are provided to the user
 
-<h5>Get organisation rules and errors</h5>
+<h4>Get organisation rules and errors</h4>
 <table>
 <style>
 table, th, td {
@@ -43,7 +43,7 @@ table, th, td {
 </td>
 <td>
  <ul>
-  <li>Invalid ID: \<></li>
+  <li>Invalid ID: <></li>
  </ul>
 </td>
 <td>
@@ -59,13 +59,15 @@ table, th, td {
 </tr>
 </table>
 
-#### Query Organisation with 'other identifier'
+### Query Organisation with 'other identifier'
 
-To query an Organisation with an ‘other identifier' the integrating application sends an HTTP GET request for the Organisation resource using the ‘other identifier’ and the identifier system to identify the organisation whose information is being requested.
+To query an Organisation with an ‘other identifier' the integrating application sends an HTTP GET request for the Organisation resource using the ‘other identifier’ and the identifier system.
 
 The 'other identifier's that may be requested include
-* The Legacy agency code (NZHIS) GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000
-* The New Zealand Business Number (NZBN) GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
+* The Legacy agency code (NZHIS)
+  * using the url GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/nzhis-agency-id\|9000
+* The New Zealand Business Number (NZBN)
+  * using the url GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
 
 **Query Organisation using other identifier - NZ Business number (NZBN)**
 
@@ -84,7 +86,7 @@ The 'other identifier's that may be requested include
 5. The response containing a bundle with a single Organisation record is returned
 6. The integrating application displays the Organisation details to the user
 
-<h5>Query organisation rules and errors</h5>
+<h4>Query organisation rules and errors</h4>
 <table>
 <style>
 table, th, td {
