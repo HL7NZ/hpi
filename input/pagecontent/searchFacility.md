@@ -1,16 +1,16 @@
 
 
-### Search Facility
+### Search Facility Overview
 
-The Search facility operation allows a user to search for:
+The Search facility use case describes how a user can search for:
 * a specific facility using known facility demographics (e.g. name, address),
 * all facilities in a specific DHB catchment area
-* all facilities of a specific type e.g. pharmacies
+* all facilities of a specific type in the HPI e.g. all pharmacy records in the HPI
 * all facilities with a given Managing Organisation
 
-[For more facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](/capabilityStatement.html#location)
 
-#### Search Facilities by name
+### Search Facilities by name
 
 This operation is used to search for a specific facility using known facilities demographics.
 
@@ -28,7 +28,7 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
 
-[For more facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](/capabilityStatement.html#location)
 
 
 ### Search Facility by type
@@ -52,4 +52,4 @@ E.g. GET\<Endpoint>/Location?type=pharm
 6.	The integrating application displays the matching locations to the user
 7.	[To get more than the default 10 records see]((/general.html#extract-style-hpi-searches)) to learn about the _count and _offset parameters
 
-[For more facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](/capabilityStatement.html#location)
