@@ -1,12 +1,11 @@
 
 
-### Get Facility
+### Get Facility Overview
 
-The Get Facility use case looks at how a user can find an HPI facility record.
+The Get Facility use case describes how a user can find an HPI facility record.
+HPI Facilities are returned using the HL7 FHIR Location resource.
 
-HPI Facilities use the FHIR Location resource.
-
-#### Get facility using an hpi-facility-id
+### Get facility using an hpi-facility-id
 
 <div>
 {% include get-location.svg %}
@@ -20,7 +19,7 @@ HPI Facilities use the FHIR Location resource.
 5. The response containing the Location resource is returned
 6. The Facility details are provided to the user
 
-<h5>Get Facility rules and errors</h5>
+<h4>Get Facility rules and errors</h4>
 <table>
 <style>
 table, th, td {
@@ -44,7 +43,7 @@ table, th, td {
 </td>
 <td>
  <ul>
-  <li>Invalid ID: \<></li>
+  <li>Invalid ID: <></li>
  </ul>
 </td>
 <td>
@@ -60,7 +59,7 @@ table, th, td {
 </tr>
 </table>
 
-#### Query Facility using the Location the NZHIS (Legacy) identifier
+### Query Facility using the Location the NZHIS (Legacy) identifier
 
 To query a Facility with the NZHIS (Legacy) identifier, the integrating application sends an HTTP Get request for the Location resource using the NZHIS (Legacy) identifier and the identifier system.
 
@@ -79,7 +78,7 @@ To query a Facility with the NZHIS (Legacy) identifier, the integrating applicat
 5. The response containing a bundle with a single facility record is returned
 6. The integrating application displays the facility details to the user
 
-<h5>Query Facility rules and errors</h5>
+<h4>Query Facility rules and errors</h4>
 <table>
 <style>
 table, th, td {
