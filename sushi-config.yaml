@@ -52,8 +52,8 @@ menu:
   Business View: businessView.html
   Use cases:
     Guidance: Guidance.html
-    Get Facility (Location): getLocation.html
-    Search Facility (Location): searchLocation.html
+    Get Facility (Location): getFacility.html
+    Search Facility (Location): searchFacility.html
     Get Organisation: getOrganisation.html
     Search Organisation: searchOrganisation.html
     Get Practitioner: getPractitioner.html
