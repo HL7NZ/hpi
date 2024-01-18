@@ -1,9 +1,9 @@
 
 
-### Get Practitioner
+### Get Practitioner Overview
 
-A practitioner read request returns a practitioner record with the following attributes (if populated):
-* The ‘last updated single instance’ from across all sources:
+A Practitioner read request returns a practitioner record with the following attributes (if populated):
+* The ‘last updated single instance’ from all the HPI sources of Practitioner information:
   * deathdate,
   * official and usual names,
   * set of languages (Practitioner.communication, and
@@ -18,13 +18,13 @@ A user with administration permissions will also see the ‘last updated single 
  * birthdate.
 
 
-#### Get Practitioner using an hpi-person-id (HPI-CPN)
+### Get Practitioner using an hpi-person-id (HPI-CPN)
 
 <div>
 {% include get-practitioner.svg %}
 </div>
 
-Get practitioner processing steps:
+**Get practitioner processing steps:**
 
 1. The user supplies an hpi-person-id number for the practitioner to be looked up.
 2. The integrating application sends an HTTP GET request for the Practitioner resource using the hpi-person-id to identify the practitioner whose information is being requested. E.g. GET\<Endpoint>/Practitioner/99ZZRT
@@ -32,7 +32,7 @@ Get practitioner processing steps:
 4. The Practitioner resource is retrieved from the HPI - ALT: Practitioner not found. OperationOutcome resource returned
 5. The response containing the Practitioner resource is returned
 
-<h5>Get Practitioner Rules and errors</h5>
+<h4>Get Practitioner Rules and errors</h4>
 <table>
 <style>
 table, th, td {
@@ -73,7 +73,7 @@ table, th, td {
 </table>
 
 
-#### Query Practitioner using the registration authority identifier
+### Query Practitioner using the registration authority identifier
 
 To query a Practitioner with a registration authority identifier (E.g. nursing-council-id) the integrating application sends an HTTP GET request for the Practitioner resource using the registration authority identifier and identifiying the required register.
 
@@ -83,7 +83,7 @@ To query a Practitioner with a registration authority identifier (E.g. nursing-c
 {% include query-practitioner.svg %}
 </div>
 
-**processing steps** E.g.nursing-council-id:
+**Query Practitioner processing step E.g.nursing-council-id:**
 
 1. The user supplies the system (https://standards.digital.health.nz/ns/nursing-council-id) and identifier (nursing-council-id) for the practitioner.
 2. The integrating application sends an HTTP GET request for the Practitioner resource using the nursing council identifier to identify the practitioner whose information is being requested. E.g. GET\<Endpoint>/Practitioner?identifier=https://standards.digital.health.nz/ns/nursing-council-id\|961049
@@ -94,7 +94,7 @@ To query a Practitioner with a registration authority identifier (E.g. nursing-c
 
 [For a full list of identifiers click here](https://fhir.org.nz/ig/base/namingSystems.html)
 
-<h5>Query Practitioner Rules and errors</h5>
+<h4>Query Practitioner Rules and errors</h4>
 <table>
 <style>
 table, th, td {
