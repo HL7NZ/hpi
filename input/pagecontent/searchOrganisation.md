@@ -1,16 +1,16 @@
 
 
-### Search Organisation
+### Search Organisation Overview
 
 The search organisation operation allows a user to search the HPI for:
 * an organisation using the organisations name
-* all organisations of a specific type e.g. Primary Health Organisation (PHO)
+* all organisations of a specific type in the HPI e.g. All Primary Health Organisation's (PHO) inthe HPI
 * all Organisations that are 'part of' another organisation
 
-[For more organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the organisation search parameters click here](/capabilityStatement.html#organization)
 
 
-#### Search organisation using name
+### Search organisation using name
 
 <div>
 {% include search-organisationwithname.svg %}
@@ -26,12 +26,12 @@ E.g. GET\<Endpoint>/Organization?name=TryNSave Pharmacy
 5.	The response containing a bundle of matching Organisation records is returned to the integrating application
 6.	The integrating application displays the matching Organisations to the user
 
-[For more organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the organisation search parameters click here](/capabilityStatement.html#organization)
 
 
-#### Search Organisation by type
+### Search Organisation by type
 
-This extract style search operation allows a user to search for all organisation of a specific type e.g. return all  Primary Health Organisations in the HPI.
+This extract style search operation allows a user to search for all organisation of a specific type in the HPI e.g. return all  Primary Health Organisations in the HPI.
 
 [For more informaton on extract style searches see](/general.html#extract-style-hpi-searches)
 
@@ -51,4 +51,4 @@ E.g. GET\<Endpoint>/Location?type=009
 7.	[To get more than the default 10 records see]((/general.html#extract-style-hpi-searches)) to learn about the _count and _offset parameters
 
 
-[For more organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the organisation search parameters click here](/capabilityStatement.html#organization)
