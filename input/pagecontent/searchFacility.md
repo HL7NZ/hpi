@@ -10,7 +10,7 @@ The Search facility use case describes how a user can search for:
 
 [For all the facility search parameters click here](/capabilityStatement.html#location)
 
-### Search Facilities by name
+### Search Facility by name
 
 This operation is used to search for a specific facility using known facilities demographics.
 
@@ -18,7 +18,7 @@ This operation is used to search for a specific facility using known facilities 
 {% include search-locationwithname.svg %}
 </div>
 
-**Search Facilities by name processing steps:**
+**Search Facility by name processing steps:**
 
 1.	The user of the integrating application searches for a Facility by entering the Facility name
 2.	The integrating application sends an HTTP GET request for the Location resource using the name as a search parameter
@@ -50,6 +50,6 @@ E.g. GET\<Endpoint>/Location?type=pharm
 4.	The first 10 matching facilities are retrieved from the HPI
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
-7.	[To get more than the default 10 records see]((/general.html#extract-style-hpi-searches)) to learn about the _count and _offset parameters
+7.	[To get more than the default 10 records see](/general.html#extract-style-hpi-searches) to learn about the _count and _offset parameters
 
 [For all the facility search parameters click here](/capabilityStatement.html#location)
