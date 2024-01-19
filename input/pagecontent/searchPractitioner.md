@@ -77,8 +77,10 @@ table, th, td {
   <li>422 Unknown</li>
  </ul>
  </td>
+</tr>
 
- <td>A search Practitioner request may include birthdate and gender</td>
+<tr>
+<td>A search Practitioner request may include birthdate and gender</td>
 <td>
  <ul>
   <li><i>No error</i></li>
