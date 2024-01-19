@@ -69,7 +69,7 @@ The 'other identifier's that may be requested include
 * The New Zealand Business Number (NZBN)
   * using the url GET\<Endpoint>/Organization?identifier=https://standards.digital.health.nz/ns/hpi-nzbn\|9999999999001
 
-**Query Organisation using other identifier - NZ Business number (NZBN)**
+#### Query Organisation using other identifier - NZ Business number (NZBN)
 
 [For more information on read vs query click here](/general.html#read-resource-by-id)
 
