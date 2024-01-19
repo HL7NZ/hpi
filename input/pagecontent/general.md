@@ -30,7 +30,7 @@ Get{{Endpoint}}/Resource/identifier
 Get\<Endpoint>/Practitioner/92ZZRR <br />
 Get\<Endpoint>/Organization/GZZ999-J
 
-For more information look at the __Get Use cases__ in the menu
+For more information look at the _Get <Resource> Use cases_ in the 'Use cases' menu
 
 
 #### Query resource
