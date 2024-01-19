@@ -55,6 +55,7 @@ table, th, td {
 <td>NZHIS (Legacy) identifier Z999</td>
 <td>System does not error <br /> System returns appropriate messaging to user</td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Query-2</td>
 <td>System presents the address parts appropriately</td>
@@ -101,6 +102,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-3-address</td>
 <td>System cn search for facility using the address</td>
@@ -112,6 +114,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-4-name and address</td>
 <td>System can search for facility using name and address</td>
@@ -127,6 +130,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-5-organization</td>
 <td>System can search for facility using managing organization</td>
@@ -141,6 +145,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-6-type</td>
 <td>System can retrieve all facilities of a spcific type <br />
@@ -153,6 +158,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-6-dhb</td>
 <td>System can retrieve all facilities in a DHB catchment area<br />
@@ -165,6 +171,7 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 
 <tr><td>HPI-L-Search-7-name and dhb</td>
 <td>System can search for facilities with a specific name in a DHB catchment area<br />
@@ -177,5 +184,6 @@ table, th, td {
   </ul>
 </td>
 <td>*Mandatory if appropriate for use case</td>
+</tr>
 </table>
-</table>
+
