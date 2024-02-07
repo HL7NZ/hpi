@@ -39,8 +39,8 @@ common_url=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".uri' ./sushi-config
 common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
 
 sudo mkdir ~/.fhir/packages//hl7.org.nz.fhir.ig.hip-core#$common_version
-ls -l ./hfc_package/hip-fhir-common*/package/package.tgz
-tar zxvf  ./hfc_package/hip-fhir-common*/package/package.tgz -C  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version
+ls -l ./fhir_packages/hip-fhir-common*/package/package.tgz
+tar zxvf  ./fhir_packages/hip-fhir-common*/package/package.tgz -C  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version
 #fix the package url:
 jq --arg url $common_url '.url |= $url' ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json > temp2.json
 mv temp2.json  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
@@ -63,6 +63,10 @@ sudo chmod +x ./localscripts/*.js
 ./localscripts/makeTerminologySummary.js
 echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
+
+echo "building openapi spec"
+sudo chmod +x ./openapi/makeoas.sh
+./openapi/makeoas.sh
 
 #to do find a way to get add custom content - the follwoign doesnt work, oti seem the template does not get downloaded by iG publisher if the directroy exists?
 #echo copying custom content to template  

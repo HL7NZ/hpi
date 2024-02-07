@@ -9,7 +9,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<revision>1.3.0-SNAPSHOT</revision>
-		<fhir-common.version>1.2.0</fhir-common.version>
+		<fhir-common.version>1.6.0-SNAPSHOT</fhir-common.version>
 	</properties>
 	<dependencies>
 
@@ -53,9 +53,9 @@
 							<includeGroupIds>health.identity.fhir</includeGroupIds>
 							<includeArtifactIds>hip-fhir-common</includeArtifactIds>
 							<outputDirectory>
-								${project.basedir}/hfc_package
+								${project.basedir}/fhir_packages
 							</outputDirectory>
-							<includes>**/package/package.tgz</includes>
+							<includes>**/package/package.tgz,**/openapi/*</includes>
 
 						</configuration>
 					</execution>
