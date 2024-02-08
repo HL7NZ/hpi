@@ -12,7 +12,14 @@
 		<fhir-common.version>1.6.0-SNAPSHOT</fhir-common.version>
 	</properties>
 	<dependencies>
-
+	
+		<dependency>
+			<groupId>nz.health.digital.com.fhir</groupId>
+			<artifactId>nzbase-conformance-module</artifactId>
+			<version>2.0.0</version>
+			<classifier>zip</classifier>
+			<type>zip</type>
+		</dependency>
 
 		<dependency>
 			<groupId>health.identity.fhir</groupId>
@@ -21,7 +28,9 @@
 			<classifier>fhir-resources</classifier>
 			<type>zip</type>
 		</dependency>
+		
 	</dependencies>
+	
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
