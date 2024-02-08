@@ -12,7 +12,7 @@
 		<fhir-common.version>1.6.0-SNAPSHOT</fhir-common.version>
 	</properties>
 	<dependencies>
-	
+
 		<dependency>
 			<groupId>nz.health.digital.com.fhir</groupId>
 			<artifactId>nzbase-conformance-module</artifactId>
@@ -28,9 +28,9 @@
 			<classifier>fhir-resources</classifier>
 			<type>zip</type>
 		</dependency>
-		
+
 	</dependencies>
-	
+
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
@@ -68,6 +68,25 @@
 
 						</configuration>
 					</execution>
+
+					<execution>
+						<id>unpack-nzbase</id>
+						<phase>
+							validate
+						</phase>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+						<configuration>
+							<includeGroupIds>nz.health.digital.com.fhir</includeGroupIds>
+							<includeArtifactIds>nzbase-conformance-module</includeArtifactIds>
+							<outputDirectory>
+								${project.basedir}/fhir_packages
+							</outputDirectory>
+							<includes>**/package.tgz</includes>
+						</configuration>
+					</execution>
+
 				</executions>
 			</plugin>
 			<plugin>
