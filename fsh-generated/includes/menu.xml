@@ -25,37 +25,40 @@
         <a href="Guidance.html">Guidance</a>
       </li>
       <li>
+        <a href="getFacility.html">Get Facility (Location)</a>
+      </li>
+      <li>
+        <a href="searchFacility.html">Search Facility (Location)</a>
+      </li>
+      <li>
+        <a href="getOrganisation.html">Get Organisation</a>
+      </li>
+      <li>
+        <a href="searchOrganisation.html">Search Organisation</a>
+      </li>
+      <li>
         <a href="getPractitioner.html">Get Practitioner</a>
       </li>
       <li>
         <a href="searchPractitioner.html">Search Practitioner</a>
       </li>
       <li>
-        <a href="addPractitioner.html">Add Practitioner</a>
+        <a href="createPractitioner.html">Create Practitioner</a>
       </li>
       <li>
-        <a href="getPracRole.html">Get Practitioner Role</a>
+        <a href="updatePractitioner.html">Update Practitioner</a>
       </li>
       <li>
-        <a href="searchPracRole.html">Search Practitioner Role</a>
+        <a href="getPracRole.html">Get PractitionerRole</a>
       </li>
       <li>
-        <a href="addPracRole.html">Add Practitioner Role</a>
+        <a href="searchPracRole.html">Search PractitionerRole</a>
       </li>
       <li>
-        <a href="updatePracRole.html">Update Practitioner Role</a>
+        <a href="createPracRole.html">Create PractitionerRole</a>
       </li>
       <li>
-        <a href="getLocation.html">Get Facility (Location)</a>
-      </li>
-      <li>
-        <a href="searchLocation.html">Search Facility (Location)</a>
-      </li>
-      <li>
-        <a href="getOrganization.html">Get Organization</a>
-      </li>
-      <li>
-        <a href="searchOrganization.html">Search Organization</a>
+        <a href="updatePracRole.html">Update PractitionerRole</a>
       </li>
     </ul>
   </li>
@@ -65,13 +68,38 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="OnboardingAndComplianceTesting.html">Onboarding and Compliance testing</a>
+        <a href="Onboarding.html">Onboarding</a>
       </li>
       <li>
         <a href="general.html">General Notes</a>
       </li>
       <li>
         <a href="faq.html">FAQ</a>
+      </li>
+      <li>
+        <a href="glossary.html">Glossary</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Compliance testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ComplianceTestingImportantInformation.html">Compliance testing important information</a>
+      </li>
+      <li>
+        <a href="OrganisationComplianceTesting.html">Organisation Compliance testing</a>
+      </li>
+      <li>
+        <a href="FacilityComplianceTesting.html">Facility Compliance testing</a>
+      </li>
+      <li>
+        <a href="PractitionerComplianceTesting.html">Practitioner Compliance testing</a>
+      </li>
+      <li>
+        <a href="PractitionerRoleComplianceTesting.html">PractitionerRole Compliance testing</a>
       </li>
     </ul>
   </li>
