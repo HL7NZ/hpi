@@ -1,22 +1,20 @@
 {
   "name": "hl7.org.nz.hpi",
-  "version": "0.1.0",
+  "version": "1.3.0",
   "canonical": "http://hl7.org.nz/fhir/hpi",
-  "url": "http://hl7.org.nz/fhir/hpi",
-  "title": "New Zealand HPI Implementation Guide",
-  "description": "The HPI facade",
+  "url": "http://hl7.org.nz/fhir/StructureDefinition/HPI",
+  "title": "New Zealand HPI IG",
+  "description": "The FHIR API for HPI",
   "dependencies": {
-    "hl7.fhir.nz.base": "current",
-    "hl7.fhir.r4.core": "4.0.1",
-    "markdown": "^0.5.0",
-    "remarkable": "^2.0.1"
+    "hl7.fhir.r4.core": "4.0.1"
   },
+  "usage-stats-opt-out": true,
   "language": "en",
-  "author": "David Hay",
+  "author": "Te Whatu Ora",
   "maintainers": [
     {
-      "name": "David Hay",
-      "email": "mailto:david.hay25@gmail.com"
+      "name": "MoH",
+      "email": "mailto:integration@health.govt.nz"
     }
   ],
   "license": "CC0-1.0"
