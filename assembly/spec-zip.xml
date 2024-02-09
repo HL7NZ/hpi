@@ -10,12 +10,21 @@
 	</formats>
 	<fileSets>
 		<fileSet>
-			<directory>${project.basedir}/output//</directory>
+			<directory>output</directory>
 			<includes>
-				<include>**/*.xml</include>
-				<include>**/package.tgz</include>
+				<include>package.tgz</include>
 			</includes>
+			<outputDirectory>package</outputDirectory>
 		</fileSet>
+		<!-- open api -->
+		<fileSet>
+			<directory>openapi</directory>
+			<includes>
+				<include>*.yaml</include>
+			</includes>
+			<outputDirectory>openapi</outputDirectory>
+		</fileSet>
+	
 	</fileSets>
 
 
