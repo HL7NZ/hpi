@@ -74,7 +74,7 @@ These examples will return a bundle of resources with only a single entry (as th
 For more information look at the __Search Use cases__ in the menu
 
 
-### Additional Search parameters
+### Additional search parameters
 
 #### Search resource using a string
 
