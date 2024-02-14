@@ -74,7 +74,9 @@ These examples will return a bundle of resources with only a single entry (as th
 For more information look at the __Search Use cases__ in the menu
 
 
-### Search resource using a string
+### Additional Search parmeters
+
+#### Search resource using a string
 
 * For a simple string search, a string parameter serves as the input for a search against sequences of characters.
 * By default, a field matches a string query if the value of the field equals or starts with the supplied parameter value.
@@ -93,7 +95,7 @@ For more information look at the __Search Use cases__ in the menu
 * Get\<Endpoint>/Organization?name:exact=Pharmacy
   * Any organisations with a name that is exactly "Pharmacy". Note: This would not return any of the above examples. However if this was Get\<Endpoint>/Organization?name:exact=shopNSave Discount Pharmacy it would return a bundle with that resource.
 
-### Extract style HPI searches
+### Count and Offset
 
 The HPI allows extract style searches on the Facility and Organisation indexes.
 
