@@ -149,7 +149,7 @@ table, th, td {
 
 <tr><td>HPI-L-Search-6-type</td>
 <td>System can retrieve all facilities of a spcific type <br />
-<a href="general.html#additional-search-parmeters">Click here for more information on additional search parameters</a></td>
+<a href="general.html#additional-search-parameters">Click here for more information on additional search parameters</a></td>
 <td>Search for all facilities that are of a type appropriate to the use case e.g. pharm (pharmacies)</td>
 <td>
   <ul> Output:
@@ -162,7 +162,7 @@ table, th, td {
 
 <tr><td>HPI-L-Search-6-dhb</td>
 <td>System can retrieve all facilities in a DHB catchment area<br />
-<a href="general.html#additional-search-parmeters">Click here for more information on additional search parameters</a></td>
+<a href="general.html#additional-search-parameters">Click here for more information on additional search parameters</a></td>
 <td>Search for all facilities that are in a DHB of interest for the use case e.g.  G00011-K (Auckland District Health Board)</td>
 <td>
   <ul> Output:
@@ -175,7 +175,7 @@ table, th, td {
 
 <tr><td>HPI-L-Search-7-name and dhb</td>
 <td>System can search for facilities with a specific name in a DHB catchment area<br />
-<a href="general.html#additional-search-parmeters">Click here for more information on additional search parameters</a></td>
+<a href="general.html#additional-search-parameters">Click here for more information on additional search parameters</a></td>
 <td>Search for name = Plunket Clinic in DHB G00011-K (Auckland District Health Board)</td>
 <td>
   <ul> Output:
