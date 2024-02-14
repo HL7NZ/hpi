@@ -35,7 +35,7 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 
 This extract style search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
 
-[For more informaton on extract style searches see](/general.html#extract-style-hpi-searches)
+[For more informaton on extract style searches see](/general.html)
 
 <div>
 {% include search-locationbytype.svg %}
@@ -50,6 +50,6 @@ E.g. GET\<Endpoint>/Location?type=pharm
 4.	The first 10 matching facilities are retrieved from the HPI
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
-7.	[To get more than the default 10 records see additional search information](/general.html#count-and-offset) to learn about the _count and _offset parameters
+7.	[To get more than the default 10 records see additional search information](/general.html#additional-search-parameters) to learn about the _count and _offset parameters
 
 [For all the facility search parameters click here](/capabilityStatement.html#location)
