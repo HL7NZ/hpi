@@ -48,7 +48,7 @@ E.g. GET\<Endpoint>/Location?type=009
 4.	The first 10 matching Organisations are retrieved from the HPI
 5.	The response containing a bundle of matching Organisations is returned to the integrating application
 6.	The integrating application displays the matching Organisations to the user
-7.	[To get more than the default 10 records see additional search information](/general.html#count-and-offset) and learn about the _count and _offset parameters
+7.	[To get more than the default 10 records see additional search information](/general.html#additional-search-parameters) to learn about the _count and _offset parameters.
 
 
 [For all the Organisation search parameters click here](/capabilityStatement.html#organization)
