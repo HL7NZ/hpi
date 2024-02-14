@@ -118,7 +118,7 @@ table, th, td {
 <tr>
 <td>HPI-O-Search-5-type</td>
 <td>System can retrieve all organisatons of a specific type  <br />
-<a href="general.html#additional-search-parmeters">Click here for more information on additional search parameters</a></td>
+<a href="general.html#additional-search-parameters">Click here for more information on additional search parameters</a></td>
 <td>Search for organisatons that are of a type appropriate to the use case e.g. 009 Primary Health Organisation (PHO)</td>
 <td>System can retireve all organisations of specific type </td>
 <td><td>*mandatory if appropriate for use case</td></td>
