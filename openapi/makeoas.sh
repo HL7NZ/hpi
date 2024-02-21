@@ -9,7 +9,7 @@ newpath=$(< ./openapi/HipFhirHpiPaths.yaml)  yq -i '.paths=env(newpath) ' openap
 newversion=$(yq '.version' ./sushi-config.yaml)   yq -i '.info.version=env(newversion) ' openapi/HipFhirHpiOpenApi.yaml 
 
 ## delete aws api gw intergation 
-yq -i 'del(.paths[][].x-amazon-apigateway-integration)' HipFhirHpiOpenApi.yaml
+yq -i 'del(.paths[][].x-amazon-apigateway-integration)' openapi/HipFhirHpiOpenApi.yaml
 
 zip -u ./input/extra/HipFhirHpiOpenApi.zip ./openapi/HipFhirHpiOpenApi.yaml 
 
