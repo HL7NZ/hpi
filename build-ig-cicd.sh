@@ -46,9 +46,9 @@ unzip  ./hl7-package.zip -d ~/.fhir/packages/hl7.fhir.r4.core#4.0.1/ >/dev/null 
 
 
 #cp hl7-uv packages into user's .fhir cache 
-aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
-sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
-unzip  ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ >/dev/null 2>&1
+#aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
+#sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
+#unzip  ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ >/dev/null 2>&1
 
 
 echo getting common dependencies...
