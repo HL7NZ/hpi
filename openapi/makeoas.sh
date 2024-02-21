@@ -8,5 +8,8 @@ cp "./fhir_packages/hip-fhir-common-$common_version/openapi/HipFhirCommonOpenApi
 newpath=$(< ./openapi/HipFhirHpiPaths.yaml)  yq -i '.paths=env(newpath) ' openapi/HipFhirHpiOpenApi.yaml 
 newversion=$(yq '.version' ./sushi-config.yaml)   yq -i '.info.version=env(newversion) ' openapi/HipFhirHpiOpenApi.yaml 
 
+## delete aws api gw intergation 
+yq -i 'del(.paths[][].x-amazon-apigateway-integration)' HipFhirHpiOpenApi.yaml
+
 zip -u ./input/extra/HipFhirHpiOpenApi.zip ./openapi/HipFhirHpiOpenApi.yaml 
 
