@@ -1,5 +1,4 @@
-#!/bin/bash
-set -x #echo on
+
 # this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher
 
 addPackage() {
@@ -18,7 +17,8 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
-
+#!/bin/bash
+set -x #echo on
 
 echo cleaning up temp directory ...
 rm -r  ./temp
@@ -50,17 +50,6 @@ aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#cur
 sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
 unzip  ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ >/dev/null 2>&1
 
-
-echo getting common dependencies...
-common_url=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".uri' ./sushi-config.yaml)
-common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
-
-sudo mkdir ~/.fhir/packages//hl7.org.nz.fhir.ig.hip-core#$common_version
-ls -l ./fhir_packages/hip-fhir-common*/package/package.tgz
-tar zxvf  ./fhir_packages/hip-fhir-common*/package/package.tgz -C  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version
-#fix the package url:
-jq --arg url $common_url '.url |= $url' ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json > temp2.json
-mv temp2.json  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 
 cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 
