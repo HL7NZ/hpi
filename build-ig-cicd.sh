@@ -5,6 +5,7 @@ addPackage() {
 echo " adding package named $1 version $2 from source $3 using url $4"
 ls  $3
 
+
 sudo mkdir -p ~/.fhir/packages/$1#$2
 sudo mkdir -p ~/.fhir/packages/$1#current
 
@@ -32,6 +33,9 @@ addPackage "$nzbase_name" "$nzbase_version" "$nzbase_source" "$nzbase_url"
 
 
 echo getting common dependencies...
+
+common_name="hl7.org.nz.fhir.ig.hip-core"
+common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
 
 comdir=$(ls -d ./fhir_packages/hip-fhir-common*)
 common_source="$comdir/package/package.tgz"
