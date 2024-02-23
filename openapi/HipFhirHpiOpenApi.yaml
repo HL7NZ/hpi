@@ -1,8 +1,8 @@
 openapi: "3.0.1"
 info:
-  title: "hip-hpi-fhir-dev"
-  description: "HPI FHIR - dev gateway"
-  version: "1.2.1"
+  title: "HIP HPI FHIR"
+  description: "Te Whatu Ora HPI FHIR services"
+  version: "1.3.0-SNAPSHOT"
 servers:
   - url: "https://gb2r96qpik.execute-api.ap-southeast-2.amazonaws.com/{basePath}"
     variables:
