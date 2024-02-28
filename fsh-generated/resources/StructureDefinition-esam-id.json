@@ -2,20 +2,10 @@
   "resourceType": "StructureDefinition",
   "id": "esam-id",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/esam-id",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "name": "Esam_id",
   "status": "draft",
   "description": "The id from eSam",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "NZ",
-          "system": "urn:iso:std:iso:3166"
-        }
-      ]
-    }
-  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

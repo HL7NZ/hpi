@@ -2,10 +2,11 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
+  "date": "2023-09-03",
   "publisher": "Te Whatu Ora",
   "contact": [
     {
@@ -27,14 +28,14 @@
   "dependsOn": [
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https://nzhts.digital.health.nz/ig/hip-common-terminology",
+      "uri": "https://common-ig-v1-3-1.hip.digital.health.nz/site",
       "version": "dev",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
       "packageId": "fhir.org.nz.ig.base",
-      "uri": "http://fhir.org.nz/ig/base",
-      "version": "dev",
+      "uri": "https://fhir.org.nz/ig/base/",
+      "version": "2.0.0",
       "id": "fhir_org_nz_ig_base"
     }
   ],
@@ -85,7 +86,23 @@
           "reference": "Practitioner/90ZZLP"
         },
         "name": "90ZZLP",
-        "description": "Example HPI Practitioner with No Registration",
+        "description": "Example HPI Practitioner with No Registration 'NR' with confidentiality R",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/91ZABY"
+        },
+        "name": "91ZABY",
+        "description": "Example HPI Practitioner with one registration",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/92ZZRE"
+        },
+        "name": "92ZZRE",
+        "description": "Example HPI Practitioner with No Registration 'NR'",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
       },
       {
@@ -93,15 +110,23 @@
           "reference": "Practitioner/98ZZQJ"
         },
         "name": "98ZZQJ",
-        "description": "Example HPI Practitioner with two 2 Registrations",
+        "description": "Example HPI Practitioner with two registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "Location/FZZ941-D"
+        },
+        "name": "FZZ941-D",
+        "description": "Example HPI Location Inactive (disestablished)",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
         "reference": {
           "reference": "Location/FZZ958-K"
         },
         "name": "FZZ958-K",
-        "description": "Example HPI Location",
+        "description": "Example HPI Location with Managing Org",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
@@ -109,7 +134,7 @@
           "reference": "Location/FZZ999-B"
         },
         "name": "FZZ999-B",
-        "description": "Example HPI Location",
+        "description": "Example HPI Location with messaging address",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
       },
       {
@@ -118,6 +143,14 @@
         },
         "name": "GZZ956-B",
         "description": "Example HPI Organization",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/GZZ991-D"
+        },
+        "name": "GZZ991-D",
+        "description": "Example HPI Organization 'partof'",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
       },
       {
@@ -138,10 +171,18 @@
       },
       {
         "reference": {
-          "reference": "PractitionerRole/R00000013-J"
+          "reference": "PractitionerRole/R00000015-C"
         },
-        "name": "R00000013-J",
-        "description": "Example HPI PractitionerRole Specialist Physician",
+        "name": "R00000015-C",
+        "description": "Example HPI PractitionerRole with confidentiality R",
+        "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/R00000029-P"
+        },
+        "name": "R00000029-P",
+        "description": "Example HPI PractitionerRole with messagin address",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
       }
     ],
@@ -156,16 +197,6 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "addPracRole.html",
-          "title": "Add Prac Role",
-          "generation": "markdown"
-        },
-        {
-          "nameUrl": "addPractitioner.html",
-          "title": "Add Practitioner",
-          "generation": "markdown"
-        },
-        {
           "nameUrl": "businessView.html",
           "title": "Business View",
           "generation": "markdown"
@@ -176,9 +207,34 @@
           "generation": "html"
         },
         {
+          "nameUrl": "ComplianceTestingImportantInformation.html",
+          "title": "Compliance Testing Important Information",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "createPracRole.html",
+          "title": "Create Prac Role",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "createPracRoleExample.html",
+          "title": "Create Prac Role Example",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "createPractitioner.html",
+          "title": "Create Practitioner",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "extensions.html",
           "title": "Extensions",
           "generation": "html"
+        },
+        {
+          "nameUrl": "FacilityComplianceTesting.html",
+          "title": "Facility Compliance Testing",
+          "generation": "markdown"
         },
         {
           "nameUrl": "faq.html",
@@ -191,13 +247,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "getLocation.html",
-          "title": "Get Location",
+          "nameUrl": "getFacility.html",
+          "title": "Get Facility",
           "generation": "markdown"
         },
         {
-          "nameUrl": "getOrganization.html",
-          "title": "Get Organization",
+          "nameUrl": "getOrganisation.html",
+          "title": "Get Organisation",
           "generation": "markdown"
         },
         {
@@ -226,8 +282,23 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "OnboardingAndComplianceTesting.html",
-          "title": "Onboarding And Compliance Testing",
+          "nameUrl": "Onboarding.html",
+          "title": "Onboarding",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "OrganisationComplianceTesting.html",
+          "title": "Organisation Compliance Testing",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "PractitionerComplianceTesting.html",
+          "title": "Practitioner Compliance Testing",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "PractitionerRoleComplianceTesting.html",
+          "title": "Practitioner Role Compliance Testing",
           "generation": "markdown"
         },
         {
@@ -236,13 +307,18 @@
           "generation": "html"
         },
         {
-          "nameUrl": "searchLocation.html",
-          "title": "Search Location",
+          "nameUrl": "putPractitionerRoleExample.html",
+          "title": "Put Practitioner Role Example",
           "generation": "markdown"
         },
         {
-          "nameUrl": "searchOrganization.html",
-          "title": "Search Organization",
+          "nameUrl": "searchFacility.html",
+          "title": "Search Facility",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "searchOrganisation.html",
+          "title": "Search Organisation",
           "generation": "markdown"
         },
         {
@@ -258,6 +334,11 @@
         {
           "nameUrl": "terminology.html",
           "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "TermsOfUse.html",
+          "title": "Terms Of Use",
           "generation": "markdown"
         },
         {

@@ -16,21 +16,11 @@
     }
   ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",
   "description": "An entity that provides services of interest to, or is involved in, the business of health care service provision.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "NZ",
-          "system": "urn:iso:std:iso:3166"
-        }
-      ]
-    }
-  ],
   "purpose": "Describe the Organization that will be returned by the HPI",
   "fhirVersion": "4.0.1",
   "mapping": [

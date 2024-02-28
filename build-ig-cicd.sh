@@ -1,31 +1,46 @@
+
+# this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher
+
+addPackage() {
+echo " adding package named $1 version $2 from source $3 using url $4"
+ls  $3
+
+
+sudo mkdir -p ~/.fhir/packages/$1#$2
+sudo mkdir -p ~/.fhir/packages/$1#current
+
+tar zxvf  $3 -C  ~/.fhir/packages/$1#$2
+#publisher seems to need the current version as well
+tar zxvf  $3 -C  ~/.fhir/packages/$1#current
+##fix the package url:
+jq --arg url $4 '.url |= $url' ~/.fhir/packages/$1#$2/package/package.json > temp2.json
+mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
+cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
+}
+
 #!/bin/bash
 set -x #echo on
-# this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher
 
 echo cleaning up temp directory ...
 rm -r  ./temp
 
 echo getting nzbase dependencies...
+nzbase_name="fhir.org.nz.ig.base"
 nzbase_url=$(yq '.dependencies."fhir.org.nz.ig.base".uri' ./sushi-config.yaml)
 nzbase_version=$(yq '.dependencies."fhir.org.nz.ig.base".version' ./sushi-config.yaml)
+nzbase_source="./fhir_packages/nzbase-conformance-module-$nzbase_version/package.tgz"
+addPackage "$nzbase_name" "$nzbase_version" "$nzbase_source" "$nzbase_url"
 
-echo nzbase url =$nzbase_url
-echo nzbase version =$nzbase_version
 
+echo getting common dependencies...
 
-#cp nzbase into user's .fhir cache 
-sudo mkdir temp
-cd temp
-wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128  $nzbase_url"package.tgz"
-tar zxvf package.tgz
-##fix the package url:
-jq --arg url $nzbase_url '.url |= $url' ./package/package.json > temp.json
-mv temp.json ./package/package.json 
+common_name="hl7.org.nz.fhir.ig.hip-core"
+common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
 
-##cp nz packages  into user's .fhir cache 
-sudo mkdir -p  ~/.fhir/packages/fhir.org.nz.ig.base#$nzbase_version/package
-sudo  cp -r ./package ~/.fhir/packages/fhir.org.nz.ig.base#$nzbase_version
-cd ..
+comdir=$(ls -d ./fhir_packages/hip-fhir-common*)
+common_source="$comdir/package/package.tgz"
+common_url=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".uri' ./sushi-config.yaml)
+addPackage "$common_name" "$common_version" "$common_source" "$common_url" 
 
 
 #cp hl7 packages into user's .fhir cache 
@@ -34,16 +49,11 @@ sudo mkdir ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
 unzip  ./hl7-package.zip -d ~/.fhir/packages/hl7.fhir.r4.core#4.0.1/ >/dev/null 2>&1
 
 
-echo getting common dependencies...
-common_url=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".uri' ./sushi-config.yaml)
-common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
+#cp hl7-uv packages into user's .fhir cache 
+aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
+sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
+unzip  ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ >/dev/null 2>&1
 
-sudo mkdir ~/.fhir/packages//hl7.org.nz.fhir.ig.hip-core#$common_version
-ls -l ./hfc_package/hip-fhir-common*/package/package.tgz
-tar zxvf  ./hfc_package/hip-fhir-common*/package/package.tgz -C  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version
-#fix the package url:
-jq --arg url $common_url '.url |= $url' ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json > temp2.json
-mv temp2.json  ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 
 cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 
@@ -64,7 +74,11 @@ sudo chmod +x ./localscripts/*.js
 echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
 
-#to do find a way to get add custom content - the follwoign doesnt work, oti seem the template does not get downloaded by iG publisher if the directroy exists?
+echo "building openapi spec"
+sudo chmod +x ./openapi/makeoas.sh
+./openapi/makeoas.sh
+
+#to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
 #sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
 #cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
