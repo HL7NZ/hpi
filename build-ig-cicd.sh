@@ -78,7 +78,7 @@ echo "building openapi spec"
 sudo chmod +x ./openapi/makeoas.sh
 ./openapi/makeoas.sh
 
-#to do find a way to get add custom content - the follwoign doesnt work, oti seem the template does not get downloaded by iG publisher if the directroy exists?
+#to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
 #sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
 #cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
