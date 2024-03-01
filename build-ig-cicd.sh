@@ -37,8 +37,8 @@ echo getting common dependencies...
 common_name="hl7.org.nz.fhir.ig.hip-core"
 common_version=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".version' ./sushi-config.yaml)
 
-comdir=$(ls -d ./fhir_packages/hip-fhir-common*)
-common_source="$comdir/package/package.tgz"
+#comdir=$(ls -d ./fhir_packages/hip-fhir-common*)
+common_source="./fhir_packages/hip-fhir-common-$common_version/package/package.tgz"
 common_url=$(yq '.dependencies."hl7.org.nz.fhir.ig.hip-core".uri' ./sushi-config.yaml)
 addPackage "$common_name" "$common_version" "$common_source" "$common_url" 
 
