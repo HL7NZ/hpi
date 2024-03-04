@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -29,7 +29,7 @@
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
       "uri": "https://common-ig-v1-3-1.hip.digital.health.nz/site",
-      "version": "dev",
+      "version": "1.6.0",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {

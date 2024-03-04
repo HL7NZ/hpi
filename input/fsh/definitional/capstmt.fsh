@@ -232,3 +232,8 @@ Location query
 * rest.resource[3].searchParam[6].type = #token
 * rest.resource[3].searchParam[6].documentation = "Not yet enabled. To enable exclusion of inactive locations"
 
+
+* rest.resource[3].searchParam[7].name = "messaging-address"
+* rest.resource[3].searchParam[7].type = #string
+* rest.resource[3].searchParam[7].documentation = "Search by EDI address"
+
