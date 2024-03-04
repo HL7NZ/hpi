@@ -73,6 +73,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Location.r"
         - "https://api.hip.digital.health.nz/fhir/system/Location.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -155,6 +157,7 @@
         - "https://api.hip.digital.health.nz/fhir/system/Organization.s"
         - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
       - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -203,6 +206,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Location.r"
         - "https://api.hip.digital.health.nz/fhir/system/Location.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -254,6 +259,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.r"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -300,6 +307,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.u"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: params-and-body
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -387,6 +396,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -432,6 +443,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: params-and-body
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -515,6 +528,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.s"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 # type of Lambda Integration - NOTE: when using aws_proxy the responses below are not in use - responses are passed from lambda through
                 type: "aws_proxy"
@@ -610,6 +625,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -750,6 +767,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Patient.c"
         - "https://api.hip.digital.health.nz/fhir/system/Patient.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"
@@ -801,6 +820,8 @@
         - "https://api.hip.digital.health.nz/fhir/system/Organization.r"
         - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
       - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
       x-amazon-apigateway-integration:
                 type: "aws_proxy"
                 httpMethod: "POST"

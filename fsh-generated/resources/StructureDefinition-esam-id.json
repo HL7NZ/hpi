@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "esam-id",
   "url": "http://hl7.org.nz/fhir/StructureDefinition/esam-id",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "name": "Esam_id",
   "status": "draft",
   "description": "The id from eSam",
