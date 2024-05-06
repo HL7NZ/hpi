@@ -38,7 +38,7 @@ Note that the build IG Publisher will place notifications and links in the [noti
 ### fsh-generated
 
 The files that are produced by sushi are placed here. The resources subfolder holds the
-generated resources - the includes is for the IG specific files
+generated resources - the includes is for the IG specific files 
 
 ### input
 
