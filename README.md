@@ -4,7 +4,7 @@
     
 * Install sushi
 * Install Node.js (used by scripts)
-* Install IG publisher (if using local builds) 
+* Install IG publisher (if using local builds)  
  
 ## Running a build
 
