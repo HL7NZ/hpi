@@ -24,7 +24,7 @@ dependencies:
   hl7.org.nz.fhir.ig.hip-core:
      uri: https://common-ig-v1-3-1.hip.digital.health.nz/site
      #version: 1.6.0
-     version: 1.6.0
+     version: 1.8.1
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
