@@ -17,9 +17,9 @@ publisher:
 description: The HPI facade
 license: CC0-1.0
 date: 2023-09-03
-  fhirVersion: 4.0.1
+fhirVersion: 4.0.1
   
-  dependencies:
+dependencies:
 
   hl7.org.nz.fhir.ig.hip-core:
      uri: https://common-ig.hip.digital.health.nz/site
