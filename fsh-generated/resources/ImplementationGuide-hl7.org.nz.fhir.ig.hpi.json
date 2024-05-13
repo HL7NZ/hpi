@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
