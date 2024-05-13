@@ -161,7 +161,7 @@ Usage: #example
 * qualification[=].identifier.value = "962054"
 * qualification[=].identifier.assigner = Reference(Organization/G00008-K)
 * qualification[=].code.coding.version = "2.0"
-* qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#NC "Nursing Council of New Zealand Register Number"
+* qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#NC "Nursing Council of New Zealand Register"
 * qualification[=].code.text = "Nursing Council of New Zealand Register Number"
 * qualification[=].period.start = "2019-02-01"
 * qualification[=].period.end = "2120-02-01"
@@ -202,7 +202,7 @@ Usage: #example
 * qualification[=].identifier.value = "95579"
 * qualification[=].identifier.assigner = Reference(Organization/G00009-A)
 * qualification[=].code.coding.version = "2.0"
-* qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MW "Midwifery Council Register Number"
+* qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MW "Midwifery Council Register"
 * qualification[=].code.text = "Midwifery Council Register Number"
 * qualification[=].period.start = "2020-12-10"
 * qualification[=].period.end = "2022-12-11"

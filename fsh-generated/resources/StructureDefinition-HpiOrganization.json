@@ -5,18 +5,7 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">HPI Organization profile</div>",
     "status": "additional"
   },
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Base.Entities"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization",
-  "version": "1.3.0",
   "name": "HpiOrganization",
   "title": "HPI Organization",
   "status": "active",
@@ -4477,8 +4466,14 @@
         "short": "The type of alias for this Organization - eg its Maori name"
       },
       {
-        "id": "Organization.alias.extension:alias-type.valueCodeableConcept",
-        "path": "Organization.alias.extension.valueCodeableConcept",
+        "id": "Organization.alias.extension:alias-type.value[x]:valueCodeableConcept",
+        "path": "Organization.alias.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "binding": {
           "strength": "preferred",
           "valueSet": "https://nzhts.digital.health.nz/fhir/ValueSet/organization-alias-type-code"

@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.org.nz.fhir.ig.hpi",
   "url": "http://hl7.org.nz/fhir/ig/hpi/ImplementationGuide/hl7.org.nz.fhir.ig.hpi",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "name": "NewZealandHPIIG",
   "title": "New Zealand HPI Implementation Guide",
   "status": "active",
@@ -28,8 +28,8 @@
   "dependsOn": [
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
-      "uri": "https://common-ig-v1-3-1.hip.digital.health.nz/site",
-      "version": "1.6.0",
+      "uri": "https://common-ig.hip.digital.health.nz/site",
+      "version": "1.8.1",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
@@ -41,46 +41,6 @@
   ],
   "definition": {
     "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiLocation"
-        },
-        "name": "HPI Location",
-        "description": "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HpiOrganization"
-        },
-        "name": "HPI Organization",
-        "description": "An entity that provides services of interest to, or is involved in, the business of health care service provision.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HPIPractitioner"
-        },
-        "name": "HPI Practitioner",
-        "description": "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/HPIPractitionerRole"
-        },
-        "name": "HPI Practitioner role",
-        "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/esam-id"
-        },
-        "name": "Esam_id",
-        "description": "The id from eSam",
-        "exampleBoolean": false
-      },
       {
         "reference": {
           "reference": "Practitioner/90ZZLP"
@@ -112,6 +72,22 @@
         "name": "98ZZQJ",
         "description": "Example HPI Practitioner with two registrations",
         "exampleCanonical": "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/HpiCapabilityStatement"
+        },
+        "name": "CapabilityStatement",
+        "description": "Represents API exposed by HPI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/esam-id"
+        },
+        "name": "Esam_id",
+        "description": "The id from eSam",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -155,10 +131,34 @@
       },
       {
         "reference": {
-          "reference": "CapabilityStatement/HpiCapabilityStatement"
+          "reference": "StructureDefinition/HpiLocation"
         },
-        "name": "CapabilityStatement",
-        "description": "Represents API exposed by HPI",
+        "name": "HPI Location",
+        "description": "A physical location from which health goods and/or services are provided.  They are also referred to as an HPI Facility.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HpiOrganization"
+        },
+        "name": "HPI Organization",
+        "description": "An entity that provides services of interest to, or is involved in, the business of health care service provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HPIPractitioner"
+        },
+        "name": "HPI Practitioner",
+        "description": "The practitioner exposed by the HPI. This is the person who delivers healthcare or healthcare related services.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/HPIPractitionerRole"
+        },
+        "name": "HPI Practitioner role",
+        "description": "The practitioner role exposed by the HPI. Used to connect Practitioners with Organizations and Locations, indicating the role they have. A single Practitioner can have roles with multiple organizations.",
         "exampleBoolean": false
       },
       {
