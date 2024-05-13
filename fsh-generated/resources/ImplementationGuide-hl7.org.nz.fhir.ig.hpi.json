@@ -29,7 +29,7 @@
     {
       "packageId": "hl7.org.nz.fhir.ig.hip-core",
       "uri": "https://common-ig.hip.digital.health.nz/site",
-      "version": "1.8.1",
+      "version": "1.8.2",
       "id": "hl7_org_nz_fhir_ig_hip_core"
     },
     {
