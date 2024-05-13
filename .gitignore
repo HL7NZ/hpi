@@ -11,3 +11,4 @@ Thumbs.db
 /fsh-generated/
 /output/
 !/output/full-ig.zip
+/fhir_packages/
