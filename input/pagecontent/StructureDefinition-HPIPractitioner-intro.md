@@ -2,9 +2,10 @@
 The Practitioner resource represents any provider of healthcare - not restricted to those with formal qualifications.
 
 The current HPI contains practitioners covered by the Health Practitioners Competence Assurance Amendment Act 2019. This includes all:
+* Chinese Medicine Practitioners,
 * Chiropractors, 
 * Dentists, 
-* Dental hygienist and Dental and Oral health therapist, 
+* Dental hygienist and Dental and Oral health therapists, 
 * Dietitians, 
 * Medical Laboratory Scientist and Technicians including phlebotomists and mortuary technicians, 
 * Anaesthetic Technologists, 
