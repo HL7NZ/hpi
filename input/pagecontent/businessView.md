@@ -8,6 +8,7 @@ The practitioner identity and registration information is supplied by each of th
 
 The current suppliers to the HPI and the frequency they supply register updates are:
 
+* Chinese Medicine Council of New Zealand (weekly)
 * Chiropractic Board (monthly)
 * Dental Council (weekly)
 * Dietitians Board (monthly)
