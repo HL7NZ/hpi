@@ -22,7 +22,7 @@ The current suppliers to the HPI and the frequency they supply register updates 
 * Occupational Therapists Therapy Board (on request)
 * Paramedic Council (weekly)
 * Pharmacy Council of New Zealand (fortnighly)
-* Physiotherapy Board (fortnightly)
+* Physiotherapy Board (weekly)
 * Podiatrists Board (monthly)
 * Psychologists Board (weekly)
 * Psychotherapists Board  (monthly)
