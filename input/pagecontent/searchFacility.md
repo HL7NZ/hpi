@@ -33,9 +33,8 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 
 ### Search Facility by type
 
-This extract style search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
-
-[For more informaton on extract style searches see](/general.html)
+This search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
+The API defaults to return only 10 records. [To learn more about searching and get more than the default 10 records see additional search information](/general.html#additional-search-parameters).
 
 <div>
 {% include search-locationbytype.svg %}
