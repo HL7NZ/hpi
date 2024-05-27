@@ -95,9 +95,10 @@ For more information look at the __Search Use cases__ in the menu
 * Get\<Endpoint>/Organization?name:exact=Pharmacy
   * Any organisations with a name that is exactly "Pharmacy". Note: This would not return any of the above examples. However if this was Get\<Endpoint>/Organization?name:exact=shopNSave Discount Pharmacy it would return a bundle with that resource.
 
-### Count and Offset
+#### Count and Offset
 
-The HPI allows extract style searches on the Facility and Organisation indexes.
+The HPI APIs default to returning 10 results on a search request.
+To receive more than 10, and for pagenated searching follow the pattern described below.
 
 * **Facility**
   * Search for all facilites of a given type
