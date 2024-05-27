@@ -97,8 +97,7 @@ For more information look at the __Search Use cases__ in the menu
 
 #### Count and Offset
 
-The HPI APIs default to returning 10 results on a search request.
-To receive more than 10, and for pagenated searching follow the pattern described below.
+The HPI APIs default to returning 10 results on a search request. To receive more than 10, and for pagenated searching follow the pattern described below.
 
 * **Facility**
   * Search for all facilites of a given type
@@ -106,11 +105,11 @@ To receive more than 10, and for pagenated searching follow the pattern describe
 * **Organisation**
   * Search for all organisations of a given type.
 
-These extract style searches default to return 10 records in the search result E.g. GET\<Endpoint>/Location?type=pharm will return the first 10 HPI facilites of type pharm.
+A search defaults to return 10 records in the search bundle E.g. GET\<Endpoint>/Location?type=pharm will return the first 10 HPI facilites of type pharm.
 
-To extend an extract style search to get all facilities returned there are two parameters to include _count and _offset.
+To increase the number of results returned, and to get all facilities returned there are two parameters to include _count and _offset.
 * _count - This search parameter is used to extend the search and has a limit of 50 search results.
-* _offset - This search parameter is used to get the next set of facilities
+* _offset - This search parameter is used to get the next set of search results 
 
 E.g. For how to use these parameters
 * First request - GET\<Endpoint>/Location?type=pharm&_count=50
