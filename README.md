@@ -1,7 +1,7 @@
 # Repository for HPI IG  
 
 ## Current Release
-1.4.0
+1.4.1
 ## Pre requisites
     
 * Install sushi
