@@ -141,8 +141,8 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
 * qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
-//* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code|2.1.0 (preferred)
-* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code (preferred)
+* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code|2.1.0 (preferred)
+//* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code (preferred)
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
 * qualification.id 0..0
