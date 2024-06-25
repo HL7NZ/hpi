@@ -19,7 +19,7 @@ cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package
 }
 
 #!/bin/bash
-set -x #echo on
+set -x -e #echo on, exit on error
 
 echo cleaning up temp directory ...
 rm -r  ./temp
