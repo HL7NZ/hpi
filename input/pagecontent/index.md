@@ -44,5 +44,5 @@ new identifiers are added, they will be present in the [build version](http://bu
 
   ### Source
 
-  ​	This IG was built from [github](https://github.com/HL7NZ/nhi)  branch: _BRANCH_  commit id: _GIT_COMMIT_ID_
+  ​	This IG was built from [github](https://github.com/HL7NZ/nhi)  branch:   commit id: 9b09bc4ff144b7036aa8e1f77902879a3150e181
 
