@@ -1,28 +1,36 @@
 
-# this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher
+# this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher 
+# to run locally, pass in the parameter true:
+## ./build-ig-cicd.sh true
+
+islocal=$1
 
 addPackage() {
 echo " adding package named $1 version $2 from source $3 using url $4"
 ls  $3
+if [[ "$islocal" == "true" ]]; then
+  mkdir -p ~/.fhir/packages/$1#$2
+  mkdir -p ~/.fhir/packages/$1#current
+else 
+  sudo mkdir -p ~/.fhir/packages/$1#$2
+  sudo mkdir -p ~/.fhir/packages/$1#current
+fi
+   
 
 
-sudo mkdir -p ~/.fhir/packages/$1#$2
-sudo mkdir -p ~/.fhir/packages/$1#current
 
 tar zxvf  $3 -C  ~/.fhir/packages/$1#$2
 #publisher seems to need the current version as well
-tar zxvf  $3 -C  ~/.fhir/packages/$1#current
+#tar zxvf  $3 -C  ~/.fhir/packages/$1#current
 ##fix the package url:
 jq --arg url $4 '.url |= $url' ~/.fhir/packages/$1#$2/package/package.json > temp2.json
 mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
-cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
+#cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
 #!/bin/bash
-set -x #echo on
+set -x -e #echo on, exit on error
 
-echo cleaning up temp directory ...
-rm -r  ./temp
 
 echo getting nzbase dependencies...
 nzbase_name="fhir.org.nz.ig.base"
@@ -44,21 +52,36 @@ addPackage "$common_name" "$common_version" "$common_source" "$common_url"
 
 
 #cp hl7 packages into user's .fhir cache 
-aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip
-sudo mkdir ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
-unzip  ./hl7-package.zip -d ~/.fhir/packages/hl7.fhir.r4.core#4.0.1/ >/dev/null 2>&1
+if [[ "$islocal" == "true" ]]; then
+  echo "copying using hip-profile - makse sure yoiu have updates ~/.aws/credentals"
+  aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip  --profile hip-profile
+  mkdir -p ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
+else
+  aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip
+  sudo mkdir -p  ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
+fi
+
+
+unzip -q -o ./hl7-package.zip -d ~/.fhir/packages/hl7.fhir.r4.core#4.0.1/
 
 
 #cp hl7-uv packages into user's .fhir cache 
-aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
-sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
-unzip  ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ >/dev/null 2>&1
+echo "islocal =$islocal"
+if [[ "$islocal" == "true" ]]; then
+  echo "copying using hip-profile - makse sure yoiu have updates ~/.aws/credentals"
+  aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip  --profile hip-profile
+  mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
+else
+   aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
+   sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
+fi
+ 
+
+unzip -q -o ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ 
 
 
 cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 
-pwd
-ls ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#dev
 
 GIT_COMMIT_ID=$(git rev-parse HEAD)
 echo adding source info to index.md
