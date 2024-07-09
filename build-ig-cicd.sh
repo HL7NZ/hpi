@@ -53,15 +53,13 @@ addPackage "$common_name" "$common_version" "$common_source" "$common_url"
 
 #cp hl7 packages into user's .fhir cache 
 if [[ "$islocal" == "true" ]]; then
-  echo "copying using hip-profile - makse sure yoiu have updates ~/.aws/credentals"
+  echo "copying using hip-profile - makse sure you have updated ~/.aws/credentals"
   aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip  --profile hip-profile
   mkdir -p ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
 else
   aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip
   sudo mkdir -p  ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
 fi
-
-
 unzip -q -o ./hl7-package.zip -d ~/.fhir/packages/hl7.fhir.r4.core#4.0.1/
 
 
@@ -75,9 +73,7 @@ else
    aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.uv.tools#current/package.zip ./hl7-uv-package.zip
    sudo mkdir -p ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current
 fi
- 
-
-unzip -q -o ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ 
+ unzip -q -o ./hl7-uv-package.zip -d ~/.fhir/packages/fhir/hl7.fhir.uv.tools#current/ 
 
 
 cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
@@ -92,13 +88,13 @@ echo running sushi ...
 sushi -o .
 
 echo running local scripts
-sudo chmod +x ./localscripts/*.js
+chmod +x ./localscripts/*.js
 ./localscripts/makeTerminologySummary.js
 echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
 
 echo "building openapi spec"
-sudo chmod +x ./openapi/makeoas.sh
+chmod +x ./openapi/makeoas.sh
 ./openapi/makeoas.sh
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
@@ -111,5 +107,5 @@ java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeas
 
 
 
-sudo chmod +x ./fhirValidate.sh
+chmod +x ./fhirValidate.sh
 ./fhirValidate.sh
