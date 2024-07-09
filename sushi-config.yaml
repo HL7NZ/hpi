@@ -7,7 +7,7 @@
 id: hl7.org.nz.fhir.ig.hpi
 canonical: http://hl7.org.nz/fhir/ig/hpi
 #canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
-version: 1.4.3
+version: 1.4.4
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
