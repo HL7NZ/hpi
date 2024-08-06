@@ -88,7 +88,7 @@ Practitioner query
 
 
 * rest.resource.operation[0].name = "update-core"
-* rest.resource.operation[0].definition = "https:/hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
+* rest.resource.operation[0].definition = "./OperationDefinition-Practitioner-update-core"
 * rest.resource.operation[0].documentation = "An operation that updates a health providers name, birthdate, death-date  **HTTP Request** 'POST'  **Scope required:** practitioner:write / Practitioner.u"
 
 
