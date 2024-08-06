@@ -1,0 +1,11 @@
+{
+    "name": "tewhatuora.fhir.template",
+    "version": "0.1.0",
+    "type": "fhir.template",
+    "license": "CC0-1.0",
+    "description": "Template for use with Te Whatu Ora published IGs, based on Te Whatu ora branding guidelines",
+    "base": "fhir.base.template",
+    "dependencies": {
+        "fhir.base.template": "current"
+    }
+}
