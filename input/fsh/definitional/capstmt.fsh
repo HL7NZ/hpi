@@ -34,8 +34,9 @@ This is the computable resource that describes the RESTful endpoint
 
 * rest.resource.type = #Practitioner
 * rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
-* rest.resource.documentation = "A custom operation which updates a health provider's name, birthdate and death-date"
+* rest.resource.documentation = """
 Practitioner query
+
 
 """
 
