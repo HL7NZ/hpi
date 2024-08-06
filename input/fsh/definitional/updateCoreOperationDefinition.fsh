@@ -1,12 +1,12 @@
 Instance: Practitioner-update-core
 InstanceOf: OperationDefinition
-Description: "A custom operation which updates a health providers name, birthdate and death-date."
+Description: "A custom operation which updates a health provider's name, birthdate and death-date."
 Usage: #definition
 
 * url = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
 * version = "1.0.0"
-* name = "Update Identity"
-* title = "Update patient's self-identified demographic information"
+* name = "Update Core "
+* title = "Updates a health provider's name, birthdate and death-date."
 * status = #draft
 * kind = #operation
 * experimental = false
