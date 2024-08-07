@@ -43,14 +43,14 @@ Practitioner query
 //read by id
 * rest.resource.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner" 
 * rest.resource.interaction.code = #read
-* rest.resource.interaction.documentation = "Used to retrieve a Practitioner resource by Id  **HTTP Request** 'GET'  **Scope required:** practitioner:read / Practitioner.r"
+* rest.resource.interaction.documentation = "GET,  [base]/Practitioner[cpn],retrieve a Practitioner resource by Id, system/Practitioner.r"
 
 //search by various parameters
 * rest.resource.interaction[1].code = #search-type
-* rest.resource.interaction[1].documentation = "Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources)  **HTTP Request**: 'GET'  **Scope required:** practitioner:search / Practitioner.s"
+* rest.resource.interaction[1].documentation = "GET,[base]/Practitioner, Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources),system/Practitioner.s "
 
 * rest.resource.interaction[2].code = #create
-* rest.resource.interaction[2].documentation = "Creates a new Practitioner record  **HTTP Request** 'POST'  **Scope required:** practitioner:write / Practitioner.c"
+* rest.resource.interaction[2].documentation = "POST',[base]/Practitioner, Creates a new Practitioner record , system/Practitioner.c"
 
 /*
 * rest.resource.interaction[3].code = #update
@@ -89,8 +89,8 @@ Practitioner query
 
 
 * rest.resource.operation[0].name = "update-core"
-* rest.resource.operation[0].definition = "./OperationDefinition-Practitioner-update-core.html"
-* rest.resource.operation[0].documentation = "An operation that updates a health providers name, birthdate, death-date  **HTTP Request** 'POST'  **Scope required:** practitioner:write / Practitioner.u"
+* rest.resource.operation[0].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
+* rest.resource.operation[0].documentation = "POST, [base]/Practitioner[cpn],An operation that updates a health providers demographic details,  system/Practitioner.u"
 
 
 // ============== The PractitionerRole endpoint =============
@@ -103,17 +103,17 @@ PractitionerRole query
 
 //read by id
 * rest.resource[1].interaction.code = #read
-* rest.resource[1].interaction.documentation = "Used to retrieve a PractitionerRole resource by Id.  **HTTP Request** 'GET'  **Scope required:** pracrole:read / PractitionerRole.r"
+* rest.resource[1].interaction.documentation = "GET, [base]/PractitionerRole[id], Used to retrieve a PractitionerRole resource by Id, system/PractitionerRole.r"
 
 //search by various parameters
 * rest.resource[1].interaction[1].code = #search-type
-* rest.resource[1].interaction[1].documentation = "Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources)  **HTTP Request** 'GET'  **Scope required:** pracrole:search / PractitionerRole.s"
+* rest.resource[1].interaction[1].documentation = "GET, [base]/PractitionerRole, Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources), system/PractitionerRole.s"
 
 * rest.resource[1].interaction[2].code = #create
-* rest.resource[1].interaction[2].documentation = "Create a new PractitionerRole  **HTTP Request** 'POST'  **Scope required:** pracrole:create / PractitionerRole.c"
+* rest.resource[1].interaction[2].documentation = "POST, [base]/PractitionerRole, Create a new PractitionerRole, system/PractitionerRole.c"
 
 * rest.resource[1].interaction[3].code = #update
-* rest.resource[1].interaction[3].documentation = "Update contact details and end date on an existing PractitionerRole record.  **HTTP Request** 'PUT'  **Scope required:** pracrole:write / PractitionerRole.u"
+* rest.resource[1].interaction[3].documentation = "PUT, [base]/PractitionerRole[id], Update contact details and end date on an existing PractitionerRole record, system/PractitionerRole.u"
 
 
 
@@ -155,11 +155,11 @@ Organization query
 
 //read by id
 * rest.resource[2].interaction[0].code = #read
-* rest.resource[2].interaction[0].documentation = "Used to retrieve an Organization resource by Id.  **HTTP Request** 'GET'  **Scope required:** organization:read / Organization.r"
+* rest.resource[2].interaction[0].documentation = "GET, [base]/Organization/[hpi-org-id], Used to retrieve an Organization resource by Id, system/Organization.r"
 
 //search by various parameters
 * rest.resource[2].interaction[1].code = #search-type
-* rest.resource[2].interaction[1].documentation = "Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources).  **HTTP Request** 'GET'  **Scope required:** organization:search / Organization.s"
+* rest.resource[2].interaction[1].documentation = "GET, [base]/Organization, Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources), system/Organization.s"
 
 * rest.resource[2].searchParam[0].name = "active"
 * rest.resource[2].searchParam[0].type = #token
@@ -195,11 +195,11 @@ Location query
 
 //read by id
 * rest.resource[3].interaction[0].code = #read
-* rest.resource[3].interaction[0].documentation = "Used to retrieve an Location resource by Id.  **HTTP Request** 'GET'  **Scope required:** location:read / Location.r"
+* rest.resource[3].interaction[0].documentation = "GET, [base]/Location/[hpi-facid], Used to retrieve an Location resource by Id, system/Location.r"
 
 //search by various parameters
 * rest.resource[3].interaction[1].code = #search-type
-* rest.resource[3].interaction[1].documentation = "Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources).  **HTTP Request** 'GET'  **Scope required:** location:search / Location.s"
+* rest.resource[3].interaction[1].documentation = "GET, [base]/Location, Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources), system/Location.s"
 
 
 //todo - add read interaction
