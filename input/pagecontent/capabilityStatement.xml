@@ -13,12 +13,27 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve a Practitioner resource by Id.</p>
+<td><p>GET,  [base]/Practitioner[cpn],retrieve a Practitioner resource by Id, system/Practitioner.r</p>
 </td>
 </tr>
 <tr>
 <td>search-type</td>
-<td><p>Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources).</p>
+<td><p>GET,[base]/Practitioner, Queries against the Practitioner using name and other search parameters. Will return a Bundle (even if there are no matching resources),system/Practitioner.s</p>
+</td>
+</tr>
+<tr>
+<td>create</td>
+<td><p>POST',[base]/Practitioner, Creates a new Practitioner record , system/Practitioner.c</p>
+</td>
+</tr>
+</table>
+<strong>Operations</strong>
+<table class='table table-bordered table-condensed'>
+<tr><th width='30%'>Name</th><th width='30%'>Definition</th><th width='40%'>Documentation</th></tr>
+<tr>
+<td>update-core</td>
+<td><a href ="update-core.xml"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core </a></td>
+<td><p>POST, [base]/Practitioner[cpn],An operation that updates a health providers demographic details,  system/Practitioner.u</p>
 </td>
 </tr>
 </table>
@@ -60,22 +75,22 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve a PractitionerRole resource by Id.</p>
+<td><p>GET, [base]/PractitionerRole[id], Used to retrieve a PractitionerRole resource by Id, system/PractitionerRole.r</p>
 </td>
 </tr>
 <tr>
 <td>search-type</td>
-<td><p>Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources).</p>
+<td><p>GET, [base]/PractitionerRole, Queries against PractitionerRole using hpi-person-id and other parameters. Will return a Bundle (even if there are no matching resources), system/PractitionerRole.s</p>
 </td>
 </tr>
 <tr>
 <td>create</td>
-<td><p>Create a new PractitionerRole</p>
+<td><p>POST, [base]/PractitionerRole, Create a new PractitionerRole, system/PractitionerRole.c</p>
 </td>
 </tr>
 <tr>
 <td>update</td>
-<td><p>Update contact details and end date on an existing PractitionerRole record.</p>
+<td><p>PUT, [base]/PractitionerRole[id], Update contact details and end date on an existing PractitionerRole record, system/PractitionerRole.u</p>
 </td>
 </tr>
 </table>
@@ -138,12 +153,12 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve an Organization resource by Id.</p>
+<td><p>GET, [base]/Organization/[hpi-org-id], Used to retrieve an Organization resource by Id, system/Organization.r</p>
 </td>
 </tr>
 <tr>
 <td>search-type</td>
-<td><p>Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources).</p>
+<td><p>GET, [base]/Organization, Queries against the Organization using name or other parameters. Will return a Bundle (even if there are no matching resources), system/Organization.s</p>
 </td>
 </tr>
 </table>
@@ -191,12 +206,12 @@
 <tr><th width='30%'>Code</th><th width='70%'>Documentation</th></tr>
 <tr>
 <td>read</td>
-<td><p>Used to retrieve an Location resource by Id.</p>
+<td><p>GET, [base]/Location/[hpi-facid], Used to retrieve an Location resource by Id, system/Location.r</p>
 </td>
 </tr>
 <tr>
 <td>search-type</td>
-<td><p>Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources).</p>
+<td><p>GET, [base]/Location, Queries against the Location using name or other parameters. Will return a Bundle (even if there are no matching resources), system/Location.s</p>
 </td>
 </tr>
 </table>
@@ -245,7 +260,11 @@
 <td><p>Not yet enabled. To enable exclusion of inactive locations</p>
 </td>
 </tr>
+<tr>
+<td>messaging-address</td>
+<td><a target='_blank' href="http://hl7.org/fhir/search.html#string">string</a></td>
+<td><p>Search by EDI address</p>
+</td>
+</tr>
 </table>
-<h3>Contained Resources</h3>
-<p>When a resource contains a reference to another resource, the  HPI server will not render the reference as a contained resource,  only the reference links themselves will be included in responses.</p>
 </div>
