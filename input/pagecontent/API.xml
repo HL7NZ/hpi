@@ -39,7 +39,7 @@
 <tr><th width='10%'>Name</th><th width='10%'>Definition</th><th width='10%'>Verb</th><th width='20%'>URL</th><th width='40%'>Documentation</th><th width='10%'>Scope</th></tr>
 <tr>
 <td>update-core</td>
-<td><a href ="OperationDefinition-Patient-update-core.html"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core </a></td>
+<td><a href ="OperationDefinition-Practitioner-update-core.html"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core </a></td>
 <td>POST</td>
 <td> [base]/Practitioner[cpn]</td>
 <td>An operation that updates a health providers demographic details</td>

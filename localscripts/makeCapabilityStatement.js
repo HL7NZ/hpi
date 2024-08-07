@@ -98,8 +98,9 @@ if (fs.existsSync(rootPath)) {
                         res.operation.forEach(function(int){
                             ar.push("<tr>")
                             ar.push(`<td>${int.name}</td>`)
-                            console.log('operation name ' + int.name)                           
-							ar.push(`<td><a href ="OperationDefinition-Patient-${int.name}.html"> ${int.definition} </a></td>`)
+                            //console.log('operation name ' + int.name)      
+                            //console.log(res.type)                     
+							ar.push(`<td><a href ="OperationDefinition-${res.type}-${int.name}.html"> ${int.definition} </a></td>`)
 							
                                           
                            	let documentation = int.documentation.split(',')
