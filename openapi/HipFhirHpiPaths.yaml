@@ -1,5 +1,63 @@
+fhir/hpi/v1/metadata:
+    get:
+      summary: "Returns the server's capability statement"
+      operationId: "hpiMetadata"
+      parameters:
+      - name: "userid"
+        in: "header"
+        required: true
+        schema:
+          type: "string"
+      - name: "X-correlation-ID"
+        in: "header"
+        schema:
+          type: "string"
+      - name: "x-api-key"
+        in: "header"
+        required: false
+        schema:
+          type: "string"
+      - name: "X-Request-Id"
+        in: "header"
+        schema:
+          type: "string"
+      - name: "mode"
+        in: "query"
+        schema:
+          type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+     
+      - api_key: []
+      
+      x-amazon-apigateway-request-validator: "params-only"
+      x-amazon-apigateway-integration:
+                type: "aws_proxy"
+                httpMethod: "POST"
+                uri:
+                  Ref: pLambdaNameHpi
+                passthroughBehavior: "when_no_match"
+                timeoutInMillis: 29000
 /fhir/hpi/v1/Location:
     get:
+      summary: "Search for a Location"
+      operationId: "locationGet"
       parameters:
       - name: "dhb"
         in: "query"
@@ -84,6 +142,8 @@
                 timeoutInMillis: 29000
 /fhir/hpi/v1/Organization:
     get:
+      summary: "Search for an Organization"
+      operationId: "organizationGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -168,6 +228,8 @@
     
 /fhir/hpi/v1/Location/{location-id}:
     get:
+      summary: "retrieve a Location by id"
+      operationId: "locationGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -217,7 +279,9 @@
                 timeoutInMillis: 29000
 
 /fhir/hpi/v1/Practitioner/{practitioner-id}:
-    get:
+    get:  
+      summary: "retrieve a Practitioner by id"
+      operationId: "practitionerGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -269,6 +333,8 @@
                 passthroughBehavior: "when_no_match"
                 timeoutInMillis: 29000
     post:
+      summary: "create a new Practitioner record"
+      operationId: "practitionerPost"
       parameters:
       - name: "userid"
         in: "header"
@@ -319,6 +385,8 @@
  
 /fhir/hpi/v1/PractitionerRole:
     get:
+      summary: "search for a PractitionerRole"
+      operationId: "practitionerRoleGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -406,6 +474,8 @@
                 passthroughBehavior: "when_no_match"
                 timeoutInMillis: 29000
     post:
+      summary: "create a new PractitionerRole "
+      operationId: "practitionerRolePost"
       parameters:
       - name: "userid"
         in: "header"
@@ -454,7 +524,9 @@
                 timeoutInMillis: 29000
       
 /fhir/hpi/v1/Practitioner:
-    get:
+    get:  
+      summary: "search for a Practitioner"
+      operationId: "practitionerGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -540,6 +612,8 @@
                 # standard 29 second timeout value
                 timeoutInMillis: 29000
     post:
+      summary: "create a new Practitioner"
+      operationId: "practitionerPost"
       parameters:
       - name: "userid"
         in: "header"
@@ -587,6 +661,8 @@
 
 /fhir/hpi/v1/PractitionerRole/{practitioner-role-id}:
     get:
+      summary: "get a PractitionerRole by id"
+      operationId: "practitionerRoleGet"
       parameters:
       - name: "userid"
         in: "header"
@@ -635,6 +711,8 @@
                 passthroughBehavior: "when_no_match"
                 timeoutInMillis: 29000
     put:
+      summary: " update a PractitionerRole"
+      operationId: "practitionerRolePut"
       parameters:
       - name: "userid"
         in: "header"
@@ -681,63 +759,11 @@
                 passthroughBehavior: "when_no_match"
                 timeoutInMillis: 29000
       
-/fhir/hpi/v1/metadata:
-    get:
-      parameters:
-      - name: "userid"
-        in: "header"
-        required: true
-        schema:
-          type: "string"
-      - name: "X-correlation-ID"
-        in: "header"
-        schema:
-          type: "string"
-      - name: "x-api-key"
-        in: "header"
-        required: true
-        schema:
-          type: "string"
-      - name: "X-Request-Id"
-        in: "header"
-        schema:
-          type: "string"
-      - name: "mode"
-        in: "query"
-        schema:
-          type: "string"
-      responses:
-        "200":
-          description: "200 response"
-          content: {}
-        "400":
-          description: "400 response"
-          content: {}
-        "422":
-          description: "422 response"
-          content: {}
-        "401":
-          description: "401 response"
-          headers:
-            WWW-Authenticate:
-              schema:
-                type: "string"
-          content: {}
-      security:
-     
-      - api_key: []
-      
-      x-amazon-apigateway-request-validator: "params-only"
-      x-amazon-apigateway-integration:
-                type: "aws_proxy"
-                httpMethod: "POST"
-                uri:
-                  Ref: pLambdaNameHpi
-                passthroughBehavior: "when_no_match"
-                timeoutInMillis: 29000
       
 /fhir/hpi/v1/Organization/{organization-id}:
     get:
+      summary: "retrieve an Organization id"
+      operationId: "organizationById"
       parameters:
       - name: "userid"
         in: "header"
