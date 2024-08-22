@@ -670,7 +670,7 @@
 /fhir/hpi/v1/PractitionerRole/{practitioner-role-id}:
     get:
       summary: "get a PractitionerRole by id"
-      operationId: "practitionerRoleGet"
+      operationId: "practitionerRoleGetById"
       parameters:
       - name: "userid"
         in: "header"
