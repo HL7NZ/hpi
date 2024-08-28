@@ -124,9 +124,7 @@
           content: {}
       security:
       - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/location:read"
-        - "https://api.hip.digital.health.nz/fhir/location:search"
-        - "https://api.hip.digital.health.nz/fhir/location:admin"
+       
         - "https://api.hip.digital.health.nz/fhir/system/Location.s"
         - "https://api.hip.digital.health.nz/fhir/system/Location.r"
         - "https://api.hip.digital.health.nz/fhir/system/Location.a"
@@ -178,9 +176,7 @@
           description: "200 response"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/location:read"
-        - "https://api.hip.digital.health.nz/fhir/location:admin"
+      - hip-fhir-cog:        
         - "https://api.hip.digital.health.nz/fhir/system/Location.r"
         - "https://api.hip.digital.health.nz/fhir/system/Location.a"
       - api_key: []
@@ -263,10 +259,7 @@
                 type: "string"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/organization:read"
-        - "https://api.hip.digital.health.nz/fhir/organization:search"
-        - "https://api.hip.digital.health.nz/fhir/organization:admin"
+      - hip-fhir-cog:      
         - "https://api.hip.digital.health.nz/fhir/system/Organization.r"
         - "https://api.hip.digital.health.nz/fhir/system/Organization.s"
         - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
@@ -319,9 +312,7 @@
           description: "200 response"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/organization:read"
-        - "https://api.hip.digital.health.nz/fhir/organization:admin"
+      - hip-fhir-cog:    
         - "https://api.hip.digital.health.nz/fhir/system/Organization.r"
         - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
       - api_key: []
@@ -404,10 +395,7 @@
                 type: "string"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/practitioner:read"
-        - "https://api.hip.digital.health.nz/fhir/practitioner:search"
-        - "https://api.hip.digital.health.nz/fhir/practitioner:admin"
+      - hip-fhir-cog:        
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.r"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.s"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
@@ -457,9 +445,7 @@
                 type: "string"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/practitioner:write"
-        - "https://api.hip.digital.health.nz/fhir/practitioner:admin"
+      - hip-fhir-cog:       
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.c"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
       - api_key: []
@@ -510,9 +496,7 @@
           description: "200 response"
           content: {}
       security:
-      - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/practitioner:read"
-        - "https://api.hip.digital.health.nz/fhir/practitioner:admin"
+      - hip-fhir-cog:     
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.r"
         - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
       - api_key: []
@@ -599,9 +583,7 @@
           content: {}
       security:
       - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/pracrole:read"
-        - "https://api.hip.digital.health.nz/fhir/pracrole:search"
-        - "https://api.hip.digital.health.nz/fhir/pracrole:admin"
+       
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
@@ -650,8 +632,7 @@
           content: {}
       security:
       - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/pracrole:write"
-        - "https://api.hip.digital.health.nz/fhir/pracrole:admin"
+        
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
@@ -704,8 +685,7 @@
           content: {}
       security:
       - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/pracrole:read"
-        - "https://api.hip.digital.health.nz/fhir/pracrole:admin"
+       
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
@@ -754,8 +734,7 @@
           content: {}
       security:
       - hip-fhir-cog:
-        - "https://api.hip.digital.health.nz/fhir/pracrole:write"
-        - "https://api.hip.digital.health.nz/fhir/pracrole:admin"
+        
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u"
         - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
       - api_key: []
