@@ -42,8 +42,8 @@ phases:
   build:
     commands:
       - ls 
-     
-      - git clone https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
+      - rm -rf ./hpi
+      - git clone --branch $branch https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
       - cd hpi
       - git checkout $BRANCH
       - ls
