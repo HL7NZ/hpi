@@ -65,6 +65,7 @@ menu:
     Search PractitionerRole: searchPracRole.html
     Create PractitionerRole: createPracRole.html
     Update PractitionerRole: updatePracRole.html
+    Extra info: extraInfo.html
   Important information:
     Onboarding: Onboarding.html
     General Notes: general.html
