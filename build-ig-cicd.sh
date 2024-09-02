@@ -30,8 +30,6 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 
 #!/bin/bash
 set -x -e #echo on, exit on error
-ls -l ~/.fhir
-rnm -rf ~./fhir
 
 echo getting nzbase dependencies...
 nzbase_name="fhir.org.nz.ig.base"
