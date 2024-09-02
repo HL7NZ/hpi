@@ -53,7 +53,7 @@ phases:
       - mvn validate
       - echo building IG
       - ls -l
-      - ls -l ./hfc_package
+      - cat igi.ini
       - sudo chmod +x ./build-ig-cicd.sh     
       - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
       
