@@ -30,7 +30,8 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 
 #!/bin/bash
 set -x -e #echo on, exit on error
-
+ls -l ~/.fhir
+rnm -rf ~./fhir
 
 echo getting nzbase dependencies...
 nzbase_name="fhir.org.nz.ig.base"
@@ -53,7 +54,7 @@ addPackage "$common_name" "$common_version" "$common_source" "$common_url"
 
 #cp hl7 packages into user's .fhir cache 
 if [[ "$islocal" == "true" ]]; then
-  echo "copying using hip-profile - makse sure you have updated ~/.aws/credentals"
+  echo "copying using hip-profile - make sure you have updated ~/.aws/credentals"
   aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/hl7.fhir.r4.core#4.0.1/package.zip ./hl7-package.zip  --profile hip-profile
   mkdir -p ~/.fhir/packages/hl7.fhir.r4.core#4.0.1
 else
@@ -103,7 +104,7 @@ chmod +x ./openapi/makeoas.sh
 #cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
 
 echo running ig publisher
-ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package
+ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package 
 
 java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi -debug
 
