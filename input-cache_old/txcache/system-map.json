@@ -1,0 +1,29 @@
+{
+  "systems" : [
+    {
+      "system" : "https://standards.digital.health.nz/ns/alias-type-code|1.0.0",
+      "authoritative" : [],
+      "candidates" : []
+    },
+    {
+      "system" : "https://standards.digital.health.nz/ns/practitioner-registration-authority-code",
+      "authoritative" : [],
+      "candidates" : []
+    },
+    {
+      "system" : "https://standards.digital.health.nz/ns/practitioner-registration-authority-code|2.0",
+      "authoritative" : [],
+      "candidates" : []
+    },
+    {
+      "system" : "https://standards.digital.health.nz/ns/practitioner-registration-authority-code|2.1",
+      "authoritative" : [],
+      "candidates" : []
+    },
+    {
+      "system" : "urn:ietf:bcp:13",
+      "authoritative" : [],
+      "candidates" : ["http://tx.fhir.org/r4"]
+    }
+  ]
+}

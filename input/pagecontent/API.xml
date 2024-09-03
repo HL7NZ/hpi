@@ -16,7 +16,7 @@
 <td>read</td>
 <td>GET</td>
 <td>  [base]/Practitioner[cpn]</td>
-<td>retrieve a Practitioner resource by Id</td>
+<td>  Retrieves a Practitioner resource by Id</td>
 <td> system/Practitioner.r</td>
 </tr>
 <tr>

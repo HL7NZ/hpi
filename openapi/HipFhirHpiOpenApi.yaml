@@ -1,0 +1,2485 @@
+openapi: "3.0.1"
+info:
+  title: "HIP HPI FHIR"
+  description: "Te Whatu Ora HPI FHIR services"
+  version: "1.4.7"
+servers:
+  - url: "https://gb2r96qpik.execute-api.ap-southeast-2.amazonaws.com/{basePath}"
+    variables:
+      basePath:
+        default: "dev"
+paths:
+  /fhir/hpi/v1/metadata:
+    get:
+      summary: "Returns the server's capability statement"
+      operationId: "hpiMetadata"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: false
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "mode"
+          in: "query"
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/Location:
+    get:
+      summary: "Search for a Location"
+      operationId: "locationGet"
+      parameters:
+        - name: "dhb"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "organization"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "name"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "type"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "identifier"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "address"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "_count"
+          in: "query"
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Location.s"
+            - "https://api.hip.digital.health.nz/fhir/system/Location.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Location.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/Location/{location-id}:
+    get:
+      summary: "retrieve a Location by id"
+      operationId: "locationGetById"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "location-id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "400":
+          description: "400 response"
+          content: {}
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Location.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Location.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/Organization:
+    get:
+      summary: "Search for an Organization"
+      operationId: "organizationGet"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "name"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "type"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "identifier"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_revinclude"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "partof"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_count"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_include"
+          in: "query"
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Organization.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Organization.s"
+            - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/Organization/{organization-id}:
+    get:
+      summary: "retrieve an Organization id"
+      operationId: "organizationById"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "organization-id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Organization.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Organization.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/Practitioner:
+    get:
+      summary: "search for a Practitioner"
+      operationId: "practitionerGet"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "gender"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "name"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "identifier"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "birthdate"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_revinclude"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "_count"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_include"
+          in: "query"
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.s"
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+    post:
+      summary: "create a new Practitioner"
+      operationId: "practitionerPost"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "422":
+          description: "422 response"
+          content: {}
+        "204":
+          description: "204 response"
+          headers:
+            Content-Location:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.c"
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
+        - api_key: []
+  /fhir/hpi/v1/Practitioner/{practitioner-id}:
+    get:
+      summary: "retrieve a Practitioner by id"
+      operationId: "practitionerGetById"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "practitioner-id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.r"
+            - "https://api.hip.digital.health.nz/fhir/system/Practitioner.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+  /fhir/hpi/v1/PractitionerRole:
+    get:
+      summary: "search for a PractitionerRole"
+      operationId: "practitionerRoleGet"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "organization"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "identifier"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_revinclude"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "practitioner"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "location"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "active"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_count"
+          in: "query"
+          schema:
+            type: "string"
+        - name: "_include"
+          in: "query"
+          schema:
+            type: "string"
+      responses:
+        "200":
+          description: "200 response"
+          content: {}
+        "400":
+          description: "400 response"
+          content: {}
+        "422":
+          description: "422 response"
+          content: {}
+        "401":
+          description: "401 response"
+          headers:
+            WWW-Authenticate:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r"
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.s"
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+    post:
+      summary: "create a new PractitionerRole "
+      operationId: "practitionerRolePost"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "422":
+          description: "422 response"
+          content: {}
+        "204":
+          description: "204 response"
+          headers:
+            Content-Location:
+              schema:
+                type: "string"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.c"
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: params-and-body
+  /fhir/hpi/v1/PractitionerRole/{practitioner-role-id}:
+    get:
+      summary: "get a PractitionerRole by id"
+      operationId: "practitionerRoleGetById"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "practitioner-role-id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "400":
+          description: "400 response"
+          content: {}
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.r"
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
+        - api_key: []
+      x-amazon-apigateway-request-validator: "params-only"
+    put:
+      summary: " update a PractitionerRole"
+      operationId: "practitionerRolePut"
+      parameters:
+        - name: "userid"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-correlation-ID"
+          in: "header"
+          schema:
+            type: "string"
+        - name: "practitioner-role-id"
+          in: "path"
+          required: true
+          schema:
+            type: "string"
+        - name: "x-api-key"
+          in: "header"
+          required: true
+          schema:
+            type: "string"
+        - name: "X-Request-Id"
+          in: "header"
+          schema:
+            type: "string"
+      responses:
+        "422":
+          description: "422 response"
+          content: {}
+        "200":
+          description: "200 response"
+          content: {}
+      security:
+        - hip-fhir-cog:
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.u"
+            - "https://api.hip.digital.health.nz/fhir/system/PractitionerRole.a"
+        - api_key: []
+components:
+  parameters:
+    nhiId:
+      name: nhiId
+      in: path
+      description: id identifies the kind of post operation
+      required: true
+      allowEmptyValue: false
+      style: simple
+      schema:
+        $ref: '#/components/schemas/NhiNumber'
+    X-correlation-ID:
+      name: "X-correlation-ID"
+      in: "header"
+      required: false
+      schema:
+        type: "string"
+    X-Request-Id:
+      name: "X-Request-Id"
+      in: "header"
+      required: false
+      schema:
+        type: "string"
+    x-api-key:
+      name: "x-api-key"
+      in: "header"
+      required: true
+      schema:
+        type: "string"
+    userid:
+      name: "userid"
+      in: "header"
+      required: true
+      schema:
+        type: "string"
+  schemas:
+    positiveInt:
+      pattern: "^[1-9][0-9]*$"
+      type: number
+      description: An integer with a value that is positive (e.g. >0)
+    Element:
+      description: Base definition for all elements in a resource.
+      properties:
+        id:
+          description: Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.
+          "$ref": "#/components/schemas/string"
+      additionalProperties: false
+    ContactPoint:
+      description: Details for all kinds of technology mediated contact points for a person or organization, including telephone, email, etc.
+      properties:
+        id:
+          description: Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.
+          "$ref": "#/components/schemas/string"
+        system:
+          description: Telecommunications form for contact point - what communications system is required to make use of the contact.
+          enum:
+            - phone
+            - fax
+            - email
+            - pager
+            - url
+            - sms
+            - other
+        _system:
+          description: Extensions for system
+          "$ref": "#/components/schemas/Element"
+        value:
+          description: The actual contact point details, in a form that is meaningful to the designated communication system (i.e. phone number or email address).
+          "$ref": "#/components/schemas/string"
+        _value:
+          description: Extensions for value
+          "$ref": "#/components/schemas/Element"
+        use:
+          description: Identifies the purpose for the contact point.
+          enum:
+            - home
+            - work
+            - temp
+            - old
+            - mobile
+        _use:
+          description: Extensions for use
+          "$ref": "#/components/schemas/Element"
+        rank:
+          description: Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.
+          "$ref": "#/components/schemas/positiveInt"
+        _rank:
+          description: Extensions for rank
+          "$ref": "#/components/schemas/Element"
+        period:
+          description: Time period when the contact point was/is in use.
+          "$ref": "#/components/schemas/Period"
+      additionalProperties: false
+    date:
+      pattern: "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1]))?)?$"
+      type: "string"
+      description: "A date or partial date (e.g. just year or year + month). There is no time zone. The format is a union of the schema types gYear, gYearMonth and date.  Dates SHALL be valid dates."
+    Meta:
+      type: "object"
+      properties:
+        versionId:
+          $ref: "#/components/schemas/id"
+        security:
+          type: "array"
+          description: "Security labels applied to this resource. These tags connect specific resources to the overall security policy and infrastructure."
+          items:
+            $ref: "#/components/schemas/Coding"
+        profile:
+          type: "array"
+          description: "A list of profiles (references to [[[StructureDefinition]]] resources) that this resource claims to conform to. The URL is a reference to [[[StructureDefinition.url]]]."
+          items:
+            $ref: "#/components/schemas/canonical"
+      description: "The metadata about a resource. This is content in the resource that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource."
+    ParameterAddressLine:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/AddressString"
+        name:
+          type: "string"
+          enum:
+            - "address-line"
+      additionalProperties: false
+      description: "first line of the address as returned by eSAM"
+    NhiAddressType:
+      type: "string"
+      enum:
+        - "postal"
+        - "physical"
+    AddressString:
+      pattern: "^([a-zA-Z0-9'\\s\\.\\-\\/,])+$"
+      type: "string"
+    CreatePatientRequest:
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterCreatePatientPatient"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    NHIDormantIdentifer:
+      required:
+        - "use"
+      type: "object"
+      properties:
+        system:
+          type: "string"
+        use:
+          type: "string"
+          enum:
+            - "old"
+        assigner:
+          $ref: "#/components/schemas/Reference"
+        value:
+          type: "string"
+      additionalProperties: false
+      description: "An NHI of the person that is no longer in use.   An NHI becomes dormant when it is discovered that 2 NHIs exist for the same person. The NHIs are linked, one becomes ‘live’ the other ‘dormant'"
+    NesPractitionerRole:
+      type: "object"
+      properties:
+        practitioner:
+          $ref: "#/components/schemas/Reference"
+        organization:
+          $ref: "#/components/schemas/Reference"
+        location:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Reference"
+        id:
+          $ref: "#/components/schemas/id"
+        resourceType:
+          type: "string"
+          enum:
+            - "PractitionerRole"
+    ParameterOnlyCertainMatches:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueBoolean:
+          type: "boolean"
+        name:
+          type: "string"
+          enum:
+            - "onlyCertainMatches"
+      additionalProperties: false
+    NHIIdentifer:
+      required:
+        - "system"
+        - "use"
+      type: "object"
+      properties:
+        system:
+          type: "string"
+          enum:
+            - "https://standards.digital.health.nz/ns/nhi-id"
+        use:
+          type: "string"
+          enum:
+            - "official"
+        assigner:
+          $ref: "#/components/schemas/Reference"
+        value:
+          type: "string"
+      additionalProperties: false
+      description: "The NHI number is a unique number for all New Zealanders, assigned at birth"
+    NzEthnicityExtension:
+      required:
+        - "url"
+        - "valueCodeableConcept"
+      type: "object"
+      properties:
+        valueCodeableConcept:
+          type: "object"
+          properties:
+            coding:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/Coding"
+        url:
+          type: "string"
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
+      additionalProperties: false
+      description: "The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group."
+    DHBExtension:
+      required:
+        - "url"
+        - "valueCodeableConcept"
+      type: "object"
+      properties:
+        valueCodeableConcept:
+          type: "object"
+          properties:
+            coding:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/Coding"
+        url:
+          type: "string"
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/dhb"
+      additionalProperties: false
+      description: "The ethnic group or groups that a person identifies with or feels they belong to.  Ethnicity is a measure of cultural affiliation as opposed to race, ancestry, nationality or citizen.  Ethnicity is self-perceived and a person can belong to more than one group."
+    Identifier:
+      type: "object"
+      properties:
+        period:
+          $ref: "#/components/schemas/Period"
+        system:
+          $ref: "#/components/schemas/uri"
+        use:
+          type: "string"
+          description: "The purpose of this identifier."
+          enum:
+            - "usual"
+            - "official"
+            - "temp"
+            - "nickname"
+            - "anonymous"
+            - "old"
+            - "maiden"
+        assigner:
+          $ref: "#/components/schemas/Reference"
+        id:
+          $ref: "#/components/schemas/string"
+        type:
+          $ref: "#/components/schemas/CodeableConcept"
+        value:
+          $ref: "#/components/schemas/string"
+      additionalProperties: false
+      description: "An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers."
+    EpisodeOfCare:
+      type: "object"
+      properties:
+        identifier:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Identifier"
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueDate:
+                    $ref: "#/components/schemas/date"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/enrolment-expiry-date"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueDate:
+                    $ref: "#/components/schemas/date"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/reenrolment-date"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueReference:
+                    $ref: "#/components/schemas/Reference"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/enrolment-owner-org"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/nes-enrolment-termination-reason"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/nes-enrolment-termination-reason"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueReference:
+                    $ref: "#/components/schemas/Reference"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/enrolment-encounter"
+                additionalProperties: false
+        period:
+          $ref: "#/components/schemas/Period"
+        careManager:
+          $ref: "#/components/schemas/Reference"
+        type:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Coding"
+        contained:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/NesEncounter"
+              - $ref: "#/components/schemas/NesPractitionerRole"
+              - $ref: "#/components/schemas/Patient"
+        managingOrganization:
+          $ref: "#/components/schemas/Reference"
+        meta:
+          $ref: "#/components/schemas/Meta"
+        patient:
+          $ref: "#/components/schemas/Reference"
+        id:
+          $ref: "#/components/schemas/id"
+        text:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          description: "This is an Coverage resource"
+          enum:
+            - "EpisodeOfCare"
+        status:
+          type: "string"
+          enum:
+            - "planned"
+            - "waitlist"
+            - "active"
+            - "finished"
+      description: "The Entitlement resource exposed by NESEntitlement service."
+    Coding:
+      type: "object"
+      properties:
+        system:
+          $ref: "#/components/schemas/uri"
+        code:
+          $ref: "#/components/schemas/code"
+        display:
+          $ref: "#/components/schemas/string"
+        version:
+          $ref: "#/components/schemas/string"
+      description: "A reference to a code defined by a terminology system."
+    BirthPlaceExtension:
+      required:
+        - "url"
+      type: "object"
+      properties:
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      text:
+                        type: "string"
+                      coding:
+                        type: "array"
+                        items:
+                          anyOf:
+                            - required:
+                                - "system"
+                              type: "object"
+                              properties:
+                                system:
+                                  type: "string"
+                                  enum:
+                                    - "urn:iso:std:iso:3166"
+                                code:
+                                  $ref: "#/components/schemas/code"
+                                display:
+                                  $ref: "#/components/schemas/string"
+                                version:
+                                  $ref: "#/components/schemas/string"
+                              additionalProperties: false
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "country"
+                description: "The birth country."
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueString:
+                    $ref: "#/components/schemas/string"
+                  url:
+                    type: "string"
+                    enum:
+                      - "place-of-birth"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      text:
+                        $ref: "#/components/schemas/string"
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/ns/information-source-code"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "source"
+                additionalProperties: false
+                description: "The source of information concerning the country of birth"
+        url:
+          type: "string"
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/birth-place"
+      additionalProperties: false
+      description: "The country where the person was born"
+    NzGeocode:
+      type: "object"
+      properties:
+        latitude:
+          type: "object"
+          properties:
+            valueDecimal:
+              $ref: "#/components/schemas/decimal"
+            url:
+              type: "string"
+              enum:
+                - "latitude"
+          description: "The latitude of the geocode"
+        datumCode:
+          type: "object"
+          properties:
+            valueCodeableConcept:
+              type: "object"
+              properties:
+                coding:
+                  $ref: "#/components/schemas/Coding"
+              additionalProperties: false
+            url:
+              type: "string"
+              enum:
+                - "datumCode"
+          description: "Datum codes used"
+        url:
+          type: "string"
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/nz-geocode"
+        longitude:
+          type: "object"
+          properties:
+            valueDecimal:
+              $ref: "#/components/schemas/decimal"
+            url:
+              type: "string"
+              enum:
+                - "longitude"
+          description: "The longitude of the geocode"
+      description: "New Zealand Geocode. This uses a different datum from that defined in the HL7 FHIR specification for a Geocode."
+    ParameterPreferredId:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          enum:
+            - "preferred-id"
+        valueInteger:
+          type: "integer"
+          format: "int32"
+      additionalProperties: false
+      description: "id of preferred name"
+    UpdateEligibilityRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing the name to be replaced"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterEligibility"
+        id:
+          $ref: "#/components/schemas/RestrictedString"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameterEligibility:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/NameString"
+        name:
+          type: "string"
+          enum:
+            - "nz-citizenship-status"
+            - "nz-citizenship-source"
+      additionalProperties: false
+    ParameterUnvalidatedAddressStringParameter:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/AddressString"
+        name:
+          type: "string"
+          enum:
+            - "address-line-1"
+            - "address-line-2"
+            - "address-building-name"
+            - "address-suburb"
+            - "address-city"
+            - "address-postal-code"
+            - "address-country-code"
+            - "not-validated-address-reason"
+            - "address-domicile-code"
+      additionalProperties: false
+    ParameterInactivateNameId:
+      required:
+        - "name"
+        - "valueInteger"
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          enum:
+            - "inactivate-id"
+        valueInteger:
+          type: "integer"
+          format: "int32"
+      additionalProperties: false
+    id:
+      pattern: "^[A-Za-z0-9\\-\\.]{1,64}$"
+      type: "string"
+      description: "Any combination of letters, numerals, \"-\" and \".\", with a length limit of 64 characters.  (This might be an integer, an unprefixed OID, UUID or any other identifier pattern that meets these constraints.)  Ids are case-insensitive."
+    ParameterNhi:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/NhiNumber"
+        name:
+          type: "string"
+          enum:
+            - "nhi"
+      additionalProperties: false
+      description: "patient identifier"
+    ParameterBirthDateInformationSource:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "birthdate-information-source"
+      additionalProperties: false
+    NameString:
+      pattern: "^([a-zA-Z0-9'\\s\\-])+$"
+      type: "string"
+    AddNameRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing the name to add"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterName"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameterVersionId:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/id"
+        name:
+          type: "string"
+          enum:
+            - "version-id"
+      additionalProperties: false
+      description: "patient version"
+    Period:
+      type: "object"
+      properties:
+        start:
+          $ref: "#/components/schemas/dateTime"
+        end:
+          $ref: "#/components/schemas/dateTime"
+        id:
+          $ref: "#/components/schemas/string"
+      additionalProperties: false
+      description: "A time period defined by a start and end date and optionally time."
+    canonical:
+      pattern: "^\\S*$"
+      type: "string"
+      description: "A URI that is a reference to a canonical URL on a FHIR resource"
+    ParameterBuildingName:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/AddressString"
+        name:
+          type: "string"
+          enum:
+            - "address-building-name"
+      additionalProperties: false
+    UpdateIdentityRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterGender"
+              - $ref: "#/components/schemas/ParameterGenderOriginalText"
+              - $ref: "#/components/schemas/ParameterEthnicity"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameterCreatePatientPatient:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        resource:
+          $ref: "#/components/schemas/Patient"
+        name:
+          type: "string"
+          enum:
+            - "patient"
+      description: "Match payload, not validating schema because not  persisted"
+    ParameterEthnicity:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "ethnicity-1"
+            - "ethnicity-2"
+            - "ethnicity-3"
+            - "ethnicity-4"
+            - "ethnicity-5"
+            - "ethnicity-6"
+      additionalProperties: false
+    ParameterPlaceOfBirth:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "place-of-birth"
+      additionalProperties: false
+    NesEncounter:
+      type: "object"
+      properties:
+        period:
+          $ref: "#/components/schemas/Period"
+        meta:
+          $ref: "#/components/schemas/Meta"
+        id:
+          $ref: "#/components/schemas/id"
+        text:
+          $ref: "#/components/schemas/string"
+        class:
+          $ref: "#/components/schemas/Coding"
+        resourceType:
+          type: "string"
+          enum:
+            - "Encounter"
+        status:
+          type: "string"
+          enum:
+            - "finished"
+    NhiBirthDateInformationsource:
+      type: "object"
+      properties:
+        extension:
+          type: "array"
+          items:
+            type: "object"
+            properties:
+              valueCodeableConcept:
+                type: "object"
+                properties:
+                  coding:
+                    type: "array"
+                    items:
+                      required:
+                        - "system"
+                      type: "object"
+                      properties:
+                        system:
+                          type: "string"
+                          enum:
+                            - "https://standards.digital.health.nz/ns/information-source-code"
+                        code:
+                          $ref: "#/components/schemas/code"
+                        display:
+                          $ref: "#/components/schemas/string"
+                        version:
+                          $ref: "#/components/schemas/string"
+                      additionalProperties: false
+                  text:
+                    $ref: "#/components/schemas/string"
+                additionalProperties: false
+              url:
+                type: "string"
+                enum:
+                  - "http://hl7.org.nz/fhir/StructureDefinition/information-source"
+    UpdateBirthRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterBirthDate"
+              - $ref: "#/components/schemas/ParameterBirthDateInformationSource"
+              - $ref: "#/components/schemas/ParameterCountryOfBirth"
+              - $ref: "#/components/schemas/ParameterCountryOfBirthInformationSource"
+              - $ref: "#/components/schemas/ParameterPlaceOfBirth"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    decimal:
+      pattern: "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+      type: "number"
+      description: "A rational number with implicit precision"
+    ParameterCountryOfBirthInformationSource:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "country-of-birth-information-source"
+      additionalProperties: false
+    CodeableConcept:
+      type: "object"
+      properties:
+        coding:
+          type: "array"
+          description: "A reference to a code defined by a terminology system."
+          items:
+            $ref: "#/components/schemas/Coding"
+        id:
+          $ref: "#/components/schemas/string"
+        text:
+          $ref: "#/components/schemas/string"
+      description: "A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text."
+    InactivateNameRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing the name to be replaced"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterInactivateNameId"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ReplaceNameRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing the name to be replaced"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterReplaceNameId"
+              - $ref: "#/components/schemas/ParameterName"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    dateTime:
+      pattern: "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$"
+      type: "string"
+      description: "A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a time zone SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates."
+    code:
+      pattern: "^[^\\s]+(\\s[^\\s]+)*$"
+      type: "string"
+      description: "A string which has at least one character and no leading or trailing whitespace and where there is no whitespace other than single spaces in the contents"
+    string:
+      pattern: "^[ \\r\\n\\t\\S]+$"
+      type: "string"
+      description: "A sequence of Unicode characters"
+    ParameterAddressType:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/NhiAddressType"
+        name:
+          type: "string"
+          enum:
+            - "address-type"
+      additionalProperties: false
+      description: "type of addeses - postal or physical"
+    ParameterCountryOfBirth:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "country-of-birth"
+      additionalProperties: false
+    ParameterGenderOriginalText:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "gender-original-text"
+      additionalProperties: false
+    ParameterName:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/NameString"
+        name:
+          type: "string"
+          enum:
+            - "use"
+            - "prefix"
+            - "given-1"
+            - "given-2"
+            - "family"
+            - "preferred"
+            - "information-source"
+            - "nhi-name-use-extra"
+      additionalProperties: false
+    ParameterGender:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/AdministrativeGender"
+        name:
+          type: "string"
+          enum:
+            - "gender"
+      additionalProperties: false
+    SetPreferredNameRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterPreferredId"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameterReplaceNameId:
+      required:
+        - "name"
+        - "valueInteger"
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          enum:
+            - "replace-id"
+        valueInteger:
+          type: "integer"
+          format: "int32"
+      additionalProperties: false
+    RemovePostalAddressRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameterNzAddressId:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/string"
+        name:
+          type: "string"
+          enum:
+            - "nz-address-id"
+      additionalProperties: false
+      description: "eSAM validated address id"
+    NhiHumanName:
+      type: "object"
+      properties:
+        given:
+          type: "array"
+          description: "Given name."
+          items:
+            $ref: "#/components/schemas/string"
+        period:
+          $ref: "#/components/schemas/Period"
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueBoolean:
+                    type: "boolean"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org/fhir/StructureDefinition/iso21090-preferred"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/ns/information-source-code"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/information-source"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/ns/nhi-name-use-extra-code"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/name-use-extra"
+                additionalProperties: false
+        use:
+          type: "string"
+          description: "Identifies the purpose for this name."
+          enum:
+            - "usual"
+            - "official"
+            - "temp"
+            - "nickname"
+            - "anonymous"
+            - "old"
+            - "maiden"
+        prefix:
+          type: "array"
+          description: "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the start of the name."
+          items:
+            $ref: "#/components/schemas/string"
+        id:
+          $ref: "#/components/schemas/string"
+        text:
+          $ref: "#/components/schemas/string"
+        family:
+          $ref: "#/components/schemas/string"
+        suffix:
+          type: "array"
+          description: "Part of the name that is acquired as a title due to academic, legal, employment or nobility status, etc. and that appears at the end of the name."
+          items:
+            $ref: "#/components/schemas/string"
+      additionalProperties: false
+      description: "A human's name with the ability to identify parts and usage."
+    SetUnvalidatedAddressRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterAddressType"
+              - $ref: "#/components/schemas/ParameterNzAddressId"
+              - $ref: "#/components/schemas/ParameterUnvalidatedAddressStringParameter"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    Reference:
+      type: "object"
+      properties:
+        reference:
+          $ref: "#/components/schemas/string"
+        display:
+          $ref: "#/components/schemas/string"
+        identifier:
+          type: "object"
+          properties:
+            period:
+              $ref: "#/components/schemas/Period"
+            system:
+              $ref: "#/components/schemas/uri"
+            value:
+              $ref: "#/components/schemas/string"
+            use:
+              type: "string"
+              description: "The purpose of this identifier."
+              enum:
+                - "usual"
+                - "official"
+                - "temp"
+                - "nickname"
+                - "anonymous"
+                - "old"
+                - "maiden"
+            id:
+              $ref: "#/components/schemas/string"
+            type:
+              $ref: "#/components/schemas/CodeableConcept"
+      additionalProperties: false
+      description: "A reference from one resource to another."
+    ParameterMatchResource:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        resource:
+          type: "object"
+        name:
+          type: "string"
+          enum:
+            - "resource"
+      description: "Match payload, not validating schema because not  persisted"
+    ParameterBirthDate:
+      required:
+        - "name"
+        - "valueString"
+      type: "object"
+      properties:
+        valueString:
+          $ref: "#/components/schemas/RestrictedString"
+        name:
+          type: "string"
+          enum:
+            - "birthdate"
+      additionalProperties: false
+    Patient:
+      type: "object"
+      properties:
+        identifier:
+          type: "array"
+          description: "An identifier that applies to this person\\u0027s qualification in this role"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/NHIIdentifer"
+              - $ref: "#/components/schemas/NHIDormantIdentifer"
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/NzEthnicityExtension"
+              - $ref: "#/components/schemas/NzCitizenshipExtension"
+              - $ref: "#/components/schemas/BirthPlaceExtension"
+              - $ref: "#/components/schemas/DHBExtension"
+        contained:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/NesPractitionerRole"
+        address:
+          minItems: 1
+          type: "array"
+          items:
+            $ref: "#/components/schemas/NhiAddress"
+        gender:
+          $ref: "#/components/schemas/string"
+        _deceasedDateTime:
+          type: "object"
+          properties:
+            extension:
+              type: "array"
+              items:
+                required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/ns/information-source-code"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/information-source"
+                additionalProperties: false
+          additionalProperties: false
+        birthDate:
+          $ref: "#/components/schemas/date"
+        _birthDate:
+          $ref: "#/components/schemas/NhiBirthDateInformationsource"
+        _gender:
+          type: "object"
+          properties:
+            extension:
+              type: "array"
+              items:
+                required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueString:
+                    $ref: "#/components/schemas/string"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/gender-original-text"
+                additionalProperties: false
+          additionalProperties: false
+        meta:
+          $ref: "#/components/schemas/Meta"
+        deceasedDateTime:
+          $ref: "#/components/schemas/dateTime"
+        name:
+          minItems: 1
+          type: "array"
+          items:
+            $ref: "#/components/schemas/NhiHumanName"
+        id:
+          $ref: "#/components/schemas/id"
+        resourceType:
+          type: "string"
+          description: "This is a Patient resource"
+          enum:
+            - "Patient"
+        generalPractitioner:
+          description: Patient's nominated care provider.
+          items:
+            "$ref": "#/components/schemas/Reference"
+          type: array
+      additionalProperties: false
+      description: "The Patient resource exposed by the NHI."
+    NzCitizenshipExtension:
+      type: "object"
+      properties:
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          required:
+                            - "system"
+                          type: "object"
+                          properties:
+                            system:
+                              type: "string"
+                              enum:
+                                - "https://standards.digital.health.nz/ns/information-source-code"
+                            code:
+                              $ref: "#/components/schemas/code"
+                            display:
+                              $ref: "#/components/schemas/string"
+                            version:
+                              $ref: "#/components/schemas/string"
+                          additionalProperties: false
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "source"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          $ref: "#/components/schemas/Coding"
+                      text:
+                        $ref: "#/components/schemas/string"
+                    additionalProperties: false
+                  url:
+                    type: "string"
+                    enum:
+                      - "status"
+                additionalProperties: false
+        url:
+          type: "string"
+          enum:
+            - "http://hl7.org.nz/fhir/StructureDefinition/nz-citizenship"
+      description: "New Zealand citizenship"
+    Coverage:
+      type: "object"
+      properties:
+        identifier:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Identifier"
+        period:
+          $ref: "#/components/schemas/Period"
+        payor:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/Reference"
+        beneficiary:
+          $ref: "#/components/schemas/Reference"
+        meta:
+          $ref: "#/components/schemas/Meta"
+        id:
+          $ref: "#/components/schemas/id"
+        text:
+          $ref: "#/components/schemas/string"
+        type:
+          $ref: "#/components/schemas/Coding"
+        relationship:
+          $ref: "#/components/schemas/Coding"
+        resourceType:
+          type: "string"
+          description: "This is an Coverage resource"
+          enum:
+            - "Coverage"
+        status:
+          $ref: "#/components/schemas/RestrictedString"
+        contained:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/Patient"
+      additionalProperties: false
+      description: "The Entitlement resource exposed by NESEntitlement service."
+    PatientMatchRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterMatchResource"
+              - $ref: "#/components/schemas/ParameterOnlyCertainMatches"
+              - $ref: "#/components/schemas/ParameteMatchCount"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    ParameteMatchCount:
+      required:
+        - "name"
+      type: "object"
+      properties:
+        name:
+          type: "string"
+          enum:
+            - "count"
+        valueInteger:
+          type: "integer"
+          format: "int32"
+      additionalProperties: false
+    AdministrativeGender:
+      type: "string"
+      enum:
+        - "male"
+        - "female"
+        - "other"
+        - "unknown"
+    uri:
+      pattern: "^\\S*$"
+      type: "string"
+      description: "String of characters used to identify a name or a resource"
+    RestrictedString:
+      description: "restricted character string"
+      pattern: "^([a-zA-Z0-9'\\s\\.\\-\\/,])+$"
+      type: "string"
+    RestrictedString2:
+      description: "restricted character string allows macrons"
+      pattern: "^([a-zA-Z0-9'\\s\\.\\-\\/,āēīōūĀĒĪŌŪ])+$"
+      type: "string"
+    SetAddressRequest:
+      required:
+        - "resourceType"
+      type: "object"
+      properties:
+        parameter:
+          type: "array"
+          description: "An array of paramaters describing what to match or validate. Must contain exactly one patient resource, 0..1 count values , 0..1 onlyCertainMatches values"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/ParameterNhi"
+              - $ref: "#/components/schemas/ParameterVersionId"
+              - $ref: "#/components/schemas/ParameterAddressType"
+              - $ref: "#/components/schemas/ParameterNzAddressId"
+              - $ref: "#/components/schemas/ParameterAddressLine"
+              - $ref: "#/components/schemas/ParameterBuildingName"
+        id:
+          $ref: "#/components/schemas/string"
+        resourceType:
+          type: "string"
+          enum:
+            - "Parameters"
+      additionalProperties: false
+    NhiNumber:
+      pattern: "^[A-HJ-NP-Z][A-HJ-NP-Z][A-HJ-NP-Z][0-9][0-9][0-9][0-9]|[A-HJ-NP-Z][A-HJ-NP-Z][A-HJ-NP-Z][0-9][0-9][A-HJ-NP-Z][A-HJ-NP-Z]$"
+      type: "string"
+      description: "unique 7-character identification number, assigned to a patient by the Patient Index."
+    NhiAddress:
+      required:
+        - "type"
+      type: "object"
+      properties:
+        country:
+          $ref: "#/components/schemas/AddressString"
+        extension:
+          type: "array"
+          items:
+            anyOf:
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          $ref: "#/components/schemas/Coding"
+                      text:
+                        $ref: "#/components/schemas/AddressString"
+                    additionalProperties: false
+                    description: "The reason why the address has not been validated"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/not-validated-address-reason"
+                additionalProperties: false
+              - $ref: "#/components/schemas/NzGeocode"
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueString:
+                    $ref: "#/components/schemas/string"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/suburb"
+                additionalProperties: false
+                description: "Suburb element of a NZ Address"
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueString:
+                    $ref: "#/components/schemas/string"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/building-name"
+                additionalProperties: false
+                description: "The name of a building cited in an address"
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueString:
+                    $ref: "#/components/schemas/string"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/nz-address-id"
+                additionalProperties: false
+                description: "Uniquely identifies this address as a physical entity. Will remain constant over time even if address administrative data such as DPID change"
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueCodeableConcept:
+                    type: "object"
+                    properties:
+                      coding:
+                        type: "array"
+                        items:
+                          $ref: "#/components/schemas/Coding"
+                      text:
+                        $ref: "#/components/schemas/AddressString"
+                    additionalProperties: false
+                    description: "NZ Domicile Code. Derived from a patient's primary physical, home address."
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/domicile-code"
+                additionalProperties: false
+        city:
+          $ref: "#/components/schemas/AddressString"
+        use:
+          $ref: "#/components/schemas/code"
+        line:
+          type: "array"
+          items:
+            $ref: "#/components/schemas/AddressString"
+        postalCode:
+          $ref: "#/components/schemas/AddressString"
+        id:
+          $ref: "#/components/schemas/id"
+        text:
+          $ref: "#/components/schemas/AddressString"
+        type:
+          $ref: "#/components/schemas/code"
+      additionalProperties: false
+      description: "Adds additional, NHI specific extensions"
+    MwsAllergyIntolerance:
+      description: Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
+      properties:
+        resourceType:
+          type: "string"
+          enum:
+            - "AllergyIntolerance"
+          description: This is a AllergyIntolerance resource
+        id:
+          description: The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.
+          $ref: "#/components/schemas/id"
+        meta:
+          description: The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.
+          $ref: "#/components/schemas/Meta"
+        text:
+          description: A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it "clinically safe" for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety.
+          type: "string"
+        contained:
+          type: "array"
+          items:
+            anyOf:
+              - $ref: "#/components/schemas/Reference"
+              - $ref: "#/components/schemas/NesPractitionerRole"
+              - $ref: "#/components/schemas/Patient"
+        extension:
+          type: array
+          items:
+            anyOf:
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueReference:
+                    $ref: "#/components/schemas/Reference"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/mws-attester"
+                additionalProperties: false
+              - required:
+                  - "url"
+                type: "object"
+                properties:
+                  valueDate:
+                    $ref: "#/components/schemas/date"
+                  url:
+                    type: "string"
+                    enum:
+                      - "http://hl7.org.nz/fhir/StructureDefinition/mws-attested-date"
+                additionalProperties: false
+        identifier:
+          description: Business identifiers assigned to this AllergyIntolerance by the performer or other systems which remain constant as the resource is updated and propagates from server to server.
+          items:
+            $ref: "#/components/schemas/Identifier"
+          type: array
+        clinicalStatus:
+          description: The clinical status of the allergy or intolerance.
+          $ref: "#/components/schemas/CodeableConcept"
+        verificationStatus:
+          description: Assertion about certainty associated with the propensity, or potential risk, of a reaction to the identified substance (including pharmaceutical product).
+          "$ref": "#/components/schemas/CodeableConcept"
+        category:
+          description: Category of the identified substance.
+          items:
+            enum:
+              - food
+              - medication
+              - environment
+              - biologic
+          type: array
+        criticality:
+          description: Estimate of the potential clinical harm, or seriousness, of the reaction to the identified substance.
+          enum:
+            - low
+            - high
+            - unable-to-assess
+        code:
+          description: 'Code for an allergy or intolerance statement (either a positive or a negated/excluded statement).  This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., "Latex"), an allergy or intolerance condition (e.g., "Latex allergy"), or a negated/excluded code for a specific substance or class (e.g., "No latex allergy") or a general or categorical negated statement (e.g.,  "No known allergy", "No known drug allergies").  Note: the substance for a specific reaction may be different from the substance identified as the cause of the risk, but it must be consistent with it. For instance, it may be a more specific substance (e.g. a brand medication) or a composite product that includes the identified substance. It must be clinically safe to only process the ''code'' and ignore the ''reaction.substance''.  If a receiving system is unable to confirm that AllergyIntolerance.reaction.substance falls within the semantic scope of AllergyIntolerance.code, then the receiving system should ignore AllergyIntolerance.reaction.substance.'
+          $ref: "#/components/schemas/CodeableConcept"
+        patient:
+          description: The patient who has the allergy or intolerance.
+          $ref: "#/components/schemas/Reference"
+        onsetDateTime:
+          description: Estimated or actual date,  date-time, or age when allergy or intolerance was identified.
+          pattern: "^([0-9]([0-9]([0-9][1-9]|[1-9]0)|[1-9]00)|[1-9]000)(-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])(T([01][0-9]|2[0-3]):[0-5][0-9]:([0-5][0-9]|60)(\\.[0-9]+)?(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00)))?)?)?$"
+          type: string
+        recordedDate:
+          description: The recordedDate represents when this particular AllergyIntolerance record was created in the system, which is often a system-generated date.
+          $ref: "#/components/schemas/dateTime"
+        recorder:
+          description: Individual who recorded the record and takes responsibility for its content.
+          "$ref": "#/components/schemas/Reference"
+        asserter:
+          description: The source of the information about the allergy that is recorded.
+          $ref: "#/components/schemas/Reference"
+        note:
+          type: array
+          description: Additional narrative about the propensity for the Adverse Reaction, not captured in other fields.
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+        reaction:
+          description: Details about each adverse reaction event linked to exposure to the identified substance.
+          items:
+            $ref: "#/components/schemas/AllergyIntoleranceReaction"
+          type: array
+      additionalProperties: false
+      required:
+        - patient
+        - resourceType
+    AllergyIntoleranceReaction:
+      description: Risk of harmful or undesirable, physiological response which is unique to an individual and associated with exposure to a substance.
+      properties:
+        id:
+          description: Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.
+          $ref: "#/components/schemas/string"
+        manifestation:
+          description: Clinical symptoms and/or signs that are observed or associated with the adverse reaction event.
+          items:
+            $ref: "#/components/schemas/CodeableConcept"
+          type: array
+      additionalProperties: false
+      required:
+        - manifestation
+  securitySchemes:
+    LambdaAuthorizer:
+      type: "apiKey"
+      name: "Authorization"
+      in: "header"
+      x-amazon-apigateway-authtype: "custom"
+    api_key:
+      type: "apiKey"
+      name: "x-api-key"
+      in: "header"
+    hip-fhir-cog:
+      type: "apiKey"
+      name: "Authorization"
+      in: "header"
+      x-amazon-apigateway-authtype: "cognito_user_pools"
