@@ -20,7 +20,8 @@ phases:
       - export HTTP_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
       - export HTTPS_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
       - export NO_PROXY="10.*,192.168.*,172.16.80.*,172.22.80.*,169.254.169.254,*.ap-southeast-2.amazonaws.com,*.vpce.amazonaws.com,*.moh-aws.nz,lxddypd1.moh.govt.nz"
-      - wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128  https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar  >/dev/null 2>&1
+      #- wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128  https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar  >/dev/null 2>&1
+      - aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/fhir/publisher.jar ./publisher.jar
       - cp publisher.jar ~/publisher.jar
       - wget -e use_proxy=yes -e https_proxy=WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar  >/dev/null 2>&1
       - cp validator_cli.jar ~/validator_cli.jar
@@ -43,17 +44,17 @@ phases:
     commands:
       - ls 
       - rm -rf ./hpi
-      - git clone --branch $branch https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
+      - git clone --branch $BRANCH https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
       - cd hpi
       - git checkout $BRANCH
       - ls
       - echo getting depenencies
       #- mvn package -ntp
       # get hip-fhir-common package
-      - mvn validate
+      #- mvn validate
+      - mvn clean dependency:purge-local-repository validate
       - echo building IG
-      - ls -l
-      - cat igi.ini
+      - ls -l      
       - sudo chmod +x ./build-ig-cicd.sh     
       - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
       
