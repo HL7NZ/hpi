@@ -16,7 +16,7 @@ publisher:
   email: mailto:integration@health.govt.nz
 description: The HPI facade
 license: CC0-1.0
-date: 2023-09-03
+date: 2024-09-06
 fhirVersion: 4.0.1
   
 dependencies:
@@ -36,6 +36,21 @@ dependencies:
      
 parameters:
   show-inherited-invariants: false
+  bundle-references-resolve: false
+  default-contact: true              # publish contact info for all resources (using canonical meta contact where specified)
+  apply-version: false               # stop publisher from overwriting artefact-specific versions
+  default-version: true              # versions of canonicals that specify their own version no longer overwritten by the IG publisher
+  suppressed-ids: $examples          # stop IG publisher generating ids for all example resource instances
+  display-warnings: true 
+  usage-stats-opt-out: 'true'
+  special-url:
+    # standards canonical urls
+    - https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core
+    - http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner
+    - http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole
+    - http://hl7.org.nz/fhir/StructureDefinition/HPILocation
+    - http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization
+    - http://hl7.org.nz/fhir/StructureDefinition/esam-id
 
 copyrightYear: 2020+
 releaseLabel: Release
@@ -88,4 +103,5 @@ menu:
     "Download IG" : full-ig.zip
     Artifacts (Json): definitions.json.zip
     Artifacts (Xml): definitions.xml.zip
-    "OpenApi 3 spec": HipFhirHpiOpenApi.zip
+    #"OpenApi 3 spec": HipFhirHpiOpenApi.zip
+    
