@@ -4,10 +4,10 @@
 # │  supported properties, see:                                                                    │
 # │  http://build.fhir.org/ig/HL7/fhir-shorthand/branches/beta/sushi.html#ig-development           │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.org.nz.fhir.ig.hpi
-canonical: http://hl7.org.nz/fhir/ig/hpi
+id: tewhatuora.hpi
+canonical: https://fhir-ig.digital.health.nz
 #canonical: http://build.fhir.org/ig/HL7NZ/nzbase/branches/master
-version: 1.4.7
+version: 1.5.0
 name: NewZealandHPIIG
 title: New Zealand HPI Implementation Guide
 status: active
@@ -21,15 +21,16 @@ fhirVersion: 4.0.1
   
 dependencies:
 
-  hl7.org.nz.fhir.ig.hip-core:
-     uri: https://common-ig.hip.digital.health.nz/site
-     #version: 1.6.0
-     version: 1.8.9
+  tewhatuora.hip-core:
+     uri: https://fhir-ig.digital.health.nz/HIP-FHIR-Common
+     version: 1.9.0
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
-     uri: 'https://fhir.org.nz/ig/base/'
-     version:  2.0.0
+    #uri: 'http://build.fhir.org/ig/HL7NZ/nzbase/branches/master'
+    uri: 'https://fhir.org.nz/ig/base/ns'
+    #version: dev
+    version: 3.0.0
     
 
      
