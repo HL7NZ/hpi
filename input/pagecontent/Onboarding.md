@@ -28,11 +28,11 @@ Update and Create** operations will need to apply to Te Whatu Ora / Health New Z
 3. Once your onboarding request has been approved, you will be provided with the information to start integration. The integration team will be in touch if further information is required.
   * You will receive your credentials, access token url, provided scopes, and the compliance environment endpoint.
 3. Complete your development and testing.
-4. Submit the results of the compliance tests by email to the [integration team](mailto:integration@tewhatuora.govt.nz).
-5. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
+4. When you are ready for compliance testing, email the [integration team](mailto:integration@tewhatuora.govt.nz) to get a compliance testing template.
+5. Submit the results of the compliance tests using this form [HIP Compliance Submission] (https://mohapis.atlassian.net/servicedesk/customer/portal/3/group/11/create/129).
+6. The integration team will issue a compliance test report. Your application will receive certification to be used in production or additional requirements will need to be met.
   * This can be an iterative process, so please get in touch as needed to discuss the compliance testing process.
-6. _Each organisation_ using your application with NHI integrated services must apply individually for access to the production environment (and recieve their own set of credentials) by completing the production form, please email [NHI Access](mailto:nhi_access@health.govt.nz).
-
+7. _Each organisation_ using your application with NHI integrated services must apply individually for access to the production environment (and recieve their own set of credentials) by completing the production form, please email [NHI Access](mailto:nhi_access@health.govt.nz).
 * Please allow at least 5 working days for _compliance environment applications_ to be processed.
 
 * Please allow at least 2 weeks for _compliance testing_ to be signed off and returned.
