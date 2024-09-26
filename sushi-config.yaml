@@ -92,7 +92,7 @@ menu:
     Facility Compliance testing: FacilityComplianceTesting.html
     Practitioner Compliance testing: PractitionerComplianceTesting.html
     PractitionerRole Compliance testing: PractitionerRoleComplianceTesting.html
-  API: API.html
+  #API: API.html
   Profiles: profiles.html
   Extensions: extensions.html
   Terminology: terminology.html
