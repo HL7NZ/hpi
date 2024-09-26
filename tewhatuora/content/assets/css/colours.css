@@ -1,0 +1,36 @@
+:root {
+    --ig-status-text-color: #15284c; /* 1. IG Title and status text color */
+    --navbar-bg-color: #15284c;  /* 2. Header container color */
+    --footer-bg-color: #15284c; /* 3. Footer background color*/
+    --footer-container-bg-color: #15284c;  /* 4. Footer container color */
+    --stripe-bg-color: #eeeeee; /* 5. Header strip color */
+    --btn-hover-color: #5d7296; /* 6. Menu button hover color */
+    --btn-active-color: #93a3c2; /* 7. Menu button active color */
+    --btn-text-color: #30a1ac; /* 8. Menu button text color */
+    --btn-gradient-start-color: #87ceeb; /* 9. Menu item gradient start color */
+    --btn-gradient-end-color: #30a1ac; /* 10. Menu item gradient end  color */
+    /* 11.  --btn-gradient-start-color-alpha: #d2b48c; /* 11. Menu item gradient start color (with alpha) */
+  /*  --btn-gradient-end-color-alpha: #fa8072; /* 12. Menu item gradient end color (with alpha) */
+     --link-color: #03578f; /* 13. Hyperlink text color */
+ --link-hover-color: #15284c; /* 14. Hyperlink text hover color */
+      --publish-box-bg-color: #48dadf36; /* 15. Publish box background color */
+   --publish-box-border: 1px solid #15284c; /* Publish box border definition */
+  --toc-box-bg-color: #F6F4EC; /* 17.  TOC box background color */
+  --toc-box-border: 1px solid #15284c; /* 18. TOC box border definition */
+  /* 19.  --stu-note-background-color: #8b4513; /* 19. (STU) Note box background color */
+  /* 20.  --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
+  /* 21.  --ig-header-color: #fff2ff; /* 21. Header color (sides) */
+ /* 22.   --ig-header-container-color: #4b0082; /* 22. Header container color (center) */
+ /* 23.    --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
+    --footer-text-color: #30a1ac; /* 24. Footer highlight font color */
+  /* 25.  --footer-hyperlink-text-color: #800000; /* 25. Footer hyperlinks font color */
+  /* 26.  --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
+    --breadcrumb-bg-color: #F6F4EC  ; /* 27. Breadcrumb background color */
+    --breadcrumb-text-color: #15284c; /* 28. Breadcrumb font color */
+  /* 29.  --dragon-background-color: #ebe7ee; /* 29. Dragon background color */
+  /* 29.  --dragon-font-color: #400070; /* 30. Dragon font color */
+}
+
+table.colsd td, table.colsi td {
+  background-color: #F6F4EC;
+}
