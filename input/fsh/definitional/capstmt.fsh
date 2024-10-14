@@ -1,6 +1,6 @@
 
 Instance:   HpiCapabilityStatement
-InstanceOf: CapabilityStatement
+InstanceOf: HnzToolingCapabilityStatement
 Title:          "CapabilityStatement"
 Description:    "Represents API exposed by HPI"
 Usage: #definition
