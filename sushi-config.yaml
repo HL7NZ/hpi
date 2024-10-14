@@ -21,7 +21,7 @@ fhirVersion: 4.0.1
   
 dependencies:
   tewhatuora.digitaltooling: 
-    version: 0.0.8 
+    version: 0.0.11
   tewhatuora.hip-core:
      uri: https://fhir-ig.digital.health.nz/HIP-FHIR-Common
      version: 1.9.0
