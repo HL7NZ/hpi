@@ -1,4 +1,4 @@
- Instance:   HpiCapabilityStatement
+Instance:   HpiCapabilityStatement
 InstanceOf: HnzToolingCapabilityStatement
 Title:          "CapabilityStatement"
 Description:    "Represents API exposed by HPI"
@@ -60,7 +60,7 @@ See https://github.com/tewhatuora/schemas/blob/main/json-schema/Request-Context-
  
  
 * rest.resource.type = #Practitioner
-* rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner"
+* rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * rest.resource.documentation = """
 Practitioner query
  
@@ -68,7 +68,6 @@ Practitioner query
 """
  
 //read by id
-* rest.resource.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * rest.resource.interaction.code = #read
 * rest.resource.interaction.documentation = "GET,  [base]/Practitioner[cpn],  Retrieves a Practitioner resource by Id, system/Practitioner.r"
  
@@ -122,7 +121,7 @@ Practitioner query
  
 // ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
-* rest.resource[1].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-practitioner-role"
+* rest.resource[1].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitionerRole"
 * rest.resource[1].documentation = """
 PractitionerRole query
  
@@ -174,7 +173,7 @@ PractitionerRole query
  
 // ============== The Organization endpoint
 * rest.resource[2].type = #Organization
-* rest.resource[2].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-organization"
+* rest.resource[2].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
 * rest.resource[2].documentation = """
 Organization query
  
@@ -215,7 +214,7 @@ For retrieving organizations that are 'part of' another.
 //================== Location =================
  
 * rest.resource[3].type = #Location
-* rest.resource[3].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/hpi-location"
+* rest.resource[3].supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/HPILocation"
 * rest.resource[3].documentation = """
 Location query
 """
