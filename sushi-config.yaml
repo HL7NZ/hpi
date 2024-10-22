@@ -24,7 +24,7 @@ dependencies:
     version: 0.0.11
   tewhatuora.hip-core:
      uri: https://fhir-ig-uat.digital.health.nz/HIP-FHIR-Common
-     version: 1.9.1
+     version: 1.9.2
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
