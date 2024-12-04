@@ -63,7 +63,7 @@ table, th, td {
 
 To query a Facility with the NZHIS (Legacy) identifier, the integrating application sends an HTTP Get request for the Location resource using the NZHIS (Legacy) identifier and the identifier system.
 
-[For more information on read vs query click here](/general.html#read-resource-by-id)
+[For more information on read vs query click here](./general.html#read-resource-by-id)
 
 <div>
 {% include query-facility.svg %}

@@ -29,7 +29,7 @@ For Put PractitionerRole examples [click here](putPractitionerRoleExample.html)
 
 ### Update PractitionerRole Rules and errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 * **Update PractitionerRole rules**
   * A PractitionerRole update can only modify contact point, messaging address and period end-date
@@ -45,4 +45,4 @@ For Put PractitionerRole examples [click here](putPractitionerRoleExample.html)
 ---
 
 * **PractitionerRole update contact and period end-date rules and errors**
-  * See [Create PractitionerRole rules and errors](/createPracRole.html)
+  * See [Create PractitionerRole rules and errors](./createPracRole.html)

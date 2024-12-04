@@ -8,7 +8,7 @@ The Search facility use case describes how a user can search for:
 * all facilities of a specific type in the HPI e.g. all pharmacy records in the HPI
 * all facilities with a given Managing Organisation
 
-[For all the facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](./capabilityStatement.html#location)
 
 ### Search Facility by name
 
@@ -28,13 +28,13 @@ E.g. GET\<Endpoint>/Location?name=Pukekohe Diamond Doctors
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
 
-[For all the facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](./capabilityStatement.html#location)
 
 
 ### Search Facility by type
 
 This search operation allows a user to search for all facilities of a specific type e.g. return all pharmacies in the HPI.
-The API defaults to return only 10 records. [To learn more about searching and get more than the default 10 records see additional search information](/general.html#additional-search-parameters).
+The API defaults to return only 10 records. [To learn more about searching and get more than the default 10 records see additional search information](./general.html#additional-search-parameters).
 
 <div>
 {% include search-locationbytype.svg %}
@@ -49,6 +49,6 @@ E.g. GET\<Endpoint>/Location?type=pharm
 4.	The first 10 matching facilities are retrieved from the HPI
 5.	The response containing a bundle of matching facilities is returned to the integrating application
 6.	The integrating application displays the matching locations to the user
-7.	[To get more than the default 10 records see additional search information](/general.html#additional-search-parameters) to learn about the _count and _offset parameters
+7.	[To get more than the default 10 records see additional search information](./general.html#additional-search-parameters) to learn about the _count and _offset parameters
 
-[For all the facility search parameters click here](/capabilityStatement.html#location)
+[For all the facility search parameters click here](./capabilityStatement.html#location)

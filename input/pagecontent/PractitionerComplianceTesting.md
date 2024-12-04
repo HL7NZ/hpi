@@ -81,7 +81,7 @@ Registration type (RA Provider only) </td>
 <tr><td>HPI-P-Get-11</td>
 <td>System behaves appropriately when confidentiality settings have been set for a practitioner</td>
 <td>93ZZRW <br /> 96ZZSG <br /> 98ZZWL</td>
-<td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](/businessView.html#confidentiality) and [Redacted Practitioner details](/StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
+<td>System does not error <br /> System returns appropriate messaging to user <br /> For more information see [Confidentiality](./businessView.html#confidentiality) and [Redacted Practitioner details](./StructureDefinition-HPIPractitioner.html#redacted-practitioner-details)</td>
 <td>mandatory if</td></tr>
 
 <tr><td>HPI-P-Get-12</td>

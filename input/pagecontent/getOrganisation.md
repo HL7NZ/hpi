@@ -71,7 +71,7 @@ The 'other identifier's that may be requested include
 
 #### Query Organisation using other identifier - NZ Business number (NZBN)
 
-[For more information on read vs query click here](/general.html#read-resource-by-id)
+[For more information on read vs query click here](./general.html#read-resource-by-id)
 
 <div>
 {% include query-organisation.svg %}

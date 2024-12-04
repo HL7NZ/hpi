@@ -20,13 +20,13 @@ When specified by _ include, the Practitioner, Organization and Location records
 __Note:__ This requires read permission on the included resource <br />
 E.g. GET\<Endpoint>/PractitionerRole?practitioner=99ZZZS&_include=PractitionerRole:practitioner
 
-[For more information on search PractitionerRole click here](/capabilityStatement.html#practitionerrole)
+[For more information on search PractitionerRole click here](./capabilityStatement.html#practitionerrole)
   
 
 
 ### Search PractitionerRole Rules and errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 * **Search PractitionerRole rules**
   * A PractitionerRole search request must include a valid hpi-person-id

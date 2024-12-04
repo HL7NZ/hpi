@@ -18,14 +18,14 @@ Read PractitionerRole processing steps:
 
 To query a PractitionerRole with ‘another identifier' the integrating application sends an HTTP GET request for the PractitionerRole resource using the ‘other identifier’ to identify the Practitioner whose information is being requested.
 
-[To review searching by other identifiers click here](/searchPracRole.html#search-prac-role)
+[To review searching by other identifiers click here](./searchPracRole.html#search-prac-role)
 
-[For more information on read vs query click here](/general.html#read-resource-by-id)
+[For more information on read vs query click here](./general.html#read-resource-by-id)
 
 
 ### Get PractitionerRole Rules and errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 * **Get PractitionerRole rules**
   * A PractitionerRole read request must include a valid hpi-practitionerrole-id

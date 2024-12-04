@@ -178,7 +178,7 @@ table, th, td {
 
 ### Redacted Practitioner details
 
-A person can make a request to their council to make their record confidential. When this is the case the person’s name and other personal details will not be returned in any search or get response. Identifiers and registration details are returned. [See Confidentiality](/businessView.html#confidentiality).
+A person can make a request to their council to make their record confidential. When this is the case the person’s name and other personal details will not be returned in any search or get response. Identifiers and registration details are returned. [See Confidentiality](./businessView.html#confidentiality).
 
 A practitioner’s Date of birth, Gender and Ethnicity are supplied when a practitioner is added and maintained by their Responsible Authority, but they are withheld on a Get Practitioner response.  Admin permissions are required to get all the practitioner details in a response.
 

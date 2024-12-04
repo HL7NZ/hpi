@@ -8,7 +8,7 @@ A Create Practitioner operation is initiated by a user who needs to add a new pr
 
 **Expectations**
 
-* Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](/searchPractitioner.html) to ensure the person does not already exist.
+* Prior to creating a new practitioner record an authorised user must complete a thorough [search of the HPI](./searchPractitioner.html) to ensure the person does not already exist.
 * Duplicate HPI records will not be checked upfront, but will create a task for a potential duplicate to be resolved.
 * If the person is found in the HPI then an update operation is required. If not found then a create practitioner operation should be completed.
 
@@ -28,7 +28,7 @@ Create Practitioner processing steps:
 
 ### Create Practitioner Rules and errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 * **Create Practitioner rules**
   * A Create practitioner request must include:

@@ -7,7 +7,7 @@ The search Practitioner operation allows a user to search the HPI for a Practiti
 * gender, and
 * birthdate
 
-[For more information of available search parameters click here](/capabilityStatement.html#practitioner)
+[For more information of available search parameters click here](./capabilityStatement.html#practitioner)
 
 ### Search Practitioner using name
 

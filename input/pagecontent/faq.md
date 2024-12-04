@@ -6,13 +6,13 @@
 The HPI has HealthLink addresses recorded against HPI Facilities (Location).
 These can be extracted from Location.telecom EDI extension.
 
-See [here](/Guidance.html#lookup-edi-for-an-enrolled-patients-gp) for more details.
+See [here](./Guidance.html#lookup-edi-for-an-enrolled-patients-gp) for more details.
 
  
 
 #### What if I know a person’s medical council number but not their HPI number, can I still access their details?
 
-Yes, use a query practitioner with another identifier. See [here](/searchPractitioner.html#query-practitioner-with-another-identifier)  for more details
+Yes, use a query practitioner with another identifier. See [here](./searchPractitioner.html#query-practitioner-with-another-identifier)  for more details
 
  
 
@@ -65,6 +65,6 @@ In FHIR this is represented in two ways. The facility will have:
 * an 'established' period with an end date, and
 * a status = inactive.
 
-Inactive facilities are returned via the API, either by [searching for a facility](searchLocation.html) or by doing a [read on the resource](/getLocation.html) (providng the hpi-facility-id).
+Inactive facilities are returned via the API, either by [searching for a facility](searchLocation.html) or by doing a [read on the resource](./getLocation.html) (providng the hpi-facility-id).
 
 The ability to exclude inactive facilites when searching for a facility is a requirement on the HPI FHIR backlog. Until this is delivered integrators wanting to view only active facilities will need to filter the search results to exclude facilites with a 'status of inactive' or with the 'estabished period end dated'.

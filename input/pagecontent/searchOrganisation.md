@@ -7,7 +7,7 @@ The search Organisation operation allows a user to search the HPI for:
 * all Organisations of a specific type in the HPI e.g. All Primary Health Organisations (PHO) inthe HPI
 * all Organisations that are 'part of' another Organisation
 
-[For all the organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the organisation search parameters click here](./capabilityStatement.html#organization)
 
 
 ### Search Organisation using name
@@ -26,14 +26,14 @@ E.g. GET\<Endpoint>/Organization?name=TryNSave Pharmacy
 5.	The response containing a bundle of matching Organisation records is returned to the integrating application
 6.	The integrating application displays the matching Organisations to the user
 
-[For all the Organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the Organisation search parameters click here](./capabilityStatement.html#organization)
 
 
 ### Search Organisation by type
 
 This extract style search operation allows a user to search for all Organisation of a specific type in the HPI e.g. return all  Primary Health Organisations in the HPI.
 
-[For more informaton on extract style searches see](/general.html#extract-style-hpi-searches)
+[For more informaton on extract style searches see](./general.html#extract-style-hpi-searches)
 
 <div>
 {% include search-organisationbytype.svg %}
@@ -48,7 +48,7 @@ E.g. GET\<Endpoint>/Location?type=009
 4.	The first 10 matching Organisations are retrieved from the HPI
 5.	The response containing a bundle of matching Organisations is returned to the integrating application
 6.	The integrating application displays the matching Organisations to the user
-7.	[To get more than the default 10 records see additional search information](/general.html#additional-search-parameters) to learn about the _count and _offset parameters.
+7.	[To get more than the default 10 records see additional search information](./general.html#additional-search-parameters) to learn about the _count and _offset parameters.
 
 
-[For all the Organisation search parameters click here](/capabilityStatement.html#organization)
+[For all the Organisation search parameters click here](./capabilityStatement.html#organization)

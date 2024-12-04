@@ -14,17 +14,17 @@
 * Options available:
   * Steps involved hpi-person-id known
     *  User supplies the hpi-person-id to be looked up
-    *  Integrating application looks up the HPI for the practitioner [Get Practitioner](/getPractitioner.html)
+    *  Integrating application looks up the HPI for the practitioner [Get Practitioner](./getPractitioner.html)
     *  Integrating application presents HPI practitioner details to user
 
   * Steps involved ‘Other’ identifier is known
     * User supplies the registration type (e.g. Medical Council) and the 'other identifier' (e.g. Medical council number)
-    * Integrating application looks up the HPI for the practitioner [Search Practitioner](/searchPractitioner.html#query-practitioner-with-another-identifier)
+    * Integrating application looks up the HPI for the practitioner [Search Practitioner](./searchPractitioner.html#query-practitioner-with-another-identifier)
     * Integrating application presents HPI practitioner details to user
 
   * Steps involved if name and other search parameters known
-    * User supplies the name and any [additional search parameters](/capabilityStatement.html#practitioner)
-    * Integrating application searches the HPI for the practitioner [Search Practitioner](/searchPractitioner.html#search-practitioner)
+    * User supplies the name and any [additional search parameters](./capabilityStatement.html#practitioner)
+    * Integrating application searches the HPI for the practitioner [Search Practitioner](./searchPractitioner.html#search-practitioner)
     * HPI matches the search criteria against HPI records and returns a bundle of HPI practitioner records that meet the match threshold
     * Integrating application presents the bundle of HPI practitioner records that are returned
     * User can select the appropriate practitioner record to view
@@ -36,27 +36,27 @@
   * Health provider organisation wants to add a new employee to the HPI
 
 * Steps involved for an RA adding a new practitioner to the HPI:
-  * The user searches the HPI for the health provider [Search Practitioner](/searchPractitioner.html)
+  * The user searches the HPI for the health provider [Search Practitioner](./searchPractitioner.html)
   * If a practitioner resource is found, then an update of that practitioner resource is required *(Update method TBC)*
   * If not found, the user provides the details to be added to the HPI:
     * Name, birthdate, gender and ethnicity (mandatory)
     * An RA must include an RA identifier
     * Language and educational qualification (optional)
     * Death date and registration details (Practitioner.qualification) provided subsequently with an update operation
-  * The integrating application adds a practitioner to the HPI [Add practitioner](/addPractitioner.html)
+  * The integrating application adds a practitioner to the HPI [Add practitioner](./addPractitioner.html)
   * The HPI confirms a successful Add and returns the hpi-person-id and a version-id to be stored by the local system for future use
   * *If the user wants to provide registration details (qualification) or a death date, the integrating application does an update to the practitioner record created (Update method TBC)*
 
 * Steps involved for a Health Provider adding a new employee (NR) record to the HPI:
   * *Note: When adding an NR record to the HPI, best practice requires a PractitionerRole to be created for that record*
-  * The user searches the HPI for the employee [Search Practitioner](/searchPractitioner.html)
+  * The user searches the HPI for the employee [Search Practitioner](./searchPractitioner.html)
   * If a practitioner resource is found, then an update of that practitioner resource is required *(Update method TBC)*
   * If not found, the user provides the employee details to be added to the HPI:
     * Name, birthdate, gender and ethnicity (mandatory)
     * Language and educational qualification (optional)
-  * The integrating application adds a practitioner to the HPI [Add practitioner](/addPractitioner.html)
+  * The integrating application adds a practitioner to the HPI [Add practitioner](./addPractitioner.html)
   * The HPI confirms a successful Add and returns the hpi-person-id and a version-id to be stored by the local system for future use
-  * The user then supplies the details to [Add a PratitionerRole record](/addPracRole.html)
+  * The user then supplies the details to [Add a PratitionerRole record](./addPracRole.html)
 
 
 #### An authorised user wants to update information for a practitioner on the HPI
@@ -99,17 +99,17 @@
 * Three options available:
   * Steps involved if hpi-organization-id known:
     * The user supplies an hpi-organization-id for the organization to be looked up
-    * The integrating application looks up the HPI organization resource [Get organization](/getOrganization.html) 
+    * The integrating application looks up the HPI organization resource [Get organization](./getOrganization.html) 
     * The integrating application displays the organization record with all HPI information for that organization
 
   * Steps involved if hpi-nzbn (New Zealand Business Number) known:
     * The user identifies the system (NZBN) and number
-    * The integrating application searches the HPI organization resource [Search organization](/searchOrganization.html#other-search-criteria).
+    * The integrating application searches the HPI organization resource [Search organization](./searchOrganization.html#other-search-criteria).
     * The integrating application returns a bundle with a single record for the organisation
 
   * Steps involved if an organisation name or other search parameters are known:
-    * The user supplies search parameters for the organisation e.g name [click here for more search parameters](/capabilityStatement.html#organization)
-    * The integrating application searches the HPI organization resource [Search organization](/searchOrganization.html#search-organization-by-name)
+    * The user supplies search parameters for the organisation e.g name [click here for more search parameters](./capabilityStatement.html#organization)
+    * The integrating application searches the HPI organization resource [Search organization](./searchOrganization.html#search-organization-by-name)
     * The HPI uses the search parameters and returns a bundle of HPI organization records that meet the search threshold
     * The integrating application presents the bundle of HPI organization records that are returned
     * The user can select the appropriate organization record to view
@@ -130,12 +130,12 @@
 
 * Steps involved if hpi-facility-id known:
   * The user supplies an hpi-facility-id for the facility to be looked up
-  * The integrating application looks up the HPI location resource [Get location](/getLocation.html) 
+  * The integrating application looks up the HPI location resource [Get location](./getLocation.html) 
   * The integrating application displays the location record with all HPI information for the facility
 
 * Steps involved if other search parameters are known:
-  * The user supplies search parameters for the facility e.g name, address [click here for more search parameters](/capabilityStatement.html#location)
-  * The integrating application searches the HPI location resource [Search location](/searchLocation.html) 
+  * The user supplies search parameters for the facility e.g name, address [click here for more search parameters](./capabilityStatement.html#location)
+  * The integrating application searches the HPI location resource [Search location](./searchLocation.html) 
   * The HPI uses the search parameters and returns a bundle of HPI location records that meet the search threshold
   * The integrating application presents the bundle of HPI location records that are returned
   * The user can select the appropriate facility to view
@@ -152,12 +152,12 @@
 
 * Steps involved to view a PractitionerRole record for a known hpi-practitionerole-id:
   * The user supplies the hpi-practitionerrole-id to be looked up
-  * The integrating application does a read of the PractitionerRole records [Get PractitionerRole](/getPracRole.html)
+  * The integrating application does a read of the PractitionerRole records [Get PractitionerRole](./getPracRole.html)
   * The integrating application returns and displays the PractitionerRole record associated with that identifier
 
 * Steps involved to retrieve all the PractitionerRole records for a Practitioner:
-  * The user provides an hpi-person-id and any [other search parameters](/capabilityStatement.html#practitionerrole) 
-  * The Integrating application does a search of the PractitionerRole records associated with that Practitioner [Search PractitionerRole](/searchPracRole.html#search-practitionerrole-by-practitioner-hpi-person-id)
+  * The user provides an hpi-person-id and any [other search parameters](./capabilityStatement.html#practitionerrole) 
+  * The Integrating application does a search of the PractitionerRole records associated with that Practitioner [Search PractitionerRole](./searchPracRole.html#search-practitionerrole-by-practitioner-hpi-person-id)
   * The Integrating application returns a bundle of PractitionerRole records
   * The user can select the appropriate PractitionerRole record to view
 
@@ -171,7 +171,7 @@
   * The user provides:
     * The hpi-person-id and an hpi-facility-id and/or hpi-organisation-id
     * Optional: Contact point, the role code, period (start date and end if applicable)
-  * The integrating application adds a PractitionerRole to the HPI [Add PractitionerRole](/addPracRole.html)
+  * The integrating application adds a PractitionerRole to the HPI [Add PractitionerRole](./addPracRole.html)
   * The HPI confirms a successful add and returns the hpi-practitionerrole-id and a version-id to be stored by the local system for future use
 
 
@@ -184,7 +184,7 @@
   * The user views a record and decides that an update is required
   * The user provides the updated contact point or end date
   * The system provides the hpi-practitionerrole-id and version-id
-  * The integrating application updates the PractitionerRole [Update PractitionerRole](/updatePracRole.html)
+  * The integrating application updates the PractitionerRole [Update PractitionerRole](./updatePracRole.html)
   * The HPI returns the updated version-id to be saved locally
   
 

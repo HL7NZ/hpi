@@ -114,7 +114,7 @@ table, th, td {
 
 #### Update-core Rules and Errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 * **Practitioner update rules**
   * A Practitioner update must include a valid hpi-person-id
@@ -125,7 +125,7 @@ table, th, td {
 * _Practitioner update errors_
 
 * **Practitioner update-core 'name' rules**
-  * All name rules in [add request apply](/addPractitioner.html#add-practitioner-rules-and-errors) and,
+  * All name rules in [add request apply](./addPractitioner.html#add-practitioner-rules-and-errors) and,
   * Cannot update a name to name use = old
   * If a usual or official name is replaced the previous name/s will be returned as name use old
   * Cannot add a name that has been deleted by Te Whatu Ora

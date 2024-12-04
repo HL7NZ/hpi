@@ -25,7 +25,7 @@ For a Create Practitioner Role example [click here](createPracRoleExample.html)
 
 ### Create PractitionerRole Rules and errors
 
-[For Request rules and errors click here](/general.html#request-rules-and-errors)
+[For Request rules and errors click here](./general.html#request-rules-and-errors)
 
 #### Create PractitionerRole rules
 * A create PractitionerRole request must include:
@@ -37,7 +37,7 @@ For a Create Practitioner Role example [click here](createPracRoleExample.html)
   * Messaging-address (EDI)
   * Contact details (telecom)
 * A PractitionerRole-status-reason is mandatory when a period end-date is supplied
-* A create PractitionerRole request must not create a duplicate, or overlap another PractitionerRole record [See also](/glossary.html#practitioner-role)
+* A create PractitionerRole request must not create a duplicate, or overlap another PractitionerRole record [See also](./glossary.html#practitioner-role)
 
 
 ---
