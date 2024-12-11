@@ -94,8 +94,8 @@ menu:
     Practitioner Compliance testing: PractitionerComplianceTesting.html
     PractitionerRole Compliance testing: PractitionerRoleComplianceTesting.html
   #API: API.html
-  API:    
-    View OpenAPI:  https://fhir-ig.digital.health.nz/openapi/index.html?urls.primaryName=HPI+API
+  API:
+    View OpenAPI:  https://fhir-ig-uat.digital.health.nz/openapi/index.html?urls.primaryName=HPI+API
     API: API.html
     
   Profiles: profiles.html
@@ -109,5 +109,5 @@ menu:
     Artifacts (Json): definitions.json.zip
     Artifacts (Xml): definitions.xml.zip
     #"OpenApi 3 spec": HipFhirHpiOpenApi.zip
-    Download OpenAPI: https://fhir-ig.digital.health.nz/HPI/openapi.yaml
+    Download OpenAPI: https://fhir-ig-uat.digital.health.nz/HPI/openapi.yaml
     

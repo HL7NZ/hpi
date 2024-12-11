@@ -61,6 +61,7 @@ See https://github.com/tewhatuora/schemas/blob/main/json-schema/Request-Context-
  
 * rest.resource.type = #Practitioner
 * rest.resource.supportedProfile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+* rest.resource.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * rest.resource.documentation = """
 Practitioner query
  
