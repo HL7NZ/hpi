@@ -7,7 +7,7 @@ Usage: #definition
 
 //* jurisdiction.coding = urn:iso:std:iso:3166#NZ
 //* text.status = #additional//
-* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI capabilities</div>"
+//* text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI capabilities</div>"
 
 
 * name = "HPI_CapabilityStatement"
