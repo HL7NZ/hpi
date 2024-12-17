@@ -6,9 +6,9 @@ Description:    "Represents API exposed by HPI"
 Usage: #definition
 
 //* jurisdiction.coding = urn:iso:std:iso:3166#NZ
-
-* text.status = #additional
+//* text.status = #additional//
 * text.div = "<div xmlns='http://www.w3.org/1999/xhtml'>HPI capabilities</div>"
+
 
 * name = "HPI_CapabilityStatement"
 * title = "Capability Statement describing HPI FHIR APIs"
