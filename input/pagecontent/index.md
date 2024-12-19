@@ -42,7 +42,7 @@ Note that these identifiers are correct as at the time of publishing the Base IG
 new identifiers are added, they will be present in the [build version](http://build.fhir.org/ig/HL7NZ/nzbase/branches/master/index.html) of NZBase (that has not yet been approved for release)
 
 
-  ### Source
+### Source
 
-  ​	This IG was built from [github](https://github.com/HL7NZ/nhi)  branch:   commit id: 9b09bc4ff144b7036aa8e1f77902879a3150e181
+  ​	This IG was built from [github](https://github.com/HL7NZ/hpi)  branch:   commit id: 9b09bc4ff144b7036aa8e1f77902879a3150e181
 
