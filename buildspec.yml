@@ -44,7 +44,7 @@ phases:
     commands:
       - ls 
       - rm -rf ./hpi
-      - git clone --branch $BRANCH https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi       
+      - git clone --branch $BRANCH https://github.com/HL7NZ/hpi       
       - cd hpi
       - git checkout $BRANCH
       - ls
@@ -62,7 +62,7 @@ phases:
       - echo checking in full-ig.zip
       - git add -f ./output/full-ig.zip
       - git commit -m "new IG build"
-      - git push
+      - git push https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi   
       # deploy the hpi conformance artefacts
       - mvn deploy
 artifacts:
