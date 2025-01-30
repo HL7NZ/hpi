@@ -2,7 +2,7 @@
 //Aliases for extensions
 Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
-Alias: $additional-authorisation = http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
+Alias: $additional-authorisation = https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code
 
 
 Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
