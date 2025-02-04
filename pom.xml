@@ -8,7 +8,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>		
-		<fhir-common.version>1.8.10</fhir-common.version>
+		<fhir-common.version>1.9.1</fhir-common.version>
 	</properties>
 	<dependencies>
 

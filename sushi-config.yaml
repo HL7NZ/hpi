@@ -25,7 +25,7 @@ dependencies:
      #uri: https://common-ig.hip.digital.health.nz/site
      uri: https://tst.d1gti5r1pqczdn.amplifyapp.com/site
      #version: 1.6.0
-     version: 1.8.10
+     version: 1.9.1
      
   # there is a dependency on NZBase to get the extensions defined in there  
   fhir.org.nz.ig.base:
