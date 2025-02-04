@@ -130,12 +130,12 @@
 
 * Steps involved if hpi-facility-id known:
   * The user supplies an hpi-facility-id for the facility to be looked up
-  * The integrating application looks up the HPI location resource [Get location](/getLocation.html) 
+  * The integrating application looks up the HPI location resource [Get location](/getFacility.html) 
   * The integrating application displays the location record with all HPI information for the facility
 
 * Steps involved if other search parameters are known:
   * The user supplies search parameters for the facility e.g name, address [click here for more search parameters](/capabilityStatement.html#location)
-  * The integrating application searches the HPI location resource [Search location](/searchLocation.html) 
+  * The integrating application searches the HPI location resource [Search location](/searchFacility.html) 
   * The HPI uses the search parameters and returns a bundle of HPI location records that meet the search threshold
   * The integrating application presents the bundle of HPI location records that are returned
   * The user can select the appropriate facility to view
