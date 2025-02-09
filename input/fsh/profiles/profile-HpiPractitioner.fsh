@@ -2,7 +2,7 @@
 //Aliases for extensions
 Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
-Alias: $additional-authorisation = http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
+Alias: $additional-authorisation = https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code
 
 
 Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
@@ -142,6 +142,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
+* qualification.extension[additional-authorisation].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code|1.0.1 (preferred)
 * qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
 * qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code|2.1.0 (preferred)
 //* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code (preferred)
