@@ -4,7 +4,7 @@
 
 	<groupId>nz.health.digital.hpi.fhir</groupId>
 	<artifactId>hip-hpi-conformance-module</artifactId>
-	<version>1.4.9-SNAPSHOT</version>
+	<version>1.4.8</version>
 
 	<properties>
 		<java.version>1.8</java.version>		
