@@ -9,7 +9,7 @@ As a user of \Application Name> you will be a user (User) of the Health Provider
 
 As a User you confirm that you:
 * will comply with the Privacy Act 2020 and the Health Information Privacy Code 2020, in relation to any Information.
-* can provide printed information or links to information on the Te Whatu Ora website about the [HPI](https://www.health.govt.nz/our-work/health-identity/health-provider-index) to practitioners if requested.
+* can provide printed information or links to information on the Te Whatu Ora website about the [HPI](https://www.tewhatuora.govt.nz/health-services-and-programmes/health-identity/health-provider-index) to practitioners if requested.
 * will raise any of the following issues that come to your attention with the [Te Whatu Ora contact centre](https://www.health.govt.nz/about-ministry/contact-us)
   * system issues with your connection to HPI 
   * any data quality issues in the HPI (or raise them with the relevant registration authority).
@@ -38,7 +38,7 @@ As a user of \<Application Name> you will be a user (User) of the National Healt
 
 As a User you confirm that you:
 * will comply with the Privacy Act 2020 and the Health Information Privacy Code 2020, in relation to any Information.
-* can provide printed information or links to information on the Te Whatu Ora website about the [NHI](https://www.health.govt.nz/our-work/health-identity/national-health-index) and the [HPI](https://www.health.govt.nz/our-work/health-identity/health-provider-index) to health consumers or practitioners if requested.
+* can provide printed information or links to information on the Te Whatu Ora website about the [NHI](https://www.tewhatuora.govt.nz/health-services-and-programmes/health-identity/national-health-index) and the [HPI](https://www.tewhatuora.govt.nz/health-services-and-programmes/health-identity/health-provider-index) to health consumers or practitioners if requested.
 * will raise any of the following issues that come to your attention with the [Te Whatu Ora contact centre](https://www.health.govt.nz/about-ministry/contact-us)
   * system issues with your connection to the NHI or HPI 
   * any data quality issues in the NHI (or raise them with the health consumers GP) 

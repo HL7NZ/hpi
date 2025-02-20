@@ -2,7 +2,7 @@
 This is the Implementation Guide for the [HL7® FHIR©](http://hl7.org/fhir) interface to the New Zealand HPI - Health Provider Index. It brings together all the artifacts that are necessary to understand and use the FHIR API.
 It is based on  [FHIR R4](http://hl7.org/fhir/) and NZBase IG 2.0-rc1
 
-The HPI ([Health Provider Index](https://www.health.govt.nz/our-work/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from.
+The HPI ([Health Provider Index](https://www.tewhatuora.govt.nz/health-services-and-programmes/health-identity/health-provider-index)) is a national registry service that holds information about the providers of healthcare in New Zealand, including the organizations where they work and the facilities that they work from.
 
 The key entities that are supported are:
 
