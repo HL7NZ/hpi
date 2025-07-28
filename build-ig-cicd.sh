@@ -104,7 +104,7 @@ chmod +x ./openapi/makeoas.sh
 echo running ig publisher
 #ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package 
 
-java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi
+java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi  -authorise-non-conformant-tx-servers 
 
 
 
