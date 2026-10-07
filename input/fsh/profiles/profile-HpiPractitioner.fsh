@@ -2,8 +2,7 @@
 //Aliases for extensions
 Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
-Alias: $additional-authorisation = https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code
-
+Alias: $additional-authorisation = http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
 
 Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
 
@@ -131,23 +130,30 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 //* gender 1..1
 
 //many extensions on qualification
-//* photo 0..0
-// * qualification.extension contains
-   // $registration-status-code named registration-status-code 0..1 and
-   // $additional-authorisation named additional-authorisation 0..*   and
-   // $scope-of-practice named scope-of-practice 0..* and
-   // $condition-on-practice named condition-on-practice 0..* and
-   // $registration-initial-date named registration-initial-date 0..1
-    
+// these qualification extension slices already exist in the base NZ practitioner profile; constrain them here instead of redefining them
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
+* qualification.extension[registration-status-code].extension[status].value[x] only CodeableConcept
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept from https://standards.digital.health.nz/ns/practitioner-registration-status-code (extensible)
+* qualification.extension[registration-status-code].extension[period].value[x] only Period
+
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
+* qualification.extension[additional-authorisation].extension[code].value[x] only CodeableConcept
 * qualification.extension[additional-authorisation].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-additional-authorisation-code|1.0.1 (preferred)
+* qualification.extension[additional-authorisation].extension[period].value[x] only Period
+
 * qualification.extension[scope-of-practice] ^short = "The overall practice scope - eg Nurse Prescriber"
+* qualification.extension[scope-of-practice].extension[code].value[x] only CodeableConcept
 * qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code|2.1.0 (preferred)
-//* qualification.extension[scope-of-practice].extension[code].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-scope-of-practice-code (preferred)
+* qualification.extension[scope-of-practice].extension[period].value[x] only Period
+
 * qualification.extension[condition-on-practice] ^short = "Conditions that have been applied to the ability of the person to practice"
+* qualification.extension[condition-on-practice].extension[description].value[x] only string
+* qualification.extension[condition-on-practice].extension[period].value[x] only Period
+
 * qualification.extension[registration-initial-date] ^short = "The date that the person was originally registered"
+* qualification.extension[registration-initial-date].value[x] only date
+
 * qualification.id 0..0
 * qualification.identifier ^short = "The practitioner's identifier issued by the Responsible Authority eg medical council number, nursing council number"
 * qualification.code ^short = "Coded representation of the Responsible Authority that issues the registration"
