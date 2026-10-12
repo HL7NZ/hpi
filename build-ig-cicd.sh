@@ -5,6 +5,9 @@
 # to run locally, pass in the parameter true:
 ## ./build-ig-cicd.sh true
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
+
 islocal=$1
 
 addPackage() {
@@ -31,7 +34,7 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 }
 
 install_base_template_cache() {
-local template_source="./template"
+local template_source="$SCRIPT_DIR/template"
 local current_dir="$HOME/.fhir/packages/fhir.base.template#current/package"
 local versioned_dir="$HOME/.fhir/packages/fhir.base.template#1.0.0/package"
 

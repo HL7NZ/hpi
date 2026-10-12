@@ -42,6 +42,7 @@ phases:
      
   build:
     commands:
+      - set -o pipefail
       - ls 
       - rm -rf ./hpi
       - git clone --branch $BRANCH https://github.com/HL7NZ/hpi       
