@@ -42,7 +42,6 @@ phases:
      
   build:
     commands:
-      - set -o pipefail
       - ls 
       - rm -rf ./hpi
       - git clone --branch $BRANCH https://github.com/HL7NZ/hpi       
@@ -56,7 +55,7 @@ phases:
       - mvn clean dependency:purge-local-repository validate
       - echo building IG
       - ls -l      
-      - bash ./build-ig-cicd.sh 2>&1 | tee build-ig.log
+      - bash -o pipefail -c 'bash ./build-ig-cicd.sh 2>&1 | tee build-ig.log'
       
       
       - echo checking in full-ig.zip
