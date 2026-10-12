@@ -55,8 +55,7 @@ phases:
       - mvn clean dependency:purge-local-repository validate
       - echo building IG
       - ls -l      
-      - sudo chmod +x ./build-ig-cicd.sh     
-      - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
+      - bash ./build-ig-cicd.sh 2>&1 | tee build-ig.log
       
       
       - echo checking in full-ig.zip

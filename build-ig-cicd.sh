@@ -30,34 +30,6 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 #cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
-install_base_template_cache() {
-local template_source="./template"
-local package_dir="$HOME/.fhir/packages/fhir.base.template#current/package"
-
-if [[ -d "$package_dir/content" ]]; then
-  echo "Using cached base template"
-  return 0
-fi
-
-if [[ ! -d "$template_source" ]]; then
-  echo "Base template source not found at $template_source" >&2
-  return 1
-fi
-
-echo "Installing local base template cache"
-mkdir -p "$package_dir"
-cp -R "$template_source"/. "$package_dir"/
-cat > "$package_dir/package.json" <<'EOF'
-{
-  "name": "fhir.base.template",
-  "version": "current",
-  "type": "fhir.template",
-  "license": "CC0-1.0",
-  "description": "Base template for FHIR IGs"
-}
-EOF
-}
-
 set -x -e #echo on, exit on error
 
 echo getting nzbase dependencies...
@@ -122,10 +94,7 @@ echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
 
 echo "building openapi spec"
-chmod +x ./openapi/makeoas.sh
-./openapi/makeoas.sh
-
-install_base_template_cache
+bash ./openapi/makeoas.sh
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
@@ -139,5 +108,4 @@ java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeas
 
 
 
-chmod +x ./fhirValidate.sh
-./fhirValidate.sh
+bash ./fhirValidate.sh
