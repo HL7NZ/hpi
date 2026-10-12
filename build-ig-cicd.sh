@@ -30,6 +30,46 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 #cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
+install_base_template_cache() {
+local template_source="./template"
+local current_dir="$HOME/.fhir/packages/fhir.base.template#current/package"
+local versioned_dir="$HOME/.fhir/packages/fhir.base.template#1.0.0/package"
+
+if [[ -f "$current_dir/package.json" ]]; then
+  return 0
+fi
+
+if [[ ! -d "$template_source" ]]; then
+  echo "Base template source not found at $template_source" >&2
+  return 1
+fi
+
+echo "Installing local base template cache"
+mkdir -p "$current_dir" "$versioned_dir"
+cp -R "$template_source"/. "$current_dir"/
+cp -R "$template_source"/. "$versioned_dir"/
+
+cat > "$current_dir/package.json" <<'EOF'
+{
+  "name": "fhir.base.template",
+  "version": "current",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Base template for FHIR IGs"
+}
+EOF
+
+cat > "$versioned_dir/package.json" <<'EOF'
+{
+  "name": "fhir.base.template",
+  "version": "1.0.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "description": "Base template for FHIR IGs"
+}
+EOF
+}
+
 set -x -e #echo on, exit on error
 
 echo getting nzbase dependencies...
@@ -95,6 +135,7 @@ echo "Making API summary"
 
 echo "building openapi spec"
 bash ./openapi/makeoas.sh
+install_base_template_cache
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
