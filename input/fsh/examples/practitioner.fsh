@@ -252,3 +252,17 @@ Usage: #example
 * identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier.value = "90ZZLP"
 * identifier.assigner = Reference(Organization/G00001-G)
+
+
+Instance: 99ZZZS
+InstanceOf: Practitioner
+Description: "Example HPI Practitioner used by PractitionerRole"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+* identifier.use = #official
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier.value = "99ZZZS"
+* identifier.assigner = Reference(Organization/G00001-G)
+* name.use = #official
+* name.family = "Example"
+* name.given[0] = "Practitioner"

@@ -87,3 +87,112 @@ Usage: #example
 * telecom[=].rank = 2
 * telecom[=].period.start = "2019-11-11"
 * partOf = Reference(Organization/GZZ836-C) "Multiple sub-organisation"
+
+
+Instance: G00001-G
+InstanceOf: Organization
+Description: "Example HPI root Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "G00001-G"
+* active = true
+* name = "HPI Root Organization"
+
+
+Instance: GZZ998-G
+InstanceOf: Organization
+Description: "Example HPI Organization for PractitionerRole references"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "GZZ998-G"
+* identifier[=].assigner = Reference(Organization/G00001-G)
+* active = true
+* name = "Referenced PractitionerRole Organization"
+
+
+Instance: MBIE
+InstanceOf: Organization
+Description: "Example MBIE Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "MBIE"
+* active = true
+* name = "Ministry of Business, Innovation and Employment"
+
+
+Instance: G00000-E
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "G00000-E"
+* active = true
+* name = "Reference Organization G00000-E"
+
+
+Instance: G00008-K
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "G00008-K"
+* active = true
+* name = "Reference Organization G00008-K"
+
+
+Instance: G00009-A
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "G00009-A"
+* active = true
+* name = "Reference Organization G00009-A"
+
+
+Instance: GZZ836-C
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "GZZ836-C"
+* active = true
+* name = "Reference Organization GZZ836-C"
+
+
+Instance: GZZ908-B
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "GZZ908-B"
+* active = true
+* name = "Reference Organization GZZ908-B"
+
+
+Instance: GZZ999-J
+InstanceOf: Organization
+Description: "Example HPI Organization"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIOrganization"
+* identifier[0].use = #official
+* identifier[=].system = "https://standards.digital.health.nz/ns/hpi-organisation-id"
+* identifier[=].value = "GZZ999-J"
+* active = true
+* name = "Reference Organization GZZ999-J"
