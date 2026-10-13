@@ -36,6 +36,18 @@
 <td><p>POST, [base]/Practitioner[cpn],An operation that updates a health providers demographic details,  system/Practitioner.u</p>
 </td>
 </tr>
+<tr>
+<td>update-educational-qualification</td>
+<td><a href ="update-educational-qualification.xml"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-educational-qualification </a></td>
+<td><p>POST, [base]/Practitioner/$update-educational-qualification,Updates a practitioner's educational qualifications by add, amend or remove actions, system/Practitioner.u</p>
+</td>
+</tr>
+<tr>
+<td>update-registration</td>
+<td><a href ="update-registration.xml"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-registration </a></td>
+<td><p>POST, [base]/Practitioner/$update-registration,Updates a practitioner's registration status, APC, scope of practice, additional authorisations and conditions, system/Practitioner.u</p>
+</td>
+</tr>
 </table>
 <strong>Search Parameters</strong>
 <table class='table table-bordered table-condensed'>

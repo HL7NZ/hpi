@@ -29,8 +29,8 @@ Usage: #example
 * period.end = "2000-02-11"
 * practitioner = Reference(Practitioner/90ZZLP)
 * organization = Reference(Organization/GZZ998-G)
-* code.coding.version = "1.2"
-* code.coding = http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0#542114 "Medical Receptionist"
+* code.coding.version = "2022"
+* code.coding = https://nzhts.digital.health.nz/fhir/CodeSystem/anzsco#542114 "Medical Receptionist"
 * code.text = "Medical Receptionist"
 * location = Reference(Location/FZZ999-B)
 * telecom[0].system = #phone
@@ -62,8 +62,8 @@ Usage: #example
 * identifier.assigner = Reference(Organization/G00001-G)
 * active = false
 * practitioner = Reference(Practitioner/99ZZZS)
-* code.coding.version = "1.2"
-* code.coding = http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0#323112 "Aircraft Maintenance Engineer (Mechanical)"
+* code.coding.version = "2022"
+* code.coding = https://nzhts.digital.health.nz/fhir/CodeSystem/anzsco#323112 "Aircraft Maintenance Engineer (Mechanical)"
 * code.text = "Aircraft Maintenance Engineer (Mechanical)"
 
 
@@ -93,8 +93,8 @@ Usage: #example
 * period.start = "2011-05-06"
 * practitioner = Reference(Practitioner/90ZZLP)
 * organization = Reference(Organization/GZZ998-G)
-* code.coding.version = "1.2"
-* code.coding = http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0#542111 "Receptionist (General)"
+* code.coding.version = "2022"
+* code.coding = https://nzhts.digital.health.nz/fhir/CodeSystem/anzsco#542111 "Receptionist (General)"
 * code.text = "Receptionist (General)"
 * location = Reference(Location/FZZ999-B)
 * telecom[0].system = #phone
