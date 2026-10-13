@@ -16,8 +16,6 @@ Usage: #example
 * identifier[=].value = "9999999999041"
 * identifier[=].assigner = Reference(Organization/MBIE)
 * active = true
-* type.coding.version = "1.1"
-* type.coding = https://standards.digital.health.nz/ns/organisation-type-code#999 "Other"
 * name = "Flat-Unit Address Org"
 * alias = "Flat-Unit Address Org"
 * alias.extension.url = "http://hl7.org.nz/fhir/StructureDefinition/alias-type"
@@ -53,7 +51,7 @@ Usage: #example
 * identifier[=].value = "9999999999009"
 * identifier[=].assigner = Reference(Organization/MBIE)
 * active = true
-* type.coding.version = "1.1"
+* type.coding.version = "1.2"
 * type.coding = https://standards.digital.health.nz/ns/organisation-type-code#008 "Education Institutions"
 * name = "Second Name"
 * alias[0] = "Wha Name"
