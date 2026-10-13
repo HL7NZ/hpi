@@ -141,7 +141,12 @@ install_base_template_cache
 echo running ig publisher
 #ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package 
 
-java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi  -authorise-non-conformant-tx-servers 
+publisher_args=(-ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi -authorise-non-conformant-tx-servers)
+if [[ "${ALLOW_PRIVATE_PROXY_SSRF_BYPASS:-false}" == "true" ]]; then
+  echo "WARNING: disabling Publisher SSRF protection for the trusted private proxy" >&2
+  publisher_args+=(-ssrf-protection-enabled false)
+fi
+java -jar ~/publisher.jar "${publisher_args[@]}"
 
 
 
