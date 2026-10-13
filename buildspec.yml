@@ -15,7 +15,6 @@ phases:
       nodejs: 16
       ruby: 3.1
     commands:
-      - env
       - aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/settings-clean.xml - | envsubst > /root/.m2/settings.xml
       - export HTTP_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
       - export HTTPS_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
