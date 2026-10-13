@@ -33,6 +33,39 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 #cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
+install_base_template_cache() {
+  local package_version="1.0.0"
+  local package_name="fhir.base.template"
+  local cache_dir="$HOME/.fhir/packages/${package_name}#${package_version}"
+  local archive
+
+  if [[ -f "$cache_dir/package/package.json" ]] && \
+    jq -e --arg version "$package_version" \
+      '.name == "fhir.base.template" and .version == $version' \
+      "$cache_dir/package/package.json" >/dev/null; then
+    echo "Using cached ${package_name}#${package_version}"
+    return 0
+  fi
+
+  echo "Downloading ${package_name}#${package_version} from the FHIR template archive"
+  archive=$(mktemp)
+  curl --fail --location --retry 3 --output "$archive" \
+    "https://fhir.org/templates/${package_name}/${package_version}/package.tgz"
+
+  rm -rf "$cache_dir"
+  mkdir -p "$cache_dir"
+  tar -xzf "$archive" -C "$cache_dir"
+  rm -f "$archive"
+
+  if ! jq -e --arg version "$package_version" \
+    '.name == "fhir.base.template" and .version == $version' \
+    "$cache_dir/package/package.json" >/dev/null; then
+    echo "Downloaded ${package_name} package has unexpected metadata" >&2
+    rm -rf "$cache_dir"
+    return 1
+  fi
+}
+
 set -x -e #echo on, exit on error
 
 echo getting nzbase dependencies...
@@ -98,6 +131,7 @@ echo "Making API summary"
 
 echo "building openapi spec"
 bash ./openapi/makeoas.sh
+install_base_template_cache
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
