@@ -59,7 +59,7 @@ phases:
       
       - echo checking in full-ig.zip
       - git add -f ./output/full-ig.zip
-      - git add -A ./output ./openapi ./input/extra ./input/pagecontent
+      - git add -A ./openapi ./input/extra ./input/pagecontent
       - git commit -m "new IG build"
       - git push https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi   
       # deploy the hpi conformance artefacts
