@@ -50,16 +50,16 @@
 <td><a href ="OperationDefinition-Practitioner-update-educational-qualification.html"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-educational-qualification </a></td>
 <td>POST</td>
 <td> [base]/Practitioner/$update-educational-qualification</td>
-<td>Updates a practitioner's educational qualifications by add, amend and remove actions</td>
-<td>  system/Practitioner.u</td>
+<td>Updates a practitioner's educational qualifications by add</td>
+<td> amend or remove actions</td>
 </tr>
 <tr>
 <td>update-registration</td>
 <td><a href ="OperationDefinition-Practitioner-update-registration.html"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-registration </a></td>
 <td>POST</td>
 <td> [base]/Practitioner/$update-registration</td>
-<td>Updates a practitioner's registration details including status, APC, scope of practice, additional authorisations and conditions</td>
-<td>  system/Practitioner.u</td>
+<td>Updates a practitioner's registration status</td>
+<td> APC</td>
 </tr>
 </table>
 <strong>Search Parameters</strong>
