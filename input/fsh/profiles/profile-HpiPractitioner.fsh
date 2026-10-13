@@ -134,7 +134,7 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 
 * qualification.extension[registration-status-code] ^short = "Status of the registration, and the date it was set"
 * qualification.extension[registration-status-code].extension[status].value[x] only CodeableConcept
-* qualification.extension[registration-status-code].extension[status].valueCodeableConcept from https://standards.digital.health.nz/ns/practitioner-registration-status-code (extensible)
+* qualification.extension[registration-status-code].extension[status].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code|2.0 (extensible)
 * qualification.extension[registration-status-code].extension[period].value[x] only Period
 
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
