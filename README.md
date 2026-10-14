@@ -102,3 +102,23 @@ The process for importing them into the IGs is as follows.
 1. Receive the zip file containing them, and unzip
 2. Using goFsh, convert them to .fsh files. This better incorporates them into the overall build process - for example when generating the terminology summary page which expects json versions, rather than the XML ones from MOH. 
 3. Place the fsh in the appropriate input/fsh/terminology folder of the IG
+
+## Build in pipeline
+
+Use CodeBuild project [hip-hpi-ig-build](https://ap-southeast-2.console.aws.amazon.com/codesuite/codebuild/262112264387/projects/hip-hpi-ig-build/history?region=ap-southeast-2&builds-meta=eyJmIjp7InRleHQiOiIiLCJzdGF0dXMiOiIifSwicyI6e30sIm4iOjIwLCJpIjowfQ#)
+
+If you need to configure buildspecs they are in s3 - [s3://nz-govt-moh-hip-build/hip-hpi-fhir-ig/buildspec.yml](https://nz-govt-moh-hip-build.s3.ap-southeast-2.amazonaws.com/hip-hpi-fhir-ig/buildspec.yml) 
+
+### Start build with override </br>
+Environment -> Additional Configuration -> Environment variables </br>
+BRANCH - set to your branch if publishing from the branch - default master
+ALLOW_PRIVATE_PROXY_SSRF_BYPASS - set to true (avoid failure due to proxy configs)
+
+Pipeline will build, validate and commit fill_site back to github repo.
+
+## Deploy 
+Go to AWS Amplify in suitable environment (Dev, QA, Prod) and select hpi-fhir-ig app.
+
+If you want to deploy from a new bracnh - click Add Branch, authorise with your github account and seelct branch you want.
+
+Wait for deployment to complete, it has domain adress - open it to see your deployed IG
