@@ -92,6 +92,14 @@ Practitioner query
 * rest.resource.operation[0].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
 * rest.resource.operation[0].documentation = "POST, [base]/Practitioner[cpn],An operation that updates a health providers demographic details,  system/Practitioner.u"
 
+* rest.resource.operation[1].name = "update-educational-qualification"
+* rest.resource.operation[1].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-educational-qualification"
+* rest.resource.operation[1].documentation = "POST, [base]/Practitioner/$update-educational-qualification,Updates a practitioner's educational qualifications by add, amend or remove actions, system/Practitioner.u"
+
+* rest.resource.operation[2].name = "update-registration"
+* rest.resource.operation[2].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-registration"
+* rest.resource.operation[2].documentation = "POST, [base]/Practitioner/$update-registration,Updates a practitioner's registration status, APC, scope of practice, additional authorisations and conditions, system/Practitioner.u"
+
 
 // ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
