@@ -71,10 +71,14 @@ Other notes on searches:
 * Names with similar spelling are considered for scoring. Minor spelling mistakes are catered for. E.g. If Sasha is being searched for then Sahsa would get some score and so would Sarah but Raewyn would not.
 [See also](/searchPractitioner.html). 
 
+#### Creating and Updating Practitioners
+Only Responsible Authorities (RAs) can create and update Practitioner records.
+[See also](/updatePractitioner.html). 
+
 #### Searching for Organizations 
 If the organization’s New Zealand Business Number (NZBN) or the HPI OrgID is not known, a search by organization name can be used.  The organisation search by name uses the HPI probabilistic search in much the same way as person name but tuned to the characteristics of organization names. E.g. ‘Limited’ or ‘Ltd’ would be a low value token for scoring.  
 Search using a type ahead style will be considered for a future release.
-[See also](/searchOrganization.html).
+[See also](/searchOrganisation.html).
 
 #### Searching for Facilities 
 If a facility’s HPI FacID is not known, a search by facility name, facility type, address and DHB can be used.  The facility search uses the HPI probabilistic search in much the same way as practitioner search by demographics but is tuned to the characteristics of facility attributes. The facility type and DHB cannot be used in a filtering way. These features and a type ahead style search will be considered for a future release [See also](/searchLocation.html).
