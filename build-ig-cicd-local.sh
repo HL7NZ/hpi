@@ -1,4 +1,6 @@
 
+#!/bin/bash
+
 # this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher 
 # to run locally, pass in the parameter true:
 ## ./build-ig-cicd.sh true
@@ -28,7 +30,6 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 #cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
-#!/bin/bash
 set -x -e #echo on, exit on error
 
 
@@ -64,6 +65,7 @@ echo "Making API summary"
 echo "building openapi spec"
 chmod +x ./openapi/makeoas.sh
 ./openapi/makeoas.sh
+
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  

@@ -15,7 +15,6 @@ phases:
       nodejs: 16
       ruby: 3.1
     commands:
-      - env
       - aws s3 cp s3://nz-govt-moh-hip-build/codebuild-common/settings-clean.xml - | envsubst > /root/.m2/settings.xml
       - export HTTP_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
       - export HTTPS_PROXY="WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128"
@@ -55,12 +54,12 @@ phases:
       - mvn clean dependency:purge-local-repository validate
       - echo building IG
       - ls -l      
-      - sudo chmod +x ./build-ig-cicd.sh     
-      - ./build-ig-cicd.sh 2>&1 | tee build-ig.log
+      - bash -o pipefail -c 'bash ./build-ig-cicd.sh 2>&1 | tee build-ig.log'
       
       
       - echo checking in full-ig.zip
       - git add -f ./output/full-ig.zip
+      - git add -A ./openapi ./input/extra ./input/pagecontent
       - git commit -m "new IG build"
       - git push https://$GITUSERNAME:$GITTOKEN@github.com/HL7NZ/hpi   
       # deploy the hpi conformance artefacts

@@ -7,7 +7,7 @@ Usage: #example
 * meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
 * meta.security = http://terminology.hl7.org/CodeSystem/v3-Confidentiality#L
 * extension[0].url = "http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity"
-* extension[=].valueCodeableConcept.coding.version = "2.0"
+* extension[=].valueCodeableConcept.coding.version = "2.1.0"
 * extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/ethnic-group-level-4-code#11111 "New Zealand European"
 * extension[=].valueCodeableConcept.text = "New Zealand European"
 * extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/educational-qualification"
@@ -56,7 +56,7 @@ Usage: #example
 * qualification.extension[=].extension[=].valuePeriod.start = "2009-02-01"
 * qualification.extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
 * qualification.extension[=].extension[0].url = "code"
-* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "1.0.0"
+* qualification.extension[=].extension[=].valueCodeableConcept.coding.version = "2.1.0"
 * qualification.extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#OCCT "Occupational Therapist"
 * qualification.extension[=].extension[=].valueCodeableConcept.text = "Occupational Therapist"
 * qualification.extension[=].extension[+].url = "period"
@@ -72,7 +72,7 @@ Usage: #example
 * qualification.identifier.system = "https://standards.digital.health.nz/ns/occupational-therapy-board-id"
 * qualification.identifier.value = "96-20154"
 * qualification.identifier.assigner = Reference(Organization/G00000-E)
-* qualification.code.coding.version = "2.0"
+* qualification.code.coding.version = "2.1"
 * qualification.code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#OT "Occupational Therapy Board Register"
 * qualification.code.text = "Occupational Therapy Board Register"
 * qualification.period.start = "2021-04-01"
@@ -143,7 +143,7 @@ Usage: #example
 * qualification[=].extension[=].extension[=].valuePeriod.end = "2026-02-01"
 * qualification[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
 * qualification[=].extension[=].extension[0].url = "code"
-* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "1.0.0"
+* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "2.1.0"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#NCRN "Registered Nurse"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.text = "Registered Nurse"
 * qualification[=].extension[=].extension[+].url = "period"
@@ -160,7 +160,7 @@ Usage: #example
 * qualification[=].identifier.system = "https://standards.digital.health.nz/ns/nursing-council-id"
 * qualification[=].identifier.value = "962054"
 * qualification[=].identifier.assigner = Reference(Organization/G00008-K)
-* qualification[=].code.coding.version = "2.0"
+* qualification[=].code.coding.version = "2.1"
 * qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#NC "Nursing Council of New Zealand Register"
 * qualification[=].code.text = "Nursing Council of New Zealand Register Number"
 * qualification[=].period.start = "2019-02-01"
@@ -176,7 +176,7 @@ Usage: #example
 * qualification[=].extension[=].extension[=].valuePeriod.end = "2023-12-11"
 * qualification[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
 * qualification[=].extension[=].extension[0].url = "code"
-* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "1.0.0"
+* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "2.1.0"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#NCRN "Registered Nurse"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.text = "Registered Nurse"
 * qualification[=].extension[=].extension[+].url = "period"
@@ -184,7 +184,7 @@ Usage: #example
 * qualification[=].extension[=].extension[=].valuePeriod.end = "2022-04-11"
 * qualification[=].extension[+].url = "http://hl7.org.nz/fhir/StructureDefinition/scope-of-practice"
 * qualification[=].extension[=].extension[0].url = "code"
-* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "1.0.0"
+* qualification[=].extension[=].extension[=].valueCodeableConcept.coding.version = "2.1.0"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.coding = https://standards.digital.health.nz/ns/practitioner-scope-of-practice-code#MWIF "Midwife"
 * qualification[=].extension[=].extension[=].valueCodeableConcept.text = "Midwife"
 * qualification[=].extension[=].extension[+].url = "period"
@@ -201,7 +201,7 @@ Usage: #example
 * qualification[=].identifier.system = "https://standards.digital.health.nz/ns/midwifery-council-id"
 * qualification[=].identifier.value = "95579"
 * qualification[=].identifier.assigner = Reference(Organization/G00009-A)
-* qualification[=].code.coding.version = "2.0"
+* qualification[=].code.coding.version = "2.1"
 * qualification[=].code.coding = https://standards.digital.health.nz/ns/practitioner-registration-authority-code#MW "Midwifery Council Register"
 * qualification[=].code.text = "Midwifery Council Register Number"
 * qualification[=].period.start = "2020-12-10"
@@ -252,3 +252,17 @@ Usage: #example
 * identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
 * identifier.value = "90ZZLP"
 * identifier.assigner = Reference(Organization/G00001-G)
+
+
+Instance: 99ZZZS
+InstanceOf: Practitioner
+Description: "Example HPI Practitioner used by PractitionerRole"
+Usage: #example
+* meta.profile = "http://hl7.org.nz/fhir/StructureDefinition/HPIPractitioner"
+* identifier.use = #official
+* identifier.system = "https://standards.digital.health.nz/ns/hpi-person-id"
+* identifier.value = "99ZZZS"
+* identifier.assigner = Reference(Organization/G00001-G)
+* name.use = #official
+* name.family = "Example"
+* name.given[0] = "Practitioner"

@@ -1,7 +1,12 @@
 
+#!/bin/bash
+
 # this script is intended to be run from code build, it should build the IG using the Hl7 IG Publisher 
 # to run locally, pass in the parameter true:
 ## ./build-ig-cicd.sh true
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
 
 islocal=$1
 
@@ -28,7 +33,39 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 #cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package.json
 }
 
-#!/bin/bash
+install_base_template_cache() {
+  local package_version="1.0.0"
+  local package_name="fhir.base.template"
+  local cache_dir="$HOME/.fhir/packages/${package_name}#${package_version}"
+  local archive
+
+  if [[ -f "$cache_dir/package/package.json" ]] && \
+    jq -e --arg version "$package_version" \
+      '.name == "fhir.base.template" and .version == $version' \
+      "$cache_dir/package/package.json" >/dev/null; then
+    echo "Using cached ${package_name}#${package_version}"
+    return 0
+  fi
+
+  echo "Downloading ${package_name}#${package_version} from the FHIR template archive"
+  archive=$(mktemp)
+  curl --fail --location --retry 3 --output "$archive" \
+    "https://fhir.org/templates/${package_name}/${package_version}/package.tgz"
+
+  rm -rf "$cache_dir"
+  mkdir -p "$cache_dir"
+  tar -xzf "$archive" -C "$cache_dir"
+  rm -f "$archive"
+
+  if ! jq -e --arg version "$package_version" \
+    '.name == "fhir.base.template" and .version == $version' \
+    "$cache_dir/package/package.json" >/dev/null; then
+    echo "Downloaded ${package_name} package has unexpected metadata" >&2
+    rm -rf "$cache_dir"
+    return 1
+  fi
+}
+
 set -x -e #echo on, exit on error
 
 echo getting nzbase dependencies...
@@ -93,8 +130,8 @@ echo "Making API summary"
 ./localscripts/makeCapabilityStatement.js hpi
 
 echo "building openapi spec"
-chmod +x ./openapi/makeoas.sh
-./openapi/makeoas.sh
+bash ./openapi/makeoas.sh
+install_base_template_cache
 
 #to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
 #echo copying custom content to template  
@@ -104,9 +141,13 @@ chmod +x ./openapi/makeoas.sh
 echo running ig publisher
 #ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package 
 
-java -jar ~/publisher.jar -ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi  -authorise-non-conformant-tx-servers 
+publisher_args=(-ig . -proxy WebProxy-80fef376c00ea74f.elb.ap-southeast-2.amazonaws.com:3128 -no-sushi -authorise-non-conformant-tx-servers)
+if [[ "${ALLOW_PRIVATE_PROXY_SSRF_BYPASS:-false}" == "true" ]]; then
+  echo "WARNING: disabling Publisher SSRF protection for the trusted private proxy" >&2
+  publisher_args+=(-ssrf-protection-enabled false)
+fi
+java -jar ~/publisher.jar "${publisher_args[@]}"
 
 
 
-chmod +x ./fhirValidate.sh
-./fhirValidate.sh
+bash ./fhirValidate.sh
