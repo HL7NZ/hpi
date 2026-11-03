@@ -10,7 +10,9 @@ A Practitioner read request returns a Practitioner record with the following att
 * All:
   * educational qualifications,
   * ‘old’ names, and
-  * registraion details (Practitioner.qualification) 
+  * registration details (Practitioner.qualification), including APC history when available.
+
+APC history is returned by default on Get Practitioner responses. Each APC history period is represented by a repeated `apc-history` extension on the corresponding `Practitioner.qualification`; no additional request parameter is needed. The latest APC period remains available in `Practitioner.qualification.period`.
 
 A user with administration permissions will also see the ‘last updated single instance’ from across all sources:
  * set of ethnicities,

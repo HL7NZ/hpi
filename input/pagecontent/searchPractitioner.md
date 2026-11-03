@@ -7,6 +7,8 @@ The search Practitioner operation allows a user to search the HPI for a Practiti
 * gender, and
 * birthdate
 
+Matching Practitioner resources include APC history by default when history is available. It is returned as repeated `apc-history` extensions on the corresponding `Practitioner.qualification`; no additional search parameter or `_include` is required. The latest APC period also remains available in `Practitioner.qualification.period`.
+
 [For more information of available search parameters click here](/capabilityStatement.html#practitioner)
 
 ### Search Practitioner using name
