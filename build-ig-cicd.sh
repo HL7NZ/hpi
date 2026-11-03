@@ -117,8 +117,20 @@ cat ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#$common_version/package/package
 
 GIT_COMMIT_ID=$(git rev-parse HEAD)
 echo adding source info to index.md
-sed -i "s/_BRANCH_/$BRANCH/g"  ./input/pagecontent/index.md
-sed -i "s/_GIT_COMMIT_ID_/$GIT_COMMIT_ID/g"  ./input/pagecontent/index.md
+: "${BRANCH:?BRANCH must be set to the source branch name}"
+branch_for_sed=${BRANCH//\\/\\\\}
+branch_for_sed=${branch_for_sed//&/\\&}
+branch_for_sed=${branch_for_sed//|/\\|}
+index_file=./input/pagecontent/index.md
+index_backup=$(mktemp)
+cp "$index_file" "$index_backup"
+restore_index() {
+  cp "$index_backup" "$index_file"
+  rm -f "$index_backup"
+}
+trap restore_index EXIT
+sed -i "s|_BRANCH_|$branch_for_sed|g" "$index_file"
+sed -i "s/_GIT_COMMIT_ID_/$GIT_COMMIT_ID/g" "$index_file"
 
 echo running sushi ...
 sushi -o .
