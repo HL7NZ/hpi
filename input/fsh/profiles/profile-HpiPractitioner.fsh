@@ -3,6 +3,7 @@
 Alias: $death-date = http://hl7.org.nz/fhir/StructureDefinition/death-date
 Alias: $registration-status-code = http://hl7.org.nz/fhir/StructureDefinition/registration-status-code
 Alias: $additional-authorisation = http://hl7.org.nz/fhir/StructureDefinition/additional-authorisation
+Alias: $apc-history = http://hl7.org.nz/fhir/StructureDefinition/apc-history
 
 Alias: $educational-qualification = http://hl7.org.nz/fhir/StructureDefinition/educational-qualification
 
@@ -136,6 +137,10 @@ Description:    "The practitioner exposed by the HPI. This is the person who del
 * qualification.extension[registration-status-code].extension[status].value[x] only CodeableConcept
 * qualification.extension[registration-status-code].extension[status].valueCodeableConcept from https://nzhts.digital.health.nz/fhir/ValueSet/practitioner-registration-status-code|2.0 (extensible)
 * qualification.extension[registration-status-code].extension[period].value[x] only Period
+
+* qualification.extension contains $apc-history named apc-history 0..*
+* qualification.extension[apc-history] ^short = "A period covered by an annual practicing certificate (APC), including previous APC periods"
+* qualification.extension[apc-history].extension[period].value[x] only Period
 
 * qualification.extension[additional-authorisation] ^short = "Additional things the person is authorized to do"
 * qualification.extension[additional-authorisation].extension[code].value[x] only CodeableConcept

@@ -4,6 +4,13 @@
 <tr><th>Id</th><th>Url</th><th>Context of Use</th><th>Description</th><th>Purpose</th>
 </tr>
 <tr>
+<td><a href='StructureDefinition-apc-history.html'>apc-history</a></td>
+<td>http://hl7.org.nz/fhir/StructureDefinition/apc-history</td>
+<td><div>Practitioner.qualification</div></td>
+<td><p>A period covered by an annual practicing certificate (APC) for a practitioner's registration.</p></td>
+<td>Represent APC periods, including history, for a practitioner's registration.</td>
+</tr>
+<tr>
 <td><a href='StructureDefinition-esam-id.html'>esam-id</a></td>
 <td>http://hl7.org.nz/fhir/StructureDefinition/esam-id</td>
 <td>
