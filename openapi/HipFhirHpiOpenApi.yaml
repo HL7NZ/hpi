@@ -2,7 +2,7 @@ openapi: "3.0.1"
 info:
   title: "HIP HPI FHIR"
   description: "Te Whatu Ora HPI FHIR services"
-  version: "1.4.11"
+  version: "1.5.0"
 servers:
   - url: "https://gb2r96qpik.execute-api.ap-southeast-2.amazonaws.com/{basePath}"
     variables:

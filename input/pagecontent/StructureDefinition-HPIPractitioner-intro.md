@@ -35,6 +35,7 @@ Consideration is being given to ‘self-asserted’ data.
 *   Ethnicity extension
 *   Qualification has a status (see more differences below)
 *   Initial date of registration extension
+*   APC history extension
 *   Additional Authorizations extension (complex)
 *   Scope of Practice extension (complex)
 *   Conditions on Practice extension (complex)
@@ -103,8 +104,14 @@ table, th, td {
 
 <tr>
 <td>Annual practicing certificate</td>
-<td>the period of the most recently issued APC</td>
+<td>The period of the most recently issued APC. APC periods are also available as repeated APC history extensions, including historical periods.</td>
 <td>Practitioner.qualification.period</td>
+</tr>
+
+<tr>
+<td>APC history</td>
+<td>Each occurrence represents one APC period. The period is carried in the extension's required <code>period</code> sub-extension. Periods are ordered by start date, newest first; periods without a start date follow dated periods.</td>
+<td>Practitioner.qualification.extension:apc-history.extension:period</td>
 </tr>
 
 <tr>
