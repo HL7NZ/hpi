@@ -92,6 +92,10 @@ Practitioner query
 * rest.resource.operation[0].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-core"
 * rest.resource.operation[0].documentation = "POST, [base]/Practitioner[cpn],An operation that updates a health providers demographic details,  system/Practitioner.u"
 
+* rest.resource.operation[1].name = "update-personal-details"
+* rest.resource.operation[1].definition = "https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-personal-details"
+* rest.resource.operation[1].documentation = "POST, [base]/Practitioner/$update-personal-details, Updates Practitioner gender, ethnicity and communication languages for an authorized caller with the appropriate Practitioner update permission"
+
 
 // ============== The PractitionerRole endpoint =============
 * rest.resource[1].type = #PractitionerRole
@@ -237,4 +241,3 @@ Location query
 * rest.resource[3].searchParam[7].name = "messaging-address"
 * rest.resource[3].searchParam[7].type = #string
 * rest.resource[3].searchParam[7].documentation = "Search by EDI address"
-
