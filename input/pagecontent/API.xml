@@ -45,6 +45,14 @@
 <td>An operation that updates a health providers demographic details</td>
 <td>  system/Practitioner.u</td>
 </tr>
+<tr>
+<td>update-personal-details</td>
+<td><a href ="OperationDefinition-Practitioner-update-personal-details.html"> https://hpi-ig.hip.digital.health.nz/OperationDefinition/practitioner-update-personal-details </a></td>
+<td>POST</td>
+<td> [base]/Practitioner/$update-personal-details</td>
+<td> Updates Practitioner gender</td>
+<td> ethnicity and communication languages for an authorized caller with the appropriate Practitioner update permission</td>
+</tr>
 </table>
 <strong>Search Parameters</strong>
 <table class='table table-bordered table-condensed'>
