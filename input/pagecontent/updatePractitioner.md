@@ -152,10 +152,61 @@ table, th, td {
 
 ### Update-personal-details
 
-* Allows an authorised user to update personal details
-  * gender
-  * ethnicity
-  * languages
+The `$update-personal-details` operation updates a Practitioner's gender,
+ethnicity and communication languages. It is a type-level operation invoked
+with HTTP `POST` at `[base]/Practitioner/$update-personal-details`.
+
+The caller must have Practitioner update authorization. RA callers must
+provide their RA identifier, which must be valid for the Practitioner. The
+operation validates the CPN and current version before applying an update.
+All supplied personal-detail values are validated before persistence; a
+rejected request does not partially update the record. A successful update
+returns the updated Practitioner.
+
+#### Input parameters
+
+| Parameter | Type | Cardinality | Description |
+| --- | --- | --- | --- |
+| `cpn` | `string` | 1..1 | The HPI person identifier. |
+| `version-id` | `string` | 1..1 | The current Practitioner version identifier. A stale version is rejected. |
+| `ra-identifier` | `string` | 0..1 | Required for an RA update; identifies the RA source for this Practitioner. |
+| `gender` | `code` | 0..1 | FHIR AdministrativeGender code: `male`, `female`, `other` or `unknown`. |
+| `ethnicity` | `code` | 0..6 | An ethnicity code from the HPI-bound NZ ethnicity value set. Repeated values replace the complete current set. |
+| `language` | `code` | 0..10 | A language code from the HPI-bound language value set. Repeated values replace the complete current set. |
+
+Omitted parameters preserve their current values. An omitted gender leaves
+gender unchanged; omitted ethnicity or language parameters leave their
+respective collections unchanged. Supplying the same values does not create a
+new version. The current operation parameter shape cannot distinguish an
+omitted collection from an explicitly empty one, so it does not provide a way
+to clear ethnicity or languages. Language preference flags are not accepted
+by this operation.
+
+Validation errors are returned as an `OperationOutcome` identifying the
+invalid element where supported. Invalid terminology values are rejected;
+stale versions return a conflict response. The operation makes no change when
+all optional update parameters are absent.
+
+#### Example request
+
+```json
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    { "name": "cpn", "valueString": "28AQGN" },
+    { "name": "version-id", "valueString": "32718" },
+    { "name": "ra-identifier", "valueString": "353542" },
+    { "name": "gender", "valueCode": "female" },
+    { "name": "ethnicity", "valueCode": "10000" },
+    { "name": "ethnicity", "valueCode": "12116" },
+    { "name": "language", "valueCode": "eng" },
+    { "name": "language", "valueCode": "mri" }
+  ]
+}
+```
+
+The operation does not change file-upload demographic processing. Gender is
+the FHIR `Practitioner.gender` element; it is not a separate sex field.
 
 ### Update-educational-qualifications
 

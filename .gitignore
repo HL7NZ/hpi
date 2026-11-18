@@ -13,3 +13,4 @@ Thumbs.db
 !/output/full-ig.zip
 /fhir_packages/
 .idea/
+/docs/
