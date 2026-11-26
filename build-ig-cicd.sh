@@ -34,14 +34,16 @@ mv temp2.json  ~/.fhir/packages/$1#$2/package/package.json
 }
 
 install_base_template_cache() {
-  local package_version="1.0.0"
-  local package_name="fhir.base.template"
+  local package_name="fhir2.base.template"
+  local package_version
+  package_version=$(jq -er --arg name "$package_name" '.dependencies[$name] | strings | select(length > 0)' \
+    ./tewhatuora/package/package.json)
   local cache_dir="$HOME/.fhir/packages/${package_name}#${package_version}"
   local archive
 
   if [[ -f "$cache_dir/package/package.json" ]] && \
-    jq -e --arg version "$package_version" \
-      '.name == "fhir.base.template" and .version == $version' \
+    jq -e --arg name "$package_name" --arg version "$package_version" \
+      '.name == $name and .version == $version' \
       "$cache_dir/package/package.json" >/dev/null; then
     echo "Using cached ${package_name}#${package_version}"
     return 0
@@ -57,8 +59,8 @@ install_base_template_cache() {
   tar -xzf "$archive" -C "$cache_dir"
   rm -f "$archive"
 
-  if ! jq -e --arg version "$package_version" \
-    '.name == "fhir.base.template" and .version == $version' \
+  if ! jq -e --arg name "$package_name" --arg version "$package_version" \
+    '.name == $name and .version == $version' \
     "$cache_dir/package/package.json" >/dev/null; then
     echo "Downloaded ${package_name} package has unexpected metadata" >&2
     rm -rf "$cache_dir"
@@ -144,11 +146,6 @@ echo "Making API summary"
 echo "building openapi spec"
 bash ./openapi/makeoas.sh
 install_base_template_cache
-
-#to do find a way to get add custom content - the following doesnt work, it  seem the template does not get downloaded by IG publisher if the directory exists?
-#echo copying custom content to template  
-#sudo mkdir -p  ~/.fhir/packages/fhir.base.template#current/package/content
-#cp ./template/* ~/.fhir/packages/fhir.base.template#current/package/content
 
 echo running ig publisher
 #ls -l ~/.fhir/packages/hl7.org.nz.fhir.ig.hip-core#1.8.9/package 
