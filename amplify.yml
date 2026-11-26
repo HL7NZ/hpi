@@ -8,7 +8,10 @@ frontend:
         - cd ig
         - unzip ../output/full-ig.zip
         - cp ../output/full-ig.zip ./site/full-ig.zip
+        - cp ../output/full-ig.zip ./site/en/full-ig.zip
+        - cp ./site/definitions.json.zip ./site/definitions.xml.zip ./site/en/
         - cp ../input/extra/* ./site
+        - cp ../input/extra/* ./site/en
         - ls 
         - ls ./site
   artifacts:

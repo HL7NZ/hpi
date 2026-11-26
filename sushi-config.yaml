@@ -41,7 +41,7 @@ releaseLabel: Release
 # ╭─────────────────────────────────────────────ig.ini─────────────────────────────────────────────╮
 # │  To use a provided ig-data/ig.ini file, delete the "template" property below.                  │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# template: fhir.base.template#current
+# template: fhir2.base.template#0.1.0
 
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮

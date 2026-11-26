@@ -1,6 +1,7 @@
 # tewhatuora.fhir.template
 
 Template for FHIR IGs based on Te Whatu Ora branding guidelines.
+It inherits from the published `fhir2.base.template#0.1.0`.
 
 ## Instructions
 
